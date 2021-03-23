@@ -1302,10 +1302,6 @@ body.on-side .wrap-sticky nav.navbar.bootsnav.sticked{
         margin-left: 280px;
         margin-right: -280px !important;
     }
-	
-	nav.navbar.bootsnav.navbar-mobile{
-		 min-height: 100vh !important;
-	}
     
     nav.navbar.bootsnav.navbar-mobile .navbar-collapse{
         position: fixed;
@@ -1315,7 +1311,7 @@ body.on-side .wrap-sticky nav.navbar.bootsnav.sticked{
         background: #fff;
         z-index: 99;
         width: 280px;
-        min-height: 100vh !important;
+        height: 100% !important;
         left: -280px;
         top: 0;
         padding: 0;
