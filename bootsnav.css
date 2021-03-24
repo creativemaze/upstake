@@ -21,6 +21,9 @@ nav.bootsnav .container {
 
 nav.bootsnav .megamenu-fw .dropdown-menu {
     left: auto;
+	min-height: 100%;
+	overflow-y: auto;
+	overflow-x: hidden;
 }
 
 nav.bootsnav .megamenu-content {
@@ -1311,7 +1314,7 @@ body.on-side .wrap-sticky nav.navbar.bootsnav.sticked{
         background: #fff;
         z-index: 99;
         width: 280px;
-        min-height: 100vh !important;
+        height: 100% !important;
         left: -280px;
         top: 0;
         padding: 0;
