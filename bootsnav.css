@@ -1299,6 +1299,8 @@ body.on-side .wrap-sticky nav.navbar.bootsnav.sticked{
         -o-transition: all 0.3s ease-in-out;
         -ms-transition: all 0.3s ease-in-out;
         transition: all 0.3s ease-in-out;
+	min-height: 100vh;
+	overflow-y: auto;
     }
     
     body.side-right > .wrapper{
