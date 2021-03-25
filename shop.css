@@ -1827,6 +1827,13 @@ a.blog_btn::after{
 		padding: 25px;
 	}
 	
+	nav.navbar.bootsnav ul.dropdown-menu.megamenu-content > li{
+		min-height: 50px;
+		height: 100%;
+		overflow-y: auto;
+		overflow-x: hidden;
+	}
+	
 	.footer_col{
 		flex: 50%;
 		width: 50%;
