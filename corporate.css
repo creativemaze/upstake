@@ -400,8 +400,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .slide__content{
-	position: relative;
-	z-index: 1;
 	height: 100vh;
 	min-height: 750px;
 	text-align: center;
@@ -410,11 +408,15 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	background-position: center;
 	animation-duration: 2s;
 	animation-delay: 1s;
+	position: relative;
+	z-index: 1000;
 }
 
-.slide__content::before {
+.slide__content:before {
 	content: '';
 	position: absolute;
+	z-index: -1;
+	display: block;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -425,10 +427,8 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 .header-title {
 	max-width: 650px;
 	display: block;
-	position: relative;
 	margin-left: 5vw;
 	padding-right: 10px;
-	z-index: 9;
 }
 
 .header__content > div{
@@ -486,14 +486,14 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .buttoncol a:hover{
-	color: #ffffff;
-	background-color: transparent;
+	color: #009fff;
+	background-color: #ffffff;
 	border-color: #ffffff;
 }
 
 .slick-dots {
 	position: relative;
-	z-index: 999999;
+	z-index: 9999;
 	display: flex;
 	justify-content: center;
 	margin: 0;
@@ -514,11 +514,11 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 li.slick-active button{
-	background-color: #009FFF;
+	background-color: #009fff;
 }
 
 .slick-dots button:hover{
-	background-color: #009FFF;
+	background-color: #009fff;
 }
 
 .slick-dots li{
@@ -1541,6 +1541,7 @@ a.blog_btn::after{
 
 /* --- 3.9. Corporate Area Nine --- */
 .corporate_area_nine{
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
