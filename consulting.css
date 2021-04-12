@@ -431,6 +431,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	margin-left: 5vw;
 	padding-right: 10px;
 	padding-top: 150px;
+	text-align: left;
 }
 
 .header-title__main{
@@ -459,7 +460,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .buttoncol{
 	max-width: 500px;
-	float: left;
 }
 
 .buttoncol a{
@@ -615,8 +615,8 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	flex: 33.33%;
 	width: 33.33%;
 	position: relative;
+	padding: 5px 0;
 	max-width: 400px;
-	position: relative;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
