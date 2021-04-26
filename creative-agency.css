@@ -391,13 +391,13 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	min-height: 700px;
+	min-height: 750px;
 }
 
 .slide__content{
 	position: relative;
 	z-index: 1000;
-	min-height: 700px;
+	min-height: 750px;
 	text-align: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -559,7 +559,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 .box_content h3{
 	color: #111111;
 	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 25px;
+	font-size: 20px;
 	font-weight: 600;
 	display: block;
 	text-align: center;
