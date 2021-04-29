@@ -911,6 +911,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	color: #111111;
 	letter-spacing: 1px;
 	line-height: 1.3em;
+	margin-top: 0;
 }
 
 .cube_box p{
@@ -937,7 +938,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	background-color: #2b32b2;
 	width: 140px;
 	min-height: 30px;
-	margin: 35px auto 0;	
+	margin: 30px auto 0;	
     border: none;
     color: #ffffff;
     padding: 12px 14px;
