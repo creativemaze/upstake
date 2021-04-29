@@ -1,16 +1,42 @@
-/*
-*	Template: Medical
-*	Version: v1.0;
-*/
+/*------------------------------------------------------------------
+Main Stylesheet
 
-/**	General Styles **/
+Project:    Highpoint Corporate Template
+Version:    1.0
+Last change:    27/04/2021
+Author:    Themewiz
+Primary use:    Medical
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. General
+2. Header
+	2.1. Logo & Navigation
+	2.2. Header Content
+3. Main Content
+	3.1. Medical Area One 
+	3.2. Medical Area Two
+	3.3. Medical Area Three
+	3.4. Medical Area Four
+	3.5. Medical Area Five
+	3.6. Medical Area Six
+	3.7. Medical Area Seven
+	 
+4. Footer
+5. Responsive
+-------------------------------------------------------------------*/
+
+/* 1. GENERAL
+ ----------- */
 body,
 html{
-	margin: 0;
-	padding: 0;
-}
-
-body{
+	width:100%;
+    height: auto;
+    margin:0;
+    padding:0;
+    overflow-x: hidden;
 	font-family: sans-serif;
 }
 
@@ -25,10 +51,9 @@ ul{
 }
 
 .page_area{
-	width: 100% !important;
+	width: 100%;
 }
 
-/* Page Loader */
 .js .loading::before {
 	content: '';
 	position: fixed;
@@ -63,35 +88,59 @@ ul{
 	}
 }
 
-/**** Header & Menu Section ****/
-nav.navbar .navbar-brand{
+.medical_head{
+	color: #2b32b2;
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 40px;
+	font-weight: 700;
+	display: block;
+	text-align: center;
+	letter-spacing: 1px;
+	line-height: 1.3em;
 	margin-top: 0;
-	max-width: 350px;
-	display: inline-block
 }
 
+.medical_info{
+	max-width: 600px;
+	margin: 0 auto;
+	font-family: 'Roboto' , Arial, sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	display: block;
+	color: #696969;
+	letter-spacing: 1px;
+	text-align: center;
+	padding: 10px 10px 0;
+	line-height: 1.5em;
+}
+
+/* 2. HEADER
+ ----------- */
+ 
+/* --- 2.1. Logo & Navigation --- */
 .navbar-header h2{
 	font-family: 'Montserrat', Arial, sans-serif;
-	font-size: 20px;
+	font-size: 22px;
 	font-weight: 700;
 	letter-spacing: 1px;
 	text-transform: uppercase;
 }
 
-.navbar-header a{
+.navbar-header a.navbar-brand{
 	text-decoration: none;
-	color: #333333 !important;
+	color: #111111;
+	transition: 0.5s;
 }
 
- nav.navbar .navbar-brand img.logo{
-   max-width: 300px;
+nav.navbar .navbar-brand img.logo{
+   max-width: 200px;
    height: auto;
-   display: inline-block
+   display: block;
 }
 
 nav.navbar.bootsnav{
-	background-color: transparent !important;
-	border-bottom: none !important;
+	background-color: transparent;
+	border-bottom: none ;
 	z-index: 9999;
 }
 
@@ -106,12 +155,13 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu{
 }
 
 nav.navbar.bootsnav ul.nav > li > a{
-    color: #333333;
+    color: #111111;
     font-family: 'Montserrat' , Arial, sans-serif;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 700;
     text-transform: uppercase;
 	letter-spacing: 1px;
+	border-top: none;
 }
 
 nav.navbar.bootsnav ul.navbar-right li.dropdown ul.dropdown-menu li a{
@@ -126,15 +176,38 @@ nav.navbar.bootsnav ul.navbar-right li.dropdown ul.dropdown-menu li a{
 	transition: 0.5s;
 }
 
+nav.navbar.bootsnav ul.navbar-right li.dropdown ul.dropdown-menu li a:hover{
+	color: #2b32b2;
+}
+
+nav.navbar.bootsnav li.dropdown ul.dropdown-menu{
+	left: 0;
+}
+
  nav.navbar.bootsnav ul.nav > li.dropdown > a.dropdown-toggle:after{
     font-family: 'Font Awesome 5 Free';
     content: "\f107";
 	font-size: 12px;	
 }
 
- nav.navbar.bootsnav ul.dropdown-menu.megamenu-content .col-menu{
-    border-left: none;
-    border-right: none;
+nav.navbar.bootsnav ul.navbar-right li.dropdown ul.dropdown-menu li.dropdown > a.dropdown-toggle:before{
+    font-family: 'Font Awesome 5 Free';
+    float: right;
+    content: "\f105";
+    margin-top: 0;
+}
+
+nav.navbar.bootsnav ul.nav.navbar-right .dropdown-menu .dropdown-menu{
+    left: 200px;
+}
+
+nav.navbar.bootsnav li.dropdown ul.dropdown-menu ul.dropdown-menu{
+    top: 2px;
+}
+
+nav.navbar.bootsnav ul.dropdown-menu.megamenu-content .col-menu{
+    border-left: solid 1px #e0e0e0;
+    border-right: solid 1px #e0e0e0;
 }
 
 nav.navbar.bootsnav ul.dropdown-menu.megamenu-content .content ul.menu-col li a{
@@ -146,6 +219,10 @@ nav.navbar.bootsnav ul.dropdown-menu.megamenu-content .content ul.menu-col li a{
 	letter-spacing: 1px;
 }
 
+nav.navbar.bootsnav ul.dropdown-menu.megamenu-content .content ul.menu-col li a:hover{
+	color: #2b32b2;
+}
+
 nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
     font-size: 14px;
     font-weight: 600;
@@ -155,12 +232,19 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	letter-spacing: 1px;
 }
 
+.attr-nav > ul > li.dropdown ul.dropdown-menu{
+    margin-top: 0;
+    margin-left: 55px;
+    width: 250px;
+    left: -250px !important;
+}
+
 .attr-nav > ul > li > a{
-    color: #333333;
+    color: #111111;
 	padding-top: 30px;
-	margin-left: -12px;
+	margin-left: -3px;
 	position: relative;
-	left: -175px;
+	left: -170px;
 }
 
 .top-search ::placeholder{
@@ -170,6 +254,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	letter-spacing: 1px;
 }
 
+/* --- 2.2. Header Content --- */
 .top_box{
 	height: 50px;
 	overflow-y: auto;
@@ -178,18 +263,15 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .top_info{
 	width: 100%;
-	display: -ms-flexbox;
 	display: flex;
-	-ms-flex-wrap: wrap; 
 	flex-wrap: wrap;
-	max-width: 1200px;
+	max-width: 1400px;
 	margin: auto
 }
 
 .left_info,
 .right_info{
 	position: relative;
-	-ms-flex: 50%;
 	flex: 50%;
 	width: 50%;
 	padding-top: 15px;
@@ -238,22 +320,18 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .sub_width{
 	width: 100%;
-	display: -ms-flexbox;
 	display: flex;
-	-ms-flex-wrap: wrap; 
 	flex-wrap: wrap;
 	text-align: center;
 }
 
 .left_sub{
-	-ms-flex: 50%;
 	flex: 50%;
 	width: 50%;
 	text-align: left;
 }
 
 .right_sub{
-	-ms-flex: 50%;
 	flex: 50%;
 	width: 50%;
 	text-align: center;
@@ -311,7 +389,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
     display: block;
     font-size: 12px;
 	font-weight: 600;
-	font-family: 'Montserrat', Arial sans-serif;
+	font-family: 'Montserrat', Arial, sans-serif;
     transition: 0.5s;
     cursor: pointer;
 	border: 1px solid #2b32b2;
@@ -333,21 +411,18 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .header__content{
 	display: flex;
-	-webkit-flex-direction: row;
 	flex-direction: row;
-	-webkit-justify-content: flex-start;
 	justify-content: flex-start;
-	-webkit-align-items: center;
 	align-items: center;
+	min-height: 800px;
 	height: 100vh;
-	min-height: 700px;
 }
 
 .slide__content{
 	position: relative;
 	z-index: 0;
+	min-height: 800px;
 	height: 100vh;
-	min-height: 700px;
 	text-align: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -355,11 +430,11 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .header-title {
-	max-width: 650px;
+	max-width: 600px;
 	display: block;
-	text-align: left;
-	padding-left: 40px;
+	margin-left: 5vw;
 	padding-right: 10px;
+	text-align: left;
 }
 
 .header-title__main{
@@ -368,6 +443,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	font-weight: 700;
 	letter-spacing: 1px;
 	line-height: 1.2em;
+	margin-top: 0;
 	text-align: left;
 	display: block;
 	color: #2b32b2;
@@ -375,21 +451,21 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .header-title__sub{
 	font-family: 'Roboto' , Arial, sans-serif;
-	font-size: 15px;
+	font-size: 16px;
 	font-weight: normal;
 	display: inline-block;
 	color: #696969;
+	max-width: 500px;
 	line-height: 1.5em;
 	letter-spacing: 1px;
 	text-align: left;
-	padding: 20px 0;
+	padding: 25px 0;
 }
 
 .buttoncol a{
 	background-color: transparent;
 	width: 150px;
 	min-height: 30px;
-	margin-top: 10px;	
     border: none;
     color: #2b32b2;
     padding: 13px 14px;
@@ -398,7 +474,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
     display: block;
     font-size: 12px;
 	font-weight: 600;
-	font-family: 'Montserrat', Arial sans-serif;
+	font-family: 'Montserrat', Arial, sans-serif;
     transition: 0.5s;
     cursor: pointer;
 	border: 1px solid #2b32b2;
@@ -413,100 +489,58 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	border-color: #2b32b2;
 }
 
-/**** Main Body Section ****/
+/* 3. MAIN CONTENT
+ ----------- */
+ 
+/* --- 3.1. Medical Area One --- */
 .medical_area_one{
 	max-width: 1400px;
-	margin-bottom: 9em;
+	margin-bottom: calc(9em - 50px);
 	margin-top: calc(9em - 140px);
 	margin-left: auto;
-	margin-left: auto;
+	margin-right: auto;
 	padding: 0 25px;
 }
 
 .medical_group_one{
 	width: 100%;
-	display: -ms-flexbox;
 	display: flex;
-	-ms-flex-wrap: wrap; 
 	flex-wrap: wrap;
 }
 
 .square_col{
-	-ms-flex: 50%;
-	flex: 50%;
-	width: 50%;
+	flex: 33.33%;
+	width: 33.33%;
 	position: relative;
 	padding: 0 25px;
+}
+
+.square_box{
+	width: 100%;
+	background-color: #f6f6f6;
+	padding: 25px 20px;
+	max-width: 400px;
+	margin: 0 auto 25px;
+	transition: 0.5s;
 	overflow: hidden;
+	cursor: pointer;
 }
 
 .square_col img{
 	vertical-align: middle;
 	width: 100%;
 	height: auto;
-	transition: ease-in-out 0.5s;
 	display: block;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
-}
-
-.medical_content{
-	width: 100%;
-	background-color: #f8f9fa;
-	padding: 27px 20px;
-	margin: 25px 0;
-	transition: 0.5s;
-	overflow: hidden;
-	cursor: pointer;
-}
-
-.top_area{
-	display: -webkit-flex;
-	display: flex;
-	-webkit-flex-direction: column;
-	flex-direction: column;
-	-webkit-justify-content: center;
-	justify-content: column;
-	-webkit-align-items: center;
-	align-items: center;
-}
-
-.top_col_box{
-	max-width: 700px;
-	margin: 0 auto;
-	width: 100%;
-}
-
-.top_col_box h2{
-	color: #2b32b2;
-	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 40px;
-	font-weight: 700;
-	display: block;
-	text-align: left;
-	letter-spacing: 1px;
-	line-height: 1.3em;
-}
-
-.top_col_box p{
-	font-family: 'Roboto' , Arial, sans-serif;
-	font-size: 15px;
-	font-weight: normal;
-	display: block;
-	color: #696969;
-	letter-spacing: 1px;
-	text-align: left;
-	line-height: 1.5em;
-	padding: 12px 0;
 }
 
 .medical_icon{
 	float: left;
-	width: 10%;
+	width: 15%;
 }
 
 .medical_item{
 	float: left;
-	width: 90%;
+	width: 85%;
 	padding-left: 10px;
 }
 
@@ -518,9 +552,20 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	display: block;
 	text-align: left;
 	letter-spacing: 1px;
-	transition: 0.5s;
 	margin-top: 0;
 	line-height: 1.4em;
+}
+
+.medical_item p{
+	font-family: 'Roboto' , Arial, sans-serif;
+	font-size: 15px;
+	font-weight: normal;
+	display: block;
+	color: #696969;
+	letter-spacing: 1px;
+	text-align: left;
+	line-height: 1.5em;
+	padding: 8px 0;
 }
 
 .medical_icon .fas,
@@ -531,15 +576,19 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	display: block;
 }
 
-.medical_item p{
-	font-family: 'Roboto' , Arial, sans-serif;
-	font-size: 14px;
-	font-weight: normal;
-	display: block;
-	color: #696969;
+.area_button > a{
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 13px;
+	font-weight: 600;
 	letter-spacing: 1px;
 	text-align: left;
-	line-height: 1.5em;
+	text-transform: uppercase;
+	display: block;
+	color: #26d0ce;
+	text-decoration: none;
+	width: 120px;
+	transition: 0.5s;
+    cursor: pointer;
 }
 
 .active{
@@ -552,21 +601,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	color: #ffffff;
 }
 
-.area_button > a{
-	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 12px;
-	font-weight: 600;
-	letter-spacing: 1px;
-	text-transform: uppercase;
-	text-align: left;
-	display: block;
-	color: #26d0ce;
-	text-decoration: none;
-	width: 110px;
-	transition: 0.5s;
-    cursor: pointer;
-}
-
 .area_button > a::after{
 	content: "\203A";
 	font-size: 20px;
@@ -575,7 +609,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	display: inline-block;
 	height: auto;
 	padding-left: 5px;
-	top: 2px;
+	top: 1px;
 	position: relative;
 }
 
@@ -587,75 +621,21 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	color: #ffffff;
 }
 
-.inner_crumb{
-	width: 85px;
-	height: 1px;
-	display: block;
-	border-bottom: solid 1px #26d0ce;
-}
-
-.inner_crumb.active{
-	border-bottom: solid 1px #ffffff;
-}
-
-.slick-dots {
-	position: absolute;
-	z-index: 9999;
-	left: 50%;
-	bottom: 0;
-	transform: translateX(-50%);
-	display: flex;
-	justify-content: center;
-	margin: 0;
-	list-style-type: none;
-}
-
-.slick-dots button{
-	display: block;
-	width: 1.3rem;
-	height: 1.3rem;
-	padding: 0;		
-	border: solid 1px #696969;
-	border-radius: 100%;
-	background-color: transparent;
-	text-indent: -9999px;
-}
-
-li.slick-active button{
-	background-color: #26d0ce;
-}
-
-.slick-dots button:hover{
-	background-color: #26d0ce;
-}
-
-.slick-dots li{
-	margin: 6px 0.40rem;
-}
-
+/* --- 3.2. Medical Area Two --- */
 .medical_area_two{
-	width: 100%;
-	min-height: 100px;
-	margin-bottom: 9em;
-	position: relative;
-	padding: 7.5em 25px;
-	background-color: #f6f6f6;
+	max-width: 1200px;
+	margin: 0 auto 9em;
+	padding: 0 25px;
 }
 
 .medical_group_two{
-	max-width: 1400px;
 	width: 100%;
-	margin: 0 auto;
-	display: -ms-flexbox;
 	display: flex;
-	-ms-flex-wrap: wrap; 
 	flex-wrap: wrap;
-	padding-top: 30px;
-	padding-bottom: 30px;
+	padding-top: 40px;
 }
 
-.medical_col{
-	-ms-flex: 33.33%;
+.service_col{
 	flex: 33.33%;
 	width: 33.33%;
 	padding: 0 20px;
@@ -663,7 +643,8 @@ li.slick-active button{
 	position: relative;
 }
 
-.medical_col_box{
+.service_col_box{
+	max-width: 400px;
 	position: relative;
 	text-align: center;
 	display: block;
@@ -672,53 +653,70 @@ li.slick-active button{
 	transition: 0.5s;
 }
 
-.medical_image{
-	overflow: hidden;
-	position: relative;
-	transition: ease-in-out 0.5s;
-}
-
-.medical_info{
-	position: absolute;
-	bottom: 30px;
-	left: 30px;
-	background-color: #ffffff;
-	padding: 25px;
-}
-
-.medical_image_info{
-	overflow: hidden;
-}
-
-.medical_info h3{
-	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 15px;
-	font-weight: 700;
-	display: block;
-	color: #2b32b2;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	text-align: left;
-	transition: 0.5s;
-	margin: 0;
-	line-height: 1.3em;
-}
-
-.medical_image img{
+.service_image img{
 	vertical-align: middle;
 	width: 100%;
 	height: auto;
 	transition: ease-in-out 3.25s;
 	display: block;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
-.medical_image .medical_image_info > img:hover{
-	transform: scale(1.15);
+.service_info{
+	text-align: left;
+	margin-top: 20px;
 }
 
-.medical_head{
-	color: #2b32b2;
+.service_info h3{
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 18px;
+	display: block;
+	font-weight: 600;
+	color: #111111;
+	letter-spacing: 1px;
+	text-align: left;
+	line-height: 1.4em;
+	margin-top: 0;
+}
+
+.service_info h3::before{
+	content: '\2014';
+	padding-right: 0.6em;
+	color: #26d0ce;
+}
+
+.service_info p{
+	font-family: 'Roboto' , Arial, sans-serif;
+	font-size: 15px;
+	font-weight: normal;
+	display: block;
+	color: #696969;
+	letter-spacing: 1px;
+	text-align: left;
+	line-height: 1.5em;
+	padding-left: 32px;
+	padding-right: 4px;
+}
+
+/* --- 3.3. Medical Area Three --- */
+.medical_area_three{
+	width: 100%;
+	margin: 0 0;
+	margin-bottom: calc(9em - 3em);
+	min-height: 400px;
+	padding: 7em 25px 12em;
+	background-color: #2b32b2;
+}
+
+.medical_group_three{
+	max-width: 1400px;
+	width: 100%;
+	margin: auto;
+	position: relative;
+	padding-top: 40px;
+}
+
+.bg_head{
+	color: #ffffff;
 	font-family: 'Montserrat' , Arial, sans-serif;
 	font-size: 40px;
 	font-weight: 700;
@@ -729,63 +727,161 @@ li.slick-active button{
 	margin-top: 0;
 }
 
-.centerpage_btn{
-	max-width: 190px;
+.bg_info{
+	max-width: 600px;
+	margin: 0 auto;
+	font-family: 'Roboto' , Arial, sans-serif;
+	font-size: 16px;
+	font-weight: normal;
 	display: block;
-	margin: 30px auto 0;
+	color: #f2f2f2;
+	letter-spacing: 1px;
+	text-align: center;
+	padding-top: 10px;
+	line-height: 1.5em;
 }
 
-.centerpage_btn a{
-	background-color: #2b32b2;
-	width: 190px;
+.medical_slide{
+	max-width: 700px;
+	position: relative;
+	text-align: center;
+	overflow: hidden;
+	margin: auto;
+	padding-right: 25px;
+}
+
+.medical_dept_box{
+	position: relative;
+	text-align: center;
+	overflow: hidden;
+}
+
+.medical_dept_image{
+	overflow: hidden;
+}
+
+.medical_dept_image > a > img{
+	transition: .5s;
+}
+
+.medical_title{
+	position: absolute;
+	bottom: 25px;
+	left: 20px;
+}
+
+.medical_title h3{
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 15px;
+	font-weight: 600;
+	display: block;
+	color: #ffffff;
+	letter-spacing: 1px;
+	text-align: center;
+	line-height: 1.5em;
+	text-transform: uppercase;
+	background-color: #26d0ce;
+	padding: 10px 16px;
+	margin: 0;
+}
+
+.medical_dept_image img{
+	vertical-align: middle;
+	max-width: 100%;
+	transition: .5s;
+}
+
+.medical_nav{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	margin-bottom: -70px;
+}
+
+.prev_nav,
+.next_nav{
+	font-size: 16px;
+	transition: 0.6s ease;
+	border-radius: 50%;
+	background-color: transparent;
+	width: auto;
+	padding: 10px 18px;
+	color: #ffffff;
+	cursor: pointer;
+	border: solid 1px #ffffff;
+	display: inline-block;
+}
+
+.prev_nav{
+	margin-right: 10px;
+}
+
+.next_nav:hover,
+.prev_nav:hover{
+	background-color: #ffffff;
+	color: #26d0ce;
+	border-color: #ffffff;
+}
+
+.slider_btn{
+	position: absolute;
+	right: 0;
+	max-width: 160px;
+	display: block;
+	padding-top: 25px;
+}
+
+.slider_btn a{
+	background-color: #ffffff;
+	width: 150px;
 	min-height: 30px;
     border: none;
-    color: #ffffff;
-    padding: 15px 16px;
+    color: #2b32b2;
+    padding: 13px 15px;
     text-decoration: none;
 	text-transform: uppercase;
     display: block;
     font-size: 13px;
 	font-weight: 600;
-	font-family: 'Montserrat', Arial sans-serif;
+	font-family: 'Montserrat', Arial, sans-serif;
     transition: 0.5s;
     cursor: pointer;
-	border: 1px solid #2b32b2;
+	border: 1px solid #ffffff;
 	border-radius: 5px;
 	letter-spacing: 1px;
 	text-align: center;
 }
 
-.centerpage_btn a:hover{
+.slider_btn a:hover{
 	background-color: transparent;
-	color: #2b32b2;
+	color: #ffffff;
 }
 
-.medical_area_three{
+/* --- 3.4. Medical Area Four --- */
+.medical_area_four{
 	width: 100%;
-	min-height: 50px;
+	min-height: 150px;
 	height: 100%;
 	margin-bottom: 9em;
+	text-align: center;
 }
 
-.medical_group_three{
+.medical_group_four{
 	width: 100%;
-	display: -ms-flexbox;
 	display: flex;
-	-ms-flex-wrap: wrap; 
 	flex-wrap: wrap;
+	padding-top: 40px;
 }
 
 .cube_col{
 	position: relative;
-	-ms-flex: 25%;
 	flex: 25%;
 	width: 25%;
 	padding: 0;
 }
 
 .blue_bg{
-	background-color: #2b32b2;
+	background-color: #26d0ce;
 }
 
 .cube_col img{
@@ -795,18 +891,14 @@ li.slick-active button{
 }
 
 .cube_area{
-	display: -webkit-flex;
 	display: flex;
-	-webkit-flex-direction: column;
 	flex-direction: column;
-	-webkit-justify-content: center;
 	justify-content: center;
-	-webkit-align-items: center;
 	align-items: center;
 }
 
 .cube_box{
-	padding: 2em 20px;
+	padding: 0 25px;
 	max-width: 500px;
 }
 
@@ -823,7 +915,7 @@ li.slick-active button{
 
 .cube_box p{
 	font-family: 'Roboto' , Arial, sans-serif;
-	font-size: 14px;
+	font-size: 15px;
 	font-weight: normal;
 	display: block;
 	color: #696969;
@@ -838,14 +930,14 @@ li.slick-active button{
 }
 
 .white_color p{
-	color: #a9a9a9;
+	color: #f2f2f2;
 }
 
 .cube_col_button a{
 	background-color: #2b32b2;
 	width: 140px;
 	min-height: 30px;
-	margin: 30px auto 0;	
+	margin: 35px auto 0;	
     border: none;
     color: #ffffff;
     padding: 12px 14px;
@@ -854,7 +946,7 @@ li.slick-active button{
     display: block;
     font-size: 12px;
 	font-weight: 600;
-	font-family: 'Montserrat', Arial sans-serif;
+	font-family: 'Montserrat', Arial, sans-serif;
     transition: 0.5s;
     cursor: pointer;
 	border: 1px solid #2b32b2;
@@ -865,7 +957,7 @@ li.slick-active button{
 
 .right_button a{
 	background-color: #ffffff;
-	color: #2b32b2;
+	color: #26d0ce;
 	border: 1px solid #ffffff;
 }
 
@@ -881,221 +973,99 @@ li.slick-active button{
 	border-color: #ffffff;
 }
 
-.medical_area_four{
-	width: 100%;
-	margin: 0 0 9em;
-	min-height: 400px;
-	padding: 7.5em 25px 12em;
-	background-color: #f6f6f6;
-}
-
-.medical_group_four{
-	max-width: 1200px;
-	width: 100%;
-	margin: auto;
-	position: relative;
-	padding-top: 30px;
-}
-
-.medical_dept_box{
-	position: relative;
-	text-align: center;
-	overflow: hidden;
-	margin: 0 25px;
-}
-
-.medical_dept_image{
-	overflow: hidden;
-}
-
-.medical_dept_image > a > img{
-	transition: .5s;
-}
-
-.medical_title{
-	color: #111111;
-	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 18px;
-	font-weight: 600;
-	display: block;
-	text-align: center;
-	letter-spacing: 1px;
-}
-
-.medical_dept_image img{
-	vertical-align: middle;
-	max-width: 100%;
-	transition: .5s;
-}
-
-.medical_nav{
-	position: absolute;
-	left: 0;
-	bottom: -45px;
-}
-
-.prev_nav,
-.next_nav{
-	font-size: 16px;
-	transition: 0.6s ease;
-	border-radius: 50%;
-	background-color: transparent;
-	width: auto;
-	padding: 10px 17px;
-	color: #26d0ce;
-	cursor: pointer;
-	border: solid 1px #26d0ce;
-	display: inline-block;
-	margin: 0 2px;
-}
-
-.next_nav:hover,
-.prev_nav:hover{
-	background-color: #26d0ce;
-	color: #ffffff;
-	border-color: #26d0ce;
-}
-
-.slider_btn{
-	position: absolute;
-	right: 0;
-	max-width: 160px;
-	display: block;
-}
-
-.slider_btn a{
-	background-color: #2b32b2;
-	width: 150px;
-	min-height: 30px;
-    border: none;
-    color: #ffffff;
-    padding: 13px 15px;
-    text-decoration: none;
-	text-transform: uppercase;
-    display: block;
-    font-size: 13px;
-	font-weight: 600;
-	font-family: 'Montserrat', Arial sans-serif;
-    transition: 0.5s;
-    cursor: pointer;
-	border: 1px solid #2b32b2;
-	border-radius: 5px;
-	letter-spacing: 1px;
-	text-align: center;
-}
-
-.slider_btn a:hover{
-	background-color: transparent;
-	color: #2b32b2;
-}
-
+/* --- 3.5. Medical Area Five --- */
 .medical_area_five{
-	position: relative;
-	display: -webkit-flex;
-	display: flex;
-	-webkit-flex-direction: column;
-	flex-direction: column;
-	-webkit-justify-content: center;
-	justify-content: center;
-	-webkit-align-items: center;
-	align-items: center;
-	min-height: 500px;
-	height: 100%;
-	text-align: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-	margin-bottom: 9em;
-	padding: 7em 0;
+	max-width: 1400px;
+	padding: 0 25px;
+	margin: 0 auto 9em;
 }
 
-.medical_area_five::before {
-	content: '';
-	position: absolute;
-	z-index: 1;
-	top: 0;
-	left: 0;
+.medical_group_five{
 	width: 100%;
-	height: 100%;
-	background: rgba(24, 25, 34, 0.6);
+	display: flex;
+	flex-wrap: wrap;
 }
 
-.medical_group_five h2{
+.medical_wide_col{
+	flex: 33.33%;
+	width: 33.33%;
+	padding: 0 15px;
 	position: relative;
-	z-index: 5;
+}
+
+.medical_box_col{
+	flex: 66.66%;
+	width: 66.66%;
+	padding: 0 15px;
+	position: relative;
+}
+
+.wide_area{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+
+.wide_box{
+	max-width: 500px;
+	margin: 0 auto;
+}
+
+.wide_box h2{
 	font-family: 'Montserrat' , Arial, sans-serif;
 	font-size: 40px;
 	font-weight: 700;
 	display: block;
-	color: #ffffff;
+	color: #2b32b2;
+	text-align: left;
 	letter-spacing: 1px;
-	text-align: center;
-	margin-top: 0;
 	line-height: 1.3em;
 }
 
-.medical_group_five{
-	position: relative;
-	z-index: 5;
-	max-width: 1400px;
-	margin: auto;
-	padding: 0 30px;
-	width: 100%;
+.wide_box p{
+	font-family: 'Roboto' , Arial, sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	display: block;
+	color: #696969;
+	letter-spacing: 1px;
+	text-align: left;
+	padding: 12px 0;
+	line-height: 1.5em;
 }
 
-.client_area{
+.bg_area{
 	width: 100%;
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-wrap: wrap; 
+	display: flex; 
 	flex-wrap: wrap;
-	padding-top: 40px;
-	padding-bottom: 30px;
 }
 
-.client_col{
-	position: relative;
-	-ms-flex: 50%;
+.bg_col{
 	flex: 50%;
 	width: 50%;
+	position: relative;
 }
 
 .left_bg{
-	background-color: #2b32b2;
+	background-color: #ffffff;
 	position: relative;
-	display: -webkit-flex;
+	margin-top: 50px;
 	display: flex;
-	-webkit-flex-direction: column;
 	flex-direction: column;
-	-webkit-justify-content: center;
 	justify-content: center;
-	-webkit-align-items: center;
 	align-items: center;
-	overflow: hidden;
-}
-
-.client_col img{
-	height: auto;
-	max-width: 100%;
-	transition: .5s;
+	right: 5%;
+	height: calc(100% - 50px);
+	padding: 30px 0;
 }
 
 .client_info{
 	display: block;
-	max-width: 450px;
+	max-width: 400px;
 	margin: auto;
 	text-align: center;
-}
-
-.client_info_left{
-	float: left;
-	width: auto;
-}
-
-.client_info_right{
-	float: left;
-	width: auto;
-	padding-left: 10px;
 }
 
 .client_info img{
@@ -1108,7 +1078,7 @@ li.slick-active button{
 	margin-bottom: 14px;
 }
 
-.client_col img{
+.bg_col img{
 	vertical-align: middle;
 	width: 100%;
 	height: auto;
@@ -1121,10 +1091,17 @@ li.slick-active button{
 	font-size: 18px;
 	font-weight: 600;
 	display: block;
-	color: #f2f2f2;
+	color: #26d0ce;
 	letter-spacing: 1px;
-	text-align: left;
-	text-transform: capitalize;
+	text-align: center;
+	line-height: 1.4em;
+}
+
+.quoteblock .fas{
+	font-size: 40px;
+	color: #26d0ce;
+	text-align: center;
+	padding-bottom: 30px;
 }
 
 .client_comment{
@@ -1134,98 +1111,84 @@ li.slick-active button{
 
 .client_title{
 	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 14px;
+	font-size: 15px;
 	font-weight: 600;
 	display: block;
-	color: #a9a9a9;
+	color: #111111;
 	letter-spacing: 1px;
-	text-align: left;
+	text-align: center;
 	text-transform: uppercase;
+	line-height: 1.4em;
 }
 
-.client_comment q{
-	font-family: 'Roboto' , Arial, sans-serif;
-	font-size: 14px;
+.client_comment p{
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 15px;
 	font-weight: normal;
 	display: block;
-	color: #f2f2f2;
+	color: #696969;
 	letter-spacing: 1px;
-	text-align: left;
-	max-width: 450px;
+	text-align: center;
+	max-width: 400px;
 	margin: auto;
+	line-height: 1.5em;
 }
 
-.client_col .slick-slider {
-	width: 50%;
+.construct_box_col .slick-slider {
+	width: 100%;
 	max-width: 750px;
 }
 
-.nextbtn,
-.prevbtn{
-	font-size: 16px;
-	transition: 0.6s ease;
-	border-radius: 0 3px 3px 0;
-	background-color: transparent;
-	width: auto;
-	padding: 14px 20px;
-	color: #ffffff;
-	cursor: pointer;
-	border: solid 1px #ffffff;	
-}
-
-.nextbtn{
+.slidenav{
 	position: absolute;
-	top: 50%;
-	right: 0;
-	transform: translateY(-50%);
-	z-index: 2;
-}
-
-.prevbtn{
-	position: absolute;
-	top: 50%;
+	bottom: 0;
 	left: 0;
-	transform: translateY(-50%);
+	z-index: 9999;
+	margin-left: 15px;
 }
 
-.nextbtn:hover,
-.prevbtn:hover{
-	background-color: #ffffff;
+.prev_slide,
+.next_slide{
+	font-size: 20px;
+	transition: 0.6s ease;
+	display: inline-block;
+	overflow: hidden;
 	color: #2b32b2;
-	border-color: #ffffff;
+	cursor: pointer;
 }
 
+.prev_slide{
+	margin-right: 20px;
+}
+
+.next_slide:hover,
+.prev_slide:hover{
+	color: #26d0ce;
+}
+
+/* --- 3.6. Medical Area Six --- */
 .medical_area_six{
 	width: 100%;
 	margin: 0 0 9em;
 	min-height: 400px;
-	padding: 7.5em 25px;
+	padding: 7em 25px;
 	background-color: #f6f6f6;
 }
 
 .medical_group_six{
-	max-width: 1400px;
+	max-width: 1200px;
 	width: 100%;
 	margin: 0 auto;
-	display: -ms-flexbox;
 	display: flex;
-	-ms-flex-wrap: wrap; 
 	flex-wrap: wrap;
+	padding-top: 40px;
+	padding-bottom: 40px;
 }
 
 .blog_col{
-	-ms-flex: 33.33%;
 	flex: 33.33%;
 	width: 33.33%;
 	padding: 0 25px;
-}
-
-.blog_col img{
-	vertical-align: middle;
-	width: 100%;
-	height: auto;
-	transition: 0.5s;
-	display: block;
 }
 
 .blog_box{
@@ -1233,12 +1196,14 @@ li.slick-active button{
 	max-width: 400px;
 	margin: auto;
 	text-align: center;
-	padding-bottom: 25px;
+	padding: 25px 20px;
 	overflow: hidden;
+	background-color: #ffffff;
 }
 
 .blog_content{
 	padding: 10px;
+	text-align: left;
 }
 
 .blog_date{
@@ -1254,18 +1219,6 @@ li.slick-active button{
 	width: 250px;
 }
 
-.blog_image{
-	overflow: hidden;
-}
-
-.blog_image > a > img{
-	transition: .5s;
-}
-
-.blog_image > a > img:hover{
-	transform: scale(1.15);
-}
-
 .blog_title a{
 	font-family: 'Montserrat' , Arial, sans-serif;
 	font-size: 20px;
@@ -1276,36 +1229,50 @@ li.slick-active button{
 	text-align: left;
 	text-decoration: none;
 	transition: 0.5s;
-	line-height: 1.3em;
+	line-height: 1.4em;
 }
 
 .blog_title a:hover{
 	opacity: 0.6;
 }
 
-.blog_btn a{
-	width: 140px;	
+a.blog_btn:hover{
+	color: #111111;
+}
+
+a.blog_btn{
+	width: 120px;	
     border: none;
     color: #2b32b2;
+	padding-top: 10px;
     text-decoration: none;
 	text-transform: uppercase;
-    display: block;
-    font-size: 12px;
+    display: inline-block;
+    font-size: 13px;
 	font-weight: 600;
-	font-family: 'Montserrat', Arial sans-serif;
+	font-family: 'Montserrat', Arial, sans-serif;
     transition: 0.5s;
     cursor: pointer;
 	letter-spacing: 1px;
 	text-align: left;
+	line-height: 1.2em;
 }
 
-.blog_btn a:hover{
-	color: #111111;
+a.blog_btn::after{
+	content: "\203A";
+	font-size: 20px;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	height: auto;
+	padding-left: 5px;
+	top: 1px;
+	position: relative;
 }
 
 .blog_content p{
 	font-family: 'Roboto' , Arial, sans-serif;
-	font-size: 14px;
+	font-size: 15px;
 	font-weight: normal;
 	display: block;
 	color: #696969;
@@ -1315,113 +1282,78 @@ li.slick-active button{
 	line-height: 1.5em;
 }
 
+/* --- 3.7. Medical Area Seven --- */
 .medical_area_seven{
-	position: relative;
-	display: -webkit-flex;
-	display: flex;
-	-webkit-flex-direction: column;
-	flex-direction: column;
-	-webkit-justify-content: center;
-	justify-content: center;
-	-webkit-align-items: center;
-	align-items: center;
-	min-height: 400px;
-	height: 100%;
-	text-align: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-	margin-bottom: 9em;
-	padding: 7em 0;
-}
-
-.medical_area_seven::before {
-	content: '';
-	position: absolute;
-	z-index: 1;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: rgba(24, 25, 34, 0.6);
-}
-
-.medical_group_seven{
-	position: relative;
-	z-index: 9;
-	width: 100%;
-	max-width: 1400px;
-	margin: auto;
+	max-width: 1280px;
+	margin: 0 auto 7em;
 	padding: 0 25px;
 }
 
-.form_area{
+.medical_group_seven{
 	width: 100%;
-	display: -ms-flexbox;
 	display: flex;
-	-ms-flex-wrap: wrap; 
 	flex-wrap: wrap;
 }
 
 .medical_form_col{
 	position: relative;
-	-ms-flex: 50%;
 	flex: 50%;
 	width: 50%;
 	padding: 0 20px;
 }
 
-.first_left{
-	display: -webkit-flex;
+.form_area{
 	display: flex;
-	-webkit-flex-direction: row;
 	flex-direction: row;
-	-webkit-justify-content: center;
 	justify-content: flex-start;
-	-webkit-align-items: center;
 	align-items: center;
 }
 
-.first_right{
-	display: -webkit-flex;
-	display: flex;
-	-webkit-flex-direction: row;
-	flex-direction: row;
-	-webkit-justify-content: center;
-	justify-content: flex-end;
-	-webkit-align-items: center;
-	align-items: center;
+.form_col_box{
+	max-width: 600px;
+	text-align: center;
 }
 
-.form_box h2{
+.form_col_box h2{
 	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 40px;
+	font-size: 30px;
 	font-weight: 700;
-	display: block;
-	color: #ffffff;
+	letter-spacing: 1px;
 	text-align: left;
-	letter-spacing: 1px;
-	line-height: 1.3em;
+	display: block;
+	color: #2b32b2;
+	line-height: 1.4em;
+	padding-bottom: 14px;
 }
 
-.form-panel{
+.form-box{
 	text-align: center;
 	display: block;
-	max-width: 650px;
+	max-width: 600px;
+	padding: 0 25px;
 	margin: auto;
-	padding: 35px;
-	background-color: #ffffff;
+	background: #ffffff;
 }
 
-.form-panel h3{
+.inner_list > ul > li{
 	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 20px;
-	font-weight: 600;
-	letter-spacing: 1px;
-	text-transform: capitalize;
-	text-align: center;
+	font-size: 14px;
+	font-weight: 500;
 	display: block;
 	color: #111111;
+	text-transform: capitalize;
+	text-align: left;
+	padding: 8px 0;
+	letter-spacing: 1px;
+}
+
+.inner_list > ul > li::before{
+	font-family: 'Font Awesome 5 Free';
+	content: "\f00c";
+	font-weight: 900;
+	font-size: 15px;
+	padding-right: 12px;
+	color: #26d0ce;
 }
 
 .form-row {
@@ -1429,83 +1361,106 @@ li.slick-active button{
 	display: flex;
 }
 
-.form-panel input[type="text"],
-.form-panel input[type="email"],
-.form-panel input[type="password"] {
+.form-box input[type="text"],
+.form-box input[type="email"]{
 	font-family: 'Montserrat' , Arial, sans-serif;
 	font-size: 13px;
-	padding: 4px 20px;
+	padding: 7px 0;
+	padding-left: 6px;
 	height: 40px;
-	border: 1px solid #333333;
-	margin: 16px 10px;
-	border-radius: 3px;
+	width: auto;
+	border: none;
+	margin: 10px;
+	border-bottom: solid 1px #111111;
 	flex-grow: 1;
 	letter-spacing: 1px;
+	transition: 0.5s;
+	background: #ffffff;
 }
 
-.form-panel input[type="text"]:focus,
-.form-panel input[type="email"]:focus,
-.form-panel input[type="password"]:focus{
-	border: 1px solid #111111;
+.form-box textarea{
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 13px;
+	padding: 7px 20px;
+	border: none;
+	width: auto;
+	min-height: 150px;
+	margin: 10px;
+	border-bottom: solid 1px #111111;
+	flex-grow: 1;
+	letter-spacing: 1px;
+	transition: 0.5s;
+	background: #ffffff;
 }
 
-.form-panel input[type="submit"]{
-	display: block;
-	margin: 18px 10px;
-	width: 100%;
-	padding: 10px 20px;
+.form-box input[type="text"]:focus,
+.form-box input[type="email"]:focus,
+.form-box input[type="password"]:focus,
+.form-box textarea:focus{
+	border-color: #ffffff;
+}
+
+.form-box input[type="submit"]{
+	margin: 20px 0 0;
+	width: calc(100% - 20px);
+	padding: 10px 0;
 	text-align: center;
 	font-family: 'Montserrat' , Arial, sans-serif;
 	font-size: 16px;
 	font-weight: normal;
 	color: #ffffff;
-	border-radius: 3px;
+	border-radius: 5px;
 	letter-spacing: 1px;
 	background-color: #2b32b2;
 	border: solid 1px #2b32b2;
 	transition: 0.5s;
 }
 
-.form-panel input[type="submit"]:hover{
+.form-box input[type="submit"]:hover{
 	background-color: #111111;
 	color: #ffffff;
-	border: solid 1px #111111;
+	border-color: #111111;
 }
 
-/**** Footer Section ****/
+/* 4. FOOTER
+ ----------- */
 .footer{
 	width: 100%;
 	min-height: 350px;
 	position: relative;
 	clear: both;
 	height: 100%;
-	background-color: #2b32b2;
+	background-color: #26d0ce;
 }
 
 .footer_area{
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 0 25px;
-	display: -ms-flexbox;
 	display: flex;
-	-ms-flex-wrap: wrap; 
 	flex-wrap: wrap;
 }
 
 .footer_col{
-	-ms-flex: 25%;
 	flex: 25%;
 	width: 25%;
 	padding: 0 20px;
+	max-width: 300px;
 }
 
 .footer_col{
-	padding-top: 3.5em;
+	padding-top: 4.5em;
+}
+
+a.footer-brand img{
+	max-width: 200px;
+	height: auto;
+	display: block;
 }
 
 .footer_box > h3 > a{
 	font-family: 'Montserrat', Arial, sans-serif;
-	font-size: 20px;
+	font-size: 22px;
 	font-weight: 700;
 	letter-spacing: 1px;
 	text-transform: uppercase;
@@ -1521,60 +1476,36 @@ li.slick-active button{
 	letter-spacing: 1px;
 	color: #ffffff;
 	text-align: left;
-	padding: 10px 0;
-	line-height: 1.6em;
+	padding: 20px 0;
+	line-height: 1.5em;
 }
 
 .footer_social{
-	padding-top: 20px;
+	margin: 12px 0;
 }
 
 .footer_social .fab,
 .footer_social .fa{
-	font-size: 14px;
+	font-size: 16px;
 	color: #ffffff;
 	text-align: left;
+	transition: 0.5s;
 }
 
 .footer_social > a{
 	padding-right: 12px;
 }
 
-.footer_social > a:hover{
-	opacity: 0.6;
+.footer_social .fab:hover,
+.footer_social .fa:hover{
+	color: #111111;
 }
 
 .final{
-	width: 100%;
-}
-
-.address_box{
-	margin-top: 30px;
-}
-
-.address_name{
-	font-family: 'Montserrat', Arial, sans-serif;
-	font-size: 13px;
-	font-weight: normal;
-	letter-spacing: 1px;
-	text-transform: capitalize;
-	color: #ffffff;
-	display: block;
-}
-
-.address_box .fas{
-	color: #ffffff;
-	padding-right: 12px;
-}
-
-.address_phone{
-	font-family: 'Montserrat', Arial, sans-serif;
-	font-size: 13px;
-	font-weight: normal;
-	letter-spacing: 1px;
-	text-transform: capitalize;
-	color: #ffffff;
-	display: block;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
 }
 
 .footer_col > h4{
@@ -1602,13 +1533,15 @@ li.slick-active button{
 }
 
 .footer_col > ul > li a:hover{
-	opacity: 0.6;
+	color: #111111;
 }
 
 .details{
 	width: 100%;
-	padding-top: 40px;
+	padding-top: 35px;
 	padding-bottom: 10px;
+	margin-top: 35px;
+	border-top: solid 1px #e0e0e0;
 }
 
 .details p{
@@ -1620,46 +1553,74 @@ li.slick-active button{
 	text-align: center;
 }
 
+/* 5. RESPONSIVE
+ ----------- */
 @media only screen and (max-width: 1024px){
 	.square_col{
-		-ms-flex: 100%;
 		flex: 100%;
 		width: 100%;
-		max-width: 750px;
-		margin: auto;
-		padding: 0;
+		clear: both;
+		max-width: 400px;
+		margin-bottom: 40px;
 	}
 	
-	.top_col_box{
-		padding-bottom: 40px;
+	.medical_group_one{
+		max-width: 400px;
+		margin: auto;
 	}
 	
 	.cube_col{
-		-ms-flex: 50%;
 		flex: 50%;
 		width: 50%;
 	}
 	
-	.client_col{
-		-ms-flex: 100%;
+	.medical_wide_col,
+	.medical_box_col{
 		flex: 100%;
 		width: 100%;
+		max-width: 700px;
 		margin: auto;
-		max-width: 750px;
 	}
 	
-	.client_col .slick-slider {
-		width: 100%;
-		max-width: 750px;
-		padding: 5em 30px;
+	.medical_box_col{
+		margin-top: 35px;
 	}
-}
+	
+	.wide_box p{
+		padding-bottom: 60px;
+	}
+	
+	.blog_col{
+		flex: 50%;
+		width: 50%;
+		margin-bottom: 40px;
+	}
+	
+	.medical_form_col{
+		flex: 100%;
+		width: 100%;
+		padding: 0;
+	}
+	
+	.form_col_box{
+		margin: auto;
+		margin-bottom: 30px;
+	}
+	
+	.header__content{
+		height: auto;
+	}
 
+	.slide__content{
+		height: auto;
+	}
+} 
+ 
 @media only screen and (max-width: 992px){
 	nav.navbar.bootsnav .navbar-toggle{
-        background: transparent !important;
-        color: #333333;
-		font-size: 25px !important;
+        background: transparent;
+		color: #111111;
+		font-size: 25px;
 	}
 	
 	.head_btn{	
@@ -1694,11 +1655,23 @@ li.slick-active button{
         content: "\f105";
     }
 	
+	nav.navbar.bootsnav ul.nav.navbar-right .dropdown-menu .dropdown-menu{
+		left: 0;
+	}
+	
+	nav.navbar.bootsnav ul.navbar-right li.dropdown ul.dropdown-menu li.dropdown.on > a.dropdown-toggle:before{
+		 content: "\f107";
+	}
+	
+	nav.navbar.bootsnav ul.dropdown-menu.megamenu-content .col-menu{
+		border-left: none;
+		border-right: none;
+	}
+	
 	.left_info,
 	.right_info,
 	.left_sub,
 	.right_sub{
-		-ms-flex: 100%;
 		flex: 100%;
 		width: 100%;
 		text-align: center;
@@ -1710,8 +1683,7 @@ li.slick-active button{
 	}
 	
 	.top_sub,
-	.left_info a,
-	.top_align{
+	.left_info a{
 		text-align: center;
 	}
 	
@@ -1725,41 +1697,13 @@ li.slick-active button{
 		padding-top: 25px;
 	}
 	
-	.medical_col{
-		-ms-flex: 100%;
+	.service_col{
 		flex: 100%;
 		width: 100%;
-		padding: 0 0 25px;
-	}
-	
-	.blog_col{
-		-ms-flex: 100%;
-		flex: 100%;
-		width: 100%;
-		padding: 0;
-	}
-	
-	.medical_form_col{
-		-ms-flex: 100%;
-		flex: 100%;
-		width: 100%;
-	}
-	
-	.medical_group_seven,
-	.first_right{
-		padding: 0;
-	}
-	
-	.form-panel{
-		padding: 25px;
-	}
-	
-	.form_box{
-		padding-bottom: 45px;
+		margin-bottom: 40px;
 	}
 	
 	.footer_col{
-		-ms-flex: 50%;
 		flex: 50%;
 		width: 50%;
 	}
@@ -1771,41 +1715,52 @@ li.slick-active button{
 	}
 	
 	.medical_head,
-	.top_col_box h2,
-	.medical_group_five h2,
-	.form_box h2{
+	.bg_head,
+	.wide_box h2{
 		font-size: 30px;
 	}
 	
 	.cube_col{
-		-ms-flex: 100%;
 		flex: 100%;
 		width: 100%;
 	}
 	
 	.cube_box{
-		padding: 3.5em 20px;
+		padding: 4em 20px;
 	}
 	
-	.medical_dept_box{
-		margin: 0 10px;
-	}
-	
-	.footer_col{
-		-ms-flex: 100%;
+	.bg_col{
 		flex: 100%;
 		width: 100%;
 	}
-}	
+	
+	.blog_col{
+		flex: 100%;
+		width: 100%;
+	}
+	
+	.footer_col{
+		flex: 100%;
+		width: 100%;
+	}
+}
 
 @media only screen and (max-width: 420px){
-	.medical_icon{
-		width: 15%;
+	.square_col,
+	.service_col,
+	.medical_box_col,
+	.blog_col,
+	.form-box{
+		padding: 0;
 	}
-
-	.medical_item{
-		width: 85%;
-		padding-left: 15px;
+	
+	.medical_slide{
+		padding-right: 10px;
+	}
+	
+	.left_bg{
+		right: 0;
+		margin-top: 20px;
 	}
 	
 	.form-row {
@@ -1814,7 +1769,8 @@ li.slick-active button{
 }
 
 @media only screen and (max-width: 360px){
-	.medical_content{
-		padding: 35px 20px;
+	.medical_area_three{
+		padding-right: 15px;
+		padding-left: 15px;
 	}
 }
