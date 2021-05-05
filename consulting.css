@@ -2398,6 +2398,10 @@ a.footer-brand img{
 		padding-top: 25px;
 	}
 	
+	.consult_area_four{
+		max-width: 700px;
+	}
+	
 	.price_col{
 		flex: 100%;
 		width: 100%;
