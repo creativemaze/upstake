@@ -611,7 +611,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 .seo_col img{
 	vertical-align: middle;
 	width: 100%;
-	transition: .5s;
+	height: auto;
 }
 
 .col_area{
@@ -1702,9 +1702,17 @@ a.footer-brand img{
 	.seo_col{
 		flex: 100%;
 		width: 100%;
-		max-width: 750px;
+		max-width: 500px;
 		margin: auto;
 		padding: 0;
+	}
+	
+	.top_col{
+		padding-bottom: 40px;
+	}
+	
+	.bottom_col{
+		padding-top: 40px;
 	}
 	
 	.seo_square_col{
