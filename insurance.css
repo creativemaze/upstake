@@ -1,16 +1,44 @@
-/*
-*	Template: Insurance
-*	Version: v1.0;
-*/
+/*------------------------------------------------------------------
+Main Stylesheet
 
-/**	General Styles **/
+Project:    Highpoint Corporate Template
+Version:    1.0
+Last change:    05/05/2021
+Author:    Themewiz
+Primary use:    Insurance
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. General
+2. Header
+	2.1. Logo & Navigation
+	2.2. Header Content
+3. Main Content
+	3.1. Insurance Area One 
+	3.2. Insurance Area Two
+	3.3. Insurance Area Three
+	3.4. Insurance Area Four
+	3.5. Insurance Area Five
+	3.6. Insurance Area Six
+	3.7. Insurance Area Seven
+	3.8. Insurance Area Eight
+	3.9. Insurance Area Nine
+	 
+4. Footer
+5. Responsive
+-------------------------------------------------------------------*/
+
+/* 1. GENERAL
+ ----------- */
 body,
 html{
-	margin: 0;
-	padding: 0;
-}
-
-body{
+	width:100%;
+    height: auto;
+    margin:0;
+    padding:0;
+    overflow-x: hidden;
 	font-family: sans-serif;
 }
 
@@ -25,10 +53,9 @@ ul{
 }
 
 .page_area{
-	width: 100% !important;
+	width: 100%;
 }
 
-/* Page Loader */
 .js .loading::before {
 	content: '';
 	position: fixed;
@@ -63,35 +90,59 @@ ul{
 	}
 }
 
-/**** Header & Menu Section ****/
-nav.navbar .navbar-brand{
+.insurance_head{
+	color: #111111;
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 40px;
+	font-weight: 700;
+	display: block;
+	text-align: center;
+	letter-spacing: 1px;
+	line-height: 1.3em;
 	margin-top: 0;
-	max-width: 350px;
-	display: inline-block
 }
 
+.insurance_info{
+	max-width: 600px;
+	margin: 0 auto;
+	font-family: 'Roboto' , Arial, sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	display: block;
+	color: #696969;
+	letter-spacing: 1px;
+	text-align: center;
+	padding: 10px 10px 0;
+	line-height: 1.5em;
+}
+
+/* 2. HEADER
+ ----------- */
+ 
+/* --- 2.1. Logo & Navigation --- */
 .navbar-header h2{
 	font-family: 'Montserrat', Arial, sans-serif;
-	font-size: 20px;
+	font-size: 22px;
 	font-weight: 700;
 	letter-spacing: 1px;
 	text-transform: uppercase;
 }
 
-.navbar-header a{
+.navbar-header a.navbar-brand{
 	text-decoration: none;
 	color: #111111 !important;
+	transition: 0.5s;
 }
 
- nav.navbar .navbar-brand img.logo{
-   max-width: 300px;
+nav.navbar .navbar-brand img.logo{
+   max-width: 200px;
    height: auto;
-   display: inline-block
+   display: block;
 }
 
 nav.navbar.bootsnav{
-	background-color: transparent !important;
-	border-bottom: none !important;
+	background-color: transparent;
+	border-bottom: none ;
 	z-index: 9999;
 }
 
@@ -108,10 +159,11 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu{
 nav.navbar.bootsnav ul.nav > li > a{
     color: #111111;
     font-family: 'Montserrat' , Arial, sans-serif;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 700;
     text-transform: uppercase;
 	letter-spacing: 1px;
+	border-top: none;
 }
 
 nav.navbar.bootsnav ul.navbar-right li.dropdown ul.dropdown-menu li a{
@@ -126,15 +178,38 @@ nav.navbar.bootsnav ul.navbar-right li.dropdown ul.dropdown-menu li a{
 	transition: 0.5s;
 }
 
+nav.navbar.bootsnav ul.navbar-right li.dropdown ul.dropdown-menu li a:hover{
+	color: #C779D0;
+}
+
+nav.navbar.bootsnav li.dropdown ul.dropdown-menu{
+	left: 0;
+}
+
  nav.navbar.bootsnav ul.nav > li.dropdown > a.dropdown-toggle:after{
     font-family: 'Font Awesome 5 Free';
     content: "\f107";
 	font-size: 12px;	
 }
 
- nav.navbar.bootsnav ul.dropdown-menu.megamenu-content .col-menu{
-    border-left: none;
-    border-right: none;
+nav.navbar.bootsnav ul.navbar-right li.dropdown ul.dropdown-menu li.dropdown > a.dropdown-toggle:before{
+    font-family: 'Font Awesome 5 Free';
+    float: right;
+    content: "\f105";
+    margin-top: 0;
+}
+
+nav.navbar.bootsnav ul.nav.navbar-right .dropdown-menu .dropdown-menu{
+    left: 200px;
+}
+
+nav.navbar.bootsnav li.dropdown ul.dropdown-menu ul.dropdown-menu{
+    top: 2px;
+}
+
+nav.navbar.bootsnav ul.dropdown-menu.megamenu-content .col-menu{
+    border-left: solid 1px #e0e0e0;
+    border-right: solid 1px #e0e0e0;
 }
 
 nav.navbar.bootsnav ul.dropdown-menu.megamenu-content .content ul.menu-col li a{
@@ -146,6 +221,10 @@ nav.navbar.bootsnav ul.dropdown-menu.megamenu-content .content ul.menu-col li a{
 	letter-spacing: 1px;
 }
 
+nav.navbar.bootsnav ul.dropdown-menu.megamenu-content .content ul.menu-col li a:hover{
+	color: #C779D0;
+}
+
 nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
     font-size: 14px;
     font-weight: 600;
@@ -155,12 +234,19 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	letter-spacing: 1px;
 }
 
+.attr-nav > ul > li.dropdown ul.dropdown-menu{
+    margin-top: 0;
+    margin-left: 55px;
+    width: 250px;
+    left: -250px !important;
+}
+
 .attr-nav > ul > li > a{
-    color: #333333;
+    color: #111111;
 	padding-top: 30px;
 	margin-left: -12px;
 	position: relative;
-	left: -175px;
+	left: -160px;
 }
 
 .top-search ::placeholder{
@@ -170,6 +256,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	letter-spacing: 1px;
 }
 
+/* --- 2.2. Header Content --- */
 .top_box{
 	height: 50px;
 	overflow-y: auto;
@@ -178,18 +265,15 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .top_info{
 	width: 100%;
-	display: -ms-flexbox;
 	display: flex;
-	-ms-flex-wrap: wrap; 
 	flex-wrap: wrap;
-	max-width: 1200px;
+	max-width: 1400px;
 	margin: auto
 }
 
 .left_info,
 .right_info{
 	position: relative;
-	-ms-flex: 50%;
 	flex: 50%;
 	width: 50%;
 	padding-top: 15px;
@@ -238,22 +322,18 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .sub_width{
 	width: 100%;
-	display: -ms-flexbox;
 	display: flex;
-	-ms-flex-wrap: wrap; 
 	flex-wrap: wrap;
 	text-align: center;
 }
 
 .left_sub{
-	-ms-flex: 50%;
 	flex: 50%;
 	width: 50%;
 	text-align: left;
 }
 
 .right_sub{
-	-ms-flex: 50%;
 	flex: 50%;
 	width: 50%;
 	text-align: center;
@@ -301,17 +381,17 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .head_btn a{
 	background-color: #111111;
-	width: 160px;
+	width: 150px;
 	min-height: 30px;
     border: none;
     color: #ffffff;
-    padding: 13px 18px;
+    padding: 12px 14px;
     text-decoration: none;
 	text-transform: uppercase;
     display: block;
     font-size: 12px;
 	font-weight: 600;
-	font-family: 'Montserrat', Arial sans-serif;
+	font-family: 'Montserrat', Arial, sans-serif;
     transition: 0.5s;
     cursor: pointer;
 	border: 1px solid #111111;
@@ -326,23 +406,19 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .header__content{
-	display: -webkit-flex;
 	display: flex;
-	-webkit-flex-direction: column;
 	flex-direction: row;
-	-webkit-justify-content: center;
 	justify-content: flex-end;
-	-webkit-align-items: center;
 	align-items: center;
 	height: 100vh;
-	min-height: 700px;
+	min-height: 750px;
 }
 
 .slide__content{
 	position: relative;
 	z-index: 1;
 	height: 100vh;
-	min-height: 700px;
+	min-height: 750px;
 	text-align: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -353,12 +429,16 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	max-width: 600px;
 	display: block;
 	position: relative;
-	padding: 35px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
 	z-index: 9;
 	background: rgba(255,255,255,0.7);
-	min-height: 350px;
-	margin: 0 30px;
-	text-align: left;
+	min-height: 400px;
+	margin-right: 5vw;
+	padding-left: 35px;
+	padding-right: 15px;
 }
 
 .header-title__main{
@@ -370,12 +450,12 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	text-align: left;
 	display: block;
 	color: #111111;
-	margin-top: 15px
+	margin-top: 0;
 }
 
 .header-title__sub{
 	font-family: 'Roboto' , Arial, sans-serif;
-	font-size: 15px;
+	font-size: 16px;
 	font-weight: normal;
 	display: block;
 	color: #696969;
@@ -383,11 +463,12 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	letter-spacing: 1px;
 	text-align: left;
 	padding: 25px 0;
+	max-width: 500px;
 }
 
 .buttoncol a{
 	background-color: #C779D0;
-	width: 150px;
+	width: 160px;
 	min-height: 35px;
     border: none;
     color: #ffffff;
@@ -397,7 +478,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
     display: block;
     font-size: 12px;
 	font-weight: 600;
-	font-family: 'Montserrat', Arial sans-serif;
+	font-family: 'Montserrat', Arial, sans-serif;
     transition: 0.5s;
     cursor: pointer;
 	border: 1px solid #C779D0;
@@ -411,10 +492,10 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	border-color: #111111;
 }
 
-.slick-dots {
+.slick-dots{
 	position: absolute;
 	z-index: 9999;
-	left: 6px;
+	left: 15px;
 	top: 50%;
 	transform: translateY(-50%);
 	display: flex;
@@ -447,9 +528,12 @@ li.slick-active button{
 	margin: 9px 0.40rem;
 }
 
-/**** Main Body Section ****/
+/* 3. MAIN CONTENT
+ ----------- */
+ 
+/* --- 3.1. Insurance Area One --- */
 .insurance_area_one{
-	max-width: 1400px;
+	max-width: 1280px;
 	margin: 9em auto 9em;
 	padding: 0 25px;
 }
@@ -457,32 +541,28 @@ li.slick-active button{
 .insurance_group_one,
 .list_area{
 	width: 100%;
-	display: -ms-flexbox;
 	display: flex;
-	-ms-flex-wrap: wrap; 
 	flex-wrap: wrap;
 }
 
+.insurance_wide_col{
+	flex: 50%;
+	width: 50%;
+	padding: 0 15px;
+}
+
 .insurance_box_col{
-	-ms-flex: 25%;
 	flex: 25%;
 	width: 25%;
 	padding: 0 15px;
 }
 
 .list_col{
-	-ms-flex: 50%;
 	flex: 50%;
 	width: 50%;
+	padding: 0;
 	max-width: 350px;
 	margin: auto;
-}
-
-.insurance_wide_col{
-	-ms-flex: 50%;
-	flex: 50%;
-	width: 50%;
-	padding: 0 15px;
 }
 
 .insurance_box_col img{
@@ -494,9 +574,24 @@ li.slick-active button{
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
+.wide_area{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
 .wide_box{
-	max-width: 750px;
+	max-width: 600px;
 	margin: auto;
+}
+
+.bottom_cover{
+	padding-top: 20px;
+}
+
+.top_cover{
+	padding-bottom: 20px;
 }
 
 .wide_box h2{
@@ -507,12 +602,11 @@ li.slick-active button{
 	color: #111111;
 	text-align: left;
 	line-height: 1.3em;
-	margin-top: 0;
 }
 
 .wide_box p{
 	font-family: 'Roboto' , Arial, sans-serif;
-	font-size: 15px;
+	font-size: 16px;
 	font-weight: normal;
 	display: block;
 	color: #696969;
@@ -559,12 +653,13 @@ li.slick-active button{
     display: block;
     font-size: 12px;
 	font-weight: 600;
-	font-family: 'Montserrat', Arial sans-serif;
+	font-family: 'Montserrat', Arial, sans-serif;
     transition: 0.5s;
     cursor: pointer;
 	border: 1px solid #C779D0;
 	letter-spacing: 1px;
 	text-align: center;
+	margin-top: 10px;
 }
 
 .insurance_col_button a:hover{
@@ -573,237 +668,130 @@ li.slick-active button{
 	border-color: #111111;
 }
 
-.insurance_head{
-	color: #111111;
-	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 40px;
-	font-weight: 700;
-	display: block;
-	text-align: center;
-	letter-spacing: 1px;
-	line-height: 1.3em;
-	margin-top: 0;
-}
-
-.insurance_info{
-	max-width: 600px;
-	margin: 0 auto;
-	font-family: 'Roboto' , Arial, sans-serif;
-	font-size: 15px;
-	font-weight: normal;
-	display: block;
-	color: #696969;
-	letter-spacing: 1px;
-	text-align: center;
-	padding-top: 10px;
-	line-height: 1.5em;
-}
-
+/* --- 3.2. Insurance Area Two --- */
 .insurance_area_two{
+	position: relative;
+	min-height: 450px;
+	height: 100%;
+	margin-bottom: 9em;
 	width: 100%;
-	margin: 0 0 9em;
-	min-height: 400px;
-	padding: 7.5em 25px;
-	background-color: #f6f6f6;
+	background-color: #C779D0;
+	padding: 7em 0;
 }
 
 .insurance_group_two{
 	max-width: 1400px;
-	width: 100%;
 	margin: 0 auto;
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-wrap: wrap; 
-	flex-wrap: wrap;
-	padding-top: 40px;
-	padding-bottom: 40px;
+	padding: 0 25px;
 }
 
-.insurance_product_col{
-	-ms-flex: 33.33%;
+.bg_area,
+.info_area{
+	width: 100%;
+	display: flex; 
+	flex-wrap: wrap;
+}
+
+.bg_col{
 	flex: 33.33%;
 	width: 33.33%;
-	padding: 0 25px;
+	padding: 0 15px;
 	position: relative;
 }
 
-.insurance_product_box{
-	max-width: 400px;
-	margin: auto;
+.product_col{
+	flex: 25%;
+	width: 25%;
+	padding: 0 15px;
 	position: relative;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
-	text-align: center;
-	overflow: hidden;
-	transition: .5s;
 }
 
-.product_heading{
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
-	position: absolute;
-	bottom: 0;
-	margin-bottom: -25px;
-	left: 50%;
-	transform: translateX(-50%);
-	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 20px;
-	font-weight: 700;
-	display: block;
-	color: #111111;
-	letter-spacing: 1px;
-	text-align: center;
-	background-color: #ffffff;
-	padding: 15px 25px;
-}
-
-.lastword{
-	color: #C779D0;
-}
-
-.insurance_image{
-	overflow: hidden;
-}
-
-.insurance_product_box:hover .insurance_image > a > img:hover{
-	transform: scale(1.15);
-}
-
-.insurance_product_col img{
-	vertical-align: middle;
-	max-width: 100%;
-	transition: 3.25s;
-}
-
-.space_level{
-	padding-top: 80px;
-}
-
-.insurance_area_three{
+.slide_col{
+	flex: 75%;
+	width: 75%;
+	padding: 0 15px;
 	position: relative;
-	display: -webkit-flex;
+}
+
+.info_col{
+	flex: 66.66%;
+	width: 66.66%;
+	padding: 0 15px;
+	position: relative;
+}
+
+.bg_group{
 	display: flex;
-	-webkit-flex-direction: column;
 	flex-direction: column;
-	-webkit-justify-content: center;
 	justify-content: center;
-	-webkit-align-items: center;
 	align-items: center;
-	min-height: 400px;
-	height: 100%;
-	text-align: center;
-	margin-bottom: 9em;
-	padding: 6.5em 0;
-	background-color: #C779D0;
+	overflow: hidden;
 }
 
-.insurance_group_three{
-	position: relative;
-	z-index: 9;
-	width: 100%;
-	max-width: 1400px;
-	margin: auto;
-	padding: 0 25px;
+.product_group{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	overflow: hidden;
 }
 
-.insurance_group_three h2{
-	color: #ffffff;
+.bg_box{
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 0 20px
+}
+
+.bg_box h2{
 	font-family: 'Montserrat' , Arial, sans-serif;
 	font-size: 40px;
 	font-weight: 700;
 	display: block;
-	text-align: center;
-	letter-spacing: 1px;
+	color: #ffffff;
+	text-align: left;
 	line-height: 1.3em;
+	letter-spacing: 1px;
 }
 
-.icon_area{
-	width: 100%;
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-wrap: wrap; 
-	flex-wrap: wrap;
-	padding-top: 40px;
-	padding-bottom: 40px;
-}
-
-.inner_info{
-	max-width: 600px;
-	margin: 0 auto;
+.bg_box p{
 	font-family: 'Roboto' , Arial, sans-serif;
-	font-size: 15px;
+	font-size: 16px;
 	font-weight: normal;
 	display: block;
 	color: #f2f2f2;
 	letter-spacing: 1px;
-	text-align: center;
-	padding-top: 10px;
+	text-align: left;
+	padding: 15px 0;
 	line-height: 1.5em;
 }
 
-.icon_col{
-	-ms-flex: 25%;
-	flex: 25%;
-	width: 25%;
-	padding: 0 20px;
-}
-
-.icon_box{
-	max-width: 350px;
-	margin: 0 auto;
-	padding: 30px;
+.product_area{
+	max-width: 200px;
 	text-align: left;
-	background: #ffffff;
-	transition: 0.5s;
 }
 
-.icon_box:hover{
-	transform: translateX(-5px);
-}
-
-.icon_box h3{
-	color: #111111;
+.product_area h3{
 	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 18px;
-	font-weight: 600;
+	font-size: 20px;
+	font-weight: 700;
 	display: block;
+	color: #ffffff;
 	text-align: left;
+	line-height: 1.4em;
 	letter-spacing: 1px;
-	transition: 0.5s;
-	padding-top: 10px;
-}
-
-.icon_box p{
-	font-family: 'Roboto' , Arial, sans-serif;
-	font-size: 14px;
-	font-weight: normal;
-	padding-top: 10px;
-	display: block;
-	color: #696969;
-	letter-spacing: 1px;
-	text-align: left;
-	transition: 0.5s;
-	line-height: 1.5em;
-}
-
-.icon_box .fas,
-.icon_box .far{
-	font-size: 35px;
-	color: #C779D0;
-	text-align: left;
-	display: block;
-	transition: 0.5s;
 }
 
 .area_button > a{
 	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 12px;
+	font-size: 13px;
 	font-weight: 600;
 	letter-spacing: 1px;
-	text-transform: uppercase;
 	text-align: left;
-	display: block;
-	color: #C779D0;
+	text-transform: uppercase;
+	display: inline-block;
+	color: #111111;
 	text-decoration: none;
-	width: 110px;
+	width: auto;
 	transition: 0.5s;
     cursor: pointer;
 }
@@ -816,63 +804,189 @@ li.slick-active button{
 	display: inline-block;
 	height: auto;
 	padding-left: 5px;
-	top: 2px;
+	top: 1px;
 	position: relative;
 }
 
 .area_button > a:hover{
-	color: #111111;
+	color: #ffffff;
 }
 
-.insurance_area_four{
+.product_area p{
+	font-family: 'Roboto' , Arial, sans-serif;
+	font-size: 15px;
+	font-weight: normal;
+	display: block;
+	color: #f2f2f2;
+	letter-spacing: 1px;
+	text-align: left;
+	padding: 10px 0;
+	line-height: 1.5em;
+}
+
+.info_image{
+	overflow: hidden;
+	position: relative;
+}
+
+.info_image img{
+	vertical-align: middle;
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.info_slide{
+	max-width: 650px;
+	position: relative;
+	text-align: center;
+	margin: auto;
+	padding: 10px 0;
+}
+
+.info_slide_box{
+	position: relative;
+	padding-bottom: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+	background-color: #ffffff;
+	transition: ease-in-out 0.5s;
+}
+
+.product_heading{
+	width: 270px;
+	max-width: 280px;
+	background: #ffffff;
+	margin: auto;
+	text-align: center;
+	position: relative;
+	bottom: 30px;
+	padding: 15px 25px 0;
+	display: inline-block;
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 20px;
+	font-weight: 700;
+	display: block;
+	color: #111111;
+	letter-spacing: 1px;
+}
+
+.lastword{
+	color: #C779D0;
+}
+
+.col_button a{
+	background-color: #ffffff;
+	width: 140px;
+	min-height: 30px;
+	margin: 15px 0;	
+    border: none;
+    color: #111111;
+    padding: 12px 14px;
+    text-decoration: none;
+	text-transform: uppercase;
+    display: block;
+    font-size: 12px;
+	font-weight: 600;
+	font-family: 'Montserrat', Arial, sans-serif;
+    transition: 0.5s;
+    cursor: pointer;
+	border: 1px solid #ffffff;
+	letter-spacing: 1px;
+	text-align: center;
+}
+
+.col_button a:hover{
+	color: #ffffff;
+	background-color: #111111;
+	border-color: #111111;
+}
+
+.slidenav{
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 9999;
+	margin-top: 20px;
+	margin-right: 175px;
+}
+
+.prev_button,
+.next_button{
+	font-size: 16px;
+	transition: 0.6s ease;
+	display: block;
+	overflow: hidden;
+	color: #ffffff;
+	cursor: pointer;
+	background-color: #111111;
+	width: auto;
+	padding: 9px 14px;
+	border: solid 1px #111111;
+}
+
+.next_button{
+	margin-bottom: 20px;
+	transform:rotate(-90deg)
+}
+
+.prev_button{
+	transform:rotate(-90deg)
+}
+
+.next_button:hover,
+.prev_button:hover{
+	color: #111111;
+	background-color: #ffffff;
+	border-color: #ffffff;
+}
+
+/* --- 3.3. Insurance Area Three --- */
+.insurance_area_three{
 	max-width: 1400px;
 	margin: 0 auto 9em;
 	padding: 0 25px;
 }
 
-.insurance_group_four{
+.insurance_group_three{
 	width: 100%;
-	display: -ms-flexbox;
 	display: flex;
-	-ms-flex-wrap: wrap; 
 	flex-wrap: wrap;
+	padding-top: 40px;
 }
 
-.insurance_col{
-	position: relative;
-	-ms-flex: 50%;
-	flex: 50%;
-	width: 50%;
-	padding: 0 25px;
-	overflow: hidden;
+.icon_col{
+	flex: 25%;
+	width: 25%;
+	padding: 0 20px;
 }
 
-.insurance_col img{
-	vertical-align: middle;
-	width: 100%;
-	transition: .5s;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
-}
-
-.col_area{
-	display: flex;
-	-webkit-flex-direction: column;
-	flex-direction: column;
-	-webkit-justify-content: center;
-	justify-content: center;
-	-webkit-align-items: center;
-	align-items: center;
-}
-
-.col_box{
-	max-width: 750px;
+.icon_box{
+	max-width: 300px;
 	margin: 0 auto;
-	width: 100%;
+	padding: 0;
+	text-align: left;
+	background: #f6f6f6;
+	transition: 0.5s;
+	padding-bottom: 25px;
 }
 
-.col_box > p{
+.icon_box h3{
+	color: #111111;
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 18px;
+	font-weight: 600;
+	display: block;
+	text-align: center;
+	letter-spacing: 1px;
+	padding-top: 15px;
+	margin-top: 0;
+}
+
+.icon_box p{
 	font-family: 'Roboto' , Arial, sans-serif;
-	font-size: 14px;
+	font-size: 15px;
 	font-weight: normal;
 	padding-top: 10px;
 	display: block;
@@ -882,55 +996,161 @@ li.slick-active button{
 	line-height: 1.5em;
 }
 
-.col_box h2{
+.icon_box .fas,
+.icon_box .far{
+	font-size: 35px;
+	color: #C779D0;
+	text-align: left;
+	display: inline-block;
+	transition: 0.5s;
+	padding: 25px;
+	background-color: #ffffff;
+}
+
+.icon_button > a{
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 13px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	text-align: center;
+	text-transform: uppercase;
+	display: block;
+	color: #C779D0;
+	text-decoration: none;
+	width: auto;
+	margin: auto;
+	transition: 0.5s;
+    cursor: pointer;
+}
+
+.icon_button > a::after{
+	content: "\203A";
+	font-size: 20px;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	height: auto;
+	padding-left: 5px;
+	top: 1px;
+	position: relative;
+}
+
+.icon_button > a:hover{
 	color: #111111;
+}
+
+/* --- 3.4. Insurance Area Four --- */
+.insurance_area_four{
+	max-width: 1280px;
+	margin: 0 auto 0;
+	padding: 0 25px;
+	margin-bottom: calc(9em - 32px);
+}
+
+.insurance_group_four{
+	width: 100%;
+	display: flex; 
+	flex-wrap: wrap;
+}
+
+.question_col{
+	flex: 50%;
+	width: 50%;
+}
+
+.media_area{
+	max-width: 640px;
+	margin: auto;
+	position: relative;
+	overflow: hidden;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.question_col img{
+	vertical-align: middle;
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.col_area{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.question_box{
+	max-width: 550px;
+	margin: 0;
+	width: 100%;
+	padding: 0 25px;
+}
+
+.question_box h2{
 	font-family: 'Montserrat' , Arial, sans-serif;
 	font-size: 40px;
 	font-weight: 700;
 	display: block;
+	color: #111111;
 	text-align: left;
 	letter-spacing: 1px;
 	line-height: 1.3em;
+	margin-top: 0;
 }
 
-.accordian_box{
+.question_box > p{
+	font-family: 'Roboto' , Arial, sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	padding-top: 15px;
+	display: block;
+	color: #696969;
+	letter-spacing: 1px;
+	text-align: left;
+	line-height: 1.5em;
+}
+
+.accordion_box{
 	overflow:  hidden;
 	margin-top: 12px;
 }
 
-.accordion {
+.accordion{
 	background-color: #eee;
 	cursor: pointer;
-	padding: 14px;
+	padding: 16px 20px;
 	width: 100%;
 	border: none;
 	text-align: left;
 	overflow: hidden;
-	transition: 0.4s;
+	transition: 0.5s;
 	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 14px;
-	font-weight: 500;
+	font-size: 15px;
+	font-weight: 600;
 	display: block;
 	color: #111111;
 	letter-spacing: 1px;
 	line-height: 1.5em;
 }
 
-.active, .accordion:hover {
+.active-bar, .accordion:hover {
 	background-color: #ccc;
 }
 
 .accordion:after {
-	content: '\002B';
-	font-size: 18px;
+	font-family: 'Font Awesome 5 Free';
+	content: '\f107';
+	font-size: 16px;
 	color: #111111;
 	font-weight: 600;
 	float: right;
 	margin-left: 5px;
 }
 
-.active:after {
-	content: "\2212";
+.active-bar:after {
+	font-family: 'Font Awesome 5 Free';
+	content: "\f106";
 }
 
 .panel{
@@ -942,46 +1162,16 @@ li.slick-active button{
 }
 
 .panel > p{
-	padding-top: 12px;
+	padding: 16px 12px 15px;
 	font-family: 'Roboto' , Arial, sans-serif;
-	font-size: 14px;
+	font-size: 15px;
 	font-weight: normal;
 	display: block;
-	color: #696969;
 	line-height: 1.6em;
+	color: #696969;
 }
 
-.box_button{
-	max-width: 300px;
-}
-
-.box_button a{
-	background-color: #C779D0;
-	width: 150px;
-	min-height: 30px;	
-    border: none;
-    color: #ffffff;
-    padding: 12px 14px;
-    text-decoration: none;
-	text-transform: uppercase;
-    display: inline-block;
-    font-size: 12px;
-	font-weight: 600;
-	font-family: 'Montserrat', Helvetica, Arial sans-serif;
-    cursor: pointer;
-	margin: 7px 0;
-	transition: 0.5s;
-	border: 1px solid #C779D0;
-	letter-spacing: 1px;
-	text-align: center;
-}
-
-.box_button a:hover{
-	color: #111111;
-	background-color: transparent;
-	border-color: #111111;
-}
-
+/* --- 3.5. Insurance Area Five --- */
 .insurance_area_five{
 	max-width: 1400px;
 	margin: 0 auto 9em;
@@ -990,15 +1180,12 @@ li.slick-active button{
 
 .insurance_group_five{
 	width: 100%;
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-wrap: wrap; 
+	display: flex; 
 	flex-wrap: wrap;
 	padding-top: 40px;
 }
 
 .team_col{
-	-ms-flex: 25%;
 	flex: 25%;
 	width: 25%;
 	padding: 0 25px;
@@ -1006,13 +1193,14 @@ li.slick-active button{
 }
 
 .team_box{
-	max-width: 400px;
+	max-width: 350px;
 	position: relative;
 	text-align: center;
 	overflow: hidden;
 	margin: auto;
 	min-height: 150px;
 	transition: 0.5s;
+	border: solid 1px #e0e0e0;
 }
 
 .team_image img{
@@ -1026,94 +1214,84 @@ li.slick-active button{
 .team_image{
 	overflow: hidden;
 	position: relative;
-	padding-bottom: 55px;
-	padding-right: 55px;
-	padding-top: 10px;
-	padding-left: 10px;
-	background-color: #C779D0;
+	padding-bottom: 12px;
+	padding-right: 12px;
+	padding-top: 12px;
+	padding-left: 12px;
+	background-color: #ffffff;
 	transition: ease-in-out 0.5s;
 }
 
 .team_content{
-	position: absolute;
-	bottom: 0;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: left;
 }
 
 .team_icon{
-	position: absolute;
-	top: 0;
-	right: 0;
+	text-align: left;
+	padding-top: 14px;
+	margin-left: -3px;
+}
+
+.team_icon .fa-facebook-f{
+	padding: 10px 12px !important;
 }
 
 .team_icon .fab,
 .team_icon .fa{
-	font-size: 18px;
+	font-size: 14px;
 	color: #ffffff;
-	display: block;
-	padding: 10px 18px;
-	text-align: center;
+	width: 35px;
+	height: 35px;
+	background-color: #C779D0;
+	padding: 10px;
+	border: solid 1px #C779D0;
+	border-radius: 50%;
+	display: inline-block;
+	text-align: left;
+	margin-right: 9px;
 	transition: ease-in-out 0.5s;
 }
 
-.team_image:hover{
-	background-color: #ffffff;
-}
-
-.team_icon a{
-	text-decoration: none;
+.team_icon .fab:hover,
+.team_icon .fa:hover{
+	color: #ffffff;
+	background-color: #111111;
+	border-color: #111111;
 }
 
 .team_name{
 	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 20px;
+	font-size: 18px;
 	display: block;
-	font-weight: 500;
-	color: #ffffff;
+	font-weight: 600;
+	color: #111111;
 	text-transform: capitalize;
 	letter-spacing: 1px;
 	text-align: left;
-	padding: 5px 0;
-	opacity: 1;
-}
-
-.team_image:hover .team_icon .fab,
-.team_image:hover .team_icon .fa{
-	color: #C779D0;
 }
 
 .team_title{
 	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 17px;
+	font-size: 14px;
 	display: block;
 	font-weight: 600;
-	color: #111111;
+	color: #696969;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	text-align: left;
 	line-height: 1.4em;
-	padding-top: `10px;
-	opacity: 0;
-	display: none;
+	margin-top: 0;
+	padding-top: 16px;
 }
 
-.team_image:hover .team_name{
-	opacity: 0;
-}
-
-.team_image:hover .team_title{
-	opacity: 1;
-	display: block;
-}
-
+/* --- 3.6. Insurance Area Six --- */
 .insurance_area_six{
 	position: relative;
-	display: -webkit-flex;
 	display: flex;
-	-webkit-flex-direction: column;
 	flex-direction: column;
-	-webkit-justify-content: center;
 	justify-content: center;
-	-webkit-align-items: center;
 	align-items: center;
 	min-height: 400px;
 	height: 100%;
@@ -1122,10 +1300,10 @@ li.slick-active button{
 	background-repeat: no-repeat;
 	background-position: center;
 	margin-bottom: 9em;
-	padding: 6em 0;
+	padding: 5em 0;
 }
 
-.insurance_area_six::before {
+.insurance_area_six::before{
 	content: '';
 	position: absolute;
 	z-index: 1;
@@ -1139,136 +1317,93 @@ li.slick-active button{
 .insurance_group_six{
 	position: relative;
 	z-index: 5;
-	max-width: 1200px;
+	max-width: 900px;
 	margin: auto;
-	padding: 0 10px;
+	padding: 0 20px;
 	width: 100%;
 }
 
-.insurance_group_six h2{
+.bg_head{
+	color: #ffffff;
 	font-family: 'Montserrat' , Arial, sans-serif;
 	font-size: 40px;
 	font-weight: 700;
 	display: block;
-	color: #ffffff;
-	letter-spacing: 1px;
 	text-align: center;
+	letter-spacing: 1px;
+	line-height: 1.3em;
 	margin-top: 0;
 }
 
-.client_col{
-	position: relative;
+.bg_col_button{
+	max-width: 370px;
+	margin: auto;
 	width: 100%;
-	padding-top: 30px;
 }
 
-.client_box img{
-	max-width: 90px;
-	height: 90px;
-	margin: auto;
-	border-radius: 50%;
-	display: block;
-	text-align: center;
-	margin-bottom: 14px;
-}
-
-.client_box > q{
-	font-family: 'Roboto' , Arial, sans-serif;
-	font-size: 16px;
-	font-weight: normal;
-	max-width: 500px;
-	margin: auto;
-	display: block;
-	color: #ffffff;
-	letter-spacing: 1px;
-	text-align: center;
-	padding: 6px 10px 0;
-}
-
-.client_box > h3{
-	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 18px;
-	font-weight: 500;
-	color: #C779D0;
-	letter-spacing: 1px;
-	text-align: center;
-	display: block;
-}
-
-.client_box > h3::before{
-	content: '\2014';
-	padding: 0 0.5em;
-}
-
-.nextbtn,
-.prevbtn{
-	font-size: 16px;
-	transition: 0.6s ease;
-	border-radius: 0 3px 3px 0;
-	border: solid 1px #ffffff;
-	background-color: transparent;
-	width: auto;
-	padding: 14px 20px;
-	color: #ffffff;
-	cursor: pointer;
-	transition: 0.5s;	
-}
-
-.nextbtn{
-	position: absolute;
-	top: 50%;
-	right: 0;
-	transform: translateY(-50%);
-	z-index: 2;
-}
-
-.prevbtn{
-	position: absolute;
-	top: 50%;
-	left: 0;
-	transform: translateY(-50%);
-}
-
-.nextbtn:hover,
-.prevbtn:hover{
+.bg_col_button a{
 	background-color: #C779D0;
-	color: #ffffff;
-	border-color: #C779D0;
+	width: 150px;
+	min-height: 30px;
+	margin: 25px auto 0;	
+    border: none;
+    color: #ffffff;
+    padding: 13px 15px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+	font-weight: 600;
+	text-transform: uppercase;
+	font-family: 'Montserrat', Arial, sans-serif;
+    transition: 0.5s;
+    cursor: pointer;
+	border: 1px solid #C779D0;
+	letter-spacing: 1px;
+	text-align: center;
+	margin-right: 20px;
 }
 
+.bg_col_button a:hover{
+	color: #111111;
+	background-color: #ffffff;
+	border-color: #ffffff;
+}
+
+.right_btn{
+	background-color: #ffffff !important;
+	color: #111111 !important;
+	border: 1px solid #ffffff !important;
+}
+
+.right_btn:hover{
+	color: #ffffff!important;
+	background-color: #C779D0!important;
+	border-color: #C779D0!important;
+}
+
+/* --- 3.7. Insurance Area Seven --- */
 .insurance_area_seven{
 	width: 100%;
 	margin: 0 0 9em;
 	min-height: 400px;
-	padding: 7.5em 25px;
+	padding: 7em 25px;
 	background-color: #f6f6f6;
 }
 
 .insurance_group_seven{
-	max-width: 1400px;
+	max-width: 1200px;
 	width: 100%;
 	margin: 0 auto;
-	display: -ms-flexbox;
 	display: flex;
-	-ms-flex-wrap: wrap; 
 	flex-wrap: wrap;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding-top: 40px;
+	padding-bottom: 40px;
 }
 
 .blog_col{
-	-ms-flex: 33.33%;
 	flex: 33.33%;
 	width: 33.33%;
 	padding: 0 25px;
-}
-
-.blog_col img{
-	vertical-align: middle;
-	width: 100%;
-	height: auto;
-	transition: 0.5s;
-	display: block;
 }
 
 .blog_box{
@@ -1276,12 +1411,14 @@ li.slick-active button{
 	max-width: 400px;
 	margin: auto;
 	text-align: center;
-	padding-bottom: 25px;
+	padding: 25px 20px;
 	overflow: hidden;
+	background-color: #ffffff;
 }
 
 .blog_content{
 	padding: 10px;
+	text-align: left;
 }
 
 .blog_date{
@@ -1297,18 +1434,6 @@ li.slick-active button{
 	width: 250px;
 }
 
-.blog_image{
-	overflow: hidden;
-}
-
-.blog_image > a > img{
-	transition: .5s;
-}
-
-.blog_image > a > img:hover{
-	transform: scale(1.15);
-}
-
 .blog_title a{
 	font-family: 'Montserrat' , Arial, sans-serif;
 	font-size: 20px;
@@ -1319,11 +1444,17 @@ li.slick-active button{
 	text-align: left;
 	text-decoration: none;
 	transition: 0.5s;
-	line-height: 1.3em;
+	line-height: 1.4em;
 }
 
 .blog_title a:hover{
 	opacity: 0.6;
+}
+
+a.blog_btn:hover{
+	color: #111111;
+	background: transparent;
+	border-color: #111111;
 }
 
 a.blog_btn{
@@ -1331,29 +1462,37 @@ a.blog_btn{
     border: none;
     color: #ffffff;
 	background-color: #C779D0;
+	padding: 14px;
     text-decoration: none;
 	text-transform: uppercase;
-    display: block;
-    font-size: 12px;
+    display: inline-block;
+    font-size: 13px;
 	font-weight: 600;
-	font-family: 'Montserrat', Arial sans-serif;
+	font-family: 'Montserrat', Arial, sans-serif;
     transition: 0.5s;
     cursor: pointer;
 	letter-spacing: 1px;
-	text-align: center;
-	padding: 12px;
+	text-align: left;
+	line-height: 1.2em;
+	margin: 8px 0;
 	border: solid 1px #C779D0;
 }
 
-a.blog_btn:hover{
-	color: #111111;
-	background-color: transparent;
-	border-color: #111111;
+a.blog_btn::after{
+	content: "\203A";
+	font-size: 20px;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	height: auto;
+	padding-left: 5px;
+	top: 1px;
+	position: relative;
 }
 
 .blog_content p{
 	font-family: 'Roboto' , Arial, sans-serif;
-	font-size: 14px;
+	font-size: 15px;
 	font-weight: normal;
 	display: block;
 	color: #696969;
@@ -1363,155 +1502,262 @@ a.blog_btn:hover{
 	line-height: 1.5em;
 }
 
+/* --- 3.8. Insurance Area Eight --- */
 .insurance_area_eight{
 	position: relative;
-	display: -webkit-flex;
-	display: flex;
-	-webkit-flex-direction: column;
-	flex-direction: column;
-	-webkit-justify-content: center;
-	justify-content: center;
-	-webkit-align-items: center;
-	align-items: center;
-	min-height: 350px;
+	min-height: 400px;
 	height: 100%;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-	margin-bottom: 9em;
-	padding: 3em 0;
-}
-
-.insurance_area_eight::before {
-	content: '';
-	position: absolute;
-	z-index: 1;
-	top: 0;
-	left: 0;
 	width: 100%;
-	height: 100%;
-	background: rgba(24, 25, 34, 0.6);
+	background-color: #C779D0;
 }
 
-.insurance_group_eight{
+/* --- 3.9. Insurance Area Nine --- */
+.insurance_area_nine{
+	max-width: 600px;
+	min-height: 300px;
+	margin: 0 auto -4em;
+	margin-top:  -300px;
 	position: relative;
-	z-index: 5;
-	padding: 0 25px;
-	max-width: 1200px;
-	margin: auto;
+}
+
+.heading_group{
 	width: 100%;
-	display: -ms-flexbox;
 	display: flex;
-	-ms-flex-wrap: wrap; 
 	flex-wrap: wrap;
 }
 
-.col_info{
-	-ms-flex: 100%;
-	flex: 100%;
+.insurance_group_nine{
 	width: 100%;
-}
-	
-.col_head{
-	-ms-flex: 100%;
-	flex: 100%;
-	width: 100%;
-}
-	
-.form-row{
-	text-align: center;
-	margin-top: 35px;
-}
-	
-.col_head h3{
-	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 30px;
-	display: block;
-	font-weight: 500;
-	color: #ffffff;
-	letter-spacing: 1px;
-	text-align: center;
-	width: 100%;
-	line-height: 1.3em;
-	max-width: 650px;
-	margin: auto;
+	padding: 40px 25px;
+	background-color: #ffffff;
+	margin-top: 40px;
 }
 
-.col_info input[type="email"]{
-	width: auto;
-	padding: 12px 20px 14px;
-	border: 0;
+.title_group{
+	flex: 50%;
+	width: 50%;
+	max-width: 300px;
+	margin: auto;
+	text-align: center;
+}
+
+.title_head{
+	text-align: center;
+	padding: 10px 0;
+}
+
+.title_head a{
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 15px;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #111111;
+	letter-spacing: 1px;
+	cursor: pointer;
+	transition: .5s;
+	text-decoration: none;
+	text-align: center;
+	display: inline-block;
+	margin: 0;
+}
+
+.title_head a.active{
+	color: #C779D0;
+}
+
+.login_col{
+	width: 100%;
+	padding: 40px 20px 0;
+	position: relative;
+}
+
+.register_col{
+	width: 100%;
+	padding: 40px 20px 0;
+	position: relative;
+}
+
+.form_area{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.login_box{
+	width: 400px;
+	text-align: center;
+}
+
+.register_box{
+	max-width: 600px;
+	text-align: center;
+}
+
+.login_info{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	margin-right: 75px;
+}
+
+.login_info h3 a{
+	font-size: 14px;
+	font-weight: 600;
+	font-family: 'Montserrat', Arial, sans-serif;
+	color: #111111;
+    transition: 0.5s;
+    cursor: pointer;
+	letter-spacing: 1px;
+	text-align: left;
+	text-decoration: none;
+}
+
+.login_info h3 a:hover{
+	color: #C779D0;
+}
+
+.login_box h3,
+.register_box h3{
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 20px;
+	font-weight: 500;
+	letter-spacing: 1px;
+	text-align: center;
+	display: block;
+	color: #111111;
+	line-height: 1.4em;
+}
+
+.login-form{
+	flex-direction: row;
+	display: flex;
+}
+
+.form-row {
+	flex-direction: row;
+	display: flex;
+}
+
+.login_box input[type="text"],
+.login_box input[type="password"]{
 	font-family: 'Montserrat' , Arial, sans-serif;
 	font-size: 13px;
-	display: inline-block;
-	font-weight: 600;
-	color: #333333;
-	text-transform: capitalize;
+	padding: 4px 20px;
+	height: 40px;
+	border: none;
+	margin: 0 0 20px;
+	border-bottom: solid 1px #111111;
+	flex-grow: 1;
 	letter-spacing: 1px;
-	background-color: #f6f6f6;
+	transition: 0.5s;
 }
 
-.col_info input[type="submit"]{
-	display: inline-block;
+.register_box input[type="text"],
+.register_box input[type="email"],
+.register_box input[type="password"]{
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 13px;
+	padding: 4px 20px;
+	height: 40px;
+	border: none;
+	margin: 0 15px 20px;
+	border-bottom: solid 1px #111111;
+	flex-grow: 1;
+	letter-spacing: 1px;
+	transition: 0.5s;
+}
+
+.register_box input[type="submit"]{
+	display: block;
+	margin: 18px 0 0;
+	margin-left: 15px;
 	width: auto;
-	padding: 10px 20px;
+	padding: 10px 30px;
 	text-align: center;
 	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 16px;
-	font-weight: 500;
-	margin: 0;
-	margin-left: -4px;
+	font-size: 15px;
+	font-weight: normal;
 	color: #ffffff;
-	border-radius: 0;
+	border-radius: 5px;
 	letter-spacing: 1px;
 	background-color: #C779D0;
 	border: solid 1px #C779D0;
 	transition: 0.5s;
 }
 
-.col_info input[type="submit"]:hover{
-	opacity: 0.9;
+.register_box input[type="submit"]:hover{
+	background-color: #111111;
+	color: #ffffff;
+	border: solid 1px #111111;
 }
 
-/**** Footer Section ****/
+.login_box input[type="submit"]{
+	display: block;
+	margin: 18px 0 0;
+	width: auto;
+	padding: 10px 30px;
+	text-align: center;
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 15px;
+	font-weight: normal;
+	color: #ffffff;
+	border-radius: 5px;
+	letter-spacing: 1px;
+	background-color: #C779D0;
+	border: solid 1px #C779D0;
+	transition: 0.5s;
+}
+
+.login_box input[type="submit"]:hover{
+	background-color: #111111;
+	color: #ffffff;
+	border: solid 1px #111111;
+}
+
+/* 4. FOOTER
+ ----------- */
 .footer{
 	width: 100%;
 	min-height: 350px;
 	position: relative;
 	clear: both;
 	height: 100%;
-	background-color: #111111;
 }
 
 .footer_area{
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 0 25px;
-	display: -ms-flexbox;
 	display: flex;
-	-ms-flex-wrap: wrap; 
 	flex-wrap: wrap;
 }
 
 .footer_col{
-	-ms-flex: 25%;
 	flex: 25%;
 	width: 25%;
 	padding: 0 20px;
+	max-width: 300px;
 }
 
 .footer_col{
 	padding-top: 3.5em;
 }
 
+a.footer-brand img{
+	max-width: 200px;
+	height: auto;
+	display: block;
+}
+
 .footer_box > h3 > a{
 	font-family: 'Montserrat', Arial, sans-serif;
-	font-size: 20px;
+	font-size: 22px;
 	font-weight: 700;
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	text-decoration: none;
-	color: #ffffff;
+	color: #111111;
 	text-align: left;
 }
 
@@ -1520,20 +1766,20 @@ a.blog_btn:hover{
 	font-size: 14px;
 	font-weight: normal;
 	letter-spacing: 1px;
-	color: #ffffff;
+	color: #111111;
 	text-align: left;
-	padding: 10px 0;
-	line-height: 1.6em;
+	padding: 20px 0;
+	line-height: 1.5em;
 }
 
 .footer_social{
-	padding-top: 20px;
+	margin: 12px 0;
 }
 
 .footer_social .fab,
 .footer_social .fa{
-	font-size: 14px;
-	color: #ffffff;
+	font-size: 16px;
+	color: #111111;
 	text-align: left;
 }
 
@@ -1546,36 +1792,10 @@ a.blog_btn:hover{
 }
 
 .final{
-	width: 100%;
-}
-
-.address_box{
-	margin-top: 30px;
-}
-
-.address_name{
-	font-family: 'Montserrat', Arial, sans-serif;
-	font-size: 13px;
-	font-weight: normal;
-	letter-spacing: 1px;
-	text-transform: capitalize;
-	color: #ffffff;
-	display: block;
-}
-
-.address_box .fas{
-	color: #ffffff;
-	padding-right: 12px;
-}
-
-.address_phone{
-	font-family: 'Montserrat', Arial, sans-serif;
-	font-size: 13px;
-	font-weight: normal;
-	letter-spacing: 1px;
-	text-transform: capitalize;
-	color: #ffffff;
-	display: block;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
 }
 
 .footer_col > h4{
@@ -1584,7 +1804,7 @@ a.blog_btn:hover{
 	font-weight: 700;
 	letter-spacing: 1px;
 	text-transform: capitalize;
-	color: #ffffff;
+	color: #111111;
 }
 
 .footer_col > ul > li{
@@ -1597,7 +1817,7 @@ a.blog_btn:hover{
 	font-weight: normal;
 	letter-spacing: 1px;
 	text-decoration: none;
-	color: #ffffff;
+	color: #111111;
 	text-align: justify;
 	transition: 0.5s;
 }
@@ -1606,10 +1826,16 @@ a.blog_btn:hover{
 	opacity: 0.6;
 }
 
+.footer_col > ul > li a:hover{
+	color: #111111;
+}
+
 .details{
 	width: 100%;
-	padding-top: 40px;
+	padding-top: 35px;
 	padding-bottom: 10px;
+	margin-top: 35px;
+	border-top: solid 1px #e0e0e0;
 }
 
 .details p{
@@ -1617,59 +1843,59 @@ a.blog_btn:hover{
 	font-size: 13px;
 	font-weight: normal;
 	letter-spacing: 1px;
-	color: #ffffff;
+	color: #111111;
 	text-align: center;
 }
 
+/* 5. RESPONSIVE
+ ----------- */
 @media only screen and (max-width: 1024px){
-	.insurance_wide_col{
-		-ms-flex: 100%;
-		flex: 100%;
-		width: 100%;
+	.header__content{
+		height: auto;
+		padding: 0 35px;
+	}
+
+	.slide__content{
+		height: auto;
 	}
 	
-	.insurance_area_one{
-		max-width: 800px;
-		margin-left: auto;
-		margin-left: auto;
-	}
-	
-	.wide_box{
-		padding-bottom: 40px;
+	.slidenav{
+		margin-right: 120px;
 	}
 	
 	.icon_col{
-		-ms-flex: 50%;
 		flex: 50%;
 		width: 50%;
-		padding-bottom: 25px;
+		margin-bottom: 40px;
 	}
 	
-	.insurance_col{
-		-ms-flex: 100%;
+	.question_col{
 		flex: 100%;
 		width: 100%;
-		max-width: 750px;
-		margin: auto;
 	}
 	
-	.col_box{
-		padding-top: 35px;
+	.question_box{
+		margin: 40px auto 0;
 	}
 	
 	.team_col{
-		-ms-flex: 50%;
 		flex: 50%;
 		width: 50%;
-		padding-bottom: 25px;
+		margin-bottom: 40px;
 	}
-}
-
+	
+	.blog_col{
+		flex: 50%;
+		width: 50%;
+		margin-bottom: 40px;
+	}
+} 
+ 
 @media only screen and (max-width: 992px){
 	nav.navbar.bootsnav .navbar-toggle{
-        background: transparent !important;
+        background: transparent;
         color: #111111;
-		font-size: 25px !important;
+		font-size: 25px;
 	}
 	
 	.head_btn{	
@@ -1704,11 +1930,23 @@ a.blog_btn:hover{
         content: "\f105";
     }
 	
+	nav.navbar.bootsnav ul.nav.navbar-right .dropdown-menu .dropdown-menu{
+		left: 0;
+	}
+	
+	nav.navbar.bootsnav ul.navbar-right li.dropdown ul.dropdown-menu li.dropdown.on > a.dropdown-toggle:before{
+		 content: "\f107";
+	}
+	
+	nav.navbar.bootsnav ul.dropdown-menu.megamenu-content .col-menu{
+		border-left: none;
+		border-right: none;
+	}
+	
 	.left_info,
 	.right_info,
 	.left_sub,
 	.right_sub{
-		-ms-flex: 100%;
 		flex: 100%;
 		width: 100%;
 		text-align: center;
@@ -1720,8 +1958,7 @@ a.blog_btn:hover{
 	}
 	
 	.top_sub,
-	.left_info a,
-	.top_align{
+	.left_info a{
 		text-align: center;
 	}
 	
@@ -1735,78 +1972,101 @@ a.blog_btn:hover{
 		padding-top: 25px;
 	}
 	
-	.insurance_product_col{
-		-ms-flex: 50%;
-		flex: 50%;
-		width: 50%;
-		margin-bottom: 70px;
+	.header-title{
+		min-height: 350px;
 	}
 	
-	.space_level{
-		padding-top: 0;
+	.header-title{
+		max-width: 450px;
+		margin-right: 0;
 	}
 	
-	.blog_col{
-		-ms-flex: 100%;
+	.header-title__main{
+		font-size: 30px;
+	}
+	
+	.insurance_wide_col{
 		flex: 100%;
 		width: 100%;
-		padding: 0;
+	}
+	
+	.insurance_area_one{
+		max-width: 600px;
+		margin-left: auto;
+		margin-left: auto;
+	}
+	
+	.wide_box,
+	.bg_box{
+		margin-bottom: 40px;
+	}
+	
+	.bg_col,
+	.info_col{
+		flex: 100%;
+		width: 100%;
+		max-width: 700px;
+		margin: auto;
 	}
 	
 	.footer_col{
-		-ms-flex: 50%;
 		flex: 50%;
 		width: 50%;
 	}
 }
 
 @media only screen and (max-width: 600px){
-	.header-title__main{
-		font-size: 30px;
-	}
-	
 	.wide_box h2,
 	.insurance_head,
-	.insurance_group_three h2,
-	.col_box h2,
-	.insurance_group_six h2{
+	.bg_box h2,
+	.question_box h2,
+	.bg_head{
 		font-size: 30px;
-	}
-	
-	.insurance_box_col{
-		-ms-flex: 100%;
-		flex: 100%;
-		width: 100%;
-		padding: 15px 0;
-	}
-	
-	.list_col{
-		-ms-flex: 100%;
-		flex: 100%;
-		width: 100%;
 	}
 	
 	.insurance_product_col{
-		-ms-flex: 100%;
 		flex: 100%;
 		width: 100%;
 		padding: 0;
 	}
 	
+	.product_col,
+	.slide_col{
+		flex: 100%;
+		width: 100%;
+	}
+	
+	.slidenav{
+		top: 100%;
+		transform: translateY(-100%);
+		right: 0;
+	}
+	
 	.icon_col{
-		-ms-flex: 100%;
 		flex: 100%;
 		width: 100%;
 	}
 	
 	.team_col{
-		-ms-flex: 100%;
 		flex: 100%;
 		width: 100%;
 	}
 	
+	.blog_col{
+		flex: 100%;
+		width: 100%;
+	}
+	
+	.insurance_area_nine{
+		max-width: 475px;
+	}
+	
+	.form-row,
+	.login-form{
+		flex-direction: column;
+	}
+	
 	.footer_col{
-		-ms-flex: 100%;
 		flex: 100%;
 		width: 100%;
 	}
@@ -1814,29 +2074,70 @@ a.blog_btn:hover{
 
 @media only screen and (max-width: 420px){
 	.header-title{
-		padding: 25px 20px;
+		padding: 30px 25px;
+	}
+	
+	.slick-dots{
+		left: 8px;
+	}
+	
+	.insurance_box_col{
+		flex: 100%;
+		width: 100%;
+		padding: 15px 0;
+	}
+	
+	.list_col{
+		flex: 100%;
+		width: 100%;
 	}
 	
 	.insurance_wide_col,
-	.insurance_col{
+	.insurance_col,
+	.bg_col,
+	.info_col,
+	.product_col,
+	.slide_col,
+	.icon_col,
+	.question_box,
+	.team_col,
+	.blog_col{
 		padding: 0;
 	}
 	
-	.icon_col,
-	.team_col{
-		padding-left: 0;
-		padding-right: 0;
+	.slidenav{
+		margin-right: 0;
 	}
 	
-	.col_info input[type="email"]{
-		display: block;
-		width: 100%;
+	.insurance_area_nine{
+		max-width: 350px;
 	}
 	
-	.col_info input[type="submit"]{
-		margin-top: 20px;
-		display: block;
-		width: 100%;
-		margin-left: 0;
+	.login_box{
+		max-width: 400px;
+		width: auto;
+	}
+	
+	.login_info{
+		margin-right: 0;
+	}
+}
+
+@media only screen and (max-width: 375px){
+	.insurance_area_nine{
+		max-width: 300px;
+	}
+	
+	.login_info{
+		max-width: 100px;
+		margin: auto;
+		margin-bottom: -12px;
+	}
+}
+
+@media only screen and (max-width: 360px){
+	.product_heading{
+		width: 220px;
+		max-width: 230px;
 	}
 }
