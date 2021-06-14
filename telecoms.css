@@ -1,18 +1,46 @@
-/*
-*	Template: Telecoms
-*	Version: v1.0;
-*/
+/*------------------------------------------------------------------
+Main Stylesheet
 
-/**	General Styles **/
+Project:    Highpoint Corporate Template
+Version:    1.0
+Last change:    07/06/2021
+Author:    Themewiz
+Primary use:    Telecoms
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. General
+2. Header
+	2.1. Logo & Navigation
+	2.2. Header Content
+3. Main Content
+	3.1. Telecoms Area One 
+	3.2. Telecoms Area Two
+	3.3. Telecoms Area Three
+	3.4. Telecoms Area Four
+	3.5. Telecoms Area Five
+	3.6. Telecoms Area Six
+	3.7. Telecoms Area Seven
+	3.8. Telecoms Area Eight
+	3.9. Telecoms Area Nine
+	3.10. Telecoms Area Ten
+	 
+4. Footer
+5. Responsive
+-------------------------------------------------------------------*/
+
+/* 1. GENERAL
+ ----------- */
 body,
 html{
-	margin: 0;
-	padding: 0;
-}
-
-body{
+	width:100%;
+    height: auto;
+    margin:0;
+    padding:0;
+    overflow-x: hidden;
 	font-family: sans-serif;
-	overflow-x: hidden;
 }
 
 ul{
@@ -26,10 +54,9 @@ ul{
 }
 
 .page_area{
-	width: 100% !important;
+	width: 100%;
 }
 
-/* Page Loader */
 .js .loading::before {
 	content: '';
 	position: fixed;
@@ -64,34 +91,73 @@ ul{
 	}
 }
 
-nav.navbar .navbar-brand{
-	margin-top: 0;
-	max-width: 350px;
-	display: inline-block
+.telecoms_heading{
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 40px;
+	font-weight: 700;
+	display: block;
+	color: #111111;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	line-height: 1.3em;
 }
 
+.telecoms_info{
+	max-width: 400px;
+	margin: 0 auto;
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	display: block;
+	color: #ec2F4B;
+	letter-spacing: 1px;
+	text-align: center;
+	padding: 0 10px 0;
+	line-height: 1.5em;
+}
+
+.telecoms_sub_info{
+	max-width: 600px;
+	margin: 0 auto;
+	font-family: 'Roboto' , Arial, sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	display: block;
+	color: #696969;
+	letter-spacing: 1px;
+	text-align: center;
+	padding: 10px 10px 0;
+	line-height: 1.5em;
+}
+
+/* 2. HEADER
+ ----------- */
+ 
+/* --- 2.1. Logo & Navigation --- */
 .navbar-header h2{
 	font-family: 'Montserrat', Arial, sans-serif;
-	font-size: 20px;
+	font-size: 22px;
 	font-weight: 700;
 	letter-spacing: 1px;
 	text-transform: uppercase;
 }
 
-.navbar-header a{
+.navbar-header a.navbar-brand{
 	text-decoration: none;
 	color: #111111 !important;
+	transition: 0.5s;
 }
 
- nav.navbar .navbar-brand img.logo{
-   max-width: 300px;
-   max-height: 120px;
-   display: inline-block
+nav.navbar .navbar-brand img.logo{
+   max-width: 200px;
+   height: auto;
+   display: block;
 }
 
 nav.navbar.bootsnav{
-	background-color: transparent !important;
-	border-bottom: none !important;
+	background-color: transparent;
+	border-bottom: none ;
 	z-index: 9999;
 }
 
@@ -108,10 +174,11 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu{
 nav.navbar.bootsnav ul.nav > li > a{
     color: #111111;
     font-family: 'Montserrat' , Arial, sans-serif;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 700;
     text-transform: uppercase;
 	letter-spacing: 1px;
+	border-top: none;
 }
 
 nav.navbar.bootsnav ul.navbar-right li.dropdown ul.dropdown-menu li a{
@@ -126,15 +193,38 @@ nav.navbar.bootsnav ul.navbar-right li.dropdown ul.dropdown-menu li a{
 	transition: 0.5s;
 }
 
+nav.navbar.bootsnav ul.navbar-right li.dropdown ul.dropdown-menu li a:hover{
+	color: #ec2F4B;
+}
+
+nav.navbar.bootsnav li.dropdown ul.dropdown-menu{
+	left: 0;
+}
+
  nav.navbar.bootsnav ul.nav > li.dropdown > a.dropdown-toggle:after{
     font-family: 'Font Awesome 5 Free';
     content: "\f107";
 	font-size: 12px;	
 }
 
- nav.navbar.bootsnav ul.dropdown-menu.megamenu-content .col-menu{
-    border-left: none;
-    border-right: none;
+nav.navbar.bootsnav ul.navbar-right li.dropdown ul.dropdown-menu li.dropdown > a.dropdown-toggle:before{
+    font-family: 'Font Awesome 5 Free';
+    float: right;
+    content: "\f105";
+    margin-top: 0;
+}
+
+nav.navbar.bootsnav ul.nav.navbar-right .dropdown-menu .dropdown-menu{
+    left: 200px;
+}
+
+nav.navbar.bootsnav li.dropdown ul.dropdown-menu ul.dropdown-menu{
+    top: 2px;
+}
+
+nav.navbar.bootsnav ul.dropdown-menu.megamenu-content .col-menu{
+    border-left: solid 1px #e0e0e0;
+    border-right: solid 1px #e0e0e0;
 }
 
 nav.navbar.bootsnav ul.dropdown-menu.megamenu-content .content ul.menu-col li a{
@@ -146,6 +236,10 @@ nav.navbar.bootsnav ul.dropdown-menu.megamenu-content .content ul.menu-col li a{
 	letter-spacing: 1px;
 }
 
+nav.navbar.bootsnav ul.dropdown-menu.megamenu-content .content ul.menu-col li a:hover{
+	color: #ec2F4B;
+}
+
 nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
     font-size: 14px;
     font-weight: 600;
@@ -153,6 +247,13 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
     color: #ec2F4B;
     text-transform: uppercase;
 	letter-spacing: 1px;
+}
+
+.attr-nav > ul > li.dropdown ul.dropdown-menu{
+    margin-top: 0;
+    margin-left: 55px;
+    width: 250px;
+    left: -250px !important;
 }
 
 .attr-nav > ul > li > a{
@@ -170,6 +271,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	letter-spacing: 1px;
 }
 
+/* --- 2.2. Header Content --- */
 .top_box{
 	height: 50px;
 	overflow-y: auto;
@@ -178,9 +280,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .top_info{
 	width: 100%;
-	display: -ms-flexbox;
 	display: flex;
-	-ms-flex-wrap: wrap; 
 	flex-wrap: wrap;
 	max-width: 1400px;
 	margin: auto
@@ -189,7 +289,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 .left_info,
 .right_info{
 	position: relative;
-	-ms-flex: 50%;
 	flex: 50%;
 	width: 50%;
 	padding-top: 15px;
@@ -232,22 +331,18 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .sub_width{
 	width: 100%;
-	display: -ms-flexbox;
 	display: flex;
-	-ms-flex-wrap: wrap; 
 	flex-wrap: wrap;
 	text-align: center;
 }
 
 .left_sub{
-	-ms-flex: 50%;
 	flex: 50%;
 	width: 50%;
 	text-align: left;
 }
 
 .right_sub{
-	-ms-flex: 50%;
 	flex: 50%;
 	width: 50%;
 	text-align: center;
@@ -286,7 +381,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
     display: block;
     font-size: 13px;
 	font-weight: 600;
-	font-family: 'Montserrat', Arial sans-serif;
+	font-family: 'Montserrat', Arial, sans-serif;
     transition: 0.5s;
     cursor: pointer;
 	border: 1px solid #ec2F4B;
@@ -305,23 +400,19 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .header__content{
-	display: -webkit-flex;
 	display: flex;
-	-webkit-flex-direction: column;
 	flex-direction: row;
-	-webkit-justify-content: center;
 	justify-content: flex-start;
-	-webkit-align-items: center;
 	align-items: center;
 	height: 100vh;
-	min-height: 600px;
+	min-height: 650px;
 }
 
 .slide__content{
 	position: relative;
 	z-index: 1;
 	height: 100vh;
-	min-height: 600px;
+	min-height: 650px;
 	text-align: center;
 	color: #ffffff;
 	background-size: cover;
@@ -332,15 +423,16 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 .header-title{
 	max-width: 600px;
 	display: block;
-	margin-left: 30px;
+	margin-left: 10vw;
 	position: relative;
 	z-index: 9;
 	text-align: left;
+	padding-right: 10px;
 }
 
 .header-title__main{
 	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 40px;
+	font-size: 45px;
 	font-weight: 700;
 	letter-spacing: 1px;
 	line-height: 1.3em;
@@ -351,18 +443,20 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .header-title__sub{
 	font-family: 'Roboto' , Arial, sans-serif;
-	font-size: 15px;
+	font-size: 16px;
 	font-weight: normal;
 	display: inline-block;
 	color: #696969;
 	line-height: 1.5em;
 	letter-spacing: 1px;
 	text-align: left;
-	padding: 25px 0;
+	padding: 20px 0;
+	max-width: 500px;
 }
 
 .slide_word{
 	color: #009fff;
+	text-transform: uppercase;
 }
 
 .buttoncol a{
@@ -371,13 +465,13 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	min-height: 35px;
     border: none;
     color: #ffffff;
-    padding: 12px 14px;
+    padding: 14px 15px;
     text-decoration: none;
 	text-transform: uppercase;
     display: inline-block;
-    font-size: 12px;
+    font-size: 13px;
 	font-weight: 600;
-	font-family: 'Montserrat', Arial sans-serif;
+	font-family: 'Montserrat', Arial, sans-serif;
     transition: 0.5s;
     cursor: pointer;
 	border: 1px solid #ec2F4B;
@@ -386,36 +480,36 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .buttoncol a:hover{
-	color: #ffffff;
-	background-color: #111111;
+	color: #111111;
+	background: transparent;
 	border-color: #111111;
 }
 
-/**** Main Body Section ****/
+/* 3. MAIN CONTENT
+ ----------- */
+ 
+/* --- 3.1. Telecoms Area One --- */
 .telecoms_area_one{
 	width: 100%;
-	margin-bottom: 9em;
+	margin-bottom: calc(9em - 35px);
 	min-height: 50px
 }
 
 .heading_group{
 	width: 100%;
-	display: -ms-flexbox;
 	display: flex;
-	-ms-flex-wrap: wrap; 
 	flex-wrap: wrap;
 	margin-bottom: 70px;
 	max-width: 1000px;
 	margin-left: auto;
 	margin-right: auto;
 	background-color: #009fff;
-	margin-top:  -40px;
+	margin-top:  -50px;
 	position: relative;
 	z-index: 9999;
 }
 
 .title_group{
-	-ms-flex: 33.33%;
 	flex: 33.33%;
 	width: 33.33%;
 	max-width: 400px;
@@ -460,90 +554,67 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	display: inline-block;
 	font-size: 20px;
 	color: #ffffff;
+	padding-bottom: 7px;
 }
 
 .title_group.active .title_icon .fas{
 	color: #ec2F4B;
 }
 
-.mobile_group,
-.internet_group,
-.cable_group{
+.price_group{
 	width: 100%;
-	display: -ms-flexbox;
 	display: flex;
-	-ms-flex-wrap: wrap; 
 	flex-wrap: wrap;
 	max-width: 1100px;
 	margin-left: auto;
 	margin-right: auto;
+	padding: 70px 20px 0;
 }
 
-.mobile_col,
-.internet_col,
-.cable_col{
-	-ms-flex: 33.33%;
+.price_col{
 	flex: 33.33%;
 	width: 33.33%;
 	padding: 0 25px;
 }
 
-.telecoms_area{
-	padding: 0 15px;
-}
-
-.telecoms_area h2{
-	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 35px;
-	font-weight: 700;
-	display: block;
-	color: #111111;
-	text-align: center;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	line-height: 1.3em;
-}
-
-.mobile_col_box,
-.cable_col_box,
-.internet_col_box{
+.price_col_box{
 	max-width: 350px;
 	position: relative;
 	text-align: center;
 	overflow: hidden;
 	margin: auto;
 	min-height: 150px;
-	background: #ffffff;
-	transition: 0.5s;
 }
 
-.mobile_title,
-.cable_title,
-.internet_title{
+.price_content{
+	padding-bottom: 25px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+
+.center_col{
+	border: none;
+	background-color: #ec2F4B;
+	padding: 30px 10px 40px;
+	position: relative;
+	bottom: 35px;
+	max-width: 350px;
+	margin: auto;
+}
+
+.price_title{
 	font-family: 'Montserrat' , Arial, sans-serif;
 	font-size: 18px;
-	font-weight: 600;
+	font-weight: 700;
 	display: block;
 	color: #111111;
 	letter-spacing: 1px;
 	text-align: center;
 	line-height: 1.4em;
-	background-color: #ffffff;
 }
 
-.mobile_price_content,
-.cable_price_content,
-.internet_price_content{
-	padding-bottom: 25px;
-	padding-right: 10px;
-	padding-top: 10px;
-	padding-left: 10px;
-	background-color: #ffffff
-}
-
-.mobile_value,
-.cable_value,
-.internet_value{
+.price_value{
 	font-family: 'Montserrat' , Arial, sans-serif;
 	font-size: 40px;
 	font-weight: 700;
@@ -552,11 +623,9 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	letter-spacing: 1px;
 	text-align: center;
 	line-height: 1.2em;
-	background-color: #ffffff;
 }
 
-.cable_price_content h4,
-.internet_price_content h4{
+.price_content h4{
 	font-family: 'Montserrat' , Arial, sans-serif;
 	font-size: 14px;
 	font-weight: 500;
@@ -567,11 +636,17 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	padding-top: 6px;
 }
 
+.center_col .price_title,
+.center_col .price_value,
+.center_col .price_content h4{
+	color: #ffffff;
+}
+
 .price_list{
 	width: 100%;
 	background-color: #ffffff;
 	margin: auto;
-	border-top: solid 2px #e0e0e0;
+	border-top: solid 1px #e0e0e0;
 	padding-top: 1px;
 }
 
@@ -582,9 +657,9 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 .price_list > ul li{
 	font-family: 'Montserrat' , Arial, sans-serif;
 	font-size: 13px;
-	font-weight: 600;
+	font-weight: 500;
 	display: block;
-	color: #696969;
+	color: #111111;
 	letter-spacing: 1px;
 	text-align: left;
 	padding: 14px 12px;
@@ -603,21 +678,31 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	color: #ec2F4B;
 }
 
-.mobile_btn a,
-.cable_btn a,
-.internet_btn a{
+.center_col .price_list{
+	background-color: #ec2F4B;
+}
+
+.center_col .price_list > ul li{
+	color: #ffffff;
+}
+
+.center_col .price_list > ul li::after{
+	color: #ffffff;
+}
+
+.price_btn a{
 	background-color: #ffffff;
 	width: 150px;
 	min-height: 30px;	
     border: none;
     color: #111111;
-    padding: 12px 14px;
+    padding: 13px 14px;
     text-decoration: none;
 	text-transform: uppercase;
     display: block;
-    font-size: 12px;
+    font-size: 13px;
 	font-weight: 600;
-	font-family: 'Montserrat', Helvetica, Arial sans-serif;
+	font-family: 'Montserrat', Arial, sans-serif;
     margin: auto;
     transition: 0.5s;
     cursor: pointer;
@@ -626,316 +711,102 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	text-align: center;
 }
 
-.mobile_btn a:hover,
-.cable_btn a:hover,
-.internet_btn a:hover{
+.price_btn a:hover{
 	color: #ffffff;
 	background-color: #ec2F4B;
 	border-color: #ec2F4B;
 }
 
-.mobile_mid_btn a,
-.cable_mid_btn a,
-.internet_mid_btn a{
-	background-color: #ec2F4B;
+.price_mid_btn a{
+	background-color: #ffffff;
 	width: 150px;
 	min-height: 30px;	
     border: none;
-    color: #ffffff;
-    padding: 12px 14px;
+    color: #ec2F4B;
+    padding: 13px 14px;
     text-decoration: none;
 	text-transform: uppercase;
     display: block;
-    font-size: 12px;
+    font-size: 13px;
 	font-weight: 600;
-	font-family: 'Montserrat', Helvetica, Arial sans-serif;
+	font-family: 'Montserrat', Arial, sans-serif;
     margin: auto;
     transition: 0.5s;
     cursor: pointer;
-	border: 1px solid #ec2F4B;
+	border: 1px solid #ffffff;
 	letter-spacing: 1px;
 	text-align: center;
 }
 
-.mobile_mid_btn a:hover,
-.cable_mid_btn a:hover,
-.internet_mid_btn a:hover{
-	color: #111111;
-	background-color: transparent;
-	border-color: #111111;
+.price_mid_btn a:hover{
+	color: #ffffff;
+	background: transparent;
+	border-color: #ffffff;
 }
 
+/* --- 3.2. Telecoms Area Two --- */
 .telecoms_area_two{
-	max-width: 1400px;
+	max-width: 1100px;
 	margin: 0 auto 9em;
 	padding: 0 25px;
 }
 
 .telecoms_group_two{
 	width: 100%;
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-wrap: wrap; 
-	flex-wrap: wrap;
-}
-
-.telecoms_col{
-	-ms-flex: 50%;
-	flex: 50%;
-	width: 50%;
-	padding: 0 25px;
-}
-
-.telecoms_col img{
-	vertical-align: middle;
-	width: 100%;
-	height: auto;
-	transition: 0.5s;
-	display: block;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
-}
-
-.top_area{
-	display: -webkit-flex;
-	display: flex;
-	-webkit-flex-direction: column;
-	flex-direction: column;
-	-webkit-justify-content: center;
-	justify-content: column;
-	-webkit-align-items: center;
-	align-items: center;
-}
-
-.top_col_box{
-	max-width: 700px;
-	margin: auto;
-	padding: 0 20px;
-}
-
-.top_col_box h2{
-	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 35px;
-	font-weight: 700;
-	display: block;
-	color: #111111;
-	text-transform: uppercase;
-	text-align: left;
-	letter-spacing: 1px;
-	line-height: 1.3em;
-}
-
-.top_col_box > p{
-	font-family: 'Roboto' , Arial, sans-serif;
-	font-size: 15px;
-	font-weight: normal;
-	display: block;
-	color: #696969;
-	letter-spacing: 1px;
-	text-align: left;
-	padding: 15px 0;
-	line-height: 1.5em;
-}
-
-.group_col_area{
-	width: 100%;
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-wrap: wrap; 
-	flex-wrap: wrap;
-}
-
-.group_col_mid{
-	-ms-flex: 50%;
-	flex: 50%;
-	width: 50%;
-	padding-right: 5px;
-}
-
-.group_col_box{
-	max-width: 350px;
-	padding: 25px 15px;
-	text-align: left;
-	overflow: auto;
-	background-color: transparent;
-	transition: ease-in-out 0.5s;
-}
-
-.group_col_num{
-	float: left;
-	width: 10%;
-}
-
-.group_col_num h4{
-	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 18px;
-	font-weight: 600;
-	display: block;
-	color: #ec2F4B;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	text-align: center;
-	margin-top: 0;
-	line-height: 1.4em;
-}
-
-.group_col_content{
-	float: left;
-	width: 90%;
-	padding-left: 15px;
-}
-
-.group_col_content h3{
-	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 18px;
-	font-weight: 600;
-	display: block;
-	color: #111111;
-	letter-spacing: 1px;
-	text-align: left;
-	margin-top: 0;
-	line-height: 1.4em;
-}
-
-.group_col_content p{
-	font-family: 'Roboto' , Arial, sans-serif;
-	font-size: 14px;
-	font-weight: normal;
-	display: block;
-	color: #696969;
-	letter-spacing: 1px;
-	text-align: left;
-	line-height: 1.5em;
-}
-
-.group_col_box:hover{
-	background-color: #ec2F4B;
-}
-
-.group_col_box:hover h3,
-.group_col_box:hover p,
-.group_col_box:hover .group_col_num h4{
-	color: #ffffff;
-}
-
-.telecoms_area_three{
-	width: 100%;
-	margin: 0 0 9em;
-	
-}
-
-.telecoms_group_three{
-	width: 100%;
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-wrap: wrap; 
-	flex-wrap: wrap;
+	position: relative;
 	padding-top: 40px;
-	height: 100%;
-	min-height: 400px;
 }
 
-.telecoms_heading{
-	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 35px;
-	font-weight: 700;
-	display: block;
-	color: #111111;
-	text-transform: uppercase;
+.info_slide{
+	max-width: 1100px;
+	position: relative;
 	text-align: center;
-	letter-spacing: 1px;
-	line-height: 1.3em;
-	padding: 0 20px;
+	overflow: hidden;
+	margin: auto;
+	padding-right: 25px;
+	transition: 0.5s;
 }
 
-.telecoms_info{
-	max-width: 600px;
-	margin: 0 auto;
-	font-family: 'Roboto' , Arial, sans-serif;
-	font-size: 15px;
-	font-weight: normal;
-	display: block;
-	color: #696969;
-	letter-spacing: 1px;
-	text-align: center;
-	padding: 10px 20px 0;
-	line-height: 1.5em;
-}
-
-.box_grid{
-	-ms-flex: 33.33%;
-	flex: 33.33%;
-	width: 33.33%;
+.telecoms_image{
 	position: relative;
 }
 
-.box_grid img{
+.telecoms_image img{
 	vertical-align: middle;
-	width: 100%;
-	min-height: 400px;
-	transition: 0.5s;
-	display: block;
+	max-width: 100%;
+	transition: .5s;
 }
 
-.box_overlay{
+.telecoms_title{
 	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	height: 100%;
-	width: 100%;
-	opacity: 1;
-	transition: ease-in-out 1.25s;
-	background: rgba(0,0,0,0.6);
+	top: 25px;
+	left: 25px;
+	transition: .5s;
 }
 
-.box_content{
-	max-width: 600px;
-	width: 100%;
-	padding: 3em 25px;
-	text-align: center;
-	transition: 0.5s;
-	margin: auto;
-}
-
-.box_content h3{
-	color: #ffffff;
+.telecoms_title h5{
 	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 25px;
-	font-weight: 500;
+	font-size: 13px;
+	font-weight: 600;
 	display: block;
-	text-align: center;
+	color: #ffffff;
 	letter-spacing: 1px;
-	line-height: 1.2em;
-}
-
-.grid_bg{
-	background-color: #ec2F4B;
-}
-
-.grid_col{
-	position: relative;
-	max-width: 600px;
-	margin: auto;
-	padding: 6em 20px;
 	text-align: center;
-}
-
-.grid_col h3{
-	color: #ffffff;
-	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 25px;
-	font-weight: 500;
-	display: block;
-	text-align: center;
+	line-height: 1.5em;
 	text-transform: uppercase;
-	letter-spacing: 1px;
-	line-height: 1.3em;
-	margin-bottom: 60px;
+	background-color: #ec2F4B;
+	padding: 12px 16px;
+	margin: 0;
 }
 
-.box_list > ul{
-	margin: 25px 0;
+.box_list{
+	position: absolute;
+	left: 25px;
+	bottom: 25px;
+	background-color: #ffffff;
+	padding: 25px;
+	max-width: 300px;
+	transition: 0.5s;
 }
 
 .box_list > ul > li{
@@ -943,310 +814,104 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	font-size: 14px;
 	font-weight: 500;
 	display: block;
-	color: #ffffff;
+	color: #111111;
 	letter-spacing: 1px;
 	text-align: left;
-	padding: 6px 0;
 }
 
 .box_list > ul > li::before{
-	font-family: 'Font Awesome 5 Free';
-	content: "\f00c";
+	content: ".";
 	font-weight: 900;
-	font-size: 15px;
-	padding-right: 12px;
+	font-size: 25px;
+	padding-right: 6px;
 	color: #ec2F4B;
 }
 
-.box_col_button a{
-	background-color: #ec2F4B;
-	width: 165px;
-	min-height: 30px;
-	margin: 30px 0;	
-    border: none;
-    color: #ffffff;
-    padding: 13px 15px;
-    text-decoration: none;
-	text-transform: uppercase;
-    display: block;
-    font-size: 13px;
-	font-weight: 600;
-	font-family: 'Montserrat', Arial sans-serif;
-    transition: 0.5s;
-    cursor: pointer;
-	border: 1px solid #ec2F4B;
-	letter-spacing: 1px;
-	text-align: center;
-}
-
-.box_col_button a:hover{
-	color: #ffffff;
-	background-color: transparent;
-	border-color: #ffffff;
-}
-
-.video-play-button {
-	position: absolute;
-	z-index: 0;
-	left: 50%;
-	top: 50%;
-	transform: translateX(-50%)translateY(-50%);
-	box-sizing: content-box;
-	display: block;
-	width: 28px;
-	height: 42px;
-	border-radius: 50%;
-	padding: 28px 16px 12px 32px;
-	margin-top: 50px;
-}
-
-.video-play-button:before {
-	content: "";
-	position: absolute;
-	z-index: 0;
-	left: 50%;
-	top: 50%;
-	transform: translateX(-50%) translateY(-50%);
-	display: block;
-	width: 80px;
-	height: 80px;
-	background: #ffffff;
-	border-radius: 50%;
-	animation: pulse-border 1500ms ease-out infinite;
-}
-
-.video-play-button:after {
-	content: "";
-	position: absolute;
-	z-index: 1;
-	left: 50%;
-	top: 50%;
-	transform: translateX(-50%) translateY(-50%);
-	display: block;
-	width: 80px;
-	height: 80px;
-	background: #ffffff;
-	border-radius: 50%;
-	transition: all 200ms;
-}
-
-.video-play-button:hover:after {
-	background-color: darken(#fa183d, 10%);
-}
-
-.video-play-button span {
-	display: block;
-	position: relative;
-	z-index: 3;
-	width: 0;
-	height: 0;
-	border-left: 18px solid #ec2F4B;
-	border-top: 12px solid transparent;
-	border-bottom: 12px solid transparent;
-}
-
-@keyframes pulse-border {
-  0% {
-    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
-    opacity: 1;
-  }
-  100% {
-    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
-    opacity: 0;
-  }
-}
-
-.telecoms_area_four{
-	width: 100%;
-	margin: 0 0 9em;
-	min-height: 400px;
-	padding: 7.5em 25px;
-	background-color: #f6f6f6;
-}
-
-.telecoms_group_four{
-	max-width: 1400px;
-	width: 100%;
-	margin: 0 auto;
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-wrap: wrap; 
-	flex-wrap: wrap;
-	padding-top: 40px;
-	padding-bottom: 40px;
-}
-
-.team_box{
-	max-width: 350px;
-	position: relative;
-	text-align: center;
-	overflow: hidden;
-	margin: auto;
-	height: auto;
-	transition: 0.5s;
-}
-
-.team_col{
-	-ms-flex: 25%;
-	flex: 25%;
-	width: 25%;
-	padding: 0 25px;
-}
-
-.team_col img{
-	width: 100%;
-	height: auto;
-	transition: ease-in-out 0.5s;
-	display: block;
-	border-radius: 50%;
-}
-
-.team_image{
-	border-radius: 50%;
-	overflow: hidden;
-	position: relative;
-	padding-bottom: 10px;
-	padding-right: 10px;
-	padding-top: 10px;
-	padding-left: 10px;
-	background-color: #ffffff;
-	transition: ease-in-out 0.5s;
-}
-
-.overlay {
-	position: absolute;
-	bottom: 100%;
-	left: 0;
-	right: 0;
-	overflow: hidden;
-	width: 100%;
-	opacity: 0.5;
-	height:0;
-	transition: 0.5s ease;
-	background-color: #ec2F4B;
-}
-
-.team_box .team_image > img{
-	transition: ease-in-out 1.25s;
-}
-
-.team_box:hover .team_image > img{
-	transform: scale(1.15);
-}
-
-.team_box:hover .overlay{
-	bottom: 0;
-	height: 100%;
-}
-
-.team_icon{
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	width: 100%;
-}
-
-.team_icon .fa-facebook-f{
-	padding: 10px 12px !important;
-}
-
-.team_icon .fab,
-.team_icon .fa{
+.prev_nav,
+.next_nav{
 	font-size: 14px;
-	color: #ec2F4B;
-	width: 35px;
-	height: 35px;
-	background-color: #ffffff;
-	padding: 10px;
-	border: solid 1px #ffffff;
-	border-radius: 50%;
-	display: inline-block;
-	text-align: left;
-	margin-right: 7px;
-	transition: ease-in-out 0.5s;
-}
-
-.team_icon .fab:hover,
-.team_icon .fa:hover{
-	color: #ffffff;
-	background-color: #111111;
-	border: solid 1px #111111;
-}
-
-.team_name{
-	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 18px;
-	display: block;
-	font-weight: 600;
+	transition: 0.6s ease;
+	background-color: transparent;
+	width: auto;
+	padding: 10px 16px;
 	color: #111111;
-	letter-spacing: 1px;
-	text-align: center;
+	cursor: pointer;
+	border: solid 1px #111111;
+	display: inline-block;
+	margin-top: 45px;
 }
 
-.team_title{
-	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 15px;
-	display: block;
-	font-weight: 600;
-	color: #696969;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	text-align: center;
+.prev_nav{
+	position: absolute;
+	top: 50%;
+	left: -35px;
+	transform: translateY(-50%);
 }
 
-.telecoms_area_five{
+.next_nav{
+	position: absolute;
+	top: 50%;
+	right: -35px;
+	transform: translateY(-50%);
+}
+
+.next_nav:hover,
+.prev_nav:hover{
+	background-color: #ec2F4B;
+	color: #ffffff;
+	border-color: #ec2F4B;
+}
+
+/* --- 3.3. Telecoms Area Three --- */
+.telecoms_area_three{
 	max-width: 1400px;
-	margin: 0 auto 9em;
+	margin: 0 auto 12em;
 	padding: 0 25px;
 }
 
-.telecoms_group_five{
+.telecoms_group_three,
+.square_box_area{
 	width: 100%;
-	display: -ms-flexbox;
 	display: flex;
-	-ms-flex-wrap: wrap; 
 	flex-wrap: wrap;
 }
 
-.question_col{
+.square_col_left{
+	flex: 33.33%;
+	width: 33.33%;
+	padding: 0 15px;
 	position: relative;
-	-ms-flex: 50%;
-	flex: 50%;
-	width: 50%;
-	padding: 0 30px;
-	overflow: hidden;
 }
 
-.question_col img{
-	vertical-align: middle;
-	width: 100%;
-	transition: .5s;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+.square_col_right{
+	flex: 66.66%;
+	width: 66.66%;
+	padding: 0 15px;
 }
 
-.col_area{
+.square_box_area{
+	padding: 12px 6px;
+}
+
+.square_area{
 	display: flex;
-	-webkit-flex-direction: column;
-	flex-direction: column;
-	-webkit-justify-content: center;
-	justify-content: center;
-	-webkit-align-items: center;
+	flex-direction: row;
+	justify-content: flex-start;
 	align-items: center;
 }
 
-.col_box{
-	max-width: 700px;
+.square_box{
+	max-width: 450px;
 	margin: 0 auto;
 	width: 100%;
+	padding: 0 20px;
 }
 
-.col_box > p{
+.square_box > p{
 	font-family: 'Roboto' , Arial, sans-serif;
-	font-size: 15px;
+	font-size: 16px;
 	font-weight: normal;
-	padding-top: 10px;
+	padding-top: 15px;
 	display: block;
 	color: #696969;
 	letter-spacing: 1px;
@@ -1254,28 +919,380 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	line-height: 1.5em;
 }
 
-.col_box h2{
+.square_box h2{
 	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 35px;
+	font-size: 40px;
 	font-weight: 700;
 	display: block;
 	color: #111111;
-	text-transform: uppercase;
 	text-align: left;
 	letter-spacing: 1px;
 	line-height: 1.3em;
+	text-transform: uppercase;
+}
+
+.info_col_button a{
+	background-color: #ec2F4B;
+	width: 165px;
+	min-height: 30px;
+	margin: 30px 0 0;
+    border: none;
+    color: #ffffff;
+    padding: 13px 14px;
+    text-decoration: none;
+	text-transform: uppercase;
+    display: block;
+    font-size: 13px;
+	font-weight: 600;
+	font-family: 'Montserrat', Arial, sans-serif;
+    transition: 0.5s;
+    cursor: pointer;
+	border: 1px solid #ec2F4B;
+	letter-spacing: 1px;
+	text-align: center;
+}
+
+.info_col_button a:hover{
+	color: #111111;
+	background: transparent;
+	border-color: #111111;
+}
+
+.flip_col{
+	position: relative;
+	flex: 33.33%;
+	width: 33.33%;
+	max-width: 300px;
+	height: 300px;
+}
+
+.flip-card {
+	background-color: transparent;
+	max-width: 300px;
+	margin: auto;
+	height: 300px;
+	perspective: 1000px;
+	padding-bottom: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-left: 5px;
+}
+
+.flip-card img{
+	max-width: 300px;
+	height: auto;
+	margin: auto;
+	display: block;
+}
+
+.flip-card-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.6s;
+	transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+	transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+	overflow: hidden;
+}
+
+.back-color{
+	background-color: #ec2F4B;
+}
+
+.flip-card-back {
+	transform: rotateY(180deg);
+}
+
+.flip-card-back{
+	position: relative;
+}
+
+.thumb_content{
+	margin-top: 15px;
+}
+
+.thumb_content h3{
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 18px;
+	font-weight: 600;
+	display: block;
+	color: #111111;
+	text-align: center;
+	letter-spacing: 1px;
+	line-height: 1.4em;
+	margin: 0;
+}
+
+.inner_crumb{
+	width: 50px;
+	height: 1px;
+	margin: auto;
+	border-bottom: solid 2px #ec2F4B;
+	padding-top: 12px;
+}
+
+.area_button{
+	width: 100%;
+	padding: 0 10px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	overflow: hidden;
+}
+
+.area_button > a{
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 13px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	text-align: right;
+	text-transform: uppercase;
+	display: block;
+	color: #ffffff;
+	text-decoration: none;
+	width: 120px;
+	margin: auto;
+	transition: 0.5s;
+    cursor: pointer;
+}
+
+.area_button > a::after{
+	content: "\203A";
+	font-size: 20px;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	height: auto;
+	padding-left: 5px;
+	top: 1px;
+	position: relative;
+}
+
+.area_button > a:hover{
+	color: #111111;
+}
+
+/* --- 3.4. Telecoms Area Four --- */
+.telecoms_area_four{
+	position: relative;
+	min-height: 400px;
+	height: 100%;
+	background-color: #009fff;
+	margin: 0 0 9em;
+}
+
+/* --- 3.5. Telecoms Area Five --- */
+.telecoms_area_five{
+	max-width: 1400px;
+	margin: 0 auto 9em;
+	margin-top:  -375px;
+	position: relative;
+	z-index: 9999;
+}
+
+.telecoms_group_five{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 40px;
+}
+
+.bg_head{
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 40px;
+	font-weight: 700;
+	display: block;
+	color: #ffffff;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	line-height: 1.3em;
+}
+
+.bg_info{
+	max-width: 600px;
+	margin: 0 auto;
+	font-family: 'Roboto' , Arial, sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	display: block;
+	color: #f2f2f2;
+	letter-spacing: 1px;
+	text-align: center;
+	padding: 10px 10px 0;
+	line-height: 1.5em;
+}
+
+.icon_col{
+	flex: 25%;
+	width: 25%;
+	padding: 0 20px;
+}
+
+.icon_box{
+	max-width: 350px;
+	margin: 0 auto;
+	padding: 35px 30px; 
+	text-align: left;
+	background: #ffffff;
+	transition: 0.5s;
+	min-height: 50px;
+	height: 100%
+}
+
+.icon{
+	float: left;
+	width: 15%;
+}
+
+.icon_content{
+	float: left;
+	width: 85%;
+	padding-left: 10px;
+	padding-bottom: 25px;
+}
+
+.icon .fas,
+.icon .far{
+	font-size: 30px;
+	color: #ec2F4B;
+	text-align: left;
+	display: block;
+	transition: 0.5s;
+}
+
+.icon_crumb{
+	width: auto;
+	height: 1px;
+	display: block;
+	border-bottom: solid 4px #ec2F4B;
+	margin: 0 auto 0;
+	transition: 0.5s;
+	visibility: hidden;
+	opacity: 0;
+}
+
+.icon_content h3{
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 18px;
+	font-weight: 600;
+	display: block;
+	color: #111111;
+	letter-spacing: 1px;
+	text-align: left;
+	margin-top: 0;
+	line-height: 1.4em;
+}
+
+.icon_content p{
+	font-family: 'Roboto' , Arial, sans-serif;
+	font-size: 15px;
+	font-weight: normal;
+	display: block;
+	color: #696969;
+	letter-spacing: 1px;
+	text-align: left;
+	line-height: 1.5em;
+	padding-top: 10px;
+}
+
+.icon_col:hover .icon_crumb{
+	visibility: visible;
+	opacity: 1;
+}
+
+/* --- 3.6. Telecoms Area Six --- */
+.telecoms_area_six{
+	max-width: 1280px;
+	margin: 0 auto 0;
+	padding: 0 20px;
+	margin-bottom: calc(9em - 40px);
+}
+
+.telecoms_group_six{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.question_col{
+	flex: 50%;
+	width: 50%;
+}
+
+.media_area{
+	position: relative;
+	overflow: hidden;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.question_col img{
+	vertical-align: middle;
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.col_area{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.question_box{
+	max-width: 475px;
+	margin: 0;
+	width: 100%;
+	padding: 0 20px;
+}
+
+.question_box h2{
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 40px;
+	font-weight: 700;
+	display: block;
+	color: #111111;
+	text-align: left;
+	letter-spacing: 1px;
+	line-height: 1.3em;
+	text-transform: uppercase;
+	margin-top: 0;
+}
+
+.question_box > p{
+	font-family: 'Roboto' , Arial, sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	padding-top: 15px;
+	display: block;
+	color: #696969;
+	letter-spacing: 1px;
+	text-align: left;
+	line-height: 1.5em;
 }
 
 .accordion_box{
 	overflow:  hidden;
 	margin-top: 12px;
-	max-width: 450px;
 }
 
 .accordion {
 	background-color: #eee;
 	cursor: pointer;
-	padding: 24px;
+	padding: 20px;
 	width: 100%;
 	border: none;
 	text-align: left;
@@ -1295,8 +1312,9 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .accordion:after {
-	content: '\002B';
-	font-size: 18px;
+	font-family: 'Font Awesome 5 Free';
+	content: '\f107';
+	font-size: 16px;
 	color: #111111;
 	font-weight: 600;
 	float: right;
@@ -1304,7 +1322,8 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .active-bar:after {
-	content: "\2212";
+	font-family: 'Font Awesome 5 Free';
+	content: "\f106";
 }
 
 .panel{
@@ -1316,71 +1335,33 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .panel > p{
-	padding-top: 12px;
+	padding: 12px 6px 0;
 	font-family: 'Roboto' , Arial, sans-serif;
-	font-size: 14px;
+	font-size: 15px;
 	font-weight: normal;
 	display: block;
-	color: 5;
 	line-height: 1.6em;
+	color: #696969;
 }
 
-.box_button{
-	max-width: 300px;
+/* --- 3.7. Telecoms Area Seven --- */
+.telecoms_area_seven{
+	max-width: 1280px;
+	margin: 0 auto 9em;
+	padding: 0 25px;
 }
 
-.box_button a{
-	background-color: #ec2F4B;
-	width: 150px;
-	min-height: 30px;	
-    border: none;
-    color: #ffffff;
-    padding: 12px 14px;
-    text-decoration: none;
-	text-transform: uppercase;
-    display: inline-block;
-    font-size: 12px;
-	font-weight: 600;
-	font-family: 'Montserrat', Helvetica, Arial sans-serif;
-    cursor: pointer;
-	margin: 7px 0;
-	transition: 0.5s;
-	border: 1px solid #ec2F4B;
-	letter-spacing: 1px;
-	text-align: center;
-}
-
-.box_button a:hover{
-	color: #111111;
-	background-color: transparent;
-	border-color: #111111;
-}
-
-.telecoms_area_six{
+.telecoms_group_seven{
 	width: 100%;
-	margin: 0 0 9em;
-	min-height: 400px;
-	padding: 6.5em 25px;
-	background-color: #f6f6f6;
-}
-
-.telecoms_group_six{
-	max-width: 1400px;
-	width: 100%;
-	margin: 0 auto;
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-wrap: wrap; 
+	display: flex; 
 	flex-wrap: wrap;
 	padding-top: 40px;
-	padding-bottom: 40px;
 }
 
 .blog_col{
-	-ms-flex: 33.33%;
 	flex: 33.33%;
 	width: 33.33%;
-	padding: 0 20px;
+	padding: 0 25px;
 }
 
 .blog_box{
@@ -1390,8 +1371,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	overflow: hidden;
 	margin: auto;
 	min-height: 150px;
-	transition: 0.5s;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+	border: solid 1px #e0e0e0;
 }
 
 .blog_image{
@@ -1402,10 +1382,10 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 .blog_area{
 	overflow: hidden;
 	position: relative;
-	padding-bottom: 10px;
-	padding-right: 10px;
-	padding-top: 10px;
-	padding-left: 10px;
+	padding-bottom: 12px;
+	padding-right: 12px;
+	padding-top: 12px;
+	padding-left: 12px;
 	background-color: #ffffff;
 	transition: ease-in-out 0.5s;
 }
@@ -1448,7 +1428,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .blog_title a{
 	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 20px;
+	font-size: 18px;
 	display: block;
 	font-weight: 600;
 	color: #111111;
@@ -1466,13 +1446,14 @@ a.blog_btn:hover,
 
 .blog_content p{
 	font-family: 'Roboto' , Arial, sans-serif;
-	font-size: 14px;
+	font-size: 15px;
 	font-weight: normal;
 	display: block;
 	color: #696969;
 	letter-spacing: 1px;
 	text-align: left;
 	padding: 10px 0;
+	line-height: 1.5em;
 }
 
 a.blog_btn{
@@ -1485,7 +1466,7 @@ a.blog_btn{
     display: inline-block;
     font-size: 13px;
 	font-weight: 600;
-	font-family: 'Montserrat', Arial sans-serif;
+	font-family: 'Montserrat', Arial, sans-serif;
     transition: 0.5s;
     cursor: pointer;
 	letter-spacing: 1px;
@@ -1502,33 +1483,30 @@ a.blog_btn::after{
 	display: inline-block;
 	height: auto;
 	padding-left: 5px;
-	top: 2px;
+	top: 1px;
 	position: relative;
 }
 
-.telecoms_area_seven{
+/* --- 3.8. Telecoms Area Eight --- */
+.telecoms_area_eight{
 	position: relative;
-	display: -webkit-flex;
-	display: flex;
-	-webkit-flex-direction: column;
-	flex-direction: column;
-	-webkit-justify-content: center;
-	justify-content: center;
-	-webkit-align-items: center;
-	align-items: center;
 	min-height: 400px;
 	height: 100%;
+	background-color: #009fff;
+	margin: 0;
 	text-align: center;
-	margin-bottom: 9em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	padding: 5em 0;
-	background-color: #ec2F4B;
 }
 
-.telecoms_group_seven{
+.telecoms_group_eight{
 	position: relative;
 	z-index: 9;
 	width: 100%;
-	max-width: 1400px;
+	max-width: 1000px;
 	margin: auto;
 	padding: 0 25px;
 }
@@ -1551,10 +1529,10 @@ a.blog_btn::after{
 }
 
 .client_box > p{
-	font-family: 'Roboto' , Arial, sans-serif;
-	font-size: 18px;
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 16px;
 	font-weight: normal;
-	max-width: 700px;
+	max-width: 600px;
 	margin: auto;
 	display: block;
 	color: #ffffff;
@@ -1590,38 +1568,38 @@ a.blog_btn::after{
 	color: #ffffff;
 }
 
-.telecoms_area_eight{
-	max-width: 1400px;
-	margin: 0 auto 9em;
-	padding: 0 25px;
+/* --- 3.9. Telecoms Area Nine --- */
+.telecoms_area_nine{
+	width: 100%;
+	min-height: 100px;
+	margin-bottom: 9em;
 }
 
-.telecoms_group_eight{
+.telecoms_group_nine{
 	width: 100%;
-	display: -ms-flexbox;
 	display: flex;
-	-ms-flex-wrap: wrap; 
 	flex-wrap: wrap;
+	padding: 20px;
+	border-bottom: solid 1px #e0e0e0;
 }
 
 .count_col{
-	-ms-flex: 25%;
 	flex: 25%;
 	width: 25%;
 	padding: 0 25px;
+	border-right: solid 1px #e0e0e0;
 }
 
 .count_box{
 	max-width: 300px;
 	margin: auto;
-	border: dotted 2px #e0e0e0;
-	padding: 40px 25px;
+	padding: 0 25px;
 }
 
 .count_box h3{
 	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 20px;
-	font-weight: 500;
+	font-size: 16px;
+	font-weight: 600;
 	display: block;
 	text-align: center;
 	color: #111111;
@@ -1631,163 +1609,118 @@ a.blog_btn::after{
 
 .count_box .counter{
 	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 35px;
-	font-weight: 700;
+	font-size: 25px;
+	font-weight: 600;
 	display: block;
 	text-align: center;
 	color: #ec2F4B;
 	letter-spacing: 1px;
 }
 
-.telecoms_area_nine{
+/* --- 3.10. Telecoms Area Ten --- */
+.telecoms_area_ten{
 	position: relative;
-	display: -webkit-flex;
 	display: flex;
-	-webkit-flex-direction: column;
 	flex-direction: column;
-	-webkit-justify-content: center;
 	justify-content: center;
-	-webkit-align-items: center;
 	align-items: center;
-	min-height: 350px;
+	min-height: 400px;
 	height: 100%;
+	text-align: center;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
-	margin-bottom: 9em;
-	padding: 3em 0;
+	margin-bottom: 2em;
+	padding: 5em 0;
 }
 
-.telecoms_area_nine::before {
-	content: '';
-	position: absolute;
-	z-index: 1;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: rgba(24, 25, 34, 0.6);
-}
-
-.telecoms_group_nine{
+.telecoms_group_ten{
 	position: relative;
 	z-index: 5;
+	max-width: 900px;
+	margin: auto;
 	padding: 0 25px;
-	max-width: 1200px;
-	margin: auto;
 	width: 100%;
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-wrap: wrap; 
-	flex-wrap: wrap;
 }
 
-.col_info{
-	-ms-flex: 100%;
-	flex: 100%;
-	width: 100%;
-}
-	
-.col_head{
-	-ms-flex: 100%;
-	flex: 100%;
-	width: 100%;
-}
-	
-.form-row{
-	text-align: center;
-	margin-top: 35px;
-}
-	
-.col_head h3{
-	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 30px;
-	display: block;
-	font-weight: 500;
-	color: #ffffff;
-	letter-spacing: 1px;
-	text-align: center;
-	width: 100%;
-	line-height: 1.3em;
-	max-width: 650px;
-	margin: auto;
+.dark_head{
+	color: #111111;
 }
 
-.col_info input[type="email"]{
-	width: auto;
-	padding: 12px 20px 14px;
-	border: 0;
-	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 13px;
-	display: inline-block;
-	font-weight: 600;
-	color: #333333;
-	text-transform: capitalize;
-	letter-spacing: 1px;
-	background-color: #f6f6f6;
-}
-
-.col_info input[type="submit"]{
-	display: inline-block;
-	width: auto;
-	padding: 10px 20px;
-	text-align: center;
-	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 16px;
-	font-weight: 500;
-	margin: 0;
-	margin-left: -4px;
-	color: #ffffff;
-	border-radius: 0;
-	letter-spacing: 1px;
+.bg_col_button a{
 	background-color: #ec2F4B;
-	border: solid 1px #ec2F4B;
-	transition: 0.5s;
+	width: 170px;
+	min-height: 30px;
+	margin: 30px auto 0;	
+    border: none;
+    color: #ffffff;
+    padding: 14px 18px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+	font-weight: 600;
+	text-transform: uppercase;
+	font-family: 'Montserrat', Arial, sans-serif;
+    transition: 0.5s;
+    cursor: pointer;
+	border: 1px solid #ec2F4B;
+	letter-spacing: 1px;
+	text-align: center;
 }
 
-.col_info input[type="submit"]:hover{
-	opacity: 0.9;
+.bg_col_button a:hover{
+	color: #111111;
+	background: transparent;
+	border-color: #111111;
 }
 
-/**** Footer Section ****/
+.fourth_border{
+	border-right: none !important;
+}
+
+/* 4. FOOTER
+ ----------- */
 .footer{
 	width: 100%;
 	min-height: 350px;
 	position: relative;
 	clear: both;
 	height: 100%;
-	background-color: #111111;
 }
 
 .footer_area{
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 0 25px;
-	display: -ms-flexbox;
 	display: flex;
-	-ms-flex-wrap: wrap; 
 	flex-wrap: wrap;
 }
 
 .footer_col{
-	-ms-flex: 25%;
 	flex: 25%;
 	width: 25%;
 	padding: 0 20px;
+	max-width: 300px;
 }
 
 .footer_col{
 	padding-top: 3.5em;
 }
 
+a.footer-brand img{
+	max-width: 200px;
+	height: auto;
+	display: block;
+}
+
 .footer_box > h3 > a{
 	font-family: 'Montserrat', Arial, sans-serif;
-	font-size: 20px;
+	font-size: 22px;
 	font-weight: 700;
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	text-decoration: none;
-	color: #ffffff;
+	color: #111111;
 	text-align: left;
 }
 
@@ -1796,20 +1729,20 @@ a.blog_btn::after{
 	font-size: 14px;
 	font-weight: normal;
 	letter-spacing: 1px;
-	color: #ffffff;
+	color: #111111;
 	text-align: left;
-	padding: 10px 0;
-	line-height: 1.6em;
+	padding: 20px 0;
+	line-height: 1.5em;
 }
 
 .footer_social{
-	padding-top: 20px;
+	margin: 12px 0;
 }
 
 .footer_social .fab,
 .footer_social .fa{
-	font-size: 14px;
-	color: #ffffff;
+	font-size: 16px;
+	color: #111111;
 	text-align: left;
 }
 
@@ -1822,36 +1755,10 @@ a.blog_btn::after{
 }
 
 .final{
-	width: 100%;
-}
-
-.address_box{
-	margin-top: 30px;
-}
-
-.address_name{
-	font-family: 'Montserrat', Arial, sans-serif;
-	font-size: 13px;
-	font-weight: normal;
-	letter-spacing: 1px;
-	text-transform: capitalize;
-	color: #ffffff;
-	display: block;
-}
-
-.address_box .fas{
-	color: #ffffff;
-	padding-right: 12px;
-}
-
-.address_phone{
-	font-family: 'Montserrat', Arial, sans-serif;
-	font-size: 13px;
-	font-weight: normal;
-	letter-spacing: 1px;
-	text-transform: capitalize;
-	color: #ffffff;
-	display: block;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
 }
 
 .footer_col > h4{
@@ -1859,8 +1766,8 @@ a.blog_btn::after{
 	font-size: 18px;
 	font-weight: 700;
 	letter-spacing: 1px;
-	text-transform: capitalize;
-	color: #ffffff;
+	color: #111111;
+	line-height: 1.4em;
 }
 
 .footer_col > ul > li{
@@ -1873,7 +1780,7 @@ a.blog_btn::after{
 	font-weight: normal;
 	letter-spacing: 1px;
 	text-decoration: none;
-	color: #ffffff;
+	color: #111111;
 	text-align: justify;
 	transition: 0.5s;
 }
@@ -1882,45 +1789,63 @@ a.blog_btn::after{
 	opacity: 0.6;
 }
 
-.right_list{
+.form-row{
+	text-align: right;
+}
+
+.col_info input[type="email"]{
+	display: block;
+	width: 100%;
+	padding: 12px 10px 14px;
+	background-color: #f6f6f6;
+	border: none;
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 13px;
+	font-weight: 600;
+	color: #333333;
+	text-transform: capitalize;
+	letter-spacing: 1px;
+}
+
+.col_info{
 	padding-top: 10px;
 }
 
-.blog_list{
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-wrap: wrap; 
-	flex-wrap: wrap;
+.col_info input[type="submit"]{
+	display: inline-block;
+	padding: 10px 14px;
+	text-align: center;
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+	margin-top: 20px;
+	text-transform: uppercase;
 	width: 100%;
-	padding-bottom: 10px;
+	margin-left: 0;
+	color: #ffffff;
+	border-radius: 0;
+	letter-spacing: 1px;
+	background-color: #ec2F4B;
+	border: solid 1px #ffffff;
+	transition: 0.5s;
 }
 
-.left_blog{
-	-ms-flex: 25%;
-	flex: 25%;
-	width: 25%;
-	padding-bottom: 10px;
+.col_info input[type="submit"]:hover{
+	background-color: #111111;
+	color: #ffffff;
 }
 
-.right_blog{
-	-ms-flex: 75%;
-	flex: 75%;
-	width: 75%;
-	padding-bottom: 15px;
-	padding-left: 8px;
-	margin-top: -5px;
-}
-
-.left_blog img{
-	vertical-align: middle;
-	width: 100%;
-	transition: .5s;
+.col_info input[type="email"]:focus{
+	outline: none;
+	box-shadow: 0 0 0 2px #e0e0e0;
 }
 
 .details{
 	width: 100%;
-	padding-top: 40px;
+	padding-top: 35px;
 	padding-bottom: 10px;
+	margin-top: 35px;
+	border-top: solid 1px #e0e0e0;
 }
 
 .details p{
@@ -1928,62 +1853,70 @@ a.blog_btn::after{
 	font-size: 13px;
 	font-weight: normal;
 	letter-spacing: 1px;
-	color: #ffffff;
+	color: #111111;
 	text-align: center;
 }
 
+/* 5. RESPONSIVE
+ ----------- */
 @media only screen and (max-width: 1024px){
-	.telecoms_col{
-		-ms-flex: 100%;
+	.header__content{
+		height: auto;
+	}
+	
+	.slide__content{
+		height: auto;
+	}
+	
+	.prev_nav{
+		left: 0;
+	}
+	
+	.next_nav{
+		right: 0;
+	}
+	
+	.square_col_left{
 		flex: 100%;
 		width: 100%;
-		max-width: 750px;
-		margin: auto;
+		margin-bottom: 40px;
 	}
 	
-	.top_col_box{
-		padding-top: 40px;
+	.square_col_right{
+		flex: 100%;
+		width: 100%;
 	}
 	
-	.team_col{
-		-ms-flex: 50%;
+	.icon_col{
 		flex: 50%;
 		width: 50%;
-		padding-bottom: 25px;
+		max-width: 350px;
+		margin: 0 auto;
 	}
 	
 	.question_col{
-		-ms-flex: 100%;
 		flex: 100%;
 		width: 100%;
-		max-width: 750px;
+		max-width: 650px;
 		margin: auto;
 	}
 	
-	.col_box{
-		padding-bottom: 40px;
+	.question_box{
+		margin-top: 40px;
 	}
 	
 	.blog_col{
-		-ms-flex: 100%;
-		flex: 100%;
-		width: 100%;
-		padding-bottom: 35px;
-	}
-	
-	.count_col{
-		-ms-flex: 50%;
 		flex: 50%;
 		width: 50%;
-		padding-bottom: 30px;
+		margin-bottom: 40px;
 	}
 }
 
 @media only screen and (max-width: 992px){
 	nav.navbar.bootsnav .navbar-toggle{
-        background: transparent !important;
+        background: transparent;
         color: #111111;
-		font-size: 25px !important;
+		font-size: 25px;
 	}
 	
 	.head_btn{	
@@ -2018,11 +1951,23 @@ a.blog_btn::after{
         content: "\f105";
     }
 	
+	nav.navbar.bootsnav ul.nav.navbar-right .dropdown-menu .dropdown-menu{
+		left: 0;
+	}
+	
+	nav.navbar.bootsnav ul.navbar-right li.dropdown ul.dropdown-menu li.dropdown.on > a.dropdown-toggle:before{
+		 content: "\f107";
+	}
+	
+	nav.navbar.bootsnav ul.dropdown-menu.megamenu-content .col-menu{
+		border-left: none;
+		border-right: none;
+	}
+	
 	.left_info,
 	.right_info,
 	.left_sub,
 	.right_sub{
-		-ms-flex: 100%;
 		flex: 100%;
 		width: 100%;
 		text-align: center;
@@ -2034,8 +1979,7 @@ a.blog_btn::after{
 	}
 	
 	.top_sub,
-	.left_info a,
-	.top_align{
+	.left_info a{
 		text-align: center;
 	}
 	
@@ -2049,8 +1993,11 @@ a.blog_btn::after{
 		padding-top: 25px;
 	}
 	
+	.header-title{
+		margin-left: 5vw;
+	}
+	
 	.title_group{
-		-ms-flex: 100%;
 		flex: 100%;
 		width: 100%;
 	}
@@ -2059,23 +2006,44 @@ a.blog_btn::after{
 		max-width: 400px;
 	}
 	
-	.mobile_col,
-	.internet_col,
-	.cable_col{
-		-ms-flex: 100%;
+	.price_col{
 		flex: 100%;
 		width: 100%;
-		padding-bottom: 30px;
+		margin-bottom: 40px;
 	}
 	
-	.box_grid{
-		-ms-flex: 100%;
+	.center_col{
+		bottom: 0;
+	}
+	
+	.square_box_area{
+		max-width: 300px;
+		margin: auto;
+	}
+	
+	.flip_col{
 		flex: 100%;
 		width: 100%;
+		max-width: 300px;
+		margin: auto;
+	}
+	
+	.first_flip,
+	.second_flip{
+		margin-bottom: 75px;
+	}
+	
+	.count_col{
+		flex: 50%;
+		width: 50%;
+		margin-bottom: 30px;
+	}
+	
+	.second_border{
+		border-right: none;
 	}
 	
 	.footer_col{
-		-ms-flex: 50%;
 		flex: 50%;
 		width: 50%;
 	}
@@ -2086,73 +2054,120 @@ a.blog_btn::after{
 		font-size: 30px;
 	}
 	
-	.group_col_mid{
-		-ms-flex: 100%;
+	.telecoms_heading,
+	.square_box h2,
+	.bg_head,
+	.question_box h2{
+		font-size: 30px;
+	}
+	
+	.info_slide{
+		padding-right: 0;
+	}
+	
+	.icon_col{
 		flex: 100%;
 		width: 100%;
 	}
-	
-	.team_col{
-		-ms-flex: 100%;
+
+	.blog_col{
 		flex: 100%;
 		width: 100%;
 	}
 	
 	.count_col{
-		-ms-flex: 100%;
 		flex: 100%;
 		width: 100%;
 	}
 	
+	.first_border,
+	.third_border{
+		border-right: none;
+	}
+	
 	.footer_col{
-		-ms-flex: 100%;
 		flex: 100%;
 		width: 100%;
 	}
 }	
 
 @media only screen and (max-width: 420px){
-	.heading_group{
-		max-width: 350px;
-	}
-	
-	.telecoms_col,
-	.top_col_box,
-	.question_col,
-	.blog_col,
-	.count_col{
-		padding-left: 0;
-		padding-right: 0;
-	}
-
-	.col_info input[type="email"]{
-		display: block;
-		width: 100%;
-	}
-	
-	.col_info input[type="submit"]{
-		margin-top: 20px;
-		display: block;
-		width: 100%;
-		margin-left: 0;
-	}
-}
-
-@media only screen and (max-width: 360px){
 	.header-title{
 		margin-left: 15px;
 	}
 	
 	.header-title__main{
-		font-size: 26px;
+		font-size: 25px;
 	}
 	
+	.heading_group{
+		max-width: 350px;
+	}
+	
+	.price_col,
+	.square_col_left,
+	.square_col_right,
+	.square_box,
+	.question_col,
+	.question_box,
+	.blog_col{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	
+	.box_list{
+		bottom: 10px;
+		left: 15px;
+		max-width: 220px;
+		padding: 15px;
+		visibility: hidden;
+		opacity: 0;
+	}
+	
+	.info_slide:hover > .telecoms_box > .telecoms_image > .box_list{
+		visibility: visible;
+		opacity: 1;
+	}
+	
+	.box_list > ul > li{
+		font-size: 12px;
+	}
+	
+	.telecoms_title{
+		top: 10px;
+		left: 15px;
+		visibility: hidden;
+		opacity: 0;
+	}
+	
+	.info_slide:hover > .telecoms_box > .telecoms_image > .telecoms_title{
+		visibility: visible;
+		opacity: 1;
+	}
+	
+	.prev_nav,
+	.next_nav{
+		margin-top: 60px;
+	}
+}
+
+@media only screen and (max-width: 360px){
+	.header-title__main{
+		font-size: 20px;
+		line-height: 1.4em;
+	}
+
 	.heading_group{
 		max-width: 300px;
 	}
 	
-	.team_col{
-		padding-left: 0;
-		padding-right: 0;
+	.prev_nav,
+	.next_nav{
+		margin-top: 100px;
+	}
+	
+	.icon_box{
+		padding-left: 20px;
+		padding-right: 20px;
 	}
 }
