@@ -3,7 +3,7 @@ Main Stylesheet
 
 Project:    Highpoint Corporate Template
 Version:    1.0
-Last change:    13/11/20
+Last change:    15/06/2021
 Author:    Themewiz
 Primary use:    SAAS
 -------------------------------------------------------------------*/
@@ -24,7 +24,8 @@ Primary use:    SAAS
 	3.6. SAAS Area Six
 	3.7. SAAS Area Seven
 	3.8. SAAS Area Eight
-	3.9. SAAS Area Nine 
+	3.9. SAAS Area Nine
+	 
 4. Footer
 5. Responsive
 -------------------------------------------------------------------*/
@@ -33,13 +34,12 @@ Primary use:    SAAS
  ----------- */
 body,
 html{
-	margin: 0;
-	padding: 0;
-}
-
-body{
+	width:100%;
+    height: auto;
+    margin:0;
+    padding:0;
+    overflow-x: hidden;
 	font-family: sans-serif;
-	overflow-x: hidden;
 }
 
 ul{
@@ -54,10 +54,6 @@ ul{
 
 .page_area{
 	width: 100%;
-}
-
-a:hover{
-	text-decoration: none !important;
 }
 
 .js .loading::before {
@@ -110,13 +106,13 @@ a:hover{
 	max-width: 600px;
 	margin: 0 auto;
 	font-family: 'Roboto' , Arial, sans-serif;
-	font-size: 15px;
+	font-size: 16px;
 	font-weight: normal;
 	display: block;
 	color: #696969;
 	letter-spacing: 1px;
 	text-align: center;
-	padding-top: 10px;
+	padding: 10px 10px 0;
 	line-height: 1.5em;
 }
 
@@ -124,35 +120,30 @@ a:hover{
  ----------- */
  
 /* --- 2.1. Logo & Navigation --- */
-nav.navbar .navbar-brand{
-	margin-top: 0;
-	max-width: 350px;
-	display: inline-block
-}
-
 .navbar-header h2{
 	font-family: 'Montserrat', Arial, sans-serif;
-	font-size: 20px;
+	font-size: 22px;
 	font-weight: 700;
 	letter-spacing: 1px;
 	text-transform: uppercase;
 }
 
-.navbar-header a{
+.navbar-header a.navbar-brand{
 	text-decoration: none;
 	color: #ffffff !important;
+	transition: 0.5s;
 }
 
- nav.navbar .navbar-brand img.logo{
-   max-width: 300px;
-   max-height: 120px;
-   display: inline-block
+nav.navbar .navbar-brand img.logo{
+   max-width: 200px;
+   height: auto;
+   display: block;
 }
 
 nav.navbar.bootsnav{
 	background-color: transparent;
-	border-bottom: none;
-	z-index: 99;
+	border-bottom: none ;
+	z-index: 9999;
 }
 
 nav.navbar.bootsnav ul.nav{
@@ -168,10 +159,11 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu{
 nav.navbar.bootsnav ul.nav > li > a{
     color: #ffffff;
     font-family: 'Montserrat' , Arial, sans-serif;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 700;
     text-transform: uppercase;
 	letter-spacing: 1px;
+	border-top: none;
 }
 
 nav.navbar.bootsnav ul.navbar-right li.dropdown ul.dropdown-menu li a{
@@ -186,15 +178,38 @@ nav.navbar.bootsnav ul.navbar-right li.dropdown ul.dropdown-menu li a{
 	transition: 0.5s;
 }
 
+nav.navbar.bootsnav ul.navbar-right li.dropdown ul.dropdown-menu li a:hover{
+	color: #159957;
+}
+
+nav.navbar.bootsnav li.dropdown ul.dropdown-menu{
+	left: 0;
+}
+
  nav.navbar.bootsnav ul.nav > li.dropdown > a.dropdown-toggle:after{
     font-family: 'Font Awesome 5 Free';
     content: "\f107";
 	font-size: 12px;	
 }
 
- nav.navbar.bootsnav ul.dropdown-menu.megamenu-content .col-menu{
-    border-left: none;
-    border-right: none;
+nav.navbar.bootsnav ul.navbar-right li.dropdown ul.dropdown-menu li.dropdown > a.dropdown-toggle:before{
+    font-family: 'Font Awesome 5 Free';
+    float: right;
+    content: "\f105";
+    margin-top: 0;
+}
+
+nav.navbar.bootsnav ul.nav.navbar-right .dropdown-menu .dropdown-menu{
+    left: 200px;
+}
+
+nav.navbar.bootsnav li.dropdown ul.dropdown-menu ul.dropdown-menu{
+    top: 2px;
+}
+
+nav.navbar.bootsnav ul.dropdown-menu.megamenu-content .col-menu{
+    border-left: solid 1px #e0e0e0;
+    border-right: solid 1px #e0e0e0;
 }
 
 nav.navbar.bootsnav ul.dropdown-menu.megamenu-content .content ul.menu-col li a{
@@ -206,6 +221,10 @@ nav.navbar.bootsnav ul.dropdown-menu.megamenu-content .content ul.menu-col li a{
 	letter-spacing: 1px;
 }
 
+nav.navbar.bootsnav ul.dropdown-menu.megamenu-content .content ul.menu-col li a:hover{
+	color: #159957;
+}
+
 nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
     font-size: 14px;
     font-weight: 600;
@@ -213,6 +232,13 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
     color: #159957;
     text-transform: uppercase;
 	letter-spacing: 1px;
+}
+
+.attr-nav > ul > li.dropdown ul.dropdown-menu{
+    margin-top: 0;
+    margin-left: 55px;
+    width: 250px;
+    left: -250px !important;
 }
 
 .attr-nav > ul > li > a{
@@ -239,9 +265,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .top_info{
 	width: 100%;
-	display: -ms-flexbox;
 	display: flex;
-	-ms-flex-wrap: wrap; 
 	flex-wrap: wrap;
 	max-width: 1400px;
 	margin: auto
@@ -250,7 +274,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 .left_info,
 .right_info{
 	position: relative;
-	-ms-flex: 50%;
 	flex: 50%;
 	width: 50%;
 	padding-top: 15px;
@@ -274,7 +297,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 .left_info .far,
 .right_info .fab{
 	font-size: 16px;
-	color: #ffffff
+	color: #ffffff;
 }
 
 .left_info .fas,
@@ -293,22 +316,18 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .sub_width{
 	width: 100%;
-	display: -ms-flexbox;
 	display: flex;
-	-ms-flex-wrap: wrap; 
 	flex-wrap: wrap;
 	text-align: center;
 }
 
 .left_sub{
-	-ms-flex: 50%;
 	flex: 50%;
 	width: 50%;
 	text-align: left;
 }
 
 .right_sub{
-	-ms-flex: 50%;
 	flex: 50%;
 	width: 50%;
 	text-align: center;
@@ -348,7 +367,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
     display: block;
     font-size: 12px;
 	font-weight: 600;
-	font-family: 'Montserrat', Arial sans-serif;
+	font-family: 'Montserrat', Arial, sans-serif;
     transition: 0.5s;
     cursor: pointer;
 	border: 1px solid #159957;
@@ -367,62 +386,20 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	top: -140px;
 }
 
-.slidearea{
-	width: 100%;
-}
-
 .main_content{
 	width: 100%;
-	display: -ms-flexbox;
 	display: flex;
-	-ms-flex-wrap: wrap; 
 	flex-wrap: wrap;
 	padding: 0 30px;
+	min-height: 800px;
 	max-width: 1400px;
 	margin: auto;
-	min-height: 800px;
-}
-
-.slide__left{
-	position: relative;
-	-ms-flex: 50%;
-	flex: 50%;
-	width: 50%;
-}
-
-.slide__right{
-	position: relative;
-	-ms-flex: 50%;
-	flex: 50%;
-	width: 50%;
-	padding-right: 40px;
-}
-
-.first_left{
-	display: -webkit-flex;
-	display: flex;
-	-webkit-flex-direction: column;
-	flex-direction: column;
-	-webkit-justify-content: center;
-	justify-content: column;
-	-webkit-align-items: center;
-	align-items: center;
-}
-
-.first_right{
-	display: -webkit-flex;
-	display: flex;
-	-webkit-flex-direction: row;
-	flex-direction: row;
-	-webkit-justify-content: center;
-	justify-content: flex-end;
-	-webkit-align-items: center;
-	align-items: center;
 }
 
 .slide__content{
 	position: relative;
-	min-height: 800px;
+	min-height: 750px;
+	height: 100%;
 	text-align: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -439,54 +416,82 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	background: rgba(24, 25, 34, 0.5);
 }
 
+.slide__left{
+	position: relative;
+	flex: 50%;
+	width: 50%;
+	padding: 0 25px;
+}
+
+.slide__right{
+	position: relative;
+	flex: 50%;
+	width: 50%;
+	padding: 0 25px;
+}
+
+.first_left{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.first_right{
+	display: flex;
+	flex-direction: column;
+	max-width: 500px;
+	align-items: center;
+	justify-content: center;
+	margin: 75px auto 0;
+}
+
 .slide__box{
 	max-width: 650px;
-	margin: auto;
-	text-align: left;
-	padding-left: 30px;
 }
 
 .slide__box h2{
 	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 45px;
+	font-size: 40px;
 	font-weight: 500;
 	letter-spacing: 1px;
 	text-align: left;
 	display: block;
 	color: #ffffff;
-	line-height: 1.2em;
+	line-height: 1.3em;
 }
 
 .slide__box p{
 	font-family: 'Roboto' , Arial, sans-serif;
-	font-size: 15px;
+	font-size: 16px;
 	font-weight: normal;
 	display: block;
 	color: #f2f2f2;
-	line-height: 1.5em;
+	line-height: 1.6em;
 	letter-spacing: 1px;
 	text-align: left;
 	padding: 15px 0;
+	max-width: 500px;
 }
 
 .buttoncol{
-	max-width: 500px;
-	margin: auto;
+	max-width: 380px;
 }
 
 .buttoncol a{
 	background-color: #159957;
 	width: 150px;
-	min-height: 35px;
+	min-height: 25px;
+	margin-top: 15px;	
     border: none;
     color: #ffffff;
-    padding: 12px 14px;
+    padding: 13px 15px;
     text-decoration: none;
 	text-transform: uppercase;
-    display: inline-block;
-    font-size: 12px;
+    display: block;
+    font-size: 13px;
 	font-weight: 600;
-	font-family: 'Montserrat', Arial sans-serif;
+	font-family: 'Montserrat', Arial, sans-serif;
     transition: 0.5s;
     cursor: pointer;
 	border: 1px solid #159957;
@@ -495,31 +500,29 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .buttoncol a:hover{
-	color: #111111;
-	background-color: #ffffff;
+	color: #ffffff;
+	background-color: transparent;
 	border-color: #ffffff;
 }
 
 .form-panel{
 	text-align: center;
 	display: block;
-	max-width: 400px;
-	margin: 90px 0 0;
-	padding: 35px;
-	background-color: #ffffff;
+	max-width: 450px;
+	margin: auto;
+	padding: 25px 35px;
+	background: rgba(0,0,0,0.5);
 }
 
 .form-panel h3{
 	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 22px;
+	font-size: 20px;
 	font-weight: 600;
 	letter-spacing: 1px;
+	text-transform: capitalize;
 	text-align: center;
-	display: block;
-	color: #111111;
-	line-height: 1.4em;
-	padding: 0 0 10px;
-	margin-top: 0;
+	display: inline-block;
+	color: #ffffff;
 }
 
 .form-row {
@@ -528,28 +531,33 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .form-panel input[type="text"],
-.form-panel input[type="email"]{
+.form-panel input[type="email"],
+.form-panel input[type="password"] {
 	font-family: 'Montserrat' , Arial, sans-serif;
 	font-size: 13px;
 	padding: 4px 20px;
 	height: 40px;
-	border: 1px solid #159957;
-	margin: 14px 10px;
+	border: none;
+	border-bottom: 1px solid #ffffff;
+	margin: 15px 10px;
 	border-radius: 3px;
 	flex-grow: 1;
 	letter-spacing: 1px;
+	color: #ffffff;
+	background: transparent;
 }
 
 .form-panel input[type="text"]:focus,
-.form-panel input[type="email"]:focus{
-	border: 1px solid #111111;
+.form-panel input[type="email"]:focus,
+.form-panel input[type="password"]:focus{
+	border-bottom: 1px solid #ffffff;
+	outline: none;
 }
 
 .form-panel input[type="submit"]{
 	display: block;
-	margin: 18px auto;
-	max-width: 310px;
-	width: 100%;
+	margin: 14px 10px;
+	width: calc(100% - 20px);
 	padding: 10px 20px;
 	text-align: center;
 	font-family: 'Montserrat' , Arial, sans-serif;
@@ -564,9 +572,9 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .form-panel input[type="submit"]:hover{
-	background-color: #111111;
-	color: #ffffff;
-	border: solid 1px #111111;
+	background-color: #ffffff;
+	color: #111111;
+	border-color: #ffffff;
 }
 
 /* 3. MAIN CONTENT
@@ -574,7 +582,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
  
 /* --- 3.1. SAAS Area One --- */
 .saas_area_one{
-	max-width: 1600px;
+	max-width: 1400px;
 	margin-bottom: 9em;
 	margin-top: calc(9em - 140px);
 	margin-left: auto;
@@ -585,38 +593,32 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .saas_group_one{
 	width: 100%;
-	display: -ms-flexbox;
 	display: flex;
-	-ms-flex-wrap: wrap; 
 	flex-wrap: wrap;
 }
 
 .saas_tool_col{
-	-ms-flex: 50%;
 	flex: 50%;
 	width: 50%;
 	overflow: hidden;
 	padding: 0 25px;
 }
 
-.top_area{
-	display: -webkit-flex;
+.col_area{
 	display: flex;
-	-webkit-flex-direction: column;
-	flex-direction: column;
-	-webkit-justify-content: center;
-	justify-content: column;
-	-webkit-align-items: center;
+	flex-direction: row;
+	justify-content: flex-start;
 	align-items: center;
 }
 
-.top_col_box{
-	max-width: 700px;
+.col_box{
+	max-width: 600px;
 	margin: auto;
-	padding-right: 10px;
+	width: 100%;
+	padding: 0 20px;
 }
 
-.top_col_box h2{
+.col_box h2{
 	font-family: 'Montserrat' , Arial, sans-serif;
 	font-size: 40px;
 	font-weight: 500;
@@ -627,54 +629,40 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	margin-top: 0;
 }
 
-.top_col_box p{
+.col_box p{
 	font-family: 'Roboto' , Arial, sans-serif;
-	font-size: 15px;
+	font-size: 16px;
 	font-weight: normal;
 	display: block;
 	color: #696969;
 	letter-spacing: 1px;
 	text-align: left;
 	line-height: 1.5em;
-	padding: 12px 0;
+	padding: 14px 0;
 }
 
-.info_items{
-	margin-bottom: 35px;
+.areas_list > ul{
+	margin-bottom: 25px;
 }
 
-.info_list{
-	padding: 5px 0;
-}
-
-.info_list > .num_item{
+.areas_list > ul > li{
 	font-family: 'Montserrat' , Arial, sans-serif;
 	font-size: 15px;
 	font-weight: 600;
-	display: inline-block;
-	color: #ffffff;
-	text-transform: capitalize;
-	letter-spacing: 1px;
-	text-align: left;
-	background-color: #159957;
-	border-radius: 50%;
-	padding: 14px;
-}
-
-.info_list > h3{
-	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 14px;
-	font-weight: 600;
-	display: inline-block;
+	display: block;
 	color: #111111;
-	text-transform: capitalize;
 	letter-spacing: 1px;
 	text-align: left;
+	padding: 8px 0;
 }
 
-.info_list > h3::before{
-	content: '\2014';
-	padding: 0 0.8em;
+.areas_list > ul > li::before{
+	font-family: 'Font Awesome 5 Free';
+	content: "\f00c";
+	font-weight: 900;
+	font-size: 15px;
+	padding-right: 12px;
+	color: #159957;
 }
 
 .heading_group{
@@ -689,7 +677,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	padding: 18px;
 	cursor: pointer;
 	transition: .5s;
-	background-color: #ffffff;
+	background-color: #f6f6f6;
 	display: block;
 	margin-bottom: 25px;
 }
@@ -718,15 +706,12 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .saas_software_group{
 	width: 100%;
-	display: -ms-flexbox;
 	display: flex;
-	-ms-flex-wrap: wrap; 
 	flex-wrap: wrap;
 	position: relative;
 }
 
 .software_col{
-	-ms-flex: 50%;
 	flex: 50%;
 	width: 50%;
 	overflow: hidden;
@@ -755,10 +740,8 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	vertical-align: middle;
 	width: 100%;
 	height: auto;
-	transition: .5s;
 }
 
-.saas_image > a > img,
 .saas_image > img{
 	transition: ease-in-out 3.25s;
 }
@@ -774,7 +757,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 .saas_title_area{
 	width: auto;
 	position: absolute;
-	bottom: 15px;
+	bottom: 20px;
 	left: 0;
 	transition: 0.5s;
 	margin-left: 15px;
@@ -784,6 +767,8 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	display: inline-block;
 	font-size: 25px;
 	color: #ffffff;
+	position: relative;
+	top: 4px;
 }
 
 .saas_title_area h4{
@@ -796,6 +781,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	display: inline-block;
 	margin-bottom: 0;
 	padding-left: 14px;
+	padding-bottom: 8px;
 }
 
 .saas_title_area h3 > a{
@@ -824,240 +810,220 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	opacity: 0.6;
 }
 
-.prev_button{
-	position: absolute;
-	top: 50%;
-	left: 0;
-	margin-left: 50px;
-	margin-top: -16px;
-	transform: translateY(-50%);
-}
-
-.next_button{
-	position: absolute;
-	top: 50%;
-	right: 0;
-	margin-right: 40px;
-	margin-top: -16px;
-	transform: translateY(-50%);
-}
-
-.prev_button,
-.next_button{
-	font-size: 15px;
-	transition: 0.6s ease;
-	border-radius: 50%;
-	background-color: #159957;
-	width: auto;
-	display: block;
-	overflow: hidden;
-	padding: 12px 18px;
-	color: #ffffff;
-	cursor: pointer;
-	border: solid 1px #159957;
-}
-
 /* --- 3.2. SAAS Area Two --- */
 .saas_area_two{
-	max-width: 1400px;
-	margin: 0 auto 9em;
-	padding: 0 25px;
+	position: relative;
+	min-height: 450px;
+	height: 100%;
+	margin-bottom: 9em;
+	width: 100%;
+	background-color: #159957;
+	padding-top: 8em;
+	padding-bottom: calc(8em + 60px);
 }
 
 .saas_group_two{
-	width: 100%;
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-wrap: wrap; 
-	flex-wrap: wrap;
-}
-
-.saas_col{
-	-ms-flex: 50%;
-	flex: 50%;
-	width: 50%;
-	padding: 0 20px;
-}
-
-.saas_col img{
-	vertical-align: middle;
-	width: 100%;
-	height: auto;
-	transition: ease-in-out 0.5s;
-	display: block;
-}
-
-.top_area{
-	display: -webkit-flex;
-	display: flex;
-	-webkit-flex-direction: column;
-	flex-direction: column;
-	-webkit-justify-content: center;
-	justify-content: center;
-	-webkit-align-items: center;
-	align-items: center;
-}
-
-.saas_col_area{
-	max-width: 750px;
-	margin: auto;
+	position: relative;
+	max-width: 1400px;
+	margin: 0 auto;
 	padding: 0 25px;
 }
 
-.saas_col_area h2{
+.bg_area{
+	width: 100%;
+	display: flex; 
+	flex-wrap: wrap;
+}
+
+.bg_col{
+	flex: 50%;
+	width: 50%;
+	padding: 0 25px;
+	position: relative;
+}
+
+.bg_col img{
+	vertical-align: middle;
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.bg_group{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+
+.bg_box{
+	max-width: 550px;
+	margin: 0 auto;
+	padding: 0 20px
+}
+
+.bg_box h2{
 	font-family: 'Montserrat' , Arial, sans-serif;
 	font-size: 40px;
 	font-weight: 500;
 	display: block;
-	color: #111111;
+	color: #ffffff;
 	text-align: left;
 	line-height: 1.3em;
 	margin-top: 0;
 }
 
-.saas_col_area > p{
+.bg_box p{
 	font-family: 'Roboto' , Arial, sans-serif;
-	font-size: 15px;
+	font-size: 16px;
 	font-weight: normal;
 	display: block;
-	color: #696969;
+	color: #f2f2f2;
 	letter-spacing: 1px;
 	text-align: left;
-	padding: 12px 0;
-	line-height: 1.5em;
+	padding: 15px 0;
+	line-height: 1.6em;
 }
 
-.saas_list > ul{
-	margin-bottom: 25px;
-}
-
-.saas_list > ul > li{
+.bg_list > ul > li{
 	font-family: 'Montserrat' , Arial, sans-serif;
 	font-size: 14px;
 	font-weight: 600;
 	display: block;
-	color: #111111;
+	color: #d2d2d2;
 	letter-spacing: 1px;
 	text-transform: capitalize;
 	text-align: left;
-	padding: 8px 0;
+	padding-bottom: 8px;
+	cursor: pointer;
 }
 
-.saas_list > ul > li::before{
-	font-family: 'Font Awesome 5 Free';
-	content: "\f00c";
+.bg_list > ul > li::before{
+	content: ".";
 	font-weight: 900;
-	font-size: 15px;
+	font-size: 24px;
 	padding-right: 12px;
-	color: #159957;
+	color: #111111;
 }
 
-.saas_col_button a{
-	background-color: #159957;
+.bg_col_button a{
+	background-color: #ffffff;
 	width: 140px;
 	min-height: 30px;
 	margin: 12px 0;	
     border: none;
-    color: #ffffff;
-    padding: 12px 14px;
+    color: #111111;
+    padding: 13px 14px;
     text-decoration: none;
 	text-transform: uppercase;
     display: block;
-    font-size: 12px;
+    font-size: 13px;
 	font-weight: 600;
-	font-family: 'Montserrat', Arial sans-serif;
+	font-family: 'Montserrat', Arial, sans-serif;
     transition: 0.5s;
     cursor: pointer;
-	border: 1px solid #159957;
+	border: 1px solid #ffffff;
 	letter-spacing: 1px;
 	text-align: center;
 }
 
-.saas_col_button a:hover{
+.bg_col_button a:hover{
 	color: #ffffff;
+	background: transparent;
+	border-color: #ffffff;
+}
+
+.prev_nav,
+.next_nav{
+	font-size: 14px;
+	transition: 0.6s ease;
+	background-color: transparent;
+	width: auto;
+	padding: 10px 16px;
+	color: #ffffff;
+	cursor: pointer;
+	border: solid 1px #ffffff;
+	display: inline-block;
+}
+
+.info_nav{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: -70px;
+}
+
+.prev_nav{
+	margin-right: 15px;
+}
+
+.next_nav:hover,
+.prev_nav:hover{
 	background-color: #111111;
+	color: #ffffff;
 	border-color: #111111;
 }
 
 /* --- 3.3. SAAS Area Three --- */
 .saas_area_three{
-	max-width: 1200px;
+	max-width: 1400px;
 	margin: 0 auto 9em;
 	padding: 0 25px;
 }
 
 .saas_group_three{
 	width: 100%;
-	display: -ms-flexbox;
 	display: flex;
-	-ms-flex-wrap: wrap; 
 	flex-wrap: wrap;
-	padding-top: 20px;
+	padding-top: 40px;
 }
 
-.number_col{
+.num_col{
 	position: relative;
-	-ms-flex: 33.33%;
 	flex: 33.33%;
 	width: 33.33%;
-	padding: 25px;
+	padding: 0 25px;
+	border-right: solid 1px #e0e0e0;
 }
 
-.number_box{
+.num_box{
 	max-width: 350px;
 	margin: auto;
-	padding: 30px 25px;
+	padding: 25px 15px;
 	text-align: center;
-	background-color: #ffffff;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+	min-height: 50px;
+	height: 100%;
+	overflow: auto;
+	background-color: #f6f6f6;
 }
 
-.number_box h3{
-	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 18px;
-	font-weight: 600;
-	display: block;
-	text-align: center;
-	color: #111111;
-	letter-spacing: 1px;
-	line-height: 1.4em;
-}
-
-.number_box p{
-	font-family: 'Roboto' , Arial, sans-serif;
-	font-size: 14px;
-	font-weight: normal;
-	display: block;
-	color: #696969;
-	letter-spacing: 1px;
-	text-align: center;
-	padding-top: 10px;
+.third_border{
+	border-right: none;
 }
 
 .list_num{
-	max-width: 80px;
-	height: 80px;
-	background: #159957;
-	border-radius: 50%;
-	margin: auto;
+	float: left;
+	width: 25%;
 }
 
-.list_num::before{
-	content: "";
-	display: block;
-	margin: auto;
-	max-width: 80px;
+.num_info{
+	float: left;
+	width: 75%;
+	padding-left: 20px;
+}
+
+.list_num{
+	width: 80px;
 	height: 80px;
 	background: #159957;
 	border-radius: 50%;
-	animation: pulse-circle 1500ms ease-out infinite;
 }
 
 .list_num > h4 {
 	display: block;
 	color: #ffffff;
-	position: relative;
-	top: -65px;
+	margin-top: 25px;
 	font-family: 'Montserrat' , Arial, sans-serif;
 	font-size: 25px;
 	font-weight: normal;
@@ -1065,56 +1031,73 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	text-align: center;
 }
 
-.list_num::after{
+.num_box h3{
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 16px;
+	font-weight: 600;
 	display: block;
-	max-width: 80px;
-	height: 80px;
-	background: #159957;
-	border-radius: 50%;
-	transition: all 200ms;
+	text-align: left;
+	color: #111111;
+	letter-spacing: 1px;
+	line-height: 1.4em;
 }
 
-@keyframes pulse-circle{
-  0% {
-    transform: scale(1);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1.5);
-    opacity: 0;
-  }
+.num_button > a{
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 13px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	text-align: left;
+	text-transform: uppercase;
+	display: block;
+	color: #159957;
+	text-decoration: none;
+	width: 120px;
+	transition: 0.5s;
+    cursor: pointer;
+}
+
+.num_button > a::after{
+	content: "\203A";
+	font-size: 20px;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	height: auto;
+	padding-left: 5px;
+	top: 1px;
+	position: relative;
+}
+
+.num_button > a:hover{
+	color: #111111;
 }
 
 /* --- 3.4. SAAS Area Four --- */
 .saas_area_four{
 	position: relative;
-	display: -webkit-flex;
 	display: flex;
-	-webkit-flex-direction: column;
 	flex-direction: column;
-	-webkit-justify-content: center;
 	justify-content: center;
-	-webkit-align-items: center;
 	align-items: center;
-	min-height: 350px;
+	min-height: 400px;
 	height: 100%;
 	text-align: center;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
 	margin-bottom: 9em;
-	padding: 6.5em 0;
+	padding: 6em 0;
 }
 
 .saas_area_four::before {
 	content: '';
 	position: absolute;
-	z-index: 1;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: rgba(24, 25, 34, 0.6);
+	background: rgba(24, 25, 34, 0.5);
 }
 
 .saas_group_four{
@@ -1126,7 +1109,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	width: 100%;
 }
 
-.saas_group_four h2{
+.bg_head{
 	font-family: 'Montserrat' , Arial, sans-serif;
 	font-size: 40px;
 	font-weight: 500;
@@ -1134,55 +1117,58 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	color: #ffffff;
 	letter-spacing: 1px;
 	text-align: center;
-	margin-top: 0;
+	line-height: 1.3em;
 }
 
-.inner_info{
+.bg_info{
 	max-width: 600px;
 	margin: 0 auto;
 	font-family: 'Roboto' , Arial, sans-serif;
-	font-size: 15px;
+	font-size: 16px;
 	font-weight: normal;
 	display: block;
-	color: #ffffff;
+	color: #d2d2d2;
 	letter-spacing: 1px;
 	text-align: center;
-	padding-top: 10px;
+	padding: 10px 10px 0;
 	line-height: 1.5em;
 }
 
 .service_area{
 	width: 100%;
-	display: -ms-flexbox;
 	display: flex;
-	-ms-flex-wrap: wrap; 
 	flex-wrap: wrap;
 	padding-top: 15px;
 }
 
 .service_col{
-	-ms-flex: 33.33%;
 	flex: 33.33%;
 	width: 33.33%;
 	padding: 25px;
 }
 
 .service_box{
-	max-width: 350px;
+	max-width: 300px;
 	margin: auto;
 	padding: 35px 25px;
 	text-align: center;
-	background: #ffffff;
-	border: dotted 1px #e0e0e0;
+	background: rgba(0,0,0,0.5);
 	transition: 0.5s;
 }
 
-.service_box:hover{
-	background: transparent;
+.icon_crumb{
+	width: auto;
+	height: 1px;
+	display: block;
+	border-bottom: solid 4px #159957;
+	margin: 0 auto 0;
+	transition: 0.5s;
+	visibility: hidden;
+	opacity: 0;
 }
 
 .service_box h3{
-	color: #111111;
+	color: #ffffff;
 	font-family: 'Montserrat' , Arial, sans-serif;
 	font-size: 18px;
 	font-weight: 600;
@@ -1202,19 +1188,19 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .service_box p{
 	font-family: 'Roboto' , Arial, sans-serif;
-	font-size: 14px;
+	font-size: 15px;
 	font-weight: normal;
 	padding-top: 10px;
 	display: block;
-	color: #696969;
+	color: #d2d2d2;
 	letter-spacing: 1px;
 	text-align: center;
+	line-height: 1.5em;
 }
 
-.service_box:hover h3,
-.service_box:hover .fas,
-.service_box:hover p{
-	color: #ffffff;
+.service_col:hover .icon_crumb{
+	visibility: visible;
+	opacity: 1;
 }
 
 /* --- 3.5. SAAS Area Five --- */
@@ -1226,22 +1212,15 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .saas_group_five{
 	width: 100%;
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-wrap: wrap; 
+	display: flex; 
 	flex-wrap: wrap;
-	padding-top: 20px;
+	padding-top: 40px;
 }
 
 .price_col{
-	-ms-flex: 33.33%;
 	flex: 33.33%;
 	width: 33.33%;
-	padding: 0 20px;
-}
-
-.value_box{
-	padding-bottom: 15px;
+	padding: 0 25px;
 }
 
 .price_box{
@@ -1251,28 +1230,36 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	overflow: hidden;
 	margin: auto;
 	min-height: 150px;
-	background: transparent;
-	transition: 0.5s;
+	background: #ffffff;
+	border: double 4px #e0e0e0;
+	padding-bottom: 35px;
+}
+
+.center_col{
+	border-top-color: #159957 !important;
+	border-bottom-color: #159957 !important;
+}
+
+.price_content{
+	padding-bottom: 15px;
+	padding-right: 15px;
+	padding-top: 10px;
+	padding-left: 15px;
+	border-bottom: solid 1px #e0e0e0;
+	width: calc(100% - 30px);
+	margin: auto;
 }
 
 .price_title{
 	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 16px;
-	font-weight: 600;
+	font-size: 14px;
+	font-weight: 700;
 	display: block;
 	color: #111111;
 	letter-spacing: 1px;
-	text-align: center;
+	text-align: left;
+	text-transform: uppercase;
 	line-height: 1.5em;
-	background-color: #ffffff;
-}
-
-.price_content{
-	padding-bottom: 35px;
-	padding-right: 10px;
-	padding-top: 10px;
-	padding-left: 10px;
-	background-color: #ffffff
 }
 
 .price_value{
@@ -1282,9 +1269,8 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	display: block;
 	color: #159957;
 	letter-spacing: 1px;
-	text-align: center;
+	text-align: left;
 	line-height: 1.2em;
-	background-color: #ffffff;
 }
 
 .price_box h4{
@@ -1294,7 +1280,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	display: block;
 	color: #696969;
 	letter-spacing: 1px;
-	text-align: center;
+	text-align: left;
 	padding-top: 6px;
 }
 
@@ -1302,24 +1288,24 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	width: 100%;
 	background-color: #ffffff;
 	margin: auto;
-	border-top: solid 2px #e0e0e0;
 	padding-top: 1px;
 }
 
 .price_list ul{
-	padding: 20px 10px 30px;
+	padding: 20px 10px;
 }
 
 .price_list > ul li{
 	font-family: 'Montserrat' , Arial, sans-serif;
 	font-size: 13px;
-	font-weight: 500;
+	font-weight: 600;
 	display: block;
 	color: #111111;
 	text-transform: capitalize;
 	letter-spacing: 1px;
 	text-align: left;
-	padding: 8px 12px;
+	padding: 12px;
+	line-height: 1.5em;
 }
 
 .price_list > ul li::after{
@@ -1345,7 +1331,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
     display: block;
     font-size: 12px;
 	font-weight: 600;
-	font-family: 'Montserrat', Helvetica, Arial sans-serif;
+	font-family: 'Montserrat', Arial, sans-serif;
     margin: auto;
     transition: 0.5s;
     cursor: pointer;
@@ -1366,7 +1352,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
     display: block;
     font-size: 12px;
 	font-weight: 600;
-	font-family: 'Montserrat', Helvetica, Arial sans-serif;
+	font-family: 'Montserrat', Arial, sans-serif;
     margin: auto;
     transition: 0.5s;
     cursor: pointer;
@@ -1377,8 +1363,8 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .price_btn a:hover{
 	color: #ffffff;
-	background-color: #111111;
-	border-color: #111111;
+	background-color: #159957;
+	border-color: #159957;
 }
 
 .mid_btn a:hover{
@@ -1389,184 +1375,144 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 /* --- 3.6. SAAS Area Six --- */
 .saas_area_six{
-	width: 100%;
-	margin: 0 0 9em;
-	min-height: 400px;
-	padding: 6.5em 25px;
-	background-color: #f6f6f6;
+	max-width: 1280px;
+	padding: 0 25px;
+	margin: 0 auto 9em;
 }
 
 .saas_group_six{
-	max-width: 1400px;
 	width: 100%;
-	margin: 0 auto;
-	display: -ms-flexbox;
 	display: flex;
-	-ms-flex-wrap: wrap; 
 	flex-wrap: wrap;
-	padding-top: 40px;
-	padding-bottom: 40px;
 }
 
-.blog_col{
-	-ms-flex: 33.33%;
+.saas_wide_col{
 	flex: 33.33%;
 	width: 33.33%;
 	padding: 0 20px;
-}
-
-.blog_box{
-	max-width: 400px;
-	position: relative;
-	text-align: left;
-	overflow: hidden;
-	margin: auto;
-	min-height: 150px;
-	transition: 0.5s;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
-}
-
-.blog_image{
-	overflow: hidden;
 	position: relative;
 }
 
-.blog_area{
-	overflow: hidden;
+.saas_box_col{
+	flex: 66.66%;
+	width: 66.66%;
 	position: relative;
-	padding-bottom: 10px;
-	padding-right: 10px;
-	padding-top: 10px;
-	padding-left: 10px;
-	background-color: #ffffff;
-	transition: ease-in-out 0.5s;
 }
 
-.blog_content{
-	padding: 25px 0;
-	text-align: left;
-	padding-left: 15px;
-	padding-right: 5px;
-}
-
-.blog_date{
-	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 13px;
-	display: block;
-	font-weight: 600;
-	color: #696969;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	text-align: left;
-	margin-bottom: 0;
-	width: 250px;
-}
-
-.blog_col img{
-	vertical-align: middle;
+.saas_data_area{
 	width: 100%;
-	height: auto;
-	transition: 0.5s;
-	display: block;
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 700px;
+	margin: auto;
 }
 
-.blog_image > a > img{
-	transition: ease-in-out 3.25s;
+.saas_data_col{
+	flex: 25%;
+	width: 25%;
+	padding: 0 40px;
 }
 
-.blog_image > a > img:hover{
-	transform: scale(1.15);
+.progressbar {
+	display: inline-block;
+	width: 125px;
+ 
 }
 
-.blog_title a{
+.circle {
+	width: 100%;
+	margin: 0 auto;
+	display: inline-block;
+	position: relative;
+	text-align: center;
+}
+
+.circle canvas {
+	vertical-align: middle;
+}
+
+.circle div {
+	position: absolute;
+	top: 45px;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	line-height: 40px;
+	font-size: 18px;
 	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 20px;
+	font-weight: 500;
 	display: block;
-	font-weight: 600;
 	color: #111111;
+}
+
+.circle h3{
+	color: #111111;
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 15px;
+	font-weight: 600;
+	display: block;
+	text-align: center;
 	letter-spacing: 1px;
-	text-align: left;
-	text-decoration: none;
-	transition: 0.5s;
 	line-height: 1.4em;
+	text-transform: uppercase;
+	margin: 0;
+	padding-top: 10px;
 }
 
-a.blog_btn:hover,
-.blog_title a:hover{
-	opacity: 0.6;
+.wide_box{
+	max-width: 450px;
+	margin: 0 auto;
+	width: 100%;
 }
 
-.blog_content p{
+.wide_box > p{
 	font-family: 'Roboto' , Arial, sans-serif;
-	font-size: 14px;
+	font-size: 16px;
 	font-weight: normal;
+	padding-top: 12px;
 	display: block;
 	color: #696969;
 	letter-spacing: 1px;
 	text-align: left;
-	padding: 10px 0;
+	line-height: 1.5em;
 }
 
-a.blog_btn{
-	max-width: 120px;	
-    color: #111111;
-	border-bottom: solid 2px #111111;
-	padding-top: 10px;
-    text-decoration: none;
-	text-transform: uppercase;
-    display: inline-block;
-    font-size: 13px;
-	font-weight: 600;
-	font-family: 'Montserrat', Arial sans-serif;
-    transition: 0.5s;
-    cursor: pointer;
+.wide_box h2{
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 40px;
+	font-weight: 500;
+	display: block;
+	color: #111111;
+	text-align: left;
 	letter-spacing: 1px;
-	text-align: center;
-	line-height: 1.2em;
-	padding-bottom: 3px;
-}
-
-a.blog_btn::after{
-	content: "\203A";
-	font-size: 20px;
-	margin: 0;
-	padding: 0;
-	display: inline-block;
-	height: auto;
-	padding-left: 5px;
-	top: 1px;
-	position: relative;
+	line-height: 1.3em;
 }
 
 /* --- 3.7. SAAS Area Seven --- */
 .saas_area_seven{
 	position: relative;
-	display: -webkit-flex;
 	display: flex;
-	-webkit-flex-direction: column;
 	flex-direction: column;
-	-webkit-justify-content: center;
 	justify-content: center;
-	-webkit-align-items: center;
 	align-items: center;
-	min-height: 350px;
+	min-height: 200px;
 	height: 100%;
 	text-align: center;
-	background-color: #159957;
 	margin-bottom: 9em;
 	padding: 6em 0;
+	background-color: #159957;
 }
 
 .saas_group_seven{
-	max-width: 1100px;
-	margin: 0 auto;
-	padding: 0 25px;
+	position: relative;
+	z-index: 9;
 	width: 100%;
+	max-width: 1000px;
+	margin: auto;
+	padding: 0 25px;
 }
 
-.saas_group_seven h2{
-	position: relative;
-	z-index: 5;
+.bg_head{
 	font-family: 'Montserrat' , Arial, sans-serif;
 	font-size: 40px;
 	font-weight: 500;
@@ -1574,18 +1520,19 @@ a.blog_btn::after{
 	color: #ffffff;
 	letter-spacing: 1px;
 	text-align: center;
-	margin-top: 0;
 	line-height: 1.3em;
+	margin-top: 0;
 }
 
 .client_details{
 	display: block;
-	max-width: 350px;
+	max-width: 325px;
 	width: 100%;
 	margin: auto;
-	padding: 0 25px;
+	padding: 0 15px;
 	text-align: center;
-	padding-top: 30px;
+	padding-top: 40px;
+	padding-bottom: 20px;
 }
 
 .client_box{
@@ -1622,7 +1569,7 @@ a.blog_btn::after{
 }
 
 .client_title{
-	font-family: 'Montserrat' , Arial, sans-serif;
+	font-family: 'Montserrat', Arial, sans-serif;
 	font-size: 14px;
 	font-weight: 600;
 	display: block;
@@ -1633,8 +1580,8 @@ a.blog_btn::after{
 }
 
 .client_comment q{
-	font-family: 'Roboto' , Arial, sans-serif;
-	font-size: 14px;
+	font-family: 'Roboto', Arial, sans-serif;
+	font-size: 15px;
 	font-weight: normal;
 	display: block;
 	color: #696969;
@@ -1682,34 +1629,42 @@ a.blog_btn::after{
 
 /* --- 3.8. SAAS Area Eight --- */
 .saas_area_eight{
-	max-width: 1400px;
-	padding: 0 25px;
+	max-width: 1280px;
 	margin: 0 auto 9em;
+	padding: 0 30px;
+	position: relative;
 }
 
 .saas_group_eight{
 	width: 100%;
-	display: -ms-flexbox;
 	display: flex;
-	-ms-flex-wrap: wrap; 
 	flex-wrap: wrap;
+	padding-top: 40px;
 }
 
-.saas_wide_col{
-	-ms-flex: 50%;
-	flex: 50%;
-	width: 50%;
-	padding: 0 15px;
-}
-
-.saas_box_col{
-	-ms-flex: 25%;
+.blog_col{
 	flex: 25%;
 	width: 25%;
-	padding: 0 15px;
+	padding: 0 10px;
+	position: relative;
 }
 
-.saas_box_col img{
+.blog_box{
+	max-width: 350px;
+	position: relative;
+	text-align: center;
+	overflow: hidden;
+	margin: auto;
+	min-height: 150px;
+	transition: 0.5s;
+}
+
+.blog_image{
+	overflow: hidden;
+	position: relative;
+}
+
+.blog_col img{
 	vertical-align: middle;
 	width: 100%;
 	height: auto;
@@ -1718,116 +1673,96 @@ a.blog_btn::after{
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
-.wide_box{
-	max-width: 750px;
-	margin: auto;
+.blog_image > a > img{
+	transition: ease-in-out 3.25s;
 }
 
-.wide_box h2{
-	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 40px;
-	font-weight: 500;
-	display: block;
-	color: #111111;
-	text-align: left;
-	line-height: 1.3em;
-	margin-top: 0;
+.blog_image > a > img:hover{
+	transform: scale(1.15);
 }
 
-.wide_box p{
-	font-family: 'Roboto' , Arial, sans-serif;
-	font-size: 15px;
-	font-weight: normal;
-	display: block;
-	color: #696969;
-	letter-spacing: 1px;
-	text-align: left;
-	padding: 12px 0;
-	line-height: 1.5em;
-}
-
-.counter_content{
-	width: 100%;
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-wrap: wrap; 
-	flex-wrap: wrap;
-	padding-top: 20px;
-}
-
-.counter_area{
-	position: relative;
-	-ms-flex: 50%;
-	flex: 50%;
-	width: 50%;
+.blog_content{
 	max-width: 350px;
-	margin: auto;
-	text-align: center;
-	padding-right: 25px;
-	padding-bottom: 45px;
-}
-
-.counter_title{
-	color: #111111;
-	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 22px;
-	font-weight: 500;
-	display: block;
-	text-align: center;
-	letter-spacing: 1px;
-	line-height: 1.4em;
-}
-
-.counter{
-	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 22px;
-	font-weight: 500;
-	display: block;
-	text-align: center;
-	color: #159957;
-	letter-spacing: 1px;
-	line-height: 1.4em;
-}
-
-.counter_box{
-	float: left;
-}
-
-.counter_num{
-	float: left;
-	padding-left: 16px;
-}
-
-.counter.plus::after{
-	content:'+';
-	color: #111111;
+	text-align: left;
 	padding-left: 5px;
 }
 
-.counter.percent::after{
-	content:'%';
+.blog_date{
+	font-family: 'Montserrat', Arial, sans-serif;
+	font-size: 14px;
+	display: block;
+	font-weight: 600;
+	color: #696969;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	text-align: left;
+	width: 250px;
+}
+
+.blog_title a{
+	font-family: 'Montserrat', Arial, sans-serif;
+	font-size: 18px;
+	display: block;
+	font-weight: 600;
 	color: #111111;
-	padding-left: 3px;
+	letter-spacing: 1px;
+	text-align: left;
+	text-decoration: none;
+	transition: 0.5s;
+	line-height: 1.4em;
+}
+
+.blog_title a:hover{
+	opacity: 0.6;
+}
+
+a.blog_btn:hover{
+	color: #111111;;
+}
+
+a.blog_btn{
+	max-width: 120px;	
+    color: #159957;
+    text-decoration: none;
+	text-transform: uppercase;
+    display: inline-block;
+    font-size: 13px;
+	font-weight: 600;
+	font-family: 'Montserrat', Arial, sans-serif;
+    transition: 0.5s;
+    cursor: pointer;
+	letter-spacing: 1px;
+	text-align: center;
+	padding-bottom: 3px;
+	padding-top: 10px;
+}
+
+a.blog_btn::after{
+	content: "\203A";
+	font-size: 20px;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	height: auto;
+	padding-left: 5px;
+	top: 1px;
+	position: relative;
 }
 
 /* --- 3.9. SAAS Area Nine --- */
 .saas_area_nine{
 	position: relative;
-	display: -webkit-flex;
 	display: flex;
-	-webkit-flex-direction: column;
 	flex-direction: column;
-	-webkit-justify-content: center;
 	justify-content: center;
-	-webkit-align-items: center;
 	align-items: center;
 	min-height: 350px;
 	height: 100%;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
-	margin-bottom: 9em;
 	padding: 3em 0;
+	margin-bottom: 2em;
 }
 
 .saas_area_nine::before {
@@ -1848,44 +1783,42 @@ a.blog_btn::after{
 	max-width: 1200px;
 	margin: auto;
 	width: 100%;
-	display: -ms-flexbox;
 	display: flex;
-	-ms-flex-wrap: wrap; 
 	flex-wrap: wrap;
 }
 
+.col_info{
+	flex: 100%;
+	width: 100%;
+}
+	
 .col_head{
-	-ms-flex: 66.66%;
-	flex: 66.66%;
-	width: 66.66%;
+	flex: 100%;
+	width: 100%;
 }
 
-.col_info{
-	-ms-flex: 33.33%;
-	flex: 33.33%;
-	width: 33.33%;
+.subscribe-row{
+	text-align: center;
+	margin-top: 35px;
 }
 
 .col_head h3{
 	font-family: 'Montserrat' , Arial, sans-serif;
 	font-size: 30px;
 	display: block;
-	font-weight: normal;
+	font-weight: 500;
 	color: #ffffff;
 	letter-spacing: 1px;
-	text-align: left;
-	line-height: 1.2em;
-	max-width: 650px;
-}
-
-.subscribe-row{
-	margin-top: 35px;
-	text-align: right;
+	text-align: center;
+	line-height: 1.3em;
+	max-width: 600px;
+	margin: auto;
 }
 
 .col_info input[type="email"]{
-	width: auto;
-	padding: 12px 20px 14px;
+	width: 350px;
+	padding: 10px 20px 14px;
+	padding-right: 50px;
 	border: 0;
 	font-family: 'Montserrat' , Arial, sans-serif;
 	font-size: 13px;
@@ -1894,15 +1827,16 @@ a.blog_btn::after{
 	color: #333333;
 	text-transform: capitalize;
 	letter-spacing: 1px;
+	background-color: #ffffff;
 }
 
 .col_info input[type="submit"]{
 	display: inline-block;
 	width: auto;
-	padding: 10px 20px;
+	padding: 11px 24px;
 	text-align: center;
 	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 16px;
+	font-size: 14px;
 	font-weight: normal;
 	margin: 0;
 	margin-left: -4px;
@@ -1910,13 +1844,14 @@ a.blog_btn::after{
 	border-radius: 0;
 	letter-spacing: 1px;
 	background-color: #159957;
-	border: solid 1px #ffffff;
+	border: solid 1px #159957;
 	transition: 0.5s;
 }
 
 .col_info input[type="submit"]:hover{
-	background-color: #ffffff;
+	background-color: transparent;
 	color: #111111;
+	border-color: #111111;
 }
 
 /* 4. FOOTER
@@ -1927,38 +1862,41 @@ a.blog_btn::after{
 	position: relative;
 	clear: both;
 	height: 100%;
-	background-color: #111111;
 }
 
 .footer_area{
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 0 25px;
-	display: -ms-flexbox;
 	display: flex;
-	-ms-flex-wrap: wrap; 
 	flex-wrap: wrap;
 }
 
 .footer_col{
-	-ms-flex: 25%;
 	flex: 25%;
 	width: 25%;
 	padding: 0 20px;
+	max-width: 300px;
 }
 
 .footer_col{
 	padding-top: 3.5em;
 }
 
+a.footer-brand img{
+	max-width: 200px;
+	height: auto;
+	display: block;
+}
+
 .footer_box > h3 > a{
 	font-family: 'Montserrat', Arial, sans-serif;
-	font-size: 20px;
+	font-size: 22px;
 	font-weight: 700;
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	text-decoration: none;
-	color: #ffffff;
+	color: #111111;
 	text-align: left;
 }
 
@@ -1967,20 +1905,20 @@ a.blog_btn::after{
 	font-size: 14px;
 	font-weight: normal;
 	letter-spacing: 1px;
-	color: #ffffff;
+	color: #111111;
 	text-align: left;
-	padding: 10px 0;
-	line-height: 1.6em;
+	padding: 20px 0;
+	line-height: 1.5em;
 }
 
 .footer_social{
-	padding-top: 20px;
+	margin: 12px 0;
 }
 
 .footer_social .fab,
 .footer_social .fa{
-	font-size: 14px;
-	color: #ffffff;
+	font-size: 16px;
+	color: #111111;
 	text-align: left;
 }
 
@@ -1993,36 +1931,10 @@ a.blog_btn::after{
 }
 
 .final{
-	width: 100%;
-}
-
-.address_box{
-	margin-top: 30px;
-}
-
-.address_name{
-	font-family: 'Montserrat', Arial, sans-serif;
-	font-size: 13px;
-	font-weight: normal;
-	letter-spacing: 1px;
-	text-transform: capitalize;
-	color: #ffffff;
-	display: block;
-}
-
-.address_box .fas{
-	color: #ffffff;
-	padding-right: 12px;
-}
-
-.address_phone{
-	font-family: 'Montserrat', Arial, sans-serif;
-	font-size: 13px;
-	font-weight: normal;
-	letter-spacing: 1px;
-	text-transform: capitalize;
-	color: #ffffff;
-	display: block;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
 }
 
 .footer_col > h4{
@@ -2031,7 +1943,7 @@ a.blog_btn::after{
 	font-weight: 700;
 	letter-spacing: 1px;
 	text-transform: capitalize;
-	color: #ffffff;
+	color: #111111;
 }
 
 .footer_col > ul > li{
@@ -2044,7 +1956,7 @@ a.blog_btn::after{
 	font-weight: normal;
 	letter-spacing: 1px;
 	text-decoration: none;
-	color: #ffffff;
+	color: #111111;
 	text-align: justify;
 	transition: 0.5s;
 }
@@ -2058,40 +1970,41 @@ a.blog_btn::after{
 }
 
 .blog_list{
-	display: -ms-flexbox;
 	display: flex;
-	-ms-flex-wrap: wrap; 
 	flex-wrap: wrap;
 	width: 100%;
+	max-width: 390px;
 	padding-bottom: 10px;
 }
 
 .left_blog{
-	-ms-flex: 25%;
 	flex: 25%;
 	width: 25%;
 	padding-bottom: 10px;
 }
 
 .right_blog{
-	-ms-flex: 75%;
 	flex: 75%;
 	width: 75%;
+	max-width: 290px;
 	padding-bottom: 15px;
-	padding-left: 8px;
+	padding-left: 14px;
 	margin-top: -5px;
 }
 
 .left_blog img{
 	vertical-align: middle;
 	width: 100%;
+	max-width: 100px;
 	transition: .5s;
 }
 
 .details{
 	width: 100%;
-	padding-top: 40px;
+	padding-top: 35px;
 	padding-bottom: 10px;
+	margin-top: 35px;
+	border-top: solid 1px #e0e0e0;
 }
 
 .details p{
@@ -2099,15 +2012,22 @@ a.blog_btn::after{
 	font-size: 13px;
 	font-weight: normal;
 	letter-spacing: 1px;
-	color: #ffffff;
+	color: #111111;
 	text-align: center;
 }
 
 /* 5. RESPONSIVE
  ----------- */
 @media only screen and (max-width: 1024px){
+	.header__content{
+		height: auto;
+	}
+	
+	.slide__content{
+		height: auto;
+	}
+	
 	.saas_tool_col{
-		-ms-flex: 100%;
 		flex: 100%;
 		width: 100%;
 		padding: 0;
@@ -2115,63 +2035,27 @@ a.blog_btn::after{
 		margin: auto;
 	}
 	
-	.saas_col{
-		ms-flex: 100%;
+	.bg_col{
 		flex: 100%;
 		width: 100%;
-		padding: 0;
 		max-width: 750px;
-		margin: auto;
+		margin: 20px auto;
 	}
 	
-	.saas_col_area{
-		padding-top: 40px;
+	.num_col{
+		flex: 50%;
+		width: 50%;
+		margin-bottom: 40px;
+	}
+	
+	.second_border{
+		border-right: none;
 	}
 	
 	.blog_col{
-		-ms-flex: 100%;
-		flex: 100%;
-		width: 100%;
-		padding-bottom: 35px;
-	}
-	
-	.saas_wide_col{
-		-ms-flex: 100%;
-		flex: 100%;
-		width: 100%;
-		padding: 0;
-	}
-	
-	.saas_box_col{
-		-ms-flex: 50%;
 		flex: 50%;
 		width: 50%;
-	}
-	
-	.saas_area_eight{
-		max-width: 750px;
-	}
-	
-	.col_info{
-		-ms-flex: 100%;
-		flex: 100%;
-		width: 100%;
-	}
-	
-	.col_head{
-		-ms-flex: 100%;
-		flex: 100%;
-		width: 100%;
-	}
-	
-	.subscribe-row{
-		text-align: center;
-	}
-	
-	.col_head h3{
-		text-align: center;
-		width: 100%;
-		margin: auto;
+		margin-bottom: 40px;
 	}
 }
 
@@ -2214,11 +2098,23 @@ a.blog_btn::after{
         content: "\f105";
     }
 	
+	nav.navbar.bootsnav ul.nav.navbar-right .dropdown-menu .dropdown-menu{
+		left: 0;
+	}
+	
+	nav.navbar.bootsnav ul.navbar-right li.dropdown ul.dropdown-menu li.dropdown.on > a.dropdown-toggle:before{
+		 content: "\f107";
+	}
+	
+	nav.navbar.bootsnav ul.dropdown-menu.megamenu-content .col-menu{
+		border-left: none;
+		border-right: none;
+	}
+	
 	.left_info,
 	.right_info,
 	.left_sub,
 	.right_sub{
-		-ms-flex: 100%;
 		flex: 100%;
 		width: 100%;
 		text-align: center;
@@ -2244,58 +2140,66 @@ a.blog_btn::after{
 		padding-top: 25px;
 	}
 	
-	.first_right{
-		display: -webkit-flex;
-		display: flex;
-		-webkit-flex-direction: column;
-		flex-direction: column;
-		-webkit-justify-content: center;
-		justify-content: column;
-		-webkit-align-items: center;
-		align-items: center;
-	}
-	
-	.slide__left,
-	.slide__right{
-		-ms-flex: 100%;
+	.slide__left{
 		flex: 100%;
 		width: 100%;
+	}
+	
+	.first_right{
+		margin-top: 0;
+	}
+	
+	.slide__right{
+		flex: 100%;
+		width: 100%;
+		padding: 50px 0;
+		
+	}
+	
+	.first_left{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 	}
 	
 	.slide__left{
 		padding-top: 200px;
 	}
-	
-	.slide__right{
-		padding-bottom: 45px;
-		padding-right: 0;
-	}
-	
-	.slide__box{
-		padding-left: 0;
-	}
-	
-	.number_col{
-		-ms-flex: 100%;
+
+	.num_col{
 		flex: 100%;
 		width: 100%;
+		padding: 0;
+	}
+	
+	.first_border{
+		border-right: none;
 	}
 	
 	.service_col{
-		-ms-flex: 50%;
 		flex: 50%;
 		width: 50%;
 	}
 	
 	.price_col{
-		-ms-flex: 100%;
 		flex: 100%;
 		width: 100%;
-		padding-bottom: 30px;
+		margin-bottom: 40px;
+	}
+	
+	.saas_wide_col{
+		flex: 100%;
+		width: 100%;
+		margin-bottom: 40px;
+	}
+	
+	.saas_box_col{
+		flex: 100%;
+		width: 100%;
 	}
 	
 	.footer_col{
-		-ms-flex: 50%;
 		flex: 50%;
 		width: 50%;
 	}
@@ -2303,69 +2207,83 @@ a.blog_btn::after{
 
 @media only screen and (max-width: 600px){
 	.slide__box h2{
-		font-size: 35px;
+		font-size: 30px;
 	}
 	
-	.top_col_box h2,
-	.saas_col_area h2,
+	.col_box h2,
+	.bg_box h2,
 	.saas_heading,
-	.saas_group_four h2,
-	.saas_group_seven h2,
+	.bg_head,
 	.wide_box h2{
 		font-size: 30px;
 	}
 	
 	.software_col{
-		-ms-flex: 100%;
 		flex: 100%;
 		width: 100%;
-		padding: 10px 0;
+	}
+	
+	.saas_software_box{
+		margin: 0;
 	}
 	
 	.service_col{
-		-ms-flex: 100%;
 		flex: 100%;
 		width: 100%;
 	}
 	
-	.footer_col{
-		-ms-flex: 100%;
+	.saas_data_col{
+		flex: 50%;
+		width: 50%;
+		margin-bottom: 30px;
+	}
+	
+	.blog_col{
 		flex: 100%;
 		width: 100%;
 	}
-}	
+	
+	.blog_date{
+		margin-top: 0;
+	}
+	
+	.footer_col{
+		flex: 100%;
+		width: 100%;
+	}
+}
 
 @media only screen and (max-width: 420px){
+	.main_content{
+		padding: 0;
+	}
+	
 	.form-panel{
 		padding: 25px;
 	}
 	
-	.saas_col_area{
-		padding-left: 0;
-		padding-right: 0;
-	}
-	
-	.number_col,
+	.saas_tool_col,
+	.col_box,
+	.software_col,
+	.bg_col,
+	.bg_box,
 	.service_col,
 	.price_col,
+	.saas_wide_col,
+	.saas_data_col,
 	.blog_col{
 		padding-left: 0;
 		padding-right: 0;
 	}
 	
-	.saas_box_col{
-		-ms-flex: 100%;
+	.saas_data_col{
 		flex: 100%;
 		width: 100%;
-		padding-left: 0;
-		padding-right: 0;
-		padding-bottom: 30px;
 	}
 	
-	.counter_area{
-		-ms-flex: 100%;
-		flex: 100%;
-		width: 100%;
+	.list_num > h4{
+		font-size: 20px;
+		margin-top: 30px;
 	}
 	
 	.col_info input[type="email"]{
@@ -2387,13 +2305,7 @@ a.blog_btn::after{
 		padding: 15px;
 	}
 	
-	.form-panel input[type="submit"]{
-		max-width: 220px;
-		width: 100%;
-	}
-	
-	.client_details{
-		padding-left: 0;
-		padding-right: 0;
+	.col_head h3{
+		font-size: 25px;
 	}
 }
