@@ -1,4 +1,5 @@
 "use strict";
+//Slick Slider (1) One
 $(document).ready(function(){
 	$('.slickslide').slick({
 		autoplay: true,
@@ -28,6 +29,23 @@ $(document).ready(function(){
 	
 });
 
+//Counter script
+jQuery(document).ready(function($) {
+    $('.counter').counterUp({
+        delay: 10,
+        time: 2000
+    });
+});
+
+//MagnificPopup Gallery
+$('.footer_grid').magnificPopup({
+	delegate: 'a',
+	type: 'image',
+	gallery: {
+		enabled: true
+	},
+});
+
 //Animate on Scroll default settings
 $(window).on('load', function () {
 	AOS.refresh();
@@ -35,7 +53,6 @@ $(window).on('load', function () {
 
 $(function () {
 	AOS.init({
-  
 		// Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
 		offset: 200, // offset (in px) from the original trigger point
 		delay: 300, // values from 0 to 3000, with step 50ms
@@ -49,25 +66,4 @@ $(function () {
 });	
 
 //Preload all the images in the page
-document.body.classList.add('loading');
-imagesLoaded(document.querySelectorAll('.blog_box'), {background: true}, () => document.body.classList.remove('loading'));
-
-
-//MagnificPopup Video
-$('#play-video').magnificPopup({
-	disableOn: 300,
-	type: 'iframe',
-	mainClass: 'mfp-fade',
-	removalDelay: 300,
-	preloader: false,
-	fixedContentPos: false
-});
-
-//MagnificPopup Gallery
-$('.footer_grid').magnificPopup({
-	delegate: 'a',
-	type: 'image',
-	gallery: {
-		enabled: true
-	},
-});
+imagesLoaded({background: true}, () => document.body.classList.remove('loading'));
