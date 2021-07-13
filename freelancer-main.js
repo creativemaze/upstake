@@ -1,9 +1,9 @@
 "use strict";
 //Slick Slider (1) One
 $(document).ready(function(){
-	$('.slickslide').slick({
+	$('.boxslide').slick({
 		slidesToShow: 3,
-		autoplay: true,
+		autoplay: false,
 		infinite: true,
 		speed: 1000,
 		arrows: false,
@@ -11,41 +11,32 @@ $(document).ready(function(){
 		pauseOnHover: false,
 		pauseOnFocus: false,
 		responsive: [
-		{
-			breakpoint: 992,
-			settings: {
-			slidesToShow: 1,
-			dots: true,
-			fade: true
-		}			
-	},
-	]
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 1,
+					dots: true,
+					fade: true
+				}			
+			},
+		]
 	});
-	
 });
 
 //Slick Slider (2) Two
 $(document).ready(function(){
 	$('.client-slider').slick({
-		dots: true,
-		slidesToShow: 3,
-		slidesToScroll: 1,
-		arrows: false,
-		autoplay: true,
-		speed: 1000,
+		dots: false,
+		prevArrow: '.prev_slide',
+		nextArrow: '.next_slide',
+		autoplay: false,
+		autoplaySpeed: 3000,
+		fade: true,
+		fadeSpeed: 1000,
 		pauseOnHover: false,
 		pauseOnFocus: false,
-		responsive: [
-		{
-			breakpoint: 801,
-			settings: {
-			slidesToShow: 1,
-       
-		}	
-	},
-	]	
+				
 	});
-	
 });
 
 //Animated Skill Bar
@@ -60,24 +51,64 @@ $.fn.isFullyInViewport = function() {
 };
 jQuery(document).ready(function(){
 	// on page ready check if element is already in viewport
-	animateProgressBar();
+	animateSkillBar();
 });
 
 $(window).on('resize scroll', function() {
 	// on page resize or scroll check if element is in viewport
-	animateProgressBar();
+	animateSkillBar();
 });
 
 // if elemnt is visble in viewport , then animate
-var animateProgressBar = function(){
+var animateSkillBar = function(){
     $('.skillbar').each(function() {
      if ($(this).isFullyInViewport()) {
      	jQuery(this).find('.skillbar-bar').animate({
 			width:jQuery(this).attr('data-percent')
-		},600);
+		},1500);
      }
   }); 
 }
+
+//Animated Progress Bar
+$(document).ready(function($) {
+  function animateElements() {
+	$('.progressbar').each(function() {
+		var elementPos = $(this).offset().top;
+		var topOfWindow = $(window).scrollTop();
+		var percent = $(this).find('.circle').attr('data-percent');
+		var percentage = parseInt(percent, 10) / parseInt(100, 10);
+		var animate = $(this).data('animate');
+		if (elementPos < topOfWindow + $(window).height() - 30 && !animate) {
+			$(this).data('animate', true);
+			$(this).find('.circle').circleProgress({
+			startAngle: -Math.PI / 2,
+			value: percent / 100,
+			thickness: 14,
+			size: 125,
+			animation: {
+				duration: 2800,
+			},
+			
+			fill: {
+				color: '#ffffff'
+			},
+			
+			emptyFill:{
+				color: '#111111'
+			}
+			
+			}).on('circle-animation-progress', function(event, progress, stepValue) {
+				$(this).find('div').text((stepValue * 100).toFixed(1) + "%");
+			}).stop();
+		}
+    });
+}
+
+//Show animated elements
+animateElements();
+	$(window).scroll(animateElements);
+});
 
 //MagnificPopup Gallery
 $('.portfolio_col').magnificPopup({
@@ -95,7 +126,6 @@ $(window).on('load', function () {
 
 $(function () {
 	AOS.init({
-  
 		// Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
 		offset: 200, // offset (in px) from the original trigger point
 		delay: 300, // values from 0 to 3000, with step 50ms
@@ -110,11 +140,3 @@ $(function () {
 
 //Preload all the images in the page
 imagesLoaded({background: true}, () => document.body.classList.remove('loading'));
-
-//Counter Up
-jQuery(document).ready(function($) {
-   $('.counter').counterUp({
-        delay: 10,
-        time: 2000
-    });
-});
