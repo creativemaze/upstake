@@ -21,14 +21,14 @@ $(document).ready(function(){
 				}		
 			},
 			{
-				breakpoint: 800,
+				breakpoint: 840,
 				settings: {
 					slidesToShow: 1,
 				}		
 			},
 			
 			{
-				breakpoint: 600,
+				breakpoint: 541,
 				settings: {
 					slidesToShow: 1,
 					centerPadding: '0',
@@ -50,16 +50,7 @@ $('#play-video').magnificPopup({
 	fixedContentPos: false
 });
 
-//MagnificPopup Gallery One
-$('.bg_slider').magnificPopup({
-	delegate: 'a',
-	type: 'image',
-	gallery: {
-		enabled: true
-	},
-});
-
-//MagnificPopup Gallery Two
+//MagnificPopup Gallery
 $('.footer_grid').magnificPopup({
 	delegate: 'a',
 	type: 'image',
@@ -75,7 +66,6 @@ $(window).on('load', function () {
 
 $(function () {
 	AOS.init({
-  
 		// Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
 		offset: 200, // offset (in px) from the original trigger point
 		delay: 300, // values from 0 to 3000, with step 50ms
