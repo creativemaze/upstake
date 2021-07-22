@@ -3,7 +3,7 @@ Main Stylesheet
 
 Project:    Highpoint Corporate Template
 Version:    1.0
-Last change:    29/11/20
+Last change:    15/07/2021
 Author:    Themewiz
 Primary use:    Logistics
 -------------------------------------------------------------------*/
@@ -24,6 +24,8 @@ Primary use:    Logistics
 	3.6. Logistics Area Six
 	3.7. Logistics Area Seven
 	3.8. Logistics Area Eight
+	3.9. Logistics Area Nine
+	3.10. Logistics Area Ten
 	 
 4. Footer
 5. Responsive
@@ -31,16 +33,14 @@ Primary use:    Logistics
 
 /* 1. GENERAL
  ----------- */
- 
 body,
 html{
-	margin: 0;
-	padding: 0;
-}
-
-body{
+	width:100%;
+    height: auto;
+    margin:0;
+    padding:0;
+    overflow-x: hidden;
 	font-family: sans-serif;
-	overflow-x: hidden;
 }
 
 ul{
@@ -55,10 +55,6 @@ ul{
 
 .page_area{
 	width: 100%;
-}
-
-a:hover{
-	text-decoration: none !important;
 }
 
 .js .loading::before {
@@ -112,7 +108,7 @@ a:hover{
 	max-width: 600px;
 	margin: 0 auto;
 	font-family: 'Roboto' , Arial, sans-serif;
-	font-size: 15px;
+	font-size: 16px;
 	font-weight: normal;
 	display: block;
 	color: #696969;
@@ -126,35 +122,30 @@ a:hover{
  ----------- */
  
 /* --- 2.1. Logo & Navigation --- */
-nav.navbar .navbar-brand{
-	margin-top: 0;
-	max-width: 350px;
-	display: inline-block
-}
-
 .navbar-header h2{
 	font-family: 'Raleway', Arial, sans-serif;
-	font-size: 20px;
+	font-size: 22px;
 	font-weight: 700;
 	letter-spacing: 1px;
 	text-transform: uppercase;
 }
 
-.navbar-header a{
+.navbar-header a.navbar-brand{
 	text-decoration: none;
 	color: #111111 !important;
+	transition: 0.5s;
 }
 
- nav.navbar .navbar-brand img.logo{
-   max-width: 300px;
-   max-height: 120px;
-   display: inline-block
+nav.navbar .navbar-brand img.logo{
+   max-width: 200px;
+   height: auto;
+   display: block;
 }
 
 nav.navbar.bootsnav{
 	background-color: transparent;
-	border-bottom: none;
-	z-index: 99;
+	border-bottom: none ;
+	z-index: 9999;
 }
 
 nav.navbar.bootsnav ul.nav{
@@ -170,10 +161,11 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu{
 nav.navbar.bootsnav ul.nav > li > a{
     color: #111111;
     font-family: 'Raleway' , Arial, sans-serif;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 700;
     text-transform: uppercase;
 	letter-spacing: 1px;
+	border-top: none;
 }
 
 nav.navbar.bootsnav ul.navbar-right li.dropdown ul.dropdown-menu li a{
@@ -188,15 +180,38 @@ nav.navbar.bootsnav ul.navbar-right li.dropdown ul.dropdown-menu li a{
 	transition: 0.5s;
 }
 
+nav.navbar.bootsnav ul.navbar-right li.dropdown ul.dropdown-menu li a:hover{
+	color: #1A2980;
+}
+
+nav.navbar.bootsnav li.dropdown ul.dropdown-menu{
+	left: 0;
+}
+
  nav.navbar.bootsnav ul.nav > li.dropdown > a.dropdown-toggle:after{
     font-family: 'Font Awesome 5 Free';
     content: "\f107";
 	font-size: 12px;	
 }
 
- nav.navbar.bootsnav ul.dropdown-menu.megamenu-content .col-menu{
-    border-left: none;
-    border-right: none;
+nav.navbar.bootsnav ul.navbar-right li.dropdown ul.dropdown-menu li.dropdown > a.dropdown-toggle:before{
+    font-family: 'Font Awesome 5 Free';
+    float: right;
+    content: "\f105";
+    margin-top: 0;
+}
+
+nav.navbar.bootsnav ul.nav.navbar-right .dropdown-menu .dropdown-menu{
+    left: 200px;
+}
+
+nav.navbar.bootsnav li.dropdown ul.dropdown-menu ul.dropdown-menu{
+    top: 2px;
+}
+
+nav.navbar.bootsnav ul.dropdown-menu.megamenu-content .col-menu{
+    border-left: solid 1px #e0e0e0;
+    border-right: solid 1px #e0e0e0;
 }
 
 nav.navbar.bootsnav ul.dropdown-menu.megamenu-content .content ul.menu-col li a{
@@ -208,6 +223,10 @@ nav.navbar.bootsnav ul.dropdown-menu.megamenu-content .content ul.menu-col li a{
 	letter-spacing: 1px;
 }
 
+nav.navbar.bootsnav ul.dropdown-menu.megamenu-content .content ul.menu-col li a:hover{
+	color: #1A2980;
+}
+
 nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
     font-size: 14px;
     font-weight: 600;
@@ -217,12 +236,19 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	letter-spacing: 1px;
 }
 
+.attr-nav > ul > li.dropdown ul.dropdown-menu{
+    margin-top: 0;
+    margin-left: 55px;
+    width: 250px;
+    left: -250px !important;
+}
+
 .attr-nav > ul > li > a{
     color: #111111;
 	padding-top: 30px;
-	margin-left: -3px;
+	margin-left: -12px;
 	position: relative;
-	left: -170px;
+	left: -160px;
 }
 
 .top-search ::placeholder{
@@ -273,7 +299,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 .left_info .far,
 .right_info .fab{
 	font-size: 16px;
-	color: #ffffff
+	color: #ffffff;
 }
 
 .left_info .fas,
@@ -332,7 +358,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .head_btn a{
 	background-color: #feb600;
-	width: 160px;
+	width: 150px;
 	min-height: 30px;
     border: none;
     color: #1A2980;
@@ -351,8 +377,8 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .head_btn a:hover{
-	background-color: transparent;
-	color: #1A2980;
+	background-color: #1A2980;
+	color: #ffffff;
 	border-color: #1A2980;
 }
 
@@ -374,7 +400,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	position: relative;
 	z-index: 1;
 	height: 100vh;
-	min-height: 800px;
+	min-height: 700px;
 	text-align: center;
 	color: #ffffff;
 	background-size: cover;
@@ -396,7 +422,8 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 .header-title {
 	max-width: 1200px;
 	display: block;
-	position: relative
+	position: relative;
+	padding: 0 10px;
 }
 
 .header-title__main{
@@ -412,7 +439,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .header-title__sub{
-	font-family: 'Roboto' , Arial, sans-serif;
+	font-family: 'Raleway' , Arial, sans-serif;
 	font-size: 16px;
 	font-weight: normal;
 	text-transform: capitalize;
@@ -443,17 +470,17 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	color: #333333;
 	text-transform: capitalize;
 	letter-spacing: 1px;
-	
 }
 
 .search-row input[type="submit"]{
 	display: inline-block;
 	width: auto;
-	padding: 10px 30px;
+	padding: 11px 30px 12px;
 	text-align: center;
 	font-family: 'Raleway' , Arial, sans-serif;
-	font-size: 16px;
+	font-size: 14px;
 	font-weight: 600;
+	text-transform: uppercase;
 	margin: 0;
 	margin-left: -4px;
 	color: #1A2980;
@@ -470,143 +497,107 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	border-color: #1A2980;
 }
 
+/* 3. MAIN CONTENT
+ ----------- */
+ 
 /* --- 3.1. Logistics Area One --- */
 .logistics_area_one{
 	max-width: 1400px;
-	margin: 9em auto 9em;
+	margin: 9em auto 0;
 	padding: 0 25px;
+	margin-bottom: calc(9em + 75px);
 	position: relative;
 }
 
-.logistics_group_one{
+.logistics_group_one,
+.slide_group{
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
 }
 
-.logistics_left_col{
-	flex: 50%;
-	width: 50%;
+.info_col{
+	flex: 33.33%;
+	width: 33.33%;
+	position: relative;
+	padding: 0 15px;
 }
 
-.logistics_right_col{
-	flex: 50%;
-	width: 50%;
+.slide_col{
+	flex: 66.66%;
+	width: 66.66%;
+	position: relative;
+	padding: 0 15px;
 }
 
-.logistics_right_col img{
+.slide_info{
+	flex: 50%;
+	width: 50%;
+	position: relative;
+	padding: 0 15px;
+}
+
+.slide_photo{
+	flex: 50%;
+	width: 50%;
+	position: relative;
+	padding: 0 15px;
+}
+
+.slide_photo img{
 	vertical-align: middle;
 	width: 100%;
 	height: auto;
-	transition: 0.5s;
 	display: block;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
-.prev_button{
-	position: absolute;
-	left: 0;
-	top: 50%;
-	transform: translateY(-50%);
+.info_area{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
 }
 
-.next_button{
-	position: absolute;
-	right: 0;
-	top: 50%;
-	transform: translateY(-50%);
-}
-
-.prev_button,
-.next_button{
-	width: auto;
-	font-size: 18px;
-	transition: 0.6s ease;
-	border-radius: 0 3px 3px 0;
-	background-color: #feb600;
-	display: block;
-	padding: 10px 20px;
-	color: #1A2980;
-	cursor: pointer;
-	border: solid 1px transparent;
-}
-
-.prev_button:hover,
-.next_button:hover{
-	background-color: transparent;
-	color: #1A2980;
-	border-color: #111111;
-}
-
-.top_area{
+.slide_area{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
 
-.top_col_box{
-	max-width: 475px;
-	height: auto;
-	background-color: #1A2980;
-	padding: 45px 3em;
+.info_box{
+	max-width: 500px;
+	margin: 0;
 }
 
-.top_col_box h2{
+.info_box h2{
 	font-family: 'Raleway' , Arial, sans-serif;
 	font-size: 40px;
 	font-weight: 700;
 	display: block;
-	color: #feb600;
+	color: #1A2980;
 	letter-spacing: 1px;
 	text-align: left;
 	line-height: 1.3em;
-	margin-top: 0;
 }
 
-.top_col_box p{
+.info_box p{
 	font-family: 'Roboto' , Arial, sans-serif;
-	font-size: 15px;
+	font-size: 16px;
 	font-weight: normal;
 	display: block;
-	color: #f2f2f2;
+	color: #696969;
 	letter-spacing: 1px;
 	text-align: left;
-	padding: 12px 0;
+	padding: 15px 0;
 	line-height: 1.5em;
-}
-
-.box_list ul{
-	padding: 10px 0 20px;
-}
-
-.box_list > ul li{
-	font-family: 'Raleway' , Arial, sans-serif;
-	font-size: 15px;
-	font-weight: 600;
-	display: block;
-	color: #ffffff;
-	letter-spacing: 1px;
-	text-transform: capitalize;
-	text-align: left;
-	padding: 6px 0;
-	line-height: 1.5em;
-}
-
-.box_list > ul li::before{
-	font-family: 'Font Awesome 5 Free';
-	content: "\f00c";
-	font-weight: 900;
-	font-size: 15px;
-	padding-right: 12px;
-	color: #feb600;
 }
 
 .box_col_button a{
 	background-color: #feb600;
 	width: 150px;
 	min-height: 30px;
-	margin: 10px 0 0;
+	margin: 20px 0 0;
     border: none;
     color: #1A2980;
     padding: 13px 15px;
@@ -614,7 +605,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	text-transform: uppercase;
     display: block;
     font-size: 13px;
-	font-weight: 700;
+	font-weight: 600;
 	font-family: 'Raleway', Arial, sans-serif;
     transition: 0.5s;
     cursor: pointer;
@@ -624,110 +615,68 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .box_col_button a:hover{
-	color: #ffffff;
-	background-color: transparent;
-	border-color: #ffffff;
-}
-
-/* --- 3.2. Logistics Area Two --- */
-.logistics_area_two{
-	max-width: 1400px;
-	margin: 9em auto 9em;
-	padding: 0 30px;
-	position: relative;
-}
-
-.logistics_group_two{
-	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
-	padding-top: 40px;
-}
-
-.logistics_grid_col{
-	flex: 33.33%;
-	width: 33.33%;
-	padding: 0 25px;
-}
-
-.logistics_grid_col img{
-	vertical-align: middle;
-	width: 100%;
-	height: auto;
-	display: block;
-}
-
-.logistics_grid_box{
-	max-width: 400px;
-	position: relative;
-	text-align: center;
-	overflow: hidden;
-	margin: auto;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
-}
-
-.logistics_image{
-	overflow: hidden;
-	position: relative;
-}
-
-.logistics_grid_area{
-	overflow: hidden;
-	position: relative;
-	padding-bottom: 12px;
-	padding-right: 12px;
-	padding-top: 12px;
-	padding-left: 12px;
-}
-
-.logistics_content{
-	position: relative;
-	padding: 25px 10px;
-	transition: 0.5s;
-	text-align: left;
-	width: 100%;
-}
-
-.left_content{
-	width: 90%;
-	float: left;
-}
-
-.right_content{
-	width: 10%;
-	float: right;
-}
-
-.logistics_name{
 	color: #111111;
-	font-family: 'Raleway' , Arial, sans-serif;
-	font-size: 18px;
-	font-weight: 600;
-	display: inline-block;
-	text-align: left;
-	letter-spacing: 1px;
-	line-height: 1.4em;
-	margin-bottom: 0;
+	background-color: transparent;
+	border-color: #111111;
 }
 
-.logistics_content p{
-	max-width: 250px;
-	font-family: 'Roboto' , Arial, sans-serif;
+.slide_box{
+	width: 100%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+	padding: 35px 25px;
+	max-width: 350px;
+	margin: 15px auto;
+	border: none;
+}
+
+.slide_check{
+	float: left;
+	width: 15%;
+	margin-top: 12px;
+}
+
+.slide_list{
+	float: left;
+	width: 85%;
+	padding-left: 15px;
+}
+
+.slide_list ul{
+	padding: 0 0 15px;
+}
+
+.slide_list > ul li{
+	font-family: 'Raleway' , Arial, sans-serif;
 	font-size: 14px;
-	font-weight: normal;
+	font-weight: 600;
 	display: block;
-	color: #696969;
+	color: #111111;
 	letter-spacing: 1px;
+	text-transform: capitalize;
 	text-align: left;
-	padding: 10px 0;
+	padding: 3px 0;
 	line-height: 1.5em;
 }
 
-.logistics_content .fas{
-	font-size: 40px;
-	display: block;
+.slide_list > ul > li::before{
+	font-family: 'Roboto' , Arial, sans-serif;
+	content: ".";
+	font-weight: 900;
+	font-size: 28px;
+	padding-right: 12px;
+	color: #111111;
+}
+
+.slide_checkbox::before{
+	font-family: 'Font Awesome 5 Free';
+	content: "\f00c";
+	font-weight: 900;
+	font-size: 15px;
+	border: solid 1px #1A2980;
+	background-color: #1A2980;
+	border-radius: 50%;
+	padding: 12px;
 	color: #feb600;
-	opacity: 0.8;
 }
 
 .area_button > a{
@@ -735,14 +684,13 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	font-size: 13px;
 	font-weight: 600;
 	letter-spacing: 1px;
-	text-align: right;
+	text-align: center;
 	text-transform: uppercase;
-	float: right;
 	display: block;
 	color: #1A2980;
-	margin-top: 90px;
 	text-decoration: none;
-	width: 110px;
+	width: 120px;
+	margin: auto;
 	transition: 0.5s;
     cursor: pointer;
 }
@@ -760,47 +708,72 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .area_button > a:hover{
-	color: #111111;
+	opacity: 0.6;
+}
+
+.slidenav{
+	position: absolute;
+	bottom: -75px;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 99;
+}
+
+.prev_button,
+.next_button{
+	font-size: 14px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	background-color: #feb600;
+	width: auto;
+	display: inline-block;
+	padding: 10px 16px;
+	color: #1A2980;
+	cursor: pointer;
+	border: solid 1px transparent;
+}
+
+.prev_button{
+	margin-right: 15px;
+}
+
+.prev_button:hover,
+.next_button:hover{
+	background-color: #1A2980;
+	color: #feb600;
+	border-color: #1A2980;
+}
+
+/* --- 3.2. Logistics Area Two --- */
+.logistics_area_two{
+	position: relative;
+	min-height: 400px;
+	height: 100%;
+	background-color: #1A2980;
+	margin: 0;
 }
 
 /* --- 3.3. Logistics Area Three --- */
 .logistics_area_three{
+	max-width: 1400px;
+	margin: 0 auto;
+	margin-top:  -300px;
+	padding: 0 25px;
 	position: relative;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	min-height: 400px;
-	height: 100%;
-	text-align: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-	margin-bottom: 9em;
-	padding: 6em 0;
-}
-
-.logistics_area_three::before {
-	content: '';
-	position: absolute;
-	z-index: 1;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: rgba(24, 25, 34, 0.6);
+	z-index: 9999;
+	margin-bottom: calc(9em - 40px);
 }
 
 .logistics_group_three{
-	max-width: 1200px;
 	width: 100%;
-	margin: 0 auto;
-	padding: 0 25px;
-	position: relative;
-	z-index: 999;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 40px 15px 0;
+	background-color: #ffffff;
+	margin-top: 40px;
 }
 
-.bg_heading{
+.bg_head{
 	font-family: 'Raleway' , Arial, sans-serif;
 	font-size: 40px;
 	font-weight: 700;
@@ -808,7 +781,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	color: #ffffff;
 	letter-spacing: 1px;
 	text-align: center;
-	margin-top: 0;
 	line-height: 1.3em;
 }
 
@@ -816,78 +788,282 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	max-width: 600px;
 	margin: 0 auto;
 	font-family: 'Roboto' , Arial, sans-serif;
-	font-size: 15px;
+	font-size: 16px;
 	font-weight: normal;
 	display: block;
 	color: #f2f2f2;
 	letter-spacing: 1px;
 	text-align: center;
-	padding: 10px 0 0;
+	padding: 10px 10px 0;
 	line-height: 1.5em;
 }
 
-.bg_area{
-	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
-	padding-top: 15px;
-}
-
-.bg_col{
+.logistics_grid_col{
 	flex: 25%;
 	width: 25%;
-	padding: 25px;
+	padding: 0 20px;
+}
+
+.logistics_grid_col img{
+	vertical-align: middle;
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.logistics_grid_box{
+	max-width: 350px;
+	position: relative;
 	text-align: center;
-	display: block;
-}
-
-.bg_box{
-	max-width: 300px;
+	overflow: hidden;
 	margin: auto;
-	padding: 30px 25px;
-	background-color: #ffffff; 
-	text-align: left;
-	transition: 0.5s;
-	border-bottom: solid 3px #feb600;
 }
 
-.bg_box h4{
-	color: #feb600;
-	font-family: 'Raleway' , Arial, sans-serif;
-	font-size: 35px;
-	font-weight: 700;
-	display: block;
-	text-align: left;
-	letter-spacing: 1px;
+.logistics_image{
+	overflow: hidden;
+	position: relative;
 }
 
-.bg_box h3{
+.logistics_grid_area{
+	overflow: hidden;
+	position: relative;
+	padding: 0
+}
+
+.logistics_content{
+	position: relative;
+	padding: 25px 0;
+	text-align: center;
+	width: 100%;
+}
+
+.logistics_content h3{
 	color: #111111;
 	font-family: 'Raleway' , Arial, sans-serif;
 	font-size: 18px;
 	font-weight: 600;
 	display: block;
-	text-align: left;
+	text-align: center;
 	letter-spacing: 1px;
 	line-height: 1.4em;
 }
 
-.bg_box:hover{
-	background-color: #1A2980;
+.logistics_content p{
+	font-family: 'Roboto' , Arial, sans-serif;
+	font-size: 15px;
+	font-weight: normal;
+	display: block;
+	color: #696969;
+	letter-spacing: 1px;
+	text-align: center;
+	line-height: 1.5em;
+	padding: 10px 0;
 }
 
-.bg_box:hover h3{
-	color: #ffffff;
+.logistics_content .fas{
+	font-size: 35px;
+	display: block;
+	color: #feb600;
+}
+
+.inner_crumb{
+	width: 50px;
+	height: 1px;
+	margin: auto;
+	border-bottom: solid 2px #111111;
 }
 
 /* --- 3.4. Logistics Area Four --- */
 .logistics_area_four{
+	max-width: 1280px;
+	margin-bottom: 9em;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0 25px;
+}
+
+.logistics_group_four,
+.feature_area{
 	width: 100%;
-	min-height: 150px;
+	display: flex; 
+	flex-wrap: wrap;
+}
+
+.logistics_wide_col{
+	flex: 33.33%;
+	width: 33.33%;
+	padding: 0 15px;
+	overflow: hidden;
+	position: relative;
+	border-right: solid 1px #e0e0e0;
+}
+
+.logistics_box_col{
+	flex: 66.66%;
+	width: 66.66%;
+	padding: 0 15px;
+	overflow: hidden;
+	position: relative;
+}
+
+.wide_area{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.wide_box{
+	max-width: 500px;
+	width: 100%;
+	padding: 0 20px;
+}
+
+.wide_box h2{
+	font-family: 'Raleway' , Arial, sans-serif;
+	font-size: 40px;
+	font-weight: 700;
+	display: block;
+	color: #1A2980;
+	text-align: left;
+	letter-spacing: 1px;
+	line-height: 1.3em;
+}
+
+.wide_box > p{
+	font-family: 'Roboto' , Arial, sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	display: block;
+	color: #696969;
+	letter-spacing: 1px;
+	text-align: left;
+	padding: 15px 0;
+	line-height: 1.5em;
+}
+
+.num_col{
+	position: relative;
+	flex: 50%;
+	width: 50%;
+	padding: 15px 0;
+}
+
+.num_box{
+	max-width: 350px;
+	margin: auto;
+	padding: 25px 15px;
+	text-align: center;
+	min-height: 50px;
+	height: 100%;
+	overflow: hidden;
+}
+
+.list_num{
+	float: left;
+	width: 25%;
+	max-width: 75px;
+	height: 75px;
+	background: #1A2980;
+	border-radius: 50%;
+}
+
+.num_info{
+	float: left;
+	width: 75%;
+	padding-left: 20px;
+}
+
+.list_num > h4 {
+	display: block;
+	color: #feb600;
+	margin-top: 25px;
+	font-family: 'Raleway' , Arial, sans-serif;
+	font-size: 25px;
+	font-weight: 500;
+	display: block;
+	text-align: center;
+}
+
+.num_box h3{
+	font-family: 'Raleway' , Arial, sans-serif;
+	font-size: 18px;
+	font-weight: 600;
+	display: block;
+	text-align: left;
+	color: #111111;
+	letter-spacing: 1px;
+	line-height: 1.4em;
+}
+
+.num_button > a{
+	font-family: 'Raleway' , Arial, sans-serif;
+	font-size: 13px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	text-align: left;
+	text-transform: uppercase;
+	display: block;
+	color: #1A2980;
+	text-decoration: none;
+	width: 120px;
+	transition: 0.5s;
+    cursor: pointer;
+}
+
+.num_button > a::after{
+	content: "\203A";
+	font-size: 20px;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	height: auto;
+	padding-left: 5px;
+	top: 1px;
+	position: relative;
+}
+
+.num_button > a:hover{
+	opacity: 0.6;
+}
+
+.bg_one{
+	background-color: #f6f6f6;
+}
+
+.bg_two{
+	background-color: #1A2980;
+}
+
+.bg_two .list_num{
+	background-color: #feb600;
+}
+
+.bg_two .list_num h4{
+	color: #ffffff;
+}
+
+.bg_two h3{
+	color: #ffffff;
+}
+
+.bg_two .num_button > a{
+	color: #ffffff;
+}
+
+.bg_two .num_button > a:hover{
+	opacity: 0.6;
+}
+
+/* --- 3.5. Logistics Area Five --- */
+.logistics_area_five{
+	max-width: 1280px;
+	margin: 0 auto 0;
+	padding: 0 20px;
 	margin-bottom: 9em;
 }
 
-.logistics_group_four{
+.logistics_group_five{
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
@@ -911,72 +1087,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	display: block;
 }
 
-.video-play-button {
-	position: absolute;
-	z-index: 10;
-	left: 50%;
-	top: 50%;
-	transform: translateX(-50%) translateY(-50%);
-	box-sizing: content-box;
-	display: block;
-	width: 28px;
-	height: 42px;
-	border-radius: 50%;
-	padding: 28px 16px 12px 32px;
-}
-
-.video-play-button:before {
-	content: "";
-	position: absolute;
-	z-index: 0;
-	left: 50%;
-	top: 50%;
-	transform: translateX(-50%) translateY(-50%);
-	display: block;
-	width: 80px;
-	height: 80px;
-	background: #ffffff;
-	border-radius: 50%;
-	animation: pulse-border 1500ms ease-out infinite;
-}
-
-.video-play-button:after {
-	content: "";
-	position: absolute;
-	z-index: 1;
-	left: 50%;
-	top: 50%;
-	transform: translateX(-50%) translateY(-50%);
-	display: block;
-	width: 80px;
-	height: 80px;
-	background: #ffffff;
-	border-radius: 50%;
-	transition: all 200ms;
-}
-
-.video-play-button span {
-	display: block;
-	position: relative;
-	z-index: 3;
-	width: 0;
-	height: 0;
-	border-left: 18px solid #1A2980;
-	border-top: 12px solid transparent;
-	border-bottom: 12px solid transparent;
-}
-
-@keyframes pulse-border {
-  0% {
-    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
-    opacity: 1;
-  }
-  100% {
-    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
-    opacity: 0;
-  }
-}
-
 .col_area{
 	display: flex;
 	flex-direction: column;
@@ -985,15 +1095,15 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .question_box{
-	max-width: 500px;
+	max-width: 475px;
 	margin: 0 auto;
 	width: 100%;
-	padding: 0 25px;
+	padding: 0 20px;
 }
 
 .question_box > p{
 	font-family: 'Roboto' , Arial, sans-serif;
-	font-size: 15px;
+	font-size: 16px;
 	font-weight: normal;
 	padding-top: 10px;
 	display: block;
@@ -1067,56 +1177,31 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 .panel > p{
 	padding: 12px 6px 0;
 	font-family: 'Roboto' , Arial, sans-serif;
-	font-size: 14px;
+	font-size: 15px;
 	font-weight: normal;
 	display: block;
 	line-height: 1.6em;
 	color: #696969;
-}
-
-.accordion_button{
-	max-width: 300px;
-}
-
-.accordion_button a{
-	background-color: #feb600;
-	width: 150px;
-	min-height: 30px;	
-    border: none;
-    color: #1A2980;
-    padding: 13px 15px;
-    text-decoration: none;
-	text-transform: uppercase;
-    display: inline-block;
-    font-size: 13px;
-	font-weight: 600;
-	font-family: 'Raleway', Helvetica, Arial, sans-serif;
-    cursor: pointer;
-	margin: 7px 0;
-	transition: 0.5s;
-	border: 1px solid #feb600;
 	letter-spacing: 1px;
-	text-align: center;
 }
 
-.accordion_button a:hover{
-	color: #feb600;
-	background-color: #1A2980;
-	border-color: #1A2980;
-}
-
-/* --- 3.5. Logistics Area Five --- */
-.logistics_area_five{
-	max-width: 1400px;
-	margin: 0 auto 9em;
-	padding: 0 30px;
-}
-
-.logistics_group_five{
+/* --- 3.6. Logistics Area Six --- */
+.logistics_area_six{
 	width: 100%;
+	margin: 0;
+	min-height: 400px;
+	padding: 6em 25px;
+	background-color: #eee;
+}
+
+.logistics_group_six{
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
 	display: flex;
 	flex-wrap: wrap;
 	padding-top: 40px;
+	padding-bottom: 40px;
 }
 
 .blog_col{
@@ -1126,109 +1211,56 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .blog_box{
+	position: relative;
 	max-width: 400px;
-	position: relative;
-	text-align: left;
-	overflow: hidden;
 	margin: auto;
-	min-height: 150px;
-	transition: 0.5s;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
-}
-
-.blog_image{
+	text-align: center;
+	padding: 25px 20px;
 	overflow: hidden;
-	position: relative;
-}
-
-.blog_area{
-	overflow: hidden;
-	position: relative;
-	padding-bottom: 12px;
-	padding-right: 12px;
-	padding-top: 12px;
-	padding-left: 12px;
 	background-color: #ffffff;
-	transition: ease-in-out 0.5s;
 }
 
 .blog_content{
-	padding: 25px 0;
+	padding: 10px;
 	text-align: left;
-	padding-left: 15px;
-	padding-right: 5px;
 }
 
 .blog_date{
-	position: absolute;
-	bottom: 25px;
-	left: 25px;
-	background-color: #1A2980;
-	padding: 12px 0;
-}
-
-.blog_date h3{
 	font-family: 'Raleway' , Arial, sans-serif;
-	font-size: 13px;
+	font-size: 12px;
 	display: block;
 	font-weight: 600;
-	color: #feb600;
+	color: #696969;
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	text-align: center;
-	width: 200px;
-	margin: 0;
-}
-
-.blog_col img{
-	vertical-align: middle;
-	width: 100%;
-	height: auto;
-	transition: 0.5s;
-	display: block;
-}
-
-.blog_image > a > img{
-	transition: ease-in-out 3.25s;
-}
-
-.blog_image > a > img:hover{
-	transform: scale(1.15);
+	text-align: left;
+	margin-bottom: 0;
+	width: 250px;
 }
 
 .blog_title a{
 	font-family: 'Raleway' , Arial, sans-serif;
 	font-size: 20px;
-	display: block;
+	display: inline-block;
 	font-weight: 600;
 	color: #111111;
 	letter-spacing: 1px;
 	text-align: left;
 	text-decoration: none;
 	transition: 0.5s;
-	line-height: 1.3em;
+	line-height: 1.4em;
 }
 
-a.blog_btn:hover,
-.blog_title a:hover{
+.blog_title a:hover,
+a.blog_btn:hover{
 	opacity: 0.6;
 }
 
-.blog_content p{
-	font-family: 'Roboto' , Arial, sans-serif;
-	font-size: 14px;
-	font-weight: normal;
-	display: block;
-	color: #696969;
-	letter-spacing: 1px;
-	text-align: left;
-	padding: 10px 0;
-}
-
 a.blog_btn{
-	max-width: 120px;	
-    color: #111111;
-	border-bottom: solid 2px #111111;
+	width: 120px;	
+    border: none;
+    color: #1A2980;
+	padding-top: 10px;
     text-decoration: none;
 	text-transform: uppercase;
     display: inline-block;
@@ -1238,9 +1270,8 @@ a.blog_btn{
     transition: 0.5s;
     cursor: pointer;
 	letter-spacing: 1px;
-	text-align: center;
+	text-align: left;
 	line-height: 1.2em;
-	padding-bottom: 3px;
 }
 
 a.blog_btn::after{
@@ -1255,72 +1286,80 @@ a.blog_btn::after{
 	position: relative;
 }
 
-/* --- 3.6. Logistics Area Six --- */
-.logistics_area_six{
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	min-height: 350px;
-	background-color: #1A2980;
+.blog_content p{
+	font-family: 'Roboto' , Arial, sans-serif;
+	font-size: 15px;
+	font-weight: normal;
+	display: block;
+	color: #696969;
+	letter-spacing: 1px;
+	text-align: left;
+	padding: 10px 0;
+	line-height: 1.5em;
+}
+
+/* --- 3.7. Logistics Area Seven --- */
+.logistics_area_seven{
+	width: 100%;
+	min-height: 100px;
 	margin-bottom: 9em;
-	padding: 4em 0;
+	background-color: #1A2980;
 }
 
-.logistics_group_six{
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 0 25px;
+.logistics_group_seven{
 	width: 100%;
-}
-
-.count_area{
-	width: 100%;
-	display: flex; 
+	display: flex;
 	flex-wrap: wrap;
-	padding-top: 20px;
+	padding: 20px;
+	border-bottom: solid 1px #e0e0e0;
 }
 
 .count_col{
 	flex: 25%;
 	width: 25%;
 	padding: 0 25px;
+	border-right: solid 1px #e0e0e0;
 }
 
 .count_box{
-	max-width: 350px;
+	max-width: 300px;
 	margin: auto;
+	padding: 0 25px;
+}
+
+.fourth_border{
+	border-right: none;
 }
 
 .count_box h3{
 	font-family: 'Raleway' , Arial, sans-serif;
-	font-size: 25px;
+	font-size: 16px;
 	font-weight: 600;
+	display: block;
+	text-align: center;
+	color: #feb600;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+.count_box .counter{
+	font-family: 'Raleway' , Arial, sans-serif;
+	font-size: 30px;
+	font-weight: 700;
 	display: block;
 	text-align: center;
 	color: #ffffff;
 	letter-spacing: 1px;
 }
 
-.count_box .counter{
-	font-family: 'Raleway' , Arial, sans-serif;
-	font-size: 40px;
-	font-weight: 600;
-	display: block;
-	text-align: center;
-	color: #feb600;
-	letter-spacing: 1px;
-}
-
-/* --- 3.7. Logistics Area Seven --- */
-.logistics_area_seven{
+/* --- 3.8. Logistics Area Eight --- */
+.logistics_area_eight{
 	max-width: 1000px;
 	margin: 0 auto 9em;
-	padding: 0 25px;
+	padding: 0 10px;
 }
 
-.logistics_group_seven{
+.logistics_group_eight{
 	width: 100%;
 	text-align: center;
 }
@@ -1342,7 +1381,6 @@ a.blog_btn::after{
 	text-align: center;
 	display: block;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
-
 }
 
 .client_info img{
@@ -1384,7 +1422,7 @@ a.blog_btn::after{
 
 .client_comment q{
 	font-family: 'Roboto' , Arial, sans-serif;
-	font-size: 14px;
+	font-size: 15px;
 	font-weight: normal;
 	display: block;
 	color: #696969;
@@ -1430,120 +1468,103 @@ a.blog_btn::after{
 	margin: 6px 0.40rem;
 }
 
-/* --- 3.8. Logistics Area Eight --- */
-.logistics_area_eight{
-	width: 100%;
-	margin: 0 0 2em;
-	min-height: 350px;
+/* --- 3.9. Logistics Area Nine --- */
+.logistics_area_nine{
+	position: relative;
+	min-height: 400px;
+	height: 100%;
+	text-align: center;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
-	padding: 6em 0;
 }
 
-.logistics_area_eight::before {
+.logistics_area_nine::before {
 	content: '';
 	position: absolute;
-	z-index: 1;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: rgba(24, 25, 34, 0.6);
+	background: rgba(24, 25, 34, 0.5);
 }
 
-.logistics_group_eight{
-	max-width: 1400px;
-	margin: auto;
-	padding: 0 25px;
-	position: relative;
-	z-index: 9;
+/* --- 3.10. Logistics Area Ten --- */
+.logistics_area_ten{
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 0 35px;
+	margin-top:  -250px;
 }
 
-.form_group{
+.logistics_group_ten{
 	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
+	padding: 30px 0;
+	background-color: #ffffff;
+	margin-top: 40px;
 }
 
-.logistics_form_col{
-	position: relative;
-	flex: 50%;
-	width: 50%;
-	padding: 0 20px;
-}
-
-.form_col_box{
-	max-width: 700px;
-	text-align: center;
+.register_col{
+	max-width: 850px;
 	margin: auto;
+	padding: 0 25px 0;
+	position: relative;
 }
 
-.form_col_box h2{
-	font-family: 'Raleway' , Arial, sans-serif;
-	font-size: 40px;
-	font-weight: 700;
-	letter-spacing: 1px;
-	text-align: left;
-	display: block;
-	color: #ffffff;
-	line-height: 1.3em;
+.register_box{
+	width: 100%;
 }
 
 .form_area{
 	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
+	flex-direction: column;
+	justify-content: center;
 	align-items: center;
 }
 
-.form-box{
+.register_box h3{
+	font-family: 'Raleway' , Arial, sans-serif;
+	font-size: 20px;
+	font-weight: 700;
+	letter-spacing: 1px;
 	text-align: center;
 	display: block;
-	max-width: 700px;
-	padding: 30px 0;
-	margin: auto;
-	background: transparent;
+	color: #111111;
+	line-height: 1.4em;
 }
 
-.form-row {
+.form-row{
 	flex-direction: row;
 	display: flex;
+	width: 100%;
 }
 
-.form-box input[type="text"],
-.form-box input[type="email"],
-.form-box input[type="password"]{
+.register_box input[type="text"],
+.register_box input[type="email"],
+.register_box input[type="password"]{
 	font-family: 'Raleway' , Arial, sans-serif;
 	font-size: 13px;
-	padding: 7px 20px;
+	padding: 4px 20px;
 	height: 40px;
 	border: none;
-	margin: 10px;
-	border: solid 1px #ffffff;
+	margin: 0 15px 20px;
+	border-bottom: solid 1px #111111;
 	flex-grow: 1;
 	letter-spacing: 1px;
 	transition: 0.5s;
-	background: transparent;
-	color: #ffffff;
 }
 
-.form-box input[type="text"]:focus,
-.form-box input[type="email"]:focus,
-.form-box input[type="password"]:focus,
-.form-box textarea:focus{
-	border-color: #ffffff;
-}
-
-.form-box input[type="submit"]{
-	margin: 14px 10px;
-	width: calc(100% - 20px);
-	padding: 10px 0;
+.register_box input[type="submit"]{
+	display: block;
+	margin: 18px 0 0;
+	margin-left: 15px;
+	width: auto;
+	padding: 10px 30px;
 	text-align: center;
-	font-family: 'Raleway' , Arial, sans-serif;
+	font-family: 'Raleway', Arial, sans-serif;
 	font-size: 16px;
-	font-weight: 600;
-	color: #feb600;
+	font-weight: normal;
+	color: #ffffff;
 	border-radius: 5px;
 	letter-spacing: 1px;
 	background-color: #1A2980;
@@ -1551,10 +1572,10 @@ a.blog_btn::after{
 	transition: 0.5s;
 }
 
-.form-box input[type="submit"]:hover{
-	background-color: #feb600;
-	color: #1A2980;
-	border-color: #feb600;
+.register_box input[type="submit"]:hover{
+	background-color: #111111;
+	color: #ffffff;
+	border: solid 1px #111111;
 }
 
 /* 4. FOOTER
@@ -1579,15 +1600,22 @@ a.blog_btn::after{
 	flex: 25%;
 	width: 25%;
 	padding: 0 20px;
+	max-width: 300px;
 }
 
 .footer_col{
 	padding-top: 3.5em;
 }
 
+a.footer-brand img{
+	max-width: 200px;
+	height: auto;
+	display: block;
+}
+
 .footer_box > h3 > a{
 	font-family: 'Raleway', Arial, sans-serif;
-	font-size: 20px;
+	font-size: 22px;
 	font-weight: 700;
 	letter-spacing: 1px;
 	text-transform: uppercase;
@@ -1603,17 +1631,17 @@ a.blog_btn::after{
 	letter-spacing: 1px;
 	color: #111111;
 	text-align: left;
-	padding: 10px 0;
-	line-height: 1.6em;
+	padding: 20px 0;
+	line-height: 1.5em;
 }
 
 .footer_social{
-	padding-top: 20px;
+	margin: 12px 0;
 }
 
 .footer_social .fab,
 .footer_social .fa{
-	font-size: 14px;
+	font-size: 16px;
 	color: #111111;
 	text-align: left;
 }
@@ -1627,36 +1655,10 @@ a.blog_btn::after{
 }
 
 .final{
-	width: 100%;
-}
-
-.address_box{
-	margin-top: 30px;
-}
-
-.address_name{
-	font-family: 'Raleway', Arial, sans-serif;
-	font-size: 13px;
-	font-weight: normal;
-	letter-spacing: 1px;
-	text-transform: capitalize;
-	color: #111111;
-	display: block;
-}
-
-.address_box .fas{
-	color: #111111;
-	padding-right: 12px;
-}
-
-.address_phone{
-	font-family: 'Raleway', Arial, sans-serif;
-	font-size: 13px;
-	font-weight: normal;
-	letter-spacing: 1px;
-	text-transform: capitalize;
-	color: #111111;
-	display: block;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
 }
 
 .footer_col > h4{
@@ -1664,8 +1666,8 @@ a.blog_btn::after{
 	font-size: 18px;
 	font-weight: 700;
 	letter-spacing: 1px;
-	text-transform: capitalize;
 	color: #111111;
+	line-height: 1.4em;
 }
 
 .footer_col > ul > li{
@@ -1687,38 +1689,55 @@ a.blog_btn::after{
 	opacity: 0.6;
 }
 
-.right_list{
+.subscribe-row{
+	text-align: right;
+}
+
+.col_info input[type="email"]{
+	display: block;
+	width: 100%;
+	padding: 12px 10px 14px;
+	background-color: #f6f6f6;
+	border: 0;
+	font-family: 'Raleway' , Arial, sans-serif;
+	font-size: 13px;
+	font-weight: 600;
+	color: #333333;
+	text-transform: capitalize;
+	letter-spacing: 1px;
+}
+
+.col_info{
 	padding-top: 10px;
 }
 
-.blog_list{
-	display: flex;
-	flex-wrap: wrap;
+.col_info input[type="submit"]{
+	display: inline-block;
+	padding: 10px 14px;
+	text-align: center;
+	font-family: 'Raleway' , Arial, sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+	text-transform: uppercase;
+	margin-top: 20px;
 	width: 100%;
-	max-width: 390px;
-	padding-bottom: 10px;
+	margin-left: 0;
+	color: #ffffff;
+	border-radius: 0;
+	letter-spacing: 1px;
+	background-color: #1A2980;
+	border: solid 1px #ffffff;
+	transition: 0.5s;
 }
 
-.left_blog{
-	flex: 25%;
-	width: 25%;
-	padding-bottom: 10px;
+.col_info input[type="submit"]:hover{
+	background-color: #111111;
+	color: #ffffff;
 }
 
-.right_blog{
-	flex: 75%;
-	width: 75%;
-	max-width: 290px;
-	padding-bottom: 15px;
-	padding-left: 14px;
-	margin-top: -5px;
-}
-
-.left_blog img{
-	vertical-align: middle;
-	width: 100%;
-	max-width: 100px;
-	transition: .5s;
+.col_info input[type="email"]:focus{
+	outline: none;
+	box-shadow: 0 0 0 2px #e0e0e0;
 }
 
 .details{
@@ -1736,70 +1755,50 @@ a.blog_btn::after{
 	letter-spacing: 1px;
 	color: #111111;
 	text-align: center;
-}
+} 
 
 /* 5. RESPONSIVE
  ----------- */
 @media only screen and (max-width: 1024px){
-	.logistics_group_one{
-		max-width: 800px;
-		margin: auto;
+	.header__content{
+		height: auto;
 	}
 	
-	.logistics_left_col{
+	.slide__content{
+		height: auto;
+	}
+	
+	.info_col,
+	.slide_col{
 		flex: 100%;
 		width: 100%;
-		padding: 40px 0;
-		
+		margin-top: 40px;
 	}
-
-	.logistics_right_col{
+	
+	.logistics_wide_col{
 		flex: 100%;
 		width: 100%;
+		border-right: none;
+		margin-bottom: 40px;
 	}
 	
-	.logistics_grid_col{
+	.logistics_box_col{
 		flex: 100%;
 		width: 100%;
-		padding-bottom: 40px;
-	}
-	
-	.bg_col{
-		flex: 50%;
-		width: 50%;
-	}
-	
-	.question_col{
-		flex: 100%;
-		width: 100%;
-	}
-	
-	.question_box{
-		padding-top: 35px;
 	}
 	
 	.blog_col{
-		flex: 100%;
-		width: 100%;
-		padding-bottom: 35px;
-	}
-	
-	.logistics_form_col{
-		flex: 100%;
-		width: 100%;
-		padding: 0;
-	}
-	
-	.form_col_box h2{
-		padding-left: 10px;
+		flex: 50%;
+		width: 50%;
+		margin-bottom: 40px;
 	}
 }
 
 @media only screen and (max-width: 992px){
 	nav.navbar.bootsnav .navbar-toggle{
-        background: transparent !important;
+        background: transparent;
         color: #111111;
-		font-size: 25px !important;
+		font-size: 25px;
 	}
 	
 	.head_btn{	
@@ -1834,6 +1833,19 @@ a.blog_btn::after{
         content: "\f105";
     }
 	
+	nav.navbar.bootsnav ul.nav.navbar-right .dropdown-menu .dropdown-menu{
+		left: 0;
+	}
+	
+	nav.navbar.bootsnav ul.navbar-right li.dropdown ul.dropdown-menu li.dropdown.on > a.dropdown-toggle:before{
+		 content: "\f107";
+	}
+	
+	nav.navbar.bootsnav ul.dropdown-menu.megamenu-content .col-menu{
+		border-left: none;
+		border-right: none;
+	}
+	
 	.left_info,
 	.right_info,
 	.left_sub,
@@ -1849,8 +1861,7 @@ a.blog_btn::after{
 	}
 	
 	.top_sub,
-	.left_info a,
-	.top_align{
+	.left_info a{
 		text-align: center;
 	}
 	
@@ -1868,10 +1879,43 @@ a.blog_btn::after{
 		font-size: 60px;
 	}
 	
+	.slide_info{
+		flex: 100%;
+		width: 100%;
+	}
+	
+	.slide_photo{
+		flex: 100%;
+		width: 100%;
+		max-width: 450px;
+		margin: auto;
+		margin-top: 40px;	
+	}
+	
+	.logistics_grid_col{
+		flex: 50%;
+		width: 50%;
+	}
+	
+	.question_col{
+		flex: 100%;
+		width: 100%;
+		max-width: 600px;
+		margin: auto;
+	}
+	
+	.question_box{
+		margin-top: 40px;
+	}
+	
 	.count_col{
 		flex: 50%;
 		width: 50%;
-		padding: 25px;
+		margin-bottom: 30px;
+	}
+	
+	.second_border{
+		border-right: none;
 	}
 	
 	.footer_col{
@@ -1881,8 +1925,12 @@ a.blog_btn::after{
 }
 
 @media only screen and (max-width: 600px){
-	.header-title__main{
-		font-size: 60px;
+	.logistics_heading,
+	.info_box h2,
+	.bg_head,
+	.wide_box h2,
+	.question_box h2{
+		font-size: 30px;
 	}
 	
 	.search-row input[type="text"]{
@@ -1897,16 +1945,17 @@ a.blog_btn::after{
 		margin-left: 0;
 	}
 	
-	.top_col_box h2,
-	.logistics_heading,
-	.bg_heading,
-	.question_box h2,
-	.count_box .counter,
-	.form_col_box h2{
-		font-size: 30px;
+	.logistics_grid_col{
+		flex: 100%;
+		width: 100%;
 	}
 	
-	.bg_col{
+	.num_col{
+		flex: 100%;
+		width: 100%;
+	}
+	
+	.blog_col{
 		flex: 100%;
 		width: 100%;
 	}
@@ -1914,6 +1963,20 @@ a.blog_btn::after{
 	.count_col{
 		flex: 100%;
 		width: 100%;
+	}
+	
+	.first_border,
+	.third_border{
+		border-right: none;
+	}
+	
+	.form-row{
+		flex-direction: column;
+	}
+	
+	.register_col{
+		max-width: 500px;
+		padding: 0 15px;
 	}
 	
 	.footer_col{
@@ -1927,50 +1990,52 @@ a.blog_btn::after{
 		font-size: 45px;
 	}
 	
-	.logistics_grid_col,
+	.info_col,
+	.slide_col,
+	.slide_info,
+	.slide_photo,
+	.logistics_wide_col,
+	.logistics_bol_col,
+	.wide_box,
+	.question_col,
+	.question_box,
 	.blog_col{
-		padding-left: 0;
-		padding-right: 0;
-	}
-	
-	.left_content{
-		width: 60%;
-	}
-
-	.right_content{
-		width: 40%;
-	}
-	
-	.form-box{
 		padding: 0;
 	}
 	
-	.form-row {
-		flex-direction: column;
+	.slide_box{
+		border: solid 1px #e0e0e0;
 	}
+	
 }
 
 @media only screen and (max-width: 360px){
-	.left_content{
-		width: 50%;
-	}
-
-	.right_content{
-		width: 50%;
+	.list_num > h4{
+		font-size: 20px;
+		margin-top: 24px;
 	}
 	
-	.logistics_name{
-		font-size: 16px;
-	}
-	
-	.bg_col{
-		padding-left: 0;
-		padding-right: 0;
+	.list_num{
+		max-width: 68px;
+		height: 68px;
 	}
 }
 
 @media only screen and (max-width: 320px){
-	.blog_date{
-		left: 15px;
+	.list_num{
+		max-width: 58px;
+		height: 58px;
+	}
+	
+	.list_num > h4{
+		margin-top: 18px;
+	}
+	
+	.num_info h3{
+		font-size: 16px;
+	}
+	
+	.num_info{
+		padding-left: 10px;
 	}
 }
