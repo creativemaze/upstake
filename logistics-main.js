@@ -5,7 +5,7 @@ $(document).ready(function(){
 		dots: false,
 		slidesToShow: 1,
 		slidesToScroll: 1,
-		autoplay: true,
+		autoplay: false,
 		fade: true,
 		prevArrow: '.prev_button',
 		nextArrow: '.next_button',
@@ -28,26 +28,15 @@ $(document).ready(function(){
 		pauseOnHover: false,
 		pauseOnFocus: false,
 		responsive: [
-		{
-			breakpoint: 800,
-			settings: {
-			slidesToShow: 1,
+			{
+				breakpoint: 801,
+				settings: {
+					slidesToShow: 1,
        
-		}	
-	},
-	]	
+				}	
+			},
+		]	
 	});
-	
-});
-
-//MagnificPopup Video
-$('#play-video').magnificPopup({
-	disableOn: 300,
-	type: 'iframe',
-	mainClass: 'mfp-fade',
-	removalDelay: 300,
-	preloader: false,
-	fixedContentPos: false
 });
 
 //Counter Script
@@ -81,7 +70,6 @@ $(window).on('load', function () {
 
 $(function () {
 	AOS.init({
-  
 		// Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
 		offset: 200, // offset (in px) from the original trigger point
 		delay: 300, // values from 0 to 3000, with step 50ms
