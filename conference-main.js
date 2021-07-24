@@ -12,7 +12,7 @@ $(document).ready(function(){
 		pauseOnHover: false,
 		pauseOnFocus: false,
 		centerMode: true,
-		centerPadding: '85px',
+		centerPadding: '90px',
 		responsive: [
 			{
 				breakpoint: 1025,
@@ -21,14 +21,14 @@ $(document).ready(function(){
 				}		
 			},
 			{
-				breakpoint: 800,
+				breakpoint: 840,
 				settings: {
 					slidesToShow: 1,
 				}		
 			},
 			
 			{
-				breakpoint: 600,
+				breakpoint: 541,
 				settings: {
 					slidesToShow: 1,
 					centerPadding: '0',
@@ -37,52 +37,42 @@ $(document).ready(function(){
 			
 		]
 	});
-	
 });
 
+//Slick Slider (2) Two
 $(document).ready(function(){
 	$('.client-slider').slick({
 		dots: true,
 		slidesToShow: 3,
 		slidesToScroll: 1,
 		arrows: false,
-		autoplay: true,
+		autoplay: false,
 		speed: 1000,
 		pauseOnHover: false,
 		responsive: [
-		{
-			breakpoint: 1025,
-			settings: {
-			slidesToShow: 1,
+			{
+				breakpoint: 1025,
+				settings: {
+					slidesToShow: 2,
        
-		}	
-	},
-	]	
+				}	
+			},
+			
+			{
+				breakpoint: 801,
+				settings: {
+					slidesToShow: 1,
+       
+				}	
+			},
+		]	
 	});
-});
-
-//MagnificPopup Video
-$('#play-video').magnificPopup({
-	disableOn: 300,
-	type: 'iframe',
-	mainClass: 'mfp-fade',
-	removalDelay: 300,
-	preloader: false,
-	fixedContentPos: false
-});
-
-//Counter Script
-jQuery(document).ready(function($) {
-    $('.counter').counterUp({
-        delay: 10,
-        time: 2000
-    });
 });
 
 //Count down script
 $(document).ready(function(){
 	// Set the date we're counting down to
-	var countDownDate = new Date("April 5, 2021 15:37:25").getTime();
+	var countDownDate = new Date("October 31, 2021 15:37:25").getTime();
 
 	// Update the count down every 1 second
 	var countdownfunction = setInterval(function() {
@@ -124,6 +114,18 @@ $(document).ready(function(){
 	
 });
 
+//MagnificPopup Video
+$('#play-video').magnificPopup({
+	disableOn: 300,
+	type: 'iframe',
+	mainClass: 'mfp-fade',
+	removalDelay: 300,
+	preloader: false,
+	fixedContentPos: false
+});
+
+
+
 //Animate on Scroll default settings
 $(window).on('load', function () {
 	AOS.refresh();
@@ -131,7 +133,6 @@ $(window).on('load', function () {
 
 $(function () {
 	AOS.init({
-  
 		// Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
 		offset: 200, // offset (in px) from the original trigger point
 		delay: 300, // values from 0 to 3000, with step 50ms
