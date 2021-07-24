@@ -3,7 +3,7 @@ Main Stylesheet
 
 Project:    Highpoint Corporate Template
 Version:    1.0
-Last change:    4/1/2021
+Last change:    23/07/2021
 Author:    Themewiz
 Primary use:    Conference
 -------------------------------------------------------------------*/
@@ -33,16 +33,14 @@ Primary use:    Conference
 
 /* 1. GENERAL
  ----------- */
- 
 body,
 html{
-	margin: 0;
-	padding: 0;
-}
-
-body{
+	width:100%;
+    height: auto;
+    margin:0;
+    padding:0;
+    overflow-x: hidden;
 	font-family: sans-serif;
-	overflow-x: hidden;
 }
 
 ul{
@@ -57,10 +55,6 @@ ul{
 
 .page_area{
 	width: 100%;
-}
-
-a:hover{
-	text-decoration: none !important;
 }
 
 .js .loading::before {
@@ -112,7 +106,7 @@ a:hover{
 .conference_info{
 	max-width: 500px;
 	font-family: 'Roboto' , Arial, sans-serif;
-	font-size: 15px;
+	font-size: 16px;
 	font-weight: normal;
 	display: block;
 	color: #696969;
@@ -124,36 +118,30 @@ a:hover{
 
 /* 2. HEADER
  ----------- */
- 
- /* --- 2.1. Logo & Navigation --- */
- nav.navbar .navbar-brand{
-	margin-top: 0;
-	max-width: 350px;
-	display: inline-block
-}
-
+/* --- 2.1. Logo & Navigation --- */
 .navbar-header h2{
 	font-family: 'Montserrat', Arial, sans-serif;
-	font-size: 20px;
+	font-size: 22px;
 	font-weight: 700;
 	letter-spacing: 1px;
 	text-transform: uppercase;
 }
 
-.navbar-header a{
+.navbar-header a.navbar-brand{
 	text-decoration: none;
 	color: #ffffff !important;
+	transition: 0.5s;
 }
 
- nav.navbar .navbar-brand img.logo{
-   max-width: 300px;
+nav.navbar .navbar-brand img.logo{
+   max-width: 200px;
    height: auto;
-   display: inline-block
+   display: block;
 }
 
 nav.navbar.bootsnav{
-	background-color: transparent !important;
-	border-bottom: none !important;
+	background-color: transparent;
+	border-bottom: none ;
 	z-index: 9999;
 }
 
@@ -170,10 +158,11 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu{
 nav.navbar.bootsnav ul.nav > li > a{
     color: #ffffff;
     font-family: 'Montserrat' , Arial, sans-serif;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 700;
     text-transform: uppercase;
 	letter-spacing: 1px;
+	border-top: none;
 }
 
 nav.navbar.bootsnav ul.navbar-right li.dropdown ul.dropdown-menu li a{
@@ -188,15 +177,38 @@ nav.navbar.bootsnav ul.navbar-right li.dropdown ul.dropdown-menu li a{
 	transition: 0.5s;
 }
 
+nav.navbar.bootsnav ul.navbar-right li.dropdown ul.dropdown-menu li a:hover{
+	color: #005AA7;
+}
+
+nav.navbar.bootsnav li.dropdown ul.dropdown-menu{
+	left: 0;
+}
+
  nav.navbar.bootsnav ul.nav > li.dropdown > a.dropdown-toggle:after{
     font-family: 'Font Awesome 5 Free';
     content: "\f107";
 	font-size: 12px;	
 }
 
- nav.navbar.bootsnav ul.dropdown-menu.megamenu-content .col-menu{
-    border-left: none;
-    border-right: none;
+nav.navbar.bootsnav ul.navbar-right li.dropdown ul.dropdown-menu li.dropdown > a.dropdown-toggle:before{
+    font-family: 'Font Awesome 5 Free';
+    float: right;
+    content: "\f105";
+    margin-top: 0;
+}
+
+nav.navbar.bootsnav ul.nav.navbar-right .dropdown-menu .dropdown-menu{
+    left: 200px;
+}
+
+nav.navbar.bootsnav li.dropdown ul.dropdown-menu ul.dropdown-menu{
+    top: 2px;
+}
+
+nav.navbar.bootsnav ul.dropdown-menu.megamenu-content .col-menu{
+    border-left: solid 1px #e0e0e0;
+    border-right: solid 1px #e0e0e0;
 }
 
 nav.navbar.bootsnav ul.dropdown-menu.megamenu-content .content ul.menu-col li a{
@@ -208,6 +220,10 @@ nav.navbar.bootsnav ul.dropdown-menu.megamenu-content .content ul.menu-col li a{
 	letter-spacing: 1px;
 }
 
+nav.navbar.bootsnav ul.dropdown-menu.megamenu-content .content ul.menu-col li a:hover{
+	color: #005AA7;
+}
+
 nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
     font-size: 14px;
     font-weight: 600;
@@ -215,6 +231,13 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
     color: #005AA7;
     text-transform: uppercase;
 	letter-spacing: 1px;
+}
+
+.attr-nav > ul > li.dropdown ul.dropdown-menu{
+    margin-top: 0;
+    margin-left: 55px;
+    width: 250px;
+    left: -250px !important;
 }
 
 .attr-nav > ul > li > a{
@@ -232,6 +255,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	letter-spacing: 1px;
 }
 
+/* --- 2.2. Header Content --- */
 .top_box{
 	height: 50px;
 	overflow-y: auto;
@@ -372,9 +396,9 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .head_btn a:hover{
-	background-color: transparent;
-	color: #ffffff;
-	border: 1px solid #ffffff;
+	color: #111111;
+	background: #ffffff;
+	border-color: #ffffff;
 }
 
 .sliderwrap{
@@ -478,7 +502,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .header__content{
-	display: -webkit-flex;
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
@@ -488,12 +511,11 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .header-title {
-	max-width: 700px;
-	display: block;
-	padding: 0 25px;
+	max-width: 650px;
+	padding: 0 15px;
 	position: relative;
-	z-index: 0;
 	text-align: left;
+	margin-left: 3vw;
 }
 
 .header-title__main{
@@ -501,7 +523,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	font-size: 40px;
 	font-weight: 500;
 	letter-spacing: 1px;
-	line-height: 1.2em;
+	line-height: 1.3em;
 	text-align: left;
 	display: block;
 	color: #ffffff;
@@ -512,7 +534,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	font-size: 16px;
 	font-weight: normal;
 	max-width: 500px;
-	display: inline-block;
+	display: block;
 	color: #f2f2f2;
 	line-height: 1.5em;
 	letter-spacing: 1px;
@@ -532,7 +554,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
     display: inline-block;
     font-size: 13px;
 	font-weight: 600;
-	font-family: 'Montserrat', Arial sans-serif;
+	font-family: 'Montserrat', Arial, sans-serif;
     transition: 0.5s;
     cursor: pointer;
 	border: 1px solid #005AA7;
@@ -551,9 +573,10 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
  
 /* --- 3.1. Conference Area One --- */
 .conference_area_one{
-	margin-top: calc(9em - 140px);
+	max-width: 1400px;
+	margin: auto;
 	margin-bottom: 9em;
-	width: 100%;
+	margin-top: calc(9em - 140px);
 	padding: 0 30px;
 }
 
@@ -704,17 +727,19 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 .conference_area_three{
 	max-width: 1280px;
 	min-height: 300px;
-	margin: 0 auto 9em;
+	margin: 0 auto;
+	padding: 0 15px;
 	margin-top:  -325px;
 	position: relative;
 	z-index: 9999;
+	margin-bottom: calc(9em - 60px);
 }
 
 .conference_group_three{
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
-	padding: 30px 50px;
+	padding: 30px 40px;
 	background-color: #ffffff;
 	margin-top: 40px;
 }
@@ -735,13 +760,13 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	max-width: 600px;
 	margin: 0 auto;
 	font-family: 'Roboto' , Arial, sans-serif;
-	font-size: 15px;
+	font-size: 16px;
 	font-weight: normal;
 	display: block;
 	color: #f2f2f2;
 	letter-spacing: 1px;
 	text-align: center;
-	padding: 10px 20px 0;
+	padding: 10px 10px 0;
 	line-height: 1.5em;
 }
 
@@ -756,6 +781,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 .conference_left_info_col{
 	flex: 33.33%;
 	width: 33.33%;
+	max-width: 400px;
 }
 
 .conference_right_info_col{
@@ -868,7 +894,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .conference_left_info_col p{
 	font-family: 'Roboto' , Arial, sans-serif;
-	font-size: 15px;
+	font-size: 16px;
 	font-weight: normal;
 	display: block;
 	color: #696969;
@@ -880,7 +906,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .info_col_button a{
 	background-color: #0083B0;
-	width: 165px;
+	width: 210px;
 	min-height: 30px;
 	margin: 25px 0 0;
     border: none;
@@ -890,8 +916,8 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	text-transform: uppercase;
     display: block;
     font-size: 13px;
-	font-weight: 700;
-	font-family: 'Montserrat', Arial sans-serif;
+	font-weight: 600;
+	font-family: 'Montserrat', Arial, sans-serif;
     transition: 0.5s;
     cursor: pointer;
 	border: 1px solid #0083B0;
@@ -948,7 +974,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 .feature_col{
 	flex: 25%;
 	width: 25%;
-	padding: 0 45px;
+	padding: 20px 45px;
 	border-right: solid 1px #6f6f6f;
 	min-height: 500px;
 	display: flex;
@@ -1004,7 +1030,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .feature_box p{
 	font-family: 'Roboto' , Arial, sans-serif;
-	font-size: 14px;
+	font-size: 15px;
 	font-weight: normal;
 	padding-top: 10px;
 	display: block;
@@ -1169,8 +1195,8 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	text-transform: uppercase;
     display: block;
     font-size: 13px;
-	font-weight: 700;
-	font-family: 'Montserrat', Arial sans-serif;
+	font-weight: 600;
+	font-family: 'Montserrat', Arial, sans-serif;
     transition: 0.5s;
     cursor: pointer;
 	border: 1px solid #005AA7;
@@ -1187,10 +1213,10 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 /* --- 3.6. Conference Area Six --- */
 .conference_area_six{
 	width: 100%;
-	margin: 0 0 9em;
+	margin: 0;
 	min-height: 400px;
 	padding: 6.5em 25px;
-	background-color: #f6f6f6;
+	background-color: #eee;
 }
 
 .conference_group_six{
@@ -1304,13 +1330,14 @@ a.blog_btn:hover,
 
 .blog_content p{
 	font-family: 'Roboto' , Arial, sans-serif;
-	font-size: 14px;
+	font-size: 15px;
 	font-weight: normal;
 	display: block;
 	color: #696969;
 	letter-spacing: 1px;
 	text-align: left;
 	padding: 10px 0;
+	line-height: 1.5em;
 }
 
 a.blog_btn{
@@ -1556,8 +1583,9 @@ a.blog_btn::after{
 /* --- 3.9. Conference Area Nine --- */
 .conference_area_nine{
 	max-width: 1200px;
-	margin: 0 auto 9em;
+	margin: 0 auto;
 	padding: 0 25px;
+	margin-bottom: calc(9em + 40px);
 }
 
 .conference_group_nine{
@@ -1659,7 +1687,7 @@ a.blog_btn::after{
 
 .client_comment q{
 	font-family: 'Roboto' , Arial, sans-serif;
-	font-size: 14px;
+	font-size: 15px;
 	font-weight: normal;
 	display: block;
 	color: #696969;
@@ -1712,31 +1740,18 @@ li.slick-active button{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	min-height: 300px;
+	min-height: 350px;
 	height: 100%;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
 	margin-bottom: 2em;
 	padding: 3em 0;
-}
-
-.conference_area_ten::before {
-	content: '';
-	position: absolute;
-	z-index: 1;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: rgba(24, 25, 34, 0.6);
+	background-color: #005AA7;
 }
 
 .conference_group_ten{
 	position: relative;
 	z-index: 5;
-	padding: 0 60px;
-	max-width: 1400px;
+	padding: 0 25px;
+	max-width: 1280px;
 	margin: auto;
 	width: 100%;
 	display: flex;
@@ -1772,9 +1787,9 @@ li.slick-active button{
 }
 
 .col_info input[type="email"]{
-	width: auto;
-	padding: 11px 20px 14px;
-	border: 0;
+	width: 350px;
+	padding: 12px 20px 14px;
+	border: solid 1px #e0e0e0;
 	font-family: 'Montserrat' , Arial, sans-serif;
 	font-size: 13px;
 	display: inline-block;
@@ -1788,25 +1803,25 @@ li.slick-active button{
 .col_info input[type="submit"]{
 	display: inline-block;
 	width: auto;
-	padding: 11px 20px;
+	padding: 11px 24px;
 	text-align: center;
 	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 14px;
-	font-weight: normal;
+	font-size: 16px;
+	font-weight: 500;
+	text-transform: uppercase;
 	margin: 0;
 	margin-left: -4px;
-	color: #ffffff;
+	color: #005AA7;
 	border-radius: 0;
 	letter-spacing: 1px;
-	background-color: #005AA7;
-	border: solid 1px #005AA7;
+	background-color: #ffffff;
+	border: solid 1px #ffffff;
 	transition: 0.5s;
 }
 
 .col_info input[type="submit"]:hover{
-	background-color: #ffffff;
-	color: #111111;
-	border-color: #ffffff;
+	background-color: #005AA7;
+	color: #ffffff;
 }
 
 /* 4. FOOTER
@@ -1831,15 +1846,22 @@ li.slick-active button{
 	flex: 25%;
 	width: 25%;
 	padding: 0 20px;
+	max-width: 300px;
 }
 
 .footer_col{
 	padding-top: 3.5em;
 }
 
+a.footer-brand img{
+	max-width: 200px;
+	height: auto;
+	display: block;
+}
+
 .footer_box > h3 > a{
 	font-family: 'Montserrat', Arial, sans-serif;
-	font-size: 20px;
+	font-size: 22px;
 	font-weight: 700;
 	letter-spacing: 1px;
 	text-transform: uppercase;
@@ -1855,17 +1877,17 @@ li.slick-active button{
 	letter-spacing: 1px;
 	color: #111111;
 	text-align: left;
-	padding: 10px 0;
-	line-height: 1.6em;
+	padding: 20px 0;
+	line-height: 1.5em;
 }
 
 .footer_social{
-	padding-top: 20px;
+	margin: 12px 0;
 }
 
 .footer_social .fab,
 .footer_social .fa{
-	font-size: 14px;
+	font-size: 16px;
 	color: #111111;
 	text-align: left;
 }
@@ -1879,36 +1901,10 @@ li.slick-active button{
 }
 
 .final{
-	width: 100%;
-}
-
-.address_box{
-	margin-top: 30px;
-}
-
-.address_name{
-	font-family: 'Montserrat', Arial, sans-serif;
-	font-size: 13px;
-	font-weight: normal;
-	letter-spacing: 1px;
-	text-transform: capitalize;
-	color: #111111;
-	display: block;
-}
-
-.address_box .fas{
-	color: #111111;
-	padding-right: 12px;
-}
-
-.address_phone{
-	font-family: 'Montserrat', Arial, sans-serif;
-	font-size: 13px;
-	font-weight: normal;
-	letter-spacing: 1px;
-	text-transform: capitalize;
-	color: #111111;
-	display: block;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
 }
 
 .footer_col > h4{
@@ -1993,8 +1989,16 @@ li.slick-active button{
 /* 5. RESPONSIVE
  ----------- */
 @media only screen and (max-width: 1024px){
-	.conference_area_three{
-		max-width: 1000px;
+	.header__content{
+		height: auto;
+	}
+	
+	.slide__content{
+		height: auto;
+	}
+	
+	.slide__right{
+		height: auto;
 	}
 	
 	.conference_left_info_col{
@@ -2015,17 +2019,39 @@ li.slick-active button{
 	}
 	
 	.blog_col{
+		flex: 50%;
+		width: 50%;
+		margin-bottom: 40px;
+	}
+	
+	.col_info{
 		flex: 100%;
 		width: 100%;
-		padding-bottom: 40px;
+		margin-top: 0;
+	}
+	
+	.col_head{
+		flex: 100%;
+		width: 100%;
+	}
+	
+	.subscribe-row{
+		text-align: center;
+		margin-top: 35px;
+	}
+	
+	.col_head h3{
+		text-align: center;
+		width: 100%;
+		margin: auto;
 	}
 }
- 
+
 @media only screen and (max-width: 992px){
 	nav.navbar.bootsnav .navbar-toggle{
-        background: transparent !important;
+        background: transparent;
         color: #ffffff;
-		font-size: 25px !important;
+		font-size: 25px;
 	}
 	
 	.head_btn{	
@@ -2059,6 +2085,19 @@ li.slick-active button{
         font-family: 'Font Awesome 5 Free';
         content: "\f105";
     }
+	
+	nav.navbar.bootsnav ul.nav.navbar-right .dropdown-menu .dropdown-menu{
+		left: 0;
+	}
+	
+	nav.navbar.bootsnav ul.navbar-right li.dropdown ul.dropdown-menu li.dropdown.on > a.dropdown-toggle:before{
+		 content: "\f107";
+	}
+	
+	nav.navbar.bootsnav ul.dropdown-menu.megamenu-content .col-menu{
+		border-left: none;
+		border-right: none;
+	}
 	
 	.left_info,
 	.right_info,
@@ -2102,14 +2141,6 @@ li.slick-active button{
 		padding-top: 130px;
 	}
 	
-	.bg_name h3{
-		font-size: 18px;
-	}
-	
-	.conference_area_three{
-		max-width: 750px;
-	}
-	
 	.info_mid{
 		flex: 100%;
 		width: 100%;
@@ -2134,35 +2165,8 @@ li.slick-active button{
 		margin-top: 25px;
 	}
 	
-	.conference_area_eight{
-		max-width: 950px;
-		margin-left: auto;
-		margin-right: auto;
-	}
-	
 	.form_box{
 		padding: 30px;
-	}
-	
-	.col_info{
-		flex: 100%;
-		width: 100%;
-	}
-	
-	.col_head{
-		flex: 100%;
-		width: 100%;
-	}
-	
-	.subscribe-row{
-		text-align: center;
-		margin-top: 35px;
-	}
-	
-	.col_head h3{
-		text-align: center;
-		width: 100%;
-		margin: auto;
 	}
 	
 	.footer_col{
@@ -2177,17 +2181,22 @@ li.slick-active button{
 		padding-top: 130px;
 	}
 	
+	.header__content,
+	.slide__right{
+		min-height: 600px;
+	}
+	
 	.header-title__main{
 		font-size: 30px;
 	}
 	
 	.left_box h2,
 	.conference_head,
-	.conference_left_info_col h2,
 	.days,
 	.hrs,
 	.min,
 	.seconds,
+	.conference_left_info_col h2,
 	.bg_head{
 		font-size: 30px;
 	}
@@ -2203,64 +2212,52 @@ li.slick-active button{
 		margin-top: 15px;
 	}
 	
-	.conference_area_three{
-		max-width: 500px;
-	}
-	
-	.conference_group_three{
-		padding: 30px 35px;
-	}
-	
-	.info_col_box{
-		padding-left: 0;
-	}
-	
-	.day_col{
-		width: 30%;
-	}
-	
-	.info_col_area{
-		width: 70%;
-	}
-	
 	.feature_col{
 		flex: 100%;
 		width: 100%;
 		min-height: 350px;
 	}
 	
+	.blog_col{
+		flex: 100%;
+		width: 100%;
+	}
+	
 	.footer_col{
 		flex: 100%;
 		width: 100%;
 	}
-}	
+}
 
 @media only screen and (max-width: 420px){
 	.top_group{
 		padding: 0;
 	}
 	
-	.conference_area_three{
-		max-width: 350px;
-	}
-	
-	.info_content h3{
-		font-size: 12px;
-	}
-	
 	.bg_col,
+	.info_col_box,
 	.team_col,
 	.blog_col{
 		padding-left: 0;
 		padding-right: 0;
 	}
 	
-	.client_box{
-		padding: 20px 15px;
+	.bg_name{
+		width: 240px;
 	}
 	
-	.client_details{
-		padding: 0 10px;
+	.conference_group_three{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	
+	.day_col{
+		max-width: 70px;
+		padding: 8px;
+	}
+	
+	.day_col h3{
+		font-size: 15px;
 	}
 	
 	.col_info input[type="email"]{
@@ -2276,20 +2273,18 @@ li.slick-active button{
 	}
 }
 
-@media only screen and (max-width: 360px){
-	.bg_name{
-		width: 240px;
+@media only screen and (max-width: 385px){
+	.client_info img{
+		width: 60px;
+		height: 60px;
 	}
 	
-	.conference_group_three{
-		max-width: 300px;
-		margin-left: auto;
-		margin-right: auto;
-		padding: 30px 25px;
+	.client_box{
+		padding: 30px 15px;
 	}
 	
-	.day_col h3{
-		font-size: 15px;
+	.col_head h3{
+		font-size: 25px;
 	}
 }
 
@@ -2298,7 +2293,7 @@ li.slick-active button{
 		width: 210px;
 	}
 	
-	.col_head h3{
-		font-size: 25px;
+	.bg_name h3 a{
+		font-size: 18px;
 	}
 }
