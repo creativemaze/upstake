@@ -3,7 +3,7 @@ Main Stylesheet
 
 Project:    Highpoint Corporate Template
 Version:    1.0
-Last change:    21/1/2021
+Last change:    25/7/2021
 Author:    Themewiz
 Primary use:    E-Learning
 -------------------------------------------------------------------*/
@@ -25,6 +25,7 @@ Primary use:    E-Learning
 	3.7. E-Learning Area Seven
 	3.8. E-Learning Area Eight
 	3.9. E-Learning Area Nine
+	3.10. E-Learning Area Ten
 	 
 4. Footer
 5. Responsive
@@ -32,16 +33,14 @@ Primary use:    E-Learning
 
 /* 1. GENERAL
  ----------- */
- 
 body,
 html{
-	margin: 0;
-	padding: 0;
-}
-
-body{
+	width:100%;
+    height: auto;
+    margin:0;
+    padding:0;
+    overflow-x: hidden;
 	font-family: sans-serif;
-	overflow-x: hidden;
 }
 
 ul{
@@ -56,10 +55,6 @@ ul{
 
 .page_area{
 	width: 100%;
-}
-
-a:hover{
-	text-decoration: none !important;
 }
 
 .js .loading::before {
@@ -120,7 +115,7 @@ a:hover{
 	padding-bottom: 15px;
 	text-transform: uppercase;
 	max-width: 500px;
-	margin: 0 auto;
+	margin: auto;
 	padding: 0 15px;
 }
 
@@ -128,35 +123,30 @@ a:hover{
  ----------- */
  
 /* --- 2.1. Logo & Navigation --- */
-nav.navbar .navbar-brand{
-	margin-top: 0;
-	max-width: 350px;
-	display: inline-block
-}
-
 .navbar-header h2{
 	font-family: 'Montserrat', Arial, sans-serif;
-	font-size: 20px;
+	font-size: 22px;
 	font-weight: 700;
 	letter-spacing: 1px;
 	text-transform: uppercase;
 }
 
-.navbar-header a{
+.navbar-header a.navbar-brand{
 	text-decoration: none;
 	color: #111111 !important;
+	transition: 0.5s;
 }
 
- nav.navbar .navbar-brand img.logo{
-   max-width: 300px;
-   max-height: 120px;
-   display: inline-block
+nav.navbar .navbar-brand img.logo{
+   max-width: 200px;
+   height: auto;
+   display: block;
 }
 
 nav.navbar.bootsnav{
 	background-color: transparent;
-	border-bottom: none;
-	z-index: 99;
+	border-bottom: none ;
+	z-index: 9999;
 }
 
 nav.navbar.bootsnav ul.nav{
@@ -172,10 +162,11 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu{
 nav.navbar.bootsnav ul.nav > li > a{
     color: #111111;
     font-family: 'Montserrat' , Arial, sans-serif;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 700;
     text-transform: uppercase;
 	letter-spacing: 1px;
+	border-top: none;
 }
 
 nav.navbar.bootsnav ul.navbar-right li.dropdown ul.dropdown-menu li a{
@@ -190,15 +181,38 @@ nav.navbar.bootsnav ul.navbar-right li.dropdown ul.dropdown-menu li a{
 	transition: 0.5s;
 }
 
+nav.navbar.bootsnav ul.navbar-right li.dropdown ul.dropdown-menu li a:hover{
+	color: #1488CC;
+}
+
+nav.navbar.bootsnav li.dropdown ul.dropdown-menu{
+	left: 0;
+}
+
  nav.navbar.bootsnav ul.nav > li.dropdown > a.dropdown-toggle:after{
     font-family: 'Font Awesome 5 Free';
     content: "\f107";
 	font-size: 12px;	
 }
 
- nav.navbar.bootsnav ul.dropdown-menu.megamenu-content .col-menu{
-    border-left: none;
-    border-right: none;
+nav.navbar.bootsnav ul.navbar-right li.dropdown ul.dropdown-menu li.dropdown > a.dropdown-toggle:before{
+    font-family: 'Font Awesome 5 Free';
+    float: right;
+    content: "\f105";
+    margin-top: 0;
+}
+
+nav.navbar.bootsnav ul.nav.navbar-right .dropdown-menu .dropdown-menu{
+    left: 200px;
+}
+
+nav.navbar.bootsnav li.dropdown ul.dropdown-menu ul.dropdown-menu{
+    top: 2px;
+}
+
+nav.navbar.bootsnav ul.dropdown-menu.megamenu-content .col-menu{
+    border-left: solid 1px #e0e0e0;
+    border-right: solid 1px #e0e0e0;
 }
 
 nav.navbar.bootsnav ul.dropdown-menu.megamenu-content .content ul.menu-col li a{
@@ -210,6 +224,10 @@ nav.navbar.bootsnav ul.dropdown-menu.megamenu-content .content ul.menu-col li a{
 	letter-spacing: 1px;
 }
 
+nav.navbar.bootsnav ul.dropdown-menu.megamenu-content .content ul.menu-col li a:hover{
+	color: #1488CC;
+}
+
 nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
     font-size: 14px;
     font-weight: 600;
@@ -219,12 +237,19 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	letter-spacing: 1px;
 }
 
+.attr-nav > ul > li.dropdown ul.dropdown-menu{
+    margin-top: 0;
+    margin-left: 55px;
+    width: 250px;
+    left: -250px !important;
+}
+
 .attr-nav > ul > li > a{
     color: #111111;
 	padding-top: 30px;
-	margin-left: -3px;
+	margin-left: -12px;
 	position: relative;
-	left: -170px;
+	left: -160px;
 }
 
 .top-search ::placeholder{
@@ -250,10 +275,11 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .left_info,
-.right_info{
+.right_info,
+.login_info{
 	position: relative;
-	flex: 50%;
-	width: 50%;
+	flex: 33.33%;
+	width: 33.33%;
 	padding-top: 20px;
 }
 
@@ -271,6 +297,13 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	display: block;
 }
 
+.login_info{
+	max-width: 200px;
+	margin: auto;
+	text-align: left;
+	display: block;
+}
+
 .left_info .fas,
 .right_info .fab{
 	font-size: 14px;
@@ -285,6 +318,22 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	width: 100%;
 	text-align: center;
 	padding-right: 10px;
+}
+
+.login_info a{
+	font-size: 13px;
+	font-weight: 600;
+	font-family: 'Montserrat', Arial, sans-serif;
+	color: #ffffff;
+    transition: 0.5s;
+	letter-spacing: 1px;
+	text-align: center;
+	text-decoration: none;
+	display: block;
+}
+
+.login_info a:hover{
+	opacity: 0.6;
 }
 
 .head-form{
@@ -455,7 +504,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	font-weight: normal;
 	display: block;
 	color: #f2f2f2;
-	line-height: 1.6em;
+	line-height: 1.5em;
 	letter-spacing: 1px;
 	text-align: left;
 	padding: 15px 0;
@@ -557,8 +606,8 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .buttoncol a:hover{
-	color: #ffffff;
-	background-color: transparent;
+	color: #111111;
+	background-color: #ffffff;
 	border-color: #ffffff;
 }
 
@@ -573,12 +622,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	margin-left: auto;
 	margin-right: auto;
 	padding: 0;
-}
-
-.elearning_group_area{
-	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
 }
 
 .elearning_group_one{
@@ -687,7 +730,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	color: #111111;
 	font-family: 'Montserrat' , Arial, sans-serif;
 	font-size: 20px;
-	font-weight: 500;
+	font-weight: 600;
 	display: block;
 	text-align: center;
 	letter-spacing: 1px;
@@ -696,7 +739,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .flip_group p{
 	font-family: 'Roboto' , Arial, sans-serif;
-	font-size: 14px;
+	font-size: 15px;
 	font-weight: normal;
 	display: block;
 	color: #696969;
@@ -704,6 +747,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	text-align: center;
 	line-height: 1.5em;
 	padding: 12px 16px;
+	max-width: 300px;
 }
 
 .inner_crumb{
@@ -834,15 +878,14 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .wide_area{
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	flex-direction: row;
+	justify-content: flex-start;
 	align-items: center;
-	overflow: hidden;
 }
 
 .wide_box{
-	max-width: 700px;
-	margin: 0 auto;
+	max-width: 600px;
+	margin: 0;
 }
 
 .wide_box h2{
@@ -916,14 +959,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	cursor: pointer;
 }
 
-.tutorial_course_box .tutorial_image > img{
-	transition: ease-in-out 1.25s;
-}
-
-.tutorial_course_box:hover .tutorial_image > img{
-	transform: scale(1.15);
-}
-
 .overlay{
 	position: absolute;
 	top: 0;
@@ -949,9 +984,14 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	left: 20px;
 	max-width: 350px;
 	margin: auto;
+	padding-right: 5px;
 }
 
 .course_subject h5{
+	margin: 0;
+}
+
+.course_subject h5 a{
 	font-family: 'Montserrat' , Arial, sans-serif;
 	font-size: 13px;
 	font-weight: 600;
@@ -963,12 +1003,18 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	text-transform: uppercase;
 	background-color: #1488CC;
 	padding: 9px 14px;
-	margin: 0;
+	transition: 0.6s;
+	text-decoration: none;
+}
+
+.course_subject h5 a:hover{
+	background-color: #ffffff;
+	color: #1488CC;
 }
 
 .course_title h3{
 	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 24px;
+	font-size: 22px;
 	font-weight: 500;
 	display: inline-block;
 	color: #ffffff;
@@ -1060,16 +1106,16 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	margin-top:  -325px;
 	position: relative;
 	z-index: 9999;
+	padding: 0 30px;
 }
 
 .elearning_group_four{
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
-	padding: 30px 25px;
+	padding: 40px 20px 0;
 	background-color: #ffffff;
 	margin-top: 40px;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
 .bg_head{
@@ -1093,7 +1139,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	line-height: 1.5em;
 	letter-spacing: 1px;
 	text-align: center;
-	padding-bottom: 15px;
+	padding-bottom: 12px;
 	text-transform: uppercase;
 }
 
@@ -1103,25 +1149,22 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	text-align: center;
 	overflow: hidden;
 	margin: auto;
-	height: auto;
-	transition: 0.5s;
 }
 
 .popular_col{
 	flex: 25%;
 	width: 25%;
-	padding: 0 25px;
+	padding: 0 20px;
 	border-right: solid 1px #e0e0e0;
 }
 
 .fourth_border{
-	border-right: none;
+	border-right: none !important;
 }
 
 .popular_col img{
 	width: 100%;
 	height: auto;
-	transition: ease-in-out 0.5s;
 	display: block;
 	border-radius: 50%;
 }
@@ -1159,7 +1202,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .popular_info{
 	font-family: 'Roboto' , Arial, sans-serif;
-	font-size: 14px;
+	font-size: 15px;
 	font-weight: normal;
 	display: block;
 	color: #696969;
@@ -1198,12 +1241,40 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .area_button > a:hover{
-	opacity: 0.6;
+	color: #111111;
+}
+
+.box_button a{
+	background-color: #182848;
+	width: 180px;
+	min-height: 25px;
+	margin: auto;
+	margin-top: 40px;	
+    border: none;
+    color: #ffffff;
+    padding: 14px 16px;
+    text-decoration: none;
+	text-transform: uppercase;
+    display: block;
+    font-size: 13px;
+	font-weight: 600;
+	font-family: 'Montserrat', Arial, sans-serif;
+    transition: 0.5s;
+    cursor: pointer;
+	border: 1px solid #182848;
+	letter-spacing: 1px;
+	text-align: center;
+}
+
+.box_button a:hover{
+	color: #111111;
+	background-color: #ffffff;
+	border-color: #111111;
 }
 
 /* --- 3.5. E-Learning Area Five --- */
 .elearning_area_five{
-	max-width: 1280px;
+	max-width: 1200px;
 	padding: 0 25px;
 	margin: 0 auto 9em;
 }
@@ -1217,24 +1288,22 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 .elearning_download_col{
 	flex: 33.33%;
 	width: 33.33%;
-	padding: 0 25px;
+	padding: 25px;
 }
 
 .download_box{
-	max-width: 400px;
+	max-width: 350px;
+	margin: auto;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
 	position: relative;
 	text-align: center;
 	overflow: hidden;
-	margin: auto;
-	height: auto;
 	transition: 0.5s;
 }
 
 .download_content{
 	width: 100%;
-	background-color: #f6f6f6;
-	padding: 27px 20px;
-	margin: 25px 0;
+	padding: 35px 20px 35px;
 	transition: 0.5s;
 	overflow: hidden;
 	cursor: pointer;
@@ -1248,7 +1317,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 .download_item{
 	float: left;
 	width: 85%;
-	padding-left: 10px;
+	padding-left: 15px;
 }
 
 .download_item h3{
@@ -1274,7 +1343,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .download_item p{
 	font-family: 'Roboto' , Arial, sans-serif;
-	font-size: 14px;
+	font-size: 15px;
 	font-weight: normal;
 	display: block;
 	color: #696969;
@@ -1323,6 +1392,25 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	opacity: 0.6;
 }
 
+.download_box:hover{
+	background-color: #1488CC;
+}
+
+.download_box:hover h3,
+.download_box:hover p{
+	color: #ffffff;
+}
+
+.download_box:hover .fas,
+.download_box:hover .far{
+	color: #ffffff;
+}
+
+.download_box:hover .download_button > a{
+	border-color: #ffffff;
+	color: #ffffff;
+}
+
 /* --- 3.6. E-Learning Area Six --- */
 .elearning_area_six{
 	position: relative;
@@ -1336,7 +1424,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	background-repeat: no-repeat;
 	background-position: center;
 	height: 100%;
-	padding: 5em 0;
+	padding: 6em 0;
 }
 
 .elearning_area_six::before {
@@ -1369,89 +1457,181 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 .number_col{
 	flex: 25%;
 	width: 25%;
-	padding: 0 25px;
+	padding: 0 40px;
+	border-right: solid 1px #6f6f6f;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .number_box{
 	max-width: 350px;
 	margin: auto;
-	padding: 0 25px;
-	text-align: center;
-	background-color: transparent;
+	padding: 0;
+	text-align: left;
+	background: transparent;
+	transition: 0.5s;
 }
 
-.list_num{
-	max-width: 100px;
-	height: 100px;
-	background: #ffffff;
-	border-radius: 50%;
-	border: solid 1px #ffffff;
-	margin: auto;
-}
-
-.list_num > h4 {
-	display: block;
-	color: #1488CC;
-	position: relative;
-	top: -75px;
+.number_box h4 {
+	color: #ffffff;
 	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 30px;
+	font-size: 35px;
 	font-weight: 500;
 	display: block;
-	text-align: center;
+	text-align: left;
+	padding-bottom: 15px;
+	margin: 0;
 }
 
 .number_box h3{
 	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 18px;
+	font-size: 20px;
 	font-weight: 500;
 	display: block;
-	text-align: center;
 	color: #ffffff;
 	letter-spacing: 1px;
+	text-align: left;
+	margin-top: 0;
 	line-height: 1.4em;
 }
 
-.list_num::before{
-	content: "";
+.number_box p{
+	font-family: 'Roboto' , Arial, sans-serif;
+	font-size: 15px;
+	font-weight: normal;
 	display: block;
-	margin: auto;
-	max-width: 100px;
-	height: 100px;
-	background: #ffffff;
-	border-radius: 50%;
-	animation: pulse-circle 1500ms ease-out infinite;
-}
-
-.list_num::after{
-	display: block;
-	max-width: 150px;
-	height: 150px;
-	background: #159957;
-	border-radius: 50%;
-	transition: all 200ms;
-}
-
-@keyframes pulse-circle{
-  0% {
-    transform: scale(1);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1.5);
-    opacity: 0;
-  }
+	color: #f2f2f2;
+	letter-spacing: 1px;
+	text-align: left;
+	padding-top: 12px;
+	line-height: 1.5em;
 }
 
 /* --- 3.7. E-Learning Area Seven --- */
 .elearning_area_seven{
 	max-width: 1400px;
 	margin: 0 auto 9em;
+	padding: 0 25px;
+}
+
+.elearning_group_seven{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.review_col_left{
+	flex: 33.33%;
+	width: 33.33%;
+	padding: 0 15px;
+	position: relative;
+}
+
+.review_col_right{
+	flex: 66.66%;
+	width: 66.66%;
+	padding: 0 15px;
+}
+
+.client_area{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.client_col{
+	flex: 25%;
+	width: 25%;
+}
+
+.client_col img{
+	vertical-align: middle;
+	width: 100%;
+	height: auto;
+	display: block;
+	border-radius: 50%;
+}
+
+.review_box{
+	max-width: 450px;
+	margin: 0;
+	width: 100%;
+	padding: 0 20px;
+}
+
+.review_box h2{
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 40px;
+	font-weight: 500;
+	display: block;
+	color: #111111;
+	text-align: left;
+	letter-spacing: 1px;
+	line-height: 1.3em;
+}
+
+.review_area{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.client_content{
+	max-width: 300px;
+	margin: auto;
+	height: auto;
+	padding: 10px;
+	overflow: hidden;
+}
+
+.client_name{
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+	display: block;
+	color: #111111;
+	letter-spacing: 1px;
+	text-align: center;
+	text-transform: capitalize;
+	margin-top: 0;
+}
+
+.client_title{
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+	display: block;
+	color: #1488CC;
+	letter-spacing: 1px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.client_comment q{
+	font-family: 'Roboto' , Arial, sans-serif;
+	font-size: 15px;
+	font-weight: normal;
+	display: block;
+	color: #696969;
+	letter-spacing: 1px;
+	text-align: center;
+	max-width: 300px;
+	margin: auto;
+	padding-top: 12px;
+}
+
+/* --- 3.8. E-Learning Area Eight --- */
+.elearning_area_eight{
+	max-width: 1280px;
+	margin: 0 auto 9em;
 	padding: 0 30px;
 	position: relative;
 }
 
-.elearning_group_seven{
+.elearning_group_eight{
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
@@ -1461,7 +1641,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 .blog_col{
 	flex: 33.33%;
 	width: 33.33%;
-	padding: 0 25px;
+	padding: 0 20px;
 }
 
 .blog_box{
@@ -1471,8 +1651,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	overflow: hidden;
 	margin: auto;
 	min-height: 150px;
-	transition: 0.5s;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
 .blog_image{
@@ -1483,16 +1661,11 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 .blog_area{
 	overflow: hidden;
 	position: relative;
-	padding-bottom: 12px;
-	padding-right: 12px;
-	padding-top: 12px;
-	padding-left: 12px;
 	background-color: #ffffff;
-	transition: ease-in-out 0.5s;
 }
 
 .blog_content{
-	padding: 25px 0;
+	padding: 15px 0 0;
 	text-align: left;
 	padding-left: 15px;
 	padding-right: 5px;
@@ -1529,7 +1702,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .blog_title a{
 	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 18px;
+	font-size: 20px;
 	display: block;
 	font-weight: 600;
 	color: #111111;
@@ -1540,15 +1713,26 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	line-height: 1.4em;
 }
 
-a.blog_btn:hover,
 .blog_title a:hover{
 	opacity: 0.6;
 }
 
+.blog_content p{
+	font-family: 'Roboto' , Arial, sans-serif;
+	font-size: 15px;
+	font-weight: normal;
+	display: block;
+	color: #696969;
+	letter-spacing: 1px;
+	text-align: left;
+	padding: 10px 0 0;
+	line-height: 1.5em;
+}
+
 a.blog_btn{
 	max-width: 120px;	
-    color: #111111;
-	border-bottom: solid 2px #111111;
+    color: #1488CC;
+	padding-top: 10px;
     text-decoration: none;
 	text-transform: uppercase;
     display: inline-block;
@@ -1558,10 +1742,7 @@ a.blog_btn{
     transition: 0.5s;
     cursor: pointer;
 	letter-spacing: 1px;
-	text-align: center;
-	line-height: 1.2em;
-	padding-bottom: 3px;
-	padding-top: 10px;
+	text-align: left;
 }
 
 a.blog_btn::after{
@@ -1576,134 +1757,101 @@ a.blog_btn::after{
 	position: relative;
 }
 
-/* --- 3.8. E-Learning Area Eight --- */
-.elearning_area_eight{
+a.blog_btn:hover{
+	color: #111111;
+}
+
+/* --- 3.9. E-Learning Area Nine --- */
+.elearning_area_nine{
 	position: relative;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	min-height: 400px;
-	text-align: center;
+	min-height: 350px;
 	height: 100%;
-	margin-bottom: 9em;
-	padding: 5em 0;
 	background-color: #1488CC;
-}
-
-.elearning_group_eight{
-	position: relative;
-	z-index: 9;
-	width: 100%;
-	max-width: 1400px;
-	margin: auto;
-	padding: 0 25px;
-}
-
-.quoteblock .fas{
-	font-size: 45px;
-	color: #d2d2d2;
-	text-align: center;
-	padding-bottom: 30px;
-}
-
-.client_box img{
-	max-width: 90px;
-	height: 90px;
-	margin: auto;
-	border-radius: 50%;
-	display: block;
-	text-align: center;
-	margin-bottom: 14px;
-}
-
-.client_box > p{
-	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 18px;
-	font-weight: normal;
-	max-width: 700px;
-	margin: auto;
-	display: block;
-	color: #ffffff;
-	letter-spacing: 1px;
-	text-align: center;
-	padding: 0 10px;
-}
-
-.client_box > h3{
-	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 14px;
-	font-weight: 600;
-	color: #f2f2f2;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	text-align: center;
-	display: block;
-	padding-bottom: 10px;
-}
-
-.client_box > h3::before{
-	content: '\2014';
-	padding: 0 0.5em;
-	color: #111111;
-}
-
-.ratings_icon{
-	text-align: center;
-	width: 100%;
-}
-
-.ratings_icon .fas{
-	font-size: 13px;
-	color: #111111;
-}
-
-.client_col .slick-dots {
-	position: relative;
-	z-index: 999999;
-	left: 50%;
-	transform: translateX(-50%);
-	display: flex;
-	justify-content: center;
-	margin: 16px 0 0;
-	padding: 1rem 0 0;
-	list-style-type: none;
-}
-
-.client_col .slick-dots button{
-	display: block;
-	width: 1.3rem;
-	height: 1.3rem;
-	padding: 0;		
-	border: solid 1px #ffffff;
-	border-radius: 100%;
-	background-color: transparent;
-	text-indent: -9999px;
-}
-
-.client_col li.slick-active button{
-	background-color: #ffffff;
-}
-
-.client_col .slick-dots button:hover{
-	background-color: #ffffff;
-}
-
-.client_col .slick-dots li{
-	margin: 6px 0.40rem;
-}
-
-/* --- 3.9. E-Learning Area Nine --- */
-.elearning_area_nine{
-	padding: 0 25px;
-	max-width: 1200px;
-	margin: 0 auto 7em;
+	padding: 2em 0;
 }
 
 .elearning_group_nine{
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
+}
+
+.count_col{
+	flex: 25%;
+	width: 25%;
+	padding: 0 25px;
+	min-height: 50px;
+}
+
+.count_col::before{
+	content: ".";
+	font-weight: 900;
+	font-size: 30px;
+	float: right;
+	text-align: right;
+	font-family: 'Montserrat' , Arial, sans-serif;
+	color: #ffffff;
+	margin-top: 30px;
+	position: relative;
+	left: 15%;
+	transform: translateX(-15%);
+}
+
+.fourth_circle::before{
+	content: ".";
+	display: none;
+}
+
+.count_box{
+	max-width: 300px;
+	margin: auto;
+	padding: 0 25px;
+}
+
+.count_box h3{
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	display: block;
+	text-align: center;
+	color: #f2f2f2;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+.count_box .counter{
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 30px;
+	font-weight: 700;
+	display: block;
+	text-align: center;
+	color: #e0e0e0;
+	letter-spacing: 1px;
+}
+
+.count_box .counter::after{
+	content:'+';
+}
+
+/* --- 3.10. E-Learning Area Ten --- */
+.elearning_area_ten{
+	max-width: 1200px;
+	margin: 0 auto 5em;
+	padding: 0 35px;
+	margin-top: -100px;
+}
+
+.elearning_group_ten{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #ffffff;
+	padding: 40px 30px 0;
+	margin-top: 20px;
 }
 
 .col_info{
@@ -1735,7 +1883,7 @@ a.blog_btn::after{
 }
 
 .col_info input[type="email"]{
-	width: auto;
+	width: 350px;
 	padding: 10px 20px 14px;
 	padding-right: 50px;
 	border: 0;
@@ -1756,7 +1904,8 @@ a.blog_btn::after{
 	text-align: center;
 	font-family: 'Montserrat' , Arial, sans-serif;
 	font-size: 14px;
-	font-weight: normal;
+	font-weight: 500;
+	text-transform: uppercase;
 	margin: 0;
 	margin-left: -4px;
 	color: #ffffff;
@@ -1768,9 +1917,14 @@ a.blog_btn::after{
 }
 
 .col_info input[type="submit"]:hover{
-	background-color: transparent;
-	color: #1488CC;
-	border-color: #1488CC;
+	background-color: #111111;
+	color: #ffffff;
+	border-color: #111111;
+}
+
+.col_info input[type="email"]:focus{
+	outline: none;
+	box-shadow: 0 0 0 2px #e0e0e0;
 }
 
 /* 4. FOOTER
@@ -1796,15 +1950,22 @@ a.blog_btn::after{
 	flex: 25%;
 	width: 25%;
 	padding: 0 20px;
+	max-width: 300px;
 }
 
 .footer_col{
 	padding-top: 4.5em;
 }
 
+a.footer-brand img{
+	max-width: 200px;
+	height: auto;
+	display: block;
+}
+
 .footer_box > h3 > a{
 	font-family: 'Montserrat', Arial, sans-serif;
-	font-size: 20px;
+	font-size: 22px;
 	font-weight: 700;
 	letter-spacing: 1px;
 	text-transform: uppercase;
@@ -1820,17 +1981,17 @@ a.blog_btn::after{
 	letter-spacing: 1px;
 	color: #ffffff;
 	text-align: left;
-	padding: 10px 0;
-	line-height: 1.6em;
+	padding: 20px 0;
+	line-height: 1.5em;
 }
 
 .footer_social{
-	padding-top: 20px;
+	margin: 12px 0;
 }
 
 .footer_social .fab,
 .footer_social .fa{
-	font-size: 14px;
+	font-size: 16px;
 	color: #ffffff;
 	text-align: left;
 }
@@ -1844,36 +2005,10 @@ a.blog_btn::after{
 }
 
 .final{
-	width: 100%;
-}
-
-.address_box{
-	margin-top: 30px;
-}
-
-.address_name{
-	font-family: 'Montserrat', Arial, sans-serif;
-	font-size: 13px;
-	font-weight: normal;
-	letter-spacing: 1px;
-	text-transform: capitalize;
-	color: #ffffff;
-	display: block;
-}
-
-.address_box .fas{
-	color: #ffffff;
-	padding-right: 12px;
-}
-
-.address_phone{
-	font-family: 'Montserrat', Arial, sans-serif;
-	font-size: 13px;
-	font-weight: normal;
-	letter-spacing: 1px;
-	text-transform: capitalize;
-	color: #ffffff;
-	display: block;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
 }
 
 .footer_col > h4{
@@ -1955,6 +2090,8 @@ a.blog_btn::after{
 	text-align: center;
 }
 
+/* 5. RESPONSIVE
+ ----------- */
 @media only screen and (min-width: 1400px){
 	.slidenav{
 		margin-bottom: -75px;
@@ -1966,6 +2103,17 @@ a.blog_btn::after{
 }
 
 @media only screen and (max-width: 1024px){
+	.login_info{
+		max-width: 50px;
+		margin: auto;
+		text-align: right;
+		display: block;
+	}
+	
+	.slide__content{
+		height: auto;
+	}
+	
 	.flip_col{
 		flex: 50%;
 		width: 50%;
@@ -2006,10 +2154,6 @@ a.blog_btn::after{
 		margin-bottom: 40px;
 	}
 	
-	.elearning_area_four{
-		max-width: 950px;
-	}
-	
 	.second_border{
 		border-right: none;
 	}
@@ -2019,18 +2163,35 @@ a.blog_btn::after{
 		width: 50%;
 	}
 	
+	.number_col{
+		flex: 50%;
+		width: 50%;
+		margin-bottom: 40px;
+	}
+	
 	.blog_col{
+		flex: 50%;
+		width: 50%;
+		margin-bottom: 40px;
+	}
+	
+	.review_col_left{
 		flex: 100%;
 		width: 100%;
-		padding-bottom: 40px;
+		margin-bottom: 45px;
+	}
+
+	.review_col_right{
+		flex: 100%;
+		width: 100%;
 	}
 }
 
 @media only screen and (max-width: 992px){
 	nav.navbar.bootsnav .navbar-toggle{
-        background: transparent !important;
+        background: transparent;
         color: #111111;
-		font-size: 25px !important;
+		font-size: 25px;
 	}
 	
 	.head_btn{	
@@ -2065,11 +2226,49 @@ a.blog_btn::after{
         content: "\f105";
     }
 	
+	nav.navbar.bootsnav ul.nav.navbar-right .dropdown-menu .dropdown-menu{
+		left: 0;
+	}
+	
+	nav.navbar.bootsnav ul.navbar-right li.dropdown ul.dropdown-menu li.dropdown.on > a.dropdown-toggle:before{
+		 content: "\f107";
+	}
+	
+	nav.navbar.bootsnav ul.dropdown-menu.megamenu-content .col-menu{
+		border-left: none;
+		border-right: none;
+	}
+	
 	.left_info,
-	.right_info{
+	.right_info,
+	.left_sub,
+	.right_sub,
+	.login_info{
 		flex: 100%;
 		width: 100%;
 		text-align: center;
+	}
+	
+	.login_info{
+		max-width: 100%;
+	}
+	
+	.sub_width{
+		padding-right: 0;
+	}
+	
+	.right_sub{
+		padding-left: 0;
+		padding-top: 12px;
+	}
+	
+	.top_sub,
+	.left_info a{
+		text-align: center;
+	}
+	
+	.top_sub{
+		padding-bottom: 4px;
 	}
 	
 	.attr-nav > ul > li > a{
@@ -2083,16 +2282,10 @@ a.blog_btn::after{
 		width: 100%;
 	}
 	
-	.slide__content{
-		min-height: 1200px;
-		height: 100%;
-	}
-	
 	.slide__right{
 		flex: 100%;
 		width: 100%;
 		padding: 50px 0;
-		
 	}
 	
 	.first_left{
@@ -2106,14 +2299,27 @@ a.blog_btn::after{
 		padding-top: 200px;
 	}
 	
-	.elearning_area_four{
-		max-width: 750px;
-	}
-	
-	.number_col{
+	.client_col{
 		flex: 50%;
 		width: 50%;
-		padding-bottom: 25px;
+	}
+	
+	.count_col{
+		flex: 50%;
+		width: 50%;
+		margin-bottom: 40px;
+	}
+	
+	.second_border{
+		border-right: none;
+	}
+	
+	.second_circle::before{
+		display: none;
+	}
+	
+	.fourth_circle{
+		padding-bottom: 45px;
 	}
 	
 	.footer_col{
@@ -2123,9 +2329,14 @@ a.blog_btn::after{
 }
 
 @media only screen and (max-width: 600px){
+	.slide__box h2{
+		font-size: 30px;
+	}
+	
 	.elearning_heading,
 	.wide_box h2,
-	.bg_head{
+	.bg_head,
+	.review_box h2{
 		font-size: 30px;
 	}
 	
@@ -2148,10 +2359,6 @@ a.blog_btn::after{
 		padding-left: 0;
 	}
 	
-	.elearning_area_four{
-		max-width: 475px;
-	}
-	
 	.popular_col{
 		flex: 100%;
 		width: 100%;
@@ -2167,6 +2374,39 @@ a.blog_btn::after{
 		width: 100%;
 	}
 	
+	.number_col{
+		flex: 100%;
+		width: 100%;
+		padding: 0 25px;
+	}
+	
+	.blog_col{
+		flex: 100%;
+		width: 100%;
+	}
+	
+	.count_col{
+		flex: 100%;
+		width: 100%;
+	}
+	
+	.third_circle::before,
+	.first_circle::before{
+		display: none;
+	}
+	
+	.col_info input[type="email"]{
+		display: block;
+		width: 100%;
+	}
+	
+	.col_info input[type="submit"]{
+		margin-top: 20px;
+		display: block;
+		width: 100%;
+		margin-left: 0;
+	}
+	
 	.footer_col{
 		flex: 100%;
 		width: 100%;
@@ -2180,10 +2420,6 @@ a.blog_btn::after{
 	
 	.form-panel{
 		padding: 25px;
-	}
-	
-	.slide__box h2{
-		font-size: 30px;
 	}
 	
 	.head-form{
@@ -2208,30 +2444,21 @@ a.blog_btn::after{
 	
 	.popular_col,
 	.elearning_download_col,
-	.blog_col{
+	.blog_col,
+	.review_col_left,
+	.review_col_right,
+	.review_box{
 		padding-left: 0;
 		padding-right: 0;
 	}
 	
-	.elearning_area_four{
-		max-width: 350px;
-	}
-	
-	.number_col{
+	.client_col{
 		flex: 100%;
 		width: 100%;
 	}
 	
-	.col_info input[type="email"]{
-		display: block;
-		width: 100%;
-	}
-	
-	.col_info input[type="submit"]{
-		margin-top: 20px;
-		display: block;
-		width: 100%;
-		margin-left: 0;
+	.col_head h3{
+		font-size: 25px;
 	}
 }
 
@@ -2243,10 +2470,6 @@ a.blog_btn::after{
 	
 	.course_title h3{
 		font-size: 20px;
-	}
-	
-	.elearning_area_four{
-		max-width: 300px;
 	}
 	
 	.download_item{
@@ -2263,11 +2486,7 @@ a.blog_btn::after{
 		width: 80%;
 	}
 	
-	.elearning_area_four{
-		max-width: 270px;
-	}
-	
 	.col_head h3{
-		font-size: 25px;
+		font-size: 20px;
 	}
 }
