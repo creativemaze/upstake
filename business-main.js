@@ -14,7 +14,7 @@ $(document).ready(function(){
 		responsive: [
 			
 			{
-				breakpoint: 600,
+				breakpoint: 601,
 				settings: {
 					slidesToShow: 1,
 				}		
@@ -29,24 +29,23 @@ $(document).ready(function(){
 $(document).ready(function(){
 	$('.client-slider').slick({
 		dots: true,
-		slidesToShow: 3,
+		slidesToShow: 2,
 		slidesToScroll: 1,
 		arrows: false,
-		autoplay: true,
+		autoplay: false,
 		speed: 1000,
 		pauseOnHover: false,
 		pauseOnFocus: false,
 		responsive: [
-		{
-			breakpoint: 800,
-			settings: {
-			slidesToShow: 1,
+			{
+				breakpoint: 769,
+				settings: {
+					slidesToShow: 1,
        
-		}	
-	},
-	]	
+				}		
+			},
+		]	
 	});
-	
 });
 
 //MagnificPopup Gallery
@@ -73,7 +72,6 @@ $(window).on('load', function () {
 
 $(function () {
 	AOS.init({
-  
 		// Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
 		offset: 200, // offset (in px) from the original trigger point
 		delay: 300, // values from 0 to 3000, with step 50ms
