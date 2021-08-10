@@ -31,67 +31,40 @@ $(document).ready(function(){
 
 //Slick Slider (2) Two
 $(document).ready(function(){
-	$('.bg_slider').slick({
-		dots: false,
+	$('.client-slider').slick({
+		dots: true,
 		slidesToShow: 3,
 		slidesToScroll: 1,
-		prevArrow: '.prev_slide',
-		nextArrow: '.next_slide',
+		arrows: false,
 		autoplay: false,
 		speed: 1000,
 		pauseOnHover: false,
-		pauseOnFocus: false,
-		centerMode: true,
-		centerPadding: '90px',
 		responsive: [
 			{
 				breakpoint: 1025,
 				settings: {
 					slidesToShow: 2,
-				}		
-			},
-			{
-				breakpoint: 992,
-				settings: {
-					slidesToShow: 1,
-				}		
+       
+				}	
 			},
 			
 			{
-				breakpoint: 600,
+				breakpoint: 769,
 				settings: {
 					slidesToShow: 1,
-					centerPadding: '0',
-				}		
+       
+				}	
 			},
-			
-		]
+		]	
 	});
-	
 });
 
-$(document).ready(function(){
-	$('.client-slider').slick({
-		dots: false,
-		slidesToShow: 2,
-		slidesToScroll: 1,
-		prevArrow: '.prev_nav',
-		nextArrow: '.next_nav',
-		autoplay: true,
-		speed: 1000,
-		pauseOnHover: false,
-		pauseOnFocus: false,
-		responsive: [
-		{
-			breakpoint: 800,
-			settings: {
-			slidesToShow: 1,
-       
-		}	
-	},
-	]	
-	});
-	
+//Counter Script
+jQuery(document).ready(function($) {
+    $('.counter').counterUp({
+        delay: 10,
+        time: 2000
+    });
 });
 
 //MagnificPopup Gallery
@@ -120,7 +93,6 @@ $(window).on('load', function () {
 
 $(function () {
 	AOS.init({
-  
 		// Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
 		offset: 200, // offset (in px) from the original trigger point
 		delay: 300, // values from 0 to 3000, with step 50ms
