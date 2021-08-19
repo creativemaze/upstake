@@ -4,7 +4,7 @@ $(document).ready(function(){
 	$('.slickslide').slick({
 		autoplay: true,
 		infinite: true,
-		speed: 1000,
+		speed: 2000,
 		prevArrow: '.prev_button',
 		nextArrow: '.next_button',
 		pauseOnHover: false,
@@ -17,15 +17,14 @@ $(document).ready(function(){
 //Slick Slider (2) Two
 $(document).ready(function(){
 	$('.square_slider').slick({
-		autoplay: true,
+		autoplay: false,
 		infinite: true,
 		speed: 1000,
 		fade: true,
-		prevArrow: '.prev_slide',
-		nextArrow: '.next_slide',
+		arrows: false,
 		pauseOnHover: false,
 		pauseOnFocus: false,
-		dots: false,
+		dots: true,
 		
 	});
 	
