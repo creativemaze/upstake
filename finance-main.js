@@ -1,26 +1,42 @@
 "use strict";
-//Slick Slider (1) One
-$(document).ready(function(){
-	$('.client_slider').slick({
-		dots: false,
-		slidesToShow: 3,
-		slidesToScroll: 1,
-		prevArrow: '.prev_button',
-		nextArrow: '.next_button',
-		autoplay: true,
-		speed: 1000,
-		pauseOnHover: false,
-		responsive: [
-		{
-			breakpoint: 993,
-			settings: {
-			slidesToShow: 1,
-       
-		}		
-	},
-	]	
-	});
-	
+//Animated Progress Bar
+$(document).ready(function($) {
+  function animateElements() {
+	$('.progressbar').each(function() {
+		var elementPos = $(this).offset().top;
+		var topOfWindow = $(window).scrollTop();
+		var percent = $(this).find('.circle').attr('data-percent');
+		var percentage = parseInt(percent, 10) / parseInt(100, 10);
+		var animate = $(this).data('animate');
+		if (elementPos < topOfWindow + $(window).height() - 30 && !animate) {
+			$(this).data('animate', true);
+			$(this).find('.circle').circleProgress({
+			startAngle: -Math.PI / 2,
+			value: percent / 100,
+			thickness: 14,
+			size: 125,
+			animation: {
+				duration: 2800,
+			},
+			
+			fill: {
+				color: '#00CDAC'
+			},
+			
+			emptyFill:{
+				color: '#111111'
+			}
+			
+			}).on('circle-animation-progress', function(event, progress, stepValue) {
+				$(this).find('div').text((stepValue * 100).toFixed(1) + "%");
+			}).stop();
+		}
+    });
+}
+
+//Show animated elements
+animateElements();
+	$(window).scroll(animateElements);
 });
 
 //MagnificPopup Video
@@ -31,14 +47,6 @@ $('#play-video').magnificPopup({
 	removalDelay: 300,
 	preloader: false,
 	fixedContentPos: false
-});
-
-//Counter Script
-jQuery(document).ready(function($) {
-    $('.counter').counterUp({
-        delay: 10,
-        time: 2000
-    });
 });
 
 //Animate on Scroll default settings
