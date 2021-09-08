@@ -5,20 +5,31 @@ $(document).ready(function(){
 		dots: true,
 		slidesToShow: 3,
 		slidesToScroll: 1,
-		arrows: false,
-		autoplay: true,
+		prevArrow: '.prev_nav',
+		nextArrow: '.next_nav',
+		autoplay: false,
 		speed: 1000,
 		pauseOnHover: false,
 		pauseOnFocus: false,
 		responsive: [
-		{
-			breakpoint: 800,
-			settings: {
-			slidesToShow: 1,
+			{
+				breakpoint: 801,
+				settings: {
+					slidesToShow: 2,
        
-		}	
-	},
-	]	
+				},
+			
+			},
+			
+			{
+				breakpoint: 601,
+				settings: {
+					slidesToShow: 1,
+       
+				},
+			
+			},
+		]	
 	});
 	
 });
