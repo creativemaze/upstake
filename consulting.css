@@ -3,8 +3,8 @@ Main Stylesheet
 
 Project:    Highpoint Corporate Template
 Version:    1.0
-Last change:    07/04/2021
-Author:    Themewiz
+Last change:    06/09/2021
+Author:    creativemaze
 Primary use:    Consulting
 -------------------------------------------------------------------*/
 
@@ -103,17 +103,15 @@ ul{
 }
 
 .consult_info{
-	max-width: 600px;
-	margin: 0 auto;
 	font-family: 'Montserrat' , Arial, sans-serif;
 	font-size: 15px;
 	font-weight: 500;
 	display: block;
 	color: #ec2F4B;
+	line-height: 1.5em;
 	letter-spacing: 1px;
 	text-align: center;
 	text-transform: uppercase;
-	line-height: 1.5em;
 }
 
 /* 2. HEADER
@@ -407,8 +405,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
-	animation-duration: 2s;
-	animation-delay: 1s;
 	position: relative;
 	z-index: 1000;
 }
@@ -426,9 +422,9 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .header-title {
-	max-width: 600px;
+	max-width: 650px;
 	display: block;
-	margin-left: 5vw;
+	margin-left: 10vw;
 	padding-right: 10px;
 	padding-top: 150px;
 	text-align: left;
@@ -447,7 +443,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .header-title__sub{
 	font-family: 'Roboto' , Arial, sans-serif;
-	font-size: 18px;
+	font-size: 17px;
 	font-weight: normal;
 	display: block;
 	color: #f2f2f2;
@@ -482,7 +478,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	letter-spacing: 1px;
 	text-align: center;
 	margin-right: 10px;
-	margin-bottom: 10px;
+	margin-bottom: 15px;
 }
 
 .buttoncol a:hover{
@@ -516,7 +512,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	border-radius: 50%;
 	padding: 28px 16px 12px 32px;
 	margin-top: -160px;
-	margin-left: 5vw;
+	margin-left: 10vw;
 }
 
 .video-play-button:before {
@@ -600,7 +596,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 .square_right_col{
 	flex: 33.33%;
 	width: 33.33%;
-	padding: 0 15px;
+	padding: 0 30px;
 	position: relative;
 }
 
@@ -634,7 +630,14 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	display: block;
 }
 
-.square_box h5{
+.square_area{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.right_box h5{
 	font-family: 'Montserrat' , Arial, sans-serif;
 	font-size: 15px;
 	font-weight: 500;
@@ -646,14 +649,12 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	line-height: 1.5em;
 }
 
-.square_box{
+.right_box{
 	max-width: 450px;
-	margin: 0 auto;
-	width: 100%;
 	padding-left: 25px;
 }
 
-.square_box > p{
+.right_box > p{
 	font-family: 'Roboto' , Arial, sans-serif;
 	font-size: 16px;
 	font-weight: normal;
@@ -665,7 +666,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	line-height: 1.5em;
 }
 
-.square_box h2{
+.right_box h2{
 	font-family: 'Montserrat' , Arial, sans-serif;
 	font-size: 40px;
 	font-weight: 700;
@@ -678,16 +679,16 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .square_col_button a{
 	background-color: #ec2F4B;
-	width: 165px;
+	width: 160px;
 	min-height: 30px;
-	margin: 35px 0 0;
+	margin: 30px 0 0;
     border: none;
     color: #ffffff;
     padding: 13px 15px;
     text-decoration: none;
 	text-transform: uppercase;
     display: block;
-    font-size: 12px;
+    font-size: 13px;
 	font-weight: 600;
 	font-family: 'Montserrat', Arial, sans-serif;
     transition: 0.5s;
@@ -936,7 +937,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	color: #111111;
 	font-family: 'Montserrat' , Arial, sans-serif;
 	font-size: 20px;
-	font-weight: 500;
+	font-weight: 600;
 	display: block;
 	text-align: center;
 	letter-spacing: 1px;
@@ -953,6 +954,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	text-align: center;
 	line-height: 1.5em;
 	padding: 12px 16px;
+	max-width: 300px;
 }
 
 .inner_crumb{
@@ -960,7 +962,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	height: 1px;
 	margin: auto;
 	border-bottom: solid 2px #111111;
-	padding-top: 8px;
+	padding-top: 6px;
 }
 
 .color-box .fas{
@@ -980,7 +982,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	height: 1px;
 	margin: auto;
 	border-bottom: solid 2px #ffffff;
-	padding-top: 8px;
+	padding-top: 6px;
 }
 
 .card_button{
@@ -995,12 +997,12 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .card_button a{
 	background: transparent;
-	width: 150px;
+	width: 140px;
 	min-height: 30px;
 	margin: 0 auto 0;
     border: none;
     color: #ffffff;
-    padding: 13px 15px;
+    padding: 13px 14px;
     text-decoration: none;
 	text-transform: uppercase;
     display: block;
@@ -1024,10 +1026,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 /* --- 3.3. Consulting Area Three --- */
 .consult_area_three{
 	position: relative;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
 	min-height: 450px;
 	height: 100%;
 	background-size: cover;
@@ -1053,17 +1051,16 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	margin: 0 auto 9em;
 	margin-top:  -325px;
 	position: relative;
-	z-index: 9999;
+	padding: 0 25px;
 }
 
 .consult_group_four{
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
-	padding: 30px 25px;
+	padding: 40px 10px 0;
 	background-color: #ffffff;
 	margin-top: 40px;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
 .bg_head{
@@ -1090,7 +1087,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .bg_box{
-	max-width: 350px;
+	max-width: 320px;
 	position: relative;
 	text-align: center;
 	overflow: hidden;
@@ -1113,7 +1110,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 .bg_col img{
 	width: 100%;
 	height: auto;
-	transition: ease-in-out 0.5s;
 	display: block;
 	border-radius: 50%;
 }
@@ -1127,7 +1123,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	padding-top: 10px;
 	padding-left: 10px;
 	background-color: #f6f6f6;
-	transition: ease-in-out 0.5s;
 }
 
 .bg_box .bg_image > img{
@@ -1151,7 +1146,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .bg_info{
 	font-family: 'Roboto' , Arial, sans-serif;
-	font-size: 14px;
+	font-size: 15px;
 	font-weight: normal;
 	display: block;
 	color: #696969;
@@ -1292,7 +1287,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 .price_list > ul li{
 	font-family: 'Montserrat' , Arial, sans-serif;
 	font-size: 13px;
-	font-weight: 500;
+	font-weight: 600;
 	display: block;
 	color: #111111;
 	letter-spacing: 1px;
@@ -1371,35 +1366,120 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 /* --- 3.6. Consulting Area Six --- */
 .consult_area_six{
-	max-width: 1280px;
-	margin: 0 auto 9em;
-	padding: 0 25px;
+	position: relative;
+	min-height: 450px;
+	height: 100%;
+	margin-bottom: 9em;
+	width: 100%;
+	background-color: #ec2F4B;
+	padding: 6em 0;
 }
 
 .consult_group_six{
+	position: relative;
+	max-width: 1400px;
+	margin: 0 auto;
+	padding: 0 25px;
+}
+
+.box_area,
+.square_area{
 	width: 100%;
-	display: flex;
+	display: flex; 
 	flex-wrap: wrap;
 }
 
+.box_col{
+	flex: 58.33%;
+	width: 58.33%;
+	padding: 0 15px;
+	position: relative;
+}
+
 .question_col{
+	flex: 41.66%;
+	width: 41.66%;
+	padding: 0 15px;
+}
+
+.square_col{
 	flex: 50%;
 	width: 50%;
-}
-
-.media_area{
-	max-width: 640px;
-	margin: auto;
 	position: relative;
-	overflow: hidden;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+	padding: 0 25px;
 }
 
-.question_col img{
-	vertical-align: middle;
+.square_box{
 	width: 100%;
-	height: auto;
+	background-color: #ffffff;
+	padding: 25px 20px;
+	max-width: 350px;
+	margin: 30px 0;
+	transition: 0.5s;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.square_icon{
+	float: left;
+	width: 20%;
+}
+
+.square_item{
+	float: left;
+	width: 80%;
+	padding-left: 10px;
+}
+
+.square_item h3{
+	color: #111111;
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 18px;
+	font-weight: 600;
 	display: block;
+	text-align: left;
+	letter-spacing: 1px;
+	margin-top: 0;
+	line-height: 1.4em;
+}
+
+.square_item p{
+	font-family: 'Roboto' , Arial, sans-serif;
+	font-size: 15px;
+	font-weight: normal;
+	display: block;
+	color: #696969;
+	letter-spacing: 1px;
+	text-align: left;
+	line-height: 1.5em;
+	padding: 8px 0;
+}
+
+.square_icon .fas,
+.square_icon .far{
+	font-size: 35px;
+	color: #ec2F4B;
+	text-align: center;
+	display: block;
+}
+
+.square_button > a{
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 13px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	text-align: left;
+	text-transform: uppercase;
+	display: block;
+	color: #D31027;
+	text-decoration: none;
+	width: 120px;
+	transition: 0.5s;
+    cursor: pointer;
+}
+
+.square_button > a:hover{
+	color: #111111;
 }
 
 .col_area{
@@ -1410,10 +1490,8 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .question_box{
-	max-width: 500px;
-	margin: 0;
-	width: 100%;
-	padding: 0 25px;
+	max-width: 450px;
+	padding-right: 20px;
 }
 
 .question_box h5{
@@ -1421,7 +1499,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	font-size: 15px;
 	font-weight: 500;
 	display: block;
-	color: #ec2F4B;
+	color: #111111;
 	letter-spacing: 1px;
 	text-align: left;
 	text-transform: uppercase;
@@ -1433,22 +1511,10 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	font-size: 40px;
 	font-weight: 700;
 	display: block;
-	color: #111111;
+	color: #ffffff;
 	text-align: left;
 	letter-spacing: 1px;
 	line-height: 1.3em;
-}
-
-.question_box > p{
-	font-family: 'Roboto' , Arial, sans-serif;
-	font-size: 16px;
-	font-weight: normal;
-	padding-top: 15px;
-	display: block;
-	color: #696969;
-	letter-spacing: 1px;
-	text-align: left;
-	line-height: 1.5em;
 }
 
 .accordion_box{
@@ -1457,9 +1523,9 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .accordion {
-	background-color: #eee;
+	background: transparent;
 	cursor: pointer;
-	padding: 20px;
+	padding: 16px 20px;
 	width: 100%;
 	border: none;
 	text-align: left;
@@ -1469,16 +1535,18 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	font-size: 15px;
 	font-weight: 600;
 	display: block;
-	color: #111111;
+	color: #ffffff;
 	letter-spacing: 1px;
 	line-height: 1.5em;
+	border: solid 1px #e0e0e0;
 }
 
 .active-bar, .accordion:hover {
-	background-color: #ccc;
+	background-color: #ffffff;
+	color: #111111;
 }
 
-.accordion:after {
+.accordion:after{
 	font-family: 'Font Awesome 5 Free';
 	content: '\f107';
 	font-size: 16px;
@@ -1502,45 +1570,13 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .panel > p{
-	padding: 12px 6px 0;
+	padding: 20px 16px 20px;
 	font-family: 'Roboto' , Arial, sans-serif;
 	font-size: 15px;
 	font-weight: normal;
 	display: block;
 	line-height: 1.6em;
 	color: #696969;
-}
-
-.accordion_button{
-	max-width: 300px;
-}
-
-.accordion_button a{
-	background-color: #ec2F4B;
-	width: 150px;
-	min-height: 30px;	
-    border: none;
-    color: #ffffff;
-    padding: 13px 15px;
-    text-decoration: none;
-	text-transform: uppercase;
-    display: inline-block;
-    font-size: 12px;
-	font-weight: 600;
-	font-family: 'Montserrat', Arial, sans-serif;
-    cursor: pointer;
-	margin: 7px 0;
-	transition: 0.5s;
-	border: 1px solid #ec2F4B;
-	border-radius: 25px;
-	letter-spacing: 1px;
-	text-align: center;
-}
-
-.accordion_button a:hover{
-	color: #111111;
-	background-color: transparent;
-	border-color: #111111;
 }
 
 /* --- 3.7. Consulting Area Seven --- */
@@ -1571,14 +1607,13 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	overflow: hidden;
 	margin: auto;
 	min-height: 150px;
-	transition: 0.5s;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
 .team_image img{
 	vertical-align: middle;
 	width: 100%;
 	height: auto;
-	transition: ease-in-out 0.5s;
 	display: block;
 }
 
@@ -1589,7 +1624,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	padding-right: 55px;
 	padding-top: 12px;
 	padding-left: 12px;
-	background-color: #ec2F4B;
 	transition: ease-in-out 0.5s;
 }
 
@@ -1607,7 +1641,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 .team_icon .fab,
 .team_icon .fa{
 	font-size: 18px;
-	color: #ffffff;
+	color: #ec2F4B;
 	display: block;
 	padding: 10px 18px;
 	text-align: center;
@@ -1615,7 +1649,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .team_image:hover{
-	background-color: #ffffff;
+	background-color: #ec2F4B;
 }
 
 .team_icon a{
@@ -1626,8 +1660,8 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	font-family: 'Montserrat' , Arial, sans-serif;
 	font-size: 20px;
 	display: block;
-	font-weight: 500;
-	color: #ffffff;
+	font-weight: 600;
+	color: #111111;
 	text-transform: capitalize;
 	letter-spacing: 1px;
 	text-align: left;
@@ -1637,7 +1671,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .team_image:hover .team_icon .fab,
 .team_image:hover .team_icon .fa{
-	color: #ec2F4B;
+	color: #ffffff;
 }
 
 .team_title{
@@ -1645,7 +1679,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	font-size: 17px;
 	display: block;
 	font-weight: 600;
-	color: #111111;
+	color: #ffffff;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	text-align: left;
@@ -1664,47 +1698,42 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	display: block;
 }
 
-.box_button{
-	max-width: 300px;
-	margin:  0 auto;
-}
-
 .box_button a{
-	background-color: #ffffff;
-	width: 190px;
+	background-color: #ec2F4B;
+	width: 180px;
 	min-height: 25px;
 	margin: auto;
-	margin-top: 60px;	
+	margin-top: 50px;	
     border: none;
-    color: #111111;
+    color: #ffffff;
     padding: 14px 16px;
     text-decoration: none;
 	text-transform: uppercase;
     display: block;
-    font-size: 12px;
+    font-size: 13px;
 	font-weight: 600;
 	font-family: 'Montserrat', Arial, sans-serif;
     transition: 0.5s;
     cursor: pointer;
-	border: 1px solid #111111;
+	border: 1px solid #ec2F4B;
 	border-radius: 25px;
 	letter-spacing: 1px;
 	text-align: center;
 }
 
 .box_button a:hover{
-	color: #ffffff;
-	background-color: #ec2F4B;
-	border-color: #ec2F4B;
+	color: #111111;
+	background: transparent;
+	border-color: #111111;
 }
 
 /* --- 3.8. Consulting Area Eight --- */
 .consult_area_eight{
 	width: 100%;
-	margin: 0 0 9em;
+	margin: 0;
 	min-height: 400px;
 	padding: 7em 25px;
-	background-color: #f7f7f7;
+	background-color: #eeeeee;
 }
 
 .consult_group_eight{
@@ -1714,6 +1743,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	display: flex;
 	flex-wrap: wrap;
 	padding-top: 30px;
+	padding-bottom: 20px;
 }
 
 .blog_col{
@@ -1729,7 +1759,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	overflow: hidden;
 	margin: auto;
 	min-height: 150px;
-	transition: 0.5s;
 }
 
 .blog_image{
@@ -1745,7 +1774,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	padding-top: 12px;
 	padding-left: 12px;
 	background-color: #ffffff;
-	transition: ease-in-out 0.5s;
 }
 
 .blog_content{
@@ -1771,7 +1799,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	vertical-align: middle;
 	width: 100%;
 	height: auto;
-	transition: 0.5s;
 	display: block;
 }
 
@@ -1853,39 +1880,23 @@ a.blog_btn:hover .blog_crumb{
 /* --- 3.9. Consulting Area Nine --- */
 .consult_area_nine{
 	position: relative;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
 	min-height: 200px;
 	height: 100%;
 	text-align: center;
 	margin-bottom: 9em;
-	padding: 6em 0;
+	padding: 6em 25px 7em;
 	background-color: #ec2F4B;
 }
 
 .consult_group_nine{
 	position: relative;
-	z-index: 9;
 	width: 100%;
 	max-width: 1000px;
 	margin: auto;
-	padding: 0 25px;
 }
 
-.consult_group_nine p{
-	max-width: 600px;
-	margin: 0 auto;
-	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 15px;
-	font-weight: 500;
-	display: block;
+.dark_sub{
 	color: #111111;
-	letter-spacing: 1px;
-	text-align: center;
-	text-transform: uppercase;
-	line-height: 1.5em;
 }
 
 .client_details{
@@ -1895,7 +1906,7 @@ a.blog_btn:hover .blog_crumb{
 	margin: auto;
 	padding: 0 15px;
 	text-align: center;
-	padding-top: 30px;
+	padding-top: 20px;
 	padding-bottom: 30px;
 }
 
@@ -1925,6 +1936,7 @@ a.blog_btn:hover .blog_crumb{
 	color: #111111;
 	letter-spacing: 1px;
 	text-align: center;
+	line-height: 1.4em;
 }
 
 .client_comment{
@@ -1964,7 +1976,7 @@ a.blog_btn:hover .blog_crumb{
 	display: flex;
 	justify-content: center;
 	margin: 0;
-	padding: 1.5rem 0 0;
+	padding: 0.2rem 0 0;
 	list-style-type: none;
 }
 
@@ -1993,9 +2005,9 @@ a.blog_btn:hover .blog_crumb{
 
 /* --- 3.10. Consulting Area Ten --- */
 .consult_area_ten{
-	padding: 0 25px;
-	max-width: 1280px;
+	max-width: 1200px;
 	margin: 0 auto 7em;
+	padding: 0 35px;
 }
 
 .consult_group_ten{
@@ -2004,15 +2016,19 @@ a.blog_btn:hover .blog_crumb{
 	flex-wrap: wrap;
 }
 
+.col_info{
+	flex: 100%;
+	width: 100%;
+}
+	
 .col_head{
-	flex: 50%;
-	width: 50%;
+	flex: 100%;
+	width: 100%;
 }
 
-.col_info{
-	flex: 50%;
-	width: 50%;
-	margin-top: 15px;
+.subscribe-row{
+	text-align: center;
+	margin-top: 35px;
 }
 
 .col_head h3{
@@ -2022,20 +2038,17 @@ a.blog_btn:hover .blog_crumb{
 	font-weight: 500;
 	color: #111111;
 	letter-spacing: 1px;
-	text-align: left;
+	text-align: center;
 	line-height: 1.3em;
-	max-width: 550px;
-	margin-top: 0;
-}
-
-.subscribe-row{
-	text-align: right;
+	max-width: 600px;
+	margin:  0 auto;
 }
 
 .col_info input[type="email"]{
 	width: 350px;
-	padding: 12px 20px 14px;
-	border: solid 1px #e0e0e0;
+	padding: 10px 20px 14px;
+	padding-right: 50px;
+	border: 0;
 	font-family: 'Montserrat' , Arial, sans-serif;
 	font-size: 13px;
 	display: inline-block;
@@ -2043,7 +2056,7 @@ a.blog_btn:hover .blog_crumb{
 	color: #333333;
 	text-transform: capitalize;
 	letter-spacing: 1px;
-	background-color: #ffffff;
+	background-color: #f6f6f6;
 }
 
 .col_info input[type="submit"]{
@@ -2052,8 +2065,9 @@ a.blog_btn:hover .blog_crumb{
 	padding: 11px 24px;
 	text-align: center;
 	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 16px;
+	font-size: 14px;
 	font-weight: 500;
+	text-transform: uppercase;
 	margin: 0;
 	margin-left: -4px;
 	color: #ffffff;
@@ -2064,12 +2078,18 @@ a.blog_btn:hover .blog_crumb{
 	transition: 0.5s;
 	border-top-right-radius: 25px;
 	border-bottom-right-radius: 25px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
 .col_info input[type="submit"]:hover{
-	background-color: #ffffff;
-	color: #111111;
+	background-color: #111111;
+	color: #ffffff;
 	border-color: #111111;
+}
+
+.col_info input[type="email"]:focus{
+	outline: none;
+	box-shadow: 0 0 0 2px #e0e0e0;
 }
 
 /* 4. FOOTER
@@ -2238,6 +2258,14 @@ a.footer-brand img{
 /* 5. RESPONSIVE
  ----------- */
 @media only screen and (max-width: 1024px){
+	.header__content{
+		height: auto;
+	}
+	
+	.slide__content{
+		height: auto;
+	}
+	
 	.square_left_col{
 		flex: 100%;
 		width: 100%;
@@ -2271,49 +2299,24 @@ a.footer-brand img{
 		margin-bottom: 40px;
 	}
 	
-	.consult_area_four{
-		max-width: 950px;
-	}
-	
 	.second_border{
 		border-right: none;
 	}
 	
-	.question_col{
+	.question_col,
+	.box_col{
 		flex: 100%;
 		width: 100%;
 	}
 	
 	.question_box{
-		padding-bottom: 35px;
-		margin: auto;
+		padding-bottom: 15px;
 	}
 	
 	.blog_col{
 		flex: 50%;
 		width: 50%;
 		margin-bottom: 40px;
-	}
-	
-	.col_info{
-		flex: 100%;
-		width: 100%;
-	}
-	
-	.col_head{
-		flex: 100%;
-		width: 100%;
-	}
-	
-	.subscribe-row{
-		text-align: center;
-		margin-top: 35px;
-	}
-	
-	.col_head h3{
-		text-align: center;
-		width: 100%;
-		margin: auto;
 	}
 }
 
@@ -2398,8 +2401,9 @@ a.footer-brand img{
 		padding-top: 25px;
 	}
 	
-	.consult_area_four{
-		max-width: 700px;
+	.header-title,
+	.video-play-button{
+		margin-left: 5vw;
 	}
 	
 	.price_col{
@@ -2437,7 +2441,7 @@ a.footer-brand img{
 		font-size: 30px;
 	}
 	
-	.square_box h2,
+	.right_box h2,
 	.consult_head,
 	.bg_head,
 	.question_box h2{
@@ -2469,10 +2473,6 @@ a.footer-brand img{
 		padding-right: 10px;
 	}
 	
-	.consult_area_four{
-		max-width: 475px;
-	}
-	
 	.bg_col{
 		flex: 100%;
 		width: 100%;
@@ -2481,6 +2481,11 @@ a.footer-brand img{
 	.first_border,
 	.third_border{
 		border-right: none;
+	}
+	
+	.square_col{
+		flex: 100%;
+		width: 100%;
 	}
 	
 	.blog_col{
@@ -2500,17 +2505,17 @@ a.footer-brand img{
 		padding: 0;
 	}
 	
-	.square_box{
+	.right_box{
 		padding-left: 0;
 	}
 	
-	.consult_area_four{
-		max-width: 350px;
-	}
-	
+	.price_col,
 	.bg_col,
 	.team_col,
-	.question_box{
+	.question_box,
+	.square_col,
+	.box_col,
+	.question_col{
 		padding-left: 0;
 		padding-right: 0;
 	}
@@ -2526,19 +2531,6 @@ a.footer-brand img{
 		width: 100%;
 		margin-left: 0;
 	}
-}
-
-@media only screen and (max-width: 375px){
-	.consult_area_four{
-		max-width: 300px;
-	}
-}
-
-@media only screen and (max-width: 360px){
-	.price_col{
-		padding-left: 0;
-		padding-right: 0;
-	}
 	
 	.col_head h3{
 		font-size: 25px;
@@ -2548,9 +2540,5 @@ a.footer-brand img{
 @media only screen and (max-width: 320px){
 	.video-play-button{
 		margin-top: -180px;
-	}
-	
-	.consult_area_four{
-		max-width: 270px;
 	}
 }
