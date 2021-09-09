@@ -29,22 +29,6 @@ $(document).ready(function(){
 	
 });
 
-//Slick Slider (2) Two
-$(document).ready(function(){
-	$('.client-slider').slick({
-		dots: false,
-		prevArrow: '.prev_slide',
-		nextArrow: '.next_slide',
-		autoplay: true,
-		autoplaySpeed: 3000,
-		fade: true,
-		fadeSpeed: 1000,
-		pauseOnHover: false,
-		pauseOnFocus: false,
-				
-	});
-});
-
 //MagnificPopup Gallery (1) One
 $('.featured_col').magnificPopup({
 	delegate: 'a',
