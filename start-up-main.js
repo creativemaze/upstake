@@ -68,28 +68,12 @@ $(document).ready(function(){
 	
 });
 
-//Slick Slider (3) Three
-$(document).ready(function(){
-	$('.client-slider').slick({
-		dots: true,
-		slidesToShow: 3,
-		slidesToScroll: 1,
-		arrows: false,
-		autoplay: true,
-		speed: 1000,
-		pauseOnHover: false,
-		pauseOnFocus: false,
-		responsive: [
-		{
-			breakpoint: 800,
-			settings: {
-			slidesToShow: 1,
-       
-		}	
-	},
-	]	
-	});
-	
+//Counter Script
+jQuery(document).ready(function($) {
+    $('.counter').counterUp({
+        delay: 10,
+        time: 2000
+    });
 });
 
 //Animate on Scroll default settings
