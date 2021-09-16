@@ -1,22 +1,22 @@
 "use strict";
 //Slick Slider (1) One
 $(document).ready(function(){
-	$('.slickslide').slick({
+	$('.mainslider').slick({
 		autoplay: true,
 		infinite: true,
 		speed: 1000,
 		prevArrow: '.prev_slide',
 		nextArrow: '.next_slide',
 		pauseOnHover: false,
-		pauseOnFocus: false,
+		pauseOnFocus: false
 	});
 });
 
 //Slick Slider (2) Two
 $(document).ready(function(){
-	$('.boxslide').slick({
+	$('.boxslide-one').slick({
 		slidesToShow: 2,
-		autoplay: false,
+		autoplay: true,
 		infinite: true,
 		speed: 1000,
 		arrows: false,
@@ -24,16 +24,16 @@ $(document).ready(function(){
 		pauseOnHover: false,
 		pauseOnFocus: false,
 		responsive: [
-		{
-			breakpoint: 992,
-			settings: {
-			slidesToShow: 1,
-			dots: true,
-			fade: true
-		}
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 1,
+					dots: true,
+					fade: true
+				}
 						
-	},
-	]
+			},
+		]
 	});
 });
 
@@ -41,7 +41,7 @@ $(document).ready(function(){
 $(document).ready(function(){
 	$('.boxslide-two').slick({
 		slidesToShow: 2,
-		autoplay: false,
+		autoplay: true,
 		infinite: true,
 		speed: 1000,
 		arrows: false,
@@ -49,16 +49,16 @@ $(document).ready(function(){
 		pauseOnHover: false,
 		pauseOnFocus: false,
 		responsive: [
-		{
-			breakpoint: 992,
-			settings: {
-			slidesToShow: 1,
-			dots: true,
-			fade: true
-		}
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 1,
+					dots: true,
+					fade: true
+				}
 						
-	},
-	]
+			},
+		]
 	});
 });
 
@@ -74,26 +74,15 @@ $(document).ready(function(){
 		pauseOnHover: false,
 		pauseOnFocus: false,
 		responsive: [
-		{
-			breakpoint: 993,
-			settings: {
-			slidesToShow: 1,
+			{
+				breakpoint: 769,
+				settings: {
+					slidesToShow: 1,
        
-		}		
-	},
-	]	
+				}		
+			},
+		]	
 	});
-	
-});
-
-//MagnificPopup Video
-$('#play-video').magnificPopup({
-	disableOn: 300,
-	type: 'iframe',
-	mainClass: 'mfp-fade',
-	removalDelay: 300,
-	preloader: false,
-	fixedContentPos: false
 });
 
 //MagnificPopup Gallery (1) One
