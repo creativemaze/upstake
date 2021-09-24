@@ -3,8 +3,8 @@ Main Stylesheet
 
 Project:    Highpoint Corporate Template
 Version:    1.0
-Last change:    27/04/2021
-Author:    Themewiz
+Last change:    20/09/2021
+Author:    creativemaze
 Primary use:    Medical
 -------------------------------------------------------------------*/
 
@@ -23,6 +23,8 @@ Primary use:    Medical
 	3.5. Medical Area Five
 	3.6. Medical Area Six
 	3.7. Medical Area Seven
+	3.8. Medical Area Eight
+	3.9. Medical Area Nine
 	 
 4. Footer
 5. Responsive
@@ -97,7 +99,6 @@ ul{
 	text-align: center;
 	letter-spacing: 1px;
 	line-height: 1.3em;
-	margin-top: 0;
 }
 
 .medical_info{
@@ -130,6 +131,10 @@ ul{
 	text-decoration: none;
 	color: #111111;
 	transition: 0.5s;
+}
+
+.navbar-header a.navbar-brand:hover{
+	color: #111111;
 }
 
 nav.navbar .navbar-brand img.logo{
@@ -258,7 +263,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 .top_box{
 	height: 50px;
 	overflow-y: auto;
-	background-color: #26d0ce;
+	background-color: #2b32b2;
 }
 
 .top_info{
@@ -378,7 +383,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .head_btn a{
-	background-color: #2b32b2;
+	background-color: #26d0ce;
 	width: 160px;
 	min-height: 30px;
     border: none;
@@ -392,7 +397,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	font-family: 'Montserrat', Arial, sans-serif;
     transition: 0.5s;
     cursor: pointer;
-	border: 1px solid #2b32b2;
+	border: 1px solid #26d0ce;
 	border-radius: 5px;
 	letter-spacing: 1px;
 	text-align: center;
@@ -400,13 +405,12 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .head_btn a:hover{
 	background-color: transparent;
-	color: #2b32b2;
-	border: 1px solid #2b32b2;
+	color: #111111;
+	border-color: #111111;
 }
 
 .sliderwrap{
 	position: relative;
-	top: -140px;
 }
 
 .header__content{
@@ -414,14 +418,14 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	flex-direction: row;
 	justify-content: flex-start;
 	align-items: center;
-	min-height: 800px;
+	min-height: 750px;
 	height: 100vh;
 }
 
 .slide__content{
 	position: relative;
 	z-index: 0;
-	min-height: 800px;
+	min-height: 750px;
 	height: 100vh;
 	text-align: center;
 	background-size: cover;
@@ -430,9 +434,9 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .header-title {
-	max-width: 600px;
+	max-width: 650px;
 	display: block;
-	margin-left: 5vw;
+	margin-left: 10vw;
 	padding-right: 10px;
 	text-align: left;
 }
@@ -443,7 +447,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	font-weight: 700;
 	letter-spacing: 1px;
 	line-height: 1.2em;
-	margin-top: 0;
 	text-align: left;
 	display: block;
 	color: #2b32b2;
@@ -463,30 +466,30 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .buttoncol a{
-	background-color: transparent;
+	background-color: #26d0ce;
 	width: 150px;
 	min-height: 30px;
     border: none;
-    color: #2b32b2;
+    color: #ffffff;
     padding: 13px 14px;
     text-decoration: none;
 	text-transform: uppercase;
     display: block;
-    font-size: 12px;
+    font-size: 13px;
 	font-weight: 600;
 	font-family: 'Montserrat', Arial, sans-serif;
     transition: 0.5s;
     cursor: pointer;
-	border: 1px solid #2b32b2;
+	border: 1px solid #26d0ce;
 	border-radius: 5px;
 	letter-spacing: 1px;
 	text-align: center;
 }
 
 .buttoncol a:hover{
-	color: #ffffff;
-	background-color: #2b32b2;
-	border-color: #2b32b2;
+	color: #111111;
+	background: transparent;
+	border-color: #111111;
 }
 
 /* 3. MAIN CONTENT
@@ -494,9 +497,9 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
  
 /* --- 3.1. Medical Area One --- */
 .medical_area_one{
-	max-width: 1400px;
-	margin-bottom: calc(9em - 50px);
-	margin-top: calc(9em - 140px);
+	max-width: 1280px;
+	margin-bottom: calc(9em - 30px);
+	margin-top: 9em;
 	margin-left: auto;
 	margin-right: auto;
 	padding: 0 25px;
@@ -506,6 +509,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
+	padding-top: 20px;
 }
 
 .square_col{
@@ -517,13 +521,24 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .square_box{
 	width: 100%;
-	background-color: #f6f6f6;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
 	padding: 25px 20px;
-	max-width: 400px;
-	margin: 0 auto 25px;
+	max-width: 350px;
+	margin: 30px auto;
 	transition: 0.5s;
 	overflow: hidden;
 	cursor: pointer;
+}
+
+.square_area{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.square_media{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
 .square_col img{
@@ -545,7 +560,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .medical_item h3{
-	color: #26d0ce;
+	color: #111111;
 	font-family: 'Montserrat' , Arial, sans-serif;
 	font-size: 18px;
 	font-weight: 600;
@@ -621,6 +636,35 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	color: #ffffff;
 }
 
+.box_button a{
+	background-color: #26d0ce;
+	width: 175px;
+	min-height: 25px;
+	margin: auto;
+	margin-top: 30px;	
+    border: none;
+    color: #ffffff;
+    padding: 14px 16px;
+    text-decoration: none;
+	text-transform: uppercase;
+    display: block;
+    font-size: 13px;
+	font-weight: 600;
+	font-family: 'Montserrat', Arial, sans-serif;
+    transition: 0.5s;
+    cursor: pointer;
+	border: 1px solid #26d0ce;
+	letter-spacing: 1px;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.box_button a:hover{
+	color: #111111;
+	background-color: #ffffff;
+	border-color: #111111;
+}
+
 /* --- 3.2. Medical Area Two --- */
 .medical_area_two{
 	max-width: 1200px;
@@ -639,7 +683,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	flex: 33.33%;
 	width: 33.33%;
 	padding: 0 20px;
-	overflow: hidden;
 	position: relative;
 }
 
@@ -648,39 +691,41 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	position: relative;
 	text-align: center;
 	display: block;
-	overflow: hidden;
+	padding: 12px;
 	margin: auto;
-	transition: 0.5s;
+	border: solid 1px #e0e0e0;
 }
 
 .service_image img{
 	vertical-align: middle;
 	width: 100%;
 	height: auto;
-	transition: ease-in-out 3.25s;
 	display: block;
 }
 
 .service_info{
 	text-align: left;
-	margin-top: 20px;
+	padding: 12px 0;
 }
 
 .service_info h3{
 	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 18px;
+	font-size: 16px;
 	display: block;
 	font-weight: 600;
 	color: #111111;
 	letter-spacing: 1px;
 	text-align: left;
 	line-height: 1.4em;
-	margin-top: 0;
+	text-transform: uppercase;
 }
 
 .service_info h3::before{
-	content: '\2014';
-	padding-right: 0.6em;
+	font-family: 'Font Awesome 5 Free';
+	content: "\f00c";
+	font-weight: 900;
+	font-size: 15px;
+	padding-right: 10px;
 	color: #26d0ce;
 }
 
@@ -699,144 +744,83 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 /* --- 3.3. Medical Area Three --- */
 .medical_area_three{
+	position: relative;
+	min-height: 450px;
+	height: 100%;
+	margin-bottom: 9em;
 	width: 100%;
-	margin: 0 0;
-	margin-bottom: calc(9em - 3em);
-	min-height: 400px;
-	padding: 7em 25px 12em;
 	background-color: #2b32b2;
+	padding: 7em 0 12em 0;
 }
 
 .medical_group_three{
 	max-width: 1400px;
-	width: 100%;
-	margin: auto;
-	position: relative;
-	padding-top: 40px;
+	margin: 0 auto;
+	padding: 0 25px;
 }
 
-.bg_head{
-	color: #ffffff;
+.medical_color_bg{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.medical_wide_col{
+	flex: 33.33%;
+	width: 33.33%;
+	padding: 0 15px;
+	position: relative;
+}
+
+.medical_box_col{
+	flex: 66.66%;
+	width: 66.66%;
+	padding: 0 15px;
+	position: relative;
+}
+
+.wide_area{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.wide_box{
+	max-width: 600px;
+	padding-right: 20px
+}
+
+.wide_box h2{
 	font-family: 'Montserrat' , Arial, sans-serif;
 	font-size: 40px;
 	font-weight: 700;
 	display: block;
-	text-align: center;
+	color: #ffffff;
+	text-align: left;
 	letter-spacing: 1px;
 	line-height: 1.3em;
-	margin-top: 0;
 }
 
-.bg_info{
-	max-width: 600px;
-	margin: 0 auto;
+.wide_box > p{
 	font-family: 'Roboto' , Arial, sans-serif;
 	font-size: 16px;
 	font-weight: normal;
 	display: block;
 	color: #f2f2f2;
+	padding: 15px 0;
 	letter-spacing: 1px;
-	text-align: center;
-	padding-top: 10px;
+	text-align: left;
 	line-height: 1.5em;
 }
 
-.medical_slide{
-	max-width: 700px;
-	position: relative;
-	text-align: center;
-	overflow: hidden;
-	margin: auto;
-	padding-right: 25px;
-}
-
-.medical_dept_box{
-	position: relative;
-	text-align: center;
-	overflow: hidden;
-}
-
-.medical_dept_image{
-	overflow: hidden;
-}
-
-.medical_dept_image > a > img{
-	transition: .5s;
-}
-
-.medical_title{
-	position: absolute;
-	bottom: 25px;
-	left: 20px;
-}
-
-.medical_title h3{
-	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 15px;
-	font-weight: 600;
-	display: block;
-	color: #ffffff;
-	letter-spacing: 1px;
-	text-align: center;
-	line-height: 1.5em;
-	text-transform: uppercase;
-	background-color: #26d0ce;
-	padding: 10px 16px;
-	margin: 0;
-}
-
-.medical_dept_image img{
-	vertical-align: middle;
-	max-width: 100%;
-	transition: .5s;
-}
-
-.medical_nav{
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	margin-bottom: -70px;
-}
-
-.prev_nav,
-.next_nav{
-	font-size: 16px;
-	transition: 0.6s ease;
-	border-radius: 50%;
-	background-color: transparent;
-	width: auto;
-	padding: 10px 18px;
-	color: #ffffff;
-	cursor: pointer;
-	border: solid 1px #ffffff;
-	display: inline-block;
-}
-
-.prev_nav{
-	margin-right: 10px;
-}
-
-.next_nav:hover,
-.prev_nav:hover{
-	background-color: #ffffff;
-	color: #26d0ce;
-	border-color: #ffffff;
-}
-
-.slider_btn{
-	position: absolute;
-	right: 0;
-	max-width: 160px;
-	display: block;
-	padding-top: 25px;
-}
-
-.slider_btn a{
+.box_col_button a{
 	background-color: #ffffff;
 	width: 150px;
 	min-height: 30px;
+	margin: 20px 0 0;
     border: none;
-    color: #2b32b2;
+    color: #26d0ce;
     padding: 13px 15px;
     text-decoration: none;
 	text-transform: uppercase;
@@ -847,14 +831,171 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
     transition: 0.5s;
     cursor: pointer;
 	border: 1px solid #ffffff;
-	border-radius: 5px;
 	letter-spacing: 1px;
+	border-radius: 5px;
 	text-align: center;
 }
 
-.slider_btn a:hover{
-	background-color: transparent;
+.box_col_button a:hover{
 	color: #ffffff;
+	background: transparent;
+	border-color: #ffffff;
+}
+
+.medical_slider{
+	max-width: 1000px;
+	margin: auto;
+	width: 100%;
+}
+
+.medical_image{
+	overflow: hidden;
+	position: relative;
+}
+
+.medical_image img{
+	vertical-align: middle;
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.medical_slide{
+	max-width: 450px;
+	position: relative;
+	text-align: center;
+	margin: auto;
+	padding-left: 30px;
+	overflow: hidden;
+}
+
+.medical_slide_box{
+	position: relative;
+	text-align: center;
+	overflow: hidden;
+	padding-bottom: 12px;
+	padding-right: 12px;
+	padding-top: 12px;
+	padding-left: 12px;
+	background-color: #ffffff;
+}
+
+.medical_title{
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: #ffffff;
+	padding: 12px 16px;
+	min-width: 200px;
+}
+
+.medical_title h3{
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	display: block;
+	color: #26d0ce;
+	letter-spacing: 1px;
+	text-align: center;
+	line-height: 1.4em;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+.featured_content{
+	position: relative;
+	padding: 25px 10px;
+	text-align: left;
+}
+
+.featured_content h3{
+	color: #111111;
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 18px;
+	font-weight: 600;
+	display: inline-block;
+	text-align: left;
+	letter-spacing: 1px;
+	line-height: 1.4em;
+	margin: 0;
+}
+
+.featured_content p{
+	font-family: 'Roboto' , Arial, sans-serif;
+	font-size: 15px;
+	font-weight: normal;
+	display: block;
+	color: #696969;
+	letter-spacing: 1px;
+	text-align: left;
+	padding: 10px 0 0;
+	line-height: 1.5em;
+}
+
+.bg_button a{
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 12px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	text-align: right;
+	text-transform: uppercase;
+	display: block;
+	color: #26d0ce;
+	text-decoration: none;
+	width: 110px;
+	transition: 0.5s;
+	float: right;
+}
+
+.bg_button a::after{
+	content: "\203A";
+	font-size: 20px;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	height: auto;
+	padding-left: 5px;
+	top: 1px;
+	position: relative;
+}
+
+.bg_button a:hover{
+	opacity: 0.6;
+}
+
+.medical_nav{
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	margin-bottom: -75px;
+	transform: translateX(-50%);
+}
+
+.prev_nav,
+.next_nav{
+	font-size: 14px;
+	transition: 0.6s ease;
+	background: transparent;
+	width: auto;
+	display: inline-block;
+	overflow: hidden;
+	padding: 10px 16px;
+	color: #ffffff;
+	cursor: pointer;
+	border: solid 1px #ffffff;
+	border-radius: 3px;
+}
+
+.prev_nav{
+	margin-right: 15px;
+}
+
+.next_nav:hover,
+.prev_nav:hover{
+	background-color: #ffffff;
+	color: #26d0ce;
+	border-color: #ffffff;
 }
 
 /* --- 3.4. Medical Area Four --- */
@@ -887,7 +1028,8 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 .cube_col img{
 	vertical-align: middle;
 	width: 100%;
-	transition: .5s;
+	height: auto;
+	display: block;
 }
 
 .cube_area{
@@ -898,7 +1040,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .cube_box{
-	padding: 0 25px;
+	padding: 0 30px;
 	max-width: 500px;
 }
 
@@ -910,7 +1052,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	text-align: center;
 	color: #111111;
 	letter-spacing: 1px;
-	line-height: 1.3em;
+	line-height: 1.4em;
 	margin-top: 0;
 }
 
@@ -935,7 +1077,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .cube_col_button a{
-	background-color: #2b32b2;
+	background-color: #26d0ce;
 	width: 140px;
 	min-height: 30px;
 	margin: 30px auto 0;	
@@ -945,12 +1087,12 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
     text-decoration: none;
 	text-transform: uppercase;
     display: block;
-    font-size: 12px;
+    font-size: 13px;
 	font-weight: 600;
 	font-family: 'Montserrat', Arial, sans-serif;
     transition: 0.5s;
     cursor: pointer;
-	border: 1px solid #2b32b2;
+	border: 1px solid #26d0ce;
 	border-radius: 5px;
 	letter-spacing: 1px;
 	text-align: center;
@@ -963,9 +1105,9 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .cube_col_button a:hover{
-	color: #2b32b2;
-	background-color: transparent;
-	border-color: #2b32b2;
+	color: #111111;
+	background-color: #ffffff;
+	border-color: #111111;
 }
 
 .right_button a:hover{
@@ -976,207 +1118,14 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 /* --- 3.5. Medical Area Five --- */
 .medical_area_five{
-	max-width: 1400px;
-	padding: 0 25px;
-	margin: 0 auto 9em;
+	width: 100%;
+	margin: 0;
+	min-height: 400px;
+	padding: 6em 25px;
+	background-color: #eee;
 }
 
 .medical_group_five{
-	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
-}
-
-.medical_wide_col{
-	flex: 33.33%;
-	width: 33.33%;
-	padding: 0 15px;
-	position: relative;
-}
-
-.medical_box_col{
-	flex: 66.66%;
-	width: 66.66%;
-	padding: 0 15px;
-	position: relative;
-}
-
-.wide_area{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	overflow: hidden;
-}
-
-.wide_box{
-	max-width: 500px;
-	margin: 0 auto;
-}
-
-.wide_box h2{
-	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 40px;
-	font-weight: 700;
-	display: block;
-	color: #2b32b2;
-	text-align: left;
-	letter-spacing: 1px;
-	line-height: 1.3em;
-}
-
-.wide_box p{
-	font-family: 'Roboto' , Arial, sans-serif;
-	font-size: 16px;
-	font-weight: normal;
-	display: block;
-	color: #696969;
-	letter-spacing: 1px;
-	text-align: left;
-	padding: 12px 0;
-	line-height: 1.5em;
-}
-
-.bg_area{
-	width: 100%;
-	display: flex; 
-	flex-wrap: wrap;
-}
-
-.bg_col{
-	flex: 50%;
-	width: 50%;
-	position: relative;
-}
-
-.left_bg{
-	background-color: #ffffff;
-	position: relative;
-	margin-top: 50px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	right: 5%;
-	height: calc(100% - 50px);
-	padding: 30px 0;
-}
-
-.client_info{
-	display: block;
-	max-width: 400px;
-	margin: auto;
-	text-align: center;
-}
-
-.client_info img{
-	max-width: 90px;
-	height: 90px;
-	margin: auto;
-	border-radius: 50%;
-	display: block;
-	text-align: center;
-	margin-bottom: 14px;
-}
-
-.bg_col img{
-	vertical-align: middle;
-	width: 100%;
-	height: auto;
-	transition: 0.5s;
-	overflow: hidden;
-}
-
-.client_name{
-	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 18px;
-	font-weight: 600;
-	display: block;
-	color: #26d0ce;
-	letter-spacing: 1px;
-	text-align: center;
-	line-height: 1.4em;
-}
-
-.quoteblock .fas{
-	font-size: 40px;
-	color: #26d0ce;
-	text-align: center;
-	padding-bottom: 30px;
-}
-
-.client_comment{
-	display: block;
-	clear: both;
-}
-
-.client_title{
-	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 15px;
-	font-weight: 600;
-	display: block;
-	color: #111111;
-	letter-spacing: 1px;
-	text-align: center;
-	text-transform: uppercase;
-	line-height: 1.4em;
-}
-
-.client_comment p{
-	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 15px;
-	font-weight: normal;
-	display: block;
-	color: #696969;
-	letter-spacing: 1px;
-	text-align: center;
-	max-width: 400px;
-	margin: auto;
-	line-height: 1.5em;
-}
-
-.construct_box_col .slick-slider {
-	width: 100%;
-	max-width: 750px;
-}
-
-.slidenav{
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	z-index: 9999;
-	margin-left: 15px;
-}
-
-.prev_slide,
-.next_slide{
-	font-size: 20px;
-	transition: 0.6s ease;
-	display: inline-block;
-	overflow: hidden;
-	color: #2b32b2;
-	cursor: pointer;
-}
-
-.prev_slide{
-	margin-right: 20px;
-}
-
-.next_slide:hover,
-.prev_slide:hover{
-	color: #26d0ce;
-}
-
-/* --- 3.6. Medical Area Six --- */
-.medical_area_six{
-	width: 100%;
-	margin: 0 0 9em;
-	min-height: 400px;
-	padding: 7em 25px;
-	background-color: #f6f6f6;
-}
-
-.medical_group_six{
 	max-width: 1200px;
 	width: 100%;
 	margin: 0 auto;
@@ -1194,7 +1143,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .blog_box{
 	position: relative;
-	max-width: 400px;
+	max-width: 350px;
 	margin: auto;
 	text-align: center;
 	padding: 25px 20px;
@@ -1233,19 +1182,15 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	line-height: 1.4em;
 }
 
-.blog_title a:hover{
-	opacity: 0.6;
-}
-
+.blog_title a:hover,
 a.blog_btn:hover{
-	color: #111111;
+	opacity: 0.6;
 }
 
 a.blog_btn{
 	width: 120px;	
     border: none;
     color: #2b32b2;
-	padding-top: 10px;
     text-decoration: none;
 	text-transform: uppercase;
     display: inline-block;
@@ -1283,14 +1228,255 @@ a.blog_btn::after{
 	line-height: 1.5em;
 }
 
+/* --- 3.6. Medical Area Six --- */
+.medical_area_six{
+	width: 100%;
+	min-height: 140px;
+	margin: 0;
+	background-color: #2b32b2;
+}
+
+.medical_group_six{
+	max-width: 1280px;
+	margin: auto;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.icon_box{
+	max-width: 300px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.icon_box .fas{
+	font-size: 35px;
+	color: #ffffff;
+	text-align: center;
+	display: block;
+	margin-bottom: 20px;
+}
+
 /* --- 3.7. Medical Area Seven --- */
 .medical_area_seven{
+	max-width: 1280px;
+	margin: 0 auto;
+	margin-top:  -100px;
+	position: relative;
+	z-index: 9999;
+	margin-bottom: calc(9em - 35px);
+}
+
+.medical_group_seven{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.count_col{
+	flex: 25%;
+	width: 25%;
+	padding: 0 20px;
+}
+
+.count_box{
+	max-width: 350px;
+	margin: 0 auto;
+	padding: 35px 30px; 
+	text-align: center;
+	background: #ffffff;
+	min-height: 50px;
+	height: 100%
+}
+
+.count_box .fas{
+	font-size: 35px;
+	color: #ffffff;
+	text-align: center;
+	display: block;
+}
+
+.count_box h3{
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	display: block;
+	text-align: center;
+	color: #111111;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+.count_box .counter{
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 30px;
+	font-weight: 700;
+	display: block;
+	text-align: center;
+	color: #26d0ce;
+	letter-spacing: 1px;
+}
+
+/* --- 3.8. Medical Area Eight --- */
+.medical_area_eight{
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 25px;
+	margin-bottom: calc(9em + 30px);
+}
+
+.medical_group_eight{
+	width: 100%;
+	padding-top: 20px;
+}
+
+.client-slider{
+	max-width: 1200px;
+	margin: auto;
+	display: block;
+	text-align: center;
+}
+
+.client_details{
+	display: block;
+	max-width: 400px;
+	margin: auto;
+	padding: 0 20px;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.client_box{
+	width: 100%;
+	height: 100%;
+	padding: 30px;
+	overflow: hidden;
+	text-align: center;
+	display: block;
+	margin-bottom: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.client_info_left{
+	float: left;
+	width: auto;
+}
+
+.client_info_right{
+	float: left;
+	width: auto;
+	padding-left: 15px;
+}
+
+.client_info img{
+	max-width: 80px;
+	height: 80px;
+	margin: auto;
+	border-radius: 50%;
+	display: block;
+	text-align: center;
+	margin-bottom: 14px;
+}
+
+.client_name{
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 18px;
+	font-weight: 600;
+	display: block;
+	color: #111111;
+	letter-spacing: 1px;
+	text-align: left;
+	text-transform: capitalize;
+}
+
+.client_comment{
+	display: block;
+	clear: both;
+}
+
+.ratings_icon{
+	text-align: center;
+	width: 100%;
+}
+
+.ratings_icon .fas{
+	font-size: 13px;
+	color: #26d0ce;
+}
+
+.client_title{
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 14px;
+	font-weight: 600;
+	display: block;
+	color: #26d0ce;
+	letter-spacing: 1px;
+	text-align: left;
+	text-transform: uppercase;
+	line-height: 1.5em;
+	
+}
+
+.client_comment q{
+	font-family: 'Roboto' , Arial, sans-serif;
+	font-size: 15px;
+	font-weight: normal;
+	display: block;
+	color: #696969;
+	letter-spacing: 1px;
+	text-align: left;
+	max-width: 450px;
+	margin: auto;
+	padding-bottom: 15px;
+	padding-top: 10px;
+	line-height: 1.5em;
+}
+
+.slick-dots {
+	position: absolute;
+	z-index: 9999;
+	left: 50%;
+	bottom: 0;
+	transform: translateX(-50%);
+	display: flex;
+	justify-content: center;
+	margin: 0;
+	list-style-type: none;
+	margin-bottom: -40px;
+}
+
+.slick-dots button{
+	display: block;
+	width: 1.3rem;
+	height: 1.3rem;
+	padding: 0;		
+	border: solid 1px #696969;
+	border-radius: 100%;
+	background-color: transparent;
+	text-indent: -9999px;
+}
+
+li.slick-active button{
+	background-color: #26d0ce;
+}
+
+.slick-dots button:hover{
+	background-color: #26d0ce;
+}
+
+.slick-dots li{
+	margin: 6px 0.40rem;
+}
+
+/* --- 3.9. Medical Area Nine --- */
+.medical_area_nine{
 	max-width: 1280px;
 	margin: 0 auto 7em;
 	padding: 0 25px;
 }
 
-.medical_group_seven{
+.medical_group_nine{
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
@@ -1300,7 +1486,6 @@ a.blog_btn::after{
 	position: relative;
 	flex: 50%;
 	width: 50%;
-	padding: 0 20px;
 }
 
 .form_area{
@@ -1311,35 +1496,14 @@ a.blog_btn::after{
 }
 
 .form_col_box{
-	max-width: 600px;
-	text-align: center;
-}
-
-.form_col_box h2{
-	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 30px;
-	font-weight: 700;
-	letter-spacing: 1px;
+	max-width: 500px;
 	text-align: left;
-	display: block;
-	color: #2b32b2;
-	line-height: 1.4em;
-	padding-bottom: 14px;
-}
-
-.form-box{
-	text-align: center;
-	display: block;
-	max-width: 600px;
-	padding: 0 25px;
-	margin: auto;
-	background: #ffffff;
 }
 
 .inner_list > ul > li{
 	font-family: 'Montserrat' , Arial, sans-serif;
 	font-size: 14px;
-	font-weight: 500;
+	font-weight: 600;
 	display: block;
 	color: #111111;
 	text-transform: capitalize;
@@ -1357,6 +1521,24 @@ a.blog_btn::after{
 	color: #26d0ce;
 }
 
+.form_col_box h2{
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 30px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	text-align: left;
+	display: block;
+	color: #2b32b2;
+	line-height: 1.3em;
+	padding-bottom: 15px;
+}
+
+.form-box{
+	text-align: right;
+	display: block;
+	max-width: 600px;
+}
+
 .form-row {
 	flex-direction: row;
 	display: flex;
@@ -1366,17 +1548,15 @@ a.blog_btn::after{
 .form-box input[type="email"]{
 	font-family: 'Montserrat' , Arial, sans-serif;
 	font-size: 13px;
-	padding: 7px 0;
-	padding-left: 6px;
+	padding: 7px 20px;
 	height: 40px;
-	width: auto;
 	border: none;
-	margin: 10px;
-	border-bottom: solid 1px #111111;
+	margin: 8px 0;
+	border: solid 1px #e0e0e0;
 	flex-grow: 1;
 	letter-spacing: 1px;
 	transition: 0.5s;
-	background: #ffffff;
+	background-color: #f6f6f6;
 }
 
 .form-box textarea{
@@ -1385,35 +1565,34 @@ a.blog_btn::after{
 	padding: 7px 20px;
 	border: none;
 	width: auto;
-	min-height: 150px;
-	margin: 10px;
-	border-bottom: solid 1px #111111;
+	min-height: 125px;
+	margin: 8px 0;
+	border: solid 1px #e0e0e0;
 	flex-grow: 1;
 	letter-spacing: 1px;
 	transition: 0.5s;
-	background: #ffffff;
+	background-color: #f6f6f6;
 }
 
 .form-box input[type="text"]:focus,
 .form-box input[type="email"]:focus,
-.form-box input[type="password"]:focus,
 .form-box textarea:focus{
-	border-color: #ffffff;
+	outline: none;
 }
 
 .form-box input[type="submit"]{
-	margin: 20px 0 0;
-	width: calc(100% - 20px);
+	margin: 8px 0;
+	width: 100%;
 	padding: 10px 0;
 	text-align: center;
 	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 16px;
-	font-weight: normal;
+	font-size: 14px;
+	font-weight: 600;
+	text-transform: uppercase;
 	color: #ffffff;
-	border-radius: 5px;
 	letter-spacing: 1px;
-	background-color: #2b32b2;
-	border: solid 1px #2b32b2;
+	background-color: #26d0ce;
+	border: solid 1px #26d0ce;
 	transition: 0.5s;
 }
 
@@ -1431,7 +1610,7 @@ a.blog_btn::after{
 	position: relative;
 	clear: both;
 	height: 100%;
-	background-color: #26d0ce;
+	background-color: #2b32b2;
 }
 
 .footer_area{
@@ -1490,16 +1669,14 @@ a.footer-brand img{
 	font-size: 16px;
 	color: #ffffff;
 	text-align: left;
-	transition: 0.5s;
 }
 
 .footer_social > a{
 	padding-right: 12px;
 }
 
-.footer_social .fab:hover,
-.footer_social .fa:hover{
-	color: #111111;
+.footer_social > a:hover{
+	opacity: 0.6;
 }
 
 .final{
@@ -1534,7 +1711,59 @@ a.footer-brand img{
 }
 
 .footer_col > ul > li a:hover{
+	opacity: 0.6;
+}
+
+.subscribe-row{
+	text-align: right;
+}
+
+.col_info input[type="email"]{
+	display: block;
+	width: 100%;
+	padding: 12px 10px 14px;
+	background-color: #f6f6f6;
+	border: none;
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 13px;
+	font-weight: 600;
+	color: #333333;
+	text-transform: capitalize;
+	letter-spacing: 1px;
+}
+
+.col_info{
+	padding-top: 10px;
+}
+
+.col_info input[type="submit"]{
+	display: inline-block;
+	padding: 10px 14px;
+	text-align: center;
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+	margin-top: 20px;
+	text-transform: uppercase;
+	width: 100%;
+	margin-left: 0;
+	color: #ffffff;
+	border-radius: 0;
+	letter-spacing: 1px;
+	background-color: transparent;
+	border: solid 1px #ffffff;
+	transition: 0.5s;
+}
+
+.col_info input[type="submit"]:hover{
+	background-color: #ffffff;
 	color: #111111;
+	border-color: #ffffff;
+}
+
+.col_info input[type="email"]:focus{
+	outline: none;
+	box-shadow: 0 0 0 2px #e0e0e0;
 }
 
 .details{
@@ -1542,7 +1771,7 @@ a.footer-brand img{
 	padding-top: 35px;
 	padding-bottom: 10px;
 	margin-top: 35px;
-	border-top: solid 1px #e0e0e0;
+	border-top: solid 1px #6f6f6f;
 }
 
 .details p{
@@ -1557,17 +1786,17 @@ a.footer-brand img{
 /* 5. RESPONSIVE
  ----------- */
 @media only screen and (max-width: 1024px){
+	.header__content{
+		height: auto;
+	}
+
+	.slide__content{
+		height: auto;
+	}
+	
 	.square_col{
 		flex: 100%;
 		width: 100%;
-		clear: both;
-		max-width: 400px;
-		margin-bottom: 40px;
-	}
-	
-	.medical_group_one{
-		max-width: 400px;
-		margin: auto;
 	}
 	
 	.cube_col{
@@ -1579,41 +1808,17 @@ a.footer-brand img{
 	.medical_box_col{
 		flex: 100%;
 		width: 100%;
-		max-width: 700px;
-		margin: auto;
+		
 	}
 	
 	.medical_box_col{
-		margin-top: 35px;
-	}
-	
-	.wide_box p{
-		padding-bottom: 60px;
+		margin-top: 40px;
 	}
 	
 	.blog_col{
 		flex: 50%;
 		width: 50%;
 		margin-bottom: 40px;
-	}
-	
-	.medical_form_col{
-		flex: 100%;
-		width: 100%;
-		padding: 0;
-	}
-	
-	.form_col_box{
-		margin: auto;
-		margin-bottom: 30px;
-	}
-	
-	.header__content{
-		height: auto;
-	}
-
-	.slide__content{
-		height: auto;
 	}
 } 
  
@@ -1698,10 +1903,43 @@ a.footer-brand img{
 		padding-top: 25px;
 	}
 	
+	.header-title{
+		margin-left: 5vw;
+	}
+	
 	.service_col{
 		flex: 100%;
 		width: 100%;
 		margin-bottom: 40px;
+	}
+	
+	.count_col{
+		flex: 50%;
+		width: 50%;
+	}
+	
+	.count_box{
+		padding: 0 30px 0 30px;
+	}
+	
+	.first_box,
+	.second_box{
+		padding-top: 15px;
+		padding-bottom: 30px;
+	}
+	
+	.fourth_icon .fas,
+	.third_icon .fas{
+		color: #26d0ce;
+	}
+	
+	.medical_form_col{
+		flex: 100%;
+		width: 100%;
+	}
+	
+	.form_area{
+		margin-bottom: 20px;
 	}
 	
 	.footer_col{
@@ -1719,6 +1957,10 @@ a.footer-brand img{
 	.bg_head,
 	.wide_box h2{
 		font-size: 30px;
+	}
+	
+	.medical_slide{
+		padding-left: 0;
 	}
 	
 	.cube_col{
@@ -1749,29 +1991,37 @@ a.footer-brand img{
 @media only screen and (max-width: 420px){
 	.square_col,
 	.service_col,
+	.medical_wide_col,
 	.medical_box_col,
-	.blog_col,
-	.form-box{
+	.blog_col{
 		padding: 0;
 	}
 	
-	.medical_slide{
-		padding-right: 10px;
+	.count_col{
+		flex: 100%;
+		width: 100%;
 	}
 	
-	.left_bg{
-		right: 0;
-		margin-top: 20px;
+	.second_box{
+		padding-top: 0;
 	}
 	
-	.form-row {
-		flex-direction: column;
+	.third_box{
+		padding-bottom: 30px;
+	}
+	
+	.second_icon .fas{
+		color: #26d0ce;
 	}
 }
 
-@media only screen and (max-width: 360px){
-	.medical_area_three{
-		padding-right: 15px;
-		padding-left: 15px;
+@media only screen and (max-width: 385px){
+	.client_info img{
+		width: 60px;
+		height: 60px;
+	}
+	
+	.client_box{
+		padding: 30px 15px;
 	}
 }
