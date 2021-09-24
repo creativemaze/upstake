@@ -3,33 +3,24 @@
 $(document).ready(function(){
 	$('.medical_slider').slick({
 		dots: false,
-		prevArrow: '.prev_nav',
-		nextArrow: '.next_nav',
-		autoplay: true,
 		slidesToShow: 2,
 		slidesToScroll: 1,
-		centerMode: true,
-		speed: 2000,
-		autoplaySpeed: 1000,
+		prevArrow: '.prev_nav',
+		nextArrow: '.next_nav',
+		autoplay: false,
+		speed: 1000,
 		pauseOnHover: false,
+		pauseOnFocus: false,
 		responsive: [
-				{
-					breakpoint: 992,
-					settings: {
-					slidesToShow: 1,
-				}
-				
-			},
 			
 			{
-					breakpoint: 420,
-					settings: {
-					slidesToShow: 1,	
-					centerPadding: '20px',
-				}
-				
+				breakpoint: 601,
+				settings: {
+					slidesToShow: 1
+				}		
 			},
-		]	
+			
+		]
 	});
 	
 });
@@ -37,17 +28,39 @@ $(document).ready(function(){
 //Slick Slider (2) Two
 $(document).ready(function(){
 	$('.client-slider').slick({
-		dots: false,
-		prevArrow: '.prev_slide',
-		nextArrow: '.next_slide',
-		autoplay: true,
-		autoplaySpeed: 3000,
-		fade: true,
-		fadeSpeed: 1000,
+		dots: true,
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		arrows: false,
+		autoplay: false,
+		speed: 1000,
 		pauseOnHover: false,
-		pauseOnFocus: false,
-				
+		responsive: [
+			{
+				breakpoint: 1025,
+				settings: {
+				slidesToShow: 2,
+       
+			}	
+		},
+		
+		{
+				breakpoint: 769,
+				settings: {
+				slidesToShow: 1,
+       
+			}	
+		},
+	]	
 	});
+});
+
+//Counter Script
+jQuery(document).ready(function($) {
+    $('.counter').counterUp({
+        delay: 10,
+        time: 2000
+    });
 });
 
 //Animate on Scroll default settings
