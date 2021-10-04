@@ -15,31 +15,28 @@ $(document).ready(function(){
 
 //Slick Slider (2) Two
 $(document).ready(function(){
-	$('.info_slider').slick({
+	$('.bg_slider').slick({
 		dots: false,
-		slidesToShow: 1,
+		slidesToShow: 2,
 		slidesToScroll: 1,
-		prevArrow: '.prev_button',
-		nextArrow: '.next_button',
-		autoplay: true,
+		prevArrow: '.prev_nav',
+		nextArrow: '.next_nav',
+		autoplay: false,
 		speed: 1000,
 		pauseOnHover: false,
 		pauseOnFocus: false,
-		verticalSwiping: true,
-		touchMove: false,
-		vertical: true,
-		
-		asNavFor: ".product_slider",
-	});
+		responsive: [
+			{
+				breakpoint: 1025,
+				settings: {
+					slidesToShow: 1,
+       
+				},
+			
+			},
 	
-	$(".product_slider").slick({
-		slidesToShow: 1,
-		speed: 1000,    
-		asNavFor: ".info_slider",
-		dots: false,
-		fade: true,
-		arrows: false,
-  });
+		]	
+	});
 	
 });
 
@@ -85,6 +82,14 @@ var acc = document.getElementsByClassName("accordion");
 			} 
 		});
 	}
+	
+//Counter Script
+jQuery(document).ready(function($) {
+    $('.counter').counterUp({
+        delay: 10,
+        time: 2000
+    });
+});	
 
 //Animate on Scroll default settings
 $(window).on('load', function () {
