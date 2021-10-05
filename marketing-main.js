@@ -53,26 +53,15 @@ $(document).ready(function(){
 		pauseOnHover: false,
 		pauseOnFocus: false,
 		responsive: [
-		{
-			breakpoint: 993,
-			settings: {
-			slidesToShow: 1,
+			{
+				breakpoint: 769,
+				settings: {
+					slidesToShow: 1,
        
-		}		
-	},
-	]	
+				}		
+			},
+		]	
 	});
-	
-});
-
-//MagnificPopup Video
-$('#play-video').magnificPopup({
-	disableOn: 300,
-	type: 'iframe',
-	mainClass: 'mfp-fade',
-	removalDelay: 300,
-	preloader: false,
-	fixedContentPos: false
 });
 
 //MagnificPopup Gallery (1) One
