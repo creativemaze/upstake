@@ -57,7 +57,7 @@ $(document).ready(function(){
 			},
 			
 			{
-				breakpoint: 421,
+				breakpoint: 431,
 				settings: {
 					slidesToShow: 1,
 					centerPadding: '0',
@@ -174,7 +174,7 @@ $(document).ready(function(){
 		},
 		
 		{
-				breakpoint: 993,
+				breakpoint: 769,
 				settings: {
 				slidesToShow: 1,
        
