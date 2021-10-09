@@ -3,8 +3,8 @@ Main Stylesheet
 
 Project:    Highpoint Corporate Template
 Version:    1.0
-Last change:    21/05/2021
-Author:    Themewiz
+Last change:    09/10/2021
+Author:    creativemaze
 Primary use:    Law Firm
 -------------------------------------------------------------------*/
 
@@ -98,7 +98,6 @@ ul{
 	text-align: center;
 	letter-spacing: 1px;
 	line-height: 1.3em;
-	margin-top: 0;
 }
 
 .law_info{
@@ -112,12 +111,12 @@ ul{
 	letter-spacing: 1px;
 	text-align: center;
 	padding: 10px 10px 0;
-	line-height: 1.6em;
+	line-height: 1.5em;
 }
 
 .centerpage_btn{
 	display: block;
-	margin: 30px auto 0;
+	margin: 35px auto 0;
 }
 
 .centerpage_btn a{
@@ -126,11 +125,11 @@ ul{
 	min-height: 30px;
     border: none;
     color: #ffffff;
-    padding: 15px 16px;
+    padding: 14px 15px;
     text-decoration: none;
 	text-transform: uppercase;
     display: block;
-    font-size: 15px;
+    font-size: 14px;
 	font-weight: 600;
 	font-family: 'Raleway', Arial, sans-serif;
     transition: 0.5s;
@@ -157,12 +156,18 @@ ul{
 	font-weight: 700;
 	letter-spacing: 1px;
 	text-transform: uppercase;
+	margin: 0;
+	padding-top: 12px;
 }
 
 .navbar-header a.navbar-brand{
 	text-decoration: none;
-	color: #ffffff !important;
+	color: #ffffff;
 	transition: 0.5s;
+}
+
+.navbar-header a.navbar-brand:hover{
+	color: #ffffff;
 }
 
 nav.navbar .navbar-brand img.logo{
@@ -396,7 +401,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
     text-decoration: none;
 	text-transform: uppercase;
     display: block;
-    font-size: 12px;
+    font-size: 13px;
 	font-weight: 600;
 	font-family: 'Raleway', Arial, sans-serif;
     transition: 0.5s;
@@ -473,13 +478,13 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .buttoncol a{
-	background-color: #ffffff;
+	background-color: #999966;
 	width: 150px;
 	min-height: 35px;
 	margin-top: 10px;
 	margin: auto;	
     border: none;
-    color: #999966;
+    color: #ffffff;
     padding: 13px 14px;
     text-decoration: none;
 	text-transform: uppercase;
@@ -489,15 +494,15 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	font-family: 'Raleway', Arial, sans-serif;
     transition: 0.5s;
     cursor: pointer;
-	border: 1px solid #ffffff;
+	border: 1px solid #999966;
 	letter-spacing: 1px;
 	text-align: center;
 }
 
 .buttoncol a:hover{
-	color: #ffffff;
-	background-color: transparent;
-	border-color: #ffffff;
+	background-color: #ffffff;
+	color: #999966;
+	border: 1px solid #ffffff;
 }
 
 /* 3. MAIN CONTENT
@@ -530,6 +535,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 .law_left_col{
 	flex: 33.33%;
 	width: 33.33%;
+	max-width: 500px;
 }
 
 .law_right_col{
@@ -562,7 +568,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .info_col_button a{
 	background-color: #ffffff;
-	width: 165px;
+	width: 150px;
 	min-height: 30px;
 	margin: 25px 0 0;
     border: none;
@@ -572,7 +578,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	text-transform: uppercase;
     display: block;
     font-size: 13px;
-	font-weight: 700;
+	font-weight: 600;
 	font-family: 'Raleway', Arial, sans-serif;
     transition: 0.5s;
     cursor: pointer;
@@ -752,7 +758,7 @@ li.slick-active button{
 
 .square_box{
 	max-width: 450px;
-	margin: 0 auto;
+	margin: 0;
 	width: 100%;
 	padding: 0 20px;
 }
@@ -811,8 +817,8 @@ li.slick-active button{
 
 .square_area{
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	flex-direction: row;
+	justify-content: flex-start;
 	align-items: center;
 }
 
@@ -916,7 +922,7 @@ li.slick-active button{
 
 .square_col_button a{
 	background-color: #999966;
-	width: 165px;
+	width: 150px;
 	min-height: 30px;
 	margin: 35px 0 0;
     border: none;
@@ -926,7 +932,7 @@ li.slick-active button{
 	text-transform: uppercase;
     display: block;
     font-size: 13px;
-	font-weight: 700;
+	font-weight: 600;
 	font-family: 'Raleway', Arial, sans-serif;
     transition: 0.5s;
     cursor: pointer;
@@ -1104,8 +1110,8 @@ li.slick-active button{
     text-decoration: none;
 	text-transform: uppercase;
     display: block;
-    font-size: 12px;
-	font-weight: 700;
+    font-size: 13px;
+	font-weight: 600;
 	font-family: 'Raleway', Arial, sans-serif;
     transition: 0.5s;
     cursor: pointer;
@@ -1359,12 +1365,12 @@ li.slick-active button{
 	width: 100%;
 	margin: 0 0 9em;
 	min-height: 400px;
-	padding: 6em 25px;
-	background-color: #f7f7f7;
+	padding: 7em 25px;
+	background-color: #eeeeee;
 }
 
 .law_group_six{
-	max-width: 1200px;
+	max-width: 1280px;
 	width: 100%;
 	margin: 0 auto;
 	display: flex;
@@ -1456,7 +1462,6 @@ li.slick-active button{
 a.blog_btn{
 	max-width: 120px;	
     color: #111111;
-	border-bottom: solid 2px #111111;
     text-decoration: none;
 	text-transform: uppercase;
     display: inline-block;
@@ -1466,10 +1471,8 @@ a.blog_btn{
     transition: 0.5s;
     cursor: pointer;
 	letter-spacing: 1px;
-	text-align: center;
-	line-height: 1.2em;
+	text-align: left;
 	padding-bottom: 3px;
-	padding-top: 10px;
 }
 
 a.blog_btn::after{
@@ -1525,14 +1528,13 @@ a.blog_btn:hover,
 	vertical-align: middle;
 	width: 100%;
 	height: auto;
-	transition: 0.5s;
 	display: block;
 	border-radius: 50%;
 }
 
 .review_box{
 	max-width: 450px;
-	margin: 0 auto;
+	margin: 0;
 	width: 100%;
 	padding: 0 20px;
 }
@@ -1562,8 +1564,8 @@ a.blog_btn:hover,
 
 .review_area{
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	flex-direction: row;
+	justify-content: flex-start;
 	align-items: center;
 }
 
@@ -1571,8 +1573,6 @@ a.blog_btn:hover,
 	max-width: 300px;
 	height: auto;
 	padding: 10px;
-	transition: 0.5s;
-	overflow: hidden;
 }
 
 .client_name{
@@ -1667,10 +1667,10 @@ a.blog_btn:hover,
 	margin: 30px auto 0;	
     border: none;
     color: #ffffff;
-    padding: 14px 16px;
+    padding: 14px 15px;
     text-decoration: none;
     display: block;
-    font-size: 15px;
+    font-size: 14px;
 	font-weight: 600;
 	text-transform: uppercase;
 	font-family: 'Raleway', Arial, sans-serif;
@@ -1896,7 +1896,7 @@ a.footer-brand img{
 	
 	.first_flip,
 	.second_flip{
-		margin-bottom: 75px;
+		margin-bottom: 80px;
 	}
 	
 	.icon_col{
@@ -1942,7 +1942,7 @@ a.footer-brand img{
 	}
 	
 	.navbar-header h2{
-		margin-top: 7px;
+		padding-top: 5px;
 	}
 	
 	nav.navbar.bootsnav ul.nav > li > a{
@@ -2042,6 +2042,19 @@ a.footer-brand img{
 	}
 }
 
+@media only screen and (max-width: 800px){
+	.photo_col,
+	.card_col{
+		flex: 100%;
+		width: 100%;
+		max-width: 450px;
+	}
+	
+	.square_info_col{
+		height: auto;
+	}
+}
+
 @media only screen and (max-width: 600px){
 	.header-title__main{
 		font-size: 30px;
@@ -2064,25 +2077,13 @@ a.footer-brand img{
 		width: 100%;
 	}
 	
-	.photo_col,
-	.card_col{
-		flex: 100%;
-		width: 100%;
-		max-width: 450px;
-		margin: auto;
-	}
-	
-	.square_info_col{
-		height: auto;
-	}
-	
 	.flip_col{
 		flex: 100%;
 		width: 100%;
 	}
 	
 	.third_flip{
-		margin-bottom: 75px;
+		margin-bottom: 80px;
 	}
 	
 	.icon_col{
@@ -2106,6 +2107,11 @@ a.footer-brand img{
 		padding: 0;
 	}
 	
+	.client_col{
+		flex: 100%;
+		width: 100%;
+	}
+	
 	.footer_col{
 		flex: 100%;
 		width: 100%;
@@ -2125,14 +2131,9 @@ a.footer-brand img{
 	.review_col_right{
 		padding: 0;
 	}
-	
-	.client_col{
-		flex: 100%;
-		width: 100%;
-	}
 }
 
-@media only screen and (max-width: 375px){
+@media only screen and (max-width: 385px){
 	.law_area_one{
 		max-width: 300px;
 	}
@@ -2140,6 +2141,6 @@ a.footer-brand img{
 
 @media only screen and (max-width: 320px){
 	.law_area_one{
-		max-width: 290px;
+		max-width: 280px;
 	}
 } 
