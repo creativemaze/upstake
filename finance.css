@@ -154,6 +154,8 @@ ul{
 	font-weight: 700;
 	letter-spacing: 1px;
 	text-transform: uppercase;
+	margin: 0;
+	padding-top: 12px;
 }
 
 .navbar-header a.navbar-brand{
@@ -1246,6 +1248,11 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
+	padding-bottom: 12px;
+	padding-right: 12px;
+	padding-top: 12px;
+	padding-left: 12px;
+	background-color: #ffffff;
 }
 
 .blog_col{
@@ -1266,11 +1273,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	text-align: center;
 	transition: 0.5s;
 	overflow: hidden;
-	padding-bottom: 12px;
-	padding-right: 12px;
-	padding-top: 12px;
-	padding-left: 12px;
-	background-color: #ffffff;
+	
 }
 
 .blog_feat{
@@ -1716,7 +1719,7 @@ a.footer-brand img{
 	.blog_col{
 		flex: 100%;
 		width: 100%;
-		max-width: 750px;
+		max-width: 700px;
 		margin: auto;
 	}
 	
@@ -1740,7 +1743,7 @@ a.footer-brand img{
 	}
 	
 	.navbar-header h2{
-		margin-top: 7px;
+		padding-top: 5px;
 	}
 	
 	nav.navbar.bootsnav ul.nav > li > a{
@@ -1860,9 +1863,17 @@ a.footer-brand img{
 		width: 100%;
 	}
 	
+	.blog_col{
+		max-width: 350px;
+	}
+	
 	.blog_area{
 		flex: 100%;
 		width: 100%;
+	}
+	
+	.blog_group{
+		padding-bottom: 0;
 	}
 	
 	.blog_date{
