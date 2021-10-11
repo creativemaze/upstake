@@ -3,8 +3,8 @@ Main Stylesheet
 
 Project:    Highpoint Corporate Template
 Version:    1.0
-Last change:    29/05/2021
-Author:    Themewiz
+Last change:    10/10/2021
+Author:    creativemaze
 Primary use:    Education
 -------------------------------------------------------------------*/
 
@@ -97,7 +97,6 @@ ul{
 	text-align: center;
 	letter-spacing: 1px;
 	line-height: 1.3em;
-	margin-top: 0;
 }
 
 .education_info{
@@ -124,12 +123,18 @@ ul{
 	font-weight: 700;
 	letter-spacing: 1px;
 	text-transform: uppercase;
+	margin: 0;
+	padding-top: 12px;
 }
 
 .navbar-header a.navbar-brand{
 	text-decoration: none;
-	color: #111111 !important;
+	color: #111111;
 	transition: 0.5s;
+}
+
+.navbar-header a.navbar-brand:hover{
+	color: #111111;
 }
 
 nav.navbar .navbar-brand img.logo{
@@ -444,7 +449,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	display: block;
 	position: relative;
 	z-index: 9;
-	padding: 0 10px;
+	padding: 0 15px;
 }
 
 .header-title__main{
@@ -456,24 +461,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	display: block;
 	color: #ffffff;
 	line-height: 1.2em;
-}
-
-.header-title__sub{
-	font-family: 'Roboto' , Arial, sans-serif;
-	font-size: 16px;
-	font-weight: normal;
-	display: block;
-	color: #f2f2f2;
-	line-height: 1.5em;
-	letter-spacing: 1px;
-	text-align: center;
-	max-width: 550px;
-	margin: auto;
-	padding: 25px 10px;
-}
-
-.buttoncol{
-	max-width: 380px;
 }
 
 .buttoncol a{
@@ -499,8 +486,8 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .buttoncol a:hover{
-	color: #ffffff;
-	background-color: transparent;
+	color: #111111;
+	background-color: #ffffff;
 	border-color: #ffffff;
 }
 
@@ -683,9 +670,9 @@ li.slick-active button{
 
 .square_box{
 	max-width: 450px;
-	margin: 0 auto;
+	margin: 0;
 	width: 100%;
-	padding: 0 20px;
+	padding-right: 20px;
 }
 
 .square_box > p{
@@ -717,7 +704,6 @@ li.slick-active button{
 	padding: 0 10px;
 	max-width: 250px;
 	position: relative;
-	margin: auto;
 }
 
 .feature_col{
@@ -745,9 +731,9 @@ li.slick-active button{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background-color: #f6f6f6;
+	border: solid 1px #e0e0e0;
 	height: 100%;
-	padding: 25px 10px;
+	padding: 25px 5px;
 	cursor: pointer;
 	transition: 0.5s;
 }
@@ -800,11 +786,10 @@ li.slick-active button{
 }
 
 .feature_box{
-	max-width: 600px;
+	max-width: 500px;
 	position: relative;
 	text-align: center;
 	overflow: hidden;
-	margin: auto;
 }
 
 .feature_image{
@@ -923,7 +908,6 @@ li.slick-active button{
 	width: 100%;
 	text-align: center;
 	overflow: hidden;
-	padding-bottom: 20px;
 }
 
 .education_area{
@@ -1064,9 +1048,9 @@ li.slick-active button{
 
 .wide_box{
 	max-width: 450px;
-	margin: 0 auto;
+	margin: 0;
 	width: 100%;
-	padding: 0 20px;
+	padding-right: 20px;
 }
 
 .wide_box > p{
@@ -1108,8 +1092,6 @@ li.slick-active button{
 	vertical-align: middle;
 	width: 100%;
 	height: auto;
-	transition: 0.5s;
-	overflow: hidden;
 }
 
 .right_bg{
@@ -1132,7 +1114,7 @@ li.slick-active button{
 .info_list > .list_num{
 	font-family: 'Raleway' , Arial, sans-serif;
 	font-size: 16px;
-	font-weight: normal;
+	font-weight: 500;
 	display: inline-block;
 	color: #ffffff;
 	text-transform: capitalize;
@@ -1184,25 +1166,15 @@ li.slick-active button{
 
 /* --- 3.4. Education Area Four --- */
 .education_area_four{
-	position: relative;
-	z-index: 1000;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	min-height: 350px;
-	height: 100%;
-	width: 100%;
-	margin-bottom: 9em;
-	background: #0ABFBC;
-	padding: 6em 0;
+	max-width: 1400px;
+	margin: 0 auto 9em;
+	padding: 0 35px;
 }
 
 .education_group_four{
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 0 25px;
-	width: 100%;
+	background-color: #0ABFBC;
+	padding: 6em 25px;
+	min-height: 350px;
 }
 
 .education_resource_area{
@@ -1222,7 +1194,6 @@ li.slick-active button{
 	letter-spacing: 1px;
 	text-align: center;
 	line-height: 1.3em;
-	margin-top: 0;
 }
 
 .resource_col{
@@ -1313,7 +1284,7 @@ li.slick-active button{
 .education_area_five{
 	max-width: 1280px;
 	margin: 0 auto 9em;
-	padding: 0 25px;
+	padding: 0 30px;
 }
 
 .education_group_five{
@@ -1360,7 +1331,6 @@ li.slick-active button{
 	padding: 15px 0;
 	text-align: left;
 	padding-left: 15px;
-	padding-right: 5px;
 }
 
 .date_info{
@@ -1371,7 +1341,7 @@ li.slick-active button{
 	margin-top: 25px;
 	background-color: #0ABFBC;
 	border-radius: 50%;
-	padding: 2px 20px;
+	padding: 15px 20px;
 }
 
 .date_info h4{
@@ -1383,6 +1353,7 @@ li.slick-active button{
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	text-align: center;
+	margin: 0;
 }
 
 .blog_date{
@@ -1432,7 +1403,6 @@ li.slick-active button{
 a.blog_btn{
 	max-width: 120px;	
     color: #111111;
-	border-bottom: solid 2px #111111;
     text-decoration: none;
 	text-transform: uppercase;
     display: inline-block;
@@ -1442,9 +1412,7 @@ a.blog_btn{
     transition: 0.5s;
     cursor: pointer;
 	letter-spacing: 1px;
-	text-align: center;
-	line-height: 1.2em;
-	padding-bottom: 3px;
+	text-align: left;
 }
 
 a.blog_btn::after{
@@ -1471,13 +1439,13 @@ a.blog_btn:hover,
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	min-height: 500px;
+	min-height: 400px;
 	height: 100%;
 	text-align: center;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
-	margin: 0;
+	margin-bottom: 9em;
 	padding: 5em 0;
 }
 
@@ -1494,139 +1462,114 @@ a.blog_btn:hover,
 
 .education_group_six{
 	position: relative;
-	z-index: 9999;
+	z-index: 5;
 	max-width: 850px;
-	margin: 0 auto;
-	padding: 0 10px;
+	margin: auto;
+	padding: 0 25px;
+	width: 100%;
 }
 
-.bg_space{
-	margin-top: -70px;
-}
-
-.video-play-button{
-	position: absolute;
-	z-index: 10;
-	left: 50%;
-	top: 50%;
-	transform: translateX(-50%) translateY(-50%);
-	box-sizing: content-box;
+.bg_head{
+	color: #ffffff;
+	font-family: 'Raleway' , Arial, sans-serif;
+	font-size: 40px;
+	font-weight: 700;
 	display: block;
-	width: 28px;
-	margin-top: 75px;
-	height: 42px;
-	border-radius: 50%;
-	padding: 28px 16px 12px 32px;
+	text-align: center;
+	letter-spacing: 1px;
+	line-height: 1.3em;
 }
 
-.video-play-button:before {
-	content: "";
-	position: absolute;
-	z-index: 0;
-	left: 50%;
-	top: 50%;
-	transform: translateX(-50%) translateY(-50%);
-	display: block;
-	width: 80px;
-	height: 80px;
-	background: #ffffff;
-	border-radius: 50%;
-	animation: pulse-border 1500ms ease-out infinite;
+.bg_col_button{
+	max-width: 370px;
+	margin: auto;
+	width: 100%;
 }
 
-.video-play-button:after {
-	content: "";
-	position: absolute;
-	z-index: 1;
-	left: 50%;
-	top: 50%;
-	transform: translateX(-50%) translateY(-50%);
-	display: block;
-	width: 80px;
-	height: 80px;
-	background: #ffffff;
-	border-radius: 50%;
-	transition: all 200ms;
+.bg_col_button a{
+	background-color: #182848;
+	width: 170px;
+	min-height: 30px;
+	margin: 30px auto 0;	
+    border: none;
+    color: #ffffff;
+    padding: 14px 15px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+	font-weight: 600;
+	text-transform: uppercase;
+	font-family: 'Raleway', Arial, sans-serif;
+    transition: 0.5s;
+    cursor: pointer;
+	border: 1px solid #182848;
+	letter-spacing: 1px;
+	text-align: center;
+	border-radius: 25px;
+	margin-right: 20px;
 }
 
-.video-play-button span {
-	display: block;
-	position: relative;
-	z-index: 3;
-	width: 0;
-	height: 0;
-	border-left: 18px solid #0ABFBC;
-	border-top: 12px solid transparent;
-	border-bottom: 12px solid transparent;
+.bg_col_button a:hover,
+.right_btn:hover{
+	color: #111111 !important;
+	background-color: #ffffff !important;
+	border-color: #ffffff !important;
 }
 
-@keyframes pulse-border {
-  0% {
-    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
-    opacity: 1;
-  }
-  100% {
-    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
-    opacity: 0;
-  }
+.right_btn{
+	background-color: #0ABFBC !important;
+	color: #ffffff !important;
+	border: 1px solid #0ABFBC !important;
 }
 
 /* --- 3.7. Education Area Seven --- */
 .education_area_seven{
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	min-height: 300px;
-	height: 100%;
-	padding: 3em 0;
-	margin-bottom: 2em;
-	background-color: #0ABFBC;
+	max-width: 1280px;
+	margin: 0 auto 2em;
+	padding: 0 35px;
 }
 
 .education_group_seven{
-	position: relative;
-	z-index: 5;
-	padding: 0 25px;
-	max-width: 1280px;
-	margin: auto;
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
-}
-
-.col_head{
-	flex: 50%;
-	width: 50%;
+	background-color: #0ABFBC;
+	padding: 4em 35px;
 }
 
 .col_info{
-	flex: 50%;
-	width: 50%;
-	margin-top: 15px;
+	flex: 100%;
+	width: 100%;
+}
+	
+.col_head{
+	flex: 100%;
+	width: 100%;
+}
+
+.subscribe-row{
+	text-align: center;
+	margin-top: 35px;
 }
 
 .col_head h3{
 	font-family: 'Raleway' , Arial, sans-serif;
 	font-size: 30px;
 	display: block;
-	font-weight: 600;
+	font-weight: 700;
 	color: #ffffff;
 	letter-spacing: 1px;
-	text-align: left;
+	text-align: center;
 	line-height: 1.3em;
-	max-width: 550px;
-	margin-top: 0;
-}
-
-.subscribe-row{
-	text-align: right;
+	max-width: 600px;
+	margin: auto;
 }
 
 .col_info input[type="email"]{
 	width: 350px;
-	padding: 12px 20px 14px;
+	padding: 12px 20px 13px;
+	padding-right: 50px;
+	border: 0;
 	font-family: 'Raleway' , Arial, sans-serif;
 	font-size: 13px;
 	display: inline-block;
@@ -1635,7 +1578,6 @@ a.blog_btn:hover,
 	text-transform: capitalize;
 	letter-spacing: 1px;
 	background-color: #ffffff;
-	border: 0;
 }
 
 .col_info input[type="submit"]{
@@ -1644,15 +1586,16 @@ a.blog_btn:hover,
 	padding: 11px 24px;
 	text-align: center;
 	font-family: 'Raleway' , Arial, sans-serif;
-	font-size: 16px;
+	font-size: 14px;
 	font-weight: 500;
+	text-transform: uppercase;
 	margin: 0;
 	margin-left: -4px;
-	color: #0ABFBC;
+	color: #ffffff;
 	border-radius: 0;
 	letter-spacing: 1px;
-	background-color: #ffffff;
-	border: solid 1px #0ABFBC;
+	background-color: #182848;
+	border: solid 1px #182848;
 	transition: 0.5s;
 	border-top-right-radius: 25px;
 	border-bottom-right-radius: 25px;
@@ -1846,13 +1789,13 @@ a.footer-brand img{
 	.square_col_right{
 		flex: 100%;
 		width: 100%;
-		max-width: 950px;
-		margin: auto;
+		max-width: 900px;
 	}
 	
 	.education_col{
 		flex: 50%;
 		width: 50%;
+		margin-bottom: 30px;
 	}
 	
 	.education_wide_col,
@@ -1860,7 +1803,6 @@ a.footer-brand img{
 		flex: 100%;
 		width: 100%;
 		max-width: 900px;
-		margin: auto;
 	}
 	
 	.education_box_col{
@@ -1871,28 +1813,6 @@ a.footer-brand img{
 		flex: 50%;
 		width: 50%;
 		margin-bottom: 40px;
-	}
-	
-	.col_info{
-		flex: 100%;
-		width: 100%;
-		margin-top: 0;
-	}
-	
-	.col_head{
-		flex: 100%;
-		width: 100%;
-	}
-	
-	.subscribe-row{
-		text-align: center;
-		margin-top: 35px;
-	}
-	
-	.col_head h3{
-		text-align: center;
-		width: 100%;
-		margin: auto;
 	}
 }
 
@@ -1911,7 +1831,7 @@ a.footer-brand img{
 	}
 	
 	.navbar-header h2{
-		margin-top: 7px;
+		padding-top: 5px;
 	}
 	
 	nav.navbar.bootsnav ul.nav > li > a{
@@ -2032,6 +1952,18 @@ a.footer-brand img{
 		width: 100%;
 	}
 	
+	.col_info input[type="email"]{
+		display: block;
+		width: 100%;
+	}
+	
+	.col_info input[type="submit"]{
+		margin-top: 20px;
+		display: block;
+		width: 100%;
+		margin-left: 0;
+	}
+	
 	.footer_col{
 		flex: 100%;
 		width: 100%;
@@ -2052,19 +1984,7 @@ a.footer-brand img{
 	
 	.right_bg{
 		right: 0;
-		margin-top: 10px;
-	}
-	
-	.col_info input[type="email"]{
-		display: block;
-		width: 100%;
-	}
-	
-	.col_info input[type="submit"]{
-		margin-top: 20px;
-		display: block;
-		width: 100%;
-		margin-left: 0;
+		margin-top: 0;
 	}
 }
 
