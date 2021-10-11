@@ -56,16 +56,6 @@ $(document).ready(function(){
 	
 });
 
-//MagnificPopup Video
-$('#play-video').magnificPopup({
-	disableOn: 300,
-	type: 'iframe',
-	mainClass: 'mfp-fade',
-	removalDelay: 300,
-	preloader: false,
-	fixedContentPos: false
-});
-
 //Animate on Scroll default settings
 $(window).on('load', function () {
 	AOS.refresh();
