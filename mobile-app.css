@@ -3,8 +3,8 @@ Main Stylesheet
 
 Project:    Highpoint Corporate Template
 Version:    1.0
-Last change:    1/06/2021
-Author:    Themewiz
+Last change:    11/10/2021
+Author:    creativemaze
 Primary use:    Mobile App
 -------------------------------------------------------------------*/
 
@@ -31,6 +31,9 @@ Primary use:    Mobile App
 
 /* 1. GENERAL
  ----------- */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,400,500,600,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,400,500,600,700,800,900'); 
+ 
 body,
 html{
 	width:100%;
@@ -100,7 +103,6 @@ ul{
 	text-align: center;
 	padding-bottom: 10px;
 	text-transform: uppercase;
-	margin-top: 0;
 }
 
 .mobile_heading{
@@ -112,28 +114,33 @@ ul{
 	letter-spacing: 1px;
 	text-align: center;
 	line-height: 1.3em;
-	margin-top: 0;
 }
 
 /* 2. HEADER
  ----------- */
 /* --- 2.1. Logo & Navigation --- */
-.navbar-header h2{
+nav.navbar.bootsnav .navbar-brand{
+    max-width: 200px !important; 	
+}
+
+.navbar-header a.navbar-brand{
+	text-decoration: none;
+	color: #ffffff;
+	transition: 0.5s;
 	font-family: 'Montserrat', Arial, sans-serif;
 	font-size: 22px;
 	font-weight: 700;
 	letter-spacing: 1px;
 	text-transform: uppercase;
+	padding-top: 28px;
 }
 
-.navbar-header a.navbar-brand{
-	text-decoration: none;
-	color: #ffffff !important;
-	transition: 0.5s;
+.navbar-header a.navbar-brand:hover{
+	color: #ffffff;
 }
 
 nav.navbar .navbar-brand img.logo{
-   max-width: 200px;
+   width: 100%;
    height: auto;
    display: block;
 }
@@ -384,7 +391,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
     text-decoration: none;
 	text-transform: uppercase;
     display: block;
-    font-size: 12px;
+    font-size: 13px;
 	font-weight: 600;
 	font-family: 'Montserrat', Arial, sans-serif;
     transition: 0.5s;
@@ -435,7 +442,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	overflow: hidden;
 }
 
 .first_left{
@@ -443,7 +449,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	flex-direction: row;
 	justify-content: flex-start;
 	align-items: center;
-	overflow: hidden;
 }
 
 .slide__left{
@@ -502,7 +507,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	font-size: 16px;
 	font-weight: normal;
 	display: block;
-	color: #d2d2d2;
+	color: #f2f2f2;
 	line-height: 1.5em;
 	letter-spacing: 1px;
 	text-align: left;
@@ -620,8 +625,8 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .mobile_area{
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	flex-direction: row;
+	justify-content: flex-start;
 	align-items: center;
 }
 
@@ -710,8 +715,8 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
     text-decoration: none;
 	text-transform: uppercase;
     display: block;
-    font-size: 12px;
-	font-weight: 700;
+    font-size: 13px;
+	font-weight: 600;
 	font-family: 'Montserrat', Arial, sans-serif;
     transition: 0.5s;
     cursor: pointer;
@@ -722,32 +727,31 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .areas_col_button a:hover{
-	color: #ffffff;
-	background-color: #111111;
+	color: #111111;
+	background: transparent;
 	border-color: #111111;
 }
 
-.slick-dots{
-	position: absolute;
-	z-index: 9999;
-	left: 5px;
-	top: 50%;
-	transform: translateY(-50%);
+.slick-dots {
+	position: relative;
+	z-index: 999999;
+	left: 50%;
+	transform: translateX(-50%);
 	display: flex;
 	justify-content: center;
 	margin: 0;
+	padding: 1rem 0;
 	list-style-type: none;
-	display: block;
 }
 
 .slick-dots button{
 	display: block;
-	width: 1.4rem;
-	height: 1.4rem;
+	width: 1.3rem;
+	height: 1.3rem;
 	padding: 0;		
 	border: solid 1px #696969;
-	border-radius: 50%;
-	background: transparent;
+	border-radius: 100%;
+	background-color: #ffffff;
 	text-indent: -9999px;
 }
 
@@ -893,11 +897,11 @@ li.slick-active button{
 /* --- 3.4. Mobile Area Four --- */
 .mobile_area_four{
 	max-width: 1100px;
-	margin: 0 auto 0;
+	margin: 0 auto 6em;
 	margin-top:  -300px;
 	position: relative;
 	z-index: 9999;
-	margin-bottom: 3em;
+	padding: 0 30px;
 }
 
 .mobile_group_four{
@@ -931,7 +935,6 @@ li.slick-active button{
 	letter-spacing: 1px;
 	text-align: center;
 	line-height: 1.3em;
-	margin-top: 0;
 }
 
 .mobile_icon_col{
@@ -963,9 +966,8 @@ li.slick-active button{
 	font-size: 18px;
 	font-weight: 600;
 	display: block;
-	text-align: left;
+	text-align: center;
 	letter-spacing: 1px;
-	transition: 0.5s;
 	line-height: 1.4em;
 }
 
@@ -973,7 +975,7 @@ li.slick-active button{
 .mobile_icon_box .far{
 	font-size: 35px;
 	color: #512da8;
-	text-align: left;
+	text-align: center;
 	display: block;
 }
 
@@ -985,7 +987,7 @@ li.slick-active button{
 	display: block;
 	color: #696969;
 	letter-spacing: 1px;
-	text-align: left;
+	text-align: center;
 	line-height: 1.5em;
 }
 
@@ -1003,88 +1005,95 @@ li.slick-active button{
 	padding-top: 30px;
 }
 
+.team_box{
+	max-width: 350px;
+	position: relative;
+	text-align: center;
+	overflow: hidden;
+	margin: auto;
+}
+
 .team_col{
 	flex: 25%;
 	width: 25%;
 	padding: 0 25px;
 }
 
-.team_image{
-	position: relative;
-	overflow: hidden;
-}
-
-.team_image img{
-	vertical-align: middle;
+.team_col img{
 	width: 100%;
 	height: auto;
+	transition: ease-in-out 0.5s;
+	display: block;
+	border-radius: 50%;
+}
+
+.team_image{
+	border-radius: 50%;
 	overflow: hidden;
+	position: relative;
+	background-color: #ffffff;
+	transition: ease-in-out 0.5s;
+}
+
+.overlay {
+	position: absolute;
+	bottom: 100%;
+	left: 0;
+	right: 0;
+	overflow: hidden;
+	width: 100%;
+	opacity: 0.5;
+	height:0;
+	transition: 0.5s ease;
+	background-color: #512da8;
+}
+
+.team_box .team_image > img{
 	transition: ease-in-out 1.25s;
 }
 
-.team_box{
-	position: relative;
-	text-align: center;
-	max-width: 350px;
-	margin: auto;
+.team_box:hover .team_image > img{
+	transform: scale(1.15);
 }
 
-.team_overlay{
-	position: absolute;
-	top: 0;
+.team_box:hover .overlay{
 	bottom: 0;
-	left: 0;
-	right: 0;
 	height: 100%;
-	width: 100%;
-	opacity: 0;
-	transition: 0.5s ease;
-	background-color: #ffffff;
 }
 
-.team_box:hover .team_overlay{
-	opacity: 1;
-}
-
-.team_info{
+.team_icon{
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	width: 100%;
-	overflow: hidden;
-}
-
-.team_icon{
-	width: 100%;
-	position: absolute;
-	bottom: 20px;
-	left: 50%;
-	transform: translateX(-50%);
-	overflow: hidden;
 }
 
 .team_icon .fab,
 .team_icon .fa{
-	font-size: 16px;
-	color: #ffffff;
-	background-color: #512da8;
-	width: 40px;
-	height: 40px;
-	padding: 13px;
+	font-size: 14px;
+	color: #512da8;
+	width: 35px;
+	height: 35px;
+	background-color: #ffffff;
+	padding: 10px;
+	border: solid 1px #ffffff;
 	border-radius: 50%;
-	text-align: center;
 	display: inline-block;
-	transition: 0.5s ease;
+	text-align: left;
+	margin-right: 7px;
+	transition: ease-in-out 0.5s;
 }
 
-.team_icon > a{
-	padding: 0 8px;
+.team_icon .fa-facebook-f{
+	padding: 10px 12px !important;
 }
 
 .team_icon .fab:hover,
 .team_icon .fa:hover{
+	color: #ffffff;
 	background-color: #111111;
+	border: solid 1px #111111;
 }
 
 .team_name{
@@ -1093,7 +1102,6 @@ li.slick-active button{
 	display: block;
 	font-weight: 600;
 	color: #111111;
-	line-height: 1.4em;
 	letter-spacing: 1px;
 	text-align: center;
 }
@@ -1107,19 +1115,15 @@ li.slick-active button{
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	text-align: center;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	margin-top: 0;
-	line-height: 1.4em;
 }
 
 /* --- 3.6. Mobile Area Six --- */
 .mobile_area_six{
 	width: 100%;
-	margin: 0 0 9em;
+	margin: 0;
 	min-height: 400px;
 	padding: 7em 25px;
-	background-color: #f6f6f6;
+	background-color: #eeeeee;
 	position: relative;
 }
 
@@ -1127,15 +1131,10 @@ li.slick-active button{
 	max-width: 1200px;
 	margin: 0 auto;
 	width: 100%;
-	padding-top: 30px;
-	position: relative;
-}
-
-.client-slider{
-	max-width: 1200px;
-	margin: auto;
-	display: block;
 	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 70px;
+	position: relative;
 }
 
 .client_details{
@@ -1230,132 +1229,137 @@ li.slick-active button{
 	line-height: 1.5em;
 }
 
+.slidenav{
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	margin-bottom: -15px;
+	transform: translateX(-50%);
+}
+
 .prev_slide,
 .next_slide{
 	font-size: 14px;
 	transition: 0.6s ease;
 	background: transparent;
-	display: block;
+	display: inline-block;
 	overflow: hidden;
 	padding: 10px 16px;
 	color: #111111;
 	cursor: pointer;
 	border: solid 1px #111111;
-	border-radius: 5px;
+	border-radius: 3px;
 }
 
 .prev_slide{
-	position: absolute;
-	top: 50%;
-	left: -20px;
-	transform: translateY(-50%);
-}
-
-.next_slide{
-	position: absolute;
-	top: 50%;
-	right: -20px;
-	transform: translateY(-50%);
+	margin-right: 15px;
 }
 
 .next_slide:hover,
 .prev_slide:hover{
-	background-color: #512da8;
+	background-color: #111111;
 	color: #ffffff;
-	border-color: #512da8;
+	border-color: #111111;
 }
 
 /* --- 3.7. Mobile Area Seven --- */
 .mobile_area_seven{
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	min-height: 50px;
-	height: 100%;
-	max-width: 1280px;
-	margin: auto;
-	margin-bottom: 9em;
+	width: 100%;
+	min-height: 100px;
+	margin: 0;
+	background-color: #512da8;
+	margin: 0 0 9em;
 }
 
 .mobile_group_seven{
+	max-width: 1400px;
+	margin: auto;
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
-	padding-top: 30px;
+	padding: 20px;
+}
+
+.count_area{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .count_col{
 	flex: 25%;
 	width: 25%;
 	padding: 0 25px;
-	border-right: solid 1px #e0e0e0;
 	min-height: 50px;
+}
+
+.count_col::before{
+	content: ".";
+	font-weight: 900;
+	font-size: 30px;
+	float: right;
+	text-align: right;
+	font-family: 'Montserrat' , Arial, sans-serif;
+	color: #ffffff;
+	margin-top: 30px;
+	position: relative;
+	left: 15%;
+	transform: translateX(-15%);
+}
+
+.fourth_circle::before{
+	content: ".";
+	display: none;
 }
 
 .count_box{
 	max-width: 300px;
 	margin: auto;
-	padding: 0;
-	text-align: center;
-	background: transparent;
-	transition: 0.5s;
+	padding: 0 25px;
 }
 
-.counter_title{
-	color: #111111;
+.count_box h3{
 	font-family: 'Montserrat' , Arial, sans-serif;
 	font-size: 16px;
-	font-weight: 500;
+	font-weight: 600;
 	display: block;
 	text-align: center;
-	text-transform: uppercase;
+	color: #ffffff;
 	letter-spacing: 1px;
-	line-height: 1.4em;
+	text-transform: uppercase;
 }
 
-.counter{
+.count_box .counter{
 	font-family: 'Montserrat' , Arial, sans-serif;
 	font-size: 30px;
 	font-weight: 700;
 	display: block;
 	text-align: center;
-	color: #512da8;
+	color: #e0e0e0;
 	letter-spacing: 1px;
 }
 
 .counter.plus::after{
 	content:'+';
-	color: #111111;
+	color: #e0e0e0;
 	font-weight: 500;
 }
 
 .counter.percent::after{
 	content:'%';
-	color: #111111;
+	color: #e0e0e0;
 	font-weight: 500;
 	font-size: 30px;
 }
 
 /* --- 3.8. Mobile Area Eight --- */
 .mobile_area_eight{
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	min-height: 300px;
-	height: 100%;
-	margin-bottom: 3em;
-	background: linear-gradient(to right, #673ab7, #512da8);
-	padding: 6em 0;
+	max-width: 1280px;
+	margin: 0 auto 5em;
+	padding: 0 25px;
 }
 
 .mobile_group_eight{
-	max-width: 1280px;
-	margin: 0 auto;
-	padding: 0 25px;
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
@@ -1377,14 +1381,13 @@ li.slick-active button{
 .bg_area{
 	position: relative;
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	flex-direction: row;
+	justify-content: flex-start;
 	align-items: center;
 }
 
 .bg_box{
 	max-width: 500px;
-	margin: auto;
 	width: 100%;
 }
 
@@ -1393,7 +1396,7 @@ li.slick-active button{
 	font-size: 40px;
 	font-weight: 700;
 	display: block;
-	color: #ffffff;
+	color: #111111;
 	text-align: left;
 	line-height: 1.3em;
 	letter-spacing: 1px;
@@ -1404,7 +1407,7 @@ li.slick-active button{
 	font-size: 16px;
 	font-weight: normal;
 	display: block;
-	color: #d2d2d2;
+	color: #696969;
 	letter-spacing: 1px;
 	text-align: left;
 	padding: 15px 0;
@@ -1430,49 +1433,49 @@ li.slick-active button{
 }
 
 .mobile_left_btn{
-	background-color: #ffffff;
-	color: #111111;
-	border: 1px solid #ffffff;
+	background-color: #673ab7;
+	color: #ffffff;
+	border: 1px solid #673ab7;
 	border-radius: 5px;
 }
 
 .mobile_left_btn:hover{
 	background-color: transparent;
-	color: #ffffff;
-	border-color: #ffffff;
+	color: #111111;
+	border-color: #111111;
 }
 
 .mobile_left_btn > .fab{
 	font-size: 18px;
 	padding-left: 0.5em;
-	color: #673ab7;
+	color: #ffffff;
 }
 
 .mobile_left_btn:hover > .fab{
-	color: #ffffff;
+	color: #111111;
 }
 
 .mobile_right_btn{
 	background: transparent;
-	color: #ffffff;
-	border: 1px solid #ffffff;
+	color: #111111;
+	border: 1px solid #111111;
 	border-radius: 5px;
 }
 
 .mobile_right_btn:hover{
-	color: #111111;
-	background-color: #ffffff;
-	border-color: #111111;
+	background-color: #673ab7;
+	color: #ffffff;
+	border-color: #673ab7;
 }
 
 .mobile_right_btn > .fab{
-	color: #ffffff;
+	color: #111111;
 	padding-left: 0.5em;
 	font-size: 18px;
 }
 
 .mobile_right_btn:hover > .fab{
-	color: #111111;
+	color: #ffffff;
 }
 
 /* 4. FOOTER
@@ -1483,6 +1486,7 @@ li.slick-active button{
 	position: relative;
 	clear: both;
 	height: 100%;
+	background-color: #512da8;
 }
 
 .footer_area{
@@ -1501,7 +1505,7 @@ li.slick-active button{
 }
 
 .footer_col{
-	padding-top: 3.5em;
+	padding-top: 4.5em;
 }
 
 a.footer-brand img{
@@ -1517,7 +1521,7 @@ a.footer-brand img{
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	text-decoration: none;
-	color: #111111;
+	color: #ffffff;
 	text-align: left;
 }
 
@@ -1526,7 +1530,7 @@ a.footer-brand img{
 	font-size: 14px;
 	font-weight: normal;
 	letter-spacing: 1px;
-	color: #111111;
+	color: #ffffff;
 	text-align: left;
 	padding: 20px 0;
 	line-height: 1.5em;
@@ -1539,7 +1543,7 @@ a.footer-brand img{
 .footer_social .fab,
 .footer_social .fa{
 	font-size: 16px;
-	color: #111111;
+	color: #ffffff;
 	text-align: left;
 }
 
@@ -1563,8 +1567,8 @@ a.footer-brand img{
 	font-size: 18px;
 	font-weight: 700;
 	letter-spacing: 1px;
-	color: #111111;
-	line-height: 1.4em;
+	text-transform: capitalize;
+	color: #ffffff;
 }
 
 .footer_col > ul > li{
@@ -1577,7 +1581,7 @@ a.footer-brand img{
 	font-weight: normal;
 	letter-spacing: 1px;
 	text-decoration: none;
-	color: #111111;
+	color: #ffffff;
 	text-align: justify;
 	transition: 0.5s;
 }
@@ -1586,7 +1590,7 @@ a.footer-brand img{
 	opacity: 0.6;
 }
 
-.form-row{
+.subscribe-row{
 	text-align: right;
 }
 
@@ -1595,7 +1599,7 @@ a.footer-brand img{
 	width: 100%;
 	padding: 12px 10px 14px;
 	background-color: #f6f6f6;
-	border: 0;
+	border: none;
 	font-family: 'Montserrat' , Arial, sans-serif;
 	font-size: 13px;
 	font-weight: 600;
@@ -1614,21 +1618,28 @@ a.footer-brand img{
 	text-align: center;
 	font-family: 'Montserrat' , Arial, sans-serif;
 	font-size: 14px;
-	font-weight: normal;
+	font-weight: 500;
 	margin-top: 20px;
+	text-transform: uppercase;
 	width: 100%;
 	margin-left: 0;
 	color: #ffffff;
 	border-radius: 0;
 	letter-spacing: 1px;
-	background-color: #512da8;
+	background-color: transparent;
 	border: solid 1px #ffffff;
 	transition: 0.5s;
 }
 
 .col_info input[type="submit"]:hover{
-	background-color: #111111;
-	color: #ffffff;
+	background-color: #ffffff;
+	color: #111111;
+	border-color: #ffffff;
+}
+
+.col_info input[type="email"]:focus{
+	outline: none;
+	box-shadow: 0 0 0 2px #e0e0e0;
 }
 
 .details{
@@ -1636,7 +1647,7 @@ a.footer-brand img{
 	padding-top: 35px;
 	padding-bottom: 10px;
 	margin-top: 35px;
-	border-top: solid 1px #e0e0e0;
+	border-top: solid 1px #6f6f6f;
 }
 
 .details p{
@@ -1644,7 +1655,7 @@ a.footer-brand img{
 	font-size: 13px;
 	font-weight: normal;
 	letter-spacing: 1px;
-	color: #111111;
+	color: #ffffff;
 	text-align: center;
 }
 
@@ -1659,10 +1670,6 @@ a.footer-brand img{
 	
 	.second_border{
 		border-right: none;
-	}
-	
-	.mobile_area_four{
-		max-width: 950px;
 	}
 	
 	.mobile_icon_col{
@@ -1702,8 +1709,8 @@ a.footer-brand img{
 		border-color: #111111;
 	}
 	
-	.navbar-header h2{
-		margin-top: 7px;
+	.navbar-header a.navbar-brand{
+		padding-top: 22px;
 	}
 	
 	nav.navbar.bootsnav ul.nav > li > a{
@@ -1785,8 +1792,8 @@ a.footer-brand img{
 	.mobile_graphic_col{
 		flex: 100%;
 		width: 100%;
-		max-width: 650px;
-		margin: auto;
+		max-width: 600px;
+		margin: 9px 0;
 	}
 	
 	.left_graphic,
@@ -1795,21 +1802,20 @@ a.footer-brand img{
 		padding-bottom: 25px;
 	}
 	
-	.mobile_area_four{
-		max-width: 700px;
-	}
-	
 	.count_col{
 		flex: 50%;
 		width: 50%;
-		margin-bottom: 40px;
+		margin: 20px 0;
+	}
+	
+	.second_circle::before{
+		display: none;
 	}
 	
 	.mobile_bg_col{
 		flex: 100%;
 		width: 100%;
-		max-width: 600px;
-		margin: auto;
+		max-width: 500px;
 	}
 	
 	.bg_box{
@@ -1844,10 +1850,6 @@ a.footer-brand img{
 		border-right: none;
 	}
 	
-	.mobile_area_four{
-		max-width: 475px;
-	}
-	
 	.team_col{
 		flex: 100%;
 		width: 100%;
@@ -1856,6 +1858,11 @@ a.footer-brand img{
 	.count_col{
 		flex: 100%;
 		width: 100%;
+	}
+	
+	.third_circle::before,
+	.first_circle::before{
+		display: none;
 	}
 	
 	.footer_col{
@@ -1886,21 +1893,9 @@ a.footer-brand img{
 		flex: 100%;
 		width: 100%;
 	}
-	
-	.slick-dots{
-		left: -20px;
-	}
-	
-	.mobile_area_four{
-		max-width: 350px;
-	}
 }
 
-@media only screen and (max-width: 375px){
-	.mobile_area_four{
-		max-width: 300px;
-	}
-	
+@media only screen and (max-width: 385px){
 	.client_info img{
 		width: 60px;
 		height: 60px;
@@ -1908,11 +1903,5 @@ a.footer-brand img{
 	
 	.client_box{
 		padding: 30px 15px;
-	}
-}
-
-@media only screen and (max-width: 320px){
-	.mobile_area_four{
-		max-width: 270px;
 	}
 }
