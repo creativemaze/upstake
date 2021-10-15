@@ -62,7 +62,7 @@ $(document).ready(function(){
 		pauseOnHover: false,
 		responsive: [
 				{
-					breakpoint: 992,
+					breakpoint: 993,
 					settings: {
 					slidesToShow: 1,
 				}
