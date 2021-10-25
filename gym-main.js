@@ -28,14 +28,6 @@ $(document).ready(function(){
 	});
 });
 
-//Counter Up
-jQuery(document).ready(function($) {
-   $('.counter').counterUp({
-        delay: 10,
-        time: 2000
-    });
-});
-
 //Animate on Scroll default settings
 $(window).on('load', function () {
 	AOS.refresh();
