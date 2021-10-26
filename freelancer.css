@@ -3,8 +3,8 @@ Main Stylesheet
 
 Project:    Highpoint Corporate Template
 Version:    1.0
-Last change:    08/07/2021
-Author:    Themewiz
+Last change:    24/10/2021
+Author:    creativemaze
 Primary use:    Freelancer
 -------------------------------------------------------------------*/
 
@@ -120,22 +120,28 @@ ul{
 /* 2. HEADER
  ----------- */
 /* --- 2.1. Logo & Navigation --- */
-.navbar-header h2{
+nav.navbar.bootsnav .navbar-brand{
+    max-width: 200px !important; 	
+}
+
+.navbar-header a.navbar-brand{
+	text-decoration: none;
+	color: #ffffff;
+	transition: 0.5s;
 	font-family: 'Montserrat', Arial, sans-serif;
 	font-size: 22px;
 	font-weight: 700;
 	letter-spacing: 1px;
 	text-transform: uppercase;
+	padding-top: 28px;
 }
 
-.navbar-header a.navbar-brand{
-	text-decoration: none;
-	color: #ffffff !important;
-	transition: 0.5s;
+.navbar-header a.navbar-brand:hover{
+	color: #ffffff;
 }
 
 nav.navbar .navbar-brand img.logo{
-   max-width: 200px;
+   width: 100%;
    height: auto;
    display: block;
 }
@@ -439,7 +445,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	display: block;
 	margin-left: 10vw;
 	text-align: left;
-	padding: 0 20px
+	padding: 0 20px;
 }
 
 .header-title__main{
@@ -452,13 +458,14 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	text-align: left;
 	display: block;
 	color: #ffffff;
+	padding-bottom: 10px;
 }
 
 .buttoncol a{
 	background-color: #ffffff;
 	width: 170px;
 	min-height: 25px;
-	margin-top: 30px;	
+	margin-top: 25px;	
     border: none;
     color: #111111;
     padding: 14px 15px;
@@ -616,10 +623,8 @@ li.slick-active button{
  
 /* --- 3.1. Freelancer Area One --- */
 .freelance_area_one{
-	max-width: 1280px;
-	margin-bottom: 9em;
-	margin-left: auto;
-	margin-right: auto;
+	max-width: 1400px;
+	margin: 0 auto 9em;
 	padding: 0 25px;
 }
 
@@ -634,29 +639,25 @@ li.slick-active button{
 	flex: 33.33%;
 	width: 33.33%;
 	padding: 0 15px;
-	overflow: hidden;
 	position: relative;
-	border-right: solid 1px #e0e0e0;
 }
 
 .freelance_box_col{
 	flex: 66.66%;
 	width: 66.66%;
 	padding: 0 15px;
-	overflow: hidden;
-	position: relative;
 }
 
 .wide_area{
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	flex-direction: row;
+	justify-content: flex-start;
 	align-items: center;
 }
 
 .wide_box{
-	max-width: 500px;
-	margin: 0 auto;
+	max-width: 450px;
+	margin: 0;
 	width: 100%;
 	padding: 0 20px;
 }
@@ -692,57 +693,66 @@ li.slick-active button{
 }
 
 .num_col{
-	position: relative;
 	flex: 50%;
 	width: 50%;
-	padding: 15px 0;
+	position: relative;
+	padding: 0 20px 25px 20px;
 }
 
-.num_box{
+.num_info{
+	width: 100%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+	padding: 25px 20px;
+	margin-bottom: 10px;
 	max-width: 350px;
-	margin: auto;
-	padding: 25px 15px;
-	text-align: center;
-	min-height: 50px;
-	height: 100%;
 	overflow: hidden;
 }
 
 .list_num{
 	float: left;
-	width: 25%;
-	max-width: 75px;
-	height: 75px;
-	background: #D31027;
-	border-radius: 50%;
+	width: 15%;
 }
 
-.num_info{
+.num_item{
 	float: left;
-	width: 75%;
-	padding-left: 20px;
+	width: 85%;
+	padding-left: 10px;
 }
 
-.list_num > h4 {
-	display: block;
-	color: #ffffff;
-	margin-top: 25px;
+.list_num h4{
+	color: #111111;
 	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 25px;
-	font-weight: 500;
+	font-size: 20px;
+	font-weight: 600;
 	display: block;
-	text-align: center;
+	text-align: left;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	margin-top: 0;
 }
 
-.num_box h3{
+.num_item h3{
+	color: #111111;
 	font-family: 'Montserrat' , Arial, sans-serif;
 	font-size: 18px;
 	font-weight: 600;
 	display: block;
 	text-align: left;
-	color: #111111;
 	letter-spacing: 1px;
+	margin-top: 0;
 	line-height: 1.4em;
+}
+
+.num_item p{
+	font-family: 'Roboto' , Arial, sans-serif;
+	font-size: 15px;
+	font-weight: normal;
+	display: block;
+	color: #696969;
+	letter-spacing: 1px;
+	text-align: left;
+	line-height: 1.5em;
+	padding: 8px 0;
 }
 
 .num_button > a{
@@ -755,7 +765,7 @@ li.slick-active button{
 	display: block;
 	color: #D31027;
 	text-decoration: none;
-	width: 120px;
+	width: 110px;
 	transition: 0.5s;
     cursor: pointer;
 }
@@ -773,34 +783,6 @@ li.slick-active button{
 }
 
 .num_button > a:hover{
-	color: #111111;
-}
-
-.bg_one{
-	background-color: #f7f7f7;
-}
-
-.bg_two{
-	background-color: #D31027;
-}
-
-.bg_two .list_num{
-	background-color: #ffffff;
-}
-
-.bg_two .list_num h4{
-	color: #D31027;
-}
-
-.bg_two h3{
-	color: #ffffff;
-}
-
-.bg_two .num_button > a{
-	color: #ffffff;
-}
-
-.bg_two .num_button > a:hover{
 	color: #111111;
 }
 
@@ -842,7 +824,7 @@ li.slick-active button{
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
-	padding-top: 40px;
+	padding-top: 10px;
 }
 
 .outer_crumb{
@@ -859,15 +841,21 @@ li.slick-active button{
 	padding: 0 25px;
 }
 
+.square_area{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 0 10px;
+}
+
 .square_box{
 	width: 100%;
-	background-color: #f6f6f6;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
 	padding: 25px 20px;
-	max-width: 400px;
-	margin: 0 auto 25px;
-	transition: 0.5s;
+	max-width: 350px;
+	margin: 30px auto;
 	overflow: hidden;
-	cursor: pointer;
 }
 
 .square_col img{
@@ -935,16 +923,6 @@ li.slick-active button{
     cursor: pointer;
 }
 
-.active{
-	background-color: #D31027;
-}
-
-.active h3,
-.active p,
-.active .fas{
-	color: #ffffff;
-}
-
 .area_button > a::after{
 	content: "\203A";
 	font-size: 20px;
@@ -961,14 +939,10 @@ li.slick-active button{
 	color: #111111;
 }
 
-.active a{
-	color: #ffffff;
-}
-
 /* --- 3.3. Freelancer Area Three --- */
 .freelance_area_three{
 	position: relative;
-	min-height: 400px;
+	min-height: 350px;
 	height: 100%;
 	background-color: #D31027;
 	margin: 0;
@@ -978,7 +952,7 @@ li.slick-active button{
 .freelance_area_four{
 	max-width: 1400px;
 	margin: 0 auto 0;
-	margin-top:  -300px;
+	margin-top:  -200px;
 	position: relative;
 	padding: 0 15px;
 	margin-bottom: calc(9em - 35px);
@@ -1213,34 +1187,36 @@ li.slick-active button{
 	flex-wrap: wrap;
 }
 
-.info_col{
+.review_col_left{
 	flex: 33.33%;
 	width: 33.33%;
 	padding: 0 15px;
 	position: relative;
 }
 
-.client_area{
+.review_col_right{
 	flex: 66.66%;
 	width: 66.66%;
-	padding: 0 15px;
+	padding: 0 10px;
+	text-align: center;
 	position: relative;
 }
 
-.info_area{
+.review_box{
+	max-width: 450px;
+	margin: 0;
+	width: 100%;
+	padding: 0 20px;
+}
+
+.review_area{
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	flex-direction: row;
+	justify-content: flex-start;
 	align-items: center;
-	overflow: hidden;
 }
 
-.info_box{
-	max-width: 500px;
-	margin: 0 auto;
-}
-
-.info_box h2{
+.review_box h2{
 	font-family: 'Montserrat' , Arial, sans-serif;
 	font-size: 40px;
 	font-weight: 700;
@@ -1252,7 +1228,7 @@ li.slick-active button{
 	line-height: 1.3em;
 }
 
-.info_box p{
+.review_box p{
 	font-family: 'Roboto' , Arial, sans-serif;
 	font-size: 16px;
 	font-weight: normal;
@@ -1264,36 +1240,24 @@ li.slick-active button{
 	line-height: 1.5em;
 }
 
-.bg_area{
-	width: 100%;
-	display: flex; 
-	flex-wrap: wrap;
-}
-
-.bg_col{
-	flex: 50%;
-	width: 50%;
-	position: relative;
-}
-
-.right_bg{
-	background-color: #ffffff;
-	position: relative;
-	margin-top: 50px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	right: 5%;
-	height: calc(100% - 50px);
-	padding: 30px 0;
-}
-
-.client_info{
+.client_details{
 	display: block;
-	max-width: 400px;
+	max-width: 325px;
+	width: 100%;
 	margin: auto;
+	padding: 0 15px;
 	text-align: center;
+	margin-bottom: 15px;
+	margin-top: 5px;
+}
+
+.client_box{
+	width: 100%;
+	padding: 35px 30px;
+	text-align: center;
+	display: block;
+	background-color: #ffffff;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
 .client_info img{
@@ -1306,30 +1270,15 @@ li.slick-active button{
 	margin-bottom: 14px;
 }
 
-.bg_col img{
-	vertical-align: middle;
-	width: 100%;
-	height: auto;
-	transition: 0.5s;
-	overflow: hidden;
-}
-
 .client_name{
 	font-family: 'Montserrat' , Arial, sans-serif;
 	font-size: 18px;
 	font-weight: 600;
 	display: block;
-	color: #D31027;
+	color: #111111;
 	letter-spacing: 1px;
 	text-align: center;
 	line-height: 1.4em;
-}
-
-.quoteblock .fas{
-	font-size: 40px;
-	color: #D31027;
-	text-align: center;
-	padding-bottom: 30px;
 }
 
 .client_comment{
@@ -1338,49 +1287,47 @@ li.slick-active button{
 }
 
 .client_title{
-	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 15px;
+	font-family: 'Montserrat', Arial, sans-serif;
+	font-size: 14px;
 	font-weight: 600;
 	display: block;
-	color: #111111;
+	color: #D31027;
 	letter-spacing: 1px;
 	text-align: center;
 	text-transform: uppercase;
-	line-height: 1.4em;
 }
 
-.client_comment p{
-	font-family: 'Montserrat' , Arial, sans-serif;
+.client_comment q{
+	font-family: 'Roboto', Arial, sans-serif;
 	font-size: 15px;
 	font-weight: normal;
 	display: block;
 	color: #696969;
 	letter-spacing: 1px;
 	text-align: center;
-	max-width: 400px;
+	max-width: 350px;
 	margin: auto;
-	line-height: 1.5em;
+	padding-top: 15px;
 }
 
 .slidenav{
 	position: absolute;
 	bottom: 0;
-	left: 0;
-	z-index: 9999;
-	margin-left: 15px;
+	left: 30px;
 }
 
 .prev_slide,
 .next_slide{
 	font-size: 14px;
 	transition: 0.6s ease;
-	background-color: #D31027;
+	background: transparent;
 	width: auto;
 	padding: 10px 16px;
-	color: #ffffff;
+	color: #111111;
 	cursor: pointer;
-	border: solid 1px #D31027;
+	border: solid 1px #111111;
 	display: inline-block;
+	border-radius: 3px;
 }
 
 .prev_slide{
@@ -1411,7 +1358,7 @@ li.slick-active button{
 .blog_col{
 	flex: 33.33%;
 	width: 33.33%;
-	padding: 0 25px;
+	padding: 0 20px;
 }
 
 .blog_box{
@@ -1437,24 +1384,23 @@ li.slick-active button{
 	padding-top: 12px;
 	padding-left: 12px;
 	background-color: #ffffff;
+	transition: ease-in-out 0.5s;
 }
 
 .blog_content{
-	padding: 30px 0;
 	text-align: left;
-	padding-left: 15px;
-	padding-right: 5px;
+	padding: 20px 0;
+	padding-left: 10px;
 }
 
 .date_info{
 	position: absolute;
-	top: 0;
+	bottom: 0;
 	left: 0;
 	margin-left: 15px;
-	margin-top: 15px;
+	margin-bottom: 15px;
 	background-color: #ffffff;
-	padding: 5px 20px;
-	border-radius: 4px;
+	padding: 8px 20px;
 }
 
 .date_info h4{
@@ -1466,6 +1412,7 @@ li.slick-active button{
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	text-align: center;
+	margin: 0;
 }
 
 .blog_date{
@@ -1486,10 +1433,6 @@ li.slick-active button{
 
 .blog_image > a > img:hover{
 	transform: scale(1.15);
-}
-
-.blog_title{
-	margin-top: 0;
 }
 
 .blog_title a{
@@ -1525,7 +1468,6 @@ a.blog_btn:hover,
 a.blog_btn{
 	max-width: 120px;	
     color: #111111;
-	border-bottom: solid 2px #111111;
     text-decoration: none;
 	text-transform: uppercase;
     display: inline-block;
@@ -1537,7 +1479,6 @@ a.blog_btn{
 	letter-spacing: 1px;
 	text-align: center;
 	line-height: 1.2em;
-	padding-bottom: 3px;
 }
 
 a.blog_btn::after{
@@ -1634,11 +1575,9 @@ a.blog_btn::after{
 
 /* --- 3.9. Freelancer Area Nine --- */
 .freelance_area_nine{
-	max-width: 1400px;
+	max-width: 1200px;
 	margin: 0 auto 7em;
 	padding: 0 25px;
-	min-height: 150px;
-	height: 100%;
 }
 
 .freelance_group_nine{
@@ -1653,88 +1592,123 @@ a.blog_btn::after{
 	width: 50%;
 }
 
-.freelance_form_col img{
-	vertical-align: middle;
-	width: 100%;
-	height: auto;
-}
-
 .form_area{
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	flex-direction: row;
+	justify-content: flex-start;
 	align-items: center;
-	border: solid 1px #e0e0e0;
-	border-left: none;
-	padding-top: 30px;
 }
 
-.freelance_form_box{
-	max-width: 700px;
-	margin: 0 auto;
-	position: relative;
-	text-align: center;
-	transition: 0.5s;
-	overflow: hidden;
-	padding-bottom: 12px;
+.form_col_box{
+	max-width: 450px;
+	text-align: left;
+}
+
+.form_col_box h2{
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 40px;
+	font-weight: 700;
+	display: block;
+	color: #111111;
+	text-transform: uppercase;
+	text-align: left;
+	letter-spacing: 1px;
+	line-height: 1.3em;
+}
+
+.form_col_box p{
+	font-family: 'Roboto' , Arial, sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	display: block;
+	color: #696969;
+	letter-spacing: 1px;
+	text-align: left;
+	padding-top: 25px;
+	line-height: 1.5em;
+}
+
+.form-box{
+	text-align: right;
+	display: block;
+	max-width: 600px;
+}
+
+.inner_list > ul{
+	margin-top: 20px;
+}
+
+.inner_list > ul > li{
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 13px;
+	font-weight: 500;
+	display: block;
+	color: #111111;
+	text-transform: capitalize;
+	text-align: left;
+	padding: 8px 0;
+	letter-spacing: 1px;
+}
+
+.inner_list > ul > li::before{
+	font-family: 'Font Awesome 5 Free';
+	content: "\f00c";
+	font-weight: 900;
+	font-size: 15px;
 	padding-right: 12px;
-	padding-top: 12px;
-	padding-left: 12px;
-	border: solid 1px #e0e0e0;
-	border-right: none;
+	color: #D31027;
 }
 
 .form-row {
 	flex-direction: row;
 	display: flex;
-	width: 100%;
 }
 
-.form_col_box input[type="text"],
-.form_col_box input[type="email"],
-.form_col_box input[type="password"]{
+.form-box input[type="text"],
+.form-box input[type="email"]{
 	font-family: 'Montserrat' , Arial, sans-serif;
 	font-size: 13px;
-	padding: 4px 20px;
+	padding: 7px 20px;
 	height: 40px;
 	border: none;
-	margin: 16px 10px;
-	border-bottom: solid 1px #696969;
+	margin: 8px 0;
+	border: solid 1px #e0e0e0;
 	flex-grow: 1;
 	letter-spacing: 1px;
 	transition: 0.5s;
+	background-color: #f6f6f6;
 }
 
-.form_col_box textarea{
+.form-box textarea{
 	font-family: 'Montserrat' , Arial, sans-serif;
 	font-size: 13px;
-	padding: 4px 20px;
+	padding: 7px 20px;
 	border: none;
 	width: auto;
-	min-height: 200px;
-	margin: 16px 10px;
-	border-bottom: solid 1px #696969;
+	min-height: 125px;
+	margin: 8px 0;
+	border: solid 1px #e0e0e0;
 	flex-grow: 1;
 	letter-spacing: 1px;
 	transition: 0.5s;
+	background-color: #f6f6f6;
 }
 
-.form_col_box input[type="text"]:focus,
-.form_col_box input[type="email"]:focus,
-.form_col_box input[type="password"]:focus,
-.form_col_box textarea:focus{
-	border-bottom: 1px solid #111111;
+.form-box input[type="text"]:focus,
+.form-box input[type="email"]:focus,
+.form-box textarea:focus{
+	outline: none;
 }
 
-.form_col_box input[type="submit"]{
-	display: block;
-	margin: 18px 10px;
-	width: auto;
-	padding: 10px 35px;
+.form-box input[type="submit"]{
+	margin: 8px 0;
+	width: 100%;
+	padding: 10px 0;
 	text-align: center;
 	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 16px;
-	font-weight: normal;
+	font-size: 14px;
+	font-weight: 600;
+	text-transform: uppercase;
 	color: #ffffff;
 	letter-spacing: 1px;
 	background-color: #D31027;
@@ -1742,10 +1716,10 @@ a.blog_btn::after{
 	transition: 0.5s;
 }
 
-.form_col_box input[type="submit"]:hover{
+.form-box input[type="submit"]:hover{
 	background-color: #111111;
 	color: #ffffff;
-	border: solid 1px #111111;
+	border-color: #111111;
 }
 
 /* 4. FOOTER
@@ -1938,60 +1912,33 @@ a.footer-brand img{
 		flex: 100%;
 		width: 100%;
 		clear: both;
-		max-width: 400px;
-	}
-	
-	.square_col img{
-		margin-bottom: 25px;
+		max-width: 350px;
 	}
 	
 	.freelance_group_two{
-		max-width: 400px;
+		max-width: 350px;
 		margin: auto;
 	}
 	
-	.client_area{
+	.review_col_left{
 		flex: 100%;
 		width: 100%;
-		max-width: 750px;
-		margin: auto;
+		margin-bottom: 40px;
 	}
 	
-	.info_col{
+	.review_col_right{
 		flex: 100%;
 		width: 100%;
-		max-width: 500px;
-		margin: auto;
 	}
 	
-	.info_box p{
+	.review_box p{
 		padding-bottom: 60px;
-	}
-	
-	.client_area{
-		margin-top: 35px;
 	}
 	
 	.blog_col{
 		flex: 50%;
 		width: 50%;
 		margin-bottom: 40px;
-	}
-	
-	.freelance_form_col{
-		flex: 100%;
-		width: 100%;
-	}
-	
-	.freelance_group_nine{
-		border: solid 1px #e0e0e0;
-		max-width: 600px;
-		margin: auto;
-	}
-	
-	.form_area,
-	.freelance_form_box{
-		border: none;
 	}
 }
 
@@ -2009,8 +1956,8 @@ a.footer-brand img{
 		transform: translateX(-50%);
 	}
 	
-	.navbar-header h2{
-		margin-top: 7px;
+	.navbar-header a.navbar-brand{
+		padding-top: 22px;
 	}
 	
 	nav.navbar.bootsnav ul.nav > li > a{
@@ -2100,6 +2047,15 @@ a.footer-brand img{
 		margin-bottom: 35px;
 	}
 	
+	.freelance_form_col{
+		flex: 100%;
+		width: 100%;
+	}
+	
+	.form_area{
+		margin-bottom: 25px;
+	}
+	
 	.footer_col{
 		flex: 50%;
 		width: 50%;
@@ -2114,7 +2070,8 @@ a.footer-brand img{
 	.wide_box h2,
 	.freelance_heading,
 	.bg_head,
-	.info_box h2{
+	.review_box h2,
+	.form_col_box h2{
 		font-size: 30px;
 	}
 	
@@ -2133,23 +2090,9 @@ a.footer-brand img{
 		width: 100%;
 	}
 	
-	.bg_col{
-		flex: 100%;
-		width: 100%;
-	}
-	
-	.right_bg{
-		right: 0;
-		margin-top: 10px;
-	}
-	
 	.blog_col{
 		flex: 100%;
 		width: 100%;
-	}
-	
-	.form-row{
-		flex-direction: column;
 	}
 	
 	.footer_col{
@@ -2165,19 +2108,18 @@ a.footer-brand img{
 	
 	.freelance_wide_col,
 	.freelance_bol_col,
+	.num_col,
 	.square_col,
-	.info_col,
-	.client_area,
+	.review_col_right,
+	.review_col_left,
+	.review_box,
 	.blog_col{
-		padding: 0;
+		padding-left: 0;
+		padding-right: 0;
 	}
 	
 	.slidenav{
-		margin-left: 0;
-	}
-	
-	.freelance_area_one{
-		padding: 0 10px;
+		left: 0;
 	}
 	
 	.data_col{
@@ -2186,32 +2128,13 @@ a.footer-brand img{
 	}
 }
 
-@media only screen and (max-width: 360px){
-	.list_num > h4{
-		font-size: 20px;
-		margin-top: 27px;
-	}
-}
-
 @media only screen and (max-width: 320px){
 	.header-title__main{
 		font-size: 40px;
 	}
 	
-	.list_num{
-		max-width: 65px;
-		height: 65px;
-	}
-	
-	.list_num > h4{
-		margin-top: 23px;
-	}
-	
-	.num_info h3{
-		font-size: 16px;
-	}
-	
 	.num_info{
 		padding-left: 10px;
+		padding-right: 10px;
 	}
 } 
