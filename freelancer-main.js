@@ -12,7 +12,7 @@ $(document).ready(function(){
 		pauseOnFocus: false,
 		responsive: [
 			{
-				breakpoint: 992,
+				breakpoint: 993,
 				settings: {
 					slidesToShow: 1,
 					dots: true,
@@ -29,13 +29,31 @@ $(document).ready(function(){
 		dots: false,
 		prevArrow: '.prev_slide',
 		nextArrow: '.next_slide',
+		slidesToShow: 3,
+		slidesToScroll: 1,
 		autoplay: false,
-		autoplaySpeed: 3000,
-		fade: true,
-		fadeSpeed: 1000,
+		speed: 1000,
 		pauseOnHover: false,
 		pauseOnFocus: false,
-				
+		responsive: [
+			{
+				breakpoint: 993,
+				settings: 
+				{
+					slidesToShow: 2,
+       
+				}	
+			},
+			
+			{
+				breakpoint: 501,
+				settings: 
+				{
+					slidesToShow: 1,
+       
+				}	
+			},
+		]		
 	});
 });
 
