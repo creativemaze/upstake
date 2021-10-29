@@ -3,8 +3,8 @@ Main Stylesheet
 
 Project:    Highpoint Corporate Template
 Version:    1.0
-Last change:    15/07/2021
-Author:    Themewiz
+Last change:    28/10/2021
+Author:    creativemaze
 Primary use:    Logistics
 -------------------------------------------------------------------*/
 
@@ -101,7 +101,6 @@ ul{
 	text-align: center;
 	letter-spacing: 1px;
 	line-height: 1.3em;
-	padding: 0 10px;
 }
 
 .logistics_info{
@@ -122,22 +121,28 @@ ul{
  ----------- */
  
 /* --- 2.1. Logo & Navigation --- */
-.navbar-header h2{
+nav.navbar.bootsnav .navbar-brand{
+    max-width: 200px !important; 	
+}
+
+.navbar-header a.navbar-brand{
+	text-decoration: none;
+	color: #111111;
+	transition: 0.5s;
 	font-family: 'Raleway', Arial, sans-serif;
 	font-size: 22px;
 	font-weight: 700;
 	letter-spacing: 1px;
 	text-transform: uppercase;
+	padding-top: 28px;
 }
 
-.navbar-header a.navbar-brand{
-	text-decoration: none;
-	color: #111111 !important;
-	transition: 0.5s;
+.navbar-header a.navbar-brand:hover{
+	color: #111111;
 }
 
 nav.navbar .navbar-brand img.logo{
-   max-width: 200px;
+   width: 100%;
    height: auto;
    display: block;
 }
@@ -502,172 +507,127 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
  
 /* --- 3.1. Logistics Area One --- */
 .logistics_area_one{
-	max-width: 1400px;
-	margin: 9em auto 0;
+	max-width: 1280px;
+	margin: 9em auto 9em;
 	padding: 0 25px;
-	margin-bottom: calc(9em + 75px);
 	position: relative;
 }
 
-.logistics_group_one,
-.slide_group{
+.logistics_group_one{
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
 }
 
-.info_col{
+.logistics_icon_col{
+	flex: 25%;
+	width: 25%;
+	padding: 0 25px;
+}
+
+.logistics_icon_box{
+	max-width: 300px;
+	margin: auto;
+	padding: 25px 20px;
+	text-align: center;
+	background: transparent;
+	transition: 0.5s;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.logistics_icon_box:hover{
+	box-shadow: -1px 1px 12px 10px rgba(0,0,0,0.19);
+}
+
+.logistics_icon_box h3{
+	color: #111111;
+	font-family: 'Raleway' , Arial, sans-serif;
+	font-size: 18px;
+	font-weight: 600;
+	display: block;
+	text-align: center;
+	letter-spacing: 1px;
+	line-height: 1.4em;
+}
+
+.logistics_icon_box .fas,
+.logistics_icon_box .far{
+	font-size: 35px;
+	color: #feb600;
+	text-align: center;
+	display: block;
+}
+
+.logistics_icon_box p{
+	font-family: 'Roboto' , Arial, sans-serif;
+	font-size: 15px;
+	font-weight: normal;
+	padding-top: 10px;
+	display: block;
+	color: #696969;
+	letter-spacing: 1px;
+	text-align: center;
+	line-height: 1.5em;
+}
+
+/* --- 3.2. Logistics Area Two --- */
+.logistics_area_two{
+	max-width: 1400px;
+	margin: 0 auto;
+	padding: 0 25px;
+	margin-bottom: calc(9em + 65px);
+}
+
+.logistics_group_two{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	padding-top: 30px;
+}
+
+.square_col{
 	flex: 33.33%;
 	width: 33.33%;
 	position: relative;
-	padding: 0 15px;
+	padding: 0 25px;
 }
 
-.slide_col{
-	flex: 66.66%;
-	width: 66.66%;
-	position: relative;
-	padding: 0 15px;
+.square_box{
+	width: 100%;
+	padding: 20px;
+	max-width: 350px;
+	margin: 25px auto;
+	overflow: hidden;
 }
 
-.slide_info{
-	flex: 50%;
-	width: 50%;
-	position: relative;
-	padding: 0 15px;
-}
-
-.slide_photo{
-	flex: 50%;
-	width: 50%;
-	position: relative;
-	padding: 0 15px;
-}
-
-.slide_photo img{
+.square_col img{
 	vertical-align: middle;
 	width: 100%;
 	height: auto;
 	display: block;
 }
 
-.info_area{
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	align-items: center;
-}
-
-.slide_area{
+.logistics_area{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	padding: 0 10px;
 }
 
-.info_box{
-	max-width: 500px;
-	margin: 0;
-}
-
-.info_box h2{
-	font-family: 'Raleway' , Arial, sans-serif;
-	font-size: 40px;
-	font-weight: 700;
-	display: block;
-	color: #1A2980;
-	letter-spacing: 1px;
-	text-align: left;
-	line-height: 1.3em;
-}
-
-.info_box p{
-	font-family: 'Roboto' , Arial, sans-serif;
-	font-size: 16px;
-	font-weight: normal;
-	display: block;
-	color: #696969;
-	letter-spacing: 1px;
-	text-align: left;
-	padding: 15px 0;
-	line-height: 1.5em;
-}
-
-.box_col_button a{
-	background-color: #feb600;
-	width: 150px;
-	min-height: 30px;
-	margin: 20px 0 0;
-    border: none;
-    color: #1A2980;
-    padding: 13px 15px;
-    text-decoration: none;
-	text-transform: uppercase;
-    display: block;
-    font-size: 13px;
-	font-weight: 600;
-	font-family: 'Raleway', Arial, sans-serif;
-    transition: 0.5s;
-    cursor: pointer;
-	border: 1px solid #feb600;
-	letter-spacing: 1px;
-	text-align: center;
-}
-
-.box_col_button a:hover{
-	color: #111111;
-	background-color: transparent;
-	border-color: #111111;
-}
-
-.slide_box{
-	width: 100%;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
-	padding: 35px 25px;
-	max-width: 350px;
-	margin: 15px auto;
-	border: none;
-}
-
-.slide_check{
-	float: left;
-	width: 15%;
-	margin-top: 12px;
-}
-
-.slide_list{
+.logistics_item{
 	float: left;
 	width: 85%;
-	padding-left: 15px;
+	padding-left: 10px;
+	margin-top: -5px;
 }
 
-.slide_list ul{
-	padding: 0 0 15px;
+.logistics_check{
+	float: left;
+	width: 15%;
 }
 
-.slide_list > ul li{
-	font-family: 'Raleway' , Arial, sans-serif;
-	font-size: 14px;
-	font-weight: 600;
-	display: block;
-	color: #111111;
-	letter-spacing: 1px;
-	text-transform: capitalize;
-	text-align: left;
-	padding: 3px 0;
-	line-height: 1.5em;
-}
-
-.slide_list > ul > li::before{
-	font-family: 'Roboto' , Arial, sans-serif;
-	content: ".";
-	font-weight: 900;
-	font-size: 28px;
-	padding-right: 12px;
-	color: #111111;
-}
-
-.slide_checkbox::before{
+.logistics_checkbox::before{
 	font-family: 'Font Awesome 5 Free';
 	content: "\f00c";
 	font-weight: 900;
@@ -679,23 +639,46 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	color: #feb600;
 }
 
-.area_button > a{
+.logistics_item h3{
+	color: #111111;
+	font-family: 'Raleway' , Arial, sans-serif;
+	font-size: 18px;
+	font-weight: 600;
+	display: block;
+	text-align: left;
+	letter-spacing: 1px;
+	margin-top: 0;
+	line-height: 1.4em;
+}
+
+.logistics_item p{
+	font-family: 'Roboto' , Arial, sans-serif;
+	font-size: 15px;
+	font-weight: normal;
+	display: block;
+	color: #696969;
+	letter-spacing: 1px;
+	text-align: left;
+	line-height: 1.5em;
+	padding: 8px 0;
+}
+
+.logistics_button > a{
 	font-family: 'Raleway' , Arial, sans-serif;
 	font-size: 13px;
 	font-weight: 600;
 	letter-spacing: 1px;
-	text-align: center;
+	text-align: left;
 	text-transform: uppercase;
 	display: block;
 	color: #1A2980;
 	text-decoration: none;
-	width: 120px;
-	margin: auto;
+	width: 110px;
 	transition: 0.5s;
     cursor: pointer;
 }
 
-.area_button > a::after{
+.logistics_button > a::after{
 	content: "\203A";
 	font-size: 20px;
 	margin: 0;
@@ -707,13 +690,13 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	position: relative;
 }
 
-.area_button > a:hover{
-	opacity: 0.6;
+.logistics_button a:hover{
+	color: #111111;
 }
 
 .slidenav{
 	position: absolute;
-	bottom: -75px;
+	bottom: -65px;
 	left: 50%;
 	transform: translateX(-50%);
 	z-index: 99;
@@ -724,13 +707,13 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	font-size: 14px;
 	transition: 0.6s ease;
 	border-radius: 0 3px 3px 0;
-	background-color: #feb600;
+	background: transparent;
 	width: auto;
 	display: inline-block;
 	padding: 10px 16px;
-	color: #1A2980;
+	color: #111111;
 	cursor: pointer;
-	border: solid 1px transparent;
+	border: solid 1px #111111;
 }
 
 .prev_button{
@@ -744,31 +727,223 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	border-color: #1A2980;
 }
 
-/* --- 3.2. Logistics Area Two --- */
-.logistics_area_two{
-	position: relative;
-	min-height: 400px;
-	height: 100%;
-	background-color: #1A2980;
-	margin: 0;
-}
-
 /* --- 3.3. Logistics Area Three --- */
 .logistics_area_three{
 	max-width: 1400px;
-	margin: 0 auto;
-	margin-top:  -300px;
+	margin: 0 auto 9em;
 	padding: 0 25px;
-	position: relative;
-	z-index: 9999;
-	margin-bottom: calc(9em - 40px);
 }
 
-.logistics_group_three{
+.logistics_group_three,
+.box_group{
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
-	padding: 40px 15px 0;
+	position: relative;
+}
+
+.logistics_wide_col{
+	flex: 33.33%;
+	width: 33.33%;
+	padding: 0 15px;
+	position: relative;
+}
+
+.logistics_box_col{
+	flex: 66.66%;
+	width: 66.66%;
+	padding: 0 15px;
+	position: relative;
+}
+
+.box_group_col{
+	flex: 33.33%;
+	width: 33.33%;
+	padding: 0 20px;
+	position: relative;
+}
+
+.wide_area{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.wide_box{
+	max-width: 450px;
+	margin: 0;
+	width: 100%;
+	padding: 0 20px;
+}
+
+.wide_box h2{
+	font-family: 'Raleway' , Arial, sans-serif;
+	font-size: 40px;
+	font-weight: 700;
+	display: block;
+	color: #1A2980;
+	text-align: left;
+	letter-spacing: 1px;
+	line-height: 1.3em;
+}
+
+.wide_box p{
+	font-family: 'Roboto' , Arial, sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	display: block;
+	color: #696969;
+	letter-spacing: 1px;
+	text-align: left;
+	padding: 12px 0;
+	line-height: 1.5em;
+}
+
+.box_col_button a{
+	background-color: #1A2980;
+	width: 150px;
+	min-height: 30px;
+	margin: 30px 0 0;
+    border: none;
+    color: #ffffff;
+    padding: 13px 15px;
+    text-decoration: none;
+	text-transform: uppercase;
+    display: block;
+    font-size: 13px;
+	font-weight: 600;
+	font-family: 'Raleway', Arial, sans-serif;
+    transition: 0.5s;
+    cursor: pointer;
+	border: 1px solid #1A2980;
+	letter-spacing: 1px;
+	text-align: center;
+}
+
+.box_col_button a:hover{
+	color: #111111;
+	background-color: transparent;
+	border-color: #111111;
+}
+
+.logistics_box{
+	max-width: 350px;
+	position: relative;
+	text-align: center;
+	overflow: hidden;
+}
+
+.logistics_image{
+	overflow: hidden;
+	position: relative;
+}
+
+.logistics_box_col img{
+	vertical-align: middle;
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.featured_content{
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+	padding-top: 10px;
+}
+
+.featured_content h3{
+	color: #111111;
+	font-family: 'Raleway' , Arial, sans-serif;
+	font-size: 18px;
+	font-weight: 600;
+	display: block;
+	text-align: center;
+	letter-spacing: 1px;
+	line-height: 1.4em;
+}
+
+.featured_content p{
+	font-family: 'Roboto' , Arial, sans-serif;
+	font-size: 15px;
+	font-weight: normal;
+	display: block;
+	color: #696969;
+	letter-spacing: 1px;
+	text-align: center;
+	padding: 12px 0;
+	line-height: 1.5em;
+}
+
+.area_button a{
+	font-family: 'Raleway' , Arial, sans-serif;
+	font-size: 13px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	text-align: center;
+	text-transform: uppercase;
+	display: block;
+	color: #1A2980;
+	text-decoration: none;
+	width: 110px;
+	margin: auto;
+	transition: 0.5s;
+    cursor: pointer;
+}
+
+.area_button a::after{
+	content: "\203A";
+	font-size: 20px;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	height: auto;
+	padding-left: 5px;
+	top: 1px;
+	position: relative;
+}
+
+.area_button a:hover{
+	color: #111111;
+}
+
+/* --- 3.4. Logistics Area Four --- */
+.logistics_area_four{
+	position: relative;
+	min-height: 400px;
+	height: 100%;
+	text-align: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.logistics_area_four::before {
+	content: '';
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(24, 25, 34, 0.5);
+}
+
+/* --- 3.5. Logistics Area Five --- */
+.logistics_area_five{
+	max-width: 1400px;
+	margin: 0 auto 9em;
+	margin-top:  -300px;
+	padding: 0 30px;
+	position: relative;
+}
+
+.logistics_group_five{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 20px 20px 0;
 	background-color: #ffffff;
 	margin-top: 40px;
 }
@@ -798,202 +973,68 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	line-height: 1.5em;
 }
 
-.logistics_grid_col{
+.num_col{
 	flex: 25%;
 	width: 25%;
-	padding: 0 20px;
+	padding: 25px 20px;
 }
 
-.logistics_grid_col img{
-	vertical-align: middle;
+.num_box{
 	width: 100%;
-	height: auto;
-	display: block;
-}
-
-.logistics_grid_box{
-	max-width: 350px;
-	position: relative;
-	text-align: center;
-	overflow: hidden;
+	padding: 20px;
+	border: solid 1px #e0e0e0;
+	max-width: 300px;
 	margin: auto;
-}
-
-.logistics_image{
+	transition: 0.5s;
 	overflow: hidden;
-	position: relative;
 }
 
-.logistics_grid_area{
-	overflow: hidden;
-	position: relative;
-	padding: 0
+.num_info{
+	float: left;
+	width: 15%;
 }
 
-.logistics_content{
-	position: relative;
-	padding: 25px 0;
-	text-align: center;
-	width: 100%;
+.num_item{
+	float: left;
+	width: 85%;
+	padding-left: 10px;
 }
 
-.logistics_content h3{
+.num_info h4{
+	color: #feb600;
+	font-family: 'Raleway' , Arial, sans-serif;
+	font-size: 22px;
+	font-weight: 600;
+	display: block;
+	text-align: left;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	margin-top: 0;
+}
+
+.num_item h3{
 	color: #111111;
 	font-family: 'Raleway' , Arial, sans-serif;
 	font-size: 18px;
 	font-weight: 600;
 	display: block;
-	text-align: center;
+	text-align: left;
 	letter-spacing: 1px;
+	transition: 0.5s;
+	margin-top: 0;
 	line-height: 1.4em;
 }
 
-.logistics_content p{
+.num_item p{
 	font-family: 'Roboto' , Arial, sans-serif;
 	font-size: 15px;
 	font-weight: normal;
 	display: block;
 	color: #696969;
 	letter-spacing: 1px;
-	text-align: center;
+	text-align: left;
 	line-height: 1.5em;
-	padding: 10px 0;
-}
-
-.logistics_content .fas{
-	font-size: 35px;
-	display: block;
-	color: #feb600;
-}
-
-.inner_crumb{
-	width: 50px;
-	height: 1px;
-	margin: auto;
-	border-bottom: solid 2px #111111;
-}
-
-/* --- 3.4. Logistics Area Four --- */
-.logistics_area_four{
-	max-width: 1280px;
-	margin-bottom: 9em;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 0 25px;
-}
-
-.logistics_group_four,
-.feature_area{
-	width: 100%;
-	display: flex; 
-	flex-wrap: wrap;
-}
-
-.logistics_wide_col{
-	flex: 33.33%;
-	width: 33.33%;
-	padding: 0 15px;
-	overflow: hidden;
-	position: relative;
-	border-right: solid 1px #e0e0e0;
-}
-
-.logistics_box_col{
-	flex: 66.66%;
-	width: 66.66%;
-	padding: 0 15px;
-	overflow: hidden;
-	position: relative;
-}
-
-.wide_area{
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	align-items: center;
-}
-
-.wide_box{
-	max-width: 500px;
-	width: 100%;
-	padding: 0 20px;
-}
-
-.wide_box h2{
-	font-family: 'Raleway' , Arial, sans-serif;
-	font-size: 40px;
-	font-weight: 700;
-	display: block;
-	color: #1A2980;
-	text-align: left;
-	letter-spacing: 1px;
-	line-height: 1.3em;
-}
-
-.wide_box > p{
-	font-family: 'Roboto' , Arial, sans-serif;
-	font-size: 16px;
-	font-weight: normal;
-	display: block;
-	color: #696969;
-	letter-spacing: 1px;
-	text-align: left;
-	padding: 15px 0;
-	line-height: 1.5em;
-}
-
-.num_col{
-	position: relative;
-	flex: 50%;
-	width: 50%;
-	padding: 15px 0;
-}
-
-.num_box{
-	max-width: 350px;
-	margin: auto;
-	padding: 25px 15px;
-	text-align: center;
-	min-height: 50px;
-	height: 100%;
-	overflow: hidden;
-}
-
-.list_num{
-	float: left;
-	width: 25%;
-	max-width: 75px;
-	height: 75px;
-	background: #1A2980;
-	border-radius: 50%;
-}
-
-.num_info{
-	float: left;
-	width: 75%;
-	padding-left: 20px;
-}
-
-.list_num > h4 {
-	display: block;
-	color: #feb600;
-	margin-top: 25px;
-	font-family: 'Raleway' , Arial, sans-serif;
-	font-size: 25px;
-	font-weight: 500;
-	display: block;
-	text-align: center;
-}
-
-.num_box h3{
-	font-family: 'Raleway' , Arial, sans-serif;
-	font-size: 18px;
-	font-weight: 600;
-	display: block;
-	text-align: left;
-	color: #111111;
-	letter-spacing: 1px;
-	line-height: 1.4em;
+	padding: 8px 0;
 }
 
 .num_button > a{
@@ -1006,7 +1047,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	display: block;
 	color: #1A2980;
 	text-decoration: none;
-	width: 120px;
+	width: 110px;
 	transition: 0.5s;
     cursor: pointer;
 }
@@ -1024,96 +1065,60 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .num_button > a:hover{
-	opacity: 0.6;
+	color: #111111;
 }
 
-.bg_one{
-	background-color: #f6f6f6;
-}
-
-.bg_two{
-	background-color: #1A2980;
-}
-
-.bg_two .list_num{
-	background-color: #feb600;
-}
-
-.bg_two .list_num h4{
-	color: #ffffff;
-}
-
-.bg_two h3{
-	color: #ffffff;
-}
-
-.bg_two .num_button > a{
-	color: #ffffff;
-}
-
-.bg_two .num_button > a:hover{
-	opacity: 0.6;
-}
-
-/* --- 3.5. Logistics Area Five --- */
-.logistics_area_five{
-	max-width: 1280px;
+/* --- 3.6. Logistics Area Six --- */
+.logistics_area_six{
+	max-width: 1400px;
 	margin: 0 auto 0;
-	padding: 0 20px;
+	padding: 0 25px;
 	margin-bottom: 9em;
 }
 
-.logistics_group_five{
+.logistics_group_six{
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
 }
 
 .question_col{
+	flex: 66.66%;
+	width: 66.66%;
+}
+
+.info_col{
+	flex: 33.33%;
+	width: 33.33%;
+}
+
+.question_area{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.panel_col{
 	flex: 50%;
 	width: 50%;
+	padding: 0 25px;
 }
 
-.media_area{
-	position: relative;
-	overflow: hidden;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
-}
-
-.question_col img{
-	vertical-align: middle;
-	width: 100%;
-	height: auto;
-	display: block;
-}
-
-.col_area{
+.info_area{
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	flex-direction: row;
+	justify-content: flex-start;
 	align-items: center;
 }
 
-.question_box{
-	max-width: 475px;
-	margin: 0 auto;
+.info_box{
+	max-width: 450px;
+	margin: 0;
 	width: 100%;
 	padding: 0 20px;
 }
 
-.question_box > p{
-	font-family: 'Roboto' , Arial, sans-serif;
-	font-size: 16px;
-	font-weight: normal;
-	padding-top: 10px;
-	display: block;
-	color: #696969;
-	letter-spacing: 1px;
-	text-align: left;
-	line-height: 1.5em;
-}
-
-.question_box h2{
+.info_box h2{
 	font-family: 'Raleway' , Arial, sans-serif;
 	font-size: 40px;
 	font-weight: 700;
@@ -1124,9 +1129,16 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	line-height: 1.3em;
 }
 
-.accordion_box{
-	overflow:  hidden;
-	margin-top: 12px;
+.info_box > p{
+	font-family: 'Roboto' , Arial, sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	padding-top: 15px;
+	display: block;
+	color: #696969;
+	letter-spacing: 1px;
+	text-align: left;
+	line-height: 1.5em;
 }
 
 .accordion {
@@ -1182,19 +1194,18 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	display: block;
 	line-height: 1.6em;
 	color: #696969;
-	letter-spacing: 1px;
 }
 
-/* --- 3.6. Logistics Area Six --- */
-.logistics_area_six{
+/* --- 3.7. Logistics Area Seven --- */
+.logistics_area_seven{
 	width: 100%;
 	margin: 0;
 	min-height: 400px;
 	padding: 6em 25px;
-	background-color: #eee;
+	background-color: #eeeeee;
 }
 
-.logistics_group_six{
+.logistics_group_seven{
 	max-width: 1200px;
 	width: 100%;
 	margin: 0 auto;
@@ -1212,7 +1223,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .blog_box{
 	position: relative;
-	max-width: 400px;
+	max-width: 350px;
 	margin: auto;
 	text-align: center;
 	padding: 25px 20px;
@@ -1298,20 +1309,19 @@ a.blog_btn::after{
 	line-height: 1.5em;
 }
 
-/* --- 3.7. Logistics Area Seven --- */
-.logistics_area_seven{
+/* --- 3.8. Logistics Area Eight --- */
+.logistics_area_eight{
 	width: 100%;
 	min-height: 100px;
 	margin-bottom: 9em;
 	background-color: #1A2980;
 }
 
-.logistics_group_seven{
+.logistics_group_eight{
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
 	padding: 20px;
-	border-bottom: solid 1px #e0e0e0;
 }
 
 .count_col{
@@ -1327,7 +1337,7 @@ a.blog_btn::after{
 	padding: 0 25px;
 }
 
-.fourth_border{
+.fourth_line{
 	border-right: none;
 }
 
@@ -1351,15 +1361,14 @@ a.blog_btn::after{
 	color: #ffffff;
 	letter-spacing: 1px;
 }
-
-/* --- 3.8. Logistics Area Eight --- */
-.logistics_area_eight{
+/* --- 3.9. Logistics Area Nine --- */
+.logistics_area_nine{
 	max-width: 1000px;
 	margin: 0 auto 9em;
-	padding: 0 10px;
+	padding: 0 25px;
 }
 
-.logistics_group_eight{
+.logistics_group_nine{
 	width: 100%;
 	text-align: center;
 }
@@ -1468,20 +1477,21 @@ a.blog_btn::after{
 	margin: 6px 0.40rem;
 }
 
-/* --- 3.9. Logistics Area Nine --- */
-.logistics_area_nine{
-	position: relative;
-	min-height: 400px;
-	height: 100%;
-	text-align: center;
+/* --- 3.10. Logistics Area Ten --- */
+.logistics_area_ten{
+	width: 100%;
+	margin: 0 0 2em;
+	min-height: 350px;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
+	padding: 6em 0;
 }
 
-.logistics_area_nine::before {
+.logistics_area_ten::before {
 	content: '';
 	position: absolute;
+	z-index: 1;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -1489,93 +1499,131 @@ a.blog_btn::after{
 	background: rgba(24, 25, 34, 0.5);
 }
 
-/* --- 3.10. Logistics Area Ten --- */
-.logistics_area_ten{
-	max-width: 1000px;
-	margin: 0 auto;
-	padding: 0 35px;
-	margin-top:  -250px;
-}
-
 .logistics_group_ten{
-	width: 100%;
-	padding: 30px 0;
-	background-color: #ffffff;
-	margin-top: 40px;
-}
-
-.register_col{
-	max-width: 850px;
+	max-width: 1200px;
 	margin: auto;
-	padding: 0 25px 0;
+	padding: 0 25px;
 	position: relative;
+	z-index: 9;
 }
 
-.register_box{
+.form_group{
 	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.logistics_form_col{
+	position: relative;
+	flex: 50%;
+	width: 50%;
 }
 
 .form_area{
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	flex-direction: row;
+	justify-content: flex-start;
 	align-items: center;
 }
 
-.register_box h3{
+.form_col_box{
+	max-width: 450px;
+	text-align: left;
+}
+
+.form_col_box h2{
 	font-family: 'Raleway' , Arial, sans-serif;
-	font-size: 20px;
+	font-size: 40px;
 	font-weight: 700;
 	letter-spacing: 1px;
-	text-align: center;
+	text-align: left;
 	display: block;
-	color: #111111;
-	line-height: 1.4em;
+	color: #ffffff;
+	line-height: 1.3em;
 }
 
-.form-row{
+.form_col_box p{
+	font-family: 'Roboto' , Arial, sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	display: block;
+	color: #f2f2f2;
+	letter-spacing: 1px;
+	text-align: left;
+	padding: 12px 0;
+	line-height: 1.5em;
+}
+
+.form-box{
+	text-align: right;
+	display: block;
+	max-width: 600px;
+}
+
+.form-row {
 	flex-direction: row;
 	display: flex;
-	width: 100%;
 }
 
-.register_box input[type="text"],
-.register_box input[type="email"],
-.register_box input[type="password"]{
+.form-box input[type="text"],
+.form-box input[type="email"],
+.form-box input[type="password"]{
 	font-family: 'Raleway' , Arial, sans-serif;
 	font-size: 13px;
-	padding: 4px 20px;
+	padding: 7px 20px;
 	height: 40px;
 	border: none;
-	margin: 0 15px 20px;
-	border-bottom: solid 1px #111111;
+	margin: 8px 0;
+	border: solid 1px #e0e0e0;
 	flex-grow: 1;
 	letter-spacing: 1px;
 	transition: 0.5s;
+	background: transparent;
+	color: #ffffff;
 }
 
-.register_box input[type="submit"]{
-	display: block;
-	margin: 18px 0 0;
-	margin-left: 15px;
+.form-box textarea{
+	font-family: 'Raleway' , Arial, sans-serif;
+	font-size: 13px;
+	padding: 7px 20px;
+	border: none;
 	width: auto;
-	padding: 10px 30px;
-	text-align: center;
-	font-family: 'Raleway', Arial, sans-serif;
-	font-size: 16px;
-	font-weight: normal;
+	min-height: 125px;
+	margin: 8px 0;
+	border: solid 1px #e0e0e0;
+	flex-grow: 1;
+	letter-spacing: 1px;
+	transition: 0.5s;
+	background: transparent;
 	color: #ffffff;
-	border-radius: 5px;
+}
+
+.form-box input[type="text"]:focus,
+.form-box input[type="email"]:focus,
+.form-box textarea:focus{
+	outline: none;
+}
+
+.form-box input[type="submit"]{
+	margin: 8px 0;
+	width: 100%;
+	padding: 10px 0;
+	text-align: center;
+	font-family: 'Raleway' , Arial, sans-serif;
+	font-size: 14px;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #ffffff;
 	letter-spacing: 1px;
 	background-color: #1A2980;
 	border: solid 1px #1A2980;
 	transition: 0.5s;
 }
 
-.register_box input[type="submit"]:hover{
-	background-color: #111111;
-	color: #ffffff;
-	border: solid 1px #111111;
+.form-box input[type="submit"]:hover{
+	background-color: #ffffff;
+	color: #111111;
+	border-color: #ffffff;
 }
 
 /* 4. FOOTER
@@ -1768,23 +1816,48 @@ a.footer-brand img{
 		height: auto;
 	}
 	
-	.info_col,
-	.slide_col{
-		flex: 100%;
-		width: 100%;
-		margin-top: 40px;
-	}
-	
-	.logistics_wide_col{
-		flex: 100%;
-		width: 100%;
-		border-right: none;
+	.logistics_icon_col{
+		flex: 50%;
+		width: 50%;
 		margin-bottom: 40px;
 	}
 	
+	.square_col{
+		flex: 100%;
+		width: 100%;
+		max-width: 350px;
+	}
+	
+	.logistics_group_two{
+		max-width: 350px;
+		margin: auto;
+	}
+	
+	.logistics_wide_col,
 	.logistics_box_col{
 		flex: 100%;
 		width: 100%;
+		padding: 0;
+	}
+	
+	.wide_box{
+		margin-bottom: 40px;
+	}
+	
+	.num_col{
+		flex: 50%;
+		width: 50%;
+	}
+	
+	.question_col{
+		flex: 100%;
+		width: 100%;
+	}
+	
+	.info_col{
+		flex: 100%;
+		width: 100%;
+		margin-bottom: 40px;
 	}
 	
 	.blog_col{
@@ -1808,8 +1881,8 @@ a.footer-brand img{
 		transform: translateX(-50%);
 	}
 	
-	.navbar-header h2{
-		margin-top: 7px;
+	.navbar-header a.navbar-brand{
+		padding-top: 22px;
 	}
 	
 	nav.navbar.bootsnav ul.nav > li > a{
@@ -1879,43 +1952,29 @@ a.footer-brand img{
 		font-size: 60px;
 	}
 	
-	.slide_info{
-		flex: 100%;
-		width: 100%;
-	}
-	
-	.slide_photo{
-		flex: 100%;
-		width: 100%;
-		max-width: 450px;
-		margin: auto;
-		margin-top: 40px;	
-	}
-	
-	.logistics_grid_col{
-		flex: 50%;
-		width: 50%;
-	}
-	
-	.question_col{
+	.panel_col{
 		flex: 100%;
 		width: 100%;
 		max-width: 600px;
-		margin: auto;
-	}
-	
-	.question_box{
-		margin-top: 40px;
 	}
 	
 	.count_col{
 		flex: 50%;
 		width: 50%;
-		margin-bottom: 30px;
+		margin: 20px 0;
 	}
 	
-	.second_border{
+	.second_line{
 		border-right: none;
+	}
+	
+	.logistics_form_col{
+		flex: 100%;
+		width: 100%;
+	}
+	
+	.form_area{
+		margin-bottom: 25px;
 	}
 	
 	.footer_col{
@@ -1929,7 +1988,8 @@ a.footer-brand img{
 	.info_box h2,
 	.bg_head,
 	.wide_box h2,
-	.question_box h2{
+	.question_box h2,
+	.form_col_box h2{
 		font-size: 30px;
 	}
 	
@@ -1945,9 +2005,16 @@ a.footer-brand img{
 		margin-left: 0;
 	}
 	
-	.logistics_grid_col{
+	.logistics_icon_col{
 		flex: 100%;
 		width: 100%;
+	}
+	
+	.box_group_col{
+		flex: 100%;
+		width: 100%;
+		padding: 0;
+		margin-bottom: 30px;
 	}
 	
 	.num_col{
@@ -1965,18 +2032,9 @@ a.footer-brand img{
 		width: 100%;
 	}
 	
-	.first_border,
-	.third_border{
+	.first_line,
+	.third_line{
 		border-right: none;
-	}
-	
-	.form-row{
-		flex-direction: column;
-	}
-	
-	.register_col{
-		max-width: 500px;
-		padding: 0 15px;
 	}
 	
 	.footer_col{
@@ -1990,52 +2048,14 @@ a.footer-brand img{
 		font-size: 45px;
 	}
 	
-	.info_col,
-	.slide_col,
-	.slide_info,
-	.slide_photo,
-	.logistics_wide_col,
-	.logistics_bol_col,
+	.logistics_icon_col,
+	.square_col,
 	.wide_box,
-	.question_col,
-	.question_box,
+	.num_col,
+	.info_box,
+	.panel_col,
 	.blog_col{
-		padding: 0;
-	}
-	
-	.slide_box{
-		border: solid 1px #e0e0e0;
-	}
-	
-}
-
-@media only screen and (max-width: 360px){
-	.list_num > h4{
-		font-size: 20px;
-		margin-top: 24px;
-	}
-	
-	.list_num{
-		max-width: 68px;
-		height: 68px;
-	}
-}
-
-@media only screen and (max-width: 320px){
-	.list_num{
-		max-width: 58px;
-		height: 58px;
-	}
-	
-	.list_num > h4{
-		margin-top: 18px;
-	}
-	
-	.num_info h3{
-		font-size: 16px;
-	}
-	
-	.num_info{
-		padding-left: 10px;
+		padding-left: 0;
+		padding-right: 0;
 	}
 }
