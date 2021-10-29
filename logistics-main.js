@@ -23,14 +23,24 @@ $(document).ready(function(){
 		slidesToShow: 3,
 		slidesToScroll: 1,
 		arrows: false,
-		autoplay: true,
+		autoplay: false,
 		speed: 1000,
 		pauseOnHover: false,
 		pauseOnFocus: false,
 		responsive: [
 			{
-				breakpoint: 801,
-				settings: {
+				breakpoint: 993,
+				settings: 
+				{
+					slidesToShow: 2,
+       
+				}	
+			},
+			
+			{
+				breakpoint: 601,
+				settings: 
+				{
 					slidesToShow: 1,
        
 				}	
