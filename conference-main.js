@@ -59,7 +59,7 @@ $(document).ready(function(){
 			},
 			
 			{
-				breakpoint: 801,
+				breakpoint: 769,
 				settings: {
 					slidesToShow: 1,
        
@@ -72,7 +72,7 @@ $(document).ready(function(){
 //Count down script
 $(document).ready(function(){
 	// Set the date we're counting down to
-	var countDownDate = new Date("October 31, 2021 15:37:25").getTime();
+	var countDownDate = new Date("February 08, 2022 15:37:25").getTime();
 
 	// Update the count down every 1 second
 	var countdownfunction = setInterval(function() {
