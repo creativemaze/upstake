@@ -3,8 +3,8 @@ Main Stylesheet
 
 Project:    Highpoint Corporate Template
 Version:    1.0
-Last change:    25/7/2021
-Author:    Themewiz
+Last change:    31/10/2021
+Author:     creativemaze
 Primary use:    E-Learning
 -------------------------------------------------------------------*/
 
@@ -123,22 +123,28 @@ ul{
  ----------- */
  
 /* --- 2.1. Logo & Navigation --- */
-.navbar-header h2{
+nav.navbar.bootsnav .navbar-brand{
+    max-width: 200px !important; 	
+}
+
+.navbar-header a.navbar-brand{
+	text-decoration: none;
+	color: #111111;
+	transition: 0.5s;
 	font-family: 'Montserrat', Arial, sans-serif;
 	font-size: 22px;
 	font-weight: 700;
 	letter-spacing: 1px;
 	text-transform: uppercase;
+	padding-top: 28px;
 }
 
-.navbar-header a.navbar-brand{
-	text-decoration: none;
-	color: #111111 !important;
-	transition: 0.5s;
+.navbar-header a.navbar-brand:hover{
+	color: #111111;
 }
 
 nav.navbar .navbar-brand img.logo{
-   max-width: 200px;
+   width: 100%;
    height: auto;
    display: block;
 }
@@ -480,7 +486,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	flex-direction: column;
 	max-width: 500px;
 	align-items: center;
-	margin: 0 auto;
+	margin: 0;
 }
 
 .slide__box{
@@ -500,7 +506,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .slide__box p{
 	font-family: 'Roboto' , Arial, sans-serif;
-	font-size: 16px;
+	font-size: 18px;
 	font-weight: normal;
 	display: block;
 	color: #f2f2f2;
@@ -564,8 +570,9 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	padding: 10px 20px;
 	text-align: center;
 	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 16px;
-	font-weight: normal;
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: 500;
 	color: #ffffff;
 	border-radius: 3px;
 	letter-spacing: 1px;
@@ -1067,7 +1074,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	width: auto;
 	display: inline-block;
 	overflow: hidden;
-	padding: 12px 18px;
+	padding: 10px 16px;
 	color: #111111;
 	cursor: pointer;
 	border: solid 1px #111111;
@@ -1100,7 +1107,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 /* --- 3.4. E-Learning Area Four --- */
 .elearning_area_four{
-	max-width: 1280px;
+	max-width: 1400px;
 	min-height: 300px;
 	margin: 0 auto 9em;
 	margin-top:  -325px;
@@ -1181,6 +1188,18 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	transition: ease-in-out 0.5s;
 }
 
+.ratings_icon{
+	text-align: center;
+	width: 100%;
+	padding: 8px 0;
+	display: block;
+}
+
+.ratings_icon .fas{
+	font-size: 13px;
+	color: #1488CC;
+}
+
 .popular_box .popular_image > img{
 	transition: ease-in-out 1.25s;
 }
@@ -1249,7 +1268,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	width: 180px;
 	min-height: 25px;
 	margin: auto;
-	margin-top: 40px;	
+	margin-top: 45px;	
     border: none;
     color: #ffffff;
     padding: 14px 16px;
@@ -1303,7 +1322,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .download_content{
 	width: 100%;
-	padding: 35px 20px 35px;
+	padding: 30px 20px 30px;
 	transition: 0.5s;
 	overflow: hidden;
 	cursor: pointer;
@@ -1335,7 +1354,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 .download_icon .fas,
 .download_icon .far,
 .download_icon .fab{
-	font-size: 40px;
+	font-size: 35px;
 	color: #1488CC;
 	text-align: center;
 	display: block;
@@ -1353,13 +1372,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	padding: 10px 0;
 }
 
-.download_crumb{
-	width: 150px;
-	height: 1px;
-	display: block;
-	border-bottom: solid 2px #111111;
-}
-
 .download_button > a{
 	font-family: 'Montserrat' , Arial, sans-serif;
 	font-size: 13px;
@@ -1368,12 +1380,10 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	text-align: left;
 	display: block;
 	text-transform: uppercase;
-	border-bottom: solid 2px #111111;
 	color: #111111;
 	text-decoration: none;
 	width: 150px;
 	transition: 0.5s;
-    cursor: pointer;
 }
 
 .download_button > a::after{
@@ -1582,9 +1592,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 .client_content{
 	max-width: 300px;
 	margin: auto;
-	height: auto;
 	padding: 10px;
-	overflow: hidden;
 }
 
 .client_name{
@@ -1602,7 +1610,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 .client_title{
 	font-family: 'Montserrat' , Arial, sans-serif;
 	font-size: 14px;
-	font-weight: 500;
+	font-weight: 600;
 	display: block;
 	color: #1488CC;
 	letter-spacing: 1px;
@@ -1625,17 +1633,21 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 /* --- 3.8. E-Learning Area Eight --- */
 .elearning_area_eight{
-	max-width: 1280px;
-	margin: 0 auto 9em;
-	padding: 0 30px;
-	position: relative;
+	width: 100%;
+	margin: 0;
+	min-height: 400px;
+	padding: 7em 25px;
+	background-color: #eeeeee;
 }
 
 .elearning_group_eight{
+	max-width: 1280px;
 	width: 100%;
+	margin: 0 auto;
 	display: flex;
 	flex-wrap: wrap;
 	padding-top: 30px;
+	padding-bottom: 30px;
 }
 
 .blog_col{
@@ -1661,14 +1673,17 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 .blog_area{
 	overflow: hidden;
 	position: relative;
+	padding-bottom: 12px;
+	padding-right: 12px;
+	padding-top: 12px;
+	padding-left: 12px;
 	background-color: #ffffff;
 }
 
 .blog_content{
-	padding: 15px 0 0;
+	padding: 20px 0;
 	text-align: left;
 	padding-left: 15px;
-	padding-right: 5px;
 }
 
 .blog_date{
@@ -2151,7 +2166,7 @@ a.footer-brand img{
 	.popular_col{
 		flex: 50%;
 		width: 50%;
-		margin-bottom: 40px;
+		margin: 20px 0;
 	}
 	
 	.second_border{
@@ -2201,8 +2216,8 @@ a.footer-brand img{
 		transform: translateX(-50%);
 	}
 	
-	.navbar-header h2{
-		margin-top: 7px;
+	.navbar-header a.navbar-brand{
+		padding-top: 22px;
 	}
 	
 	nav.navbar.bootsnav ul.nav > li > a{
@@ -2288,13 +2303,6 @@ a.footer-brand img{
 		padding: 50px 0;
 	}
 	
-	.first_left{
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-	}
-	
 	.slide__left{
 		padding-top: 200px;
 	}
@@ -2307,11 +2315,7 @@ a.footer-brand img{
 	.count_col{
 		flex: 50%;
 		width: 50%;
-		margin-bottom: 40px;
-	}
-	
-	.second_border{
-		border-right: none;
+		margin: 15px 0;
 	}
 	
 	.second_circle::before{
@@ -2329,6 +2333,26 @@ a.footer-brand img{
 }
 
 @media only screen and (max-width: 600px){
+	.head-form{
+		flex-direction: column;
+	}
+	
+	.head-form{
+		max-width: 250px;
+		margin: auto;
+	}
+	
+	.head-form input[type="text"],
+	.head-form input[type="password"]{
+		margin-bottom: 18px;
+	}
+	
+	.head-form input[type="submit"]{
+		margin-bottom: 18px;
+		max-width: calc(250px - 14px);
+		margin: auto;
+	}
+	
 	.slide__box h2{
 		font-size: 30px;
 	}
@@ -2380,6 +2404,11 @@ a.footer-brand img{
 		padding: 0 25px;
 	}
 	
+	.client_col{
+		flex: 100%;
+		width: 100%;
+	}
+	
 	.blog_col{
 		flex: 100%;
 		width: 100%;
@@ -2422,26 +2451,6 @@ a.footer-brand img{
 		padding: 25px;
 	}
 	
-	.head-form{
-		flex-direction: column;
-	}
-	
-	.head-form{
-		max-width: 250px;
-		margin: auto;
-	}
-	
-	.head-form input[type="text"],
-	.head-form input[type="password"]{
-		margin-bottom: 18px;
-	}
-	
-	.head-form input[type="submit"]{
-		margin-bottom: 18px;
-		max-width: calc(250px - 14px);
-		margin: auto;
-	}
-	
 	.popular_col,
 	.elearning_download_col,
 	.blog_col,
@@ -2450,11 +2459,6 @@ a.footer-brand img{
 	.review_box{
 		padding-left: 0;
 		padding-right: 0;
-	}
-	
-	.client_col{
-		flex: 100%;
-		width: 100%;
 	}
 	
 	.col_head h3{
