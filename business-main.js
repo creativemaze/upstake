@@ -38,7 +38,7 @@ $(document).ready(function(){
 		pauseOnFocus: false,
 		responsive: [
 			{
-				breakpoint: 769,
+				breakpoint: 801,
 				settings: {
 					slidesToShow: 1,
        
