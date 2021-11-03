@@ -3,8 +3,8 @@ Main Stylesheet
 
 Project:    Highpoint Corporate Template
 Version:    1.0
-Last change:    29/07/2021
-Author:    Themewiz
+Last change:    02/11/2021
+Author:    creativemaze
 Primary use:    Small Business
 -------------------------------------------------------------------*/
 
@@ -125,22 +125,28 @@ ul{
  ----------- */
  
 /* --- 2.1. Logo & Navigation --- */
-.navbar-header h2{
+nav.navbar.bootsnav .navbar-brand{
+    max-width: 200px !important; 	
+}
+
+.navbar-header a.navbar-brand{
+	text-decoration: none;
+	color: #111111;
+	transition: 0.5s;
 	font-family: 'Montserrat', Arial, sans-serif;
 	font-size: 22px;
 	font-weight: 700;
 	letter-spacing: 1px;
 	text-transform: uppercase;
+	padding-top: 28px;
 }
 
-.navbar-header a.navbar-brand{
-	text-decoration: none;
-	color: #111111 !important;
-	transition: 0.5s;
+.navbar-header a.navbar-brand:hover{
+	color: #111111;
 }
 
 nav.navbar .navbar-brand img.logo{
-   max-width: 200px;
+   width: 100%;
    height: auto;
    display: block;
 }
@@ -504,11 +510,9 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
  
 /* --- 3.1. Business Area One --- */
 .business_area_one{
-	width: 100%;
-	min-height: 150px;
-	margin: 9em auto 0;
-	margin-bottom: 9em;
-	position: relative;
+	max-width: 1600px;
+	margin: 9em auto 9em;
+	padding: 0 25px;
 }
 
 .business_group_one{
@@ -531,7 +535,8 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	overflow: hidden;
 	min-height: 150px;
 	transition: 0.5s;
-	margin-bottom: -82px;
+	margin: 0 auto -80px;
+	max-width: 400px;
 }
 
 .cube_image img{
@@ -556,7 +561,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .cube_col_box{
 	padding: 0 30px;
-	max-width: 450px;
+	max-width: 400px;
 	margin: auto;
 }
 
@@ -782,7 +787,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	width: auto;
 	display: inline-block;
 	overflow: hidden;
-	padding: 12px 18px;
+	padding: 10px 16px;
 	color: #83a4d4;
 	cursor: pointer;
 	border: solid 1px #83a4d4;
@@ -1006,8 +1011,8 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .team_content{
-	padding-top: 25px;
-	padding-bottom: 25px;
+	padding-top: 15px;
+	padding-bottom: 15px;
 	text-align: center;
 }
 
@@ -1063,8 +1068,9 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	letter-spacing: 1px;
 	text-align: center;
 	line-height: 1.4em;
-	padding-top: 18px;
-	padding-bottom: 18px;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	margin-top: 0;
 }
 
 /* --- 3.6. Business Area Six --- */
@@ -1152,11 +1158,11 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	margin: 0 0 9em;
 	min-height: 400px;
 	padding: 6.5em 25px;
-	background-color: #f6f6f6;
+	background-color: #eeeeee;
 }
 
 .business_group_seven{
-	max-width: 1400px;
+	max-width: 1280px;
 	width: 100%;
 	margin: 0 auto;
 	display: flex;
@@ -1168,7 +1174,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 .blog_col{
 	flex: 33.33%;
 	width: 33.33%;
-	padding: 0 30px;
+	padding: 0 20px;
 }
 
 .blog_box{
@@ -1194,25 +1200,22 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	padding-top: 12px;
 	padding-left: 12px;
 	background-color: #ffffff;
-	transition: ease-in-out 0.5s;
 }
 
 .blog_content{
-	padding: 25px 0;
 	text-align: left;
-	padding-left: 15px;
-	padding-right: 5px;
+	padding: 20px 0;
+	padding-left: 10px;
 }
 
 .date_info{
 	position: absolute;
-	top: 0;
+	bottom: 0;
 	left: 0;
 	margin-left: 15px;
-	margin-top: 15px;
+	margin-bottom: 15px;
 	background-color: #ffffff;
-	padding: 5px 20px;
-	border-radius: 4px;
+	padding: 8px 20px;
 }
 
 .date_info h4{
@@ -1224,6 +1227,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	text-align: center;
+	margin: 0;
 }
 
 .blog_date{
@@ -1256,7 +1260,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	text-align: left;
 	text-decoration: none;
 	transition: 0.5s;
-	line-height: 1.3em;
+	line-height: 1.4em;
 }
 
 a.blog_btn:hover,
@@ -1279,7 +1283,6 @@ a.blog_btn:hover,
 a.blog_btn{
 	max-width: 120px;	
     color: #111111;
-	border-bottom: solid 2px #111111;
     text-decoration: none;
 	text-transform: uppercase;
     display: inline-block;
@@ -1291,7 +1294,6 @@ a.blog_btn{
 	letter-spacing: 1px;
 	text-align: center;
 	line-height: 1.2em;
-	padding-bottom: 3px;
 }
 
 a.blog_btn::after{
@@ -1352,7 +1354,6 @@ a.blog_btn::after{
 	flex-direction: row;
 	justify-content: flex-start;
 	align-items: center;
-	overflow: hidden;
 }
 
 .square_box{
@@ -1395,7 +1396,7 @@ a.blog_btn::after{
 
 .client_box{
 	width: 100%;
-	padding: 30px;
+	padding: 40px 30px;
 	text-align: center;
 	display: block;
 	background-color: #ffffff;
@@ -1485,7 +1486,7 @@ a.blog_btn::after{
 	width: 1.3rem;
 	height: 1.3rem;
 	padding: 0;		
-	border: solid 1px #ffffff;
+	border: solid 1px #83a4d4;
 	border-radius: 100%;
 	background-color: transparent;
 	text-indent: -9999px;
@@ -1508,6 +1509,7 @@ a.blog_btn::after{
 	max-width: 1280px;
 	margin: 0 auto 2em;
 	padding: 0 35px;
+	position: relative;
 }
 
 .business_group_nine{
@@ -1526,7 +1528,7 @@ a.blog_btn::after{
 .col_info{
 	flex: 50%;
 	width: 50%;
-	margin-top: 15px;
+	margin-top: 35px;
 }
 
 .col_head h3{
@@ -1539,7 +1541,6 @@ a.blog_btn::after{
 	text-align: left;
 	line-height: 1.3em;
 	max-width: 500px;
-	margin-top: 0;
 }
 
 .subscribe-row{
@@ -1755,11 +1756,15 @@ a.footer-brand img{
 		position: relative;
 		flex: 100%;
 		width: 100%;
-		max-width: 750px;
+		max-width: 650px;
 	}
 	
 	.slide__box{
 		margin-bottom: 45px;
+	}
+	
+	.business_area_one{
+		max-width: 800px;
 	}
 	
 	.cube_col{
@@ -1769,10 +1774,6 @@ a.footer-brand img{
 	
 	.cube_name{
 		z-index: 999;
-	}
-	
-	.cube_box{
-		margin-bottom: -75px;
 	}
 	
 	.team_col{
@@ -1805,6 +1806,7 @@ a.footer-brand img{
 	.client_col{
 		flex: 100%;
 		width: 100%;
+		margin-top: 25px;
 	}
 	
 	.col_info{
@@ -1844,8 +1846,8 @@ a.footer-brand img{
 		transform: translateX(-50%);
 	}
 	
-	.navbar-header h2{
-		margin-top: 7px;
+	.navbar-header a.navbar-brand{
+		padding-top: 22px;
 	}
 	
 	nav.navbar.bootsnav ul.nav > li > a{
@@ -2042,9 +2044,12 @@ a.footer-brand img{
 	}
 	
 	.square_col,
-	.client_col,
-	.client_details{
+	.client_col{
 		padding: 0;
+	}
+	
+	.client_details{
+		padding: 0 10px;
 	}
 	
 	.col_head h3{
@@ -2068,11 +2073,19 @@ a.footer-brand img{
 }
 
 @media only screen and (max-width: 320px){
+	.cube_name{
+		width: 230px;
+	}
+	
 	.icon{
 		width: 10%;
 	}
 
 	.icon_content{
 		width: 90%;
+	}
+	
+	.col_head h3{
+		font-size: 20px;
 	}
 }
