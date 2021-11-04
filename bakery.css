@@ -3,8 +3,8 @@ Main Stylesheet
 
 Project:    Highpoint Corporate Template
 Version:    1.0
-Last change:    31/07/2021
-Author:    Themewiz
+Last change:    04/11/2021
+Author:    creativemaze
 Primary use:    Bakery
 -------------------------------------------------------------------*/
 
@@ -119,22 +119,28 @@ ul{
 /* 2. HEADER
  ----------- */
 /* --- 2.1. Logo & Navigation --- */
-.navbar-header h2{
+nav.navbar.bootsnav .navbar-brand{
+    max-width: 200px !important; 	
+}
+
+.navbar-header a.navbar-brand{
+	text-decoration: none;
+	color: #ffffff;
+	transition: 0.5s;
 	font-family: 'Raleway', Arial, sans-serif;
 	font-size: 22px;
 	font-weight: 700;
 	letter-spacing: 1px;
 	text-transform: uppercase;
+	padding-top: 28px;
 }
 
-.navbar-header a.navbar-brand{
-	text-decoration: none;
-	color: #ffffff !important;
-	transition: 0.5s;
+.navbar-header a.navbar-brand:hover{
+	color: #ffffff;
 }
 
 nav.navbar .navbar-brand img.logo{
-   max-width: 200px;
+   width: 100%;
    height: auto;
    display: block;
 }
@@ -1278,7 +1284,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	margin: 0;
 	min-height: 400px;
 	padding: 6em 25px;
-	background-color: #f6f6f6;
+	background-color: #eeeeee;
 }
 
 .bakery_group_six{
@@ -1300,11 +1306,10 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 .blog_box{
 	max-width: 400px;
 	position: relative;
-	text-align: left;
+	text-align: center;
 	overflow: hidden;
 	margin: auto;
 	min-height: 150px;
-	transition: 0.5s;
 }
 
 .blog_image{
@@ -1320,7 +1325,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	padding-top: 12px;
 	padding-left: 12px;
 	background-color: #ffffff;
-	transition: ease-in-out 0.5s;
 }
 
 .blog_content{
@@ -1524,7 +1528,7 @@ a.blog_btn:hover .blog_crumb{
 
 .client_box{
 	width: 100%;
-	padding: 20px 30px;
+	padding: 30px;
 	overflow: hidden;
 	text-align: center;
 	display: block;
@@ -1646,7 +1650,6 @@ li.slick-active button{
 .slick-dots li{
 	margin: 6px 0.40rem;
 }
-
 
 /* --- 3.9. Bakery Area Nine --- */
 .bakery_area_nine{
@@ -1973,8 +1976,8 @@ a.footer-brand img{
 		transform: translateX(-50%);
 	}
 	
-	.navbar-header h2{
-		margin-top: 7px;
+	.navbar-header a.navbar-brand{
+		padding-top: 22px;
 	}
 	
 	nav.navbar.bootsnav ul.nav > li > a{
@@ -2084,13 +2087,13 @@ a.footer-brand img{
 	
 	.first_flip,
 	.second_flip{
-		margin-bottom: 75px;
+		margin-bottom: 90px;
 	}
 	
 	.count_col{
 		flex: 50%;
 		width: 50%;
-		margin: 30px 0;
+		margin: 25px 0;
 	}
 	
 	.second_border{
@@ -2100,6 +2103,10 @@ a.footer-brand img{
 	.bakery_form_col{
 		flex: 100%;
 		width: 100%;
+	}
+	
+	.form_area{
+		margin-bottom: 25px;
 	}
 	
 	.footer_col{
@@ -2135,6 +2142,16 @@ a.footer-brand img{
 		width: 100%;
 	}
 	
+	.count_col{
+		flex: 100%;
+		width: 100%;
+	}
+	
+	.first_border,
+	.third_border{
+		border-right: none;
+	}
+	
 	.footer_col{
 		flex: 100%;
 		width: 100%;
@@ -2159,16 +2176,6 @@ a.footer-brand img{
 	.wide_box,
 	.blog_col{
 		padding: 0;
-	}
-	
-	.count_col{
-		flex: 100%;
-		width: 100%;
-	}
-	
-	.first_border,
-	.third_border{
-		border-right: none;
 	}
 }
 
