@@ -3,8 +3,8 @@ Main Stylesheet
 
 Project:    Highpoint Corporate Template
 Version:    1.0
-Last change:    14/08/2021
-Author:    Themewiz
+Last change:    04/11/2021
+Author:    creativemaze
 Primary use:    Scientific Research
 -------------------------------------------------------------------*/
 
@@ -23,6 +23,7 @@ Primary use:    Scientific Research
 	3.5. Research Area Five
 	3.6. Research Area Six
 	3.7. Research Area Seven
+	3.8. Research Area Eight
 	 
 4. Footer
 5. Responsive
@@ -118,22 +119,28 @@ ul{
  ----------- */
  
 /* --- 2.1. Logo & Navigation --- */
-.navbar-header h2{
+nav.navbar.bootsnav .navbar-brand{
+    max-width: 200px !important; 	
+}
+
+.navbar-header a.navbar-brand{
+	text-decoration: none;
+	color: #111111;
+	transition: 0.5s;
 	font-family: 'Montserrat', Arial, sans-serif;
 	font-size: 22px;
 	font-weight: 700;
 	letter-spacing: 1px;
 	text-transform: uppercase;
+	padding-top: 28px;
 }
 
-.navbar-header a.navbar-brand{
-	text-decoration: none;
-	color: #111111 !important;
-	transition: 0.5s;
+.navbar-header a.navbar-brand:hover{
+	color: #111111;
 }
 
 nav.navbar .navbar-brand img.logo{
-   max-width: 200px;
+   width: 100%;
    height: auto;
    display: block;
 }
@@ -513,12 +520,12 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 .prev_button,
 .next_button{
 	width: auto;
-	font-size: 18px;
+	font-size: 14px;
 	transition: 0.6s ease;
 	border-radius: 0 3px 3px 0;
 	background-color: transparent;
 	display: block;
-	padding: 10px 20px;
+	padding: 10px 16px;
 	color: #ffffff;
 	cursor: pointer;
 	border: solid 1px #ffffff;
@@ -536,7 +543,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
  
 /* --- 3.1. Research Area One --- */
 .research_area_one{
-	max-width: 1280px;
+	max-width: 1200px;
 	margin: 9em auto 9em;
 	padding: 0 25px;
 	position: relative;
@@ -548,45 +555,43 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	flex-wrap: wrap;
 }
 
-.research_num_col{
+.research_check_col{
 	flex: 33.33%;
 	width: 33.33%;
 	padding: 0 25px;
 }
 
-.research_col_box{
-	max-width: 400px;
+.research_check_box{
+	max-width: 350px;
 	margin: auto;
-	text-align: left;
-	overflow: auto;
-	background-color: transparent;
-	transition: ease-in-out 0.5s;
-}
-
-.research_num{
-	float: left;
-	width: 25%;
-}
-
-.research_num h3{
-	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 45px;
-	font-weight: normal;
-	display: block;
-	color: #1488CC;
-	text-transform: uppercase;
-	letter-spacing: 1px;
 	text-align: center;
-	margin-top: 0;
 }
 
-.research_col_content{
+.research_check{
 	float: left;
-	width: 75%;
-	padding-left: 12px;
+	width: 10%;
+	margin-top: 6px;
 }
 
-.research_col_content h3{
+.research_check_content{
+	float: left;
+	width: 90%;
+	padding-left: 25px;
+}
+
+.research_checkbox::before{
+	font-family: 'Font Awesome 5 Free';
+	content: "\f00c";
+	font-weight: 900;
+	font-size: 15px;
+	border: solid 1px #1488CC;
+	border-radius: 50%;
+	padding: 12px;
+	color: #ffffff;
+	background-color: #1488CC;
+}
+
+.research_check_content h3{
 	font-family: 'Montserrat' , Arial, sans-serif;
 	font-size: 20px;
 	font-weight: 600;
@@ -599,7 +604,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	line-height: 1.4em;
 }
 
-.research_col_content p{
+.research_check_content p{
 	font-family: 'Roboto' , Arial, sans-serif;
 	font-size: 15px;
 	font-weight: normal;
@@ -607,53 +612,22 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	color: #696969;
 	letter-spacing: 1px;
 	text-align: left;
-	padding-top: 10px;
 	line-height: 1.5em;
+	padding-top: 10px;
 }
 
 /* --- 3.2. Research Area Two --- */
 .research_area_two{
-	width: 100%;
-	margin: 0 0 9em;
-	min-height: 400px;
-	padding: 5em 25px;
-	background-color: #1488CC;
+	max-width: 1280px;
+	margin: 0 auto 9em;
+	padding: 0 30px;
 }
 
 .research_group_two{
-	max-width: 1280px;
 	width: 100%;
-	margin: 0 auto;
 	display: flex;
 	flex-wrap: wrap;
 	padding-top: 40px;
-	padding-bottom: 50px;
-}
-
-.bg_head{
-	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 40px;
-	font-weight: 700;
-	display: block;
-	color: #ffffff;
-	display: block;
-	text-align: center;
-	letter-spacing: 1px;
-	line-height: 1.3em;
-}
-
-.bg_info{
-	max-width: 600px;
-	margin: 0 auto;
-	font-family: 'Roboto' , Arial, sans-serif;
-	font-size: 16px;
-	font-weight: normal;
-	display: block;
-	color: #f2f2f2;
-	letter-spacing: 1px;
-	text-align: center;
-	padding: 10px 10px 0;
-	line-height: 1.5em;
 }
 
 .research_grid_col{
@@ -685,16 +659,12 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 .research_grid_area{
 	overflow: hidden;
 	position: relative;
-	padding-bottom: 10px;
-	padding-right: 10px;
-	padding-top: 10px;
-	padding-left: 10px;
 	background-color: #ffffff;
 }
 
 .research_content{
 	position: relative;
-	padding: 30px 15px;
+	padding: 30px 15px 0;
 	text-align: center;
 	width: 100%;
 }
@@ -733,43 +703,101 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 /* --- 3.3. Research Area Three --- */
 .research_area_three{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 400px;
+	margin: 0 0 9em;
+	background-color: #1488CC;
+	height: 100%;
+}
+
+.research_group_three{
 	max-width: 1400px;
-	padding: 0 25px;
 	margin: 0 auto;
-	margin-bottom: calc(9em + 40px);
+	padding: 0;
 	position: relative;
 }
 
-.research_group_three,
-.slider_col{
+.icon_area{
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
 }
 
-.slider_col{
-	min-height: 400px;
-	height: 100%;
+.icon_col{
+	flex: 25%;
+	width: 25%;
+	padding: 0 45px;
+	border-right: solid 1px #e0e0e0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
-.square_slide{
-	position: relative;
-	min-height: 400px;
-	height: 100%;
-	padding: 10px;
+.fourth_border{
+	border-right: none;
 }
 
-.square_slider{
-	max-width: 1000px;
-	margin: 0 auto;
+.icon_box{
+	max-width: 350px;
+	margin: auto;
+	padding: 0;
+	text-align: left;
+	background: transparent;
+}
+
+.icon_box .fas,
+.icon_box .far{
+	font-size: 40px;
+	color: #ffffff;
+	text-align: left;
+	display: block;
+}
+
+.icon_box h3{
+	color: #ffffff;
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 18px;
+	font-weight: 600;
+	display: block;
+	text-align: left;
+	letter-spacing: 1px;
+	line-height: 1.4em;
+}
+
+.icon_box p{
+	font-family: 'Roboto' , Arial, sans-serif;
+	font-size: 15px;
+	font-weight: normal;
+	padding-top: 10px;
+	display: block;
+	color: #f2f2f2;
+	letter-spacing: 1px;
+	text-align: left;
+	line-height: 1.5em;
+}
+/* --- 3.4. Research Area Four --- */
+.research_area_four{
+	max-width: 1400px;
+	padding: 0 25px;
+	margin: 0 auto 9em;
+}
+
+.research_group_four{
 	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .square_right_col{
 	flex: 66.66%;
 	width: 66.66%;
 	position: relative;
-	padding: 0;
+	padding: 0 15px;
 }
 
 .square_left_col{
@@ -779,119 +807,18 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	position: relative;
 }
 
-.photo_col{
-	flex: 66.66%;
-	width: 66.66%;
-	position: relative;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
-}
-
-.card_col{
-	flex: 33.33%;
-	width: 33.33%;
-	position: relative;
-	max-width: 400px;
-	position: relative;
-	height: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-
-.card_info .far,
-.card_info .fas{
-	font-size: 40px;
-	text-align: center;
-	display: block;
-	color: #1488CC;
-}
-
-.card_box{
-	min-height: 400px;
-	height: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	padding: 0 8px;
-}
-
-.card_info h3{
-	color: #111111;
-	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 18px;
-	font-weight: 600;
-	display: block;
-	text-transform: uppercase;
-	text-align: center;
-	letter-spacing: 1px;
-	line-height: 1.4em;
-}
-
-.card_info p{
-	font-family: 'Roboto' , Arial, sans-serif;
-	font-size: 15px;
-	font-weight: normal;
-	display: block;
-	color: #696969;
-	letter-spacing: 1px;
-	text-align: center;
-	line-height: 1.5em;
-	padding: 12px;
-}
-
-.card_button a{
-	width: 190px;
-    color: #1488CC;
-    text-decoration: none;
-	text-transform: uppercase;
-    display: block;
-    font-size: 13px;
-	font-weight: 600;
-	font-family: 'Montserrat', Arial, sans-serif;
-    transition: 0.5s;
-    cursor: pointer;
-	letter-spacing: 1px;
-	text-align: center;
-	margin: auto;
-}
-
-.card_button a:hover{
-	color: #111111;
-}
-
-.card_button a::after{
-	content: "\203A";
-	font-size: 20px;
-	margin: 0;
-	padding: 0;
-	display: inline-block;
-	height: auto;
-	padding-left: 5px;
-	top: 1px;
-	position: relative;
-}
-
-.photo_col img{
-	vertical-align: middle;
-	width: 100%;
-	height: 100%;
-	display: block;
-}
-
 .square_area{
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: flex-start;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
 }
 
 .square_box{
 	max-width: 450px;
 	margin: 0;
 	width: 100%;
-	padding-right: 25px;
+	padding: 0 20px;
 }
 
 .square_box > p{
@@ -915,6 +842,55 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	text-align: left;
 	letter-spacing: 1px;
 	line-height: 1.3em;
+}
+
+.square_image{
+	position: relative;
+}
+
+.square_slide{
+	padding: 0 15px;
+}
+
+.square_image img{
+	vertical-align: middle;
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.list_num{
+	position: absolute;
+	bottom: 20px;
+	left: 25px;
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 20px;
+	font-weight: 500;
+	display: block;
+	color: #1488CC;
+	text-transform: capitalize;
+	letter-spacing: 1px;
+	text-align: center;
+	background-color: #ffffff;
+	padding: 16px;
+	border-radius: 50%;
+}
+
+.info_title{
+	max-width: 200px;
+}
+
+.info_title h4{
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 15px;
+	font-weight: 600;
+	display: block;
+	color: #111111;
+	letter-spacing: 1px;
+	text-align: left;
+	line-height: 1.5em;
+	text-transform: uppercase;
+	padding-top: 8px;
 }
 
 .square_col_button a{
@@ -980,8 +956,9 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 .square_right_col .slick-dots li{
 	margin: 6px 0.40rem;
 }
-/* --- 3.4. Research Area Four --- */
-.research_area_four{
+
+/* --- 3.5. Research Area Five --- */
+.research_area_five{
 	position: relative;
 	display: flex;
 	flex-direction: column;
@@ -996,7 +973,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	padding: 5em 0;
 }
 
-.research_area_four::before {
+.research_area_five::before {
 	content: '';
 	position: absolute;
 	z-index: 1;
@@ -1007,7 +984,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	background: rgba(24, 25, 34, 0.6);
 }
 
-.research_group_four{
+.research_group_five{
 	max-width: 1400px;
 	width: 100%;
 	margin: 0 auto;
@@ -1184,16 +1161,16 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
   }
 }
 
-/* --- 3.5. Research Area Five --- */
-.research_area_five{
+/* --- 3.6. Research Area Six --- */
+.research_area_six{
 	width: 100%;
 	margin: 0;
 	min-height: 400px;
 	padding: 6em 25px;
-	background-color: #eee;
+	background-color: #eeeeee;
 }
 
-.research_group_five{
+.research_group_six{
 	max-width: 1200px;
 	width: 100%;
 	margin: 0 auto;
@@ -1258,7 +1235,7 @@ a.blog_btn:hover{
 a.blog_btn{
 	width: 120px;	
     border: none;
-    color: #1A2980;
+    color: #1488CC;
 	padding-top: 10px;
     text-decoration: none;
 	text-transform: uppercase;
@@ -1297,8 +1274,8 @@ a.blog_btn::after{
 	line-height: 1.5em;
 }
 
-/* --- 3.6. Research Area Six --- */
-.research_area_six{
+/* --- 3.7. Research Area Seven --- */
+.research_area_seven{
 	position: relative;
 	min-height: 350px;
 	height: 100%;
@@ -1306,19 +1283,45 @@ a.blog_btn::after{
 	margin: 0;
 }
 
-/* --- 3.7. Research Area Seven --- */
-.research_area_seven{
+/* --- 3.8. Research Area Eight --- */
+.research_area_eight{
 	max-width: 1280px;
-	margin: 0 auto;
+	margin: 0 auto 1em;
 	margin-top:  -240px;
 	position: relative;
 }
 
-.research_group_seven{
+.research_group_eight{
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
 	margin-top: 40px;
+}
+
+.bg_head{
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 40px;
+	font-weight: 700;
+	display: block;
+	color: #ffffff;
+	display: block;
+	text-align: center;
+	letter-spacing: 1px;
+	line-height: 1.3em;
+}
+
+.bg_info{
+	max-width: 600px;
+	margin: 0 auto;
+	font-family: 'Roboto' , Arial, sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	display: block;
+	color: #f2f2f2;
+	letter-spacing: 1px;
+	text-align: center;
+	padding: 10px 10px 0;
+	line-height: 1.5em;
 }
 
 .count_col{
@@ -1352,7 +1355,7 @@ a.blog_btn::after{
 .count_box .counter{
 	font-family: 'Montserrat' , Arial, sans-serif;
 	font-size: 25px;
-	font-weight: 600;
+	font-weight: 700;
 	display: block;
 	text-align: center;
 	color: #1488CC;
@@ -1556,20 +1559,25 @@ a.footer-brand img{
 		bottom: 0;
 	}
 	
+	.icon_col{
+		flex: 50%;
+		width: 50%;
+		margin: 30px 0;
+	}
+	
+	.second_border{
+		border-right: none;
+	}
+	
 	.square_left_col{
 		flex: 100%;
 		width: 100%;
-		position: relative;
 	}
 	
 	.square_right_col{
 		flex: 100%;
 		width: 100%;
 		margin-top: 40px;
-	}
-	
-	.square_box{
-		padding-right: 0;
 	}
 	
 	.blog_col{
@@ -1593,8 +1601,8 @@ a.footer-brand img{
 		transform: translateX(-50%);
 	}
 	
-	.navbar-header h2{
-		margin-top: 7px;
+	.navbar-header a.navbar-brand{
+		padding-top: 22px;
 	}
 	
 	nav.navbar.bootsnav ul.nav > li > a{
@@ -1669,11 +1677,10 @@ a.footer-brand img{
 		max-width: 500px;
 	}
 	
-	.research_num_col{
+	.research_check_col{
 		flex: 100%;
 		width: 100%;
-		padding: 0;
-		margin-bottom: 35px;
+		padding: 15px 0;
 	}
 	
 	.research_grid_col{
@@ -1718,23 +1725,19 @@ a.footer-brand img{
 		font-size: 30px;
 	}
 	
-	.photo_col,
-	.card_col{
+	.icon_col{
 		flex: 100%;
 		width: 100%;
-		max-width: 450px;
-		margin: auto;
 	}
 	
-	.card_box{
-		min-height: auto;
-		margin-bottom: 30px;
+	.first_border,
+	.third_border{
+		border-right: none;
 	}
 	
 	.blog_col{
 		flex: 100%;
 		width: 100%;
-		padding: 0;
 	}
 	
 	.list_col{
@@ -1764,12 +1767,11 @@ a.footer-brand img{
 	}
 	
 	.square_left_col,
-	.card_box{
-		padding: 0;
-	}
-	
-	.area_box h3{
-		font-size: 30px;
+	.square_right_col,
+	.square_box,
+	.blog_col{
+		padding-left: 0;
+		padding-right: 0;
 	}
 }
 
