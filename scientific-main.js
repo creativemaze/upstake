@@ -20,14 +20,22 @@ $(document).ready(function(){
 		autoplay: false,
 		infinite: true,
 		speed: 1000,
-		fade: true,
 		arrows: false,
 		pauseOnHover: false,
 		pauseOnFocus: false,
 		dots: true,
-		
+		slidesToShow: 2,
+		slidesToScroll: 1,
+		responsive: [
+			{
+				breakpoint: 601,
+				settings: {
+					slidesToShow: 1,
+       
+				}	
+			},
+		]
 	});
-	
 });
 
 //MagnificPopup Video
