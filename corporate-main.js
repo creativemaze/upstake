@@ -38,7 +38,6 @@ $(document).ready(function(){
 		speed: 1000,
 		pauseOnHover: false,
 		pauseOnFocus: false,
-		//centerMode: true,
 		responsive: [
 			
 			{
