@@ -3,7 +3,7 @@ Main Stylesheet
 
 Project:    Highpoint Corporate Template
 Version:    1.0
-Last change:    03/09/2021
+Last change:    10/11/2021
 Author:    creativemaze
 Primary use:    Finance
 -------------------------------------------------------------------*/
@@ -148,20 +148,20 @@ ul{
  ----------- */
  
 /* --- 2.1. Logo & Navigation --- */
-.navbar-header h2{
-	font-family: 'Montserrat', Arial, sans-serif;
-	font-size: 22px;
-	font-weight: 700;
-	letter-spacing: 1px;
-	text-transform: uppercase;
-	margin: 0;
-	padding-top: 12px;
+nav.navbar.bootsnav .navbar-brand{
+    max-width: 200px !important; 	
 }
 
 .navbar-header a.navbar-brand{
 	text-decoration: none;
 	color: #111111;
 	transition: 0.5s;
+	font-family: 'Montserrat', Arial, sans-serif;
+	font-size: 22px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	padding-top: 30px;
 }
 
 .navbar-header a.navbar-brand:hover{
@@ -169,7 +169,7 @@ ul{
 }
 
 nav.navbar .navbar-brand img.logo{
-   max-width: 200px;
+   width: 100%;
    height: auto;
    display: block;
 }
@@ -425,14 +425,14 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	justify-content:  center;
 	align-items: center;
 	height: 100vh;
-	min-height: 750px;
+	min-height: 700px;
 }
 
 .slide__content{
 	position: relative;
 	z-index: 1;
 	height: 100vh;
-	min-height: 750px;
+	min-height: 700px;
 	text-align: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -690,16 +690,11 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
-.square_box_info h4{
+.square_box_info .fas{
+	font-size: 35px;
 	color: #00cdac;
-	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 30px;
-	font-weight: 500;
 	display: block;
 	text-align: left;
-	letter-spacing: 1px;
-	transition: 0.5s;
-	line-height: 1.4em;
 }
 
 .square_box_info h3{
@@ -710,8 +705,8 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	display: block;
 	text-align: left;
 	letter-spacing: 1px;
-	transition: 0.5s;
 	line-height: 1.4em;
+	padding-top: 5px;
 }
 
 .square_box_info p{
@@ -723,12 +718,18 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	color: #696969;
 	letter-spacing: 1px;
 	text-align: left;
-	transition: 0.5s;
 	line-height: 1.5em;
 }
 
 .right_box{
 	background-color: #00cdac;
+}
+
+.right_box .fas{
+	font-size: 35px;
+	color: #ffffff;
+	display: block;
+	text-align: left;
 }
 
 .right_box h3,
@@ -747,6 +748,10 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	color: #ffffff;
 }
 
+.square_box_info:hover .fas{
+	color: #ffffff;
+}
+
 .right_box:hover{
 	background-color: #ffffff;
 }
@@ -758,6 +763,10 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .right_box:hover p{
 	color: #696969;
+}
+
+.right_box:hover .fas{
+	color: #00cdac;
 }
 
 /* --- 3.3. Finance Area Three --- */
@@ -831,7 +840,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 .right_content{
 	width: 85%;
 	float: left;
-	padding-left: 18px;
+	padding-left: 20px;
 }
 
 .left_content .fas,
@@ -840,6 +849,18 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	text-align: center;
 	display: block;
 	color: #00cdac;
+}
+
+.left_content h4{
+	color: #00cdac;
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 30px;
+	font-weight: 500;
+	display: block;
+	text-align: left;
+	letter-spacing: 1px;
+	line-height: 1.4em;
+	margin-top: 0;
 }
 
 .right_content h3{
@@ -852,6 +873,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	letter-spacing: 1px;
 	line-height: 1.4em;
 	margin-top: 0;
+	padding-top: 6px;
 }
 
 .right_content p{
@@ -1024,7 +1046,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	text-align: center;
 	letter-spacing: 1px;
 	line-height: 1.3em;
-	margin-top: 0;
 }
 
 .bg_info{
@@ -1303,7 +1324,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 .blog_content{
 	max-width: 350px;
 	text-align: left;
-	padding: 25px 10px 25px 25px;
+	padding: 25px 10px 0 25px;
 }
 
 .blog_date{
@@ -1316,6 +1337,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	letter-spacing: 1px;
 	text-align: left;
 	width: 250px;
+	margin-top: 0;
 }
 
 .blog_title a{
@@ -1427,7 +1449,7 @@ a.blog_btn::after{
 
 .form_col_box h2{
 	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 30px;
+	font-size: 40px;
 	font-weight: 500;
 	letter-spacing: 1px;
 	text-align: left;
@@ -1435,6 +1457,18 @@ a.blog_btn::after{
 	color: #111111;
 	line-height: 1.3em;
 	padding-bottom: 15px;
+}
+
+.form_col_box p{
+	font-family: 'Roboto' , Arial, sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	display: block;
+	color: #696969;
+	letter-spacing: 1px;
+	text-align: left;
+	padding: 12px 0;
+	line-height: 1.5em;
 }
 
 .form-box{
@@ -1530,6 +1564,7 @@ a.blog_btn::after{
 	width: 25%;
 	padding: 0 20px;
 	max-width: 300px;
+	margin: 0 auto;
 }
 
 .footer_col{
@@ -1742,8 +1777,8 @@ a.footer-brand img{
 		transform: translateX(-50%);
 	}
 	
-	.navbar-header h2{
-		padding-top: 5px;
+	.navbar-header a.navbar-brand{
+		padding-top: 22px;
 	}
 	
 	nav.navbar.bootsnav ul.nav > li > a{
@@ -1828,7 +1863,7 @@ a.footer-brand img{
 	}
 	
 	.form_area{
-		margin-bottom: 20px;
+		margin-bottom: 25px;
 	}
 	
 	.footer_col{
@@ -1844,7 +1879,8 @@ a.footer-brand img{
 
 	.finance_head,
 	.wide_box h2,
-	.bg_head{
+	.bg_head,
+	.form_col_box h2{
 		font-size: 30px;
 	}
 	
@@ -1872,17 +1908,19 @@ a.footer-brand img{
 		width: 100%;
 	}
 	
-	.blog_group{
-		padding-bottom: 0;
-	}
-	
 	.blog_date{
 		margin-top: 0;
+	}
+	
+	.data_col{
+		flex: 100%;
+		width: 100%;
 	}
 	
 	.footer_col{
 		flex: 100%;
 		width: 100%;
+		margin: 0;
 	}
 }
 
@@ -1904,11 +1942,6 @@ a.footer-brand img{
 		width: 100%;
 		padding: 15px 0;
 	}
-	
-	.data_col{
-		flex: 100%;
-		width: 100%;
-	}
 }
 
 @media only screen and (max-width: 360px){
@@ -1920,5 +1953,9 @@ a.footer-brand img{
 @media only screen and (max-width: 320px){
 	.feature_content{
 		padding-left: 20px;
+	}
+	
+	.finance_area_six{
+		margin-top: -300px;
 	}
 }
