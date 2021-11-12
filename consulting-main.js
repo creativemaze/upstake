@@ -13,7 +13,7 @@ $(document).ready(function(){
 		pauseOnFocus: false,
 		responsive: [
 			{
-				breakpoint: 801,
+				breakpoint: 841,
 				settings: {
 					slidesToShow: 2,
        
