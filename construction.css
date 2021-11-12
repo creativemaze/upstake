@@ -3,7 +3,7 @@ Main Stylesheet
 
 Project:    Highpoint Corporate Template
 Version:    1.0
-Last change:    08/09/2021
+Last change:    12/11/2021
 Author:    creativemaze
 Primary use:    Construction
 -------------------------------------------------------------------*/
@@ -119,22 +119,28 @@ ul{
  ----------- */
  
 /* --- 2.1. Logo & Navigation --- */
-.navbar-header h2{
-	font-family: 'Montserrat', Arial, sans-serif;
-	font-size: 22px;
-	font-weight: 700;
-	letter-spacing: 1px;
-	text-transform: uppercase;
+nav.navbar.bootsnav .navbar-brand{
+    max-width: 200px !important; 	
 }
 
 .navbar-header a.navbar-brand{
 	text-decoration: none;
 	color: #111111;
 	transition: 0.5s;
+	font-family: 'Montserrat', Arial, sans-serif;
+	font-size: 22px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	padding-top: 30px;
+}
+
+.navbar-header a.navbar-brand:hover{
+	color: #111111;
 }
 
 nav.navbar .navbar-brand img.logo{
-   max-width: 200px;
+   width: 100%;
    height: auto;
    display: block;
 }
@@ -480,7 +486,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
     text-decoration: none;
 	text-transform: uppercase;
     display: inline-block;
-    font-size: 12px;
+    font-size: 13px;
 	font-weight: 600;
 	font-family: 'Montserrat', Arial, sans-serif;
     transition: 0.5s;
@@ -650,11 +656,11 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	margin: 12px 0;	
     border: none;
     color: #1a2980;
-    padding: 12px 14px;
+    padding: 13px 14px;
     text-decoration: none;
 	text-transform: uppercase;
     display: block;
-    font-size: 12px;
+    font-size: 13px;
 	font-weight: 600;
 	font-family: 'Montserrat', Arial, sans-serif;
     transition: 0.5s;
@@ -765,7 +771,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	margin: 0 auto;
 	display: flex;
 	flex-wrap: wrap;
-	padding-top: 40px;
 	padding-bottom: 40px;
 }
 
@@ -773,7 +778,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	position: relative;
 	flex: 33.33%;
 	width: 33.33%;
-	padding: 0 20px;
+	padding: 40px 20px 0;
 }
 
 .grid_box{
@@ -860,7 +865,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	margin: 0 auto;
 	padding: 35px 30px; 
 	text-align: left;
-	background: #f6f6f6;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
 	transition: 0.5s;
 	min-height: 50px;
 	height: 100%
@@ -1115,15 +1120,13 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	margin: 0 auto;
 	display: flex; 
 	flex-wrap: wrap;
-	padding-top: 40px;
 	padding-bottom: 40px;
 }
 
 .team_col{
 	flex: 33.33%;
 	width: 33.33%;
-	padding: 0 20px;
-	position: relative;
+	padding: 40px 20px 0;
 }
 
 .team_box{
@@ -1133,7 +1136,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	overflow: hidden;
 	margin: auto;
 	min-height: 150px;
-	transition: 0.5s;
 }
 
 .team_image img{
@@ -1419,6 +1421,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	width: 25%;
 	padding: 0 20px;
 	max-width: 300px;
+	margin: 0 auto;
 }
 
 .footer_col{
@@ -1572,11 +1575,11 @@ a.footer-brand img{
 	}
 	
 	.tool_col_area{
-		padding-top: 40px;
+		margin-top: 40px;
 	}
 	
 	.square_area{
-		padding-bottom: 40px;
+		margin-bottom: 40px;
 	}
 	
 	.icon_col{
@@ -1593,7 +1596,6 @@ a.footer-brand img{
 	.team_col{
 		flex: 50%;
 		width: 50%;
-		margin-bottom: 40px;
 	}
 	
 	.count_col{
@@ -1621,8 +1623,8 @@ a.footer-brand img{
 		transform: translateX(-50%);
 	}
 	
-	.navbar-header h2{
-		margin-top: 7px;
+	.navbar-header a.navbar-brand{
+		padding-top: 22px;
 	}
 	
 	nav.navbar.bootsnav ul.nav > li > a{
@@ -1696,7 +1698,6 @@ a.footer-brand img{
 	.grid_col{
 		flex: 100%;
 		width: 100%;
-		margin-bottom: 40px;
 	}
 	
 	.team_icon{
@@ -1762,6 +1763,7 @@ a.footer-brand img{
 	.footer_col{
 		flex: 100%;
 		width: 100%;
+		margin: 0;
 	}
 }
 
@@ -1777,7 +1779,8 @@ a.footer-brand img{
 	.grid_col,
 	.icon_col,
 	.team_col{
-		padding: 0;
+		padding-left: 0;
+		padding-right: 0;
 	}
 	
 	.featured_col{
