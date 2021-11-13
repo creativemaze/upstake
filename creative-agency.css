@@ -3,7 +3,7 @@ Main Stylesheet
 
 Project:    Highpoint Corporate Template
 Version:    1.0
-Last change:    14/09/2021
+Last change:    13/11/2021
 Author:    creativemaze
 Primary use:    Creative Agency
 -------------------------------------------------------------------*/
@@ -119,18 +119,20 @@ ul{
  ----------- */
  
 /* --- 2.1. Logo & Navigation --- */
-.navbar-header h2{
-	font-family: 'Montserrat', Arial, sans-serif;
-	font-size: 22px;
-	font-weight: 700;
-	letter-spacing: 1px;
-	text-transform: uppercase;
+nav.navbar.bootsnav .navbar-brand{
+    max-width: 200px; 	
 }
 
 .navbar-header a.navbar-brand{
 	text-decoration: none;
 	color: #111111;
 	transition: 0.5s;
+	font-family: 'Montserrat', Arial, sans-serif;
+	font-size: 22px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	padding-top: 30px;
 }
 
 .navbar-header a.navbar-brand:hover{
@@ -138,7 +140,7 @@ ul{
 }
 
 nav.navbar .navbar-brand img.logo{
-   max-width: 200px;
+   width: 100%;
    height: auto;
    display: block;
 }
@@ -1386,6 +1388,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	width: 100%;
 	margin: 0 auto;
 	padding: 0 25px;
+	text-align: center;
 }
 
 .creative_bg{
@@ -1453,7 +1456,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .client_box{
 	width: 100%;
-	padding: 30px;
+	padding: 40px 30px;
 	text-align: center;
 	display: block;
 	background-color: #ffffff;
@@ -1559,7 +1562,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	width: 100%;
 	min-height: 100px;
 	margin-bottom: 9em;
-	
 }
 
 .creative_group_seven{
@@ -1623,14 +1625,13 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	margin: 0 auto;
 	display: flex;
 	flex-wrap: wrap;
-	padding-top: 40px;
 	padding-bottom: 40px;
 }
 
 .blog_col{
 	flex: 33.33%;
 	width: 33.33%;
-	padding: 0 20px;
+	padding: 40px 20px 0;
 }
 
 .blog_box{
@@ -1640,7 +1641,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	overflow: hidden;
 	margin: auto;
 	min-height: 150px;
-	transition: 0.5s;
 }
 
 .blog_image{
@@ -1656,7 +1656,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	padding-top: 12px;
 	padding-left: 12px;
 	background-color: #ffffff;
-	transition: ease-in-out 0.5s;
 }
 
 .blog_content{
@@ -1682,7 +1681,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	vertical-align: middle;
 	width: 100%;
 	height: auto;
-	transition: 0.5s;
 	display: block;
 }
 
@@ -1873,6 +1871,7 @@ a.blog_btn:hover,
 	width: 25%;
 	padding: 0 20px;
 	max-width: 300px;
+	margin: 0 auto;
 }
 
 .footer_col{
@@ -2069,7 +2068,6 @@ a.footer-brand img{
 	.blog_col{
 		flex: 50%;
 		width: 50%;
-		margin-bottom: 40px;
 	}
 }
 
@@ -2087,8 +2085,8 @@ a.footer-brand img{
 		transform: translateX(-50%);
 	}
 	
-	.navbar-header h2{
-		margin-top: 7px;
+	.navbar-header a.navbar-brand{
+		padding-top: 22px;
 	}
 	
 	nav.navbar.bootsnav ul.nav > li > a{
@@ -2176,6 +2174,10 @@ a.footer-brand img{
 		width: 50%;
 	}
 	
+	.client_details{
+		padding: 0 15px;
+	}
+	
 	.count_col{
 		flex: 50%;
 		width: 50%;
@@ -2240,31 +2242,11 @@ a.footer-brand img{
 	.blog_col{
 		flex: 100%;
 		width: 100%;
-		padding: 0;
 	}
 	
 	.count_col{
 		flex: 100%;
 		width: 100%;
-	}
-	
-	.footer_col{
-		flex: 100%;
-		width: 100%;
-	}
-}
-
-@media only screen and (max-width: 420px){
-	.creative_col,
-	.team_col,
-	.square_col,
-	.client_col{
-		padding: 0;
-	}
-	
-	.featured_image{
-		padding-left: 0;
-		padding-right: 0;
 	}
 	
 	.col_info input[type="email"]{
@@ -2279,14 +2261,41 @@ a.footer-brand img{
 		margin-left: 0;
 	}
 	
+	.footer_col{
+		flex: 100%;
+		width: 100%;
+		margin: 0;
+	}
+}
+
+@media only screen and (max-width: 420px){
+	.creative_col,
+	.team_col,
+	.square_col,
+	.client_col,
+	.blog_col{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	
+	.client_details{
+		padding: 0 10px;
+	}
+	
+	.featured_image{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	
 	.col_head h3{
 		font-size: 25px;
 	}
 }
 
-@media only screen and (max-width: 360px){
-	.box_content{
-		padding: 0 25px;
+@media only screen and (max-width: 375px){
+	.client_info img{
+		width: 70px;
+		height: 70px;
 	}
 	
 	.client_box{
@@ -2294,8 +2303,8 @@ a.footer-brand img{
 	}
 }
 
-@media only screen and (max-width: 320px){
-	.col_head h3{
-		font-size: 20px;
+@media only screen and (max-width: 360px){
+	.client_box{
+		padding: 30px 15px;
 	}
 }
