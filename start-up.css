@@ -1823,8 +1823,8 @@ a.footer-brand img{
 		transform: translateX(-50%);
 	}
 	
-	.navbar-header h2{
-		margin-top: 7px;
+	.navbar-header a.navbar-brand{
+		padding-top: 22px;
 	}
 	
 	nav.navbar.bootsnav ul.nav > li > a{
