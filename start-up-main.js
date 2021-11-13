@@ -38,14 +38,6 @@ $(document).ready(function(){
 				breakpoint: 601,
 				settings: {
 					slidesToShow: 1,
-					centerPadding: '50px',
-				}		
-			},
-			
-			{
-				breakpoint: 421,
-				settings: {
-					slidesToShow: 1,
 					centerPadding: '0',
 				}		
 			},
