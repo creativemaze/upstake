@@ -3,8 +3,8 @@ Main Stylesheet
 
 Project:    Highpoint Corporate Template
 Version:    1.0
-Last change:    10/09/2021
-Author:    Themewiz
+Last change:    12/11/2021
+Author:    creativemaze
 Primary use:    Start-Up
 -------------------------------------------------------------------*/
 
@@ -120,18 +120,20 @@ ul{
  ----------- */
  
 /* --- 2.1. Logo & Navigation --- */
-.navbar-header h2{
-	font-family: 'Montserrat', Arial, sans-serif;
-	font-size: 22px;
-	font-weight: 700;
-	letter-spacing: 1px;
-	text-transform: uppercase;
+nav.navbar.bootsnav .navbar-brand{
+    max-width: 200px !important; 	
 }
 
 .navbar-header a.navbar-brand{
 	text-decoration: none;
 	color: #111111;
 	transition: 0.5s;
+	font-family: 'Montserrat', Arial, sans-serif;
+	font-size: 22px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	padding-top: 30px;
 }
 
 .navbar-header a.navbar-brand:hover{
@@ -139,7 +141,7 @@ ul{
 }
 
 nav.navbar .navbar-brand img.logo{
-   max-width: 200px;
+   width: 100%;
    height: auto;
    display: block;
 }
@@ -828,14 +830,15 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .info_name h3{
 	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 16px;
+	font-size: 15px;
 	display: inline-block;
 	font-weight: 600;
 	color: #111111;
 	letter-spacing: 1px;
 	text-align: center;
 	line-height: 1.4em;
-	margin-top: 0;
+	margin: 0;
+	text-transform: uppercase;
 }
 
 /* --- 3.3. Start-Up Area Three --- */
@@ -859,18 +862,18 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .icon_box{
-	max-width: 350px;
+	max-width: 300px;
 	margin: auto;
 	padding: 30px;
 	text-align: center;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
-	text-align: left;
+	border: solid 1px #e0e0e0;
+	text-align: center;
 	background: #ffffff;
 	transition: 0.5s;
 }
 
 .icon_box:hover{
-	transform: translateX(-5px);
+	box-shadow: -1px 1px 12px 10px rgba(0,0,0,0.19);
 }
 
 .icon_box .fas,
@@ -1020,8 +1023,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	margin: 0 auto;
 	display: flex;
 	flex-wrap: wrap;
-	padding-top: 40px;
-	;
 }
 
 .team_box{
@@ -1031,13 +1032,12 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	overflow: hidden;
 	margin: auto;
 	height: auto;
-	transition: 0.5s;
 }
 
 .team_col{
 	flex: 25%;
 	width: 25%;
-	padding: 0 25px;
+	padding: 40px 25px 0;
 }
 
 .team_col img{
@@ -1308,8 +1308,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	overflow: hidden;
 	margin: auto;
 	min-height: 150px;
-	transition: 0.5s;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
 .blog_image{
@@ -1320,15 +1318,11 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 .blog_area{
 	overflow: hidden;
 	position: relative;
-	padding-bottom: 12px;
-	padding-right: 12px;
-	padding-top: 12px;
-	padding-left: 12px;
 	background-color: #ffffff;
 }
 
 .blog_content{
-	padding: 20px 0;
+	padding: 15px 0 0;
 	text-align: left;
 	padding-left: 15px;
 }
@@ -1609,6 +1603,7 @@ a.blog_btn:hover,
 	width: 25%;
 	padding: 0 20px;
 	max-width: 300px;
+	margin: 0 auto;
 }
 
 .footer_col{
@@ -1794,7 +1789,6 @@ a.footer-brand img{
 	.team_col{
 		flex: 50%;
 		width: 50%;
-		margin-bottom: 40px;
 	}
 	
 	.blog_col{
@@ -1923,6 +1917,10 @@ a.footer-brand img{
 		margin-bottom: 40px;
 	}
 	
+	.start-up_group_nine{
+		margin-top: 40px;
+	}
+	
 	.border_two{
 		border-right: none;
 	}
@@ -1998,9 +1996,15 @@ a.footer-brand img{
 		margin-left: 0;
 	}
 	
+	.client_col{
+		flex: 100%;
+		width: 100%;
+	}
+	
 	.footer_col{
 		flex: 100%;
 		width: 100%;
+		margin: 0
 	}
 }
 
@@ -2023,16 +2027,12 @@ a.footer-brand img{
 	.review_col_left,
 	.review_col_right,
 	.review_box{
-		padding: 0;
-	}
-	
-	.info_slide{
+		padding-left: 0;
 		padding-right: 0;
 	}
 	
-	.client_col{
-		flex: 100%;
-		width: 100%;
+	.info_slide{
+		padding: 0 5px;
 	}
 	
 	.col_head h3{
@@ -2051,7 +2051,7 @@ a.footer-brand img{
 	}
 	
 	.info_name{
-		width: 230px;
+		width: 220px;
 	}
 	
 	.col_head h3{
