@@ -94,6 +94,16 @@ $('.featured_col').magnificPopup({
 	},
 });
 
+//MagnificPopup Video
+$('#play-video').magnificPopup({
+	disableOn: 300,
+	type: 'iframe',
+	mainClass: 'mfp-fade',
+	removalDelay: 300,
+	preloader: false,
+	fixedContentPos: false
+});
+
 //Counter Script
 jQuery(document).ready(function($) {
     $('.counter').counterUp({
