@@ -3,7 +3,7 @@ Main Stylesheet
 
 Project:    Highpoint Corporate Template
 Version:    1.0
-Last change:    30/09/2021
+Last change:    14/11/2021
 Author:    creativemaze
 Primary use:    Insurance
 -------------------------------------------------------------------*/
@@ -121,20 +121,20 @@ ul{
  ----------- */
  
 /* --- 2.1. Logo & Navigation --- */
-.navbar-header h2{
-	font-family: 'Montserrat', Arial, sans-serif;
-	font-size: 22px;
-	font-weight: 700;
-	letter-spacing: 1px;
-	text-transform: uppercase;
-	margin: 0;
-	padding-top: 12px;
+nav.navbar.bootsnav .navbar-brand{
+    max-width: 200px; 	
 }
 
 .navbar-header a.navbar-brand{
 	text-decoration: none;
 	color: #111111;
 	transition: 0.5s;
+	font-family: 'Montserrat', Arial, sans-serif;
+	font-size: 22px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	padding-top: 30px;
 }
 
 .navbar-header a.navbar-brand:hover{
@@ -142,7 +142,7 @@ ul{
 }
 
 nav.navbar .navbar-brand img.logo{
-   max-width: 200px;
+   width: 100%;
    height: auto;
    display: block;
 }
@@ -691,11 +691,13 @@ li.slick-active button{
 /* --- 3.2. Insurance Area Two --- */
 .insurance_area_two{
 	max-width: 1400px;
-	margin: 0 auto 9em;
+	margin: 0 auto;
 	padding: 0 25px;
+	margin-bottom: calc(9em - 25px);
 }
 
-.insurance_group_two{
+.insurance_group_two,
+.icon_area{
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
@@ -723,7 +725,7 @@ li.slick-active button{
 }
 
 .wide_box{
-	max-width: 500px;
+	max-width: 450px;
 	margin: 0;
 	padding-right: 25px;
 }
@@ -753,7 +755,7 @@ li.slick-active button{
 
 .insurance_col_button a{
 	background-color: #C779D0;
-	width: 140px;
+	width: 150px;
 	min-height: 30px;
 	margin: 12px 0;	
     border: none;
@@ -778,24 +780,21 @@ li.slick-active button{
 	border-color: #111111;
 }
 
-.icon_area{
-	width: 100%;
-	display: flex; 
-	flex-wrap: wrap;
-}
-
 .icon_col{
 	flex: 50%;
 	width: 50%;
 	position: relative;
-	padding: 0 10px 25px 10px;
+	padding: 0 20px 25px 20px;
 }
 
 .icon_box{
+	width: 100%;
+	background-color: #f6f6f6;
 	padding: 25px 20px;
+	margin-bottom: 10px;
 	max-width: 350px;
-	overflow: hidden;
 	transition: 0.5s;
+	overflow: hidden;
 }
 
 .icon{
@@ -841,18 +840,35 @@ li.slick-active button{
 	padding-top: 8px;
 }
 
-.icon_box:hover{
-	background-color: #C779D0;
+.icon_button > a{
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 13px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	text-align: left;
+	text-transform: uppercase;
+	display: block;
+	color: #C779D0;
+	text-decoration: none;
+	width: 110px;
+	transition: 0.5s;
+    cursor: pointer;
 }
 
-.icon_box:hover h3,
-.icon_box:hover p{
-	color: #ffffff;
+.icon_button > a::after{
+	content: "\203A";
+	font-size: 20px;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	height: auto;
+	padding-left: 5px;
+	top: 1px;
+	position: relative;
 }
 
-.icon_box:hover .fas,
-.icon_box:hover .far{
-	color: #ffffff;
+.icon_button > a:hover{
+	color: #111111;
 }
 
 /* --- 3.3. Insurance Area Three --- */
@@ -1308,14 +1324,13 @@ li.slick-active button{
 	margin: 0 auto;
 	display: flex;
 	flex-wrap: wrap;
-	padding-top: 40px;
 	padding-bottom: 40px;
 }
 
 .blog_col{
 	flex: 33.33%;
 	width: 33.33%;
-	padding: 0 25px;
+	padding: 40px 25px 0;
 }
 
 .blog_box{
@@ -1401,7 +1416,6 @@ a.blog_btn:hover{
 	background: transparent;
 	border-color: #111111;
 }
-
 
 .blog_content p{
 	font-family: 'Roboto' , Arial, sans-serif;
@@ -1510,7 +1524,7 @@ a.blog_btn:hover{
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
-	padding: 20px;
+	padding: 20px 20px 0;
 }
 
 .count_col{
@@ -1571,7 +1585,7 @@ a.blog_btn:hover{
 /* --- 3.11. Insurance Area Eleven --- */
 .insurance_area_eleven{
 	max-width: 650px;
-	margin: 0 auto;
+	margin: 0 auto 2em;
 	padding: 0 25px;
 	margin-top:  -275px;
 	position: relative;
@@ -1664,10 +1678,10 @@ a.blog_btn:hover{
 	font-family: 'Montserrat', Arial, sans-serif;
 	color: #111111;
     transition: 0.5s;
-    cursor: pointer;
 	letter-spacing: 1px;
 	text-align: left;
 	text-decoration: none;
+	line-height: 0.8em;
 }
 
 .login_info h3 a:hover{
@@ -1733,8 +1747,9 @@ a.blog_btn:hover{
 	padding: 10px 30px;
 	text-align: center;
 	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 15px;
-	font-weight: normal;
+	font-size: 14px;
+	font-weight: 500;
+	text-transform: uppercase;
 	color: #ffffff;
 	border-radius: 5px;
 	letter-spacing: 1px;
@@ -1756,8 +1771,9 @@ a.blog_btn:hover{
 	padding: 10px 30px;
 	text-align: center;
 	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 15px;
-	font-weight: normal;
+	font-size: 14px;
+	font-weight: 500;
+	text-transform: uppercase;
 	color: #ffffff;
 	border-radius: 5px;
 	letter-spacing: 1px;
@@ -1796,6 +1812,7 @@ a.blog_btn:hover{
 	width: 25%;
 	padding: 0 20px;
 	max-width: 300px;
+	margin: 0 auto;
 }
 
 .footer_col{
@@ -1968,7 +1985,7 @@ a.footer-brand img{
 	.insurance_wide_col{
 		flex: 100%;
 		width: 100%;
-		margin-bottom: 25px;
+		margin-bottom: 30px;
 	}
 	
 	.insurance_box_col{
@@ -1994,6 +2011,8 @@ a.footer-brand img{
 	}
 	
 	.box_col{
+		flex: 50%;
+		width: 50%;
 		max-width: 300px;
 		margin: 0;
 	}
@@ -2001,7 +2020,6 @@ a.footer-brand img{
 	.blog_col{
 		flex: 50%;
 		width: 50%;
-		margin-bottom: 40px;
 	}
 } 
  
@@ -2019,8 +2037,8 @@ a.footer-brand img{
 		transform: translateX(-50%);
 	}
 	
-	.navbar-header h2{
-		padding-top: 5px;
+	.navbar-header a.navbar-brand{
+		padding-top: 22px;
 	}
 	
 	nav.navbar.bootsnav ul.nav > li > a{
@@ -2107,7 +2125,7 @@ a.footer-brand img{
 	.count_col{
 		flex: 50%;
 		width: 50%;
-		margin: 20px 0;
+		margin: 15px 0;
 	}
 	
 	.second_border{
@@ -2173,9 +2191,19 @@ a.footer-brand img{
 		flex-direction: column;
 	}
 	
+	.login_box{
+		max-width: 400px;
+		width: auto;
+	}
+	
+	.login_info{
+		margin-right: 20px;
+	}
+	
 	.footer_col{
 		flex: 100%;
 		width: 100%;
+		margin: 0;
 	}
 }	
 
@@ -2200,7 +2228,8 @@ a.footer-brand img{
 	.question_box,
 	.team_col,
 	.blog_col{
-		padding: 0;
+		padding-left: 0;
+		padding-right: 0;
 	}
 	
 	.box_col{
@@ -2208,18 +2237,13 @@ a.footer-brand img{
 		width: 100%;
 		padding: 15px 0;
 	}
-	
-	.login_box{
-		max-width: 400px;
-		width: auto;
-	}
-	
+
 	.login_info{
 		margin-right: 0;
 	}
 }
 
-@media only screen and (max-width: 375px){
+@media only screen and (max-width: 390px){
 	.login_info{
 		max-width: 100px;
 		margin: auto;
