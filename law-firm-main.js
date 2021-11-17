@@ -11,16 +11,16 @@ $(document).ready(function(){
 		pauseOnHover: false,
 		pauseOnFocus: false,
 		responsive: [
-		{
-			breakpoint: 601,
-			settings: {
-			slidesToShow: 1,
-			dots: true,
-			fade: true
-		}
+			{
+				breakpoint: 993,
+				settings: {
+					slidesToShow: 1,
+					dots: true,
+					fade: true
+				}
 						
-	},
-	]
+			},
+		]
 	});
 });
 
