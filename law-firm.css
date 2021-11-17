@@ -3,7 +3,7 @@ Main Stylesheet
 
 Project:    Highpoint Corporate Template
 Version:    1.0
-Last change:    09/10/2021
+Last change:    16/11/2021
 Author:    creativemaze
 Primary use:    Law Firm
 -------------------------------------------------------------------*/
@@ -114,15 +114,11 @@ ul{
 	line-height: 1.5em;
 }
 
-.centerpage_btn{
-	display: block;
-	margin: 35px auto 0;
-}
-
 .centerpage_btn a{
 	background-color: #999966;
 	width: 180px;
 	min-height: 30px;
+	margin: 35px auto 0;
     border: none;
     color: #ffffff;
     padding: 14px 15px;
@@ -137,7 +133,6 @@ ul{
 	border: 1px solid #999966;
 	letter-spacing: 1px;
 	text-align: center;
-	margin: auto;
 }
 
 .centerpage_btn a:hover{
@@ -150,20 +145,20 @@ ul{
  ----------- */
  
 /* --- 2.1. Logo & Navigation --- */
-.navbar-header h2{
-	font-family: 'Raleway', Arial, sans-serif;
-	font-size: 22px;
-	font-weight: 700;
-	letter-spacing: 1px;
-	text-transform: uppercase;
-	margin: 0;
-	padding-top: 12px;
+nav.navbar.bootsnav .navbar-brand{
+    max-width: 200px; 	
 }
 
 .navbar-header a.navbar-brand{
 	text-decoration: none;
 	color: #ffffff;
 	transition: 0.5s;
+	font-family: 'Montserrat', Arial, sans-serif;
+	font-size: 22px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	padding-top: 30px;
 }
 
 .navbar-header a.navbar-brand:hover{
@@ -171,7 +166,7 @@ ul{
 }
 
 nav.navbar .navbar-brand img.logo{
-   max-width: 200px;
+   width: 100%;
    height: auto;
    display: block;
 }
@@ -510,11 +505,10 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
  
 /* --- 3.1. Law Area One --- */
 .law_area_one{
-	max-width: 1200px;
+	max-width: 1280px;
 	min-height: 300px;
 	margin: 0 auto 9em;
-	padding: 35px 50px;
-	background-color: #999966;
+	padding: 0 30px;
 	margin-top:  -300px;
 	position: relative;
 	z-index: 9999;
@@ -524,6 +518,8 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
+	padding: 35px 50px;
+	background-color: #999966;
 }
 
 .law_right_info{
@@ -627,7 +623,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	padding-top: 22px;
 	font-family: 'Raleway' , Arial, sans-serif;
 	font-size: 30px;
-	font-weight: normal;
+	font-weight: 500;
 	display: block;
 	text-align: center;
 }
@@ -853,38 +849,25 @@ li.slick-active button{
 	color: #999966;
 }
 
-.info_list{
-	padding: 5px 0;
+.info_items > h3::before{
+	font-family: 'Font Awesome 5 Free';
+	content: "\f00c";
+	font-weight: 900;
+	font-size: 15px;
+	padding-right: 12px;
+	color: #999966;
 }
 
-.info_list > .num_item{
+.info_items > h3{
 	font-family: 'Raleway' , Arial, sans-serif;
 	font-size: 16px;
 	font-weight: 600;
-	display: inline-block;
-	color: #ffffff;
-	text-transform: capitalize;
-	letter-spacing: 1px;
-	text-align: left;
-	background-color: #999966;
-	border-radius: 50%;
-	padding: 13px;
-}
-
-.info_list > h3{
-	font-family: 'Raleway' , Arial, sans-serif;
-	font-size: 16px;
-	font-weight: 600;
-	display: inline-block;
+	display: block;
 	color: #111111;
 	text-transform: capitalize;
 	letter-spacing: 1px;
 	text-align: left;
-}
-
-.info_list > h3::before{
-	content: '\2014';
-	padding: 0 0.8em;
+	padding: 6px 0;
 }
 
 .card_button a{
@@ -1267,7 +1250,6 @@ li.slick-active button{
 .team_col img{
 	width: 100%;
 	height: auto;
-	transition: ease-in-out 0.5s;
 	display: block;
 	border-radius: 50%;
 }
@@ -1375,14 +1357,13 @@ li.slick-active button{
 	margin: 0 auto;
 	display: flex;
 	flex-wrap: wrap;
-	padding-top: 40px;
 	padding-bottom: 40px;
 }
 
 .blog_col{
 	flex: 33.33%;
 	width: 33.33%;
-	padding: 0 20px;
+	padding: 40px 20px 0;
 }
 
 .blog_box{
@@ -1392,7 +1373,6 @@ li.slick-active button{
 	overflow: hidden;
 	margin: auto;
 	min-height: 150px;
-	transition: 0.5s;
 }
 
 .blog_image{
@@ -1408,7 +1388,6 @@ li.slick-active button{
 	padding-top: 12px;
 	padding-left: 12px;
 	background-color: #ffffff;
-	transition: ease-in-out 0.5s;
 }
 
 .blog_content{
@@ -1710,6 +1689,7 @@ a.blog_btn:hover,
 	width: 25%;
 	padding: 0 20px;
 	max-width: 300px;
+	margin: 0 auto;
 }
 
 .footer_col{
@@ -1860,10 +1840,6 @@ a.footer-brand img{
 		height: auto;
 	}
 	
-	.law_area_one{
-		max-width: 950px;
-	}
-	
 	.large_col{
 		flex: 100%;
 		width: 100%;
@@ -1912,7 +1888,6 @@ a.footer-brand img{
 	.blog_col{
 		flex: 50%;
 		width: 50%;
-		margin-bottom: 40px;
 	}
 	
 	.review_col_left{
@@ -1941,8 +1916,8 @@ a.footer-brand img{
 		transform: translateX(-50%);
 	}
 	
-	.navbar-header h2{
-		padding-top: 5px;
+	.navbar-header a.navbar-brand{
+		padding-top: 22px;
 	}
 	
 	nav.navbar.bootsnav ul.nav > li > a{
@@ -2007,12 +1982,6 @@ a.footer-brand img{
 		left: 0;
 		padding-top: 25px;
 	}
-	
-	.law_area_one{
-		max-width: 700px;
-		padding-left: 30px;
-		padding-right: 30px;
-	}
 
 	.law_left_col{
 		flex: 100%;
@@ -2028,7 +1997,11 @@ a.footer-brand img{
 	.team_col{
 		flex: 50%;
 		width: 50%;
-		margin-bottom: 40px;
+		margin-top: 40px;
+	}
+	
+	.law_group_five{
+		padding-top: 0;
 	}
 
 	.client_col{
@@ -2068,10 +2041,6 @@ a.footer-brand img{
 		font-size: 30px;
 	}
 	
-	.law_area_one{
-		max-width: 475px;
-	}
-	
 	.num_col{
 		flex: 100%;
 		width: 100%;
@@ -2104,7 +2073,6 @@ a.footer-brand img{
 	.blog_col{
 		flex: 100%;
 		width: 100%;
-		padding: 0;
 	}
 	
 	.client_col{
@@ -2115,32 +2083,26 @@ a.footer-brand img{
 	.footer_col{
 		flex: 100%;
 		width: 100%;
+		margin: 0;
 	}
 }
 
 @media only screen and (max-width: 420px){
-	.law_area_one{
-		max-width: 350px;
-	}
-	
 	.small_col,
 	.square_box,
 	.team_col,
 	.review_box,
 	.review_col_left,
-	.review_col_right{
-		padding: 0;
+	.review_col_right,
+	.num_col,
+	.blog_col{
+		padding-left: 0;
+		padding-right: 0;
 	}
 }
 
-@media only screen and (max-width: 385px){
-	.law_area_one{
-		max-width: 300px;
-	}
-}
-
-@media only screen and (max-width: 320px){
-	.law_area_one{
-		max-width: 280px;
+@media only screen and (max-width: 375px){
+	.law_group_one{
+		padding: 35px 30px;
 	}
 } 
