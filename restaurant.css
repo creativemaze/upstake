@@ -3,7 +3,7 @@ Main Stylesheet
 
 Project:    Highpoint Corporate Template
 Version:    1.0
-Last change:    10/10/2021
+Last change:    18/11/2021
 Author:    creativemaze
 Primary use:    Restaurant
 -------------------------------------------------------------------*/
@@ -31,6 +31,9 @@ Primary use:    Restaurant
 
 /* 1. GENERAL
  ----------- */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,400,500,600,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,400,500,600,700,800,900'); 
+ 
 body,
 html{
 	width:100%;
@@ -120,15 +123,11 @@ ul{
 	color: #111111;
 }
 
-.centerpage_btn{
-	display: block;
-	margin: 30px auto 0;
-}
-
 .centerpage_btn a{
 	background-color: #111111;
 	width: 180px;
 	min-height: 30px;
+	margin: 30px auto 0;
     border: none;
     color: #ffffff;
     padding: 15px 16px;
@@ -144,7 +143,6 @@ ul{
 	letter-spacing: 1px;
 	text-align: center;
 	border-radius: 5px;
-	margin: auto;
 }
 
 .centerpage_btn a:hover{
@@ -157,20 +155,20 @@ ul{
  ----------- */
  
 /* --- 2.1. Logo & Navigation --- */
-.navbar-header h2{
-	font-family: 'Montserrat', Arial, sans-serif;
-	font-size: 22px;
-	font-weight: 700;
-	letter-spacing: 1px;
-	text-transform: uppercase;
-	margin: 0;
-	padding-top: 12px;
+nav.navbar.bootsnav .navbar-brand{
+    max-width: 200px; 	
 }
 
 .navbar-header a.navbar-brand{
 	text-decoration: none;
 	color: #111111;
 	transition: 0.5s;
+	font-family: 'Montserrat', Arial, sans-serif;
+	font-size: 22px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	padding-top: 30px;
 }
 
 .navbar-header a.navbar-brand:hover{
@@ -178,7 +176,7 @@ ul{
 }
 
 nav.navbar .navbar-brand img.logo{
-   max-width: 200px;
+   width: 100%;
    height: auto;
    display: block;
 }
@@ -710,17 +708,11 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 .menu_col_left{
 	flex: 33.33%;
 	width: 33.33%;
-	position: relative;
 }
 
 .menu_col_mid{
-	flex: 50%;
-	width: 50%;
-}
-
-.menu_col_right_mid{
-	flex: 25%;
-	width: 25%;
+	flex: 33.33%;
+	width: 33.33%;
 }
 
 .menu_col_right{
@@ -757,7 +749,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	margin: 0;
 	min-height: 400px;
 	padding: 8.5em 25px 7em;
-	background-color: #f6f6f6;
+	background-color: #eeeeee;
 }
 
 .restaurant_group_two{
@@ -874,8 +866,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	display: flex; 
 	flex-wrap: wrap;
 	position: relative;
-	padding-top: 20px;
-	padding-bottom: 20px;
 }
 
 .bg_head{
@@ -893,7 +883,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 .special_col{
 	flex: 25%;
 	width: 25%;
-	padding: 0 25px;
+	padding: 30px 25px;
 }
 
 .special_area{
@@ -903,7 +893,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	overflow: hidden;
 	margin: auto;
 	min-height: 150px;
-	transition: 0.5s;
 }
 
 .special_image{
@@ -1010,14 +999,13 @@ li.slick-active button{
 .restaurant_icon_col{
 	flex: 25%;
 	width: 25%;
-	padding: 0 25px;
+	padding: 0 20px;
 }
 
 .restaurant_icon_box{
-	max-width: 350px;
+	max-width: 300px;
 	margin: auto;
 	padding: 25px;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 4px 0 rgba(0, 0, 0, 0.19);
 	text-align: center;
 	background: transparent;
 	transition: 0.5s;
@@ -1221,8 +1209,6 @@ li.slick-active button{
 	overflow: hidden;
 	margin: auto;
 	min-height: 150px;
-	transition: 0.5s;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
 .blog_image{
@@ -1233,16 +1219,11 @@ li.slick-active button{
 .blog_area{
 	overflow: hidden;
 	position: relative;
-	padding-bottom: 12px;
-	padding-right: 12px;
-	padding-top: 12px;
-	padding-left: 12px;
 	background-color: #ffffff;
-	transition: ease-in-out 0.5s;
 }
 
 .blog_content{
-	padding: 20px 0;
+	padding: 15px 0;
 	text-align: left;
 	padding-left: 15px;
 }
@@ -1289,7 +1270,6 @@ li.slick-active button{
 	line-height: 1.4em;
 }
 
-a.blog_btn:hover,
 .blog_title a:hover{
 	opacity: 0.6;
 }
@@ -1308,7 +1288,7 @@ a.blog_btn:hover,
 
 a.blog_btn{
 	max-width: 120px;	
-    color: #111111;
+    color: #e53935;
     text-decoration: none;
 	text-transform: uppercase;
     display: block;
@@ -1331,6 +1311,10 @@ a.blog_btn::after{
 	padding-left: 5px;
 	top: 1px;
 	position: relative;
+}
+
+a.blog_btn:hover{
+	color: #111111;
 }
 
 /* --- 3.7. Restaurant Area Seven --- */
@@ -1581,6 +1565,7 @@ a.blog_btn::after{
 	width: 25%;
 	padding: 0 20px;
 	max-width: 300px;
+	margin: 0 auto;
 }
 
 .footer_col{
@@ -1724,7 +1709,6 @@ a.footer-brand img{
 	.restaurant_icon_col{
 		flex: 50%;
 		width: 50%;
-		margin-bottom: 40px;
 	}
 	
 	.blog_col{
@@ -1764,8 +1748,8 @@ a.footer-brand img{
 		transform: translateX(-50%);
 	}
 	
-	.navbar-header h2{
-		padding-top: 5px;
+	.navbar-header a.navbar-brand{
+		padding-top: 22px;
 	}
 	
 	nav.navbar.bootsnav ul.nav > li > a{
@@ -1835,16 +1819,8 @@ a.footer-brand img{
 		font-size: 60px;
 	}
 	
-	.menu_col_right_mid,
-	.menu_col_mid{
-		flex: 100%;
-		width: 100%;
-		max-width: 400px;
-		margin: auto;
-		display: block;
-	}
-	
 	.menu_col_left,
+	.menu_col_mid,
 	.menu_col_right{
 		flex: 100%;
 		width: 100%;
@@ -1860,7 +1836,6 @@ a.footer-brand img{
 	.special_col{
 		flex: 50%;
 		width: 50%;
-		margin-bottom: 30px;
 	}
 	
 	.restaurant_square_col{
@@ -1920,6 +1895,7 @@ a.footer-brand img{
 	.footer_col{
 		flex: 100%;
 		width: 100%;
+		margin: 0;
 	}
 }	
 
