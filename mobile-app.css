@@ -3,7 +3,7 @@ Main Stylesheet
 
 Project:    Highpoint Corporate Template
 Version:    1.0
-Last change:    11/10/2021
+Last change:    18/11/2021
 Author:    creativemaze
 Primary use:    Mobile App
 -------------------------------------------------------------------*/
@@ -31,9 +31,6 @@ Primary use:    Mobile App
 
 /* 1. GENERAL
  ----------- */
-@import url('https://fonts.googleapis.com/css?family=Montserrat:100,400,500,600,700,800,900');
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,400,500,600,700,800,900'); 
- 
 body,
 html{
 	width:100%;
@@ -120,7 +117,7 @@ ul{
  ----------- */
 /* --- 2.1. Logo & Navigation --- */
 nav.navbar.bootsnav .navbar-brand{
-    max-width: 200px !important; 	
+    max-width: 200px; 	
 }
 
 .navbar-header a.navbar-brand{
@@ -132,7 +129,7 @@ nav.navbar.bootsnav .navbar-brand{
 	font-weight: 700;
 	letter-spacing: 1px;
 	text-transform: uppercase;
-	padding-top: 28px;
+	padding-top: 30px;
 }
 
 .navbar-header a.navbar-brand:hover{
@@ -1022,7 +1019,6 @@ li.slick-active button{
 .team_col img{
 	width: 100%;
 	height: auto;
-	transition: ease-in-out 0.5s;
 	display: block;
 	border-radius: 50%;
 }
@@ -1032,7 +1028,6 @@ li.slick-active button{
 	overflow: hidden;
 	position: relative;
 	background-color: #ffffff;
-	transition: ease-in-out 0.5s;
 }
 
 .overlay {
@@ -1502,6 +1497,7 @@ li.slick-active button{
 	width: 25%;
 	padding: 0 20px;
 	max-width: 300px;
+	margin: 0 auto;
 }
 
 .footer_col{
@@ -1709,6 +1705,12 @@ a.footer-brand img{
 		border-color: #111111;
 	}
 	
+	.head_btn a:hover{
+		background-color: #673ab7;
+		border-color: #673ab7;
+		color: #ffffff;
+	}
+	
 	.navbar-header a.navbar-brand{
 		padding-top: 22px;
 	}
@@ -1868,6 +1870,7 @@ a.footer-brand img{
 	.footer_col{
 		flex: 100%;
 		width: 100%;
+		margin: 0;
 	}
 }
 
