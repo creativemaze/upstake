@@ -3,7 +3,7 @@ Main Stylesheet
 
 Project:    Highpoint Corporate Template
 Version:    1.0
-Last change:    10/10/2021
+Last change:    18/11/2021
 Author:    creativemaze
 Primary use:    Education
 -------------------------------------------------------------------*/
@@ -117,20 +117,20 @@ ul{
  ----------- */
  
 /* --- 2.1. Logo & Navigation --- */
-.navbar-header h2{
-	font-family: 'Montserrat', Arial, sans-serif;
-	font-size: 22px;
-	font-weight: 700;
-	letter-spacing: 1px;
-	text-transform: uppercase;
-	margin: 0;
-	padding-top: 12px;
+nav.navbar.bootsnav .navbar-brand{
+    max-width: 200px; 	
 }
 
 .navbar-header a.navbar-brand{
 	text-decoration: none;
 	color: #111111;
 	transition: 0.5s;
+	font-family: 'Raleway', Arial, sans-serif;
+	font-size: 22px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	padding-top: 30px;
 }
 
 .navbar-header a.navbar-brand:hover{
@@ -138,7 +138,7 @@ ul{
 }
 
 nav.navbar .navbar-brand img.logo{
-   max-width: 200px;
+   width: 100%;
    height: auto;
    display: block;
 }
@@ -898,7 +898,6 @@ li.slick-active button{
 	vertical-align: middle;
 	width: 100%;
 	height: auto;
-	transition: .5s;
 }
 
 .education_col_box{
@@ -1209,7 +1208,6 @@ li.slick-active button{
 	overflow: hidden;
 	margin: auto;
 	min-height: 150px;
-	transition: 0.5s;
 }
 
 .resource_image{
@@ -1221,7 +1219,6 @@ li.slick-active button{
 	vertical-align: middle;
 	width: 100%;
 	height: auto;
-	transition: ease-in-out 0.5s;
 	display: block;
 }
 
@@ -1307,8 +1304,6 @@ li.slick-active button{
 	overflow: hidden;
 	margin: auto;
 	min-height: 150px;
-	transition: 0.5s;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
 .blog_image{
@@ -1319,12 +1314,6 @@ li.slick-active button{
 .blog_area{
 	overflow: hidden;
 	position: relative;
-	padding-bottom: 12px;
-	padding-right: 12px;
-	padding-top: 12px;
-	padding-left: 12px;
-	background-color: #ffffff;
-	transition: ease-in-out 0.5s;
 }
 
 .blog_content{
@@ -1480,12 +1469,6 @@ a.blog_btn:hover,
 	line-height: 1.3em;
 }
 
-.bg_col_button{
-	max-width: 370px;
-	margin: auto;
-	width: 100%;
-}
-
 .bg_col_button a{
 	background-color: #182848;
 	width: 170px;
@@ -1630,6 +1613,7 @@ a.blog_btn:hover,
 	width: 25%;
 	padding: 0 20px;
 	max-width: 300px;
+	margin: 0 auto;
 }
 
 .footer_col{
@@ -1830,8 +1814,8 @@ a.footer-brand img{
 		transform: translateX(-50%);
 	}
 	
-	.navbar-header h2{
-		padding-top: 5px;
+	.navbar-header a.navbar-brand{
+		padding-top: 22px;
 	}
 	
 	nav.navbar.bootsnav ul.nav > li > a{
@@ -1967,6 +1951,7 @@ a.footer-brand img{
 	.footer_col{
 		flex: 100%;
 		width: 100%;
+		margin: 0;
 	}
 }	
 
@@ -1986,10 +1971,14 @@ a.footer-brand img{
 		right: 0;
 		margin-top: 0;
 	}
-}
-
-@media only screen and (max-width: 360px){
+	
 	.col_head h3{
 		font-size: 25px;
+	}
+}
+
+@media only screen and (max-width: 320px){
+	.col_head h3{
+		font-size: 20px;
 	}
 }
