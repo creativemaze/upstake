@@ -3,7 +3,7 @@ Main Stylesheet
 
 Project:    Highpoint Corporate Template
 Version:    1.0
-Last change:    12/10/2021
+Last change:    19/11/2021
 Author:    creativemaze
 Primary use:    Telecoms
 -------------------------------------------------------------------*/
@@ -136,7 +136,7 @@ ul{
  
 /* --- 2.1. Logo & Navigation --- */
 nav.navbar.bootsnav .navbar-brand{
-    max-width: 200px !important; 	
+    max-width: 200px; 	
 }
 
 .navbar-header a.navbar-brand{
@@ -148,7 +148,7 @@ nav.navbar.bootsnav .navbar-brand{
 	font-weight: 700;
 	letter-spacing: 1px;
 	text-transform: uppercase;
-	padding-top: 28px;
+	padding-top: 30px;
 }
 
 .navbar-header a.navbar-brand:hover{
@@ -769,7 +769,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	overflow: hidden;
 	margin: auto;
 	padding-right: 25px;
-	transition: 0.5s;
 }
 
 .telecoms_image{
@@ -779,7 +778,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 .telecoms_image img{
 	vertical-align: middle;
 	max-width: 100%;
-	transition: .5s;
 }
 
 .telecoms_title{
@@ -1154,7 +1152,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	padding: 35px 30px; 
 	text-align: left;
 	background: #ffffff;
-	transition: 0.5s;
 	min-height: 50px;
 	height: 100%
 }
@@ -1688,6 +1685,7 @@ a.blog_btn:hover .blog_crumb{
 	padding: 0 25px;
 	display: flex;
 	flex-wrap: wrap;
+	margin: 0 auto;
 }
 
 .footer_col{
@@ -1695,6 +1693,7 @@ a.blog_btn:hover .blog_crumb{
 	width: 25%;
 	padding: 0 20px;
 	max-width: 300px;
+	margin: 0 auto;
 }
 
 .footer_col{
@@ -1885,7 +1884,7 @@ a.footer-brand img{
 		flex: 50%;
 		width: 50%;
 		max-width: 350px;
-		margin: 0 auto;
+		margin: 0 auto 15px;
 	}
 	
 	.question_col{
@@ -2022,7 +2021,7 @@ a.footer-brand img{
 	
 	.first_flip,
 	.second_flip{
-		margin-bottom: 80px;
+		margin-bottom: 90px;
 	}
 	
 	.panel_col{
@@ -2086,6 +2085,7 @@ a.footer-brand img{
 	.footer_col{
 		flex: 100%;
 		width: 100%;
+		margin: 0;
 	}
 }	
 
@@ -2164,5 +2164,15 @@ a.footer-brand img{
 @media only screen and (max-width: 320px){
 	.box_list{
 		padding: 7px;
+	}
+	
+	.prev_nav,
+	.next_nav{
+		margin-top: 125px;
+	}
+	
+	.telecoms_title h5{
+		font-size: 11px;
+		padding: 9px 14px
 	}
 }
