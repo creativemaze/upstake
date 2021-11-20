@@ -3,7 +3,7 @@ Main Stylesheet
 
 Project:    Highpoint Corporate Template
 Version:    1.0
-Last change:    15/10/2021
+Last change:    19/11/2021
 Author:    creativemaze
 Primary use:    SAAS
 -------------------------------------------------------------------*/
@@ -122,7 +122,7 @@ ul{
  
 /* --- 2.1. Logo & Navigation --- */
 nav.navbar.bootsnav .navbar-brand{
-    max-width: 200px !important; 	
+    max-width: 200px; 	
 }
 
 .navbar-header a.navbar-brand{
@@ -134,7 +134,7 @@ nav.navbar.bootsnav .navbar-brand{
 	font-weight: 700;
 	letter-spacing: 1px;
 	text-transform: uppercase;
-	padding-top: 28px;
+	padding-top: 30px;
 }
 
 .navbar-header a.navbar-brand:hover{
@@ -1674,9 +1674,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	margin: 0 auto;
 	position: relative;
 	text-align: center;
-	transition: 0.5s;
 	overflow: hidden;
-	
 }
 
 .blog_feat{
@@ -1804,19 +1802,19 @@ a.blog_btn::after{
 	margin: 0 auto 2em;
 	padding: 0 35px;
 	position: relative;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 .saas_group_ten{
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
 	padding: 40px 25px;
 }
 
-.saas_group_ten::before {
+.saas_area_ten::before {
 	content: '';
 	position: absolute;
 	z-index: 1;
@@ -1920,6 +1918,7 @@ a.blog_btn::after{
 	width: 25%;
 	padding: 0 20px;
 	max-width: 300px;
+	margin: 0 auto;
 }
 
 .footer_col{
@@ -2219,7 +2218,7 @@ a.footer-brand img{
 	}
 	
 	.first_right{
-		margin-top: 0;
+		margin: 0;
 	}
 	
 	.slide__right{
@@ -2333,6 +2332,7 @@ a.footer-brand img{
 	.footer_col{
 		flex: 100%;
 		width: 100%;
+		margin: 0;
 	}
 }
 
@@ -2398,5 +2398,9 @@ a.footer-brand img{
 	.service_box{
 		padding-left: 15px;
 		padding-right: 15px;
+	}
+	
+	.col_head h3{
+		font-size: 20px;
 	}
 }
