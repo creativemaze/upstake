@@ -3,7 +3,7 @@ Main Stylesheet
 
 Project:    Highpoint Corporate Template
 Version:    1.0
-Last change:    24/10/2021
+Last change:    21/11/2021
 Author:    creativemaze
 Primary use:    Freelancer
 -------------------------------------------------------------------*/
@@ -121,7 +121,7 @@ ul{
  ----------- */
 /* --- 2.1. Logo & Navigation --- */
 nav.navbar.bootsnav .navbar-brand{
-    max-width: 200px !important; 	
+    max-width: 200px; 	
 }
 
 .navbar-header a.navbar-brand{
@@ -133,7 +133,7 @@ nav.navbar.bootsnav .navbar-brand{
 	font-weight: 700;
 	letter-spacing: 1px;
 	text-transform: uppercase;
-	padding-top: 28px;
+	padding-top: 30px;
 }
 
 .navbar-header a.navbar-brand:hover{
@@ -873,7 +873,7 @@ li.slick-active button{
 .freelance_item{
 	float: left;
 	width: 85%;
-	padding-left: 10px;
+	padding-left: 15px;
 }
 
 .freelance_item h3{
@@ -1007,7 +1007,7 @@ li.slick-active button{
 .skill_box{
 	max-width: 450px;
 	margin: 0 auto;
-	padding: 35px 30px; 
+	padding: 35px 25px; 
 	text-align: left;
 	background: #ffffff;
 	transition: 0.5s;
@@ -1015,7 +1015,7 @@ li.slick-active button{
 	height: 100%
 }
 
-.skillbar {
+.skillbar{
 	position: relative;
 	display: block;
 	margin-bottom: 20px;
@@ -1027,7 +1027,7 @@ li.slick-active button{
 	transition-property: width, background-color;
 }
 
-.skillbar-title {
+.skillbar-title{
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -1038,10 +1038,10 @@ li.slick-active button{
 	border-bottom-left-radius: 3px;
 }
 
-.skillbar-title span {
+.skillbar-title span{
 	display: block;
 	background: rgba(0, 0, 0, 0.1);
-	padding: 0 20px;
+	padding: 0 10px;
 	font-family: 'Montserrat' , Arial, sans-serif;
 	font-weight: 600;
 	font-size: 14px;
@@ -1061,7 +1061,7 @@ li.slick-active button{
 	border-radius: 3px;
 }
 
-.skill-bar-percent {
+.skill-bar-percent{
 	position: absolute;
 	right: 10px;
 	top: 0;
@@ -1101,7 +1101,6 @@ li.slick-active button{
 	overflow: hidden;
 	margin: auto;
 	padding: 5px;
-	transition: 0.5s;
 }
 
 .portfolio_box{
@@ -1368,7 +1367,6 @@ li.slick-active button{
 	overflow: hidden;
 	margin: auto;
 	min-height: 150px;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
 .blog_image{
@@ -1379,18 +1377,13 @@ li.slick-active button{
 .blog_area{
 	overflow: hidden;
 	position: relative;
-	padding-bottom: 12px;
-	padding-right: 12px;
-	padding-top: 12px;
-	padding-left: 12px;
 	background-color: #ffffff;
-	transition: ease-in-out 0.5s;
+	padding: 0 5px;
 }
 
 .blog_content{
 	text-align: left;
-	padding: 20px 0;
-	padding-left: 10px;
+	padding: 15px 0 0 15px;
 }
 
 .date_info{
@@ -1470,14 +1463,14 @@ a.blog_btn{
     color: #111111;
     text-decoration: none;
 	text-transform: uppercase;
-    display: inline-block;
+    display: block;
     font-size: 13px;
 	font-weight: 600;
 	font-family: 'Montserrat', Arial, sans-serif;
     transition: 0.5s;
     cursor: pointer;
 	letter-spacing: 1px;
-	text-align: center;
+	text-align: left;
 	line-height: 1.2em;
 }
 
@@ -1746,6 +1739,7 @@ a.blog_btn::after{
 	width: 25%;
 	padding: 0 20px;
 	max-width: 300px;
+	margin: 0 auto;
 }
 
 .footer_col{
@@ -2095,9 +2089,15 @@ a.footer-brand img{
 		width: 100%;
 	}
 	
+	.data_col{
+		flex: 100%;
+		width: 100%;
+	}
+	
 	.footer_col{
 		flex: 100%;
 		width: 100%;
+		margin: 0;
 	}
 }
 
@@ -2108,6 +2108,7 @@ a.footer-brand img{
 	
 	.freelance_wide_col,
 	.freelance_bol_col,
+	.wide_box,
 	.num_col,
 	.square_col,
 	.review_col_right,
@@ -2120,11 +2121,6 @@ a.footer-brand img{
 	
 	.slidenav{
 		left: 0;
-	}
-	
-	.data_col{
-		flex: 100%;
-		width: 100%;
 	}
 }
 
