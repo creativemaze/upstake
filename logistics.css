@@ -3,7 +3,7 @@ Main Stylesheet
 
 Project:    Highpoint Corporate Template
 Version:    1.0
-Last change:    28/10/2021
+Last change:    22/11/2021
 Author:    creativemaze
 Primary use:    Logistics
 -------------------------------------------------------------------*/
@@ -122,7 +122,7 @@ ul{
  
 /* --- 2.1. Logo & Navigation --- */
 nav.navbar.bootsnav .navbar-brand{
-    max-width: 200px !important; 	
+    max-width: 200px; 	
 }
 
 .navbar-header a.navbar-brand{
@@ -134,7 +134,7 @@ nav.navbar.bootsnav .navbar-brand{
 	font-weight: 700;
 	letter-spacing: 1px;
 	text-transform: uppercase;
-	padding-top: 28px;
+	padding-top: 30px;
 }
 
 .navbar-header a.navbar-brand:hover{
@@ -508,9 +508,10 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 /* --- 3.1. Logistics Area One --- */
 .logistics_area_one{
 	max-width: 1280px;
-	margin: 9em auto 9em;
+	margin: 9em auto 0;
 	padding: 0 25px;
 	position: relative;
+	margin-bottom: calc(9em - 50px);
 }
 
 .logistics_group_one{
@@ -532,7 +533,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	text-align: center;
 	background: transparent;
 	transition: 0.5s;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
 .logistics_icon_box:hover{
@@ -595,7 +595,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 .square_box{
 	width: 100%;
 	padding: 20px;
-	max-width: 350px;
+	max-width: 400px;
 	margin: 25px auto;
 	overflow: hidden;
 }
@@ -1211,14 +1211,13 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	margin: 0 auto;
 	display: flex;
 	flex-wrap: wrap;
-	padding-top: 40px;
 	padding-bottom: 40px;
 }
 
 .blog_col{
 	flex: 33.33%;
 	width: 33.33%;
-	padding: 0 25px;
+	padding: 40px 25px 0;
 }
 
 .blog_box{
@@ -1500,9 +1499,9 @@ a.blog_btn::after{
 }
 
 .logistics_group_ten{
-	max-width: 1200px;
+	max-width: 1280px;
 	margin: auto;
-	padding: 0 25px;
+	padding: 0 30px;
 	position: relative;
 	z-index: 9;
 }
@@ -1649,6 +1648,7 @@ a.blog_btn::after{
 	width: 25%;
 	padding: 0 20px;
 	max-width: 300px;
+	margin: 0 auto;
 }
 
 .footer_col{
@@ -1819,17 +1819,17 @@ a.footer-brand img{
 	.logistics_icon_col{
 		flex: 50%;
 		width: 50%;
-		margin-bottom: 40px;
+		margin-bottom: 15px;
 	}
 	
 	.square_col{
 		flex: 100%;
 		width: 100%;
-		max-width: 350px;
+		max-width: 400px;
 	}
 	
 	.logistics_group_two{
-		max-width: 350px;
+		max-width: 400px;
 		margin: auto;
 	}
 	
@@ -1863,7 +1863,6 @@ a.footer-brand img{
 	.blog_col{
 		flex: 50%;
 		width: 50%;
-		margin-bottom: 40px;
 	}
 }
 
@@ -2040,6 +2039,7 @@ a.footer-brand img{
 	.footer_col{
 		flex: 100%;
 		width: 100%;
+		margin: 0;
 	}
 }	
 
@@ -2057,5 +2057,19 @@ a.footer-brand img{
 	.blog_col{
 		padding-left: 0;
 		padding-right: 0;
+	}
+}
+
+@media only screen and (max-width: 320px){
+	.logistics_item{
+		padding-left: 20px;
+	}
+	
+	.num_item{
+		padding-left: 20px;
+	}
+	
+	.logistics_area_five{
+		margin-top: -325px;
 	}
 }
