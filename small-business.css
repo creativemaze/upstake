@@ -3,7 +3,7 @@ Main Stylesheet
 
 Project:    Highpoint Corporate Template
 Version:    1.0
-Last change:    02/11/2021
+Last change:    23/11/2021
 Author:    creativemaze
 Primary use:    Small Business
 -------------------------------------------------------------------*/
@@ -56,7 +56,7 @@ ul{
 	width: 100%;
 }
 
-.js .loading::before {
+#loading::before {
 	content: '';
 	position: fixed;
 	z-index: 100000;
@@ -67,7 +67,7 @@ ul{
 	background: #ffffff;
 }
 
-.js .loading::after {
+#loading::after {
 	content: '';
 	position: fixed;
 	z-index: 100000;
@@ -126,7 +126,7 @@ ul{
  
 /* --- 2.1. Logo & Navigation --- */
 nav.navbar.bootsnav .navbar-brand{
-    max-width: 200px !important; 	
+    max-width: 200px; 	
 }
 
 .navbar-header a.navbar-brand{
@@ -138,7 +138,7 @@ nav.navbar.bootsnav .navbar-brand{
 	font-weight: 700;
 	letter-spacing: 1px;
 	text-transform: uppercase;
-	padding-top: 28px;
+	padding-top: 30px;
 }
 
 .navbar-header a.navbar-brand:hover{
@@ -983,7 +983,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	overflow: hidden;
 	margin: auto;
 	min-height: 150px;
-	transition: 0.5s;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -991,7 +990,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	vertical-align: middle;
 	width: 100%;
 	height: auto;
-	transition: ease-in-out 0.5s;
 	display: block;
 }
 
@@ -1082,9 +1080,10 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .business_group_six{
-	max-width: 1400px;
+	max-width: 1280px;
 	margin: auto;
 	width: 100%;
+	text-align: center;
 	display: flex;
 	flex-wrap: wrap;
 	padding: 20px;
@@ -1098,7 +1097,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .count_box{
-	max-width: 350px;
+	max-width: 300px;
 	margin: 0 auto;
 	padding: 0 25px;
 	min-height: 50px;
@@ -1114,7 +1113,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 .icon_content{
 	float: left;
 	width: 85%;
-	padding-left: 10px;
+	padding-left: 15px;
 }
 
 .icon .fas,
@@ -1167,14 +1166,13 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	margin: 0 auto;
 	display: flex;
 	flex-wrap: wrap;
-	padding-top: 30px;
-	padding-bottom: 30px;
+	padding-bottom: 40px;
 }
 
 .blog_col{
 	flex: 33.33%;
 	width: 33.33%;
-	padding: 0 20px;
+	padding: 40px 20px 0;
 }
 
 .blog_box{
@@ -1184,7 +1182,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	overflow: hidden;
 	margin: auto;
 	min-height: 150px;
-	transition: 0.5s;
 }
 
 .blog_image{
@@ -1609,6 +1606,7 @@ a.blog_btn::after{
 	width: 25%;
 	padding: 0 20px;
 	max-width: 300px;
+	margin: 0 auto;
 }
 
 .footer_col{
@@ -1795,7 +1793,6 @@ a.footer-brand img{
 	.blog_col{
 		flex: 50%;
 		width: 50%;
-		margin-bottom: 40px;
 	}
 	
 	.square_col{
@@ -1950,6 +1947,10 @@ a.footer-brand img{
 		width: 50%;
 	}
 	
+	.client_details{
+		padding: 0 15px;
+	}
+	
 	.footer_col{
 		flex: 50%;
 		width: 50%;
@@ -2023,9 +2024,14 @@ a.footer-brand img{
 		margin-left: 0;
 	}
 	
+	.col_head h3{
+		font-size: 25px;
+	}
+	
 	.footer_col{
 		flex: 100%;
 		width: 100%;
+		margin: 0;
 	}
 }
 
@@ -2051,10 +2057,6 @@ a.footer-brand img{
 	.client_details{
 		padding: 0 10px;
 	}
-	
-	.col_head h3{
-		font-size: 25px;
-	}
 }
 
 @media only screen and (max-width: 375px){
@@ -2075,6 +2077,10 @@ a.footer-brand img{
 @media only screen and (max-width: 320px){
 	.cube_name{
 		width: 230px;
+	}
+	
+	.business_slide{
+		padding-right: 15px;
 	}
 	
 	.icon{
