@@ -3,7 +3,7 @@ Main Stylesheet
 
 Project:    Highpoint Corporate Template
 Version:    1.0
-Last change:    31/10/2021
+Last change:    23/11/2021
 Author:     creativemaze
 Primary use:    E-Learning
 -------------------------------------------------------------------*/
@@ -57,7 +57,7 @@ ul{
 	width: 100%;
 }
 
-.js .loading::before {
+#loading::before {
 	content: '';
 	position: fixed;
 	z-index: 100000;
@@ -68,7 +68,7 @@ ul{
 	background: #ffffff;
 }
 
-.js .loading::after {
+#loading::after {
 	content: '';
 	position: fixed;
 	z-index: 100000;
@@ -124,7 +124,7 @@ ul{
  
 /* --- 2.1. Logo & Navigation --- */
 nav.navbar.bootsnav .navbar-brand{
-    max-width: 200px !important; 	
+    max-width: 200px; 	
 }
 
 .navbar-header a.navbar-brand{
@@ -136,7 +136,7 @@ nav.navbar.bootsnav .navbar-brand{
 	font-weight: 700;
 	letter-spacing: 1px;
 	text-transform: uppercase;
-	padding-top: 28px;
+	padding-top: 30px;
 }
 
 .navbar-header a.navbar-brand:hover{
@@ -962,8 +962,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 .tutorial_image{
 	overflow: hidden;
 	position: relative;
-	transition: .5s ease;
-	cursor: pointer;
 }
 
 .overlay{
@@ -1398,10 +1396,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	position: relative;
 }
 
-.download_button > a:hover{
-	opacity: 0.6;
-}
-
 .download_box:hover{
 	background-color: #1488CC;
 }
@@ -1419,6 +1413,10 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 .download_box:hover .download_button > a{
 	border-color: #ffffff;
 	color: #ffffff;
+}
+
+.download_box:hover .download_button > a:hover{
+	color: #111111;
 }
 
 /* --- 3.6. E-Learning Area Six --- */
@@ -1646,14 +1644,13 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	margin: 0 auto;
 	display: flex;
 	flex-wrap: wrap;
-	padding-top: 30px;
 	padding-bottom: 30px;
 }
 
 .blog_col{
 	flex: 33.33%;
 	width: 33.33%;
-	padding: 0 20px;
+	padding: 30px 20px 0;
 }
 
 .blog_box{
@@ -1681,7 +1678,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .blog_content{
-	padding: 20px 0;
+	padding: 15px 0;
 	text-align: left;
 	padding-left: 15px;
 }
@@ -1966,6 +1963,7 @@ a.blog_btn:hover{
 	width: 25%;
 	padding: 0 20px;
 	max-width: 300px;
+	margin: 0 auto;
 }
 
 .footer_col{
@@ -2187,7 +2185,6 @@ a.footer-brand img{
 	.blog_col{
 		flex: 50%;
 		width: 50%;
-		margin-bottom: 40px;
 	}
 	
 	.review_col_left{
@@ -2380,7 +2377,7 @@ a.footer-brand img{
 	}
 	
 	.tutorial_course_box{
-		padding-left: 0;
+		padding: 0 5px;
 	}
 	
 	.popular_col{
@@ -2436,9 +2433,14 @@ a.footer-brand img{
 		margin-left: 0;
 	}
 	
+	.col_head h3{
+		font-size: 25px;
+	}
+	
 	.footer_col{
 		flex: 100%;
 		width: 100%;
+		margin: 0;
 	}
 }	
 
@@ -2459,10 +2461,6 @@ a.footer-brand img{
 	.review_box{
 		padding-left: 0;
 		padding-right: 0;
-	}
-	
-	.col_head h3{
-		font-size: 25px;
 	}
 }
 
