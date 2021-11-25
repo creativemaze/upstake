@@ -3,7 +3,7 @@ Main Stylesheet
 
 Project:    Highpoint Corporate Template
 Version:    1.0
-Last change:    04/11/2021
+Last change:    24/11/2021
 Author:    creativemaze
 Primary use:    Bakery
 -------------------------------------------------------------------*/
@@ -32,6 +32,9 @@ Primary use:    Bakery
 
 /* 1. GENERAL
  ----------- */
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,400,500,600,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,400,500,600,700,800,900'); 
+ 
 body,
 html{
 	width:100%;
@@ -56,7 +59,7 @@ ul{
 	width: 100%;
 }
 
-.js .loading::before {
+#loading::before {
 	content: '';
 	position: fixed;
 	z-index: 100000;
@@ -67,7 +70,7 @@ ul{
 	background: #ffffff;
 }
 
-.js .loading::after {
+#loading::after {
 	content: '';
 	position: fixed;
 	z-index: 100000;
@@ -120,7 +123,7 @@ ul{
  ----------- */
 /* --- 2.1. Logo & Navigation --- */
 nav.navbar.bootsnav .navbar-brand{
-    max-width: 200px !important; 	
+    max-width: 200px; 	
 }
 
 .navbar-header a.navbar-brand{
@@ -132,7 +135,7 @@ nav.navbar.bootsnav .navbar-brand{
 	font-weight: 700;
 	letter-spacing: 1px;
 	text-transform: uppercase;
-	padding-top: 28px;
+	padding-top: 30px;
 }
 
 .navbar-header a.navbar-brand:hover{
@@ -666,7 +669,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .bakery_icon_box{
-	max-width: 350px;
+	max-width: 300px;
 	margin: auto;
 	padding: 30px;
 	text-align: center;
@@ -683,7 +686,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	display: block;
 	text-align: center;
 	letter-spacing: 1px;
-	transition: 0.5s;
 	line-height: 1.4em;
 }
 
@@ -696,7 +698,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	color: #696969;
 	letter-spacing: 1px;
 	text-align: center;
-	transition: 0.5s;
 	line-height: 1.5em;
 }
 
@@ -982,7 +983,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	margin: 0 auto;
 	position: relative;
 	text-align: center;
-	transition: 0.5s;
 	overflow: hidden;
 	padding-bottom: 10px;
 	padding-right: 10px;
@@ -1293,14 +1293,13 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	margin: 0 auto;
 	display: flex;
 	flex-wrap: wrap;
-	padding-top: 40px;
-	padding-bottom: 30px;
+	padding-bottom: 40px;
 }
 
 .blog_col{
 	flex: 33.33%;
 	width: 33.33%;
-	padding: 0 25px;
+	padding: 40px 25px 0;
 }
 
 .blog_box{
@@ -1350,7 +1349,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	vertical-align: middle;
 	width: 100%;
 	height: auto;
-	transition: 0.5s;
 	display: block;
 }
 
@@ -1507,7 +1505,7 @@ a.blog_btn:hover .blog_crumb{
 
 .bakery_group_eight{
 	width: 100%;
-	padding-top: 40px;
+	padding-top: 0;
 }
 
 .bakery_group_eight .slick-slider {
@@ -1522,7 +1520,7 @@ a.blog_btn:hover .blog_crumb{
 	max-width: 400px;
 	margin: auto;
 	padding: 0 20px;
-	margin-top: 20px;
+	margin-top: 40px;
 	text-align: center;
 }
 
@@ -1798,6 +1796,7 @@ li.slick-active button{
 	width: 25%;
 	padding: 0 20px;
 	max-width: 300px;
+	margin: 0 auto;
 }
 
 .footer_col{
@@ -1958,7 +1957,6 @@ a.footer-brand img{
 	.blog_col{
 		flex: 50%;
 		width: 50%;
-		margin-bottom: 40px;
 	}
 }
  
@@ -2155,6 +2153,7 @@ a.footer-brand img{
 	.footer_col{
 		flex: 100%;
 		width: 100%;
+		margin: 0;
 	}
 }	
 
@@ -2175,7 +2174,8 @@ a.footer-brand img{
 	.bakery_wide_col,
 	.wide_box,
 	.blog_col{
-		padding: 0;
+		padding-left: 0;
+		padding-right: 0;
 	}
 }
 
