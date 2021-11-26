@@ -3,8 +3,8 @@ Main Stylesheet
 
 Project:    Highpoint Corporate Template
 Version:    1.0
-Last change:    20/08/2021
-Author:    Themewiz
+Last change:    25/11/2021
+Author:    creativemaze
 Primary use:    Technology
 -------------------------------------------------------------------*/
 
@@ -55,7 +55,7 @@ ul{
 	width: 100%;
 }
 
-.js .loading::before {
+#loading::before {
 	content: '';
 	position: fixed;
 	z-index: 100000;
@@ -66,7 +66,7 @@ ul{
 	background: #ffffff;
 }
 
-.js .loading::after {
+#loading::after {
 	content: '';
 	position: fixed;
 	z-index: 100000;
@@ -120,22 +120,28 @@ ul{
  ----------- */
  
 /* --- 2.1. Logo & Navigation --- */
-.navbar-header h2{
+nav.navbar.bootsnav .navbar-brand{
+    max-width: 200px; 	
+}
+
+.navbar-header a.navbar-brand{
+	text-decoration: none;
+	color: #ffffff;
+	transition: 0.5s;
 	font-family: 'Montserrat', Arial, sans-serif;
 	font-size: 22px;
 	font-weight: 700;
 	letter-spacing: 1px;
 	text-transform: uppercase;
+	padding-top: 30px;
 }
 
-.navbar-header a.navbar-brand{
-	text-decoration: none;
-	color: #ffffff !important;
-	transition: 0.5s;
+.navbar-header a.navbar-brand:hover{
+	color: #ffffff;
 }
 
 nav.navbar .navbar-brand img.logo{
-   max-width: 200px;
+   width: 100%;
    height: auto;
    display: block;
 }
@@ -414,7 +420,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	overflow: hidden;
 }
 
 .first_left{
@@ -422,7 +427,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	flex-direction: row;
 	justify-content: flex-start;
 	align-items: center;
-	overflow: hidden;
 }
 
 .slide__left{
@@ -468,7 +472,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	font-size: 16px;
 	font-weight: normal;
 	display: block;
-	color: #d2d2d2;
+	color: #f2f2f2;
 	line-height: 1.5em;
 	letter-spacing: 1px;
 	text-align: left;
@@ -695,9 +699,8 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	margin: 0;
 	min-height: 400px;
 	padding: 6em 25px 12em;
-	background-color: #f6f6f6;
+	background-color: #eeeeee;
 	position: relative;
-	margin-bottom: 0;
 } 
  
 .tech_group_two{
@@ -722,9 +725,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	padding: 25px 20px;
 	max-width: 400px;
 	margin: 0 auto 25px;
-	transition: 0.5s;
 	overflow: hidden;
-	cursor: pointer;
 }
 
 .square_col img{
@@ -799,7 +800,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	padding: 8px 0;
 }
 
-.tech_button > a{
+.tech_button a{
 	font-family: 'Montserrat' , Arial, sans-serif;
 	font-size: 13px;
 	font-weight: 600;
@@ -811,7 +812,22 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	text-decoration: none;
 	width: 110px;
 	transition: 0.5s;
-    cursor: pointer;
+}
+
+.tech_button a::after{
+	content: "\203A";
+	font-size: 20px;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	height: auto;
+	padding-left: 5px;
+	top: 1px;
+	position: relative;
+}
+
+.tech_button a:hover{
+	color: #111111;
 }
 
 .slidenav{
@@ -855,7 +871,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	height: 100%;
 	background: #1488CC; 
 	background: linear-gradient(to right, #2B32B2, #1488CC);
-	margin: 0;
 }
 
 /* --- 3.4. Technology Area Four --- */
@@ -912,7 +927,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	max-width: 350px;
 	margin: auto;
 	text-align: center;
-	transition: 0.5s;
 }
 
 .tech_icon_box h3{
@@ -949,9 +963,8 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 /* --- 3.5. Technology Area Five --- */
 .tech_area_five{
 	max-width: 1280px;
-	margin: 0 auto 0;
-	padding: 0 20px;
-	margin-bottom: 9em;
+	margin: 0 auto 9em;
+	padding: 0 25px;
 }
 
 .tech_group_five{
@@ -1081,7 +1094,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	margin: 0;
 	min-height: 400px;
 	padding: 6em 25px;
-	background-color: #f6f6f6;
+	background-color: #eeeeee;
 }
 
 .tech_group_six{
@@ -1090,14 +1103,13 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	margin: 0 auto;
 	display: flex;
 	flex-wrap: wrap;
-	padding-top: 40px;
 	padding-bottom: 40px;
 }
 
 .blog_col{
 	flex: 33.33%;
 	width: 33.33%;
-	padding: 0 20px;
+	padding: 40px 20px 0;
 }
 
 .blog_box{
@@ -1107,7 +1119,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	overflow: hidden;
 	margin: auto;
 	min-height: 150px;
-	transition: 0.5s;
 }
 
 .blog_image{
@@ -1123,7 +1134,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	padding-top: 12px;
 	padding-left: 12px;
 	background-color: #ffffff;
-	transition: ease-in-out 0.5s;
 }
 
 .blog_content{
@@ -1256,7 +1266,6 @@ a.blog_btn:hover{
 	flex-direction: row;
 	justify-content: flex-start;
 	align-items: center;
-	overflow: hidden;
 }
 
 .review_box{
@@ -1298,7 +1307,7 @@ a.blog_btn:hover{
 
 .client_box{
 	width: 100%;
-	padding: 30px;
+	padding: 40px 30px;
 	text-align: center;
 	display: block;
 	background-color: #ffffff;
@@ -1408,116 +1417,91 @@ a.blog_btn:hover{
 
 /* --- 3.8. Technology Area Eight --- */
 .tech_area_eight{
-	width: 100%;
-	margin: 0 0 2em;
-	min-height: 400px;
-	padding: 6em 25px;
-	border-bottom: double 4px #e0e0e0;
-	border-top: double 4px #e0e0e0;
+	max-width: 1200px;
+	margin: 0 auto 2em;
+	padding: 0 35px;
 }
  
 .tech_group_eight{
-	max-width: 1280px;
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
-	margin: auto;
 }
 
-.tech_form_col{
-	position: relative;
-	flex: 50%;
-	width: 50%;
+.col_info{
+	flex: 100%;
+	width: 100%;
+}
+	
+.col_head{
+	flex: 100%;
+	width: 100%;
 }
 
-.form_area{
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	align-items: center;
+.subscribe-row{
+	text-align: center;
+	margin-top: 35px;
 }
 
-.form_col_box{
-	max-width: 450px;
-	text-align: left;
-}
-
-.form_col_box h2{
+.col_head h3{
 	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 40px;
+	font-size: 30px;
+	display: block;
 	font-weight: 500;
-	letter-spacing: 1px;
-	text-align: left;
-	display: block;
 	color: #111111;
-	line-height: 1.3em;
-}
-
-.form_col_box p{
-	font-family: 'Roboto' , Arial, sans-serif;
-	font-size: 16px;
-	font-weight: normal;
-	display: block;
-	color: #696969;
 	letter-spacing: 1px;
-	text-align: left;
-	padding: 12px 0;
-	line-height: 1.5em;
-}
-
-.form-box{
-	text-align: right;
-	display: block;
+	text-align: center;
+	line-height: 1.3em;
 	max-width: 600px;
+	margin:  0 auto;
 }
 
-.form-row {
-	flex-direction: row;
-	display: flex;
-}
-
-.form-box input[type="text"],
-.form-box input[type="email"],
-.form-box input[type="password"]{
+.col_info input[type="email"]{
+	width: 350px;
+	padding: 10px 20px 14px;
+	padding-right: 50px;
+	border: 0;
 	font-family: 'Montserrat' , Arial, sans-serif;
 	font-size: 13px;
-	padding: 7px 20px;
-	height: 40px;
-	border: none;
-	margin: 8px 0;
-	border: solid 1px #e0e0e0;
-	flex-grow: 1;
+	display: inline-block;
+	font-weight: 600;
+	color: #333333;
+	text-transform: capitalize;
 	letter-spacing: 1px;
-	transition: 0.5s;
 	background-color: #f6f6f6;
 }
 
-.form-box input[type="text"]:focus,
-.form-box input[type="email"]:focus,
-.form-box input[type="password"]:focus{
-	outline: none;
-}
-
-.form-box input[type="submit"]{
-	margin: 8px 0;
-	width: 100%;
-	padding: 10px 0;
+.col_info input[type="submit"]{
+	display: inline-block;
+	width: auto;
+	padding: 11px 24px;
 	text-align: center;
 	font-family: 'Montserrat' , Arial, sans-serif;
 	font-size: 14px;
-	font-weight: 600;
+	font-weight: 500;
 	text-transform: uppercase;
+	margin: 0;
+	margin-left: -4px;
 	color: #ffffff;
+	border-radius: 0;
 	letter-spacing: 1px;
 	background-color: #1488CC;
 	border: solid 1px #1488CC;
 	transition: 0.5s;
+	border-top-right-radius: 25px;
+	border-bottom-right-radius: 25px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
-.form-box input[type="submit"]:hover{
+.col_info input[type="submit"]:hover{
 	background-color: #111111;
 	color: #ffffff;
 	border-color: #111111;
+}
+
+.col_info input[type="email"]:focus{
+	outline: none;
+	box-shadow: 0 0 0 2px #e0e0e0;
 }
 
 /* 4. FOOTER
@@ -1543,6 +1527,7 @@ a.blog_btn:hover{
 	width: 25%;
 	padding: 0 20px;
 	max-width: 300px;
+	margin: 0 auto;
 }
 
 .footer_col{
@@ -1713,10 +1698,15 @@ a.footer-brand img{
 		margin: auto;
 	}
 	
-	.blog_col{
+	.tech_icon_col{
 		flex: 50%;
 		width: 50%;
 		margin-bottom: 40px;
+	}
+	
+	.blog_col{
+		flex: 50%;
+		width: 50%;
 	}
 	
 	.tech_col{
@@ -1727,6 +1717,7 @@ a.footer-brand img{
 	.client_col{
 		flex: 100%;
 		width: 100%;
+		margin-top: 25px;
 	}
 } 
  
@@ -1744,8 +1735,19 @@ a.footer-brand img{
 		transform: translateX(-50%);
 	}
 	
-	.navbar-header h2{
-		margin-top: 7px;
+	.head_btn a{
+		background-color: transparent;
+		border-color: #1488CC;
+	}
+	
+	.head_btn a:hover{
+		background-color: #1488CC;
+		border-color: #1488CC;
+		color: #ffffff;
+	}
+	
+	.navbar-header a.navbar-brand{
+		padding-top: 22px;
 	}
 	
 	nav.navbar.bootsnav ul.nav > li > a{
@@ -1823,12 +1825,6 @@ a.footer-brand img{
 		padding-bottom: 35px;
 	}
 	
-	.tech_icon_col{
-		flex: 50%;
-		width: 50%;
-		margin-bottom: 30px;
-	}
-	
 	.question_col{
 		flex: 100%;
 		width: 100%;
@@ -1842,11 +1838,6 @@ a.footer-brand img{
 	
 	.client_details{
 		padding: 0 15px;
-	}
-	
-	.tech_form_col{
-		flex: 100%;
-		width: 100%;
 	}
 	
 	.footer_col{
@@ -1864,8 +1855,7 @@ a.footer-brand img{
 	.wide_box h2,
 	.bg_head,
 	.question_box h2,
-	.review_box h2,
-	.form_col_box h2{
+	.review_box h2{
 		font-size: 30px;
 	}
 	
@@ -1886,20 +1876,51 @@ a.footer-brand img{
 		width: 100%;
 	}
 	
+	.col_info input[type="email"]{
+		display: block;
+		width: 100%;
+	}
+	
+	.col_info input[type="submit"]{
+		margin-top: 20px;
+		display: block;
+		width: 100%;
+		margin-left: 0;
+	}
+	
+	.col_head h3{
+		font-size: 25px;
+	}
+	
 	.footer_col{
 		flex: 100%;
 		width: 100%;
+		margin: 0;
 	}
 }	
 
 @media only screen and (max-width: 420px){
 	.square_col,
 	.tech_icon_col,
-	.question_col,
 	.question_box,
 	.blog_col,
-	.client_col,
+	.client_col{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	
 	.client_details{
-		padding: 0;
+		padding: 0 10px;
+	}
+}
+
+@media only screen and (max-width: 375px){
+	.client_info img{
+		width: 70px;
+		height: 70px;
+	}
+	
+	.client_box{
+		padding: 30px 15px;
 	}
 }
