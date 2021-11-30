@@ -1,9 +1,9 @@
 /*------------------------------------------------------------------
 Main Stylesheet
 
-Project:    Highpoint Corporate Template
+Project:    HighPoint - Multipurpose Business Template
 Version:    1.0
-Last change:    10/11/2021
+Last change:    30/11/2021
 Author:    creativemaze
 Primary use:    Finance
 -------------------------------------------------------------------*/
@@ -56,7 +56,7 @@ ul{
 	width: 100%;
 }
 
-.js .loading::before {
+#loading::before {
 	content: '';
 	position: fixed;
 	z-index: 100000;
@@ -67,7 +67,7 @@ ul{
 	background: #ffffff;
 }
 
-.js .loading::after {
+#loading::after {
 	content: '';
 	position: fixed;
 	z-index: 100000;
@@ -1145,7 +1145,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 .team_col img{
 	width: 100%;
 	height: auto;
-	transition: ease-in-out 0.5s;
 	display: block;
 }
 
@@ -1153,7 +1152,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	overflow: hidden;
 	position: relative;
 	background-color: #ffffff;
-	transition: ease-in-out 0.5s;
 }
 
 .team_overlay{
@@ -1292,9 +1290,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	margin: 0 auto;
 	position: relative;
 	text-align: center;
-	transition: 0.5s;
 	overflow: hidden;
-	
 }
 
 .blog_feat{
