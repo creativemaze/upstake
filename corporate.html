@@ -12,7 +12,7 @@
 	
 	<!-- ============== Style Sheet ============== -->
 	<link href="bootsnav.css" rel="stylesheet">
-	<link href="animate.css" rel="stylesheet">
+	<link href="animate.min.css" rel="stylesheet">
 	<link href="bootstrap.min.css" rel="stylesheet">
 	<link href="slick.css" rel="stylesheet">
 	<link href="aos.css" rel="stylesheet">
@@ -25,7 +25,9 @@
 	<link href= "https://fonts.googleapis.com/css?family=Roboto:100,400,500,600,700,800,900" rel='stylesheet'>
 	
 </head>
-<body class="loading">
+<body>
+
+	<div id="loading"></div><!--loading-->
 		
 	<!-- Start Navigation -->
     <nav class="navbar navbar-center navbar-mobile navbar-default bootsnav">
@@ -281,7 +283,7 @@
 			
 				<div class="header__content">
 					
-					<div data-target="0" class="active animated fadeIn">
+					<div data-target="0" class="active animate__animated animate__fadeIn">
 						
 						<h1 class="header-title"><span class="header-title__main">We deliver strong results and performance</span> 
 							<span class="header-title__sub">Our performance and results are at the forefront of our corporate
@@ -305,7 +307,7 @@
 			
 				<div class="header__content">
 				
-					<div data-target="1" class="animated fadeIn">
+					<div data-target="1" class="animate__animated animate__fadeIn">
 					
 						<h1 class="header-title"><span class="header-title__main">We provide visionary leadership for success</span> 
 							<span class="header-title__sub">Our vision and leadership drives our ideas to be the number one in our industry for the
@@ -794,7 +796,7 @@
 						
 							<div class="blog_content">
 							
-								<h3 class="blog_date">Feb 04, 2020 | Admin</h3>
+								<h3 class="blog_date">Feb 04, 2020</h3>
 								<h3 class="blog_title"><a href="https://creativemaze.github.io/highpoint/blog-single-post.html">Office workers spur business activity and stock market</a></h3>
 								
 								<a class="blog_btn" href="https://creativemaze.github.io/highpoint/blog-single-post.html">Read More</a>
@@ -821,7 +823,7 @@
 						
 							<div class="blog_content">
 							
-								<h3 class="blog_date">Feb 14, 2020 | Admin</h3>
+								<h3 class="blog_date">Feb 14, 2020</h3>
 								<h3 class="blog_title"><a href="https://creativemaze.github.io/highpoint/blog-single-post.html">The guide to profitability in the new millenium</a></h3>
 								
 								<a class="blog_btn" href="https://creativemaze.github.io/highpoint/blog-single-post.html">Read More</a>
@@ -848,7 +850,7 @@
 						
 							<div class="blog_content">
 							
-								<h3 class="blog_date">Feb 25, 2020 | Admin</h3>
+								<h3 class="blog_date">Feb 25, 2020</h3>
 								<h3 class="blog_title"><a href="https://creativemaze.github.io/highpoint/blog-single-post.html">New Firms to challenge the status quo this year</a></h3>
 								
 								<a class="blog_btn" href="https://creativemaze.github.io/highpoint/blog-single-post.html">Read More</a>
@@ -1127,9 +1129,7 @@
 	
 	<!-- ============== Javascript & Jquery Files ============== -->
 	<script src="jquery.min.js"></script>
-	<script src="loaderscript.js"></script>
 	<script src="jquery.magnific-popup.min.js"></script>
-	<script src="imagesloaded.pkgd.min.js"></script>
 	<script src="corporate-main.js"></script>
 	<script src="bootsnav.js"></script>
 	<script src="bootstrap.min.js"></script>
