@@ -1,9 +1,9 @@
 /*------------------------------------------------------------------
 Main Stylesheet
 
-Project:    Highpoint Corporate Template
+Project:    HighPoint - Multipurpose Business Template
 Version:    1.0
-Last change:    11/11/2021
+Last change:    30/11/2021
 Author:    creativemaze
 Primary use:    Consulting
 -------------------------------------------------------------------*/
@@ -33,6 +33,9 @@ Primary use:    Consulting
 
 /* 1. GENERAL
  ----------- */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,400,500,600,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,400,500,600,700,800,900'); 
+ 
 body,
 html{
 	width:100%;
@@ -57,7 +60,7 @@ ul{
 	width: 100%;
 }
 
-.js .loading::before {
+#loading::before {
 	content: '';
 	position: fixed;
 	z-index: 100000;
@@ -68,7 +71,7 @@ ul{
 	background: #ffffff;
 }
 
-.js .loading::after {
+#loading::after {
 	content: '';
 	position: fixed;
 	z-index: 100000;
@@ -119,7 +122,7 @@ ul{
  
 /* --- 2.1. Logo & Navigation --- */
 nav.navbar.bootsnav .navbar-brand{
-    max-width: 200px !important; 	
+    max-width: 200px; 	
 }
 
 .navbar-header a.navbar-brand{
@@ -1760,14 +1763,13 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	margin: 0 auto;
 	display: flex;
 	flex-wrap: wrap;
-	padding-top: 30px;
 	padding-bottom: 20px;
 }
 
 .blog_col{
 	flex: 33.33%;
 	width: 33.33%;
-	padding: 0 25px;
+	padding: 30px 25px 0;
 }
 
 .blog_box{
@@ -2335,7 +2337,6 @@ a.footer-brand img{
 	.blog_col{
 		flex: 50%;
 		width: 50%;
-		margin-bottom: 40px;
 	}
 }
 
@@ -2510,7 +2511,6 @@ a.footer-brand img{
 	.blog_col{
 		flex: 100%;
 		width: 100%;
-		padding: 0;
 	}
 	
 	.col_info input[type="email"]{
@@ -2545,6 +2545,7 @@ a.footer-brand img{
 		padding-left: 0;
 	}
 	
+	.blog_col,
 	.price_col,
 	.bg_col,
 	.team_col,
