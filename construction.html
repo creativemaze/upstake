@@ -12,7 +12,7 @@
 	
 	<!-- ============== Style Sheet ============== -->
 	<link href="bootsnav.css" rel="stylesheet">
-	<link href="animate.css" rel="stylesheet">
+	<link href="animate.min.css" rel="stylesheet">
 	<link href="bootstrap.min.css" rel="stylesheet">
 	<link href="slick.css" rel="stylesheet">
 	<link href="aos.css" rel="stylesheet">
@@ -25,8 +25,10 @@
 	<link href= "https://fonts.googleapis.com/css?family=Roboto:100,400,500,600,700,800,900" rel='stylesheet'>
 	
 </head>
-<body class="loading">
+<body>
 		
+	<div id="loading"></div><!--loading-->
+	
 	<!-- Start Navigation -->
     <nav class="navbar navbar-center navbar-mobile navbar-default bootsnav">
 
@@ -280,10 +282,10 @@
 			
 				<div class="header__content">
 				
-					<div data-target="0" class="active animated fadeIn">
+					<div data-target="0" class="active animate__animated animate__fadeIn">
 					
 						<h1 class="header-title"><span class="header-title__main"><span class="first-word">Building</span> Experts</span> 
-							<span class="header-title__sub">We construct projects of any size and scale</span>
+							<span class="header-title__sub">We construct projects of any size and scale.</span>
 			
 							<span class="buttoncol">
 						
@@ -304,7 +306,7 @@
 			
 				<div class="header__content">
 				
-					<div data-target="1" class="animated fadeIn">
+					<div data-target="1" class="animated animate__animated animate__fadeIn">
 					
 						<h1 class="header-title"><span class="header-title__main"><span class="first-word">Project</span> Delivery</span> 
 							<span class="header-title__sub">We deliver your projects in a timely and cost effective manner.</span>
@@ -1180,9 +1182,7 @@
 	
 	<!-- ============== Javascript & Jquery Files ============== -->
 	<script src="jquery.min.js"></script>
-	<script src="loaderscript.js"></script>
 	<script src="jquery.magnific-popup.min.js"></script>
-	<script src="imagesloaded.pkgd.min.js"></script>
 	<script src="construction-main.js"></script>
 	<script src="bootsnav.js"></script>
 	<script src="bootstrap.min.js"></script>
