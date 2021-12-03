@@ -1,9 +1,9 @@
 /*------------------------------------------------------------------
 Main Stylesheet
 
-Project:    Highpoint Corporate Template
+Project:    HighPoint - Multipurpose Business Template
 Version:    1.0
-Last change:    13/11/2021
+Last change:    01/12/2021
 Author:    creativemaze
 Primary use:    Medical
 -------------------------------------------------------------------*/
@@ -56,7 +56,7 @@ ul{
 	width: 100%;
 }
 
-.js .loading::before {
+#loading::before {
 	content: '';
 	position: fixed;
 	z-index: 100000;
@@ -67,7 +67,7 @@ ul{
 	background: #ffffff;
 }
 
-.js .loading::after {
+#loading::after {
 	content: '';
 	position: fixed;
 	z-index: 100000;
@@ -537,17 +537,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-}
-
-.square_media{
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
-}
-
-.square_col img{
-	vertical-align: middle;
-	width: 100%;
-	height: auto;
-	display: block;
 }
 
 .medical_icon{
@@ -1124,7 +1113,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	margin: 0;
 	min-height: 400px;
 	padding: 6em 25px;
-	background-color: #eee;
+	background-color: #eeeeee;
 }
 
 .medical_group_five{
