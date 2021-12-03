@@ -1,9 +1,9 @@
 /*------------------------------------------------------------------
 Main Stylesheet
 
-Project:    Highpoint Corporate Template
+Project:    HighPoint - Multipurpose Business Template
 Version:    1.0
-Last change:    14/11/2021
+Last change:    03/12/2021
 Author:    creativemaze
 Primary use:    SEO Agency
 -------------------------------------------------------------------*/
@@ -57,7 +57,7 @@ ul{
 	width: 100%;
 }
 
-.js .loading::before {
+#loading::before {
 	content: '';
 	position: fixed;
 	z-index: 100000;
@@ -68,7 +68,7 @@ ul{
 	background: #ffffff;
 }
 
-.js .loading::after {
+#loading::after {
 	content: '';
 	position: fixed;
 	z-index: 100000;
@@ -450,6 +450,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 .slide__box{
 	max-width: 600px;
 	text-align: left;
+	margin-left: 2vw;
 }
 
 .slide__box h2{
@@ -461,12 +462,12 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	text-align: left;
 	display: block;
 	color: #111111;
-	line-height: 1.25em;
+	line-height: 1.2em;
 }
 
 .slide__box p{
 	font-family: 'Roboto' , Arial, sans-serif;
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: normal;
 	display: block;
 	color: #696969;
@@ -837,7 +838,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	display: block;
 	text-align: center;
 	letter-spacing: 1px;
-	transition: 0.5s;
 	line-height: 1.4em;
 }
 
@@ -850,7 +850,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	color: #696969;
 	letter-spacing: 1px;
 	text-align: center;
-	transition: 0.5s;
 	line-height: 1.5em;
 }
 
@@ -1042,40 +1041,31 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	flex-wrap: wrap;
 }
 
-.counter_area{
-	position: relative;
-	flex: 50%;
-	width: 50%;
-	padding: 0 25px;
+.info_col{
+	flex: 33.33%;
+	width: 33.33%;
+	padding: 0 20px;
 }
 
-.graph_area{
-	position: relative;
-	flex: 50%;
-	width: 50%;
-	padding: 0 25px;
+.count_col{
+	flex: 66.66%;
+	width: 66.66%;
 }
 
-.graph_area img{
-	vertical-align: middle;
-	width: 100%;
-	height: auto;
-}
-
-.num_area{
+.info_area{
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
 	align-items: center;
 }
 
-.num_box{
-	max-width: 500px;
+.info_box{
+	max-width: 450px;
 	margin: 0;
-	padding-right: 10px;
+	width: 100%;
 }
 
-.num_box h2{
+.info_box h2{
 	color: #111111;
 	font-family: 'Montserrat' , Arial, sans-serif;
 	font-size: 40px;
@@ -1086,21 +1076,17 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	line-height: 1.3em;
 }
 
-.data_content{
+.data_area{
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
-	padding-top: 10px;
+	max-width: 900px;
 }
 
 .data_col{
-	flex: 50%;
-	width: 50%;
-	padding: 10px 15px 10px 0;
-}
-
-.right_col{
-	padding-left: 5px;
+	flex: 25%;
+	width: 25%;
+	padding: 0 40px;
 }
 
 .progressbar {
@@ -1219,8 +1205,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	vertical-align: middle;
 	width: 100%;
 	height: auto;
-	transition: 0.5s;
-	display: block;
 }
 
 .blog_image > a > img{
@@ -1688,17 +1672,6 @@ a.footer-brand img{
 		margin-bottom: 40px;
 	}
 	
-	.counter_area,
-	.graph_area{
-		flex: 100%;
-		width: 100%;
-		max-width: 600px;
-	}
-	
-	.graph_area{
-		margin-top: 40px;
-	}
-	
 	.col_info{
 		flex: 100%;
 		width: 100%;
@@ -1827,6 +1800,17 @@ a.footer-brand img{
 		max-width: 500px;
 	}
 	
+	.info_col{
+		flex: 100%;
+		width: 100%;
+		margin-bottom: 40px;
+	}
+	
+	.count_col{
+		flex: 100%;
+		width: 100%;
+	}
+	
 	.footer_col{
 		flex: 50%;
 		width: 50%;
@@ -1840,7 +1824,7 @@ a.footer-brand img{
 	
 	.seo_head,
 	.wide_box h2,
-	.num_box h2,
+	.info_box h2,
 	.bg_head{
 		font-size: 30px;
 	}
@@ -1860,8 +1844,9 @@ a.footer-brand img{
 	}
 	
 	.data_col{
-		flex: 100%;
-		width: 100%;
+		flex: 50%;
+		width: 50%;
+		margin-bottom: 30px;
 	}
 	
 	.blog_col{
@@ -1879,6 +1864,10 @@ a.footer-brand img{
 		display: block;
 		width: 100%;
 		margin-left: 0;
+	}
+	
+	.col_head h3{
+		font-size: 25px;
 	}
 	
 	.footer_col{
@@ -1901,15 +1890,16 @@ a.footer-brand img{
 	.wide_box,
 	.right_box,
 	.price_col,
-	.counter_area,
-	.graph_area,
+	.info_col,
+	.data_col,
 	.blog_col{
 		padding-left: 0;
 		padding-right: 0;
 	}
 	
-	.col_head h3{
-		font-size: 25px;
+	.data_col{
+		flex: 100%;
+		width: 100%;
 	}
 }
 
