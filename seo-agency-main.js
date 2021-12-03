@@ -1,23 +1,5 @@
 "use strict";
-//Slick Slider (1) One
-$(document).ready(function(){
-	$('.feature_slider').slick({
-		dots: false,
-		fade: true,
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		prevArrow: '.prev_button',
-		nextArrow: '.next_button',
-		autoplay: false,
-		speed: 1000,
-		pauseOnHover: false,
-		pauseOnFocus: false,
-		adaptiveHeight: true,
-	});
-	
-});
-
-//Slick Slider (2) Two
+//Slick Slider
 $(document).ready(function(){
 	$('.client-slider').slick({
 		dots: false,
@@ -112,5 +94,14 @@ $(function () {
 	});
 });	
 
-//Preload all the images in the page
-imagesLoaded({background: true}, () => document.body.classList.remove('loading'));
+//Page Preloader
+document.onreadystatechange = function() {
+    if (document.readyState !== "complete") {
+        document.querySelector("body").style.visibility = "hidden";
+        document.querySelector("#loading").style.visibility = "visible";
+		 
+    } else {
+        document.querySelector("#loading").style.display = "none";
+        document.querySelector("body").style.visibility = "visible";
+    }
+};
