@@ -1,9 +1,9 @@
 /*------------------------------------------------------------------
 Main Stylesheet
 
-Project:    Highpoint Corporate Template
+Project:    HighPoint - Multipurpose Business Template
 Version:    1.0
-Last change:    15/11/2021
+Last change:    03/12/2021
 Author:    creativemaze
 Primary use:    Marketing
 -------------------------------------------------------------------*/
@@ -56,7 +56,7 @@ ul{
 	width: 100%;
 }
 
-.js .loading::before {
+#loading::before {
 	content: '';
 	position: fixed;
 	z-index: 100000;
@@ -67,7 +67,7 @@ ul{
 	background: #ffffff;
 }
 
-.js .loading::after {
+#loading::after {
 	content: '';
 	position: fixed;
 	z-index: 100000;
@@ -595,7 +595,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	font-size: 18px;
 	font-weight: 600;
 	display: block;
-	transition: 0.5s;
 	text-align: center;
 	letter-spacing: 1px;
 	line-height: 1.4em;
@@ -608,7 +607,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	padding-top: 10px;
 	display: block;
 	color: #696969;
-	transition: 0.5s;
 	letter-spacing: 1px;
 	text-align: center;
 	line-height: 1.5em;
@@ -706,7 +704,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	vertical-align: middle;
 	width: 100%;
 	height: auto;
-	transition: .5s;
 }
 
 .marketing_group_box{
@@ -760,7 +757,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 .title_group{
 	flex: 25%;
 	width: 25%;
-	transition: 0.5s;
 }
 
 .title_group a{
@@ -771,7 +767,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	color: #111111;
 	letter-spacing: 1px;
 	cursor: pointer;
-	transition: .5s;
+	transition: 0.5s;
 	text-decoration: none;
 	text-align: center;
 	display: block;
@@ -891,7 +887,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	padding: 0;
 	text-align: left;
 	background: transparent;
-	transition: 0.5s;
 }
 
 .list_num{
@@ -970,6 +965,10 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	position: relative;
 }
 
+.box_button > a:hover{
+	opacity: 0.6;
+}
+
 /* --- 3.5. Marketing Area Five --- */
 .marketing_area_five{
 	width: 100%;
@@ -1002,13 +1001,12 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	overflow: hidden;
 	margin: auto;
 	padding: 5px;
-	transition: 0.5s;
 }
 
 .featured_box{
 	position: relative;
 	overflow: hidden;
-	transition: .5s ease;
+	transition: 0.5s;
 	cursor: pointer;
 }
 
@@ -1024,9 +1022,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	vertical-align: middle;
 	width: 100%;
 	height: auto;
-	transition: 0.5s;
 	overflow: hidden;
-	display: block;
 }
 
 .featured_title{
@@ -1479,8 +1475,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	vertical-align: middle;
 	width: 100%;
 	height: auto;
-	transition: 0.5s;
-	display: block;
 }
 
 .blog_image > a > img{
@@ -2125,5 +2119,9 @@ a.footer-brand img{
 	
 	.marketing_info_col{
 		padding: 0 30px;
+	}
+	
+	.col_head h3{
+		font-size: 20px;
 	}
 }
