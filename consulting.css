@@ -147,7 +147,7 @@ nav.navbar .navbar-brand img.logo{
 nav.navbar.bootsnav{
 	background-color: transparent;
 	border-bottom: none ;
-	z-index: 9999;
+	z-index: 1;
 }
 
 nav.navbar.bootsnav ul.nav{
@@ -408,13 +408,12 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	background-repeat: no-repeat;
 	background-position: center;
 	position: relative;
-	z-index: 1000;
+	z-index: 0;
 }
 
 .slide__content:before {
 	content: '';
 	position: absolute;
-	z-index: -1;
 	display: block;
 	top: 0;
 	left: 0;
@@ -430,6 +429,8 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	padding-right: 10px;
 	padding-top: 150px;
 	text-align: left;
+	position: relative;
+	z-index: 10;
 }
 
 .header-title__main{
@@ -454,10 +455,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	letter-spacing: 1px;
 	text-align: left;
 	padding: 30px 0;
-}
-
-.buttoncol{
-	max-width: 500px;
 }
 
 .buttoncol a{
@@ -503,7 +500,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .video-play-button{
 	position: absolute;
-	z-index: 10;
+	z-index: 0;
 	left: 0;
 	top: 50%;
 	transform:translateY(-50%);
@@ -514,7 +511,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	border-radius: 50%;
 	padding: 28px 16px 12px 32px;
 	margin-top: -160px;
-	margin-left: 10vw;
 }
 
 .video-play-button:before {
@@ -2418,8 +2414,7 @@ a.footer-brand img{
 		padding-top: 25px;
 	}
 	
-	.header-title,
-	.video-play-button{
+	.header-title{
 		margin-left: 5vw;
 	}
 	
