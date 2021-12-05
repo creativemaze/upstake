@@ -1,9 +1,9 @@
 /*------------------------------------------------------------------
 Main Stylesheet
 
-Project:    Highpoint Corporate Template
+Project:    HighPoint - Multipurpose Business Template
 Version:    1.0
-Last change:    16/11/2021
+Last change:    04/12/2021
 Author:    creativemaze
 Primary use:    Digital Media
 -------------------------------------------------------------------*/
@@ -56,7 +56,7 @@ ul{
 	width: 100%;
 }
 
-.js .loading::before {
+#loading::before {
 	content: '';
 	position: fixed;
 	z-index: 100000;
@@ -67,7 +67,7 @@ ul{
 	background: #ffffff;
 }
 
-.js .loading::after {
+#loading::after {
 	content: '';
 	position: fixed;
 	z-index: 100000;
@@ -149,7 +149,7 @@ nav.navbar .navbar-brand img.logo{
 nav.navbar.bootsnav{
 	background-color: transparent;
 	border-bottom: none ;
-	z-index: 9999;
+	z-index: 1;
 }
 
 nav.navbar.bootsnav ul.nav{
@@ -551,11 +551,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	padding-bottom: 15px;
 }
 
-.buttoncol{
-	max-width: 500px;
-	margin: auto;
-}
-
 .buttoncol a{
 	background-color: #43cea2;
 	width: 150px;
@@ -867,7 +862,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	padding-left: 12px;
 	background-color: #ffffff;
 	border: solid 1px #e0e0e0;
-	transition: ease-in-out 0.5s;
 }
 
 .content_name{
@@ -1143,7 +1137,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	margin: auto;
 	min-height: 150px;
 	background: rgba(0,0,0,0.5);
-	transition: 0.5s;
 	padding-bottom: 35px;
 }
 
@@ -1339,7 +1332,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	vertical-align: middle;
 	max-width: 100%;
 	height: auto;
-	display: block;
 	border-radius: 50%;
 }
 
@@ -1348,7 +1340,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	margin: 0 auto;
 	position: relative;
 	text-align: center;
-	transition: 0.5s;
 	overflow: hidden;
 	padding-bottom: 10px;
 	padding-right: 10px;
@@ -1703,7 +1694,6 @@ li.slick-active button{
 	left: 50%;
 	transform: translateX(-50%);
 	text-align: center;
-	transition: 0.5s;
 	margin: auto;
 }
 
@@ -1721,7 +1711,6 @@ li.slick-active button{
 	height: 100%;
 	width: 100%;
 	opacity: 1;
-	transition: ease-in-out 1.25s;
 	background: rgba(0,0,0,0.6);
 }
 
@@ -1857,7 +1846,6 @@ a.blog_comments{
 	border-bottom: solid 1px #111111;
 	flex-grow: 1;
 	letter-spacing: 1px;
-	transition: 0.5s;
 }
 
 .register_box input[type="submit"]{
