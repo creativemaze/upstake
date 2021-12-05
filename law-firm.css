@@ -1,9 +1,9 @@
 /*------------------------------------------------------------------
 Main Stylesheet
 
-Project:    Highpoint Corporate Template
+Project:    HighPoint - Multipurpose Business Template
 Version:    1.0
-Last change:    16/11/2021
+Last change:    05/12/2021
 Author:    creativemaze
 Primary use:    Law Firm
 -------------------------------------------------------------------*/
@@ -55,7 +55,7 @@ ul{
 	width: 100%;
 }
 
-.js .loading::before {
+#loading::before {
 	content: '';
 	position: fixed;
 	z-index: 100000;
@@ -66,7 +66,7 @@ ul{
 	background: #ffffff;
 }
 
-.js .loading::after {
+#loading::after {
 	content: '';
 	position: fixed;
 	z-index: 100000;
@@ -466,10 +466,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	line-height: 1.1em;
 	color: #ffffff;
 	margin-bottom: 30px;
-}
-
-.buttoncol{
-	max-width: 380px;
 }
 
 .buttoncol a{
@@ -1179,7 +1175,6 @@ li.slick-active button{
 	padding: 0;
 	text-align: left;
 	background: transparent;
-	transition: 0.5s;
 }
 
 .icon_box .fas,
@@ -1188,7 +1183,6 @@ li.slick-active button{
 	color: #ffffff;
 	text-align: left;
 	display: block;
-	transition: 0.5s;
 }
 
 .icon_box h3{
@@ -1199,7 +1193,6 @@ li.slick-active button{
 	display: block;
 	text-align: left;
 	letter-spacing: 1px;
-	transition: 0.5s;
 	line-height: 1.4em;
 }
 
@@ -1212,7 +1205,6 @@ li.slick-active button{
 	color: #f2f2f2;
 	letter-spacing: 1px;
 	text-align: left;
-	transition: 0.5s;
 	line-height: 1.5em;
 }
 
@@ -1244,7 +1236,6 @@ li.slick-active button{
 	overflow: hidden;
 	margin: auto;
 	height: auto;
-	transition: 0.5s;
 }
 
 .team_col img{
@@ -1258,7 +1249,6 @@ li.slick-active button{
 	overflow: hidden;
 	position: relative;
 	background-color: #ffffff;
-	transition: ease-in-out 0.5s;
 }
 
 .overlay {
@@ -1413,7 +1403,6 @@ li.slick-active button{
 	vertical-align: middle;
 	width: 100%;
 	height: auto;
-	transition: 0.5s;
 	display: block;
 }
 
