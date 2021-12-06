@@ -1,9 +1,9 @@
 /*------------------------------------------------------------------
 Main Stylesheet
 
-Project:    Highpoint Corporate Template
+Project:    HighPoint - Multipurpose Business Template
 Version:    1.0
-Last change:    18/11/2021
+Last change:    06/12/2021
 Author:    creativemaze
 Primary use:    Education
 -------------------------------------------------------------------*/
@@ -54,7 +54,7 @@ ul{
 	width: 100%;
 }
 
-.js .loading::before {
+#loading::before {
 	content: '';
 	position: fixed;
 	z-index: 100000;
@@ -65,7 +65,7 @@ ul{
 	background: #ffffff;
 }
 
-.js .loading::after {
+#loading::after {
 	content: '';
 	position: fixed;
 	z-index: 100000;
@@ -795,7 +795,6 @@ li.slick-active button{
 .feature_image{
 	overflow: hidden;
 	position: relative;
-	transition: .5s ease;
 	cursor: pointer;
 }
 
@@ -808,7 +807,6 @@ li.slick-active button{
 	height: 100%;
 	width: 100%;
 	opacity: 1;
-	transition: ease-in-out 1.25s;
 	background: rgba(0,0,0,0.6);
 }
 
@@ -943,72 +941,38 @@ li.slick-active button{
 	letter-spacing: 1px;
 	text-align: center;
 	line-height: 1.5em;
-	padding: 16px 18px;
+	padding: 12px 15px;
 }
 
-.areas_col_button a{
-	width: 130px;
-	min-height: 25px;
-	margin: 0 auto 10px;	
-    border: none;
-    padding: 12px 14px;
-    text-decoration: none;
-	text-transform: uppercase;
-    display: block;
-    font-size: 12px;
-	font-weight: 700;
-	font-family: 'Raleway', Arial, sans-serif;
-    transition: 0.5s;
-    cursor: pointer;
-	border-radius: 25px;
+.areas_col_button > a{
+	font-family: 'Raleway' , Arial, sans-serif;
+	font-size: 13px;
+	font-weight: 600;
 	letter-spacing: 1px;
 	text-align: center;
-	color: #ffffff
-}
-
-.btn_one a{
-	background-color: #0ABFBC;
-	border: 1px solid #0ABFBC;
-	;
-}
-
-.btn_one a:hover{
+	text-transform: uppercase;
+	display: block;
 	color: #0ABFBC;
-	background-color: transparent;
-	border-color: #0ABFBC;
+	text-decoration: none;
+	width: 120px;
+	transition: 0.5s;
+	margin: auto;
 }
 
-.btn_two a{
-	background-color: #5f2c82;
-	border: 1px solid #5f2c82;
+.areas_col_button > a::after{
+	content: "\203A";
+	font-size: 20px;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	height: auto;
+	padding-left: 5px;
+	top: 1px;
+	position: relative;
 }
 
-.btn_two a:hover{
-	color: #5f2c82;
-	background-color: #ffffff;
-	border-color: #5f2c82;
-}
-
-.btn_three a{
-	background-color: #182848;
-	border: 1px solid #182848;
-}
-
-.btn_three a:hover{
-	color: #182848;
-	background-color: #ffffff;
-	border-color: #182848;
-}
-
-.btn_four a{
-	background-color: #111111;
-	border: 1px solid #111111;
-}
-
-.btn_four a:hover{
+.areas_col_button > a:hover{
 	color: #111111;
-	background-color: #ffffff;
-	border-color: #111111;
 }
 
 /* --- 3.3. Education Area Three --- */
@@ -1317,7 +1281,7 @@ li.slick-active button{
 }
 
 .blog_content{
-	padding: 15px 0;
+	padding: 15px 0 0;
 	text-align: left;
 	padding-left: 15px;
 }
@@ -1948,6 +1912,10 @@ a.footer-brand img{
 		margin-left: 0;
 	}
 	
+	.col_head h3{
+		font-size: 25px;
+	}
+	
 	.footer_col{
 		flex: 100%;
 		width: 100%;
@@ -1970,10 +1938,6 @@ a.footer-brand img{
 	.right_bg{
 		right: 0;
 		margin-top: 0;
-	}
-	
-	.col_head h3{
-		font-size: 25px;
 	}
 }
 
