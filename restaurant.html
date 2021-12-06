@@ -12,7 +12,7 @@
 	
 	<!-- ============== Style Sheet ============== -->
 	<link href="bootsnav.css" rel="stylesheet">
-	<link href="animate.css" rel="stylesheet">
+	<link href="animate.min.css" rel="stylesheet">
 	<link href="bootstrap.min.css" rel="stylesheet">
 	<link href="slick.css" rel="stylesheet">
 	<link href="aos.css" rel="stylesheet">
@@ -25,8 +25,10 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,400,500,600,700,800,900" rel='stylesheet'>
 	
 </head>
-<body class="loading">
+<body>
 		
+	<div id="loading"></div><!--loading-->
+	
 	<!-- Start Navigation -->
     <nav class="navbar navbar-center navbar-mobile navbar-default bootsnav">
 
@@ -280,11 +282,11 @@
 			
 				<div class="header__content">
 				
-					<div data-target="0" class="active animated fadeIn">
+					<div data-target="0" class="active animate__animated animate__fadeIn">
 			
 						<h1 class="header-title" data-target="0">
 					
-							<span class="header-title__sub">We Cook. You Eat</span>
+							<span class="header-title__sub">We Cook. You Eat.</span>
 					
 							<span class="header-title__main">Delicious Cuisine</span> 
 			
@@ -307,11 +309,11 @@
 			
 				<div class="header__content">
 				
-					<div data-target="1" class="animated fadeIn">
+					<div data-target="1" class="animate__animated animate__fadeIn">
 			
 						<h1 class="header-title">
 					
-							<span class="header-title__sub">We Prepare. You Enjoy</span>
+							<span class="header-title__sub">We Prepare. You Enjoy.</span>
 					
 							<span class="header-title__main">Elegant Dining</span> 
 			
@@ -1469,9 +1471,7 @@
 	
 	<!-- ============== Javascript & Jquery Files ============== -->
 	<script src="jquery.min.js"></script>
-	<script src="loaderscript.js"></script>
 	<script src="jquery.magnific-popup.min.js"></script>
-	<script src="imagesloaded.pkgd.min.js"></script>
 	<script src="restaurant-main.js"></script>
 	<script src="bootsnav.js"></script>
 	<script src="bootstrap.min.js"></script>
