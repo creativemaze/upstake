@@ -1,9 +1,9 @@
 /*------------------------------------------------------------------
 Main Stylesheet
 
-Project:    Highpoint Corporate Template
+Project:     HighPoint - Multipurpose Business Template
 Version:    1.0
-Last change:    18/11/2021
+Last change:    05/12/2021
 Author:    creativemaze
 Primary use:    Restaurant
 -------------------------------------------------------------------*/
@@ -55,7 +55,7 @@ ul{
 	width: 100%;
 }
 
-.js .loading::before {
+#loading::before {
 	content: '';
 	position: fixed;
 	z-index: 100000;
@@ -66,7 +66,7 @@ ul{
 	background: #ffffff;
 }
 
-.js .loading::after {
+#loading::after {
 	content: '';
 	position: fixed;
 	z-index: 100000;
@@ -121,7 +121,7 @@ ul{
 }
 
 .centerpage_btn a{
-	background-color: #111111;
+	background-color: #e53935;
 	width: 180px;
 	min-height: 30px;
 	margin: 30px auto 0;
@@ -136,7 +136,7 @@ ul{
 	font-family: 'Montserrat', Arial, sans-serif;
     transition: 0.5s;
     cursor: pointer;
-	border: 1px solid #111111;
+	border: 1px solid #e53935;
 	letter-spacing: 1px;
 	text-align: center;
 	border-radius: 5px;
@@ -447,16 +447,18 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 .header-title {
 	max-width: 1200px;
 	display: block;
+	padding: 0 15px;
 }
 
 .header__content > div{
-	animation-duration: 1s;
-	animation-delay: 0.5s;
+	animation-duration: 2s;
+	animation-delay: 1s;
 	display: none;
 }
 
 .header__content > div.active{
 	display: block;
+	animation-play-state: running !important;
 }
 
 .header-title__main{
@@ -468,7 +470,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	text-align: center;
 	display: block;
 	color: #111111;
-	padding: 0 10px;
 }
 
 .header-title__sub{
@@ -480,13 +481,9 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	color: #e53935;
 	letter-spacing: 1px;
 	text-align: center;
-	padding: 20px 10px;
+	padding: 20px 0;
 	max-width: 550px;
 	margin: auto;
-}
-
-.buttoncol{
-	max-width: 500px;
 }
 
 .buttoncol a{
@@ -519,15 +516,9 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .buttoncol a:hover{
-	color: #ffffff;
-	background-color: #111111;
-	border-color: #111111;
-}
-
-.right_btn:hover{
-	color: #111111!important;
-	background-color: transparent!important;
-	border-color: #111111!important;
+	color: #111111 !important;
+	background: transparent !important;
+	border-color: #111111 !important;
 }
 
 .prev_button{
@@ -602,7 +593,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	color: #111111;
 	letter-spacing: 1px;
 	cursor: pointer;
-	transition: .5s;
+	transition: 0.5s;
 	text-decoration: none;
 	text-align: center;
 	display: block;
@@ -664,7 +655,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	position: relative;
 	padding: 25px;
 	overflow: hidden;
-	transition: 3.25s;
 }
 
 .price_box{
@@ -729,7 +719,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	position: relative;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
 	text-align: center;
-	transition: 3.25s;
 	overflow: hidden;
 }
 
@@ -737,7 +726,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	vertical-align: middle;
 	width: 100%;
 	height: auto;
-	transition: 3.25s;
 }
 
 /* --- 3.2. Restaurant Area Two --- */
@@ -798,7 +786,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	margin: 0 auto;
 	position: relative;
 	text-align: center;
-	transition: 0.5s;
 	overflow: hidden;
 	padding-bottom: 10px;
 	padding-right: 10px;
@@ -901,7 +888,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	vertical-align: middle;
 	width: 100%;
 	height: auto;
-	transition: ease-in-out 0.5s;
 	display: block;
 }
 
@@ -1016,7 +1002,6 @@ li.slick-active button{
 	display: block;
 	text-align: center;
 	letter-spacing: 1px;
-	transition: 0.5s;
 	padding-top: 10px;
 }
 
@@ -1069,7 +1054,6 @@ li.slick-active button{
 	vertical-align: middle;
 	width: 100%;
 	height: auto;
-	transition: .5s;
 }
 
 .square_box{
@@ -1077,7 +1061,6 @@ li.slick-active button{
 	margin: 0 auto;
 	position: relative;
 	text-align: center;
-	transition: 0.5s;
 	overflow: hidden;
 	padding-bottom: 12px;
 	padding-right: 12px;
@@ -1220,7 +1203,7 @@ li.slick-active button{
 }
 
 .blog_content{
-	padding: 15px 0;
+	padding: 15px 0 0;
 	text-align: left;
 	padding-left: 15px;
 }
@@ -1242,8 +1225,6 @@ li.slick-active button{
 	vertical-align: middle;
 	width: 100%;
 	height: auto;
-	transition: 0.5s;
-	display: block;
 }
 
 .blog_image > a > img{
@@ -1490,7 +1471,6 @@ a.blog_btn:hover{
 	border-bottom: solid 1px #696969;
 	flex-grow: 1;
 	letter-spacing: 1px;
-	transition: 0.5s;
 }
 
 .form_col_box textarea{
@@ -1504,7 +1484,6 @@ a.blog_btn:hover{
 	border-bottom: solid 1px #696969;
 	flex-grow: 1;
 	letter-spacing: 1px;
-	transition: 0.5s;
 }
 
 .form_col_box input[type="text"]:focus,
