@@ -1,9 +1,9 @@
 /*------------------------------------------------------------------
 Main Stylesheet
 
-Project:    Highpoint Corporate Template
+Project:    HighPoint - Multipurpose Business Template
 Version:    1.0
-Last change:    19/11/2021
+Last change:    07/12/2021
 Author:    creativemaze
 Primary use:    SAAS
 -------------------------------------------------------------------*/
@@ -57,7 +57,7 @@ ul{
 	width: 100%;
 }
 
-.js .loading::before {
+#loading::before {
 	content: '';
 	position: fixed;
 	z-index: 100000;
@@ -68,7 +68,7 @@ ul{
 	background: #ffffff;
 }
 
-.js .loading::after {
+#loading::after {
 	content: '';
 	position: fixed;
 	z-index: 100000;
@@ -372,7 +372,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
     text-decoration: none;
 	text-transform: uppercase;
     display: block;
-    font-size: 12px;
+    font-size: 13px;
 	font-weight: 600;
 	font-family: 'Montserrat', Arial, sans-serif;
     transition: 0.5s;
@@ -677,7 +677,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	text-align: center;
 	padding: 18px;
 	cursor: pointer;
-	transition: .5s;
+	transition: 0.5s;
 	border: solid 1px #e0e0e0;
 	display: block;
 	margin-bottom: 25px;
@@ -728,8 +728,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	height: 100%;
 	width: 100%;
 	opacity: 1;
-	transition: ease-in-out 1.25s;
-	background: rgba(0,0,0,0.7);
+	background: rgba(0,0,0,0.6);
 }
 
 .saas_image{
@@ -760,7 +759,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	position: absolute;
 	bottom: 20px;
 	left: 0;
-	transition: 0.5s;
 	margin-left: 15px;
 }
 
@@ -795,6 +793,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	display: block;
 	line-height: 1.4em;
 	text-decoration: none;
+	transition: 0.5s;
 }
 
 .inner_crumb{
@@ -910,7 +909,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	background-color: #ffffff;
 	width: 140px;
 	min-height: 30px;
-	margin: 12px 0;	
+	margin-top: 20px;	
     border: none;
     color: #111111;
     padding: 13px 14px;
@@ -936,7 +935,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 .prev_nav,
 .next_nav{
 	font-size: 14px;
-	transition: 0.6s ease;
+	transition: 0.5s;
 	background-color: transparent;
 	width: auto;
 	padding: 10px 16px;
@@ -1694,7 +1693,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .blog_box > a > img{
-	transition: ease-in-out 1.25s;
+	transition: 3.25s;
 }
 
 .blog_box > a > img:hover{
@@ -2329,6 +2328,10 @@ a.footer-brand img{
 		margin-left: 0;
 	}
 	
+	.col_head h3{
+		font-size: 25px;
+	}
+	
 	.footer_col{
 		flex: 100%;
 		width: 100%;
@@ -2362,10 +2365,6 @@ a.footer-brand img{
 	.saas_data_col{
 		flex: 100%;
 		width: 100%;
-	}
-	
-	.col_head h3{
-		font-size: 25px;
 	}
 }
 
