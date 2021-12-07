@@ -1,9 +1,9 @@
 /*------------------------------------------------------------------
 Main Stylesheet
 
-Project:    Highpoint Corporate Template
+Project:    HighPoint - Multipurpose Business Template
 Version:    1.0
-Last change:    19/11/2021
+Last change:    07/12/2021
 Author:    creativemaze
 Primary use:    Telecoms
 -------------------------------------------------------------------*/
@@ -57,7 +57,7 @@ ul{
 	width: 100%;
 }
 
-.js .loading::before {
+#loading::before {
 	content: '';
 	position: fixed;
 	z-index: 100000;
@@ -68,7 +68,7 @@ ul{
 	background: #ffffff;
 }
 
-.js .loading::after {
+#loading::after {
 	content: '';
 	position: fixed;
 	z-index: 100000;
@@ -522,7 +522,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	text-align: center;
 	padding: 30px 25px;
 	cursor: pointer;
-	transition: .5s;
+	transition: 0.5s;
 }
 
 .title_group.active{
@@ -784,7 +784,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	position: absolute;
 	top: 25px;
 	left: 25px;
-	transition: .5s;
 }
 
 .telecoms_title h5{
@@ -809,7 +808,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	background-color: #ffffff;
 	padding: 25px;
 	max-width: 300px;
-	transition: 0.5s;
 }
 
 .box_list > ul > li{
@@ -1174,7 +1172,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	color: #ec2F4B;
 	text-align: left;
 	display: block;
-	transition: 0.5s;
 }
 
 .icon_crumb{
@@ -1369,7 +1366,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 .blog_box{
 	max-width: 400px;
 	position: relative;
-	text-align: left;
+	text-align: center;
 	overflow: hidden;
 	margin: auto;
 	min-height: 150px;
