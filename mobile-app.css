@@ -1,9 +1,9 @@
 /*------------------------------------------------------------------
 Main Stylesheet
 
-Project:    Highpoint Corporate Template
+Project:    HighPoint - Multipurpose Business Template
 Version:    1.0
-Last change:    18/11/2021
+Last change:    06/12/2021
 Author:    creativemaze
 Primary use:    Mobile App
 -------------------------------------------------------------------*/
@@ -55,7 +55,7 @@ ul{
 	width: 100%;
 }
 
-.js .loading::before {
+#loading::before {
 	content: '';
 	position: fixed;
 	z-index: 100000;
@@ -66,7 +66,7 @@ ul{
 	background: #ffffff;
 }
 
-.js .loading::after {
+#loading::after {
 	content: '';
 	position: fixed;
 	z-index: 100000;
@@ -517,7 +517,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .buttoncol a{
-	width: 150px;
+	width: 160px;
 	min-height: 25px;
 	margin-top: 10px;	
     padding: 13px 15px;
@@ -784,18 +784,13 @@ li.slick-active button{
 	flex: 25%;
 	width: 25%;
 	padding: 0 30px;
-	border-right: solid 1px #e0e0e0;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
 }
 
 .user_box{
 	max-width: 350px;
 	margin: auto;
 	padding: 0;
-	text-align: left;
+	text-align: center;
 	background: transparent;
 }
 
@@ -842,14 +837,10 @@ li.slick-active button{
 	line-height: 1.5em;
 }
 
-.fourth_border{
-	border-right: none !important;
-}
-
 .box_button > a{
 	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 14px;
-	font-weight: 500;
+	font-size: 13px;
+	font-weight: 600;
 	letter-spacing: 1px;
 	text-align: left;
 	text-transform: uppercase;
@@ -945,7 +936,6 @@ li.slick-active button{
 	vertical-align: middle;
 	width: 100%;
 	height: auto;
-	overflow: hidden;
 }
 
 .mobile_icon_box{
@@ -954,7 +944,6 @@ li.slick-active button{
 	padding: 15px 20px;
 	text-align: center;
 	background: transparent;
-	transition: 0.5s;
 }
 
 .mobile_icon_box h3{
@@ -1039,12 +1028,11 @@ li.slick-active button{
 	width: 100%;
 	opacity: 0.5;
 	height:0;
-	transition: 0.5s ease;
 	background-color: #512da8;
 }
 
 .team_box .team_image > img{
-	transition: ease-in-out 1.25s;
+	transition: 3.25s;
 }
 
 .team_box:hover .team_image > img{
@@ -1410,7 +1398,7 @@ li.slick-active button{
 }
 
 .mobile_btn a{
-	width: 150px;
+	width: 160px;
 	min-height: 25px;
 	margin-top: 10px;	
     padding: 13px 15px;
@@ -1664,10 +1652,6 @@ a.footer-brand img{
 		margin: 0 0 35px;
 	}
 	
-	.second_border{
-		border-right: none;
-	}
-	
 	.mobile_icon_col{
 		flex: 100%;
 		width: 100%;
@@ -1845,11 +1829,6 @@ a.footer-brand img{
 	.user_info_col{
 		flex: 100%;
 		width: 100%;
-	}
-	
-	.first_border,
-	.third_border{
-		border-right: none;
 	}
 	
 	.team_col{
