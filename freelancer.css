@@ -1,9 +1,9 @@
 /*------------------------------------------------------------------
 Main Stylesheet
 
-Project:    Highpoint Corporate Template
+Project:    HighPoint - Multipurpose Business Template
 Version:    1.0
-Last change:    21/11/2021
+Last change:    08/12/2021
 Author:    creativemaze
 Primary use:    Freelancer
 -------------------------------------------------------------------*/
@@ -56,7 +56,7 @@ ul{
 	width: 100%;
 }
 
-.js .loading::before {
+#loading::before {
 	content: '';
 	position: fixed;
 	z-index: 100000;
@@ -67,7 +67,7 @@ ul{
 	background: #ffffff;
 }
 
-.js .loading::after {
+#loading::after {
 	content: '';
 	position: fixed;
 	z-index: 100000;
@@ -639,7 +639,6 @@ li.slick-active button{
 	flex: 33.33%;
 	width: 33.33%;
 	padding: 0 15px;
-	position: relative;
 }
 
 .freelance_box_col{
@@ -1111,7 +1110,7 @@ li.slick-active button{
 }
 
 .portfolio_image .portfolio_box > img{
-	transition: ease-in-out 1.25s;
+	transition: ease-in-out 3.25s;
 }
 
 .portfolio_image:hover .portfolio_box > img{
@@ -1122,7 +1121,6 @@ li.slick-active button{
 	vertical-align: middle;
 	width: 100%;
 	height: auto;
-	transition: 0.5s;
 	overflow: hidden;
 	display: block;
 }
@@ -1156,7 +1154,7 @@ li.slick-active button{
 	height: calc(100% - 20px);
 	width: calc(100% - 20px);
 	opacity: 0;
-	transition: .5s ease;
+	transition: 0.5s ease;
 	background: #ffffff
 }
 
@@ -1312,7 +1310,7 @@ li.slick-active button{
 .slidenav{
 	position: absolute;
 	bottom: 0;
-	left: 30px;
+	left: 35px;
 }
 
 .prev_slide,
@@ -1416,7 +1414,6 @@ li.slick-active button{
 	vertical-align: middle;
 	width: 100%;
 	height: auto;
-	transition: 0.5s;
 	display: block;
 }
 
