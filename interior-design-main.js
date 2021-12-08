@@ -8,10 +8,7 @@ $(document).ready(function(){
 		autoplay: false,
 		slidesToShow: 1,
 		slidesToScroll: 1,
-		centerMode: true,
-		centerPadding: '0',
 		speed: 1000,
-		autoplaySpeed: 1000,
 		pauseOnHover: false,
 		responsive: [
 				{
@@ -96,5 +93,14 @@ $(function () {
 	});
 });	
 
-//Preload all the images in the page
-imagesLoaded({background: true}, () => document.body.classList.remove('loading'));
+//Page Preloader
+document.onreadystatechange = function() {
+    if (document.readyState !== "complete") {
+        document.querySelector("body").style.visibility = "hidden";
+        document.querySelector("#loading").style.visibility = "visible";
+		 
+    } else {
+        document.querySelector("#loading").style.display = "none";
+        document.querySelector("body").style.visibility = "visible";
+    }
+};
