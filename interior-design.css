@@ -1,9 +1,9 @@
 /*------------------------------------------------------------------
 Main Stylesheet
 
-Project:    Highpoint Corporate Template
+Project:    HighPoint - Multipurpose Business Template
 Version:    1.0
-Last change:    20/11/2021
+Last change:    07/12/2021
 Author:    creativemaze
 Primary use:    Interior Design
 -------------------------------------------------------------------*/
@@ -57,7 +57,7 @@ ul{
 	width: 100%;
 }
 
-.js .loading::before {
+#loading::before {
 	content: '';
 	position: fixed;
 	z-index: 100000;
@@ -68,7 +68,7 @@ ul{
 	background: #ffffff;
 }
 
-.js .loading::after {
+#loading::after {
 	content: '';
 	position: fixed;
 	z-index: 100000;
@@ -517,7 +517,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .icon_box{
-	max-width: 350px;
+	max-width: 300px;
 	margin: 0 auto;
 	padding: 35px 30px; 
 	text-align: center;
@@ -527,7 +527,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .icon_crumb{
-	max-width: 350px;
+	max-width: 300px;
 	height: 1px;
 	display: block;
 	border-bottom: double 4px #D3959B;
@@ -590,14 +590,12 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	flex: 33.33%;
 	width: 33.33%;
 	padding: 0 15px;
-	position: relative;
 }
 
 .interior_box_col{
 	flex: 66.66%;
 	width: 66.66%;
 	padding: 0 15px;
-	position: relative;
 }
 
 .wide_area{
@@ -761,8 +759,9 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	max-width: 1200px;
 	margin: 0 auto;
 	background-color: #D3959B;
-	padding: 0 35px;
+	padding: 0 30px;
 	min-height: 325px;
+	width: calc(100% - 60px);
 }
 
 /* --- 3.4. Interior Area Four --- */
@@ -832,13 +831,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	padding-top: 8px;
 }
 
-.info_image img{
-	vertical-align: middle;
-	max-width: 100%;
-	height: auto;
-	transition: .5s;
-}
-
 .bg_head{
 	font-family: 'Raleway' , Arial, sans-serif;
 	font-size: 40px;
@@ -875,7 +867,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 .prev_nav,
 .next_nav{
 	font-size: 14px;
-	transition: 0.6s ease;
+	transition: 0.6s;
 	background: transparent;
 	display: inline-block;
 	overflow: hidden;
@@ -916,7 +908,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	flex: 33.33%;
 	width: 33.33%;
 	padding: 0 15px;
-	position: relative;
 }
 
 .square_col_right{
@@ -976,7 +967,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	margin-bottom: 10px;
 	max-width: 350px;
 	overflow: hidden;
-	cursor: pointer;
 }
 
 .square_num{
@@ -1039,7 +1029,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	text-decoration: none;
 	width: 110px;
 	transition: 0.5s;
-    cursor: pointer;
 }
 
 .square_button > a::after{
@@ -1137,7 +1126,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .feature_image > a > img{
-	transition: ease-in-out 1.25s;
+	transition: ease-in-out 3.25s;
 }
 
 .feature_image:hover > a > img{
@@ -1377,12 +1366,11 @@ li.slick-active button{
 	width: 100%;
 	opacity: 0.5;
 	height:0;
-	transition: 0.5s ease;
 	background-color: #D3959B;
 }
 
 .team_box .team_image > img{
-	transition: ease-in-out 1.25s;
+	transition: ease-in-out 3.25s;
 }
 
 .team_box:hover .team_image > img{
@@ -1965,7 +1953,6 @@ a.footer-brand img{
 	
 	.interior_wide_col,
 	.interior_box_col,
-	.info_slide,
 	.square_col_left,
 	.square_col_right,
 	.square_col,
