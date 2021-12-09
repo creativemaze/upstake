@@ -1,9 +1,9 @@
 /*------------------------------------------------------------------
 Main Stylesheet
 
-Project:    Highpoint Corporate Template
+Project:    HighPoint - Multipurpose Business Template
 Version:    1.0
-Last change:    23/11/2021
+Last change:    09/12/2021
 Author:     creativemaze
 Primary use:    E-Learning
 -------------------------------------------------------------------*/
@@ -973,7 +973,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	height: 100%;
 	width: 100%;
 	opacity: 1;
-	transition: ease-in-out 1.25s;
 	background: rgba(0,0,0,0.6);
 }
 
@@ -1008,7 +1007,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	text-transform: uppercase;
 	background-color: #1488CC;
 	padding: 9px 14px;
-	transition: 0.6s;
+	transition: 0.5s;
 	text-decoration: none;
 }
 
@@ -1067,7 +1066,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 .prev_slide,
 .next_slide{
 	font-size: 14px;
-	transition: 0.6s ease;
+	transition: 0.5s;
 	background-color: transparent;
 	width: auto;
 	display: inline-block;
@@ -1183,7 +1182,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	padding-top: 10px;
 	padding-left: 10px;
 	background-color: #f6f6f6;
-	transition: ease-in-out 0.5s;
 }
 
 .ratings_icon{
@@ -1199,7 +1197,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .popular_box .popular_image > img{
-	transition: ease-in-out 1.25s;
+	transition: ease-in-out 3.25s;
 }
 
 .popular_box:hover .popular_image > img{
@@ -1321,9 +1319,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 .download_content{
 	width: 100%;
 	padding: 30px 20px 30px;
-	transition: 0.5s;
 	overflow: hidden;
-	cursor: pointer;
 }
 
 .download_icon{
@@ -1479,7 +1475,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	padding: 0;
 	text-align: left;
 	background: transparent;
-	transition: 0.5s;
 }
 
 .number_box h4 {
@@ -1534,7 +1529,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	flex: 33.33%;
 	width: 33.33%;
 	padding: 0 15px;
-	position: relative;
 }
 
 .review_col_right{
@@ -1589,7 +1583,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .client_content{
 	max-width: 300px;
-	margin: auto;
+	height: auto;
 	padding: 10px;
 }
 
@@ -1697,10 +1691,8 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .blog_col img{
-	vertical-align: middle;
 	width: 100%;
 	height: auto;
-	transition: 0.5s;
 	display: block;
 }
 
