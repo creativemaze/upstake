@@ -1,9 +1,9 @@
 /*------------------------------------------------------------------
 Main Stylesheet
 
-Project:    Highpoint Corporate Template
+Project:    HighPoint - Multipurpose Business Template
 Version:    1.0
-Last change:    23/11/2021
+Last change:    09/12/2021
 Author:    creativemaze
 Primary use:    Small Business
 -------------------------------------------------------------------*/
@@ -424,10 +424,8 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .slide__right img{
-	vertical-align: middle;
 	max-width: 100%;
 	height: auto;
-	transition: 0.5s;
 	display: block;
 	clip-path: polygon(17% 0, 82% 1%, 100% 100%, 0 100%);
 }
@@ -540,11 +538,9 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .cube_image img{
-	vertical-align: middle;
 	width: 100%;
 	height: auto;
 	display: block;
-	transition: ease-in-out 3.25s;
 }
 
 .cube_image{
@@ -890,7 +886,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .bg_image img{
-	vertical-align: middle;
 	width: 100%;
 	height: auto;
 	display: block;
@@ -902,7 +897,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .bg_box .bg_image > img{
-	transition: ease-in-out 1.25s;
+	transition: ease-in-out 3.25s;
 }
 
 .bg_box:hover .bg_image > img{
@@ -938,7 +933,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	height: 100%;
 	width: 100%;
 	opacity: 0;
-	transition: .5s ease;
+	transition: 0.5s ease;
 	background-color: #ffffff;
 }
 
@@ -984,10 +979,10 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	margin: auto;
 	min-height: 150px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+	transition: 0.5s;
 }
 
 .team_image img{
-	vertical-align: middle;
 	width: 100%;
 	height: auto;
 	display: block;
@@ -1001,7 +996,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	padding-top: 12px;
 	padding-left: 12px;
 	background-color: #ffffff;
-	transition: ease-in-out 0.5s;
 }
 
 .team_box:hover{
@@ -1035,7 +1029,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	display: inline-block;
 	text-align: left;
 	margin-right: 7px;
-	transition: ease-in-out 0.5s;
+	transition:  0.5s;
 }
 
 .team_icon .fab:hover,
@@ -1122,7 +1116,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	color: #ffffff;
 	text-align: center;
 	display: block;
-	transition: 0.5s;
 	margin-top: 10px;
 }
 
@@ -1232,10 +1225,8 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .blog_col img{
-	vertical-align: middle;
 	width: 100%;
 	height: auto;
-	transition: 0.5s;
 	display: block;
 }
 
@@ -1418,14 +1409,6 @@ a.blog_btn::after{
 	display: block;
 	text-align: center;
 	margin-bottom: 14px;
-}
-
-.client_col img{
-	vertical-align: middle;
-	width: 100%;
-	height: auto;
-	transition: 0.5s;
-	overflow: hidden;
 }
 
 .client_name{
