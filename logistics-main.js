@@ -10,8 +10,6 @@ $(document).ready(function(){
 		prevArrow: '.prev_button',
 		nextArrow: '.next_button',
 		speed: 1000,
-		pauseOnHover: false,
-		pauseOnFocus: false,
 		
 	});
 })
@@ -25,8 +23,6 @@ $(document).ready(function(){
 		arrows: false,
 		autoplay: false,
 		speed: 1000,
-		pauseOnHover: false,
-		pauseOnFocus: false,
 		responsive: [
 			{
 				breakpoint: 993,
@@ -92,5 +88,14 @@ $(function () {
 	});
 });	
 
-//Preload all the images in the page
-imagesLoaded({background: true}, () => document.body.classList.remove('loading'));
+//Page Preloader
+document.onreadystatechange = function() {
+    if (document.readyState !== "complete") {
+        document.querySelector("body").style.visibility = "hidden";
+        document.querySelector("#loading").style.visibility = "visible";
+		 
+    } else {
+        document.querySelector("#loading").style.display = "none";
+        document.querySelector("body").style.visibility = "visible";
+    }
+};
