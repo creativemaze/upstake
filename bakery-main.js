@@ -9,9 +9,7 @@ $(document).ready(function(){
 		autoplay: false,
 		fade: true,
 		adaptiveHeight: true,
-		speed: 1000,
-		pauseOnHover: false,
-		pauseOnFocus: false,		
+		speed: 1000,		
 	});
 	
 	$('.bakery_slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
@@ -108,14 +106,11 @@ $(function () {
 //Page Preloader
 document.onreadystatechange = function() {
     if (document.readyState !== "complete") {
-        document.querySelector(
-        "body").style.visibility = "hidden";
-        document.querySelector(
-        "#loading").style.visibility = "visible";
+        document.querySelector("body").style.visibility = "hidden";
+        document.querySelector("#loading").style.visibility = "visible";
+		 
     } else {
-        document.querySelector(
-        "#loading").style.display = "none";
-        document.querySelector(
-        "body").style.visibility = "visible";
+        document.querySelector("#loading").style.display = "none";
+        document.querySelector("body").style.visibility = "visible";
     }
 };
