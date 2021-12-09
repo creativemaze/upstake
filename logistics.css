@@ -1,9 +1,9 @@
 /*------------------------------------------------------------------
 Main Stylesheet
 
-Project:    Highpoint Corporate Template
+Project:    HighPoint - Multipurpose Business Template
 Version:    1.0
-Last change:    22/11/2021
+Last change:    09/12/2021
 Author:    creativemaze
 Primary use:    Logistics
 -------------------------------------------------------------------*/
@@ -57,7 +57,7 @@ ul{
 	width: 100%;
 }
 
-.js .loading::before {
+#loading::before {
 	content: '';
 	position: fixed;
 	z-index: 100000;
@@ -68,7 +68,7 @@ ul{
 	background: #ffffff;
 }
 
-.js .loading::after {
+#loading::after {
 	content: '';
 	position: fixed;
 	z-index: 100000;
@@ -601,7 +601,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .square_col img{
-	vertical-align: middle;
 	width: 100%;
 	height: auto;
 	display: block;
@@ -753,14 +752,12 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	flex: 66.66%;
 	width: 66.66%;
 	padding: 0 15px;
-	position: relative;
 }
 
 .box_group_col{
 	flex: 33.33%;
 	width: 33.33%;
 	padding: 0 20px;
-	position: relative;
 }
 
 .wide_area{
@@ -840,7 +837,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .logistics_box_col img{
-	vertical-align: middle;
 	width: 100%;
 	height: auto;
 	display: block;
@@ -985,7 +981,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	border: solid 1px #e0e0e0;
 	max-width: 300px;
 	margin: auto;
-	transition: 0.5s;
 	overflow: hidden;
 }
 
@@ -1020,7 +1015,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	display: block;
 	text-align: left;
 	letter-spacing: 1px;
-	transition: 0.5s;
 	margin-top: 0;
 	line-height: 1.4em;
 }
