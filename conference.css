@@ -1,9 +1,9 @@
 /*------------------------------------------------------------------
 Main Stylesheet
 
-Project:    Highpoint Corporate Template
+Project:    HighPoint - Multipurpose Business Template
 Version:    1.0
-Last change:    23/11/2021
+Last change:    09/12/2021
 Author:    creativemaze
 Primary use:    Conference
 -------------------------------------------------------------------*/
@@ -612,7 +612,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .bg_image img{
-	vertical-align: middle;
 	width: 100%;
 	height: auto;
 	display: block;
@@ -1142,7 +1141,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	display: block;
 	padding: 10px 18px;
 	text-align: center;
-	transition: ease-in-out 0.5s;
+	transition: 0.5s;
 }
 
 .team_image:hover{
@@ -1304,7 +1303,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .blog_col img{
-	vertical-align: middle;
 	width: 100%;
 	height: auto;
 	display: block;
@@ -1421,20 +1419,6 @@ a.blog_btn::after{
 	position: relative;
 }
 
-.vid_heading{
-	max-width: 650px;
-	margin: auto;
-	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 40px;
-	font-weight: 500;
-	display: block;
-	color: #ffffff;
-	letter-spacing: 1px;
-	text-align: center;
-	margin-top: 0;
-	line-height: 1.3em;
-}
-
 .form_col{
 	flex: 33.33%;
 	width: 33.33%;
@@ -1486,7 +1470,6 @@ a.blog_btn::after{
 	border-bottom: solid 1px #696969;
 	flex-grow: 1;
 	letter-spacing: 1px;
-	transition: 0.5s;
 }
 
 .form_box input[type="submit"]{
@@ -1513,7 +1496,6 @@ a.blog_btn::after{
 }
 
 .video_col img{
-	vertical-align: middle;
 	width: 100%;
 	height: auto;
 	display: block;
@@ -1637,14 +1619,6 @@ a.blog_btn::after{
 	display: block;
 	text-align: center;
 	margin-bottom: 14px;
-}
-
-.client_col img{
-	vertical-align: middle;
-	width: 100%;
-	height: auto;
-	transition: 0.5s;
-	overflow: hidden;
 }
 
 .client_name{
