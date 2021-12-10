@@ -1,9 +1,9 @@
 /*------------------------------------------------------------------
 Main Stylesheet
 
-Project:    Highpoint Corporate Template
+Project:    HighPoint - Multipurpose Business Template
 Version:    1.0
-Last change:    25/11/2021
+Last change:    10/12/2021
 Author:    creativemaze
 Primary use:    Technology
 -------------------------------------------------------------------*/
@@ -487,7 +487,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	margin-top: 20px;	
     border: none;
     color: #1488CC;
-    padding: 10px 12px;
+    padding: 12px 14px;
     text-decoration: none;
 	text-transform: uppercase;
     display: block;
@@ -530,21 +530,18 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	flex: 33.33%;
 	width: 33.33%;
 	padding: 0 15px;
-	position: relative;
 }
 
 .tech_box_col{
 	flex: 66.66%;
 	width: 66.66%;
 	padding: 0 15px;
-	position: relative;
 }
 
 .box_group_col{
 	flex: 33.33%;
 	width: 33.33%;
 	padding: 0 20px;
-	position: relative;
 }
 
 .wide_area{
@@ -591,7 +588,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	margin: 20px 0 0;
     border: none;
     color: #ffffff;
-    padding: 13px 15px;
+    padding: 13px 14px;
     text-decoration: none;
 	text-transform: uppercase;
     display: block;
@@ -625,7 +622,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .tech_box_col img{
-	vertical-align: middle;
 	width: 100%;
 	height: auto;
 	display: block;
@@ -674,7 +670,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	width: 110px;
 	margin: auto;
 	transition: 0.5s;
-    cursor: pointer;
 }
 
 .area_button a::after{
@@ -729,7 +724,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .square_col img{
-	vertical-align: middle;
 	width: 100%;
 	height: auto;
 	display: block;
@@ -783,7 +777,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	display: block;
 	text-align: left;
 	letter-spacing: 1px;
-	transition: 0.5s;
 	margin-top: 0;
 	line-height: 1.4em;
 }
@@ -937,7 +930,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	display: block;
 	text-align: center;
 	letter-spacing: 1px;
-	transition: 0.5s;
 	line-height: 1.4em;
 }
 
@@ -950,7 +942,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	color: #696969;
 	letter-spacing: 1px;
 	text-align: center;
-	transition: 0.5s;
 	line-height: 1.5em;
 }
 
@@ -1156,10 +1147,8 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .blog_col img{
-	vertical-align: middle;
 	width: 100%;
 	height: auto;
-	transition: 0.5s;
 	display: block;
 }
 
@@ -1332,14 +1321,6 @@ a.blog_btn:hover{
 	display: block;
 	text-align: center;
 	margin-bottom: 14px;
-}
-
-.client_col img{
-	vertical-align: middle;
-	width: 100%;
-	height: auto;
-	transition: 0.5s;
-	overflow: hidden;
 }
 
 .client_name{
