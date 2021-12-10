@@ -4,7 +4,8 @@ $(document).ready(function(){
 	$('.slickslide').slick({
 		autoplay: true,
 		infinite: true,
-		speed: 2000,
+		autoplaySpeed: 6000,
+		speed: 1000,
 		prevArrow: '.prev_button',
 		nextArrow: '.next_button',
 		pauseOnHover: false,
@@ -21,8 +22,6 @@ $(document).ready(function(){
 		infinite: true,
 		speed: 1000,
 		arrows: false,
-		pauseOnHover: false,
-		pauseOnFocus: false,
 		dots: true,
 		slidesToShow: 2,
 		slidesToScroll: 1,
@@ -78,14 +77,11 @@ $(function () {
 //Page Preloader
 document.onreadystatechange = function() {
     if (document.readyState !== "complete") {
-        document.querySelector(
-        "body").style.visibility = "hidden";
-        document.querySelector(
-        "#loading").style.visibility = "visible";
+        document.querySelector("body").style.visibility = "hidden";
+        document.querySelector("#loading").style.visibility = "visible";
+		 
     } else {
-        document.querySelector(
-        "#loading").style.display = "none";
-        document.querySelector(
-        "body").style.visibility = "visible";
+        document.querySelector("#loading").style.display = "none";
+        document.querySelector("body").style.visibility = "visible";
     }
 };
