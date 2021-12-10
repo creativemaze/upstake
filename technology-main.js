@@ -10,8 +10,6 @@ $(document).ready(function(){
 		nextArrow: '.next_button',
 		autoplay: false,
 		speed: 1000,
-		pauseOnHover: false,
-		pauseOnFocus: false,
 		adaptiveHeight: true,
 	});
 	
@@ -26,8 +24,6 @@ $(document).ready(function(){
 		arrows: false,
 		autoplay: false,
 		speed: 1000,
-		pauseOnHover: false,
-		pauseOnFocus: false,
 		responsive: [
 			{
 				breakpoint: 769,
@@ -78,14 +74,11 @@ $(function () {
 //Page Preloader
 document.onreadystatechange = function() {
     if (document.readyState !== "complete") {
-        document.querySelector(
-        "body").style.visibility = "hidden";
-        document.querySelector(
-        "#loading").style.visibility = "visible";
+        document.querySelector("body").style.visibility = "hidden";
+        document.querySelector("#loading").style.visibility = "visible";
+		 
     } else {
-        document.querySelector(
-        "#loading").style.display = "none";
-        document.querySelector(
-        "body").style.visibility = "visible";
+        document.querySelector("#loading").style.display = "none";
+        document.querySelector("body").style.visibility = "visible";
     }
 };
