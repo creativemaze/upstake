@@ -628,6 +628,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	color: #111111;
 	text-align: left;
 	line-height: 1.3em;
+	letter-spacing: 1px;
 }
 
 .col_box p{
@@ -869,6 +870,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	display: block;
 	color: #ffffff;
 	text-align: left;
+	letter-spacing: 1px;
 	line-height: 1.3em;
 	margin-top: 0;
 }
