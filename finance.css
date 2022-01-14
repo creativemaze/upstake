@@ -771,6 +771,49 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	color: #00cdac;
 }
 
+.area_button > a{
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 13px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	text-align: left;
+	text-transform: uppercase;
+	display: block;
+	color: #00cdac;
+	text-decoration: none;
+	width: 110px;
+	transition: 0.5s;
+}
+
+.area_button > a::after{
+	content: "\203A";
+	font-size: 20px;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	height: auto;
+	padding-left: 5px;
+	top: 1px;
+	position: relative;
+}
+
+.right_box .area_button > a{
+	color: #ffffff;
+}
+
+.square_box_info:hover .area_button > a{
+	color: #ffffff;
+}
+
+.square_box_info:hover .area_button > a:hover,
+.right_box:hover .area_button > a:hover{
+	color: #111111;
+}
+
+.right_box:hover .area_button > a{
+	color: #00cdac;
+}
+
 /* --- 3.3. Finance Area Three --- */
 .finance_area_three{
 	width: 100%;
@@ -880,13 +923,44 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .right_content p{
 	font-family: 'Roboto' , Arial, sans-serif;
-	font-size: 14px;
+	font-size: 15px;
 	font-weight: normal;
 	display: block;
 	color: #696969;
 	letter-spacing: 1px;
 	text-align: left;
 	line-height: 1.5em;
+}
+
+.grid_button > a{
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 13px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	text-align: left;
+	text-transform: uppercase;
+	display: block;
+	color: #00cdac;
+	text-decoration: none;
+	width: 110px;
+	transition: 0.5s;
+	padding-bottom: 10px;
+}
+
+.grid_button > a::after{
+	content: "\203A";
+	font-size: 20px;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	height: auto;
+	padding-left: 5px;
+	top: 1px;
+	position: relative;
+}
+
+.grid_button > a:hover{
+	color: #111111;
 }
 
 /* --- 3.4. Finance Area Four --- */
