@@ -607,12 +607,10 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	background: transparent;
 	width: auto;
 	display: inline-block;
-	overflow: hidden;
 	padding: 10px 16px;
 	color: #111111;
 	cursor: pointer;
 	border: solid 1px #111111;
-	border-radius: 50%;
 }
 
 .prev_slide{
@@ -1373,8 +1371,6 @@ a.blog_btn:hover .blog_crumb{
 	border: solid 1px #e0e0e0;
 	flex-grow: 1;
 	letter-spacing: 1px;
-	transition: 0.5s;
-	background-color: #f6f6f6;
 }
 
 .form-box textarea{
@@ -1388,8 +1384,6 @@ a.blog_btn:hover .blog_crumb{
 	border: solid 1px #e0e0e0;
 	flex-grow: 1;
 	letter-spacing: 1px;
-	transition: 0.5s;
-	background-color: #f6f6f6;
 }
 
 .form-box input[type="text"]:focus,
