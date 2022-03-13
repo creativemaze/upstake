@@ -395,17 +395,17 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .header__content{
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	justify-content:  center;
 	align-items: center;
 	height: 100vh;
 	min-height: 650px;
+	z-index: 999;
 }
 
 .slide__content{
-	position: relative;
-	z-index: 1;
 	height: 100vh;
 	min-height: 650px;
 	text-align: center;
@@ -428,17 +428,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	max-width: 950px;
 	display: block;
 	padding: 0 20px;
-}
-
-.header__content > div{
-	animation-duration: 2s;
-	animation-delay: 1s;
-	display: none;
-}
-
-.header__content > div.active{
-	display: block;
-	animation-play-state: running !important;
 }
 
 .header-title__main{
@@ -472,11 +461,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	margin: auto;
 }
 
-.buttoncol{
-	max-width: 500px;
-	margin: auto;
-}
-
 .buttoncol a{
 	background-color: #1a2980;
 	width: 150px;
@@ -495,8 +479,8 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	border: 1px solid #1a2980;
 	letter-spacing: 1px;
 	text-align: center;
-	margin-right: 10px;
-	margin-bottom: 10px;
+	margin-right: 15px;
+	margin-bottom: 20px;
 }
 
 .right_btn{
@@ -538,14 +522,12 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	width: auto;
 	font-size: 14px;
 	transition: 0.6s ease;
-	border-radius: 0 3px 3px 0;
 	background: transparent;
 	display: block;
 	padding: 10px 16px;
-	color: #ffc91a;
+	color: #ffffff;
 	cursor: pointer;
 	border: solid 1px #ffffff;
-	border-radius: 3px;
 }
 
 .prev_button:hover,
@@ -585,7 +567,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	vertical-align: middle;
 	width: 100%;
 	height: auto;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
 .first_left{
@@ -744,7 +725,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	vertical-align: middle;
 	width: 100%;
 	height: auto;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
 .left_space{
@@ -840,32 +820,107 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 /* --- 3.4. Construction Area Four --- */
 .construct_area_four{
-	max-width: 1400px;
-	margin: 0 auto 9em;
-	padding: 0 25px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 450px;
+	text-align: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-bottom: 9em;
+	padding: 6em 0;
+}
+
+.construct_area_four::before {
+	content: '';
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(24, 25, 34, 0.6);
 }
 
 .construct_group_four{
+	max-width: 1400px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 25px;
+	z-index: 999;
+}
+
+.bg_area,
+.icon_area{
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
-	padding-top: 40px;
+}
+
+.bg_wide_col{
+	flex: 33.33%;
+	width: 33.33%;
+	padding: 0 15px;
+	position: relative;
+}
+
+.bg_box_col{
+	flex: 66.66%;
+	width: 66.66%;
+	padding: 0 15px;
+	position: relative;
+}
+
+.wide_area{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.wide_box{
+	max-width: 450px;
+	margin: 0;
+}
+
+.wide_box h2{
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 40px;
+	font-weight: 700;
+	display: block;
+	color: #ffffff;
+	text-align: left;
+	letter-spacing: 1px;
+	line-height: 1.3em;
+}
+
+.wide_box p{
+	font-family: 'Roboto' , Arial, sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	display: block;
+	color: #f2f2f2;
+	letter-spacing: 1px;
+	text-align: left;
+	padding: 15px 0;
+	line-height: 1.5em;
 }
 
 .icon_col{
-	flex: 25%;
-	width: 25%;
-	padding: 0 20px;
+	flex: 50%;
+	width: 50%;
+	position: relative;
+	padding: 20px;
 }
 
 .icon_box{
-	max-width: 300px;
-	margin: 0 auto;
-	padding: 35px 30px; 
-	text-align: left;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
-	min-height: 50px;
-	height: 100%
+	width: 100%;
+	margin-bottom: 10px;
+	max-width: 350px;
+	overflow: hidden;
 }
 
 .icon{
@@ -876,27 +931,25 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 .icon_content{
 	float: left;
 	width: 85%;
-	padding-left: 15px;
-	padding-bottom: 25px;
+	padding-left: 10px;
 }
 
 .icon .fas,
 .icon .far{
-	font-size: 30px;
-	color: #ffc91a;
+	font-size: 35px;
+	color: #ffffff;
 	text-align: left;
 	display: block;
-	transition: 0.5s;
 }
 
 .icon_content h3{
+	color: #ffffff;
 	font-family: 'Montserrat' , Arial, sans-serif;
 	font-size: 18px;
 	font-weight: 600;
 	display: block;
-	color: #111111;
-	letter-spacing: 1px;
 	text-align: left;
+	letter-spacing: 1px;
 	margin-top: 0;
 	line-height: 1.4em;
 }
@@ -906,34 +959,47 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	font-size: 15px;
 	font-weight: normal;
 	display: block;
-	color: #696969;
+	color: #d2d2d2;
 	letter-spacing: 1px;
 	text-align: left;
 	line-height: 1.5em;
-	padding-top: 10px;
+	padding-top: 8px;
 }
 
-.icon_crumb{
-	max-width: 300px;
-	height: 1px;
+.icon_button > a{
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 13px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	text-align: left;
+	text-transform: uppercase;
 	display: block;
-	border-bottom: solid 4px #ffc91a;
-	margin: 0 auto 0;
+	color: #ffffff;
+	text-decoration: none;
+	width: 110px;
 	transition: 0.5s;
-	visibility: hidden;
-	opacity: 0;
 }
 
-.icon_col:hover .icon_crumb{
-	visibility: visible;
-	opacity: 1;
+.icon_button > a::after{
+	content: "\203A";
+	font-size: 20px;
+	display: inline-block;
+	height: auto;
+	padding-left: 5px;
+	top: 1px;
+	position: relative;
+}
+
+.icon_button > a:hover{
+	opacity: 0.6;
 }
 
 /* --- 3.5. Construction Area Five --- */
 .construct_area_five{
 	max-width: 1280px;
 	padding: 0 25px;
-	margin: 0 auto 9em;
+	margin: 0 auto;
+	margin-bottom: calc(9em - 25px);
 }
 
 .construct_group_five{
@@ -966,7 +1032,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 .featured_image{
 	overflow: hidden;
 	position: relative;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
 .featured_image > a > img{
@@ -977,17 +1042,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	transform: scale(1.15);
 }
 
-.featured_content{
-	position: absolute;
-	bottom: 0;
-	left: 50%;
-	transform: translateX(-50%);
-	margin-bottom: 20px;
-	min-width: 230px;
-	padding: 20px 5px;
-	background-color: #ffffff;
-}
-
 .featured_content h3{
 	font-family: 'Montserrat' , Arial, sans-serif;
 	font-size: 15px;
@@ -996,9 +1050,8 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	color: #1a2980;
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	text-align: center;
+	text-align: left;
 	line-height: 1.4em;
-	margin: 0;
 }
 
 .featured_content h3::before{
@@ -1009,49 +1062,90 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 /* --- 3.6. Construction Area Six --- */
 .construct_area_six{
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	min-height: 400px;
-	height: 100%;
-	text-align: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-	margin-bottom: 9em;
-	padding: 5em 0;
-}
-
-.construct_area_six::before {
-	content: '';
-	position: absolute;
-	z-index: 1;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: rgba(24, 25, 34, 0.6);
+	max-width: 1400px;
+	padding: 0 25px;
+	margin: 0 auto;
+	margin-bottom: calc(9em - 15px);
 }
 
 .construct_group_six{
-	position: relative;
-	z-index: 9;
 	width: 100%;
-	max-width: 1400px;
-	margin: auto;
-	padding: 0 25px;
+	display: flex;
+	flex-wrap: wrap;
 }
 
-.quoteblock .fas{
-	font-size: 45px;
-	color: #ffc91a;
+.review_col_left{
+	flex: 33.33%;
+	width: 33.33%;
+	padding: 0 15px;
+	position: relative;
+}
+
+.review_col_right{
+	flex: 66.66%;
+	width: 66.66%;
+	padding: 0 10px;
 	text-align: center;
-	padding-bottom: 30px;
 }
 
-.client_box img{
+.review_box{
+	max-width: 450px;
+	margin: 0;
+	width: 100%;
+	padding: 0 20px;
+}
+
+.review_area{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.review_box h2{
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 40px;
+	font-weight: 700;
+	display: block;
+	color: #1a2980;
+	text-align: left;
+	letter-spacing: 1px;
+	line-height: 1.3em;
+}
+
+.review_box p{
+	font-family: 'Roboto' , Arial, sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	display: block;
+	color: #696969;
+	letter-spacing: 1px;
+	text-align: left;
+	padding-top: 15px;
+	line-height: 1.5em;
+}
+
+.client_details{
+	display: block;
+	max-width: 325px;
+	width: 100%;
+	margin: auto;
+	padding: 0 15px;
+	text-align: center;
+	margin-bottom: 15px;
+	margin-top: 5px;
+}
+
+.client_box{
+	width: 100%;
+	padding: 35px 30px;
+	text-align: center;
+	display: block;
+	background-color: #ffffff;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.client_info img{
 	max-width: 90px;
 	height: 90px;
 	margin: auto;
@@ -1061,194 +1155,91 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	margin-bottom: 14px;
 }
 
-.client_box > p{
+.client_name{
 	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 16px;
-	font-weight: normal;
-	max-width: 600px;
-	margin: auto;
+	font-size: 18px;
+	font-weight: 600;
 	display: block;
-	color: #ffffff;
+	color: #1a2980;
 	letter-spacing: 1px;
 	text-align: center;
-	padding: 0 10px;
-	line-height: 1.5em;
+	line-height: 1.4em;
 }
 
-.client_box > h3{
-	font-family: 'Montserrat' , Arial, sans-serif;
+.client_comment{
+	display: block;
+	clear: both;
+}
+
+.client_title{
+	font-family: 'Montserrat', Arial, sans-serif;
 	font-size: 14px;
 	font-weight: 600;
-	color: #f2f2f2;
-	text-transform: uppercase;
+	display: block;
+	color: #ffc91a;
 	letter-spacing: 1px;
 	text-align: center;
+	text-transform: uppercase;
+}
+
+.client_comment q{
+	font-family: 'Roboto', Arial, sans-serif;
+	font-size: 15px;
+	font-weight: normal;
 	display: block;
-	padding-bottom: 10px;
-}
-
-.client_box > h3::before{
-	content: '\2014';
-	padding: 0 0.5em;
-}
-
-.ratings_icon{
+	color: #696969;
+	letter-spacing: 1px;
 	text-align: center;
-	width: 100%;
+	max-width: 350px;
+	margin: auto;
+	padding-top: 15px;
 }
 
-.ratings_icon .fas{
-	font-size: 13px;
-	color: #ffc91a;
+.slick-dots{
+	position: relative;
+	z-index: 999999;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	justify-content: center;
+	margin: 0;
+	padding: 1.5rem 0 0;
+	list-style-type: none;
+}
+
+.slick-dots button{
+	display: block;
+	width: 1.3rem;
+	height: 1.3rem;
+	padding: 0;		
+	border: solid 1px #6f6f6f;
+	border-radius: 100%;
+	background: transparent;
+	text-indent: -9999px;
+}
+
+li.slick-active button{
+	background-color: #1a2980;
+}
+
+.slick-dots button:hover{
+	background-color: #1a2980;
+}
+
+.slick-dots li{
+	margin: 6px 0.40rem;
 }
 
 /* --- 3.7. Construction Area Seven --- */
 .construct_area_seven{
 	width: 100%;
+	min-height: 100px;
 	margin: 0;
-	min-height: 400px;
-	padding: 6em 25px;
-	background-color: #eeeeee;
+	background-color: #1a2980;
+	margin-bottom: calc(9em - 25px);
 }
 
 .construct_group_seven{
-	max-width: 1200px;
-	width: 100%;
-	margin: 0 auto;
-	display: flex; 
-	flex-wrap: wrap;
-	padding-bottom: 40px;
-}
-
-.team_col{
-	flex: 33.33%;
-	width: 33.33%;
-	padding: 40px 20px 0;
-}
-
-.team_box{
-	max-width: 400px;
-	position: relative;
-	text-align: center;
-	overflow: hidden;
-	margin: auto;
-	min-height: 150px;
-}
-
-.team_image img{
-	vertical-align: middle;
-	width: 100%;
-	height: auto;
-	display: block;
-}
-
-.team_image{
-	overflow: hidden;
-	position: relative;
-}
-
-.team_area{
-	overflow: hidden;
-	position: relative;
-	padding-bottom: 12px;
-	padding-right: 12px;
-	padding-top: 12px;
-	padding-left: 12px;
-	background-color: #ffffff;
-}
-
-.team_icon{
-	min-width: 375px;
-	min-height: 100px;
-	background: #ffffff;
-	margin: auto;
-	text-align: center;
-	position: relative;
-	bottom: 15px;
-	padding: 30px;
-}
-
-.team_image > img{
-	transition: ease-in-out 1.25s;
-}
-
-.team_image > img:hover{
-	transform: scale(1.15);
-}
-
-.team_icon > a{
-	padding: 0 8px;
-	transition: ease-in-out 0.5s;
-}
-
-.team_icon .fa-facebook-f{
-	padding: 10px 12px !important;
-}
-
-.team_icon .fab,
-.team_icon .fa{
-	font-size: 14px;
-	color: #1a2980;
-	width: 35px;
-	height: 35px;
-	background-color: #ffc91a;
-	padding: 10px;
-	border: solid 1px #ffc91a;
-	border-radius: 50%;
-	display: inline-block;
-	text-align: left;
-	margin-right: 7px;
-	transition: ease-in-out 0.5s;
-}
-
-.team_icon .fab:hover,
-.team_icon .fa:hover{
-	color: #ffc91a;
-	background-color: #1a2980;
-	border: solid 1px #1a2980;
-}
-
-.team_content{
-	position: relative;
-	max-width: 400px;
-	width: 100%;
-	margin: auto;
-	text-align: center;
-	padding: 15px 0;
-}
-
-.team_name{
-	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 18px;
-	display: block;
-	font-weight: 600;
-	color: #1a2980;
-	letter-spacing: 1px;
-	text-align: center;
-	line-height: 1.4em;
-	margin-top: 0;
-}
-
-.team_title{
-	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 15px;
-	display: block;
-	font-weight: 600;
-	color: #ffc91a;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	text-align: center;
-}
-
-/* --- 3.8. Construction Area Eight --- */
-.construct_area_eight{
-	width: 100%;
-	min-height: 100px;
-	margin: 0 0 9em;
-	background-color: #1a2980;
-}
-
-.construct_group_eight{
 	max-width: 1400px;
 	margin: auto;
 	width: 100%;
@@ -1261,7 +1252,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	flex: 25%;
 	width: 25%;
 	padding: 0 25px;
-	border-right: solid 1px #e0e0e0;
+	border-right: dotted 1px #e0e0e0;
 }
 
 .count_box{
@@ -1317,6 +1308,199 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .fourth_border{
 	border-right: none;
+}
+
+/* --- 3.8. Construction Area Eight --- */
+.construct_area_eight{
+	max-width: 1400px;
+	margin: 0 auto;
+	padding: 0 25px;
+	margin-bottom: calc(9em - 25px);
+}
+
+.construct_group_eight,
+.team_area{
+	width: 100%;
+	display: flex; 
+	flex-wrap: wrap;
+}
+
+.cube_col_left{
+	flex: 33.33%;
+	width: 33.33%;
+	padding: 0 15px;
+}
+
+.cube_col_right{
+	flex: 66.66%;
+	width: 66.66%;
+	padding: 0 15px;
+}
+
+.cube_area{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.cube_box{
+	max-width: 450px;
+	margin: 0;
+	width: 100%;
+}
+
+.cube_box p{
+	font-family: 'Roboto' , Arial, sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	padding-top: 15px;
+	display: block;
+	color: #696969;
+	letter-spacing: 1px;
+	text-align: left;
+	line-height: 1.5em;
+}
+
+.cube_box h2{
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 40px;
+	font-weight: 700;
+	display: block;
+	color: #1a2980;
+	text-align: left;
+	letter-spacing: 1px;
+	line-height: 1.3em;
+}
+
+.team_col{
+	flex: 33.33%;
+	width: 33.33%;
+	padding: 25px;
+}
+
+.team_box{
+	max-width: 350px;
+	position: relative;
+	text-align: center;
+	overflow: hidden;
+}
+
+.team_col img{
+	width: 100%;
+	height: auto;
+	display: block;
+	border-radius: 50%;
+}
+
+.team_image{
+	overflow: hidden;
+	position: relative;
+	background-color: #ffffff;
+}
+
+.overlay {
+	position: absolute;
+	bottom: 100%;
+	left: 0;
+	right: 0;
+	overflow: hidden;
+	width: 100%;
+	height:0;
+	transition: 0.5s ease;
+	background-color: #1a2980;
+}
+
+.team_box .team_image > img{
+	transition: ease-in-out 1.25s;
+}
+
+.team_box:hover .overlay{
+	bottom: 0;
+	height: 100%;
+}
+
+.team_icon{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+}
+
+.team_icon .fa-facebook-f{
+	padding: 10px 12px !important;
+}
+
+.team_icon .fab,
+.team_icon .fa{
+	font-size: 14px;
+	color: #1a2980;
+	width: 35px;
+	height: 35px;
+	background-color: #ffc91a;
+	padding: 10px;
+	border: solid 1px #ffc91a;
+	border-radius: 50%;
+	display: inline-block;
+	text-align: left;
+	margin-right: 7px;
+	transition: ease-in-out 0.5s;
+}
+
+.team_icon .fab:hover,
+.team_icon .fa:hover{
+	color: #ffc91a;
+	background-color: #ffffff;
+	border: solid 1px #ffffff;
+}
+
+.team_name{
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 18px;
+	display: block;
+	font-weight: 600;
+	color: #1a2980;
+	letter-spacing: 1px;
+	text-align: center;
+	line-height: 1.4em;
+}
+
+.team_title{
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 15px;
+	display: block;
+	font-weight: 600;
+	color: #ffc91a;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	text-align: center;
+}
+
+.box_button a{
+	background-color: #ffc91a;
+	width: 170px;
+	min-height: 25px;
+	margin: 20px auto 0;
+    color: #1a2980;
+    padding: 13px 14px;
+    text-decoration: none;
+	text-transform: uppercase;
+    display: inline-block;
+    font-size: 13px;
+	font-weight: 600;
+	font-family: 'Montserrat', Arial, sans-serif;
+    transition: 0.5s;
+    cursor: pointer;
+	border: 1px solid #ffc91a;
+	letter-spacing: 1px;
+	text-align: center;
+}
+
+.box_button a:hover{
+	color: #ffffff;
+	background-color: #1a2980;
+	border-color: #1a2980;
 }
 
 /* --- 3.9. Construction Area Nine --- */
@@ -1579,18 +1763,7 @@ a.footer-brand img{
 		margin-bottom: 40px;
 	}
 	
-	.icon_col{
-		flex: 50%;
-		width: 50%;
-		margin-bottom: 30px;
-	}
-	
 	.featured_col{
-		flex: 50%;
-		width: 50%;
-	}
-	
-	.team_col{
 		flex: 50%;
 		width: 50%;
 	}
@@ -1603,6 +1776,27 @@ a.footer-brand img{
 	
 	.second_border{
 		border-right: none;
+	}
+	
+	.review_col_left{
+		flex: 100%;
+		width: 100%;
+		margin-bottom: 40px;
+	}
+	
+	.review_col_right{
+		flex: 100%;
+		width: 100%;
+	}
+	
+	.cube_col_left,
+	.cube_col_right{
+		flex: 100%;
+		width: 100%;
+	}
+	
+	.cube_col_right{
+		margin-top: 40px;
 	}
 }	
 
@@ -1697,13 +1891,27 @@ a.footer-brand img{
 		width: 100%;
 	}
 	
-	.team_icon{
-		padding: 30px 15px;
+	.bg_wide_col{
+		flex: 100%;
+		width: 100%;
+		margin-bottom: 30px;
+	}
+
+	.bg_box_col{
+		flex: 100%;
+		width: 100%;
 	}
 	
 	.footer_col{
 		flex: 50%;
 		width: 50%;
+	}
+}
+
+@media only screen and (max-width: 800px){
+	.team_col{
+		flex: 100%;
+		width: 100%;
 	}
 }
 
@@ -1715,7 +1923,10 @@ a.footer-brand img{
 	.construct_head,
 	.square_area h2,
 	.tool_col_area h2,
-	.bg_head{
+	.bg_head,
+	.wide_box h2,
+	.review_box h2,
+	.cube_box h2{
 		font-size: 30px;
 	}
 	
@@ -1732,17 +1943,12 @@ a.footer-brand img{
 		padding-right: 0;
 	}
 	
-	.icon_col{
-		flex: 100%;
-		width: 100%;
-	}
-	
 	.featured_col{
 		flex: 100%;
 		width: 100%;
 	}
 	
-	.team_col{
+	.icon_col{
 		flex: 100%;
 		width: 100%;
 	}
@@ -1770,38 +1976,30 @@ a.footer-brand img{
 		width: 100%;
 	}
 	
+	.bg_head{
+		font-size: 25px;
+	}
+	
 	.square_col,
 	.tool_col_area,
 	.tool_col,
 	.grid_col,
+	.featured_col,
+	.bg_wide_col,
+	.bg_box_col,
 	.icon_col,
+	.review_col_right,
+	.review_col_left,
+	.review_box,
+	.cube_col_left,
+	.cube_col_right,
 	.team_col{
 		padding-left: 0;
 		padding-right: 0;
 	}
-	
-	.featured_col{
-		padding-left: 0;
-		padding-right: 0;
-	}
-}
-
-@media only screen and (max-width: 360px){
-	.team_icon{
-		padding: 30px 10px;
-	}
 }
 
 @media only screen and (max-width: 320px){
-	.team_icon{
-		padding: 30px 5px;
-	}
-	
-	.team_icon .fab,
-	.team_icon .fa{
-		margin-right: 0;
-	}
-	
 	.count_icon{
 		width: 10%;
 	}
