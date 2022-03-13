@@ -13,19 +13,38 @@ $(document).ready(function(){
 		pauseOnFocus: false,
 		dots: false,
 	});
-	
-	$('.slickslide').on('beforeChange', function(event, slick, currentSlide, nextSlide){
-		$('.header__content > div.active').removeClass('active');
-			$('.header__content > div').eq(nextSlide).addClass('active');
-	});
-  
-  
-	$('.header__content > div').on('click', function(e){
-		e.preventDefault();
-		$('header__content > div.active').removeClass('active');
-		$(this).addClass('active');
-		var targetSlide = $(this).data('target');
-		$('.slickslide').slick('slickGoTo', targetSlide );
+});
+
+//Slick Slider (2) Two
+$(document).ready(function(){
+	$('.client-slider').slick({
+		dots: true,
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		arrows: false,
+		autoplay: false,
+		speed: 1000,
+		pauseOnHover: false,
+		pauseOnFocus: false,
+		responsive: [
+			{
+				breakpoint: 801,
+				settings: 
+				{
+					slidesToShow: 2,
+       
+				}	
+			},
+			
+			{
+				breakpoint: 501,
+				settings: 
+				{
+					slidesToShow: 1,
+       
+				}	
+			},
+		]	
 	});
 	
 });
@@ -80,7 +99,6 @@ document.onreadystatechange = function() {
     if (document.readyState !== "complete") {
         document.querySelector("body").style.visibility = "hidden";
         document.querySelector("#loading").style.visibility = "visible";
-		document.querySelector(".header__content > div.active").style.animationPlayState = "paused";
 		 
     } else {
         document.querySelector("#loading").style.display = "none";
