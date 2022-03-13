@@ -1,7 +1,7 @@
 /*------------------------------------------------------------------
 Main Stylesheet
 
-Project:    Highpoint - Multipurpose Corporate Template
+Project:    HighPoint - Multipurpose Business Template
 Version:    1.0
 Last change:    25/11/2021
 Author:    creativemaze
@@ -429,17 +429,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	display: block;
 	margin-left: 10vw;
 	padding-right: 10px;
-}
-
-.header__content > div{
-	animation-duration: 2s;
-	animation-delay: 1s;
-	display: none;
-}
-
-.header__content > div.active{
-	display: block;
-	animation-play-state: running !important;
 }
 
 .header-title__main{
@@ -1033,17 +1022,17 @@ li.slick-active button{
 .featured_content{
 	overflow: hidden;
 	position: relative;
-	text-align: center;
-	padding: 10px 20px 0;
+	text-align: left;
+	padding: 10px 10px 0 0;
 }
 
 .featured_content h3{
-	color: #111111;
 	font-family: 'Montserrat' , Arial, sans-serif;
 	font-size: 18px;
+	color: #111111;
 	font-weight: 600;
 	display: block;
-	text-align: center;
+	text-align: left;
 	letter-spacing: 1px;
 	line-height: 1.4em;
 }
@@ -1055,17 +1044,17 @@ li.slick-active button{
 	display: block;
 	color: #696969;
 	letter-spacing: 1px;
-	text-align: center;
+	text-align: left;
 	padding: 10px 0 0;
 	line-height: 1.5em;
 }
 
 .area_button a{
 	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 12px;
+	font-size: 13px;
 	font-weight: 600;
 	letter-spacing: 1px;
-	text-align: center;
+	text-align: left;
 	text-transform: uppercase;
 	display: block;
 	color: #009fff;
@@ -1073,14 +1062,11 @@ li.slick-active button{
 	width: 110px;
 	transition: 0.5s;
     cursor: pointer;
-	margin: auto;
 }
 
 .area_button a::after{
 	content: "\203A";
 	font-size: 20px;
-	margin: 0;
-	padding: 0;
 	display: inline-block;
 	height: auto;
 	padding-left: 5px;
@@ -1332,7 +1318,7 @@ li.slick-active button{
 .blog_content{
 	padding: 15px 0 0;
 	text-align: left;
-	padding-left: 15px;
+	padding-right: 10px;
 }
 
 .blog_date{
@@ -1378,14 +1364,14 @@ li.slick-active button{
 }
 
 a.blog_btn{
-	max-width: 120px;	
+	max-width: 120px;
+	font-size: 13px;
+	font-weight: 600;
+	font-family: 'Montserrat', Arial, sans-serif;	
     color: #009fff;
     text-decoration: none;
 	text-transform: uppercase;
     display: inline-block;
-    font-size: 13px;
-	font-weight: 600;
-	font-family: 'Montserrat', Arial, sans-serif;
     transition: 0.5s;
     cursor: pointer;
 	letter-spacing: 1px;
@@ -1395,8 +1381,6 @@ a.blog_btn{
 a.blog_btn::after{
 	content: "\203A";
 	font-size: 20px;
-	margin: 0;
-	padding: 0;
 	display: inline-block;
 	height: auto;
 	padding-left: 5px;
@@ -1522,7 +1506,6 @@ a.blog_btn:hover{
 	color: #111111;
 	cursor: pointer;
 	border: solid 1px #111111;
-	border-radius: 3px;
 }
 
 .prev_nav{
@@ -1580,7 +1563,7 @@ a.blog_btn:hover{
 
 .col_info input[type="email"]{
 	width: 350px;
-	padding: 12px 20px 14px;
+	padding: 11px 14px 14px;
 	border: solid 1px #e0e0e0;
 	font-family: 'Montserrat' , Arial, sans-serif;
 	font-size: 13px;
@@ -1595,13 +1578,12 @@ a.blog_btn:hover{
 .col_info input[type="submit"]{
 	display: inline-block;
 	width: auto;
-	padding: 11px 24px;
+	padding: 10px 24px 11px;
 	text-align: center;
 	font-family: 'Montserrat' , Arial, sans-serif;
 	font-size: 16px;
 	font-weight: 500;
 	text-transform: uppercase;
-	margin: 0;
 	margin-left: -4px;
 	color: #ffffff;
 	border-radius: 0;
