@@ -1824,7 +1824,11 @@ a.footer-brand img{
 	}
 	
 	.col_info input[type="submit"]{
-		padding: 9px 24px 12px;
+		padding: 10px 24px 10px;
+	}
+
+	.col_info input[type="email"]{
+		padding: 11px 14px 13px;
 	}	
 		
 	.col_head{
