@@ -689,7 +689,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	text-align: left;
 	background: transparent;
 	transition: 0.5s;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+	border: solid 1px #e0e0e0;
 }
 
 .square_box_info .fas{
@@ -1028,7 +1028,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	width: 100%;
 	height: auto;
 	display: block;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
 .inner_list > ul > li{
@@ -1528,7 +1527,6 @@ a.blog_btn::after{
 	display: block;
 	color: #111111;
 	line-height: 1.3em;
-	padding-bottom: 15px;
 }
 
 .form_col_box p{
@@ -1539,7 +1537,7 @@ a.blog_btn::after{
 	color: #696969;
 	letter-spacing: 1px;
 	text-align: left;
-	padding: 12px 0;
+	padding: 15px 0;
 	line-height: 1.5em;
 }
 
@@ -1566,7 +1564,7 @@ a.blog_btn::after{
 	flex-grow: 1;
 	letter-spacing: 1px;
 	transition: 0.5s;
-	background-color: #f6f6f6;
+	background-color: #ffffff;
 }
 
 .form-box textarea{
@@ -1581,7 +1579,7 @@ a.blog_btn::after{
 	flex-grow: 1;
 	letter-spacing: 1px;
 	transition: 0.5s;
-	background-color: #f6f6f6;
+	background-color: #ffffff;
 }
 
 .form-box input[type="text"]:focus,
