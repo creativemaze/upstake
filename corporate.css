@@ -1823,6 +1823,10 @@ a.footer-brand img{
 		margin-top: 0;
 	}
 	
+	.col_info input[type="submit"]{
+		padding: 9px 24px 12px;
+	}	
+		
 	.col_head{
 		flex: 100%;
 		width: 100%;
