@@ -1365,12 +1365,15 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 /* --- 3.6. Consulting Area Six --- */
 .consult_area_six{
 	position: relative;
-	min-height: 450px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 400px;
 	height: 100%;
-	margin-bottom: 9em;
-	width: 100%;
 	background-color: #ec2F4B;
-	padding: 6em 0;
+	margin-bottom: 9em;
+	padding: 5em 0;
 }
 
 .consult_group_six{
@@ -1380,135 +1383,70 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	padding: 0 25px;
 }
 
-.box_area,
-.square_area{
+.query_area{
 	width: 100%;
 	display: flex; 
 	flex-wrap: wrap;
 }
 
-.box_col{
-	flex: 58.33%;
-	width: 58.33%;
-	padding: 0 15px;
-	position: relative;
-}
-
 .question_col{
-	flex: 41.66%;
-	width: 41.66%;
-	padding: 0 15px;
+	flex: 66.66%;
+	width: 66.66%;
 }
 
-.square_col{
+.info_col{
+	flex: 33.33%;
+	width: 33.33%;
+}
+
+.question_area{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.panel_col{
 	flex: 50%;
 	width: 50%;
-	position: relative;
 	padding: 0 25px;
 }
 
-.square_box{
-	width: 100%;
-	background-color: #ffffff;
-	padding: 25px 20px;
-	max-width: 350px;
-	margin: 30px 0;
-	transition: 0.5s;
-	overflow: hidden;
-	cursor: pointer;
-}
-
-.square_icon{
-	float: left;
-	width: 20%;
-}
-
-.square_item{
-	float: left;
-	width: 80%;
-	padding-left: 10px;
-}
-
-.square_item h3{
-	color: #111111;
-	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 18px;
-	font-weight: 600;
-	display: block;
-	text-align: left;
-	letter-spacing: 1px;
-	margin-top: 0;
-	line-height: 1.4em;
-}
-
-.square_item p{
-	font-family: 'Roboto' , Arial, sans-serif;
-	font-size: 15px;
-	font-weight: normal;
-	display: block;
-	color: #696969;
-	letter-spacing: 1px;
-	text-align: left;
-	line-height: 1.5em;
-	padding: 8px 0;
-}
-
-.square_icon .fas,
-.square_icon .far{
-	font-size: 35px;
-	color: #ec2F4B;
-	text-align: center;
-	display: block;
-}
-
-.square_button > a{
-	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 13px;
-	font-weight: 600;
-	letter-spacing: 1px;
-	text-align: left;
-	text-transform: uppercase;
-	display: block;
-	color: #D31027;
-	text-decoration: none;
-	width: 120px;
-	transition: 0.5s;
-    cursor: pointer;
-}
-
-.square_button > a::after{
-	content: "\203A";
-	font-size: 20px;
-	margin: 0;
-	padding: 0;
-	display: inline-block;
-	height: auto;
-	padding-left: 5px;
-	top: 1px;
-	position: relative;
-}
-
-.area_button > a:hover{
-	color: #111111;
-}
-
-.square_button > a:hover{
-	color: #111111;
-}
-
-.col_area{
+.info_area{
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
 	align-items: center;
 }
 
-.question_box{
+.info_box{
 	max-width: 450px;
-	padding-right: 20px;
+	padding: 0 20px;
 }
 
-.question_box h5{
+.info_box h2{
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 40px;
+	font-weight: 700;
+	display: block;
+	color: #ffffff;
+	text-align: left;
+	letter-spacing: 1px;
+	line-height: 1.3em;
+}
+
+.info_box p{
+	font-family: 'Roboto' , Arial, sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	padding-top: 15px;
+	display: block;
+	color: #f2f2f2;
+	letter-spacing: 1px;
+	text-align: left;
+	line-height: 1.5em;
+}
+
+.info_box h5{
 	font-family: 'Montserrat' , Arial, sans-serif;
 	font-size: 15px;
 	font-weight: 500;
@@ -1520,17 +1458,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	line-height: 1.5em;
 }
 
-.question_box h2{
-	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 40px;
-	font-weight: 700;
-	display: block;
-	color: #ffffff;
-	text-align: left;
-	letter-spacing: 1px;
-	line-height: 1.3em;
-}
-
 .accordion_box{
 	overflow:  hidden;
 	margin-top: 12px;
@@ -1539,7 +1466,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 .accordion {
 	background: transparent;
 	cursor: pointer;
-	padding: 16px 20px;
+	padding: 15px 20px;
 	width: 100%;
 	border: none;
 	text-align: left;
@@ -2059,7 +1986,7 @@ a.blog_btn:hover .blog_crumb{
 
 .col_info input[type="email"]{
 	width: 350px;
-	padding: 10px 20px 14px;
+	padding: 10px 15px 14px;
 	padding-right: 50px;
 	border: 0;
 	font-family: 'Montserrat' , Arial, sans-serif;
@@ -2081,7 +2008,6 @@ a.blog_btn:hover .blog_crumb{
 	font-size: 14px;
 	font-weight: 500;
 	text-transform: uppercase;
-	margin: 0;
 	margin-left: -4px;
 	color: #ffffff;
 	border-radius: 0;
@@ -2091,7 +2017,6 @@ a.blog_btn:hover .blog_crumb{
 	transition: 0.5s;
 	border-top-right-radius: 25px;
 	border-bottom-right-radius: 25px;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
 .col_info input[type="submit"]:hover{
@@ -2317,21 +2242,26 @@ a.footer-brand img{
 		border-right: none;
 	}
 	
-	.question_col,
-	.box_col{
-		flex: 100%;
-		width: 100%;
-	}
-	
-	.question_box{
-		padding-bottom: 15px;
-	}
-	
 	.blog_col{
 		flex: 50%;
 		width: 50%;
 	}
-}
+	
+	.question_col{
+		flex: 100%;
+		width: 100%;
+	}
+	
+	.info_col{
+		flex: 100%;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	
+	.col_info input[type="email"]{
+		padding: 10px 15px 14px;
+	}
+}	
 
 @media only screen and (max-width: 992px){
 	nav.navbar.bootsnav .navbar-toggle{
@@ -2432,6 +2362,12 @@ a.footer-brand img{
 		padding-top: 30px;
 	}
 	
+	.panel_col{
+		flex: 100%;
+		width: 100%;
+		max-width: 600px;
+	}
+	
 	.team_col{
 		flex: 100%;
 		width: 100%;
@@ -2456,7 +2392,7 @@ a.footer-brand img{
 	.right_box h2,
 	.consult_head,
 	.bg_head,
-	.question_box h2{
+	.info_box h2{
 		font-size: 30px;
 	}
 	
@@ -2541,10 +2477,10 @@ a.footer-brand img{
 	.price_col,
 	.bg_col,
 	.team_col,
-	.question_box,
 	.square_col,
 	.box_col,
-	.question_col{
+	.info_box,
+	.panel_col{
 		padding-left: 0;
 		padding-right: 0;
 	}
