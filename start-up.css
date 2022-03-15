@@ -1810,6 +1810,10 @@ a.footer-brand img{
 		flex: 100%;
 		width: 100%;
 	}
+	
+	.col_info input[type="submit"]{
+		padding: 10px 24px 12px;
+	}
 } 
  
 @media only screen and (max-width: 992px){
@@ -1997,10 +2001,6 @@ a.footer-brand img{
 		display: block;
 		width: 100%;
 		margin-left: 0;
-	}
-	
-	.col_info input[type="submit"]{
-		padding: 10px 24px 12px;
 	}
 	
 	.col_head h3{
