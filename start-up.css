@@ -1999,6 +1999,10 @@ a.footer-brand img{
 		margin-left: 0;
 	}
 	
+	.col_info input[type="submit"]{
+		padding: 10px 24px 12px;
+	}
+	
 	.col_head h3{
 		font-size: 25px;
 	}
