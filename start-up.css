@@ -3,7 +3,7 @@ Main Stylesheet
 
 Project:    HighPoint - Multipurpose Business Template
 Version:    1.0
-Last change:    1/12/2021
+Last change:    01/12/2021
 Author:    creativemaze
 Primary use:    Start-Up
 -------------------------------------------------------------------*/
@@ -718,6 +718,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	font-weight: 700;
 	display: block;
 	color: #ffffff;
+	letter-spacing: 1px;
 	text-align: left;
 	line-height: 1.3em;
 	margin-top: 0;
@@ -1327,7 +1328,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 .blog_content{
 	padding: 15px 0 0;
 	text-align: left;
-	padding-left: 15px;
+	padding-right: 10px;
 }
 
 .blog_date{
@@ -1360,7 +1361,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .blog_title a{
 	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 18px;
+	font-size: 20px;
 	display: block;
 	font-weight: 600;
 	color: #111111;
@@ -1404,8 +1405,6 @@ a.blog_btn{
 a.blog_btn::after{
 	content: "\203A";
 	font-size: 20px;
-	margin: 0;
-	padding: 0;
 	display: inline-block;
 	height: auto;
 	padding-left: 5px;
@@ -1542,9 +1541,9 @@ a.blog_btn:hover{
 
 .col_info input[type="email"]{
 	width: 350px;
-	padding: 10px 20px 14px;
+	padding: 11px 14px 13px;
 	padding-right: 50px;
-	border: 0;
+	border: none;
 	font-family: 'Montserrat' , Arial, sans-serif;
 	font-size: 13px;
 	display: inline-block;
@@ -1558,13 +1557,12 @@ a.blog_btn:hover{
 .col_info input[type="submit"]{
 	display: inline-block;
 	width: auto;
-	padding: 11px 24px;
+	padding: 10px 24px 11px;
 	text-align: center;
 	font-family: 'Montserrat' , Arial, sans-serif;
 	font-size: 14px;
 	font-weight: 500;
 	text-transform: uppercase;
-	margin: 0;
 	margin-left: -4px;
 	color: #ffffff;
 	border-radius: 0;
