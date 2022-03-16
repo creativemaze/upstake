@@ -942,8 +942,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 .bg_button a::after{
 	content: "\203A";
 	font-size: 20px;
-	margin: 0;
-	padding: 0;
 	display: inline-block;
 	height: auto;
 	padding-left: 5px;
@@ -1196,8 +1194,6 @@ a.blog_btn{
 a.blog_btn::after{
 	content: "\203A";
 	font-size: 20px;
-	margin: 0;
-	padding: 0;
 	display: inline-block;
 	height: auto;
 	padding-left: 5px;
@@ -1561,12 +1557,11 @@ li.slick-active button{
 	height: 40px;
 	border: none;
 	margin: 8px 0;
-	border: solid 1px #e0e0e0;
 	flex-grow: 1;
 	letter-spacing: 1px;
 	transition: 0.5s;
-	background: transparent;
-	color: #ffffff;
+	background-color: #ffffff;
+	color: #111111;
 }
 
 .form-box textarea{
@@ -1577,12 +1572,11 @@ li.slick-active button{
 	width: auto;
 	min-height: 125px;
 	margin: 8px 0;
-	border: solid 1px #e0e0e0;
 	flex-grow: 1;
 	letter-spacing: 1px;
 	transition: 0.5s;
-	background: transparent;
-	color: #ffffff;
+	background-color: #ffffff;
+	color: #111111;
 }
 
 .form-box input[type="text"]:focus,
@@ -1600,17 +1594,17 @@ li.slick-active button{
 	font-size: 14px;
 	font-weight: 600;
 	text-transform: uppercase;
-	color: #26d0ce;
+	color: #ffffff;
 	letter-spacing: 1px;
-	background-color: #ffffff;
-	border: solid 1px #ffffff;
+	background: transparent;
+	border: solid 1px #e0e0e0;
 	transition: 0.5s;
 }
 
 .form-box input[type="submit"]:hover{
-	background: transparent;
+	background-color: #26d0ce;
 	color: #ffffff;
-	border-color: #ffffff;
+	border-color: #26d0ce;
 }
 
 /* 4. FOOTER
