@@ -758,7 +758,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .tech_num h4{
-	color: #111111;
+	color: #1488CC;
 	font-family: 'Montserrat' , Arial, sans-serif;
 	font-size: 20px;
 	font-weight: 600;
@@ -810,8 +810,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 .tech_button a::after{
 	content: "\203A";
 	font-size: 20px;
-	margin: 0;
-	padding: 0;
 	display: inline-block;
 	height: auto;
 	padding-left: 5px;
@@ -836,7 +834,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 .next_button{
 	font-size: 14px;
 	transition: 0.6s ease;
-	border-radius: 0 3px 3px 0;
 	background: transparent;
 	width: auto;
 	display: inline-block;
@@ -1026,7 +1023,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 .accordion {
 	background-color: #eee;
 	cursor: pointer;
-	padding: 20px;
+	padding: 15px 20px;
 	width: 100%;
 	border: none;
 	text-align: left;
@@ -1198,8 +1195,6 @@ a.blog_btn{
 a.blog_btn::after{
 	content: "\203A";
 	font-size: 20px;
-	margin: 0;
-	padding: 0;
 	display: inline-block;
 	height: auto;
 	padding-left: 5px;
@@ -1439,9 +1434,9 @@ a.blog_btn:hover{
 
 .col_info input[type="email"]{
 	width: 350px;
-	padding: 10px 20px 14px;
+	padding: 10px 15px 14px;
 	padding-right: 50px;
-	border: 0;
+	border: none;
 	font-family: 'Montserrat' , Arial, sans-serif;
 	font-size: 13px;
 	display: inline-block;
@@ -1461,7 +1456,6 @@ a.blog_btn:hover{
 	font-size: 14px;
 	font-weight: 500;
 	text-transform: uppercase;
-	margin: 0;
 	margin-left: -4px;
 	color: #ffffff;
 	border-radius: 0;
@@ -1471,7 +1465,6 @@ a.blog_btn:hover{
 	transition: 0.5s;
 	border-top-right-radius: 25px;
 	border-bottom-right-radius: 25px;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
 .col_info input[type="submit"]:hover{
@@ -1699,6 +1692,10 @@ a.footer-brand img{
 		flex: 100%;
 		width: 100%;
 		margin-top: 25px;
+	}
+	
+	.col_info input[type="email"]{
+		padding: 12px 15px 14px;
 	}
 } 
  
