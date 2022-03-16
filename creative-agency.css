@@ -1731,8 +1731,6 @@ a.blog_btn{
 a.blog_btn::after{
 	content: "\203A";
 	font-size: 20px;
-	margin: 0;
-	padding: 0;
 	display: inline-block;
 	height: auto;
 	padding-left: 5px;
@@ -1802,9 +1800,9 @@ a.blog_btn:hover,
 
 .col_info input[type="email"]{
 	width: 350px;
-	padding: 10px 20px 14px;
+	padding: 11px 14px 14px;
 	padding-right: 50px;
-	border: 0;
+	border: none;
 	font-family: 'Montserrat' , Arial, sans-serif;
 	font-size: 13px;
 	display: inline-block;
@@ -1818,13 +1816,12 @@ a.blog_btn:hover,
 .col_info input[type="submit"]{
 	display: inline-block;
 	width: auto;
-	padding: 11px 24px;
+	padding: 10px 24px 12px;
 	text-align: center;
 	font-family: 'Montserrat' , Arial, sans-serif;
 	font-size: 14px;
 	font-weight: 500;
 	text-transform: uppercase;
-	margin: 0;
 	margin-left: -4px;
 	color: #ffffff;
 	border-radius: 0;
@@ -2065,6 +2062,14 @@ a.footer-brand img{
 	.blog_col{
 		flex: 50%;
 		width: 50%;
+	}
+	
+	.col_info input[type="submit"]{
+		padding: 10px 24px 12px;
+	}
+
+	.col_info input[type="email"]{
+		padding: 12px 14px 13px;
 	}
 }
 
