@@ -756,10 +756,8 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .content_box{
 	max-width: 300px;
-	margin: auto;
-	padding: 30px 15px;
+	padding: 10px 15px;
 	text-align: center;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
 .content_box h3{
@@ -805,14 +803,11 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	width: 110px;
 	margin: auto;
 	transition: 0.5s;
-    cursor: pointer;
 }
 
 .area_button > a::after{
 	content: "\203A";
 	font-size: 20px;
-	margin: 0;
-	padding: 0;
 	display: inline-block;
 	height: auto;
 	padding-left: 5px;
@@ -1013,7 +1008,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .square_num h3{
-	color: #111111;
+	color: #43cea2;
 	font-family: 'Montserrat' , Arial, sans-serif;
 	font-size: 20px;
 	font-weight: 600;
@@ -1060,14 +1055,11 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	text-decoration: none;
 	width: 110px;
 	transition: 0.5s;
-    cursor: pointer;
 }
 
 .square_button > a::after{
 	content: "\203A";
 	font-size: 20px;
-	margin: 0;
-	padding: 0;
 	display: inline-block;
 	height: auto;
 	padding-left: 5px;
@@ -1289,26 +1281,73 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 /* --- 3.4. Digital Area Four --- */
 .digital_area_four{
-	max-width: 1400px;
+	max-width: 1280px;
 	margin: 0 auto 9em;
 	padding: 0 25px;
 }
 
-.digital_group_four{
+.digital_group_four,
+.box_group{
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
-	padding-top: 40px;
 }
 
-.cube_col{
-	flex: 25%;
-	width: 25%;
-	position: relative;
-	padding: 0 25px;
+.digital_wide_col{
+	flex: 33.33%;
+	width: 33.33%;
+	padding: 0 15px;
 }
 
-.cube_area{
+.digital_box_col{
+	flex: 66.66%;
+	width: 66.66%;
+	padding: 0 15px;
+}
+
+.wide_area{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.wide_box{
+	max-width: 450px;
+	padding-right: 20px;
+}
+
+.wide_box h2{
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 40px;
+	font-weight: 700;
+	display: block;
+	color: #111111;
+	text-align: left;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	line-height: 1.3em;
+}
+
+.wide_box p{
+	font-family: 'Roboto' , Arial, sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	display: block;
+	color: #696969;
+	letter-spacing: 1px;
+	text-align: left;
+	padding: 12px 0;
+	line-height: 1.5em;
+}
+
+.box_group_col{
+	flex: 50%;
+	width: 50%;
+	padding: 15px 25px;
+}
+
+.box_area{
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
@@ -1336,16 +1375,11 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .info_box{
-	max-width: 200px;
-	margin: 0 auto;
+	max-width: 150px;
+	margin: 0;
 	position: relative;
 	text-align: center;
 	overflow: hidden;
-	padding-bottom: 10px;
-	padding-right: 10px;
-	padding-top: 10px;
-	padding-left: 10px;
-	background-color: #ffffff;
 }
 
 .info_content{
@@ -1385,8 +1419,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 .info_button > a::after{
 	content: "\203A";
 	font-size: 20px;
-	margin: 0;
-	padding: 0;
 	display: inline-block;
 	height: auto;
 	padding-left: 5px;
@@ -1398,15 +1430,14 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	color: #111111;
 }
 
-.sp_button a{
+.box_col_button a{
 	background-color: #43cea2;
 	width: 160px;
-	min-height: 25px;
-	margin: auto;
-	margin-top: 25px;	
+	min-height: 30px;
+	margin: 20px 0 0;
     border: none;
     color: #ffffff;
-    padding: 14px 16px;
+    padding: 13px 14px;
     text-decoration: none;
 	text-transform: uppercase;
     display: block;
@@ -1420,9 +1451,9 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	text-align: center;
 }
 
-.sp_button a:hover{
+.box_col_button a:hover{
 	color: #111111;
-	background: transparent;
+	background-color: transparent;
 	border-color: #111111;
 }
 
@@ -1431,7 +1462,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	width: 100%;
 	margin: 0;
 	min-height: 400px;
-	padding: 6em 25px;
+	padding: 5em 25px;
 	background-color: #43cea2;
 }
 
@@ -2076,12 +2107,6 @@ a.footer-brand img{
 	.third_border{
 		margin-bottom: 0;
 	}
-	
-	.cube_col{
-		flex: 50%;
-		width: 50%;
-		margin-bottom: 25px;
-	}
 }
 
 @media only screen and (max-width: 992px){
@@ -2190,6 +2215,18 @@ a.footer-brand img{
 		width: 100%;
 	}
 	
+	.digital_wide_col,
+	.digital_box_col{
+		flex: 100%;
+		width: 100%;
+		padding: 0;
+	}
+	
+	.wide_box{
+		margin-bottom: 40px;
+		padding: 0;
+	}
+	
 	.count_col{
 		flex: 50%;
 		width: 50%;
@@ -2215,7 +2252,8 @@ a.footer-brand img{
 	
 	.digital_col_box h2,
 	.digital_heading,
-	.bg_head{
+	.bg_head,
+	.wide_box h2{
 		font-size: 30px;
 	}
 	
@@ -2223,6 +2261,11 @@ a.footer-brand img{
 		flex: 100%;
 		width: 100%;
 		margin-bottom: 40px;
+	}
+	
+	.content_box{
+		padding-left: 0;
+		padding-right: 0;
 	}
 	
 	.digital_right_col{
@@ -2234,13 +2277,15 @@ a.footer-brand img{
 		width: 100%;
 	}
 	
-	.first_border{
-		border-right: none;
-	}
-	
-	.cube_col{
+	.box_group_col{
 		flex: 100%;
 		width: 100%;
+		padding-left: 0;
+		padding-right: 0;
+	}	
+	
+	.first_border{
+		border-right: none;
 	}
 	
 	.form-row{
@@ -2269,15 +2314,10 @@ a.footer-brand img{
 		padding-right: 0;
 	}
 	
-	.content_box{
-		width: calc(100% - 20px);
-	}
-	
 	.digital_group_one,
 	.content_col,
 	.price_col,
 	.square_col,
-	.cube_col,
 	.blog_col,
 	.register_col{
 		padding-left: 0;
