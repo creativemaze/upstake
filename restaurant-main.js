@@ -13,19 +13,6 @@ $(document).ready(function(){
 		pauseOnFocus: false,
 		dots: false,
 	});
-	
-	$('.slickslide').on('beforeChange', function(event, slick, currentSlide, nextSlide){
-		$('.header__content > div.active').removeClass('active');
-			$('.header__content > div').eq(nextSlide).addClass('active');
-	});
-  
-	$('.header__content > div').on('click', function(e){
-		e.preventDefault();
-		$('header__content > div.active').removeClass('active');
-		$(this).addClass('active');
-		var targetSlide = $(this).data('target');
-		$('.slickslide').slick('slickGoTo', targetSlide );
-	});
 });
 
 //Slick Slider (2) Two
