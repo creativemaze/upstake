@@ -14,19 +14,6 @@ $(document).ready(function(){
 		dots: false,
 	});
 	
-	$('.slickslide').on('beforeChange', function(event, slick, currentSlide, nextSlide){
-		$('.header__content > div.active').removeClass('active');
-			$('.header__content > div').eq(nextSlide).addClass('active');
-	});
-  
-	$('.header__content > div').on('click', function(e){
-		e.preventDefault();
-		$('header__content > div.active').removeClass('active');
-		$(this).addClass('active');
-		var targetSlide = $(this).data('target');
-		$('.slickslide').slick('slickGoTo', targetSlide );
-	});
-	
 });
 
 //Counter script
@@ -70,7 +57,6 @@ document.onreadystatechange = function() {
     if (document.readyState !== "complete") {
         document.querySelector("body").style.visibility = "hidden";
         document.querySelector("#loading").style.visibility = "visible";
-		document.querySelector(".header__content > div.active").style.animationPlayState = "paused";
 		 
     } else {
         document.querySelector("#loading").style.display = "none";
