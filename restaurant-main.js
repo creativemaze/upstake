@@ -93,7 +93,6 @@ document.onreadystatechange = function() {
     if (document.readyState !== "complete") {
         document.querySelector("body").style.visibility = "hidden";
         document.querySelector("#loading").style.visibility = "visible";
-		document.querySelector(".header__content > div.active").style.animationPlayState = "paused";
 		 
     } else {
         document.querySelector("#loading").style.display = "none";
