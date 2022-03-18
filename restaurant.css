@@ -450,17 +450,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	padding: 0 15px;
 }
 
-.header__content > div{
-	animation-duration: 2s;
-	animation-delay: 1s;
-	display: none;
-}
-
-.header__content > div.active{
-	display: block;
-	animation-play-state: running !important;
-}
-
 .header-title__main{
 	font-family: 'Montserrat' , Arial, sans-serif;
 	font-size: 85px;
@@ -542,7 +531,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	width: auto;
 	font-size: 14px;
 	transition: 0.6s ease;
-	border-radius: 0 3px 3px 0;
 	background-color: transparent;
 	display: block;
 	padding: 10px 16px;
@@ -1282,8 +1270,6 @@ a.blog_btn{
 a.blog_btn::after{
 	content: "\203A";
 	font-size: 20px;
-	margin: 0;
-	padding: 0;
 	display: inline-block;
 	height: auto;
 	padding-left: 5px;
