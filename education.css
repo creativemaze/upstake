@@ -1516,7 +1516,7 @@ a.blog_btn:hover,
 	width: 350px;
 	padding: 10px 15px 14px;
 	padding-right: 50px;
-	border: 0;
+	border: none;
 	font-family: 'Raleway' , Arial, sans-serif;
 	font-size: 13px;
 	display: inline-block;
@@ -1760,6 +1760,10 @@ a.footer-brand img{
 		flex: 50%;
 		width: 50%;
 		margin-bottom: 40px;
+	}
+	
+	.col_info input[type="submit"]{
+		padding: 10px 24px 11px;
 	}
 	
 	.col_info input[type="email"]{
