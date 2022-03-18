@@ -1514,7 +1514,7 @@ a.blog_btn:hover,
 
 .col_info input[type="email"]{
 	width: 350px;
-	padding: 12px 20px 13px;
+	padding: 10px 15px 14px;
 	padding-right: 50px;
 	border: 0;
 	font-family: 'Raleway' , Arial, sans-serif;
@@ -1536,7 +1536,6 @@ a.blog_btn:hover,
 	font-size: 14px;
 	font-weight: 500;
 	text-transform: uppercase;
-	margin: 0;
 	margin-left: -4px;
 	color: #ffffff;
 	border-radius: 0;
@@ -1761,6 +1760,10 @@ a.footer-brand img{
 		flex: 50%;
 		width: 50%;
 		margin-bottom: 40px;
+	}
+	
+	.col_info input[type="email"]{
+		padding: 12px 15px 14px;
 	}
 }
 
