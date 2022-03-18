@@ -430,17 +430,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	margin: 0 auto;
 }
 
-.header__content > div{
-	animation-duration: 2s;
-	animation-delay: 1s;
-	display: none;
-}
-
-.header__content > div.active{
-	display: block;
-	animation-play-state: running !important;
-}
-
 .header-title__main{
 	font-family: 'Montserrat' , Arial, sans-serif;
 	font-size: 65px;
@@ -525,7 +514,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	width: auto;
 	font-size: 14px;
 	transition: 0.6s ease;
-	border-radius: 0 3px 3px 0;
 	background-color: transparent;
 	display: block;
 	padding: 10px 16px;
