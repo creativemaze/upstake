@@ -981,9 +981,9 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .square_num h4{
-	color: #111111;
+	color: #D3959B;
 	font-family: 'Raleway' , Arial, sans-serif;
-	font-size: 20px;
+	font-size: 22px;
 	font-weight: 600;
 	display: block;
 	text-align: left;
@@ -1034,8 +1034,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 .square_button > a::after{
 	content: "\203A";
 	font-size: 20px;
-	margin: 0;
-	padding: 0;
 	display: inline-block;
 	height: auto;
 	padding-left: 5px;
