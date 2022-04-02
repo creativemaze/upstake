@@ -422,6 +422,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	height: 100vh;
 	min-height: 700px;
 }
 
@@ -429,7 +430,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	position: relative;
 	z-index: 1;
 	height: 100vh;
-	min-height: 750px;
+	min-height: 700px;
 	text-align: center;
 	color: #ffffff;
 	background-size: cover;
