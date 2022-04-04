@@ -10,7 +10,7 @@ $(document).ready(function(){
 		fade: true,
 		arrows: false,
 		pauseOnHover: false,
-		pauseOnFocus: false
+		pauseOnFocus: false,
                 dots: false,
                 swipe: false
 	});
