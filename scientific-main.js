@@ -11,6 +11,7 @@ $(document).ready(function(){
 		pauseOnHover: false,
 		pauseOnFocus: false,
 		dots: false,
+                swipe: false
 	});
 	
 });
