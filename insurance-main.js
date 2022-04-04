@@ -11,6 +11,8 @@ $(document).ready(function(){
 		arrows: false,
 		pauseOnHover: false,
 		pauseOnFocus: false
+                dots: false,
+                swipe: false
 	});
 });
 
