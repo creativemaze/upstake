@@ -10,7 +10,9 @@ $(document).ready(function(){
 		prevArrow: '.prev_slide',
 		nextArrow: '.next_slide',
 		pauseOnHover: false,
-		pauseOnFocus: false
+		pauseOnFocus: false,
+                dots: false,
+                swipe: false
 	});
 });
 
