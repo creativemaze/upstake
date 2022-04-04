@@ -11,7 +11,7 @@ $(document).ready(function(){
 		pauseOnHover: false,
 		pauseOnFocus: false,
 		dots: true,
-                verticalSwiping: true
+                swipe: false
 	});
 });
 
