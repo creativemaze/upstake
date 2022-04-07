@@ -520,6 +520,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	font-size: 15px;
 	transition: 0.6s ease;
 	border-radius: 50%;
+        border: none;
 	background-color: transparent;
 	width: auto;
 	padding: 10px 18px;
