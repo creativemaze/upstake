@@ -521,7 +521,7 @@ li.slick-active button{
 /* --- 3.1. Corporate Area One --- */
 .corporate_area_one{
 	max-width: 1400px;
-	margin-bottom: 9em;
+	margin-bottom: calc(9em - 20px);
 	margin-top: calc(9em - 140px);
 	margin-left: auto;
 	margin-right: auto;
@@ -584,7 +584,7 @@ li.slick-active button{
 }
 
 .info_items{
-	margin: 20px 0;
+	margin: 20px 0 0;
 }
 
 .info_list{
