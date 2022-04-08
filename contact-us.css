@@ -410,15 +410,15 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .header-title__sub{
 	font-family: 'Roboto' , Arial, sans-serif;
-	font-size: 16px;
+	font-size: 18px;
 	font-weight: normal;
 	display: block;
 	color: #f2f2f2;
 	line-height: 1.4em;
 	letter-spacing: 1px;
 	text-align: center;
-	max-width: 500px;
-	padding-top: 15px;
+	max-width: 550px;
+	padding-top: 25px;
 	margin: auto;
 }
 
@@ -643,7 +643,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	flex-grow: 1;
 	letter-spacing: 1px;
 	transition: 0.5s;
-	background-color: #f6f6f6;
 }
 
 .form-box textarea{
@@ -658,7 +657,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	flex-grow: 1;
 	letter-spacing: 1px;
 	transition: 0.5s;
-	background-color: #f6f6f6;
 }
 
 .form-box input[type="text"]:focus,
@@ -681,6 +679,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	letter-spacing: 1px;
 	background-color: #009fff;
 	border: solid 1px #009fff;
+        border-radius: 0;
 	transition: 0.5s;
 }
 
@@ -737,7 +736,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .icon_box h3{
-	color: #d2d2d2;
+	color: #f2f2f2;
 	font-family: 'Montserrat' , Arial, sans-serif;
 	font-size: 15px;
 	font-weight: 600;
