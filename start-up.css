@@ -517,16 +517,15 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .prev_slide,
 .next_slide{
-	font-size: 15px;
+	font-size: 14px;
 	transition: 0.6s ease;
-	border-radius: 50%;
-        border: none;
-	background-color: transparent;
+	background: transparent;
 	width: auto;
-	padding: 10px 18px;
+	padding: 10px 16px;
 	color: #111111;
 	cursor: pointer;
-	border: solid 1px #111111;	
+	border: solid 1px #111111;
+        display: inline-block;
 }
 
 .next_slide{
