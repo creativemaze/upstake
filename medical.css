@@ -456,7 +456,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .header-title__sub{
 	font-family: 'Roboto' , Arial, sans-serif;
-	font-size: 16px;
+	font-size: 18px;
 	font-weight: normal;
 	display: inline-block;
 	color: #696969;
@@ -481,7 +481,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	font-weight: 600;
 	font-family: 'Montserrat', Arial, sans-serif;
     transition: 0.5s;
-    cursor: pointer;
 	border: 1px solid #26d0ce;
 	border-radius: 5px;
 	letter-spacing: 1px;
