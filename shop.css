@@ -1730,6 +1730,7 @@ a.footer-brand img{
 	.footer_col{
 		flex: 100%;
 		width: 100%;
+                margin: 0;
 	}
 }
 
