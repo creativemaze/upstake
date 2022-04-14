@@ -438,7 +438,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	width: 100%;
 	display: flex; 
 	flex-wrap: wrap;
-	padding-top: 20px;
+	padding-top: 30px;
 }
 
 .portfolio_col{
@@ -448,7 +448,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .portfolio_image{
-	max-width: 400px;
 	position: relative;
 	text-align: center;
 	overflow: hidden;
