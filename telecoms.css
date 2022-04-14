@@ -840,7 +840,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	border: solid 1px #111111;
 	display: inline-block;
 	margin-top: 45px;
-	border-radius: 3px;
 }
 
 .prev_nav{
@@ -1068,14 +1067,11 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	width: 120px;
 	margin: auto;
 	transition: 0.5s;
-    cursor: pointer;
 }
 
 .area_button > a::after{
 	content: "\203A";
 	font-size: 20px;
-	margin: 0;
-	padding: 0;
 	display: inline-block;
 	height: auto;
 	padding-left: 5px;
@@ -1578,6 +1574,10 @@ a.blog_btn:hover .blog_crumb{
 	border-right: solid 1px #e0e0e0;
 }
 
+.fourth_border{
+	border-right: none;
+}
+
 .count_box{
 	max-width: 300px;
 	margin: auto;
@@ -1660,10 +1660,6 @@ a.blog_btn:hover .blog_crumb{
 	color: #111111;
 	background: transparent;
 	border-color: #111111;
-}
-
-.fourth_border{
-	border-right: none !important;
 }
 
 /* 4. FOOTER
