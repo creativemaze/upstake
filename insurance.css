@@ -857,8 +857,6 @@ li.slick-active button{
 .icon_button > a::after{
 	content: "\203A";
 	font-size: 20px;
-	margin: 0;
-	padding: 0;
 	display: inline-block;
 	height: auto;
 	padding-left: 5px;
@@ -1020,8 +1018,6 @@ li.slick-active button{
 .area_button > a::after{
 	content: "\203A";
 	font-size: 20px;
-	margin: 0;
-	padding: 0;
 	display: inline-block;
 	height: auto;
 	padding-left: 5px;
@@ -1053,7 +1049,6 @@ li.slick-active button{
 	color: #111111;
 	cursor: pointer;
 	border: solid 1px #111111;
-	border-radius: 3px;
 }
 
 .prev_nav{
