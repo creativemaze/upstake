@@ -35,7 +35,6 @@ $(document).ready(function(){
 			$('.heading_group > div').eq(nextSlide).addClass('active');
 	});
   
-  
 	$('.heading_group > div').on('click', function(e){
 		e.preventDefault();
 		$('.heading_group > div.active').removeClass('active');
@@ -58,7 +57,6 @@ $(document).ready(function(){
 		centerMode: true,
 		centerPadding: '70px',
 		speed: 1000,
-		autoplaySpeed: 1000,
 		pauseOnHover: false,
 		responsive: [
 				{
@@ -80,6 +78,10 @@ $(document).ready(function(){
 		]	
 	});
 	
+});
+
+$( ".buttoncol a" ).click(function() {
+	$('.heading_group').animatescroll();
 });
 
 //F.A.Q.S Accordion
