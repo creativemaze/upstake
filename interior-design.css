@@ -870,7 +870,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	transition: 0.6s;
 	background: transparent;
 	display: inline-block;
-	overflow: hidden;
 	padding: 10px 17px;
 	color: #111111;
 	cursor: pointer;
