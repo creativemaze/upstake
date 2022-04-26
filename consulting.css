@@ -381,9 +381,9 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .head_btn a:hover{
-	background: transparent;
-	color: #ffffff;
-	border: 1px solid #ffffff;
+	color: #111111;
+	background-color: #ffffff;
+	border-color: #ffffff;
 }
 
 .sliderwrap{
@@ -486,16 +486,16 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	border-color: #ffffff;
 }
 
-.right_btn{
-	background-color: #ffffff!important;
-	color: #111111 !important;
-	border: 1px solid #ffffff!important;
+#right_btn{
+	background-color: #ffffff;
+	color: #111111;
+	border: 1px solid #ffffff;
 }
 
-.right_btn:hover{
-	color: #ffffff!important;
-	background-color: transparent!important;
-	border-color: #ffffff;
+#right_btn:hover{
+	color: #ffffff;
+	background-color: #ec2F4B;
+	border-color: #ec2F4B;
 }
 
 .video-play-button{
