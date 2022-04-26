@@ -405,7 +405,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 .head_btn a:hover{
 	background-color: #ffffff;
 	color: #111111;
-	border: 1px solid #ffffff;
+	border-color: #ffffff;
 }
 
 .color-word{
@@ -462,12 +462,10 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .buttoncol a{
-	background-color: #ffffff;
 	width: 170px;
 	min-height: 25px;
 	margin-top: 25px;	
     border: none;
-    color: #111111;
     padding: 14px 15px;
     text-decoration: none;
 	text-transform: uppercase;
@@ -477,28 +475,33 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	font-family: 'Montserrat', Arial, sans-serif;
     transition: 0.5s;
     cursor: pointer;
-	border: 1px solid #ffffff;
 	letter-spacing: 1px;
 	text-align: center;
 }
 
-.buttoncol a:hover{
-	color: #ffffff;
-	background-color: #D31027;
-	border-color: #D31027;
-}
-
 .left_btn{
 	margin-right: 15px;
-	background-color: #D31027 !important;
-	color: #ffffff !important;
-	border: 1px solid #D31027 !important;
+	background-color: #D31027;
+	color: #ffffff;
+	border: 1px solid #D31027;
 }
 
 .left_btn:hover{
-	background-color: #ffffff !important;
-	color: #111111 !important;
-	border: 1px solid #ffffff !important;
+	background-color: #ffffff;
+	color: #111111;
+	border-color: #ffffff;
+}
+
+.right_btn{
+	background-color: #ffffff;
+	color: #111111;
+	border: 1px solid #ffffff;
+}
+
+.right_btn:hover{
+	color: #ffffff;
+	background-color: #D31027;
+	border-color: #D31027;
 }
 
 .header_box{
@@ -1469,6 +1472,8 @@ a.blog_btn{
 a.blog_btn::after{
 	content: "\203A";
 	font-size: 20px;
+	margin: 0;
+	padding: 0;
 	display: inline-block;
 	height: auto;
 	padding-left: 5px;
@@ -1659,6 +1664,7 @@ a.blog_btn::after{
 	flex-grow: 1;
 	letter-spacing: 1px;
 	transition: 0.5s;
+	background-color: #f6f6f6;
 }
 
 .form-box textarea{
@@ -1673,6 +1679,7 @@ a.blog_btn::after{
 	flex-grow: 1;
 	letter-spacing: 1px;
 	transition: 0.5s;
+	background-color: #f6f6f6;
 }
 
 .form-box input[type="text"]:focus,
