@@ -384,7 +384,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 .head_btn a:hover{
 	background: transparent;
 	color: #ffffff;
-	border: 1px solid #ffffff;
+	border-color: #ffffff;
 }
 
 .sliderwrap{
@@ -573,22 +573,21 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	margin-bottom: 20px;
 }
 
-.right_btn{
-	background-color: #ffffff!important;
-	color: #111111 !important;
-	border-color: #ffffff !important;
-}
-
 .buttoncol a:hover{
 	color: #ffffff;
 	background: transparent;
 	border-color: #ffffff;
 }
 
-.right_btn:hover{
-	color: #ffffff!important;
-	background: transparent !important;
+#right_btn{
+	background-color: #ffffff;
+	color: #111111;
+	border-color: #ffffff;
+}
 
+#right_btn:hover{
+	color: #ffffff;
+	background: transparent;
 }
 
 /* 3. MAIN CONTENT
