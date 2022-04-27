@@ -382,9 +382,9 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .head_btn a:hover{
-	background-color: transparent;
+	background: transparent;
 	color: #111111;
-	border: 1px solid #111111;
+	border-color: #111111;
 }
 
 .sliderwrap{
@@ -497,22 +497,22 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	margin-bottom: 20px;
 }
 
-.right_btn{
-	background-color: transparent!important;
-	color: #111111 !important;
-	border: 1px solid #111111!important;
-}
-
-.right_btn:hover{
-	color: #ffffff!important;
-	background-color: #159957!important;
-	border: 1px solid #159957!important;
-}
-
 .buttoncol a:hover{
 	color: #111111;
-	background-color: transparent;
+	background: transparent;
 	border-color: #111111;
+}
+
+#right_btn{
+	background: transparent;
+	color: #111111;
+	border: 1px solid #111111;
+}
+
+#right_btn:hover{
+	color: #ffffff;
+	background-color: #159957;
+	border: 1px solid #159957;
 }
 
 .prev_slide,
@@ -525,7 +525,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	color: #111111;
 	cursor: pointer;
 	border: solid 1px #111111;
-        display: inline-block;
+    display: inline-block;
 }
 
 .next_slide{
