@@ -431,6 +431,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	font-size: 45px;
 	font-weight: 700;
 	letter-spacing: 1px;
+	line-height: 1em;
 	text-align: center;
 	display: block;
 	color: #ffffff;
@@ -1066,16 +1067,16 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	border-color: #111111;
 }
 
-.right_btn{
-	background: transparent !important;
-	color: #111111 !important;
-	border: 1px solid #111111 !important;
+#right_btn{
+	background: transparent;
+	color: #111111;
+	border: 1px solid #111111;
 }
 
-.right_btn:hover{
-	color: #ffffff!important;
-	background-color: #009fff!important;
-	border-color: #009fff!important;
+#right_btn:hover{
+	color: #ffffff;
+	background-color: #009fff;
+	border-color: #009fff;
 }
 
 /* --- 3.6. About Area Six --- */
@@ -1320,8 +1321,8 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .bg_col_button a:hover{
-	color: #ffffff;
-	background: transparent;
+	color: #111111;
+	background-color: #ffffff;
 	border-color: #ffffff;
 }
 
