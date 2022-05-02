@@ -1114,8 +1114,8 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .title_info_button a:hover{
-	color: #ffffff;
-	background: transparent;
+	color: #111111;
+	background-color: #ffffff;
 	border-color: #ffffff;
 }
 
