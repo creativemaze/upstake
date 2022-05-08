@@ -456,6 +456,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	font-weight: 700;
 	letter-spacing: 1px;
 	text-transform: uppercase;
+	line-height: 1.2em;
 	text-align: center;
 	display: block;
 	color: #111111;
