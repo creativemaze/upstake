@@ -12,7 +12,7 @@ $(document).ready(function(){
 		pauseOnFocus: false,
 		responsive: [
 			{
-				breakpoint: 993,
+				breakpoint:601,
 				settings: {
 					slidesToShow: 1,
 					dots: true,
@@ -27,15 +27,31 @@ $(document).ready(function(){
 //Slick Slider (2) Two
 $(document).ready(function(){
 	$('.square_slider').slick({
-		autoplay: false,
-		infinite: true,
-		speed: 1000,
-		fade: true,
 		prevArrow: '.prev_slide',
 		nextArrow: '.next_slide',
+		dots: false,
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		autoplay: false,
+		speed: 1000,
 		pauseOnHover: false,
 		pauseOnFocus: false,
-		dots: false,
+		responsive: [
+			{
+				breakpoint: 1025,
+				settings: {
+					slidesToShow: 2,
+       
+				}		
+			},
+			{
+				breakpoint: 601,
+				settings: {
+					slidesToShow: 1,
+       
+				}		
+			},
+		]
 		
 	});
 	
