@@ -57,6 +57,16 @@ $('.footer_grid').magnificPopup({
 	},
 });
 
+//MagnificPopup Video
+$('#play-video').magnificPopup({
+	disableOn: 300,
+	type: 'iframe',
+	mainClass: 'mfp-fade',
+	removalDelay: 300,
+	preloader: false,
+	fixedContentPos: false
+});
+
 //Counter script
 jQuery(document).ready(function($) {
     $('.counter').counterUp({
