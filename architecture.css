@@ -1268,7 +1268,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	z-index: 1;
 }
 
-.content {
+.featured_title{
     transform: scaleX(-1);
 }
 
