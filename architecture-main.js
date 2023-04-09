@@ -1,16 +1,41 @@
 "use strict";
 //Slick Slider
 $(document).ready(function(){
-	$('.border_slider').slick({
+	$('.square_slider').slick({
 		autoplay: false,
 		infinite: true,
 		speed: 1000,
 		fade: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
 		prevArrow: '.prev_slide',
 		nextArrow: '.next_slide',
 		pauseOnHover: false,
 		pauseOnFocus: false,
 		dots: false,
+	});
+});
+
+$(document).ready(function(){
+	$('.client-slider').slick({
+		dots: true,
+		slidesToShow: 2,
+		slidesToScroll: 2,
+		arrows: false,
+		autoplay: false,
+		speed: 1000,
+		pauseOnHover: false,
+		pauseOnFocus: false,
+		responsive: [
+			{
+				breakpoint:993,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+				}
+						
+			},
+		]
 	});
 });
 
