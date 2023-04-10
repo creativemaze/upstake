@@ -152,7 +152,7 @@ nav.navbar .navbar-brand img.logo{
 nav.navbar.bootsnav{
 	background-color: transparent;
 	border-bottom: none ;
-	z-index: 9999;
+	z-index: 1;
 }
 
 nav.navbar.bootsnav ul.nav{
@@ -558,7 +558,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	margin: 0 auto;
 	padding: 0 25px;
 	margin-top:  -300px;
-	z-index: 9999;
 	margin-bottom: 9em;
 }
 
