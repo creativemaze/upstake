@@ -1,5 +1,5 @@
 "use strict";
-//Slick Slider (1) One
+//Slick Slider
 $(document).ready(function(){
 	$('.slickslide').slick({
 		autoplay: true,
@@ -14,51 +14,6 @@ $(document).ready(function(){
 		dots: false,
 		swipe: false
 	});
-});
-
-//Slick Slider (2) Two
-$(document).ready(function(){
-	$('.restaurant_slider').slick({
-		dots: false,
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		arrows: false,
-		autoplay: false,
-		fade: true,
-		adaptiveHeight: true,
-		speed: 1000,
-		pauseOnHover: false,
-		pauseOnFocus: false,		
-	});
-	
-	$('.restaurant_slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
-		$('.title_group a.active').removeClass('active');
-			$('.title_group a').eq(nextSlide).addClass('active');
-	});
-  
-	$('.title_group a').on('click', function(e){
-		e.preventDefault();
-		$('.title_group a.active').removeClass('active');
-		$(this).addClass('active');
-		var targetSlide = $(this).data('target');
-		$('.restaurant_slider').slick('slickGoTo', targetSlide );
-	});
-	
-});
-
-//Slick Slider (3) Three
-$(document).ready(function(){
-	$('.special_slider').slick({
-		dots: true,
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		arrows: false,
-		autoplay: false,
-		speed: 1000,
-		pauseOnHover: false,
-		pauseOnFocus: false,		
-	});
-	
 });
 
 //MagnificPopup Lightbox Footer Gallery
