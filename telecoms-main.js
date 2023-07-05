@@ -48,32 +48,29 @@ $(document).ready(function(){
 //Slick Slider (3) Three
 $(document).ready(function(){
 	$('.info_slider').slick({
-		dots: false,
 		prevArrow: '.prev_nav',
 		nextArrow: '.next_nav',
-		autoplay: false,
-		slidesToShow: 1,
+		dots: false,
+		slidesToShow: 3,
 		slidesToScroll: 1,
-		centerMode: true,
-		centerPadding: '70px',
+		autoplay: false,
 		speed: 1000,
 		pauseOnHover: false,
+		pauseOnFocus: false,
 		responsive: [
-				{
-					breakpoint: 993,
-					settings: {
-					slidesToShow: 1,
-				}
-				
-			},
-			
 			{
-					breakpoint: 601,
-					settings: {
-					slidesToShow: 1,	
-					centerPadding: '0',
-				}
-				
+				breakpoint: 1025,
+				settings: {
+					slidesToShow: 2,
+       
+				}		
+			},
+			{
+				breakpoint: 820,
+				settings: {
+					slidesToShow: 1,
+       
+				}		
 			},
 		]	
 	});
