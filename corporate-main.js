@@ -7,85 +7,27 @@ $(document).ready(function(){
 		autoplaySpeed: 5000,
 		speed: 1000,
 		fade: true,
-		arrows: false,
+		prevArrow: '.prev_nav',
+		nextArrow: '.next_nav',
 		pauseOnHover: false,
 		pauseOnFocus: false,
-		dots: true,
-                swipe: false
+		dots: false,
+		swipe: false
 	});
 });
 
 //Slick Slider (2) Two
 $(document).ready(function(){
-	$('.corporate_slider').slick({
-		dots: false,
-		slidesToShow: 2,
+	$('.client-slider').slick({
+		slidesToShow: 1,
 		slidesToScroll: 1,
 		arrows: false,
+		dots: true,
 		autoplay: false,
 		speed: 1000,
 		pauseOnHover: false,
 		pauseOnFocus: false,
-		responsive: [
-			
-			{
-				breakpoint: 601,
-				settings: {
-					slidesToShow: 1
-				}		
-			},
-			
-		]
 	});
-	
-	$('.corporate_slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
-		$('.title_group.active').removeClass('active');
-			$('.title_group').eq(nextSlide).addClass('active');
-	});
-  
-	$('.title_group').on('click', function(e){
-		e.preventDefault();
-		$('.title_group.active').removeClass('active');
-		$(this).addClass('active');
-		var targetSlide = $(this).data('target');
-		$('.corporate_slider').slick('slickGoTo', targetSlide );
-	});
-	
-});
-
-//Slick Slider (3) Three
-$(document).ready(function(){
-	$('.client-slider').slick({
-		dots: false,
-		slidesToShow: 3,
-		slidesToScroll: 1,
-		prevArrow: '.prev_nav',
-		nextArrow: '.next_nav',
-		autoplay: false,
-		speed: 1000,
-		pauseOnHover: false,
-		pauseOnFocus: false,
-		responsive: [
-			{
-				breakpoint: 801,
-				settings: {
-					slidesToShow: 2,
-       
-				},
-			
-			},
-			
-			{
-				breakpoint: 601,
-				settings: {
-					slidesToShow: 1,
-       
-				},
-			
-			},
-		]	
-	});
-	
 });
 
 //MagnificPopup Video
@@ -96,14 +38,6 @@ $('#play-video').magnificPopup({
 	removalDelay: 300,
 	preloader: false,
 	fixedContentPos: false
-});
-
-//Counter Script
-jQuery(document).ready(function($) {
-    $('.counter').counterUp({
-        delay: 10,
-        time: 2000
-    });
 });
 
 //Animate on Scroll default settings
