@@ -1,4 +1,28 @@
 "use strict";
+//Slick Slider
+$(document).ready(function(){
+	$('.feature_slider').slick({
+		slidesToShow: 3,
+		autoplay: false,
+		infinite: true,
+		speed: 1000,
+		arrows: false,
+		dots: false,
+		pauseOnHover: false,
+		pauseOnFocus: false,
+		responsive: [
+			{
+				breakpoint: 993,
+				settings: {
+					slidesToShow: 1,
+					dots: true,
+					fade: true
+				}			
+			},
+		]
+	});
+});
+
 //Animated Progress Bar
 $(document).ready(function($) {
   function animateElements() {
@@ -22,10 +46,6 @@ $(document).ready(function($) {
 			fill: {
 				color: '#00CDAC'
 			},
-			
-			emptyFill:{
-				color: '#111111'
-			}
 			
 			}).on('circle-animation-progress', function(event, progress, stepValue) {
 				$(this).find('div').text((stepValue * 100).toFixed(1) + "%");
