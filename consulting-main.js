@@ -1,64 +1,75 @@
 "use strict";
 //Slick Slider (1) One
 $(document).ready(function(){
-	$('.client-slider').slick({
-		dots: true,
+	$('.border_slider').slick({
 		slidesToShow: 3,
-		slidesToScroll: 1,
-		prevArrow: '.prev_nav',
-		nextArrow: '.next_nav',
 		autoplay: false,
+		infinite: true,
 		speed: 1000,
+		arrows: false,
+		dots: false,
 		pauseOnHover: false,
 		pauseOnFocus: false,
 		responsive: [
 			{
-				breakpoint: 841,
-				settings: {
-					slidesToShow: 2,
-       
-				},
-			
-			},
-			
-			{
 				breakpoint: 601,
 				settings: {
 					slidesToShow: 1,
-       
-				},
-			
+					dots: true,
+					fade: true
+				}			
 			},
-		]	
+		]
 	});
-	
 });
 
-//MagnificPopup Video
-$('#play-video').magnificPopup({
-	disableOn: 300,
-	type: 'iframe',
-	mainClass: 'mfp-fade',
-	removalDelay: 300,
-	preloader: false,
-	fixedContentPos: false
+//Slick Slider (2) Two
+$(document).ready(function(){
+	$('.bg_slider').slick({
+		dots: false,
+		autoplaySpeed: 5000,
+		slidesToShow: 1,
+		fade: true,
+		slidesToScroll: 1,
+		prevArrow: '.prev_nav',
+		nextArrow: '.next_nav',
+		autoplay: true,
+		speed: 1000,
+		
+	});
 });
 
-//F.A.Q.S Accordion
-var acc = document.getElementsByClassName("accordion");
-	var i;
+//Slick Slider (3) Three
+$(document).ready(function(){
+	$('.feature_slider').slick({
+		slidesToShow: 3,
+		autoplay: false,
+		infinite: true,
+		speed: 1000,
+		arrows: false,
+		dots: false,
+		pauseOnHover: false,
+		pauseOnFocus: false,
+		responsive: [
+			{
+				breakpoint: 993,
+				settings: {
+					slidesToShow: 1,
+					dots: true,
+					fade: true
+				}			
+			},
+		]
+	});
+});
 
-	for (i = 0; i < acc.length; i++) {
-		acc[i].addEventListener("click", function() {
-			this.classList.toggle("active-bar");
-			var panel = this.nextElementSibling;
-			if (panel.style.maxHeight) {
-				panel.style.maxHeight = null;
-			} else {
-				panel.style.maxHeight = panel.scrollHeight + "px";
-			} 
-		});
-	}
+//Counter Script
+jQuery(document).ready(function($) {
+    $('.counter').counterUp({
+        delay: 10,
+        time: 2000
+    });
+});
 
 //Animate on Scroll default settings
 $(window).on('load', function () {
