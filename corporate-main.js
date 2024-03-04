@@ -1,74 +1,43 @@
 "use strict";
 //Slick Slider (1) One
 $(document).ready(function(){
-	$('.border_slider').slick({
-		slidesToShow: 3,
-		autoplay: false,
+	$('.slickslide').slick({
+		autoplay: true,
 		infinite: true,
+		autoplaySpeed: 5000,
 		speed: 1000,
-		arrows: false,
-		dots: false,
+		fade: true,
+		prevArrow: '.prev_nav',
+		nextArrow: '.next_nav',
 		pauseOnHover: false,
 		pauseOnFocus: false,
-		responsive: [
-			{
-				breakpoint: 601,
-				settings: {
-					slidesToShow: 1,
-					dots: true,
-					fade: true
-				}			
-			},
-		]
+		dots: false,
+		swipe: false
 	});
 });
 
 //Slick Slider (2) Two
 $(document).ready(function(){
-	$('.bg_slider').slick({
-		dots: false,
-		autoplaySpeed: 5000,
+	$('.client-slider').slick({
 		slidesToShow: 1,
-		fade: true,
 		slidesToScroll: 1,
-		prevArrow: '.prev_nav',
-		nextArrow: '.next_nav',
-		autoplay: true,
-		speed: 1000,
-		
-	});
-});
-
-//Slick Slider (3) Three
-$(document).ready(function(){
-	$('.feature_slider').slick({
-		slidesToShow: 3,
-		autoplay: false,
-		infinite: true,
-		speed: 1000,
 		arrows: false,
-		dots: false,
+		dots: true,
+		autoplay: false,
+		speed: 1000,
 		pauseOnHover: false,
 		pauseOnFocus: false,
-		responsive: [
-			{
-				breakpoint: 993,
-				settings: {
-					slidesToShow: 1,
-					dots: true,
-					fade: true
-				}			
-			},
-		]
 	});
 });
 
-//Counter Script
-jQuery(document).ready(function($) {
-    $('.counter').counterUp({
-        delay: 10,
-        time: 2000
-    });
+//MagnificPopup Video
+$('#play-video').magnificPopup({
+	disableOn: 300,
+	type: 'iframe',
+	mainClass: 'mfp-fade',
+	removalDelay: 300,
+	preloader: false,
+	fixedContentPos: false
 });
 
 //Animate on Scroll default settings
