@@ -1556,7 +1556,7 @@ li.slick-active button{
 .construct_area_ten{
 	position: relative;
 	max-width: 1280px;
-	margin: -85px auto 2em;
+	margin: -80px auto 2em;
 	padding: 0 25px;
 }
 
@@ -1582,6 +1582,7 @@ li.slick-active button{
 	height: 80px;
 	display: flex;
 	flex-wrap: wrap;
+	box-shadow: 0 20px 70px rgba(38,42,76,.2);
 	background-color: #ffffff;
 	padding: 10px;
 }
