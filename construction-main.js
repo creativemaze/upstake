@@ -1,57 +1,29 @@
 "use strict";
-//Slick Slider (1) One
+//Slick Slider
 $(document).ready(function(){
-	$('.slickslide').slick({
-		autoplay: true,
-		infinite: true,
-		autoplaySpeed: 5000,
-		speed: 1000,
-		fade: true,
-		prevArrow: '.prev_button',
-		nextArrow: '.next_button',
-		pauseOnHover: false,
-		pauseOnFocus: false,
-		dots: false,
-		swipe: false
-	});
-});
-
-//Slick Slider (2) Two
-$(document).ready(function(){
-	$('.client-slider').slick({
-		dots: true,
+	$('.client_slider').slick({
 		slidesToShow: 3,
-		slidesToScroll: 1,
-		arrows: false,
 		autoplay: false,
+		infinite: true,
 		speed: 1000,
+		arrows: false,
+		dots: true,
 		pauseOnHover: false,
 		pauseOnFocus: false,
 		responsive: [
 			{
-				breakpoint: 801,
-				settings: 
-				{
-					slidesToShow: 2,
-       
-				}	
-			},
-			
-			{
-				breakpoint: 501,
-				settings: 
-				{
+				breakpoint: 993,
+				settings: {
 					slidesToShow: 1,
-       
-				}	
+					fade: true
+				}			
 			},
-		]	
+		]
 	});
-	
 });
 
 //MagnificPopup Gallery (1) One
-$('.featured_col').magnificPopup({
+$('.image_box').magnificPopup({
 	delegate: 'a',
 	type: 'image',
 	gallery: {
@@ -75,6 +47,24 @@ jQuery(document).ready(function($) {
         time: 2000
     });
 });
+
+//Filter Gallery
+jQuery(document).ready(function($) {
+	$('.filter-container').filterizr({
+		
+	});
+});
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("filtergroup");
+var btns = btnContainer.getElementsByClassName("filtertitle");
+for (var i = 0; i < btns.length; i++) {
+	btns[i].addEventListener("click", function(){
+		var current = document.getElementsByClassName("active");
+		current[0].className = current[0].className.replace(" active", "");
+		this.className += " active";
+	});
+}
 
 //Animate on Scroll default settings
 $(window).on('load', function () {
