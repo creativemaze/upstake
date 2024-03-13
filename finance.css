@@ -891,9 +891,9 @@ li.slick-active button{
 	position: relative;
 	z-index: 999;
 	max-width: 1400px;
-	margin: -375px auto 0;
+	margin: -375px auto;
 	padding: 0 20px;
-	margin-bottom: calc(9em + 80px);
+	margin-bottom: calc(9em + 70px);
 }
 
 .finance_group_four{
@@ -1486,7 +1486,6 @@ a.blog_btn:hover{
 	max-width: 1200px;
 	width: calc(100% - 50px);
 	margin: 0 auto -6em;
-	padding: 40px 25px;
 	position: relative;
 	z-index: 999;
 	box-shadow: 0 20px 70px rgba(38,42,76,.2);
@@ -1498,12 +1497,12 @@ a.blog_btn:hover{
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
+	padding: 40px 30px;
 }
 
 .title_head{
 	flex: 83.33%;
 	width: 83.33%;
-	padding: 0 20px;
 }
 
 .title_head h2{
@@ -1521,7 +1520,6 @@ a.blog_btn:hover{
 .right_btn{
 	flex: 16.66%;
 	width: 16.66%;
-	padding: 0 20px;
 	margin-top: 40px;
 }
 
@@ -1718,6 +1716,10 @@ a.footer-logo img{
 	.slide__content{
 		height: auto;
 	}
+	
+	.finance_area_two{
+		margin-bottom: calc(9em + 30px);
+	}
 }
 
 @media only screen and (max-width: 992px){
@@ -1805,6 +1807,10 @@ a.footer-logo img{
 		position: relative;
 		left: 0;
 		padding-top: 20px;
+	}
+	
+	.finance_area_two{
+		margin-bottom: 9em;
 	}
 	
 	.square_col_left{
