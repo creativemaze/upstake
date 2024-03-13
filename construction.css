@@ -49,6 +49,10 @@ ul{
 	padding: 0;
 }
 
+h2{
+	margin-top: 0;
+}
+
 *{
 	box-sizing: border-box;
 }
@@ -551,7 +555,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	flex: 33.33%;
 	width: 33.33%;
 	max-width: 500px;
-	padding: 30px 30px 40px;
+	padding: 30px 35px 40px 25px;
 	background-color: #1a2980;
 	margin-top: -150px;
 }
@@ -698,7 +702,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	max-width: 1280px;
 	margin: 0 auto 0;
 	padding: 0 25px;
-	margin-bottom: calc(9em + 75px);
+	margin-bottom: calc(9em + 65px);
 }
 
 .construct_group_two{
@@ -920,7 +924,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	position: relative;
 	z-index: 999;
 	max-width: 1000px;
-	margin: -375px auto 9em;
+	margin: -350px auto 9em;
 	padding: 0 25px;
 }
 
@@ -1019,9 +1023,9 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 /* --- 3.5. Construction Area Five --- */
 .construct_area_five{
 	max-width: 1200px;
-	margin: 0 auto 9em;
+	margin: 0 auto;
 	padding: 0 25px;
-	position: relative;
+	margin-bottom: calc(9em - 15px);
 }
 
 .construct_group_info{
@@ -1041,7 +1045,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	flex: 41.66%;
 	width: 41.66%;
 	padding: 0 10px;
-	margin-top: 35px;
+	margin-top: 10px;
 	max-width: 400px;
 }
 
@@ -1321,7 +1325,7 @@ li.slick-active button{
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 0 25px;
-	margin-bottom: calc(9em + 40px);
+	margin-bottom: calc(9em + 80px);
 }
 
 .construct_group_eight{
@@ -1394,6 +1398,10 @@ li.slick-active button{
 	overflow-y: auto;
 	max-height: 125px;
 	height: 100%;
+}
+
+.bottom_cube{
+	margin-bottom: -40px;
 }
 
 .cube_num{
@@ -1495,7 +1503,7 @@ li.slick-active button{
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
-	padding: 4em 0 7em;
+	padding: 4em 0;
 }
 
 .construct_area_nine::before {
@@ -1793,6 +1801,14 @@ a.footer-logo img{
 	.portfolio_col{
 		max-width: 300px;
 	}
+	
+	.construct_area_two{
+		margin-bottom: calc(9em + 40px);
+	}
+	
+	.construct_area_eight{
+		margin-bottom: 9em;
+	}
 }	
 
 @media only screen and (max-width: 992px){
@@ -1905,6 +1921,10 @@ a.footer-logo img{
 		width: 100%;
 		margin-top: 50px;
 		max-width: 450px;
+	}
+	
+	.construct_area_two{
+		margin-bottom: calc(9em + 65px);
 	}
 	
 	.square_col_left{
