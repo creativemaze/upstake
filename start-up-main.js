@@ -1,66 +1,109 @@
 "use strict";
 //Slick Slider (1) One
 $(document).ready(function(){
-	$('.slickslide').slick({
-		autoplay: true,
+	$('.feature_slider').slick({
+		slidesToShow: 3,
+		autoplay: false,
 		infinite: true,
-		autoplaySpeed: 6000,
 		speed: 1000,
-		fade: true,
-		prevArrow: '.prev_slide',
-		nextArrow: '.next_slide',
+		arrows: false,
+		dots: false,
 		pauseOnHover: false,
 		pauseOnFocus: false,
-                dots: false,
-                swipe: false
+		responsive: [
+			{
+				breakpoint: 993,
+				settings: {
+					slidesToShow: 1,
+					dots: true,
+					fade: true
+				}			
+			},
+		]
 	});
-
 });
 
 //Slick Slider (2) Two
 $(document).ready(function(){
-	$('.info_slider').slick({
+	$('.grid_slider').slick({
 		dots: false,
-		slidesToShow: 2,
+		slidesToShow: 3,
 		slidesToScroll: 1,
-		arrows: false,
-		autoplay: false,
+		prevArrow: '.prev_slide',
+		nextArrow: '.next_slide',
+		autoplay: true,
 		speed: 1000,
 		pauseOnHover: false,
 		pauseOnFocus: false,
 		centerMode: true,
 		responsive: [
 			{
-				breakpoint: 1025,
+				breakpoint: 993,
 				settings: {
 					slidesToShow: 2,
-				}		
+					
+				}			
 			},
 			
 			{
 				breakpoint: 601,
 				settings: {
 					slidesToShow: 1,
-					centerPadding: '0',
-				}		
+					centerPadding: '100px',
+				}			
 			},
 			
+			{
+				breakpoint: 430,
+				settings: {
+					slidesToShow: 1,
+					centerPadding: '35px',
+				}			
+			},
+			
+			{
+				breakpoint: 376,
+				settings: {
+					slidesToShow: 1,
+					centerPadding: '20px',
+				}			
+			},
 		]
 	});
 	
-	$('.info_slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
-		$('.title_group.active').removeClass('active');
-			$('.title_group').eq(nextSlide).addClass('active');
+});
+
+//Slick Slider (3) Three
+$(document).ready(function(){
+	$('.client_slider').slick({
+		slidesToShow: 3,
+		autoplay: false,
+		infinite: true,
+		speed: 1000,
+		arrows: false,
+		dots: true,
+		pauseOnHover: false,
+		pauseOnFocus: false,
+		responsive: [
+			{
+				breakpoint: 993,
+				settings: {
+					slidesToShow: 1,
+					fade: true
+				}			
+			},
+		]
 	});
-  
-	$('.title_group').on('click', function(e){
-		e.preventDefault();
-		$('.title_group.active').removeClass('active');
-		$(this).addClass('active');
-		var targetSlide = $(this).data('target');
-		$('.info_slider').slick('slickGoTo', targetSlide );
-	});
-	
+});
+
+//MagnificPopup Video
+$('#play-video').magnificPopup({
+	disableOn: 300,
+	type: 'iframe',
+	mainClass: 'mfp-fade',
+	removalDelay: 300,
+	preloader: false,
+	fixedContentPos: false
 });
 
 //Counter Script
