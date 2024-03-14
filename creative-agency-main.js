@@ -1,94 +1,22 @@
 "use strict";
 //Slick Slider (1) One
 $(document).ready(function(){
-	$('.mainslider').slick({
-		autoplay: true,
-		infinite: true,
-		autoplaySpeed: 5000,
-		speed: 1000,
-		prevArrow: '.prev_slide',
-		nextArrow: '.next_slide',
-		pauseOnHover: false,
-		pauseOnFocus: false,
-                swipe: false
-	});
-});
-
-//Slick Slider (2) Two
-$(document).ready(function(){
-	$('.boxslide-one').slick({
-		slidesToShow: 2,
-		autoplay: true,
-		infinite: true,
-		speed: 1000,
-		arrows: false,
-		dots: false,
-		pauseOnHover: false,
-		pauseOnFocus: false,
-		responsive: [
-			{
-				breakpoint: 992,
-				settings: {
-					slidesToShow: 1,
-					dots: true,
-					fade: true
-				}
-						
-			},
-		]
-	});
-});
-
-//Slick Slider (3) Three
-$(document).ready(function(){
-	$('.boxslide-two').slick({
-		slidesToShow: 2,
-		autoplay: true,
-		infinite: true,
-		speed: 1000,
-		arrows: false,
-		dots: false,
-		pauseOnHover: false,
-		pauseOnFocus: false,
-		responsive: [
-			{
-				breakpoint: 992,
-				settings: {
-					slidesToShow: 1,
-					dots: true,
-					fade: true
-				}
-						
-			},
-		]
-	});
-});
-
-//Slick Slider (4) Four
-$(document).ready(function(){
 	$('.client-slider').slick({
-		dots: true,
-		slidesToShow: 2,
+		dots: false,
+		slidesToShow: 1,
 		slidesToScroll: 1,
-		arrows: false,
+		prevArrow: '.prev_nav',
+		nextArrow: '.next_nav',
 		autoplay: false,
 		speed: 1000,
 		pauseOnHover: false,
 		pauseOnFocus: false,
-		responsive: [
-			{
-				breakpoint: 769,
-				settings: {
-					slidesToShow: 1,
-       
-				}		
-			},
-		]	
+	
 	});
 });
 
 //MagnificPopup Gallery (1) One
-$('.featured_col').magnificPopup({
+$('.portfolio_image').magnificPopup({
 	delegate: 'a',
 	type: 'image',
 	gallery: {
