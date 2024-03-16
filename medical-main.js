@@ -1,58 +1,12 @@
 "use strict";
-//Slick Slider (1) One
-$(document).ready(function(){
-	$('.medical_slider').slick({
-		dots: false,
-		slidesToShow: 2,
-		slidesToScroll: 1,
-		prevArrow: '.prev_nav',
-		nextArrow: '.next_nav',
-		autoplay: false,
-		speed: 1000,
-		pauseOnHover: false,
-		pauseOnFocus: false,
-		responsive: [
-			
-			{
-				breakpoint: 601,
-				settings: {
-					slidesToShow: 1
-				}		
-			},
-			
-		]
-	});
-	
-});
-
-//Slick Slider (2) Two
-$(document).ready(function(){
-	$('.client-slider').slick({
-		dots: true,
-		slidesToShow: 3,
-		slidesToScroll: 1,
-		arrows: false,
-		autoplay: false,
-		speed: 1000,
-		pauseOnHover: false,
-		responsive: [
-			{
-				breakpoint: 1025,
-				settings: {
-				slidesToShow: 2,
-       
-			}	
-		},
-		
-		{
-				breakpoint: 769,
-				settings: {
-				slidesToShow: 1,
-       
-			}	
-		},
-	]	
-	});
+//MagnificPopup Video
+$('#play-video').magnificPopup({
+	disableOn: 300,
+	type: 'iframe',
+	mainClass: 'mfp-fade',
+	removalDelay: 300,
+	preloader: false,
+	fixedContentPos: false
 });
 
 //Counter Script
