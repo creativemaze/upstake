@@ -1,39 +1,32 @@
 "use strict";
-//Slick Slider (1) One
+//Slick Slider
 $(document).ready(function(){
-	$('.feature_slider').slick({
+	$('.bg_slider').slick({
 		dots: false,
-		fade: true,
 		slidesToShow: 1,
-		slidesToScroll: 1,
-		prevArrow: '.prev_button',
-		nextArrow: '.next_button',
-		autoplay: false,
-		speed: 1000,
-		adaptiveHeight: true,
-	});
-	
-});
-
-//Slick Slider (2) Two
-$(document).ready(function(){
-	$('.client-slider').slick({
-		dots: true,
-		slidesToShow: 2,
 		slidesToScroll: 1,
 		arrows: false,
 		autoplay: false,
+		fade: true,
+		adaptiveHeight: true,
 		speed: 1000,
-		responsive: [
-			{
-				breakpoint: 769,
-				settings: {
-					slidesToShow: 1,
-       
-				}		
-			},
-		]	
+		pauseOnHover: false,
+		pauseOnFocus: false,		
 	});
+	
+	$('.bg_slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+		$('.bg_info > div.active').removeClass('active');
+			$('.bg_info > div').eq(nextSlide).addClass('active');
+	});
+  
+	$('.bg_info > div').on('mouseover', function(e){
+		e.preventDefault();
+		$('.bg_info > div.active').removeClass('active');
+		$(this).addClass('active');
+		var targetSlide = $(this).data('target');
+		$('.bg_slider').slick('slickGoTo', targetSlide );
+	});
+	
 });
 
 //F.A.Q.S Accordion
