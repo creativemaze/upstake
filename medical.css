@@ -1165,8 +1165,8 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .cube_box{
-	max-width: 500px;
-	padding-left: 20px;
+	max-width: 550px;
+	padding-right: 20px;
 }
 
 .cube_box h2{
@@ -1197,7 +1197,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
-	max-width: 500px;
+	max-width: 550px;
 }
 
 .video-play-button {
@@ -1280,7 +1280,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .count_box{
-	max-width: 250px;
+	max-width: 275px;
 	overflow: hidden;
 	padding: 10px 0;
 }
@@ -1297,7 +1297,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 .count_info{
 	width: 60%;
 	float: left;
-	padding-left: 15px;
 }
 
 .count_box .material-symbols-outlined.icon-75{
