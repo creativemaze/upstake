@@ -463,7 +463,6 @@ svg {
 	position: relative;
 	flex: 50%;
 	width: 50%;
-	padding: 0 10px;
 	min-height: 700px;
 }
 
@@ -977,7 +976,7 @@ svg {
 	z-index: 999;
 	flex: 25%;
 	width: 25%;
-	padding: 0 25px;
+	padding-right: 40px;
 	min-height: 550px;
 	border-right: solid 1px #6f6f6f;
 	transition: 0.5s;
@@ -994,13 +993,13 @@ svg {
 .bg_num{
 	position: absolute;
 	top: 20px;
-	left: 30px;
+	left: 25px;
 }
 
 .bg_content{
 	position: absolute;
 	bottom: 40px;
-	left: 30px;
+	left: 25px;
 	max-width: 450px;
 }
 
@@ -1038,7 +1037,7 @@ svg {
 	font-family: 'Roboto' , Arial, sans-serif;
 	font-size: 16px;
 	font-weight: normal;
-	padding: 10px 10px 0 0;
+	padding-top: 10px;
 	display: block;
 	color: #f2f2f2;
 	letter-spacing: 1px;
@@ -1769,7 +1768,9 @@ a.footer-logo img{
 /* 5. RESPONSIVE
  ----------- */
 @media only screen and (max-width: 1024px){
-	
+	.area_info{
+		margin-top: 50px;
+	}
 } 
  
 @media only screen and (max-width: 992px){
