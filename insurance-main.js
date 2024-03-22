@@ -1,29 +1,37 @@
 "use strict";
 //Slick Slider (1) One
 $(document).ready(function(){
-	$('.slickslide').slick({
-		dots: true,
-		autoplay: true,
+	$('.bg_slider').slick({
+		slidesToShow: 3,
+		autoplay: false,
 		infinite: true,
-		autoplaySpeed: 5000,
 		speed: 1000,
-		fade: true,
 		arrows: false,
+		dots: false,
 		pauseOnHover: false,
 		pauseOnFocus: false,
-                swipe: false
+		responsive: [
+			{
+				breakpoint: 993,
+				settings: {
+					slidesToShow: 1,
+					dots: true,
+					fade: true
+				}			
+			},
+		]
 	});
 });
 
 //Slick Slider (2) Two
 $(document).ready(function(){
-	$('.bg_slider').slick({
+	$('.grid_slider').slick({
+		prevArrow: '.prev_slide',
+		nextArrow: '.next_slide',
 		dots: false,
-		slidesToShow: 2,
+		slidesToShow: 3,
 		slidesToScroll: 1,
-		prevArrow: '.prev_nav',
-		nextArrow: '.next_nav',
-		autoplay: false,
+		autoplay: true,
 		speed: 1000,
 		pauseOnHover: false,
 		pauseOnFocus: false,
@@ -31,60 +39,23 @@ $(document).ready(function(){
 			{
 				breakpoint: 1025,
 				settings: {
+					slidesToShow: 2,
+       
+				}		
+			},
+			{
+				breakpoint: 601,
+				settings: {
 					slidesToShow: 1,
        
-				},
-			
+				}		
 			},
-	
-		]	
+		]
+		
 	});
 	
 });
 
-//Slick Slider (3) Three
-$(document).ready(function(){
-	$('.form_slider').slick({
-		dots: false,
-		arrows: false,
-		autoplay: false,
-		fade: true,
-		speed: 1000,
-		pauseOnHover: false,
-		pauseOnFocus: false,		
-	});
-	
-	$('.form_slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
-		$('.title_head a.active').removeClass('active');
-			$('.title_head a').eq(nextSlide).addClass('active');
-	});
-  
-	$('.title_head a').on('click', function(e){
-		e.preventDefault();
-		$('.title_head a.active').removeClass('active');
-		$(this).addClass('active');
-		var targetSlide = $(this).data('target');
-		$('.form_slider').slick('slickGoTo', targetSlide );
-	});
-	
-});
-
-//F.A.Q.S Accordion
-var acc = document.getElementsByClassName("accordion");
-	var i;
-
-	for (i = 0; i < acc.length; i++) {
-		acc[i].addEventListener("click", function() {
-			this.classList.toggle("active-bar");
-			var panel = this.nextElementSibling;
-			if (panel.style.maxHeight) {
-				panel.style.maxHeight = null;
-			} else {
-				panel.style.maxHeight = panel.scrollHeight + "px";
-			} 
-		});
-	}
-	
 //Counter Script
 jQuery(document).ready(function($) {
     $('.counter').counterUp({
