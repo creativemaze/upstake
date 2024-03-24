@@ -1865,6 +1865,18 @@ a.footer-logo img{
 		left: 50%;
 		transform: translateX(-50%);
 	}
+
+	.head_btn a{
+		background-color: #7300a5;
+		border-color: #7300a5;
+		color: #ffffff;
+	}
+	
+	.head_btn a:hover{
+		background-color: #ffffff;
+		border-color: #111111;
+		color: #111111;
+	}
 	
 	.navbar-header > a{
 		margin-top: 14px;
