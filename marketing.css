@@ -1,9 +1,9 @@
 /*------------------------------------------------------------------
 Main Stylesheet
 
-Project:    HighPoint - Multipurpose Business Template
+Project:    Upstake - Multipurpose Business Template
 Version:    1.0
-Last change:    03/12/2021
+Last change:    23/03/2024
 Author:    creativemaze
 Primary use:    Marketing
 -------------------------------------------------------------------*/
@@ -46,6 +46,10 @@ ul{
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
+}
+
+h2{
+	margin-top: 0;
 }
 
 *{
@@ -97,13 +101,14 @@ ul{
 	display: block;
 	text-align: center;
 	letter-spacing: 1px;
-	line-height: 1.3em;
-	color: #e53935;
+	line-height: 1.2em;
+	color: #111111;
+	max-width: 600px;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 .marketing_info{
-	max-width: 600px;
-	margin: 0 auto;
 	font-family: 'Roboto' , Arial, sans-serif;
 	font-size: 16px;
 	font-weight: normal;
@@ -111,38 +116,73 @@ ul{
 	color: #696969;
 	letter-spacing: 1px;
 	text-align: center;
-	padding: 10px 10px 0;
+	padding-top: 10px;
 	line-height: 1.5em;
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.bg_head{
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 40px;
+	font-weight: 700;
+	display: block;
+	text-align: center;
+	color: #ffffff;
+	letter-spacing: 1px;
+	line-height: 1.2em;
+	max-width: 650px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.bg_info{
+	font-family: 'Roboto' , Arial, sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	display: block;
+	color: #dddddd;
+	letter-spacing: 1px;
+	text-align: center;
+	padding-top: 10px;
+	line-height: 1.5em;
+	max-width: 600px;
+	margin: 0 auto;
 }
 
 /* 2. HEADER
  ----------- */
  
 /* --- 2.1. Logo & Navigation --- */
-nav.navbar.bootsnav .navbar-brand{
-    max-width: 200px; 	
-}
-
-.navbar-header a.navbar-brand{
+.navbar-header > a{
 	text-decoration: none;
 	color: #111111;
 	transition: 0.5s;
 	font-family: 'Montserrat', Arial, sans-serif;
 	font-size: 22px;
 	font-weight: 700;
+	display: inline-block;
+	text-align: center;
 	letter-spacing: 1px;
 	text-transform: uppercase;
-	padding-top: 30px;
+	margin-top: 30px;
 }
 
-.navbar-header a.navbar-brand:hover{
+.navbar-header > a:hover{
 	color: #111111;
 }
 
-nav.navbar .navbar-brand img.logo{
-   width: 100%;
+#nav-logo > a{
+	max-width: 160px; 
+	min-height: 10px;
+	position: relative;
+	top: 33px;
+}
+
+#nav-logo > a img{
+   position: relative;
+   max-width: 160px;
    height: auto;
-   display: block;
 }
 
 nav.navbar.bootsnav{
@@ -153,6 +193,7 @@ nav.navbar.bootsnav{
 
 nav.navbar.bootsnav ul.nav{
 	margin-right: 160px;
+	margin-top: 5px;
 }
 
 nav.navbar.bootsnav li.dropdown ul.dropdown-menu{
@@ -248,7 +289,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .attr-nav > ul > li > a{
     color: #111111;
-	padding-top: 30px;
+	padding-top: 36px;
 	margin-left: -12px;
 	position: relative;
 	left: -160px;
@@ -265,7 +306,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 .top_box{
 	height: 50px;
 	overflow-y: auto;
-	border-bottom: solid 1px #e0e0e0;
+	background-color: #e53935;
 }
 
 .top_info{
@@ -298,24 +339,14 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	display: block;
 }
 
-.right_info .fas,
-.right_info .far,
-.left_info .fab{
+.left_info > a > .fab{
 	font-size: 16px;
-	color: #e53935;;
-}
-
-.right_info .fas,
-.right_info .far{
-	padding-right: 8px;
-}
-
-.left_info > a{
+	color: #ffffff;
 	padding-right: 14px;
+	transition: 0.5s;
 }
 
-.left_info .fab:hover,
-.right_info .fas:hover{
+.left_info > a > .fab:hover{
 	color: #111111;
 }
 
@@ -325,14 +356,25 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	font-weight: 600;
 	text-transform: lowercase;
 	display: inline-block;
-	color: #111111;
+	color: #ffffff;
 	letter-spacing: 1px;
 	text-align: right;
 	text-decoration: none;
+	transition: 0.5s;
+}
+
+.right_info a .fas{
+	font-size: 16px;
+	color: #ffffff;
+	padding-right: 8px;
 }
 
 .right_info a:hover{
-	opacity: 0.6;
+	color: #111111;
+}
+
+.right_info a .fas:hover{
+	color: #111111;
 }
 
 .right_info .fa-m{
@@ -364,9 +406,8 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	font-family: 'Montserrat' , Arial, sans-serif;
 	font-size: 13px;
 	font-weight: 700;
-	text-transform: capitalize;
 	display: block;
-	color: #111111;
+	color: #ffffff;
 	letter-spacing: 1px;
 	text-align: right;
 	margin-bottom: 0;
@@ -376,18 +417,15 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	max-width: 300px;
 	display: inline-block;
 	position: absolute;
-	top: 15px;
+	top: 19px;
 	right: 0;
 }
 
 .head_btn a{
-	background-color: #e53935;
 	width: 150px;
-	margin: 0 auto;
-	min-height: 30px;
-    border: none;
     color: #ffffff;
     padding: 13px 14px;
+	background-color: #111111;
     text-decoration: none;
 	text-transform: uppercase;
     display: block;
@@ -395,8 +433,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	font-weight: 600;
 	font-family: 'Montserrat', Arial, sans-serif;
     transition: 0.5s;
-    cursor: pointer;
-	border: 1px solid #e53935;
+	border: 1px solid #111111;
 	border-radius: 5px;
 	letter-spacing: 1px;
 	text-align: center;
@@ -410,21 +447,24 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .sliderwrap{
 	position: relative;
-	max-width: 1280px;
+	max-width: 1400px;
 	margin: auto;
-	padding: 0 25px;
-	padding-top: 20px;
+	padding: 0 20px;
 }
 
-.slidearea{
+.slickslide{
+	position: relative;
 	width: 100%;
+}
+
+.sliderwrap .slick-list{
+	overflow: visible;
 }
 
 .slide__content{
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
-	min-height: 500px;
 }
 
 .slide__left{
@@ -432,30 +472,101 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	flex: 50%;
 	width: 50%;
 	padding: 0 25px;
+	margin-top: 75px;
 }
 
-.slidecol{
-	position: relative;
-	width: 100%;
-	min-height: 600px;
-	height: 100%;
+.float_arc_dark{
+	position: absolute;
+	top: -50px;
+	left: 0;
+	overflow: hidden;
+	width: 15px;
+	height: 15px;
+	background-color: #111111;
+	border-radius: 50%;
+	animation: diagonal-move-anim 3s linear infinite alternate;
+}
+
+@keyframes diagonal-move-anim {
+
+	0% {
+		transform: translate(0, 0);
+	}
+
+	100% {
+		transform: translate(50px, 50px);
+	}
+}
+
+.float_arc{
+	position: absolute;
+	top: -50px;
+	right: 110px;
+	overflow: hidden;
+	width: 15px;
+	height: 15px;
+	background-color: #e53935;
+	border-radius: 50%;
+	animation: right-diagonal-move-anim 3s linear infinite alternate;
+}
+
+@keyframes right-diagonal-move-anim{
+
+	0% {
+		transform: translate(-0, -0);
+	}
+
+	100% {
+		transform: translate(-50px, 50px);
+	}
 }
 
 .slide__right{
 	flex: 50%;
 	width: 50%;
-	background-color: #e53935;
+	padding: 0 25px;
+	margin-top: 75px;
 }
 
-.slide__right_inner{
+.slide_info{
+	max-width: 550px;
+	max-height: 550px;
 	position: relative;
-	top: 45px;
-	right: 45px;
-	min-height: 550px;
-	height: 100%;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
+	text-align: center;
+}
+
+.right_color_box{
+	position: absolute;
+	top: -40px;
+	right: -40px;
+	width: 450px;
+	height: 450px;
+	border-top: solid 40px #e53935;
+	border-right: solid 40px #e53935;
+	z-index: -10;
+}
+
+.slide_center{
+	position: absolute;
+	bottom: -70px;
+	left: 0;
+	margin-left: 25px;
+	z-index: 99;
+	width: 280px;
+	height: 280px;
+	background-color: #ffffff;
+}
+
+.slide_photo{
+	width: 260px;
+	height: 260px;
+	margin: 10px auto;
+}
+
+.slide_info img{
+	width: 100%;
+	height: auto;
+	display: block;
 }
 
 .first_left{
@@ -466,9 +577,41 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .slide__box{
-	max-width: 600px;
+	position: relative;
+	max-width: 550px;
 	text-align: left;
 	padding-right: 20px;
+}
+
+.slidenav{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	transform: translateX(-50%);
+	z-index: 99;
+	margin-bottom: -40px;
+	margin-left: 100px;
+}
+
+.prev_slide,
+.next_slide{
+	font-size: 50px;
+	font-weight: 700;
+	transition: 0.6s ease;
+	width: auto;
+	display: inline-block;
+	overflow: hidden;
+	color: #e53935;
+	cursor: pointer;
+}
+
+.prev_slide{
+	margin-right: 15px;
+}
+
+.next_slide:hover,
+.prev_slide:hover{
+	color: #111111;
 }
 
 .slide__box h2{
@@ -479,7 +622,11 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	text-align: left;
 	display: block;
 	color: #111111;
-	line-height: 1.3em;
+	line-height: 1.2em;
+}
+
+.color_letter{
+	color: #e53935;
 }
 
 .slide__box p{
@@ -492,15 +639,12 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	letter-spacing: 1px;
 	text-align: left;
 	padding: 16px 0;
-	max-width: 500px;
+	max-width: 450px;
 }
 
 .buttoncol a{
-	background-color: #111111;
-	width: 150px;
-	min-height: 35px;
-	margin-top: 10px;
-    border: none;
+	background-color: #e53935;
+	width: 160px;
     color: #ffffff;
     padding: 13px 14px;
     text-decoration: none;
@@ -510,8 +654,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	font-weight: 600;
 	font-family: 'Montserrat', Arial, sans-serif;
     transition: 0.5s;
-    cursor: pointer;
-	border: 1px solid #111111;
+	border: 1px solid #e53935;
 	letter-spacing: 1px;
 	text-align: center;
 	border-radius: 5px;
@@ -523,711 +666,223 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	border-color: #111111;
 }
 
-.slidenav{
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	margin-bottom: 15px;
-	margin-left: 50px;
-}
-
-.prev_slide,
-.next_slide{
-	font-size: 14px;
-	transition: 0.6s ease;
-	background: transparent;
-	width: auto;
-	padding: 10px 16px;
-	color: #111111;
-	cursor: pointer;
-	border: solid 1px #111111;
-	display: inline-block;
-}
-
-.prev_slide{
-	margin-right: 15px;
-}
-
-.next_slide:hover,
-.prev_slide:hover{
-	background-color: #111111;
-	color: #ffffff;
-	border-color: #111111;
-}
-
 /* 3. MAIN CONTENT
  ----------- */
  
 /* --- 3.1. Marketing Area One --- */
 .marketing_area_one{
-	max-width: 1400px;
-	margin: 9em auto 9em;
-	padding: 0 25px;
+	width: 100%;
+	position: relative;
+	min-height: 400px;
+	margin-top: calc(9em + 75px);
+	margin-bottom: 9em;
+	padding: 4em 0 6em;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.marketing_area_one::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(24, 25, 34, 0.5);
 }
 
 .marketing_group_one{
+	position: relative;
+	z-index: 999;
+	max-width: 1280px;
+	padding: 0 25px;
+	margin: auto;
+	text-align: center;
+	
+}
+
+.num_area{
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
-	padding-top: 40px;
 }
 
-.icon_col{
+.num_col{
+	position: relative;
 	flex: 25%;
 	width: 25%;
-	padding: 0 20px;
+	padding: 10px 20px 0;
 }
 
-.icon_box{
+.num_box{
 	max-width: 300px;
-	margin: auto;
-	padding: 30px;
+	width: 100%;
+	margin: 0 auto;
 	text-align: center;
-	background: transparent;
-	transition: 0.5s;
-	border: solid 1px #e0e0e0;
+	position: relative;
 }
 
-.icon_box h3{
-	color: #111111;
+.list_num h3{
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 110px;
+	font-weight: 800;
+	display: block;
+	text-align: left;
+	color: #ffffff;
+	letter-spacing: 1px;
+	line-height: 1.2em;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+.num_info{
+	text-align: center;
+	margin: auto;
+	padding: 0 10px;
+}
+
+.center_mid{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.mid_info h3{
 	font-family: 'Montserrat' , Arial, sans-serif;
 	font-size: 18px;
 	font-weight: 600;
 	display: block;
 	text-align: center;
+	color: #ffffff;
 	letter-spacing: 1px;
 	line-height: 1.4em;
+	margin: 0;
 }
 
-.icon_box p{
+.mid_info p{
 	font-family: 'Roboto' , Arial, sans-serif;
 	font-size: 15px;
 	font-weight: normal;
-	padding-top: 10px;
 	display: block;
-	color: #696969;
+	color: #dddddd;
 	letter-spacing: 1px;
 	text-align: center;
 	line-height: 1.5em;
+	padding: 10px 0;
 }
 
-.icon_box .fas,
-.icon_box .far{
-	font-size: 35px;
-	color: #e53935;
-	text-align: center;
-	display: block;
-}
-
-.icon_crumb{
-	max-width: 300px;
+.cube_crumb{
+	width: 50px;
 	height: 1px;
-	display: block;
-	border-bottom: solid 4px #e53935;
-	margin: 0 auto 0;
-	transition: 0.5s;
-	visibility: hidden;
-	opacity: 0;
-}
-
-.icon_box:hover{
-	box-shadow: -1px 1px 12px 10px rgba(0,0,0,0.19);
-}
-
-.icon_col:hover .icon_crumb{
-	visibility: visible;
-	opacity: 1;
+	margin: auto;
+	border-bottom: solid 2px #e53935;
+	margin-top: 12px;
 }
 
 /* --- 3.2. Marketing Area Two --- */
 .marketing_area_two{
-	position: relative;
-	display: flex;
-	min-height: 400px;
-	height: 100%;
-	background-color: #e53935;
-	margin: 0 0;
-}
-
-/* --- 3.3. Marketing Area Three --- */
-.marketing_area_three{
-	max-width: 1400px;
-	margin: 0 auto;
-	margin-top:  -300px;
-	padding: 0 25px;
-	position: relative;
-	z-index: 9999;
-	margin-bottom: 9em;
-}
-
-.marketing_group_three{
-	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
-	padding: 40px 30px 0;
-	background-color: #ffffff;
-	margin-top: 40px;
-}
-
-.bg_head{
-	color: #ffffff;
-	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 40px;
-	font-weight: 700;
-	display: block;
-	text-align: center;
-	letter-spacing: 1px;
-	line-height: 1.3em;
-}
-
-.bg_info{
-	max-width: 600px;
-	margin: 0 auto;
-	font-family: 'Roboto' , Arial, sans-serif;
-	font-size: 16px;
-	font-weight: normal;
-	display: block;
-	color: #f2f2f2;
-	letter-spacing: 1px;
-	text-align: center;
-	padding: 10px 10px 0;
-	line-height: 1.5em;
-}
-
-.marketing_group_grid{
-	flex: 25%;
-	width: 25%;
-}
-
-.marketing_group_grid img{
-	vertical-align: middle;
-	width: 100%;
-	height: auto;
-}
-
-.marketing_group_box{
-	position: relative;
-	text-align: center;
-}
-
-.top_area{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-
-.top_col_box{
-	max-width: 400px;
-	margin: auto;
-	padding: 3em 30px;
-}
-
-.top_col_box h3{
-	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 20px;
-	font-weight: 600;
-	display: block;
-	color: #111111;
-	text-transform: capitalize;
-	letter-spacing: 1px;
-	text-align: center;
-	line-height: 1.4em;
-}
-
-.top_col_box p{
-	font-family: 'Roboto' , Arial, sans-serif;
-	font-size: 15px;
-	font-weight: normal;
-	display: block;
-	color: #696969;
-	letter-spacing: 1px;
-	text-align: center;
-	line-height: 1.5em;
-	padding: 12px 0;
-}
-
-.heading_group{
-	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
-}
-
-.title_group{
-	flex: 25%;
-	width: 25%;
-}
-
-.title_group a{
-	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 15px;
-	font-weight: 600;
-	text-transform: uppercase;
-	color: #111111;
-	letter-spacing: 1px;
-	cursor: pointer;
-	transition: 0.5s;
-	text-decoration: none;
-	text-align: center;
-	display: block;
-	padding: 15px 0;
-}
-
-.title_group a::before{
-	font-family: 'Font Awesome 5 Free';
-	content: "\f00c";
-	font-weight: 900;
-	font-size: 15px;
-	padding-right: 10px;
-	color: #111111;
-}
-
-.title_group a.active{
-	display: block;
-	color: #e53935;
-}
-
-.title_group a.active::before{
-	font-family: 'Font Awesome 5 Free';
-	content: "\f00c";
-	font-weight: 900;
-	font-size: 15px;
-	padding-right: 10px;
-	color: #e53935;
-}
-
-.area_button > a{
-	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 13px;
-	font-weight: 600;
-	letter-spacing: 1px;
-	text-align: left;
-	text-transform: uppercase;
-	display: block;
-	color: #e53935;
-	text-decoration: none;
-	width: 120px;
-	margin: 0 auto;
-	transition: 0.5s;
-    cursor: pointer;
-}
-
-.area_button > a::after{
-	content: "\203A";
-	font-size: 20px;
-	display: inline-block;
-	height: auto;
-	padding-left: 5px;
-	top: 1px;
-	position: relative;
-}
-
-.area_button > a:hover{
-	color: #111111;
-}
-
-/* --- 3.4. Marketing Area Four --- */
-.marketing_area_four{
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	min-height: 500px;
-	margin: 0 0 9em;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-	height: 100%;
-}
-
-.marketing_area_four::before {
-	content: '';
-	position: absolute;
-	z-index: 1;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: rgba(24, 25, 34, 0.6);
-}
-
-.marketing_group_four{
-	max-width: 1400px;
-	margin: 0 auto;
-	padding: 0;
-	position: relative;
-	z-index: 9999;
-}
-
-.feature_area{
-	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
-}
-
-.marketing_info_col{
-	flex: 25%;
-	width: 25%;
-	padding: 0 45px;
-	border-right: solid 1px #6f6f6f;
-	min-height: 500px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-
-.marketing_box{
-	max-width: 350px;
-	margin: auto;
-	padding: 0;
-	text-align: left;
-	background: transparent;
-}
-
-.list_num{
-	width: 75px;
-	height: 75px;
-	background-color: #ffffff;
-	border-radius: 50%;
-	display: block;
-	margin-bottom: 25px;
-}
-
-.list_num > h3 {
-	color: #e53935;
-	font-family: 'Montserrat' , Arial, sans-serif;
-	font-weight: 700;
-	font-size: 26px;
-	font-weight: normal;
-	display: block;
-	text-align: center;
-	padding-top: 24px;
-}
-
-.marketing_box h4{
-	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 20px;
-	font-weight: 600;
-	display: block;
-	color: #ffffff;
-	letter-spacing: 1px;
-	text-align: left;
-	margin-top: 0;
-	line-height: 1.4em;
-}
-
-.marketing_box p{
-	font-family: 'Roboto' , Arial, sans-serif;
-	font-size: 15px;
-	font-weight: normal;
-	display: block;
-	color: #f2f2f2;
-	letter-spacing: 1px;
-	text-align: left;
-	padding-top: 12px;
-	line-height: 1.5em;
-}
-
-.feature_border{
-	border-right: none;
-}
-
-.box_button > a{
-	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 13px;
-	font-weight: 600;
-	letter-spacing: 1px;
-	text-align: left;
-	text-transform: uppercase;
-	display: block;
-	color: #ffffff;
-	text-decoration: none;
-	width: 110px;
-	transition: 0.5s;
-    cursor: pointer;
-	margin-top: 25px;
-}
-
-.box_button > a::after{
-	content: "\203A";
-	font-size: 20px;
-	display: inline-block;
-	height: auto;
-	padding-left: 5px;
-	top: 1px;
-	position: relative;
-}
-
-.box_button > a:hover{
-	opacity: 0.6;
-}
-
-/* --- 3.5. Marketing Area Five --- */
-.marketing_area_five{
-	width: 100%;
-	margin: 0 0 9em;
-	min-height: 400px;
-	padding: 7em 25px;
-	background-color: #eeeeee;
-}
-
-.marketing_group_five{
-	max-width: 1200px;
-	width: 100%;
-	margin: 0 auto;
-	display: flex;
-	flex-wrap: wrap;
-	padding-top: 40px;
-	padding-bottom: 40px;
-}
-
-.featured_col{
-	flex: 33.33%;
-	width: 33.33%;
-	overflow: hidden;
-}
-
-.featured_image{
-	max-width: 400px;
-	position: relative;
-	text-align: center;
-	overflow: hidden;
-	margin: auto;
-	padding: 5px;
-}
-
-.featured_box{
-	position: relative;
-	overflow: hidden;
-	transition: 0.5s;
-	cursor: pointer;
-}
-
-.featured_image .featured_box > img{
-	transition: ease-in-out 1.25s;
-}
-
-.featured_image:hover .featured_box > img{
-	transform: scale(1.15);
-}
-
-.featured_image img{
-	vertical-align: middle;
-	width: 100%;
-	height: auto;
-	overflow: hidden;
-}
-
-.featured_title{
-	position: absolute;
-	bottom: 10px;
-	left: 15px;
-	text-align: left;
-}
-
-.featured_title h3{
-	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 15px;
-	font-weight: 600;
-	display: block;
-	color: #111111;
-	letter-spacing: 1px;
-	text-align: center;
-	line-height: 1.4em;
-	text-transform: uppercase;
-}
-
-.overlay{
-	position: absolute;
-	top: 10px;
-	bottom: 10px;
-	left: 10px;
-	right: 10px;
-	overflow: hidden;
-	height: calc(100% - 20px);
-	width: calc(100% - 20px);
-	opacity: 0;
-	transition: .5s ease;
-	background: #ffffff
-}
-
-.overlay .fas{
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	font-size: 20px;
-	color: #111111;
-}
-
-.featured_image:hover .overlay {
-	opacity: 1;
-}
-
-/* --- 3.6. Marketing Area Six --- */
-.marketing_area_six{
-	max-width: 1400px;
-	margin: 0 auto;
-	padding: 0 35px;
-	margin-bottom: calc(9em + 45px);
-}
-
-.marketing_group_six{
-	width: 100%;
-	padding-top: 45px;
-	padding-left: 30px;
-}
-
-.col_bg{
-	min-height: 250px;
-	height: 100%;
-	background-color: #e53935;
-}
-
-.team_full{
-	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
-}
-
-.team_first{
-	position: relative;
-	flex: 25%;
-	width: 25%;
-	transition: 0.5s;
-}
-
-.team_bg{
-	position: relative;
-	top: 30px;
-	right: 30px;
-}
-
-.team_first img{
-	vertical-align: middle;
-	width: 100%;
-	height: auto;
-	overflow: hidden;
-	display: block;
-}
-
-.team_box{
-	max-width: 350px;
-	width: 100%;
-	margin: auto;
-	text-align: center;
-	position: relative;
-}
-
-.team_overlay{
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	height: 100%;
-	width: 100%;
-	opacity: 0;
-	transition: 0.5s ease;
-	background-color: #ffffff;
-}
-
-.team_box:hover .team_overlay{
-	opacity: 1;
-}
-
-.team_info{
-	position: absolute;
-	width: 100%;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
-
-.team_icon{
-	width: 100%;
-	position: absolute;
-	bottom: 20px;
-	left: 50%;
-	transform: translateX(-50%);
-}
-
-.team_icon .fab,
-.team_icon .fa{
-	font-size: 16px;
-	color: #ffffff;
-	background-color: #e53935;
-	width: 40px;
-	height: 40px;
-	padding: 13px;
-	border-radius: 50%;
-	text-align: center;
-	display: inline-block;
-	transition: 0.5s ease;
-}
-
-.team_icon > a{
-	padding: 0 8px;
-}
-
-.team_icon .fab:hover,
-.team_icon .fa:hover{
-	background-color: #111111;
-}
-
-.team_name{
-	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 18px;
-	display: block;
-	font-weight: 600;
-	color: #111111;
-	line-height: 1.4em;
-	letter-spacing: 1px;
-	text-align: center;
-}
-
-.team_title{
-	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 14px;
-	display: block;
-	font-weight: 600;
-	color: #e53935;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	text-align: center;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	margin-top: 0;
-	line-height: 1.4em;
-}
-/* --- 3.7. Marketing Area Seven --- */
-.marketing_area_seven{
 	max-width: 1280px;
 	margin: 0 auto 9em;
 	padding: 0 25px;
-	text-align: center;
 }
 
-.marketing_group_seven{
-	position: relative;
+.marketing_group_two{
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
 }
 
-.square_col{
-	flex: 33.33%;
-	width: 33.33%;
-	padding: 0 15px;
+.photo_area{
+	max-width: 600px;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	max-height: 600px;
+}
+
+.square_col_left{
+	flex: 50%;
+	width: 50%;
+	padding: 0 20px;
+}
+
+.square_col_right{
+	flex: 50%;
+	width: 50%;
+	padding: 0 20px;
+}
+
+.photo_col{
+	flex: 50%;
+	width: 50%;
+}
+
+.center_col{
+	flex: 100%;
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+}
+
+.photo_box{
 	position: relative;
 }
 
-.client_col{
-	flex: 66.66%;
-	width: 66.66%;
-	padding: 0 15px;
+.left_content{
+	position: relative;
+	z-index: 3;
+	margin-right: -40px;
+	max-width: 290px;
+	max-height: 290px;
+	border-radius: 50%;
+}
+
+.right_content{
+	position: relative;
+	z-index: 4;
+	margin-left: -40px;
+	max-width: 290px;
+	max-height: 290px;
+	border-radius: 50%;
+}
+
+.center_content{
+	position: relative;
+	z-index: 99;
+	margin: -80px auto 0;
+	width: calc(100% - 120px);
+	max-height: 290px;
+	border-radius: 50%;
+}
+
+.photo_image{
+	max-width: 290px;
+	max-height: 290px;
+	border-radius: 50%;
+	margin: auto;
+}
+
+.center_image{
+	max-width: 290px;
+	max-height: 290px;
+	margin: auto;
+	border-radius: 50%;
+}
+
+.photo_image img{
+	width: 100%;
+	height: auto;
+	display: block;
+	border-radius: 50%;
+}
+
+.center_image img{
+	width: 100%;
+	height: auto;
+	display: block;
+	border-radius: 50%;
 }
 
 .square_area{
@@ -1238,8 +893,8 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .square_box{
-	max-width: 500px;
-	margin: 0;
+	max-width: 550px;
+	padding-right: 20px;
 }
 
 .square_box h2{
@@ -1247,104 +902,461 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	font-size: 40px;
 	font-weight: 700;
 	display: block;
-	color: #e53935;
+	color: #111111;
 	text-align: left;
 	letter-spacing: 1px;
-	line-height: 1.3em;
+	line-height: 1.2em;
 }
 
 .square_box p{
 	font-family: 'Roboto' , Arial, sans-serif;
 	font-size: 16px;
 	font-weight: normal;
+	padding-top: 15px;
 	display: block;
 	color: #696969;
 	letter-spacing: 1px;
 	text-align: left;
-	padding: 15px 0;
 	line-height: 1.5em;
+	max-width: 450px;
 }
 
-.client_details{
-	display: block;
-	max-width: 400px;
-	width: 100%;
-	margin: auto;
-	padding: 0 25px;
-	text-align: center;
-}
-
-.client_box{
-	width: 100%;
-	padding: 40px 30px;
-	text-align: center;
-	display: block;
-	background-color: #ffffff;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
-	margin: 14px 0;
-}
-
-.client_info_left{
-	float: left;
-	width: auto;
-}
-
-.client_info_right{
-	float: left;
-	width: auto;
-	padding-left: 10px;
-}
-
-.client_info img{
-	max-width: 80px;
-	height: 80px;
-	margin: auto;
-	border-radius: 50%;
-	display: block;
-	text-align: center;
-	margin-bottom: 14px;
-}
-
-.client_name{
+.square_list > ul > li{
 	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 16px;
+	font-size: 14px;
 	font-weight: 600;
 	display: block;
 	color: #111111;
 	letter-spacing: 1px;
 	text-align: left;
-	text-transform: capitalize;
+	padding: 20px 0;
 }
 
-.client_comment{
-	display: block;
-	clear: both;
+.square_list > ul > li::first-letter{
+	background-color: #e53935;
+	padding: 12px 14px;
+	color: #ffffff;
+	margin-right: 4px;
 }
 
-.client_title{
+.square_col_button a{
+	background-color: #e53935;
+	width: 150px;
+	margin: 35px 0 0;
+    color: #ffffff;
+    padding: 13px 14px;
+    text-decoration: none;
+	text-transform: uppercase;
+    display: inline-block;
+    font-size: 13px;
+	font-weight: 600;
+	font-family: 'Montserrat', Arial, sans-serif;
+    transition: 0.5s;
+	border: 1px solid #e53935;
+	letter-spacing: 1px;
+	text-align: center;
+	border-radius: 5px;
+}
+
+.square_col_button a:hover{
+	color: #111111;
+	background-color: #ffffff;
+	border-color: #111111;
+}
+
+/* --- 3.3. Marketing Area Three --- */
+.marketing_area_three{
+	min-height: 400px;
+	padding: 6em 25px;
+	background-color: #eeeeee;
+	margin-bottom: 9em;
+}
+
+.marketing_group_three{
+	max-width: 1200px;
+	margin: 0 auto;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	padding-bottom: 25px;
+}
+
+.icon_col{
+	flex: 25%;
+	width: 25%;
+	padding: 40px 25px 0;
+}
+
+.icon_box{
+	max-width: 250px;
+	margin: auto;
+	text-align: center;
+	padding-top: 15px;
+	background-color: #ffffff;
+}
+
+.icon_content{
+	width: 100%;
+	background-color: #ffffff;
+	padding: 0 0 20px;
+	text-align: center;
+	transition: ease-in-out 0.5s;
+	margin-top: -20px;
+}
+
+.icon_symbol .material-symbols-outlined.icon-80{
+	font-size: 80px;
+	font-weight: 100;
+	color: #e53935;
+	display: inline-block;
+	text-align: center;
+	transition: ease-in-out 0.5s;
+}
+
+.icon_content h3{
 	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 14px;
+	font-size: 18px;
 	font-weight: 600;
 	display: block;
-	color: #e53935;
+	color: #111111;
 	letter-spacing: 1px;
-	text-align: left;
-	text-transform: uppercase;
+	text-align: center;
+	line-height: 1.4em;
 }
 
-.client_comment q{
+.icon_content p{
 	font-family: 'Roboto' , Arial, sans-serif;
 	font-size: 15px;
 	font-weight: normal;
 	display: block;
 	color: #696969;
 	letter-spacing: 1px;
-	text-align: left;
-	max-width: 450px;
-	margin: auto;
+	text-align: center;
+	line-height: 1.5em;
+	padding: 8px 12px;
 }
 
-.client_col .slick-dots {
+.icon_button a{
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 13px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	text-align: center;
+	text-transform: uppercase;
+	display: inline-block;
+	color: #e53935;
+	text-decoration: none;
+	max-width: 105px;
+	margin: 0 auto;
+	transition: 0.5s;
+}
+
+.icon_button a::after{
+	content: "\203A";
+	position: relative;
+	top: 1px;
+	font-size: 20px;
+	display: inline-block;
+	padding-left: 5px;
+}
+
+.icon_button a:hover{
+	color: #111111;
+}
+
+/* --- 3.4. Marketing Area Four --- */
+.marketing_area_four{
+	max-width: 1280px;
+	margin: 0 auto 9em;
+	padding: 0 25px;
+	position: relative;
+}
+
+.marketing_group_four{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	padding-top: 15px;
+}
+
+.marketing_group_info{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 15px;
+}
+
+.info_head{
+	flex: 58.33%;
+	width: 58.33%;
+}
+
+.info_content{
+	flex: 41.66%;
+	width: 41.66%;
+	margin-top: 15px;
+}
+
+.info_head h2{
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 40px;
+	font-weight: 700;
+	display: block;
+	color: #111111;
+	text-align: left;
+	letter-spacing: 1px;
+	line-height: 1.2em;
+	max-width: 500px;
+}
+
+.info_content p{
+	font-family: 'Roboto' , Arial, sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	display: block;
+	color: #696969;
+	letter-spacing: 1px;
+	text-align: left;
+	line-height: 1.5em;
+	max-width: 450px;
+}
+
+.portfolio_col{
+	position: relative;
+	flex: 33.33%;
+	width: 33.33%;
+	max-width: 400px;
+	margin: 0 auto;
+}
+
+.portfolio_box{
+	position: relative;
+	display: block;
+	padding: 10px;
+}
+
+.portfolio_image{
+	position: relative;
+	text-align: center;
+	overflow: hidden;
+	transition: 0.5s;
+}
+
+.portfolio_image img{
+	width: 100%;
+	height: auto;
+}
+
+.portfolio_image > a > img{
+	transition: ease-in-out 3.25s;
+}
+
+.portfolio_image > a > img:hover{
+	transform: scale(1.15);
+}
+
+.portfolio_content{
+	position: absolute;
+	bottom: 25px;
+	left: 50%;
+	transform: translateX(-50%);
+	transition: 0.5s;
+	opacity: 0;
+	background-color: #ffffff;
+	padding: 25px 15px;
+	min-width: 250px;
+	max-width: 400px;
+}
+
+.portfolio_box:hover .portfolio_image .portfolio_content{
+	opacity: 1;
+}
+
+.portfolio_content h3{
+	font-family: 'Montserrat', Arial, sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	display: block;
+	color: #111111;
+	letter-spacing: 1px;
+	text-align: center;
+	line-height: 1.4em;
+	margin-top: 0;
+}
+
+.portfolio_content a{
+    color: #e53935;
+    text-decoration: none;
+	text-transform: uppercase;
+    display: inline-block;
+    font-size: 12px;
+	font-weight: 600;
+	font-family: 'Montserrat', Arial, sans-serif;
+    transition: 0.5s;
+	letter-spacing: 1px;
+	text-align: center;
+}
+
+.portfolio_content a:hover{
+	color: #111111;
+}
+
+#filtergroup{
+	width: auto;
+	text-align: center;
+	padding-bottom: 15px;
+}
+
+.filtertitle{
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	text-align: center;
+	padding: 0 7px;
+	color: #111111;
+	cursor: pointer;
+	display: inline-block;
+	transition: 0.5s;
+}
+
+.filtertitle::first-letter{
+	color: #e53935;
+}
+
+.filtertitle::after{
+	content: '';
+	display: block;
+    width: 30px;
+    height: 2px;
+    background: #e53935;
+    transition: width .5s;
+}
+
+.filtertitle:hover{
+	color: #e53935;
+}
+
+.filtertitle.active:hover::after {
+    width: 100%;
+	background-color: #e53935;
+}
+
+/* --- 3.5. Marketing Area Five --- */
+.marketing_area_five{
+	position: relative;
+	min-height: 475px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.marketing_area_five::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.6);
+}
+
+/* --- 3.6. Marketing Area Six --- */
+.marketing_area_six{
+	position: relative;
+	z-index: 1;
+	max-width: 1200px;
+	margin: -350px auto 9em;
+	padding: 0 25px;
+}
+
+.marketing_group_six{
+	width: 100%;
+	padding: 40px 10px 0;
+	background-color: #ffffff;
+	margin: 40px 0;
+	border-left: solid 5px #e53935;
+}
+
+.client_col{
+	padding: 0 25px
+}
+
+.client_comment p{
+	font-family: 'Montserrat', Arial, sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	display: inline-block;
+	color: #696969;
+	letter-spacing: 1px;
+	text-align: center;
+	line-height: 1.5em;
+}
+
+.client_comment p::before{
+	content: '\275D';
+	position: relative;
+	top: 10px;
+	padding-right: 5px;
+	font-size: 45px;
+	color: #e53935;
+}
+
+.client_info{
+	margin: 30px auto 0;
+	box-shadow: 0 20px 70px rgba(38,42,76,.2);
+	background-color: #ffffff;
+	padding: 30px;
+	max-width: 250px;
+}
+
+.client_info img{
+	max-width: 90px;
+	height: 90px;
+	margin: auto;
+	border-radius: 50%;
+	display: block;
+	text-align: center;
+}
+
+.client_name{
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 18px;
+	font-weight: 600;
+	display: block;
+	color: #111111;
+	letter-spacing: 1px;
+	text-align: center;
+	line-height: 1.4em;
+}
+
+.client_title{
+	font-family: 'Montserrat', Arial, sans-serif;
+	font-size: 14px;
+	font-weight: 600;
+	display: block;
+	color: #e53935;
+	letter-spacing: 1px;
+	text-align: center;
+	text-transform: uppercase;
+	line-height: 1.4em;
+	margin: 0;
+}
+
+.client_icon{
+	display: block;
+	text-align: center;
+	padding-top: 8px;
+}
+
+.client_icon .material-symbols-outlined.icon-25{
+	font-size: 25px;
+	font-weight: 300;
+	color: #e53935;
+	display: inline-block;
+	text-align: center;
+}
+
+.slick-dots {
 	position: relative;
 	z-index: 999999;
 	left: 50%;
@@ -1352,64 +1364,102 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	display: flex;
 	justify-content: center;
 	margin: 0;
-	padding: 1.5rem 0 0;
+	padding: 1rem 0;
 	list-style-type: none;
 }
 
-.client_col .slick-dots button{
+.slick-dots button{
 	display: block;
 	width: 1.3rem;
 	height: 1.3rem;
 	padding: 0;		
-	border: solid 1px #111111;
+	border: solid 1px #6f6f6f;
 	border-radius: 100%;
 	background-color: transparent;
 	text-indent: -9999px;
 }
 
-.client_col li.slick-active button{
-	background-color: #111111;
+li.slick-active button{
+	background-color: #e53935;
 }
 
-.client_col .slick-dots button:hover{
-	background-color: #111111;
+.slick-dots button:hover{
+	background-color: #e53935;
 }
 
-.client_col .slick-dots li{
-	margin: 16px 0.40rem 0;
+.slick-dots li{
+	margin: 22px 4px 0 4px;
 }
 
-/* --- 3.8. Marketing Area Eight --- */
-.marketing_area_eight{
-	width: 100%;
-	margin: 0 0 9em;
-	min-height: 400px;
-	padding: 7em 25px;
-	background-color: #eeeeee;
+.marketing_area_six .slick-list{
+	overflow: visible;
 }
 
-.marketing_group_eight{
+/* --- 3.7. Marketing Area Seven --- */
+.marketing_area_seven{
 	max-width: 1280px;
+	margin: 0 auto 9em;
+	padding: 0 25px;
+}
+
+.marketing_group_seven{
 	width: 100%;
-	margin: 0 auto;
-	display: flex;
+	display: flex; 
 	flex-wrap: wrap;
-	padding-bottom: 40px;
+}
+
+.blog_head{
+	flex: 58.33%;
+	width: 58.33%;
+	padding: 0 20px;
+}
+
+.blog_info{
+	flex: 41.66%;
+	width: 41.66%;
+	padding: 0 20px;
+	margin-top: 20px;
+}
+
+.blog_head h2{
+	max-width: 500px;
+	color: #111111;
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 40px;
+	font-weight: 700;
+	display: block;
+	text-align: left;
+	letter-spacing: 1px;
+	line-height: 1.2em;
+}
+
+.blog_info p{
+	max-width: 450px;
+	font-family: 'Roboto' , Arial, sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	display: block;
+	color: #696969;
+	letter-spacing: 1px;
+	text-align: left;
+	line-height: 1.5em;
 }
 
 .blog_col{
 	flex: 33.33%;
 	width: 33.33%;
-	padding: 40px 20px 0;
+	padding: 30px 20px 0;
 }
 
 .blog_box{
 	max-width: 400px;
 	position: relative;
-	text-align: left;
-	overflow: hidden;
-	margin: auto;
-	min-height: 150px;
+	text-align: center;
+}
+
+.blog_area{
+	position: relative;
+	border-radius: 10px;
 }
 
 .blog_image{
@@ -1417,38 +1467,22 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	position: relative;
 }
 
-.blog_area{
-	overflow: hidden;
-	position: relative;
-	padding-bottom: 12px;
-	padding-right: 12px;
-	padding-top: 12px;
-	padding-left: 12px;
-	background-color: #ffffff;
-}
-
-.blog_content{
-	text-align: left;
-	padding: 20px 0;
-	padding-left: 15px;
-}
-
 .date_info{
 	position: absolute;
-	bottom: 0;
+	bottom: -40px;
 	left: 0;
+	z-index: 999;
 	margin-left: 15px;
-	margin-bottom: 15px;
-	background-color: #ffffff;
-	padding: 8px 20px;
+	background-color: #e53935;
+	padding: 12px 24px;
 }
 
 .date_info h4{
 	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 13px;
+	font-size: 15px;
 	display: block;
 	font-weight: 600;
-	color: #e53935;
+	color: #ffffff;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	text-align: center;
@@ -1459,10 +1493,17 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	margin-bottom: 4px;
 }
 
-.blog_col img{
-	vertical-align: middle;
+.blog_content{
+	text-align: left;
+	padding: 20px 0 20px;
+	padding-left: 20px;
+	box-shadow: 0 20px 70px rgba(38,42,76,.2);
+}
+
+.blog_image img{
 	width: 100%;
 	height: auto;
+	display: block;
 }
 
 .blog_image > a > img{
@@ -1484,28 +1525,12 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	text-decoration: none;
 	transition: 0.5s;
 	line-height: 1.4em;
-}
-
-a.blog_btn:hover,
-.blog_title a:hover{
-	opacity: 0.6;
-}
-
-.blog_content p{
-	font-family: 'Roboto' , Arial, sans-serif;
-	font-size: 15px;
-	font-weight: normal;
-	display: block;
-	color: #696969;
-	letter-spacing: 1px;
-	text-align: left;
-	padding: 10px 0;
-	line-height: 1.5em;
+	padding-top: 15px;
 }
 
 a.blog_btn{
-	max-width: 120px;	
-    color: #111111;
+	max-width: 110px;	
+    color: #e53935;
     text-decoration: none;
 	text-transform: uppercase;
     display: inline-block;
@@ -1513,43 +1538,151 @@ a.blog_btn{
 	font-weight: 600;
 	font-family: 'Montserrat', Arial, sans-serif;
     transition: 0.5s;
-    cursor: pointer;
 	letter-spacing: 1px;
-	text-align: center;
-	line-height: 1.2em;
-	padding-bottom: 3px;
+	text-align: left;
 }
 
 a.blog_btn::after{
 	content: "\203A";
+	position: relative;
+	top: 1px;
 	font-size: 20px;
 	display: inline-block;
-	height: auto;
 	padding-left: 5px;
-	top: 1px;
-	position: relative;
 }
 
-/* --- 3.9. Marketing Area Nine --- */
-.marketing_area_nine{
+.blog_title a:hover{
+	color: #e53935;
+}
+
+a.blog_btn:hover{
+	color: #111111;
+}
+
+/* --- 3.8. Marketing Area Eight --- */
+.marketing_area_eight{
 	position: relative;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	min-height: 350px;
+	min-height: 375px;
+	padding: 5em 0 8em;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.marketing_area_eight::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
 	height: 100%;
-	background-color: #e53935;
-	padding: 3em 0;
-	margin-bottom: 2em;
+	background: rgba(0, 0, 0, 0.6);
+}
+
+.marketing_group_eight{
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.count_col{
+	flex: 25%;
+	width: 25%;
+	padding: 25px 20px;
+}
+
+.count_box{
+	max-width: 320px;
+	margin: 0 auto;
+	width: 100%;
+	position: relative;
+}
+
+.count_num{
+	width: 140px;
+	height: 140px;
+	background-color: #ffffff;
+	box-shadow: 0 20px 70px rgba(38,42,76,.2);
+	padding: 15px;
+	overflow: hidden;
+	text-align: center;
+}
+
+.count_center{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.counter{
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 60px;
+	font-weight: 800;
+	display: inline-block;
+	text-align: left;
+	color: #111111;
+	letter-spacing: 1px;
+	line-height: 1.2em;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+.counter.letter::after{
+	content:'k';
+	font-size: 50px;
+	color: #e53935;
+}
+
+.count_info{
+	padding-top: 15px;
+}
+
+.count_info h3{
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 18px;
+	font-weight: 600;
+	display: block;
+	text-align: center;
+	color: #ffffff;
+	letter-spacing: 1px;
+	line-height: 1.4em;
+	margin: 0;
+}
+
+.count_crumb{
+	width: 50px;
+	height: 1px;
+	margin: auto;
+	border-bottom: double 5px #e53935;
+	margin-top: 8px;
+}
+
+/* --- 3.9. Marketing Area Nine --- */
+.marketing_area_nine{
+	max-width: 1100px;
+	width: calc(100% - 50px);
+	margin: -7em auto 2em;
+	padding: 40px 25px;
+	position: relative;
+	z-index: 999;
+	box-shadow: 0 20px 70px rgba(38,42,76,.2);
+	background-color: #ffffff;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .marketing_group_nine{
-	position: relative;
-	z-index: 5;
-	padding: 0 25px;
-	max-width: 1200px;
-	margin: auto;
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
@@ -1574,36 +1707,41 @@ a.blog_btn::after{
 	font-family: 'Montserrat' , Arial, sans-serif;
 	font-size: 30px;
 	display: block;
-	font-weight: 500;
-	color: #ffffff;
+	font-weight: 700;
+	color: #111111;
 	letter-spacing: 1px;
 	text-align: center;
 	line-height: 1.3em;
-	max-width: 600px;
+	max-width: 650px;
 	margin: auto;
 }
 
 .col_info input[type="email"]{
 	font-family: 'Montserrat' , Arial, sans-serif;
 	font-size: 13px;
-	color: #333333;
 	display: inline-block;
-	font-weight: 600;
+	font-weight: normal;
 	letter-spacing: 1px;
 	height: 40px;
 	vertical-align: middle;
 	padding: 20px;
 	width: 350px;
 	background-color: #ffffff;
+	box-shadow: 0 20px 70px rgba(38,42,76,.2);
 	border: none;
-	margin-right: -4px;
+	margin-right: 4px;
+}
+
+.col_info input[type="email"]::placeholder{
+	color: #333333;
+	opacity: 1;
 }
 
 .col_info input[type="submit"]{
 	text-align: center;
 	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 15px;
-	font-weight: 500;
+	font-size: 14px;
+	font-weight: 600;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	border: none;
@@ -1612,16 +1750,16 @@ a.blog_btn::after{
 	width: 130px;
 	color: #ffffff;
 	margin: 0;
-	border-radius: 0;
+	border-radius: 5px;
 	transition: 0.5s;
-	background-color: #111111;
-	border: solid 1px #111111;
+	background-color: #e53935;
+	border: solid 1px #e53935;
 }
 
 .col_info input[type="submit"]:hover{
 	background: transparent;
-	color: #ffffff;
-	border-color: #ffffff;
+	color: #111111;
+	border-color: #111111;
 }
 
 /* 4. FOOTER
@@ -1635,7 +1773,7 @@ a.blog_btn::after{
 }
 
 .footer_area{
-	max-width: 1200px;
+	max-width: 1280px;
 	margin: 0 auto;
 	padding: 0 25px;
 	display: flex;
@@ -1654,10 +1792,12 @@ a.blog_btn::after{
 	padding-top: 3.5em;
 }
 
-a.footer-brand img{
-	max-width: 200px;
+a.footer-logo img{
+	max-width: 150px;
 	height: auto;
-	display: block;
+	display: inline-block;
+	margin-top: 12px;
+	margin-bottom: 10px;
 }
 
 .footer_box > h3 > a{
@@ -1674,7 +1814,7 @@ a.footer-brand img{
 .footer_box > p{
 	font-family: 'Montserrat', Arial, sans-serif;
 	font-size: 14px;
-	font-weight: normal;
+	font-weight: 500;
 	letter-spacing: 1px;
 	color: #111111;
 	text-align: left;
@@ -1686,26 +1826,21 @@ a.footer-brand img{
 	margin: 12px 0;
 }
 
-.footer_social .fab,
-.footer_social .fa{
+.footer_social > a > .fab,
+.footer_social > a > .fa{
 	font-size: 16px;
 	color: #111111;
 	text-align: left;
+	transition: 0.5s;
 }
 
 .footer_social > a{
 	padding-right: 12px;
 }
 
-.footer_social > a:hover{
-	opacity: 0.6;
-}
-
-.final{
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	align-items: center;
+.footer_social > a > .fab:hover,
+.footer_social > a > .fa:hover{
+	color: #e53935;
 }
 
 .footer_col > h4{
@@ -1713,7 +1848,6 @@ a.footer-brand img{
 	font-size: 18px;
 	font-weight: 700;
 	letter-spacing: 1px;
-	text-transform: capitalize;
 	color: #111111;
 }
 
@@ -1724,7 +1858,7 @@ a.footer-brand img{
 .footer_col > ul > li a{
 	font-family: 'Montserrat', Arial, sans-serif;
 	font-size: 13px;
-	font-weight: normal;
+	font-weight: 500;
 	letter-spacing: 1px;
 	text-decoration: none;
 	color: #111111;
@@ -1733,7 +1867,7 @@ a.footer-brand img{
 }
 
 .footer_col > ul > li a:hover{
-	opacity: 0.6;
+	color: #e53935;
 }
 
 .right_list{
@@ -1749,14 +1883,14 @@ a.footer-brand img{
 }
 
 .left_blog{
-	flex: 25%;
-	width: 25%;
+	flex: 33.33%;
+	width: 33.33%;
 	padding-bottom: 10px;
 }
 
 .right_blog{
-	flex: 75%;
-	width: 75%;
+	flex: 66.66%;
+	width: 66.66%;
 	max-width: 290px;
 	padding-bottom: 15px;
 	padding-left: 14px;
@@ -1767,7 +1901,6 @@ a.footer-brand img{
 	vertical-align: middle;
 	width: 100%;
 	max-width: 100px;
-	transition: .5s;
 }
 
 .details{
@@ -1781,7 +1914,7 @@ a.footer-brand img{
 .details p{
 	font-family: 'Montserrat', Arial, sans-serif;
 	font-size: 13px;
-	font-weight: normal;
+	font-weight: 500;
 	letter-spacing: 1px;
 	color: #111111;
 	text-align: center;
@@ -1790,51 +1923,8 @@ a.footer-brand img{
 /* 5. RESPONSIVE
  ----------- */
 @media only screen and (max-width: 1024px){
-	.icon_col{
-		flex: 50%;
-		width: 50%;
-		margin-bottom: 35px;
-	}
-	
-	.marketing_group_grid{
-		flex: 50%;
-		width: 50%;
-	}
-	
-	.title_group{
-		flex: 50%;
-		width: 50%;
-	}
-	
-	.marketing_info_col{
-		flex: 50%;
-		width: 50%;
-		min-height: 400px;
-	}
-	
-	.marketing_area_six{
-		max-width: 700px;
-	}
-	
-	.team_first{
-		flex: 50%;
-		width: 50%;
-	}
-	
-	.square_col{
-		flex: 100%;
-		width: 100%;
-	}
-	
-	.client_col{
-		flex: 100%;
-		width: 100%;
-		margin-top: 25px;
-	}
-	
-	.blog_col{
-		flex: 50%;
-		width: 50%;
+	.portfolio_col{
+		max-width: 300px;
 	}
 }
 
@@ -1843,6 +1933,8 @@ a.footer-brand img{
         background: transparent;
         color: #111111;
 		font-size: 25px;
+		margin-top: 7px;
+		margin-bottom: 12px;
 	}
 	
 	.head_btn{	
@@ -1852,8 +1944,12 @@ a.footer-brand img{
 		transform: translateX(-50%);
 	}
 	
-	.navbar-header a.navbar-brand{
-		padding-top: 22px;
+	.navbar-header > a{
+		margin-top: 14px;
+	}
+	
+	#nav-logo > a{
+		top: 19px;
 	}
 	
 	nav.navbar.bootsnav ul.nav > li > a{
@@ -1916,41 +2012,77 @@ a.footer-brand img{
 	.attr-nav > ul > li > a{
 		position: relative;
 		left: 0;
-		padding-top: 25px;
+		padding-top: 21px;
 	}
 	
-	.slide__content{
-		max-width: 650px;
-		margin: auto;
-		height: auto;
-	}
-
 	.slide__left{
 		flex: 100%;
 		width: 100%;
-		margin-top: 0;
-		margin-bottom: 40px;
-		padding: 0;
-		margin-top: 45px;
 	}
 	
 	.slide__right{
 		flex: 100%;
 		width: 100%;
-		margin-bottom: 45px;
 	}
 	
 	.slidenav{
-		margin-bottom: -90px;
+		margin-bottom: -130px;
 	}
 	
-	.featured_col{
+	.num_col{
 		flex: 50%;
 		width: 50%;
 	}
 	
-	.client_details{
-		padding: 0 15px;
+	.square_col_left{
+		flex: 100%;
+		width: 100%;
+		margin-bottom: 50px;
+	}
+	
+	.square_col_right{
+		flex: 100%;
+		width: 100%;
+	}
+	
+	.icon_col{
+		flex: 50%;
+		width: 50%;
+	}
+	
+	.info_head{
+		flex: 100%;
+		width: 100%;
+	}
+	
+	.info_content{
+		flex: 100%;
+		width: 100%;
+	}
+	
+	.portfolio_col{
+		flex: 50%;
+		width: 50%;
+	}
+	
+	.blog_col{
+		flex: 50%;
+		width: 50%;
+	}
+	
+	.blog_head{
+		flex: 100%;
+		width: 100%;
+	}
+	
+	.blog_info{
+		flex: 100%;
+		width: 100%;
+	}
+	
+	.count_col{
+		flex: 50%;
+		width: 50%;
 	}
 	
 	.footer_col{
@@ -1960,41 +2092,49 @@ a.footer-brand img{
 }
 
 @media only screen and (max-width: 600px){
-	.slide__right{
-		margin-left: 25px;
-	}
-	
-	.slidecol,
-	.slide__content,
-	.slide__right_inner{
-		min-height: 400px;
-	}
-	
-	.slide__right_inner{
-		top: 25px;
-		right: 25px;
-	}
-	
 	.slide__box h2{
 		font-size: 30px;
 	}
 	
-	.slidenav{
-		margin-bottom: -50px;
-	}
-	
 	.marketing_head,
 	.square_box h2,
-	.bg_head{
+	.info_head h2,
+	.bg_head,
+	.blog_head h2{
 		font-size: 30px;
 	}
 	
-	.marketing_group_grid{
-		flex: 100%;
-		width: 100%;
+	.slide__left,
+	.square_col_left,
+	.square_col_right,
+	.square_box,
+	.blog_head,
+	.blog_info{
+		padding-left: 0;
+		padding-right: 0;
 	}
 	
-	.title_group{
+	.slide_info{
+		max-width: 400px;
+		max-height: 400px;
+	}
+	
+	.right_color_box{
+		width: 300px;
+		height: 300px;
+	}
+	
+	.slide_center{
+		width: 200px;
+		height: 200px;
+	}
+	
+	.slide_photo{
+		width: 180px;
+		height: 180px;
+	}
+	
+	.num_col{
 		flex: 100%;
 		width: 100%;
 	}
@@ -2004,27 +2144,17 @@ a.footer-brand img{
 		width: 100%;
 	}
 	
-	.marketing_info_col{
-		flex: 100%;
-		width: 100%;
-		min-height: 350px;
-	}
-	
-	.featured_col{
-		flex: 100%;
-		width: 100%;
-	}
-	
-	.marketing_area_six{
-		max-width: 400px;
-	}
-	
-	.team_first{
+	.portfolio_col{
 		flex: 100%;
 		width: 100%;
 	}
 	
 	.blog_col{
+		flex: 100%;
+		width: 100%;
+	}
+	
+	.count_col{
 		flex: 100%;
 		width: 100%;
 	}
@@ -2059,57 +2189,56 @@ a.footer-brand img{
 }
 
 @media only screen and (max-width: 420px){
-	.icon_col,
-	.square_col,
-	.client_col,
+	.portfolio_box,
 	.blog_col{
 		padding-left: 0;
 		padding-right: 0;
 	}
 	
-	.client_details{
-		padding: 0 10px;
+	.slide_info{
+		max-width: 350px;
+		max-height: 350px;
 	}
 	
-	.featured_image{
-		padding-left: 0;
-		padding-right: 0;
+	.slide_center{
+		width: 180px;
+		height: 180px;
+	}
+	
+	.client_col{
+		padding: 0 15px;
+	}
+	
+	.slide_photo{
+		width: 160px;
+		height: 160px;
 	}
 }
 
 @media only screen and (max-width: 375px){
-	.client_info img{
-		width: 70px;
-		height: 70px;
+	.right_color_box{
+		width: 250px;
+		height: 250px;
 	}
 	
-	.client_box{
-		padding: 30px 15px;
-	}
-}
-
-@media only screen and (max-width: 360px){
-	.top_col_box{
-		padding: 3em 15px;
+	.slide_center{
+		width: 150px;
+		height: 150px;
 	}
 	
-	.marketing_area_six{
-		padding: 0 20px;
+	.slide_photo{
+		width: 130px;
+		height: 130px;
 	}
 }
 
 @media only screen and (max-width: 320px){
-	.slidecol,
-	.slide__content,
-	.slide__right_inner{
-		min-height: 300px;
-	}
-	
-	.marketing_info_col{
-		padding: 0 30px;
-	}
-	
 	.col_head h3{
 		font-size: 20px;
+	}
+	
+	.right_color_box{
+		width: 220px;
+		height: 220px;
 	}
 }
