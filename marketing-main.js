@@ -1,7 +1,8 @@
 "use strict";
 //Slick Slider (1) One
 $(document).ready(function(){
-	$('.slickslide').slick({
+	$('.feature_slider').slick({
+		slidesToShow: 1,
 		autoplay: true,
 		infinite: true,
 		autoplaySpeed: 5000,
@@ -11,71 +12,67 @@ $(document).ready(function(){
 		nextArrow: '.next_slide',
 		pauseOnHover: false,
 		pauseOnFocus: false,
-                dots: false,
-                swipe: false
+		dots: false,
 	});
 });
 
 //Slick Slider (2) Two
 $(document).ready(function(){
-	$('.marketing_slider').slick({
-		dots: false,
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		arrows: false,
+	$('.client_slider').slick({
+		slidesToShow: 3,
 		autoplay: false,
-		fade: true,
-		adaptiveHeight: true,
+		infinite: true,
 		speed: 1000,
-		pauseOnHover: false,
-		pauseOnFocus: false,		
-	});
-	
-	$('.marketing_slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
-		$('.title_group a.active').removeClass('active');
-			$('.title_group a').eq(nextSlide).addClass('active');
-	});
-  
-	$('.title_group a').on('click', function(e){
-		e.preventDefault();
-		$('.title_group a.active').removeClass('active');
-		$(this).addClass('active');
-		var targetSlide = $(this).data('target');
-		$('.marketing_slider').slick('slickGoTo', targetSlide );
-	});
-});
-
-//Slick Slider (3) Three
-$(document).ready(function(){
-	$('.client-slider').slick({
+		arrows: false,
 		dots: true,
-		slidesToShow: 2,
-		slidesToScroll: 1,
-		arrows: false,
-		autoplay: false,
-		speed: 1000,
 		pauseOnHover: false,
 		pauseOnFocus: false,
 		responsive: [
 			{
-				breakpoint: 769,
+				breakpoint: 993,
 				settings: {
 					slidesToShow: 1,
-       
-				}		
+					fade: true
+				}			
 			},
-		]	
+		]
 	});
 });
 
 //MagnificPopup Gallery
-$('.featured_col').magnificPopup({
+$('.image_box').magnificPopup({
 	delegate: 'a',
 	type: 'image',
 	gallery: {
 		enabled: true
 	},
 });
+
+//Counter Script
+jQuery(document).ready(function($) {
+    $('.counter').counterUp({
+        delay: 10,
+        time: 2000
+    });
+});
+
+//Filter Gallery
+jQuery(document).ready(function($) {
+	$('.filter-container').filterizr({
+		
+	});
+});
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("filtergroup");
+var btns = btnContainer.getElementsByClassName("filtertitle");
+for (var i = 0; i < btns.length; i++) {
+	btns[i].addEventListener("click", function(){
+		var current = document.getElementsByClassName("active");
+		current[0].className = current[0].className.replace(" active", "");
+		this.className += " active";
+	});
+}
 
 //Animate on Scroll default settings
 $(window).on('load', function () {
