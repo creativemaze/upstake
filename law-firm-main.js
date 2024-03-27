@@ -1,7 +1,7 @@
 "use strict";
 //Slick Slider (1) One
 $(document).ready(function(){
-	$('.slickslide').slick({
+	$('.border_slider').slick({
 		slidesToShow: 3,
 		autoplay: false,
 		infinite: true,
@@ -12,13 +12,12 @@ $(document).ready(function(){
 		pauseOnFocus: false,
 		responsive: [
 			{
-				breakpoint:601,
+				breakpoint: 601,
 				settings: {
 					slidesToShow: 1,
 					dots: true,
 					fade: true
-				}
-						
+				}			
 			},
 		]
 	});
@@ -32,13 +31,13 @@ $(document).ready(function(){
 		dots: false,
 		slidesToShow: 3,
 		slidesToScroll: 1,
-		autoplay: false,
+		autoplay: true,
 		speed: 1000,
 		pauseOnHover: false,
 		pauseOnFocus: false,
 		responsive: [
 			{
-				breakpoint: 1025,
+				breakpoint: 993,
 				settings: {
 					slidesToShow: 2,
        
@@ -55,6 +54,14 @@ $(document).ready(function(){
 		
 	});
 	
+});
+
+//Counter Script
+jQuery(document).ready(function($) {
+    $('.counter').counterUp({
+        delay: 10,
+        time: 2000
+    });
 });
 
 //Animate on Scroll default settings
