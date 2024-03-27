@@ -1741,7 +1741,7 @@ a.blog_btn:hover{
 .law_area_ten{
 	max-width: 1200px;
 	width: calc(100% - 50px);
-	margin: -90px auto 7em;
+	margin: -90px auto 9em;
 	position: relative;
 	z-index: 999;
 	background-color: #999966;
