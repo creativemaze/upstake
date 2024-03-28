@@ -1,5 +1,5 @@
 "use strict";
-//Slick Slider
+//Slick Slider (1) One
 $(document).ready(function(){
 	$('.square_slider').slick({
 		autoplay: false,
@@ -16,6 +16,7 @@ $(document).ready(function(){
 	});
 });
 
+//Slick Slider (2) Two
 $(document).ready(function(){
 	$('.client-slider').slick({
 		dots: true,
@@ -48,7 +49,7 @@ $('.featured_image').magnificPopup({
 	},
 });
 
-//MagnificPopup Lightbox Footer Gallery
+//MagnificPopup Lightbox Gallery
 $('.footer_grid').magnificPopup({
 	delegate: 'a',
 	type: 'image',
