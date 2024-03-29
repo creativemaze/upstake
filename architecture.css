@@ -321,10 +321,11 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .right_info > a .fab{
 	padding-right: 14px;
+	transition: 0.5s;
 }
 
 .right_info > a > .fab:hover{
-	color: #556270;
+	color: #dddddd;
 }
 
 .sub_width{
@@ -2199,8 +2200,9 @@ a.footer-logo img{
 	padding-right: 12px;
 }
 
-.footer_social > a:hover{
-	color: #556270;
+.footer_social > a > .fab:hover,
+.footer_social > a > .fa:hover{
+	color: #dddddd;
 }
 
 .footer_col > h4{
@@ -2227,7 +2229,7 @@ a.footer-logo img{
 }
 
 .footer_col > ul > li a:hover{
-	color: #556270;
+	color: #dddddd;
 }
 
 .footer_inner{
