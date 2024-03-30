@@ -8,7 +8,8 @@
 	<meta name="description" content="">
 	<meta name="keywords" content="restaurant,food,menu,dining,order,lunch,dinner,breakfast">
 	
-	<title>Upstake | Restaurant</title>
+	<title>Upstake | Restaurant - Multipurpose Business Template</title>
+	<link rel="icon" type="image/x-icon" href="favicon.png">
 	
 	<!-- ============== Style Sheet ============== -->
 	<link href="bootsnav.css" rel="stylesheet">
@@ -22,7 +23,7 @@
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,400,500,600,700,800,900" rel='stylesheet'>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,400,500,600,700,800,900" rel='stylesheet'>
-	<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0,-50..200" rel="stylesheet">
 	
 </head>
 <body>
@@ -87,8 +88,8 @@
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-menu" aria-expanded="false">
 					<i class="fa fa-bars"></i>
 				</button>
-				<a class="navbar-brand" href="https://upstake-html.netlify.app/landing-page">Upstake</a>
-				<!--<a class="navbar-brand" href="https://upstake-html.netlify.app/landing-page"><img src="logo-white-five.png" class="logo" alt=""></a>-->
+				<!--<a href="https://upstake-html.netlify.app/landing-page">Upstake</a>-->
+				<div id="nav-logo"><a href="https://upstake-html.netlify.app/landing-page"><img src="black-logo.png" alt=""></a></div>
 			</div>
 			<!-- End Header Navigation -->
 
@@ -274,7 +275,7 @@
 	
 	<div class="sliderwrap">
 	
-		<div class="slidearea slickslide">
+		<div class="slidearea slickslider">
 		
 			<div class="slide__content" style="background-image: url('jakub-kapusnak-sDbj1dFlFPU-unsplash.jpg');">
 			
@@ -288,8 +289,8 @@
 			
 						<span class="buttoncol">
 						
-							<a href="#">Book Table</a>
-							<a href="#" id="first_contact_btn">Contact</a>
+							<a href="#" class="left_btn">Book Table</a>
+							<a href="#" class="right_btn">Contact</a>
 						
 						</span><!--buttoncol-->
 			
@@ -311,8 +312,8 @@
 			
 						<span class="buttoncol">
 						
-							<a href="#">Book Table</a>
-							<a href="#" id="second_contact_btn">Contact</a>
+							<a href="#" class="left_btn">Book Table</a>
+							<a href="#" class="right_btn">Contact</a>
 						
 						</span><!--buttoncol-->
 			
@@ -339,6 +340,95 @@
 			
 			<div class="restaurant_group_one">
 			
+				<div class="bg_col">
+					
+					<div class="bg_box">
+						
+						<div class="bg_icon">
+								
+							<span class="material-symbols-outlined icon-60">restaurant</span>
+								
+						</div><!--bg_icon-->
+							
+						<div class="bg_content">
+									
+							<h3>Dynamic Cuisine</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+								
+							<span class="bg_button">
+			
+								<a href="#">Learn More</a>
+									
+							</span><!--bg_button-->
+									
+						</div><!--bg_content-->
+						
+					</div><!--bg_box-->
+					
+				</div><!--bg_col-->
+					
+				<div class="bg_col">
+					
+					<div class="bg_box">
+						
+						<div class="bg_icon">
+								
+							<span class="material-symbols-outlined icon-60">menu_book</span>
+								
+						</div><!--bg_icon-->
+							
+						<div class="bg_content">
+									
+							<h3>Menu Choices</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+								
+							<span class="bg_button">
+			
+								<a href="#">Learn More</a>
+									
+							</span><!--bg_button-->
+									
+						</div><!--bg_content-->
+						
+					</div><!--bg_box-->
+					
+				</div><!--bg_col-->
+					
+				<div class="bg_col">
+					
+					<div class="bg_box">
+						
+						<div class="bg_icon">
+								
+							<span class="material-symbols-outlined icon-60">location_on</span>
+								
+						</div><!--bg_icon-->
+							
+						<div class="bg_content">
+									
+							<h3>Multiple Location</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+								
+							<span class="bg_button">
+			
+								<a href="#">Learn More</a>
+									
+							</span><!--bg_button-->
+									
+						</div><!--bg_content-->
+						
+					</div><!--bg_box-->
+					
+				</div><!--bg_col-->
+		
+			</div><!--restaurant_group_one-->
+		
+		</div><!--restaurant_area_one-->
+		
+		<div class="restaurant_area_two" data-aos="fade" data-aos-delay="50">
+			
+			<div class="restaurant_group_two">
+			
 				<div class="info_col info_area">
 				
 					<div class="info_box">
@@ -347,15 +437,15 @@
 						
 							<div class="left_crumb">
 							
-								<div class="left_btn"></div>
-								<div class="mid_btn"></div>
-								<div class="right_btn"></div>
+								<div class="left_circle"></div>
+								<div class="mid_circle"></div>
+								<div class="right_circle"></div>
 							
 							</div><!--left_crumb-->
 							
 							<div class="sub_head">
 							
-								<h5>Our Success</h5>
+								<h5>Our Story</h5>
 							
 							</div><!--sub_head-->
 						
@@ -363,14 +453,13 @@
 						
 						<h2>An Elegant Dining Experience</h2>
 						<p>We make sure that the food we prepare are of the highest quality and you enjoy
-						a five star dining experience in our restaurant.</p>
+						a five star dining experience based on our rich history in restaurant cuisine.</p>
 						
 						<div class="info_list">
 						
 							<ul>
 								<li>Courteous Staff</li>
 								<li>Fine Dining</li>
-								<li>Self Service</li>
 								<li>Extended Hours</li>
 				
 							</ul>
@@ -387,163 +476,59 @@
 				
 				</div><!--info_col-->
 				
-				<div class="box_col">
+				<div class="photo_col photo_area">
 				
 					<div class="photo_box">
 					
+						<div class="photo_color_box">
+						
+							<div class="photo_center">
+							
+								<img src="asparagus-barbecue-cuisine-delicious-361184(1).jpg" alt="">
+						
+							</div><!--photo_color_box-->	
+						
+						</div><!--photo_color_box-->
+						
 						<div class="photo_image">
 						
 							<img class="shape_photo" src="pexels-rene-asmussen-2977514(1).jpg" alt="">
 					
-							<div class="full_box">
-							
-								<div class="first_box"></div><!--first_box-->
-							
-								<div class="second_box"></div><!--second_box-->
-							
-								<div class="third_box"></div><!--third_box-->
-								
-							</div><!--full_box-->
-							
 						</div><!--photo_image-->	
 					
 					</div><!--photo_box-->
 				
-				</div><!--box_col-->
-		
-			</div><!--restaurant_group_one-->
-		
-		</div><!--restaurant_area_one-->
-		
-		<div class="restaurant_area_two" data-aos="fade" data-aos-delay="50">
-			
-			<div class="restaurant_group_two">
-			
-				<div class="restaurant_icon_col">
-				
-					<div class="restaurant_icon_box">
-					
-						<div class="icon_pic">
-						
-							<span class="material-symbols-outlined icon-65">restaurant</span>
-						
-						</div><!--icon_pic-->
-						
-						<h3>Dynamic Cuisine</h3>
-						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-						
-						<span class="icon_button">
-			
-							<a href="#">More Info</a>
-									
-						</span><!--icon_button-->
-					
-					</div><!--restaurant_icon_box-->
-				
-				</div><!--restaurant_icon_col-->
-				
-				<div class="restaurant_icon_col">
-				
-					<div class="restaurant_icon_box">
-					
-						<div class="icon_pic">
-						
-							<span class="material-symbols-outlined icon-65">menu_book</span>
-						
-						</div><!--icon_pic-->
-						
-						<h3>Menu Choices</h3>
-						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-						
-						<span class="icon_button">
-			
-							<a href="#">More Info</a>
-									
-						</span><!--icon_button-->
-					
-					</div><!--restaurant_icon_box-->
-				
-				</div><!--restaurant_icon_col-->
-				
-				<div class="restaurant_icon_col">
-				
-					<div class="restaurant_icon_box">
-					
-						<div class="icon_pic">
-						
-							<span class="material-symbols-outlined icon-65">fastfood</span>
-						
-						</div><!--icon_pic-->
-						
-						<h3>Fast Delivery</h3>
-						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-						
-						<span class="icon_button">
-			
-							<a href="#">More Info</a>
-									
-						</span><!--icon_button-->
-					
-					</div><!--restaurant_icon_box-->
-				
-				</div><!--restaurant_icon_col-->
-				
-				<div class="restaurant_icon_col">
-				
-					<div class="restaurant_icon_box">
-					
-						<div class="icon_pic">
-						
-							<span class="material-symbols-outlined icon-65">location_on</span>
-						
-						</div><!--icon_pic-->
-						
-						<h3>Multiple Location</h3>
-						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-						
-						<span class="icon_button">
-			
-							<a href="#">More Info</a>
-									
-						</span><!--icon_button-->
-					
-					</div><!--restaurant_icon_box-->
-				
-				</div><!--restaurant_icon_col-->
+				</div><!--photo_col-->
 			
 			</div><!--restaurant_group_two-->	
 		
 		</div><!--restaurant_area_two-->
 		
-		<div class="restaurant_area_three" data-aos="fade" data-aos-delay="50" style="background-image: url('pexels-pixabay-262978.jpg');">
-			
-			<div class="restaurant_group_three">
-			
-				<div class="center_info">
-				
-					<div class="center_crumb">
-							
-						<div class="first_btn"></div>
-						<div class="second_btn"></div>
-						<div class="third_btn"></div>
-							
-					</div><!--center_crumb-->
-							
-					<div class="center_head">
-							
-						<h5>Food Selection</h5>
-							
-					</div><!--center_head-->
-				
-				</div><!--center_info-->
-				
-				<h2 class="bg_head">Weekly and Daily Menu Selection</h2>
-			
-			</div><!--restaurant_group_three-->	
+		<div class="restaurant_area_three" data-aos="fade" data-aos-delay="50" style="background-image: url('pexels-pixabay-262978.jpg');">	
 		
 		</div><!--restaurant_area_three-->
 		
 		<div class="restaurant_area_four" data-aos="fade" data-aos-delay="50">
+			
+			<div class="center_info">
+				
+				<div class="center_crumb">
+							
+					<div class="first_circle"></div>
+					<div class="second_circle"></div>
+					<div class="third_circle"></div>
+							
+				</div><!--center_crumb-->
+							
+				<div class="center_head">
+							
+					<h5>Food Selection</h5>
+							
+				</div><!--center_head-->
+				
+			</div><!--center_info-->
+				
+			<h2 class="bg_head">Weekly and Daily Menu Selection</h2>
 			
 			<div class="restaurant_group_four">
 			
@@ -565,13 +550,13 @@
 						
 						<div class="grid_title_area">
 						
-							<div class="grid_price box_feature">
+							<div class="grid_price grid_center">
 							
 								<h3>$80.00</h3>
 							
 							</div><!--grid_price-->
 							
-							<div class="grid_title box_feature">
+							<div class="grid_title grid_center">
 							
 								<h3>Baked Corn</h3>
 							
@@ -601,13 +586,13 @@
 						
 						<div class="grid_title_area">
 						
-							<div class="grid_price box_feature">
+							<div class="grid_price grid_center">
 							
 								<h3>$40.00</h3>
 							
 							</div><!--grid_price-->
 							
-							<div class="grid_title box_feature">
+							<div class="grid_title grid_center">
 							
 								<h3>Sliced Pork</h3>
 							
@@ -637,13 +622,13 @@
 						
 						<div class="grid_title_area">
 						
-							<div class="grid_price box_feature">
+							<div class="grid_price grid_center">
 							
 								<h3>$75.00</h3>
 							
 							</div><!--grid_price-->
 							
-							<div class="grid_title box_feature">
+							<div class="grid_title grid_center">
 							
 								<h3>Seafood Lobster</h3>
 							
@@ -669,7 +654,7 @@
 		
 			<div class="restaurant_group_five">
 			
-				<div class="square_left_col">
+				<div class="square_col_left photo_area">
 				
 					<div class="square_photo">
 					
@@ -687,9 +672,9 @@
 					
 					</div><!--square_photo-->
 				
-				</div><!--square_left_col-->
+				</div><!--square_col_left-->
 				
-				<div class="square_right_col square_area">
+				<div class="square_col_right square_area">
 				
 					<div class="square_box">
 					
@@ -697,9 +682,9 @@
 						
 							<div class="left_crumb">
 							
-								<div class="left_btn"></div>
-								<div class="mid_btn"></div>
-								<div class="right_btn"></div>
+								<div class="left_circle"></div>
+								<div class="mid_circle"></div>
+								<div class="right_circle"></div>
 							
 							</div><!--left_crumb-->
 							
@@ -712,97 +697,87 @@
 						</div><!--sub_info-->
 						
 						<h2>Daily and Weekly Food Specials</h2>
-						<p>Sample our weekly meal specials with an added focus on premium cuisine
-						prepared with unique and exotic ingredients from around the world.</p>
+						<p>Our food specials are a delight with unique ingredients from around the world.</p>
 						
 						<div class="square_info_area">
 						
-							<div class="square_info_left">
+							<div class="square_top_content">
 						
 								<div class="square_space">
 							
 									<div class="square_icon">
 							
-										<span class="material-symbols-outlined icon-70">ramen_dining</span>
+										<img src="cook-cooking-cuisine-delicious-357737(1).jpg" alt="">
 							
 									</div><!--square_icon-->
 							
 									<div class="square_title">
 							
-										<h3>Foreign and Local Dishes Serve</h3>
+										<h3>Foreign and Local Dishes</h3>
+										<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
 								
 									</div><!--square_title-->
 							
 								</div><!--square_space-->
 						
-							</div><!--square_info_left-->
+							</div><!--square_top_content-->
 						
-							<div class="square_info_right">
+							<div class="square_last_content">
 						
 								<div class="square_space">
 						
 									<div class="square_icon">
 							
-										<span class="material-symbols-outlined icon-70">tapas</span>
+										<img src="pexels-pietro-jeng-671956(1).jpg" alt="">
 							
 									</div><!--square_icon-->
 							
 									<div class="square_title">
 							
-										<h3>Cocktail and Beverage Mix Special</h3>
+										<h3>Cocktail and Beverage Mix</h3>
+										<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
 								
 									</div><!--square_title-->
 							
 								</div><!--square_space-->
 						
-							</div><!--square_info_right-->
+							</div><!--square_last_content-->
 							
 						</div><!--square_info_area-->
 					
-						<span class="info_col_button">
-						
-							<a href="#">View Specials</a>
-						
-						</span><!--info_col_button-->
-					
 					</div><!--square_box-->
 				
-				</div><!--square_right_col-->
+				</div><!--square_col_right-->
 			
 			</div><!--restaurant_group_five-->	
 		
 		</div><!--restaurant_area_five-->
 		
-		<div class="restaurant_area_six" data-aos="fade" data-aos-delay="50" style="background-image: url('blur-close-up-cutlery-dining-370984.jpg');">
-			
-			<div class="restaurant_group_six">
-			
-				<div class="center_info second_center">
-				
-					<div class="center_crumb">
-							
-						<div class="first_btn"></div>
-						<div class="second_btn"></div>
-						<div class="third_btn"></div>
-							
-					</div><!--center_crumb-->
-							
-					<div class="center_head">
-							
-						<h5>Client Feedback</h5>
-							
-					</div><!--center_head-->
-				
-				</div><!--center_info-->
-				
-				<h2 class="bg_head">We Receive Customer Five star Reviews</h2>
-			
-			</div><!--restaurant_group_six-->	
-		
+		<div class="restaurant_area_six" data-aos="fade" data-aos-delay="50" style="background-image: url('blur-close-up-cutlery-dining-370984.jpg');">	
 		</div><!--restaurant_area_six-->
 		
 		<div class="restaurant_area_seven" data-aos="fade" data-aos-delay="50">
 		
+			<div class="center_info">
+				
+				<div class="center_crumb">
+							
+					<div class="first_circle"></div>
+					<div class="second_circle"></div>
+					<div class="third_circle"></div>
+							
+				</div><!--center_crumb-->
+							
+				<div class="center_head">
+							
+					<h5>Client Feedback</h5>
+							
+				</div><!--center_head-->
+				
+			</div><!--center_info-->
+				
+			<h2 class="bg_head">We Receive Customer Five star Reviews</h2>
+			
 			<div class="restaurant_group_seven">
 			
 				<div class="client_col">
@@ -830,7 +805,7 @@
 								<span class="material-symbols-outlined icon-25">star</span>
 								<span class="material-symbols-outlined icon-25">star</span>
 						
-							</div><!--icon_pic-->
+							</div><!--client_icon-->
 					
 						</div><!--client_details-->
 				
@@ -879,41 +854,17 @@
 		
 			<div class="restaurant_group_eight">
 				
-				<div class="area_col">
+				<div class="feature_col feature_area">
 				
-					<div class="area_box">
-					
-						<div class="area_image">
-						
-							<img class="shape_photo" src="pexels-andrea-piacquadio-761854.jpg" alt="">
-							
-							<div class="semi_box">
-							
-								<div class="top_pic"></div><!--top_pic-->
-								
-								<div class="center_pic"></div><!--center_pic-->
-								
-								<div class="last_pic"></div><!--last_pic-->
-				
-							</div><!--semi_box-->	
-				
-						</div><!--area_image-->
-						
-					</div><!--area_box-->	
-				
-				</div><!--area_col-->
-				
-				<div class="view_col view_area">
-				
-					<div class="view_box">
+					<div class="feature_box">
 					
 						<div class="sub_info second_info">
 						
 							<div class="left_crumb">
 							
-								<div class="left_btn"></div>
-								<div class="mid_btn"></div>
-								<div class="right_btn"></div>
+								<div class="left_circle"></div>
+								<div class="mid_circle"></div>
+								<div class="right_circle"></div>
 							
 							</div><!--left_crumb-->
 							
@@ -925,7 +876,7 @@
 						
 						</div><!--sub_info-->
 						
-						<h2>We Play Host To Weekly Events And Parties</h2>
+						<h2>We Host Weekly Events And Parties</h2>
 						<p>At an affordable cost to you our loyal patrons we will host parties
 						and celebrations that can accomodate your close loved ones.</p>
 						
@@ -935,9 +886,37 @@
 						
 						</span><!--info_col_button-->
 					
-					</div><!--view_box-->
+					</div><!--feature_box-->
 				
-				</div><!--view_col-->
+				</div><!--feature_col-->
+				
+				<div class="area_col">
+				
+					<div class="area_box">
+					
+						<div class="full_box">
+							
+							<div class="color_space center_title">
+							
+								<div class="color_title">
+									
+									<h3><span class="title_size">15</span> Yrs<br> Cuisine<br> Experience</h3>
+								
+								</div><!--color_title-->
+								
+							</div><!--color_space-->
+								
+						</div><!--full_box-->
+						
+						<div class="area_image">
+						
+							<img class="shape_photo" src="pexels-andrea-piacquadio-761854.jpg" alt="">	
+				
+						</div><!--area_image-->
+						
+					</div><!--area_box-->	
+				
+				</div><!--area_col-->
 			
 			</div><!--restaurant_group_eight-->
 		
@@ -945,21 +924,21 @@
 		
 		<div class="restaurant_area_nine" data-aos="fade" data-aos-delay="50">
 			
-			<div class="mid_info">
+			<div class="center_info">
 				
-					<div class="mid_crumb">
+					<div class="center_crumb">
 							
-						<div class="btn_one"></div>
-						<div class="btn_two"></div>
-						<div class="btn_three"></div>
+						<div class="left_circle"></div>
+						<div class="mid_circle"></div>
+						<div class="right_circle"></div>
 							
-					</div><!--mid_crumb-->
+					</div><!--center_crumb-->
 							
-					<div class="mid_head">
+					<div class="center_head">
 							
 						<h5>Food Blog</h5>
 							
-					</div><!--mid_head-->
+					</div><!--center_head-->
 				
 				</div><!--center_info-->
 				
@@ -973,7 +952,7 @@
 					
 						<div class="blog_date">
 							
-							<h3>Feb <span class="numeric">16</span> 2022</h3>
+							<h3>Feb <span class="numeric">16</span> 2023</h3>
 								
 						</div><!--blog_date-->
 						
@@ -1000,7 +979,7 @@
 					
 						<div class="blog_date">
 							
-							<h3>Feb <span class="numeric">18</span> 2022</h3>
+							<h3>Feb <span class="numeric">18</span> 2023</h3>
 								
 						</div><!--blog_date-->
 						
@@ -1027,7 +1006,7 @@
 					
 						<div class="blog_date">
 							
-							<h3>Feb <span class="numeric">25</span> 2022</h3>
+							<h3>Feb <span class="numeric">25</span> 2023</h3>
 								
 						</div><!--blog_date-->
 						
@@ -1039,7 +1018,7 @@
 						
 						<div class="blog_content">
 						
-							<h3 class="blog_title"><a href="https://upstake-html.netlify.app/blog-single-post-html">The price of vegetables are on the rise</a></h3>
+							<h3 class="blog_title"><a href="https://upstake-html.netlify.app/blog-single-post-html">Vegetables are an essential diet requirement</a></h3>
 							<a class="blog_btn" href="https://upstake-html.netlify.app/blog-single-post-html">Read More</a>
 						
 						</div><!--blog_content-->
@@ -1052,21 +1031,21 @@
 		
 		</div><!--End restaurant_area_nine-->
 		
-		<div class="restaurant_area_ten" data-aos="fade" data-aos-delay="50">
+		<div class="restaurant_area_ten">
 				
 			<div class="restaurant_group_ten">
 			
-				<div class="cube_col form_area">
+				<div class="form_col form_area">	
 				
 					<div class="form_box">
-					
+				
 						<div class="sub_info">
 						
 							<div class="left_crumb">
 							
-								<div class="left_btn"></div>
-								<div class="mid_btn"></div>
-								<div class="right_btn"></div>
+								<div class="left_circle"></div>
+								<div class="mid_circle"></div>
+								<div class="right_circle"></div>
 							
 							</div><!--left_crumb-->
 							
@@ -1097,27 +1076,31 @@
 							
 							<div class="form-row">
 								
-								<input type="text" name="subject" placeholder="Subject">
-										
-							</div><!--form-row-->
-							
-							<div class="form-row">
-								
 								<textarea name="message" placeholder="Message Details..."></textarea>
 										
 							</div><!--form-row-->
 							
-							<input type="submit" class="btn btn-default submit-button" value="Send Message">
+							<input type="submit" value="Send Message">
 						
 						</form>
-					
+						
 					</div><!--form_box-->
-				
-				</div><!--cube_col-->
+
+				</div><!--form_col-->	
 				
 				<div class="cube_col">
 				
-					<img src="pexels-ella-olsson-1640770(1).jpg" alt="">
+					<div class="cube_box">
+					
+						<img src="pexels-adrienn-1537635.jpg" alt="">
+						
+					</div><!--cube_box-->
+
+					<div class="cube_box">
+					
+						<img src="pexels-ella-olsson-1640770(1).jpg" alt="">
+						
+					</div><!--cube_box-->
 				
 				</div><!--cube_col-->
 			
@@ -1129,12 +1112,12 @@
 		
 			<div class="footer_area">
 			
-				<div class="footer_col final">
+				<div class="footer_col">
 			
 					<div class="footer_box">
 					
-						<h3><a href="https://upstake-html.netlify.app/landing-page">Upstake</a></h3>
-						<!--<a class="footer-brand" href="https://upstake-html.netlify.app/landing-page"><img src="logo-white-five.png" alt=""></a>-->
+						<!--<h3><a href="https://upstake-html.netlify.app/landing-page">Upstake</a></h3>-->
+						<a class="footer-logo" href="https://upstake-html.netlify.app/landing-page"><img src="white-logo.png" alt=""></a>
 						<p>Upstake is a Multipurpose Corporate template developed
 						for businesses, agencies and creative professionals.</p>
 						
@@ -1181,7 +1164,7 @@
 			
 				</div><!--footer_col-->
 				
-				<div class="footer_col right_col">
+				<div class="footer_col">
 				
 					<h4>Food Gallery</h4>
 				
