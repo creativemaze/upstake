@@ -12,7 +12,7 @@ $(document).ready(function(){
 		pauseOnFocus: false,
 		responsive: [
 			{
-				breakpoint: 1025,
+				breakpoint: 993,
 				settings: 
 					{
 						slidesToShow: 1,
@@ -54,6 +54,30 @@ $(document).ready(function(){
 		$('.photo_slider').slick('slickGoTo', targetSlide );
 	});
 	
+});
+
+//Slick Slider (3) Three
+$(document).ready(function(){
+	$('.feature_slider').slick({
+		slidesToShow: 4,
+		autoplay: false,
+		infinite: true,
+		speed: 1000,
+		arrows: false,
+		dots: false,
+		pauseOnHover: false,
+		pauseOnFocus: false,
+		responsive: [
+			{
+				breakpoint: 993,
+				settings: {
+					slidesToShow: 1,
+					dots: true,
+					fade: true
+				}			
+			},
+		]
+	});
 });
 
 //MagnificPopup Video
