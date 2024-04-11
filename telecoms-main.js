@@ -47,55 +47,32 @@ $(document).ready(function(){
 
 //Slick Slider (3) Three
 $(document).ready(function(){
-	$('.info_slider').slick({
-		prevArrow: '.prev_nav',
-		nextArrow: '.next_nav',
-		dots: false,
+	$('.feature_slider').slick({
 		slidesToShow: 3,
-		slidesToScroll: 1,
 		autoplay: false,
+		infinite: true,
 		speed: 1000,
+		arrows: false,
+		dots: false,
 		pauseOnHover: false,
 		pauseOnFocus: false,
 		responsive: [
 			{
-				breakpoint: 1025,
-				settings: {
-					slidesToShow: 2,
-       
-				}		
-			},
-			{
-				breakpoint: 820,
+				breakpoint: 993,
 				settings: {
 					slidesToShow: 1,
-       
-				}		
+					dots: true,
+					fade: true
+				}			
 			},
-		]	
+		]
 	});
-	
 });
 
+//Animate Scroll
 $( ".buttoncol a" ).click(function() {
 	$('.heading_group').animatescroll();
 });
-
-//F.A.Q.S Accordion
-var acc = document.getElementsByClassName("accordion");
-	var i;
-
-	for (i = 0; i < acc.length; i++) {
-		acc[i].addEventListener("click", function() {
-			this.classList.toggle("active-bar");
-			var panel = this.nextElementSibling;
-			if (panel.style.maxHeight) {
-				panel.style.maxHeight = null;
-			} else {
-				panel.style.maxHeight = panel.scrollHeight + "px";
-			} 
-		});
-	}
 
 //Counter script
 jQuery(document).ready(function($) {
