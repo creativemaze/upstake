@@ -3,80 +3,39 @@
 $(document).ready(function(){
 	$('.saas_slider').slick({
 		dots: false,
+		prevArrow: '.prev_nav',
+		nextArrow: '.next_nav',
+		autoplay: true,
 		slidesToShow: 1,
 		slidesToScroll: 1,
-		arrows: false,
-		autoplay: false,
-		fade: true,
-		adaptiveHeight: true,
 		speed: 1000,
-		pauseOnHover: false,
-		pauseOnFocus: false,		
-	});
-	
-	$('.saas_slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
-		$('.heading_group > div.active').removeClass('active');
-			$('.heading_group > div').eq(nextSlide).addClass('active');
-	});
-  
-	$('.heading_group > div').on('click', function(e){
-		e.preventDefault();
-		$('.heading_group > div.active').removeClass('active');
-		$(this).addClass('active');
-		var targetSlide = $(this).data('target');
-		$('.saas_slider').slick('slickGoTo', targetSlide );
+		autoplaySpeed: 5000,
+		pauseOnHover: false,		
 	});
 });
 
 //Slick Slider (2) Two
 $(document).ready(function(){
-	$('.bg_slider').slick({
-		dots: false,
-		prevArrow: '.prev_nav',
-		nextArrow: '.next_nav',
-		autoplay: false,
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		fade: true,
-		speed: 1000,
-		autoplaySpeed: 1000,
-		pauseOnHover: false,	
-	});
-	
-});
-
-//Slick Slider (3) Three
-$(document).ready(function(){
-	$('.client-slider').slick({
-		dots: true,
+	$('.feature_slider').slick({
 		slidesToShow: 3,
-		slidesToScroll: 1,
-		arrows: false,
 		autoplay: false,
+		infinite: true,
 		speed: 1000,
+		arrows: false,
+		dots: false,
 		pauseOnHover: false,
 		pauseOnFocus: false,
 		responsive: [
 			{
 				breakpoint: 993,
-				settings: 
-				{
-					slidesToShow: 2,
-       
-				}	
-			},
-			
-			{
-				breakpoint: 601,
-				settings: 
-				{
+				settings: {
 					slidesToShow: 1,
-       
-				}	
+					dots: true,
+					fade: true
+				}			
 			},
-		]	
+		]
 	});
-	
 });
 
 //Animated Progress Bar
@@ -101,6 +60,10 @@ $(document).ready(function($) {
 			
 			fill: {
 				color: '#159957'
+			},
+			
+			emptyFill:{
+				color: '#111111'
 			}
 			
 			}).on('circle-animation-progress', function(event, progress, stepValue) {
