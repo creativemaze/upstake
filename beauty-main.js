@@ -1,7 +1,7 @@
 "use strict";
-//Slick Slider
+///Slick Slider (1) One
 $(document).ready(function(){
-	$('.slickslide').slick({
+	$('.header_slider').slick({
 		autoplay: true,
 		infinite: true,
 		autoplaySpeed: 6000,
@@ -12,9 +12,60 @@ $(document).ready(function(){
 		pauseOnHover: false,
 		pauseOnFocus: false,
 		dots: false,
-                swipe: false
+		swipe: false
 	});
 	
+});
+
+//Slick Slider (2) Two
+$(document).ready(function(){
+	$('.area_slider').slick({
+		slidesToShow: 4,
+		autoplay: false,
+		infinite: true,
+		speed: 1000,
+		arrows: false,
+		dots: false,
+		pauseOnHover: false,
+		pauseOnFocus: false,
+		responsive: [
+			{
+				breakpoint: 1025,
+				settings: 
+					{
+						slidesToShow: 1,
+						dots: true,
+						fade: true
+					}
+						
+			},
+			
+		]
+	});
+});
+
+//Slick Slider (3) Three
+$(document).ready(function(){
+	$('.border_slider').slick({
+		slidesToShow: 3,
+		autoplay: false,
+		infinite: true,
+		speed: 1000,
+		arrows: false,
+		dots: false,
+		pauseOnHover: false,
+		pauseOnFocus: false,
+		responsive: [
+			{
+				breakpoint: 601,
+				settings: {
+					slidesToShow: 1,
+					dots: true,
+					fade: true
+				}			
+			},
+		]
+	});
 });
 
 //Counter script
