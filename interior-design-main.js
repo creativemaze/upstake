@@ -1,72 +1,71 @@
 "use strict";
 //Slick Slider (1) One
 $(document).ready(function(){
-	$('.info_slider').slick({
+	$('.portfolio_slider').slick({
 		dots: false,
-		prevArrow: '.prev_nav',
-		nextArrow: '.next_nav',
-		autoplay: false,
-		slidesToShow: 1,
+		slidesToShow: 3,
 		slidesToScroll: 1,
+		prevArrow: '.prev_slide',
+		nextArrow: '.next_slide',
+		autoplay: true,
 		speed: 1000,
 		pauseOnHover: false,
+		pauseOnFocus: false,
+		centerMode: true,
 		responsive: [
-				{
-					breakpoint: 993,
-					settings: {
-					slidesToShow: 1,
-				}
-				
+			{
+				breakpoint: 993,
+				settings: {
+					slidesToShow: 2,
+					
+				}			
 			},
-		]	
+			
+			{
+				breakpoint: 601,
+				settings: {
+					slidesToShow: 1,
+					centerPadding: '100px',
+				}			
+			},
+			
+			{
+				breakpoint: 430,
+				settings: {
+					slidesToShow: 1,
+					centerPadding: '35px',
+				}			
+			},
+			
+			{
+				breakpoint: 376,
+				settings: {
+					slidesToShow: 1,
+					centerPadding: '20px',
+				}			
+			},
+			
+		]
 	});
-	
 });
 
 //Slick Slider (2) Two
 $(document).ready(function(){
 	$('.client-slider').slick({
-		dots: true,
-		slidesToShow: 3,
+		slidesToShow: 1,
 		slidesToScroll: 1,
 		arrows: false,
+		dots: true,
 		autoplay: false,
 		speed: 1000,
 		pauseOnHover: false,
 		pauseOnFocus: false,
-		responsive: [
-			{
-				breakpoint: 801,
-				settings: 
-				{
-					slidesToShow: 2,
-       
-				}	
-			},
-			
-			{
-				breakpoint: 501,
-				settings: 
-				{
-					slidesToShow: 1,
-       
-				}	
-			},
-		]	
-	});
 	
+	});
 });
 
 //MagnificPopup Gallery
-$('.feature_box').magnificPopup({
-	delegate: 'a',
-	type: 'image',
-	gallery: {
-		enabled: true
-	},
-});
-
-$('.footer_grid').magnificPopup({
+$('.feature_image').magnificPopup({
 	delegate: 'a',
 	type: 'image',
 	gallery: {
