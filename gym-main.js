@@ -1,31 +1,63 @@
 "use strict";
 //Slick Slider (1) One
 $(document).ready(function(){
-	$('.gym_slider').slick({
+	$('.area_slider').slick({
+		slidesToShow: 3,
+		autoplay: false,
+		infinite: true,
+		speed: 1000,
+		arrows: false,
+		dots: false,
+		pauseOnHover: false,
+		pauseOnFocus: false,
+		responsive: [
+			{
+				breakpoint:601,
+				settings: {
+					slidesToShow: 1,
+					dots: true,
+					fade: true
+				}
+						
+			},
+		]
+	});
+});
+
+//Slick Slider (2) Two
+$(document).ready(function(){
+	$('.bg_slider').slick({
 		dots: false,
 		slidesToShow: 1,
 		slidesToScroll: 1,
-		arrows: false,
-		autoplay: false,
+		prevArrow: '.prev_nav',
+		nextArrow: '.next_nav',
+		autoplay: true,
+		autoplaySpeed: 5000,
 		fade: true,
-		adaptiveHeight: true,
 		speed: 1000,
 		pauseOnHover: false,
 		pauseOnFocus: false,		
 	});
 	
-	$('.gym_slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
-		$('.title_group a.active').removeClass('active');
-			$('.title_group a').eq(nextSlide).addClass('active');
-	});
-  
-	$('.title_group a').on('click', function(e){
-		e.preventDefault();
-		$('.title_group a.active').removeClass('active');
-		$(this).addClass('active');
-		var targetSlide = $(this).data('target');
-		$('.gym_slider').slick('slickGoTo', targetSlide );
-	});
+});
+
+//MagnificPopup Video
+$('#play-video').magnificPopup({
+	disableOn: 300,
+	type: 'iframe',
+	mainClass: 'mfp-fade',
+	removalDelay: 300,
+	preloader: false,
+	fixedContentPos: false
+});
+
+//Counter Script
+jQuery(document).ready(function($) {
+    $('.counter').counterUp({
+        delay: 10,
+        time: 2000
+    });
 });
 
 //Animate on Scroll default settings
