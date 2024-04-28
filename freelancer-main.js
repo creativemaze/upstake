@@ -1,7 +1,7 @@
 "use strict";
-//Slick Slider (1) One
+//Slick Slider
 $(document).ready(function(){
-	$('.boxslide').slick({
+	$('.feature_slider').slick({
 		slidesToShow: 3,
 		autoplay: false,
 		infinite: true,
@@ -23,70 +23,12 @@ $(document).ready(function(){
 	});
 });
 
-//Slick Slider (2) Two
-$(document).ready(function(){
-	$('.client-slider').slick({
-		dots: false,
-		prevArrow: '.prev_slide',
-		nextArrow: '.next_slide',
-		slidesToShow: 3,
-		slidesToScroll: 1,
-		autoplay: false,
-		speed: 1000,
-		pauseOnHover: false,
-		pauseOnFocus: false,
-		responsive: [
-			{
-				breakpoint: 993,
-				settings: 
-				{
-					slidesToShow: 2,
-       
-				}	
-			},
-			
-			{
-				breakpoint: 501,
-				settings: 
-				{
-					slidesToShow: 1,
-       
-				}	
-			},
-		]		
-	});
+jQuery(document).ready(function($) {
+    $('.counter').counterUp({
+        delay: 10,
+        time: 2000
+    });
 });
-
-//Animated Skill Bar
-$.fn.isFullyInViewport = function() {
-	var elementTop = $(this).offset().top;
-	var elementBottom = elementTop + $(this).outerHeight();
-
-	var viewportTop = $(window).scrollTop();
-	var viewportBottom = viewportTop + $(window).height();
-
-	return elementTop >= viewportTop && elementBottom <= viewportBottom;
-};
-jQuery(document).ready(function(){
-	// on page ready check if element is already in viewport
-	animateSkillBar();
-});
-
-$(window).on('resize scroll', function() {
-	// on page resize or scroll check if element is in viewport
-	animateSkillBar();
-});
-
-// if elemnt is visble in viewport , then animate
-var animateSkillBar = function(){
-    $('.skillbar').each(function() {
-     if ($(this).isFullyInViewport()) {
-     	jQuery(this).find('.skillbar-bar').animate({
-			width:jQuery(this).attr('data-percent')
-		},1500);
-     }
-  }); 
-}
 
 //Animated Progress Bar
 $(document).ready(function($) {
@@ -109,7 +51,7 @@ $(document).ready(function($) {
 			},
 			
 			fill: {
-				color: '#ffffff'
+				color: '#d31027'
 			},
 			
 			emptyFill:{
@@ -126,15 +68,6 @@ $(document).ready(function($) {
 //Show animated elements
 animateElements();
 	$(window).scroll(animateElements);
-});
-
-//MagnificPopup Gallery
-$('.portfolio_col').magnificPopup({
-	delegate: 'a',
-	type: 'image',
-	gallery: {
-		enabled: true
-	},
 });
 
 //Animate on Scroll default settings
