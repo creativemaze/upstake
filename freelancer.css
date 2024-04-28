@@ -1978,6 +1978,8 @@ a.footer-logo img{
         background: transparent;
         color: #ffffff;
 		font-size: 25px;
+		margin-top: 7px;
+		margin-bottom: 12px;
 	}
 	
 	.head_btn{	
@@ -1992,8 +1994,12 @@ a.footer-logo img{
 		border-color: #111111;
 	}
 	
-	.navbar-header a.navbar-brand{
-		padding-top: 22px;
+	.navbar-header > a{
+		margin-top: 14px;
+	}
+	
+	#nav-logo > a{
+		top: 19px;
 	}
 	
 	nav.navbar.bootsnav ul.nav > li > a{
@@ -2056,7 +2062,7 @@ a.footer-logo img{
 	.attr-nav > ul > li > a{
 		position: relative;
 		left: 0;
-		padding-top: 25px;
+		padding-top: 21px;
 	}
 	
 	.header-title{
