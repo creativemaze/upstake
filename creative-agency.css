@@ -2311,6 +2311,10 @@ a.footer-logo img{
 		margin-left: 45px;
 	}
 	
+	.creative_area_two{
+		margin-bottom: calc(9em + 40px);
+	}
+	
 	.grid_col{
 		flex: 100%;
 		width: 100%;
