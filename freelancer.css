@@ -364,7 +364,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	transition: 0.5s;
 }
 
-.right_info a .fas{
+.right_info .fas{
 	font-size: 16px;
 	color: #ffffff;
 	padding-right: 8px;
