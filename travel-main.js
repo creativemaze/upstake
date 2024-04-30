@@ -1,41 +1,30 @@
 "use strict";
 //Slick Slider
 $(document).ready(function(){
-	$('.bg_slider').slick({
+	$('.tour_slider').slick({
 		dots: false,
-		slidesToShow: 3,
+		slidesToShow: 1,
 		slidesToScroll: 1,
-		prevArrow: '.prev_slide',
-		nextArrow: '.next_slide',
+		arrows: false,
 		autoplay: false,
+		fade: true,
+		adaptiveHeight: true,
 		speed: 1000,
 		pauseOnHover: false,
-		pauseOnFocus: false,
-		centerMode: true,
-		centerPadding: '90px',
-		responsive: [
-			{
-				breakpoint: 1025,
-				settings: {
-					slidesToShow: 2,
-				}		
-			},
-			{
-				breakpoint: 840,
-				settings: {
-					slidesToShow: 1,
-				}		
-			},
-			
-			{
-				breakpoint: 541,
-				settings: {
-					slidesToShow: 1,
-					centerPadding: '0',
-				}		
-			},
-			
-		]
+		pauseOnFocus: false,		
+	});
+	
+	$('.tour_slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+		$('.tour_info > div.active').removeClass('active');
+			$('.tour_info > div').eq(nextSlide).addClass('active');
+	});
+  
+	$('.tour_info > div').on('mouseover', function(e){
+		e.preventDefault();
+		$('.tour_info > div.active').removeClass('active');
+		$(this).addClass('active');
+		var targetSlide = $(this).data('target');
+		$('.tour_slider').slick('slickGoTo', targetSlide );
 	});
 	
 });
@@ -51,6 +40,14 @@ $('#play-video').magnificPopup({
 });
 
 //MagnificPopup Gallery
+$('.bg_image').magnificPopup({
+	delegate: 'a',
+	type: 'image',
+	gallery:{
+		enabled: true
+	},
+});
+
 $('.footer_grid').magnificPopup({
 	delegate: 'a',
 	type: 'image',
