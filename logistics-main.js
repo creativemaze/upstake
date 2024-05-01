@@ -1,47 +1,41 @@
 "use strict";
 //Slick Slider (1) One
 $(document).ready(function(){
-	$('.logistics_slider').slick({
-		dots: false,
-		slidesToShow: 1,
-		slidesToScroll: 1,
+	$('.feature_slider').slick({
+		slidesToShow: 3,
 		autoplay: false,
-		fade: true,
-		prevArrow: '.prev_button',
-		nextArrow: '.next_button',
+		infinite: true,
 		speed: 1000,
-		
+		arrows: false,
+		dots: false,
+		pauseOnHover: false,
+		pauseOnFocus: false,
+		responsive: [
+			{
+				breakpoint: 993,
+				settings: {
+					slidesToShow: 1,
+					dots: true,
+					fade: true
+				}			
+			},
+		]
 	});
-})
+});
 
 //Slick Slider (2) Two
 $(document).ready(function(){
 	$('.client-slider').slick({
-		dots: true,
-		slidesToShow: 3,
+		dots: false,
+		slidesToShow: 1,
 		slidesToScroll: 1,
-		arrows: false,
+		prevArrow: '.prev_nav',
+		nextArrow: '.next_nav',
 		autoplay: false,
 		speed: 1000,
-		responsive: [
-			{
-				breakpoint: 993,
-				settings: 
-				{
-					slidesToShow: 2,
-       
-				}	
-			},
-			
-			{
-				breakpoint: 601,
-				settings: 
-				{
-					slidesToShow: 1,
-       
-				}	
-			},
-		]	
+		pauseOnHover: false,
+		pauseOnFocus: false,
+	
 	});
 });
 
@@ -53,21 +47,15 @@ jQuery(document).ready(function($) {
     });
 });
 
-//F.A.Q.S Accordion
-var acc = document.getElementsByClassName("accordion");
-	var i;
-
-	for (i = 0; i < acc.length; i++) {
-		acc[i].addEventListener("click", function() {
-			this.classList.toggle("active-bar");
-			var panel = this.nextElementSibling;
-			if (panel.style.maxHeight) {
-				panel.style.maxHeight = null;
-			} else {
-				panel.style.maxHeight = panel.scrollHeight + "px";
-			} 
-		});
-	}
+//MagnificPopup Video
+$('#play-video').magnificPopup({
+	disableOn: 300,
+	type: 'iframe',
+	mainClass: 'mfp-fade',
+	removalDelay: 300,
+	preloader: false,
+	fixedContentPos: false
+});
 
 //Animate on Scroll default settings
 $(window).on('load', function () {
