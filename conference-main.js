@@ -3,37 +3,15 @@
 $(document).ready(function(){
 	$('.bg_slider').slick({
 		dots: false,
-		slidesToShow: 3,
+		slidesToShow: 1,
 		slidesToScroll: 1,
 		prevArrow: '.prev_slide',
 		nextArrow: '.next_slide',
-		autoplay: false,
+		autoplay: true,
+		autoplaySpeed: 5000,
 		speed: 1000,
-		centerMode: true,
-		centerPadding: '90px',
-		responsive: [
-			{
-				breakpoint: 1025,
-				settings: {
-					slidesToShow: 2,
-				}		
-			},
-			{
-				breakpoint: 840,
-				settings: {
-					slidesToShow: 1,
-				}		
-			},
-			
-			{
-				breakpoint: 541,
-				settings: {
-					slidesToShow: 1,
-					centerPadding: '0',
-				}		
-			},
-			
-		]
+		pauseOnHover: false,
+		pauseOnFocus: false,
 	});
 });
 
@@ -41,76 +19,56 @@ $(document).ready(function(){
 $(document).ready(function(){
 	$('.client-slider').slick({
 		dots: true,
-		slidesToShow: 3,
-		slidesToScroll: 1,
+		slidesToShow: 2,
+		slidesToScroll: 2,
 		arrows: false,
 		autoplay: false,
 		speed: 1000,
 		pauseOnHover: false,
+		pauseOnFocus: false,
 		responsive: [
 			{
-				breakpoint: 1025,
-				settings: {
-					slidesToShow: 2,
-       
-				}	
-			},
-			
-			{
-				breakpoint: 769,
+				breakpoint:993,
 				settings: {
 					slidesToShow: 1,
-       
-				}	
+					slidesToScroll: 1,
+				}
+						
 			},
-		]	
+		]
 	});
 });
 
 //Count down script
 $(document).ready(function(){
-	// Set the date we're counting down to
-	var countDownDate = new Date("Jun 25, 2022 15:37:25").getTime();
-
-	// Update the count down every 1 second
-	var countdownfunction = setInterval(function() {
-
-	// Get todays date and time
-	var now = new Date().getTime();
-  
-	// Find the distance between now an the count down date
-	var distance = countDownDate - now;
-  
-	// Time calculations for days, hours, minutes and seconds
-	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-	var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-  
-	// Output the result in an element with id="demo"
-	document.getElementsByClassName("days")[0].innerHTML = days + " days ";
-  
-	// Output the result in an element with id="demo"
-	document.getElementsByClassName("hrs")[0].innerHTML = hours + " hrs ";
-  
-	// Output the result in an element with id="demo"
-	document.getElementsByClassName("min")[0].innerHTML = minutes + " mins ";
-  
-	// Output the result in an element with id="demo"
-	document.getElementsByClassName("seconds")[0].innerHTML = seconds + " s ";
-  
-	// If the count down is over, write some text 
-	if (distance < 0) 
-		{
-			clearInterval(countdownfunction);
-			document.getElementsByClassName("seconds")[0].innerHTML = "Event in Progress";
-			document.getElementsByClassName("days")[0].style.display = "none";
-			document.getElementsByClassName("hrs")[0].style.display = "none";
-			document.getElementsByClassName("min")[0].style.display = "none";
+	$('#timer-date').countdown('2024/09/25 15:37:25', {elapse: true})
+	.on('update.countdown', function(event) {
+		if (event.elapsed) { // Either true or false
+			$(this).html(event.strftime('<h3>Event In Progress</h3>'));
+			var heading = document.getElementById('timer_heading');
+			heading.style.display = 'none';
+		} else {
+			$(this).html(event.strftime
+			('<h3>%D <span class="date_box">Days</span>  %H <span class="date_box">Hrs</span> %M <span class="date_box">Mins</span> %S S</h3>'));	
 		}
-	}, 1000);
-	
+	});
 });
+
+//F.A.Q.S Accordion
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+	acc[i].addEventListener("click", function() {
+		this.classList.toggle("active-bar");
+		var panel = this.nextElementSibling;
+		if (panel.style.maxHeight) {
+			panel.style.maxHeight = null;
+		} else {
+			panel.style.maxHeight = panel.scrollHeight + "px";
+		} 
+	});
+}
 
 //MagnificPopup Video
 $('#play-video').magnificPopup({
