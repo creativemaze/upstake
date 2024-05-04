@@ -1,29 +1,23 @@
 "use strict";
-//Slick Slider (1) One
+//Slick Slider
 $(document).ready(function(){
-	$('.course_slider').slick({
-		dots: false,
-		slidesToShow: 2,
-		slidesToScroll: 1,
-		prevArrow: '.prev_slide',
-		nextArrow: '.next_slide',
+	$('.feature_slider').slick({
+		slidesToShow: 3,
 		autoplay: false,
+		infinite: true,
 		speed: 1000,
-		centerMode: true,
+		arrows: false,
+		dots: false,
+		pauseOnHover: false,
+		pauseOnFocus: false,
 		responsive: [
 			{
-				breakpoint: 1025,
-				settings: {
-					slidesToShow: 2,
-				}		
-			},
-			
-			{
-				breakpoint: 601,
+				breakpoint: 993,
 				settings: {
 					slidesToShow: 1,
-					centerPadding: '0',
-				}		
+					dots: true,
+					fade: true
+				}			
 			},
 		]
 	});
