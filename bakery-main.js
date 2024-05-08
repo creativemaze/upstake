@@ -1,59 +1,33 @@
 "use strict";
-//Slick Slider (1) One
-$(document).ready(function(){
-	$('.bakery_slider').slick({
+//Slick Slider
+$( window ).on( "load", function() {
+	$('.bg_slider').slick({
 		dots: false,
-		slidesToShow: 1,
+		slidesToShow: 4,
 		slidesToScroll: 1,
-		arrows: false,
-		autoplay: false,
-		fade: true,
-		adaptiveHeight: true,
-		speed: 1000,		
-	});
-	
-	$('.bakery_slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
-		$('.title_group a.active').removeClass('active');
-			$('.title_group a').eq(nextSlide).addClass('active');
-	});
-  
-	$('.title_group a').on('click', function(e){
-		e.preventDefault();
-		$('.title_group a.active').removeClass('active');
-		$(this).addClass('active');
-		var targetSlide = $(this).data('target');
-		$('.bakery_slider').slick('slickGoTo', targetSlide );
-	});
-	
-});
-
-//Slick Slider (2) Two
-$(document).ready(function(){
-	$('.client-slider').slick({
-		dots: true,
-		slidesToShow: 3,
-		slidesToScroll: 1,
-		arrows: false,
-		autoplay: false,
+		prevArrow: '.prev_slide',
+		nextArrow: '.next_slide',
+		autoplay: true,
+		autoplaySpeed: 5000,
 		speed: 1000,
 		pauseOnHover: false,
+		pauseOnFocus: false,
 		responsive: [
 			{
 				breakpoint: 1025,
 				settings: {
-					slidesToShow: 2,
+					slidesToShow: 3,
        
-				}	
+				}		
 			},
-			
 			{
-				breakpoint: 769,
+				breakpoint: 601,
 				settings: {
 					slidesToShow: 1,
        
-				}	
+				}		
 			},
-		]	
+		]
 	});
 });
 
@@ -66,7 +40,7 @@ jQuery(document).ready(function($) {
 });
 
 //MagnificPopup Gallery
-$('.footer_grid').magnificPopup({
+$('.feature_image').magnificPopup({
 	delegate: 'a',
 	type: 'image',
 	gallery: {
