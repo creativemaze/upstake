@@ -1,26 +1,26 @@
 "use strict";
 //Slick Slider (1) One
 $(document).ready(function(){
-	$('.business_slider').slick({
-		dots: false,
-		slidesToShow: 2,
-		slidesToScroll: 1,
-		prevArrow: '.prev_slide',
-		nextArrow: '.next_slide',
+	$('.feature_slider').slick({
+		slidesToShow: 4,
 		autoplay: false,
+		infinite: true,
 		speed: 1000,
+		arrows: false,
+		dots: false,
+		pauseOnHover: false,
+		pauseOnFocus: false,
 		responsive: [
-			
 			{
-				breakpoint: 601,
+				breakpoint: 801,
 				settings: {
 					slidesToShow: 1,
-				}		
+					dots: true,
+					fade: true
+				}			
 			},
-			
 		]
 	});
-	
 });
 
 //Slick Slider (2) Two
@@ -28,7 +28,7 @@ $(document).ready(function(){
 	$('.client-slider').slick({
 		dots: true,
 		slidesToShow: 2,
-		slidesToScroll: 1,
+		slidesToScroll: 2,
 		arrows: false,
 		autoplay: false,
 		speed: 1000,
@@ -36,23 +36,15 @@ $(document).ready(function(){
 		pauseOnFocus: false,
 		responsive: [
 			{
-				breakpoint: 769,
+				breakpoint:993,
 				settings: {
 					slidesToShow: 1,
-       
-				}		
+					slidesToScroll: 1,
+				}
+						
 			},
-		]	
+		]
 	});
-});
-
-//MagnificPopup Gallery
-$('.pop_col').magnificPopup({
-	delegate: 'a',
-	type: 'image',
-	gallery: {
-		enabled: true
-	},
 });
 
 //Counter Script
