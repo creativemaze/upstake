@@ -3,7 +3,7 @@ Main Stylesheet
 
 Project:    Upstake - Multipurpose Business Template
 Version:    1.0
-Last change:    03/03/2024
+Last change:    18/05/2024
 Author:    creativemaze
 Primary use:    Consulting
 -------------------------------------------------------------------*/
@@ -145,7 +145,7 @@ ul{
 	text-align: center;
 	letter-spacing: 1px;
 	text-transform: uppercase;
-	margin-top: 26px;
+	margin-top: 30px;
 }
 
 .navbar-header > a:hover{
@@ -155,7 +155,7 @@ ul{
 #nav-logo > a{
 	max-width: 160px; 
 	position: relative;
-	top: 30px;
+	top: 33px;
 }
 
 #nav-logo > a img{
@@ -172,6 +172,7 @@ nav.navbar.bootsnav{
 
 nav.navbar.bootsnav ul.nav{
 	margin-right: 160px;
+	margin-top: 5px;
 }
 
 nav.navbar.bootsnav li.dropdown ul.dropdown-menu{
@@ -267,7 +268,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .attr-nav > ul > li > a{
     color: #ffffff;
-	padding-top: 30px;
+	padding-top: 36px;
 	margin-left: -12px;
 	position: relative;
 	left: -160px;
@@ -319,7 +320,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .left_info .fas,
 .left_info .far,
-.right_info .fab{
+.right_info > a > .fab{
 	font-size: 16px;
 	color: #ffffff;
 }
@@ -329,13 +330,13 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	padding-right: 8px;
 }
 
-.right_info > a{
+.right_info > a .fab{
 	padding-right: 14px;
+	transition: 0.5s;
 }
 
-.left_info .fas:hover,
-.right_info .fab:hover{
-	opacity: 0.6;
+.right_info > a > .fab:hover{
+	color: #ec2f4b;
 }
 
 .sub_width{
@@ -374,7 +375,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	max-width: 300px;
 	display: inline-block;
 	position: absolute;
-	top: 15px;
+	top: 19px;
 	right: 0;
 }
 
@@ -545,7 +546,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	position: relative;
 }
 
-.icon_symbol .material-symbols-outlined.icon-65{
+.icon_symbol span.icon-65{
 	font-size: 65px;
 	font-weight: 100;
 	background-color: #ec2f4b;
@@ -554,8 +555,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	margin-top: -40px;
 	text-align: center;
 	padding: 9px;
-	transition: ease-in-out 0.5s;
-	box-shadow: 0 20px 70px rgba(38,42,76,.2);
 }
 
 .icon_info{
@@ -705,7 +704,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 .info_list > ul > li::before{
 	font-family: 'Material Symbols Outlined';
 	content: "\e86c";
-	font-weight: 300;
+	font-weight: 200;
 	font-size: 30px;
 	position: relative;
 	top: 10px;
@@ -732,33 +731,35 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .color_content{
 	position: relative;
-	margin-top: -65px;
+	margin-top: -60px;
 	z-index: 99;
 	width: 100%;
-	height: 75px;
-	display: flex;
-	flex-wrap: wrap;
-	background-color: #ffffff;
 	text-align: center;
-	box-shadow: 0 20px 70px rgba(38,42,76,.2);
 }
 
 .border_col{
+	box-shadow: 0 20px 70px rgba(38,42,76,.2);
 	flex: 33.33%;
 	width: 33.33%;
 	max-width: 220px;
-	display: block;
+	height: 85px;
 }
 
 .first_border{
 	background-color: #111111;
-	padding: 10px 0;
+	padding: 12px 0;
 	overflow: hidden;
 }
 
 .second_border{
 	background-color: #ec2f4b;
-	padding: 10px 0;
+	padding: 12px 0;
+	overflow: hidden;
+}
+
+.third_border{
+	background-color: #ffffff;
+	padding: 12px 0;
 	overflow: hidden;
 }
 
@@ -802,11 +803,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	letter-spacing: 1px;
 	line-height: 1.5em;
 	margin: 0;
-}
-
-.third_border{
-	padding: 10px 0;
-	overflow: hidden;
 }
 
 .third_border h4,
@@ -860,8 +856,8 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	width: 1.3rem;
 	height: 1.3rem;
 	padding: 0;		
-	border: solid 1px #333333;
-	border-radius: 100%;
+	border: solid 1px #6f6f6f;
+	border-radius: 50%;
 	background-color: transparent;
 	text-indent: -9999px;
 }
@@ -1042,7 +1038,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	font-weight: normal;
 	padding: 15px 0 0;
 	display: block;
-	color: #f2f2f2;
+	color: #dddddd;
 	letter-spacing: 1px;
 	text-align: left;
 	line-height: 1.5em;
@@ -1151,7 +1147,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	flex-wrap: wrap;
 	min-height: 250px;
 	background-color: #ffffff;
-	padding: 25px 25px 40px 25px;
+	padding: 25px 25px 35px 25px;
 	margin: 100px auto 0;
 	box-shadow: 0 20px 70px rgba(38,42,76,.2);
 	border-left: solid 5px #ec2f4b;
@@ -1246,7 +1242,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	width: 1.3rem;
 	height: 1.3rem;
 	padding: 0;		
-	border: solid 1px #333333;
+	border: solid 1px #6f6f6f;
 	border-radius: 100%;
 	background-color: transparent;
 	text-indent: -9999px;
@@ -1291,7 +1287,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	flex: 16.66%;
 	width: 16.66%;
 	padding: 0 20px;
-	margin-top: 130px;
+	margin-top: 120px;
 }
 
 .blog_sub{
@@ -1379,7 +1375,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .blog_content{
 	text-align: left;
-	padding: 20px 15px;
+	padding: 15px 15px 25px;
 	background-color: #ffffff;
 	box-shadow: 0 20px 70px rgba(38,42,76,.2);
 }
@@ -1532,9 +1528,9 @@ a.blog_btn:hover{
 }
 
 .client_details q{
-	font-family: 'Montserrat' , Arial, sans-serif;
+	font-family: 'Roboto' , Arial, sans-serif;
 	font-size: 16px;
-	font-weight: 500;
+	font-weight: normal;
 	display: block;
 	color: #696969;
 	letter-spacing: 1px;
@@ -1553,7 +1549,7 @@ a.blog_btn:hover{
 	text-transform: uppercase;
 }
 
-.client_icon .material-symbols-outlined.icon-25{
+.client_icon span.icon-25{
 	font-size: 25px;
 	font-weight: 300;
 	color: #ec2f4b;
@@ -1752,8 +1748,7 @@ a.blog_btn:hover{
 	vertical-align: middle;
 	padding: 20px;
 	width: 350px;
-	background-color: #ffffff;
-	box-shadow: 0 20px 70px rgba(38,42,76,.2);
+	background-color: #eeeeee;
 	border: none;
 	margin-right: 4px;
 	border-radius: 25px;
@@ -1778,6 +1773,8 @@ a.blog_btn:hover{
 	color: #ffffff;
 	margin: 0;
 	border-radius: 25px;
+	position: relative;
+	bottom: -1px;
 	transition: 0.5s;
 	background-color: #ec2f4b;
 	border: solid 1px #ec2f4b;
@@ -2051,7 +2048,7 @@ a.footer-logo img{
 	.attr-nav > ul > li > a{
 		position: relative;
 		left: 0;
-		padding-top: 20px;
+		padding-top: 21px;
 	}
 	
 	.header-title{
@@ -2071,7 +2068,7 @@ a.footer-logo img{
 	.photo_col{
 		flex: 100%;
 		width: 100%;
-		margin-bottom: 60px;
+		margin-bottom: 40px;
 	}
 	
 	.area_head{
