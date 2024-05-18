@@ -1,7 +1,7 @@
 "use strict";
 //Slick Slider (1) One
 $(document).ready(function(){
-	$('.slickslide').slick({
+	$('.main_slider').slick({
 		autoplay: true,
 		infinite: true,
 		autoplaySpeed: 5000,
