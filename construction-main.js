@@ -1,5 +1,36 @@
 "use strict";
-//Slick Slider
+//Slick Slider (1) One
+$(document).ready(function(){
+	$('.bg_slider').slick({
+		dots: false,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: false,
+		autoplay: false,
+		fade: true,
+		adaptiveHeight: true,
+		speed: 1000,
+		pauseOnHover: false,
+		pauseOnFocus: false,		
+	});
+	
+	$('.bg_slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+		$('.bg_feature > div.active').removeClass('active');
+		$('.bg_feature > div').eq(nextSlide).addClass('active');
+			
+	});
+  
+	$('.bg_feature > div').on('mouseover', function(e){
+		e.preventDefault();
+		$('.bg_feature > div.active').removeClass('active');
+		$(this).addClass('active');
+		var targetSlide = $(this).data('target');
+		$('.bg_slider').slick('slickGoTo', targetSlide );
+	});
+	
+});
+
+//Slick Slider (2) Two
 $(document).ready(function(){
 	$('.client_slider').slick({
 		slidesToShow: 3,
