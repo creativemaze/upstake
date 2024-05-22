@@ -3,7 +3,7 @@ Main Stylesheet
 
 Project:    Upstake - Multipurpose Business Template
 Version:    1.0
-Last change:    08/03/2024
+Last change:    21/05/2024
 Author:    creativemaze
 Primary use:    Start-Up
 -------------------------------------------------------------------*/
@@ -137,7 +137,7 @@ h2{
 	text-align: center;
 	letter-spacing: 1px;
 	text-transform: uppercase;
-	margin-top: 26px;
+	margin-top: 30px;
 }
 
 .navbar-header > a:hover{
@@ -155,11 +155,6 @@ h2{
    position: relative;
    max-width: 160px;
    height: auto;
-   
-}
-
-.navbar-header a.navbar-brand:hover{
-	color: #111111;
 }
 
 nav.navbar.bootsnav{
@@ -170,6 +165,7 @@ nav.navbar.bootsnav{
 
 nav.navbar.bootsnav ul.nav{
 	margin-right: 160px;
+	margin-top: 5px;
 }
 
 nav.navbar.bootsnav li.dropdown ul.dropdown-menu{
@@ -265,7 +261,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .attr-nav > ul > li > a{
     color: #111111;
-	padding-top: 30px;
+	padding-top: 36px;
 	margin-left: -12px;
 	position: relative;
 	left: -160px;
@@ -317,7 +313,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .left_info .fas,
 .left_info .far,
-.right_info .fab{
+.right_info > a > .fab{
 	font-size: 16px;
 	color: #159957;
 }
@@ -327,12 +323,11 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	padding-right: 8px;
 }
 
-.right_info > a{
+.right_info > a .fab{
 	padding-right: 14px;
 }
 
-.left_info .fas:hover,
-.right_info .fab:hover{
+.right_info > a > .fab:hover{
 	color: #111111;
 }
 
@@ -372,7 +367,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	max-width: 300px;
 	display: inline-block;
 	position: absolute;
-	top: 15px;
+	top: 19px;
 	right: 0;
 }
 
@@ -831,14 +826,14 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	color: #111111;
 	letter-spacing: 1px;
 	text-align: left;
-	padding-bottom: 6px;
+	padding: 7px 0;
 }
 
 .square_list > ul > li::before{
-	font-family: 'Material Symbols Outlined';
-	content: "\e86c";
-	font-weight: 200;
-	font-size: 30px;
+	font-family: 'uicons-thin-straight';
+	content: "\fa38";
+	font-size: 26px;
+	font-weight: 100;
 	position: relative;
 	top: 10px;
 	padding-right: 12px;
@@ -860,13 +855,11 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	box-shadow: 0 20px 70px rgba(38,42,76,.2);
 }
 
-.icon_box span.icon-60{
-	font-size: 60px;
-	font-weight: 100;
+.icon_box .fi{
+	font-size: 42px;
 	color: #159957;
 	display: block;
 	text-align: left;
-	padding-bottom: 8px;
 }
 
 .icon_box h3{
@@ -1271,14 +1264,15 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	margin-top: 30px;
 }
 
-.square_info_left{
+.square_top_content,
+.square_last_content{
 	width: 100%;
-	margin-bottom: 10px;
+	min-height: 50px;
+	overflow-y: auto;
 }
 
-.square_info_right{
-	width: 100%;
-	margin-bottom: 10px;
+.square_top_content{
+	padding-bottom: 25px;
 }
 
 .square_space{
@@ -1296,9 +1290,8 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	width: 80%;
 }
 
-.square_icon .material-symbols-outlined.icon-65{
-	font-size: 65px;
-	font-weight: 100;
+.square_icon .fi{
+	font-size: 44px;
 	color: #159957;
 	display: inline-block;
 	text-align: left;
@@ -1314,7 +1307,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	letter-spacing: 1px;
 	line-height: 1.4em;
 	margin: 0;
-	padding-top: 11px;
 }
 
 .square_title p{
@@ -1643,9 +1635,9 @@ a.blog_btn:hover{
 }
 
 .client_comment p{
-	font-family: 'Montserrat', Arial, sans-serif;
-	font-size: 16px;
-	font-weight: 500;
+	font-family: 'Roboto', Arial, sans-serif;
+	font-size: 18px;
+	font-weight: normal;
 	display: inline-block;
 	color: #696969;
 	letter-spacing: 1px;
@@ -1695,7 +1687,7 @@ a.blog_btn:hover{
 	font-size: 14px;
 	font-weight: 600;
 	display: block;
-	color: #159957;
+	color: #696969;
 	letter-spacing: 1px;
 	text-align: center;
 	text-transform: uppercase;
@@ -1709,9 +1701,8 @@ a.blog_btn:hover{
 	padding-top: 8px;
 }
 
-.client_icon .material-symbols-outlined.icon-25{
-	font-size: 25px;
-	font-weight: 300;
+.client_icon .fi{
+	font-size: 22px;
 	color: #159957;
 	display: inline-block;
 	text-align: center;
@@ -1774,13 +1765,13 @@ a.blog_btn:hover{
 }
 
 .col_head{
-	flex: 41.66%;
-	width: 41.66%;
+	flex: 45%;
+	width: 45%;
 }
 
 .col_info{
-	flex: 58.33%;
-	width: 58.33%;
+	flex: 55%;
+	width: 55%;
 	margin-top: 35px;
 }
 
@@ -1808,7 +1799,7 @@ a.blog_btn:hover{
 	letter-spacing: 1px;
 	height: 40px;
 	vertical-align: middle;
-	padding: 20px;
+	padding: 20px 8px;
 	width: 350px;
 	background-color: #ffffff;
 	border: none;
@@ -1828,16 +1819,16 @@ a.blog_btn:hover{
 	font-weight: 600;
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	border: none;
 	padding: 0;
 	height: 40px;
 	width: 130px;
 	color: #111111;
-	margin: 0;
-	border-radius: 4px;
+	position: relative;
+	bottom: -2px;
 	transition: 0.5s;
 	background-color: #ffffff;
 	border: solid 1px #ffffff;
+	border-radius: 4px;
 }
 
 .col_info input[type="submit"]:hover{
