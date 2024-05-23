@@ -3,7 +3,7 @@ Main Stylesheet
 
 Project:     Upstake - Multipurpose Business Template
 Version:    1.0
-Last change:    14/03/2024
+Last change:    23/05/2024
 Author:    creativemaze
 Primary use:    Medical
 -------------------------------------------------------------------*/
@@ -312,8 +312,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .left_info .fas,
-.left_info .far,
-.right_info .fas{
+.left_info .far{
 	font-size: 16px;
 	color: #ffffff;
 }
@@ -378,8 +377,23 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	transition: 0.5s;
 }
 
+.right_info a .fas{
+	font-size: 16px;
+	color: #ffffff;
+	padding-right: 8px;
+}
+
 .right_info a:hover{
 	color: #26d0ce;
+}
+
+.right_info a .fas:hover{
+	color: #26d0ce;
+}
+
+.right_info .fa-m{
+	position: relative;
+	top: 2px;
 }
 
 .head_btn{
@@ -531,21 +545,20 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	position: relative;
 	max-width: 300px;
 	margin: 0;
-	padding: 25px 20px;
+	padding: 20px 20px 25px;
 	text-align: left;
 	background: #ffffff;
 	overflow: hidden;
 }
 
-.icon_center .material-symbols-outlined.icon-60{
-	font-size: 60px;
-	font-weight: 100;
+.icon_center .fi{
+	font-size: 44px;
 	color: #ffffff;
 	display: inline-block;
 	text-align: left;
 	position: absolute;
-	right: 15px;
-	bottom: 15px
+	right: 20px;
+	bottom: 5px
 }
 
 .icon_center{
@@ -585,7 +598,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .icon_button a{
-	height: 40px;
+	height: 25px;
 	margin: 20px 0 0;
     color: #111111;
     text-decoration: none;
@@ -693,16 +706,17 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	color: #111111;
 	letter-spacing: 1px;
 	text-align: left;
+	padding: 6px 0;
 }
 
 .square_list > ul > li::before{
-	font-family: 'Material Symbols Outlined';
-	content: "\e5cc";
-	font-weight: 300;
-	font-size: 30px;
+	font-family: 'uicons-regular-straight';
+	content: "\fd5e";
+	font-weight: 100;
+	font-size: 26px;
 	position: relative;
-	top: 10px;
-	padding-right: 3px;
+	top: 8px;
+	padding-right: 8px;
 	color: #2b32b2;
 }
 
@@ -979,23 +993,11 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	line-height: 1.4em;
 }
 
-.bg_info h3::first-letter{
+.bg_info .first-letter{
 	background-color: #2b32b2;
 	padding: 12px 14px;
 	color: #ffffff;
 	margin-right: 4px;
-}
-
-.checkbox::before{
-	font-family: 'Material Symbols Outlined';
-	content: "\e92f";
-	font-weight: 400;
-	font-size: 28px;
-	position: relative;
-	top: 10px;
-	padding: 6px;
-	color: #ffffff;
-	background-color: #2b32b2;
 }
 
 .box_col_button a{
@@ -1141,16 +1143,22 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .cube_col{
+	position: relative;
 	flex: 50%;
 	width: 50%;
 	background-color: #2b32b2;
-	padding: 3em 25px;
+	padding: 6em 25px;
+	min-height: 600px;
+	position: relative;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 .center_col{
 	flex: 50%;
 	width: 50%;
-	min-height: 350px;
+	min-height: 600px;
 	position: relative;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -1267,12 +1275,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
   }
 }
 
-.cube_col img{
-	width: 100%;
-	height: auto;
-	display: block;
-}
-
 .count_col{
 	flex: 50%;
 	width: 50%;
@@ -1299,9 +1301,8 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	float: left;
 }
 
-.count_box .material-symbols-outlined.icon-75{
-	font-size: 75px;
-	font-weight: 100;
+.count_box .fi{
+	font-size: 48px;
 	color: #ffffff;
 	display: block;
 	text-align: center;
@@ -1315,6 +1316,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	text-align: left;
 	color: #ffffff;
 	letter-spacing: 1px;
+	margin-top: 0;
 }
 
 .count_box .count_title{
@@ -1434,7 +1436,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .blog_content{
 	text-align: left;
-	padding: 20px 0 15px;
+	padding: 20px 0 25px;
 	padding-left: 20px;
 	box-shadow: 0 20px 70px rgba(38,42,76,.2);
 }
@@ -1468,7 +1470,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 a.blog_btn{
-	height: 40px;
+	height: 25px;
 	margin: 10px 0 0;
     color: #111111;
     text-decoration: none;
@@ -1614,7 +1616,6 @@ a.blog_btn:hover::after {
 	display: flex;
 	flex-wrap: wrap;
 	padding: 40px 30px;
-	
 }
 
 .title_head{
@@ -1980,7 +1981,6 @@ a.footer-logo img{
 	.center_col{
 		flex: 100%;
 		width: 100%;
-		min-height: 650px;
 	}
 	
 	.cube_col{
@@ -2119,6 +2119,7 @@ a.footer-logo img{
 }
 
 @media only screen and (max-width: 420px){
+	.bg_col,
 	.grid_col,
 	.cube_box,
 	.client_col{
@@ -2141,8 +2142,9 @@ a.footer-logo img{
 		margin-left: -40px;
 	}
 	
-	.center_col{
-		min-height: 500px;
+	.center_col,
+	.cube_col{
+		min-height: 550px;
 	}
 }
 
