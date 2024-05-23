@@ -707,7 +707,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 .box_check{
 	float: left;
 	width: 20%;
-	margin-top: 6px;
+	margin-top: 10px;
 }
 
 .box_content{
@@ -2366,6 +2366,10 @@ a.footer-logo img{
 	.client_col{
 		padding-left: 0;
 		padding-right: 0;
+	}
+	
+	.box_check{
+		margin-top: 7px;
 	}
 }
 
