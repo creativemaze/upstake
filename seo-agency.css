@@ -3,7 +3,7 @@ Main Stylesheet
 
 Project:     Upstake - Multipurpose Business Template
 Version:    1.0
-Last change:    17/03/2024
+Last change:    23/05/2024
 Author:    creativemaze
 Primary use:    SEO Agency
 -------------------------------------------------------------------*/
@@ -320,10 +320,9 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .left_info .fas,
 .left_info .far,
-.right_info .fab{
+.right_info > a > .fab{
 	font-size: 16px;
 	color: #ffffff;
-	transition: 0.5s;
 }
 
 .left_info .fas,
@@ -331,12 +330,12 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	padding-right: 8px;
 }
 
-.right_info > a{
+.right_info > a .fab{
 	padding-right: 14px;
+	transition: 0.5s;
 }
 
-.left_info .fas:hover,
-.right_info .fab:hover{
+.right_info > a > .fab:hover{
 	color: #111111;
 }
 
@@ -592,7 +591,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	background-color: #eeeeee;
 	padding: 2em 25px;
 	margin-bottom: 9em;
-	margin-top: 2em;
+	margin-top: 3em;
 }
 
 .seo_group_one{
@@ -629,13 +628,15 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	padding-left: 20px;
 }
 
-.bg_icon .material-symbols-outlined.icon-60{
-	font-size: 60px;
-	font-weight: 100;
+.bg_icon .fi{
+	font-size: 44px;
+	width: 75px;
+	height: 75px;
+	display: inline-block;
+	text-align: center;
 	background-color: #fcb045;
 	color: #ffffff;
-	padding: 8px;
-	margin: 0 auto;
+	padding: 12px;
 }
 
 .bg_content h3{
@@ -758,7 +759,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	width: 100%;
 }
 
-.feature_check{
+.feature_num{
 	float: left;
 	width: 20%;
 	margin-bottom: 20px;
@@ -769,6 +770,17 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	width: 80%;
 	text-align: left;
 	padding-left: 12px;
+}
+
+.feature_num h4{
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 25px;
+	font-weight: 600;
+	display: inline-block;
+	text-align: center;
+	color: #ffffff;
+	line-height: 1.4em;
+	padding-top: 4px;
 }
 
 .feature_info h3{
@@ -782,18 +794,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	line-height: 1.4em;
 	margin: 0;
 	padding-top: 18px;
-}
-
-.checkbox::before{
-	font-family: 'Material Symbols Outlined';
-	content: "\e92f";
-	font-weight: 100;
-	font-size: 28px;
-	position: relative;
-	top: 10px;
-	padding: 6px 8px;
-	color: #111111;
-	background-color: #ffffff;
 }
 
 .area_button a{
@@ -978,11 +978,6 @@ li.slick-active button{
 	margin-right: 7px;
 }
 
-.extra_space{
-	position: relative;
-	
-}
-
 .graphic_box{
 	max-width: 475px;
 	position: relative;
@@ -1020,7 +1015,7 @@ li.slick-active button{
 .box_check{
 	float: left;
 	width: 20%;
-	margin-top: 6px;
+	margin-top: 10px;
 }
 
 .box_content{
@@ -1070,25 +1065,25 @@ li.slick-active button{
 	background-color: #ffffff;
 }
 
-.box_checkbox::before{
-	font-family: 'Material Symbols Outlined';
-	content: "\e5ca";
-	font-weight: 400;
-	font-size: 25px;
+.box_check .fi::before{
+	font-family: 'uicons-regular-straight';
+	content: "\fb2b";
+	font-weight: 200;
+	font-size: 22px;
 	border: solid 1px #ffffff;
 	border-radius: 50%;
-	padding: 4px 8px;
+	padding: 10px;
 	color: #ffffff;
 }
 
-.last_checkbox::before{
-	font-family: 'Material Symbols Outlined';
-	content: "\e5ca";
-	font-weight: 400;
-	font-size: 25px;
+.box_check .fi.last_check::before::before{
+	font-family: 'uicons-regular-straight';
+	content: "\fb2b";
+	font-weight: 200;
+	font-size: 22px;
 	border: solid 1px #111111;
 	border-radius: 50%;
-	padding: 4px 8px;
+	padding: 10px;
 	color: #111111;
 }
 
@@ -1159,21 +1154,21 @@ li.slick-active button{
 	padding: 80px 0 0;
 }
 
-.price_content span.price-icon{
-	font-size: 75px;
-	font-weight: 100;
+.price_content .fi{
+	font-size: 52px;
 	color: #fcb045;
 	display: block;
 	text-align: left;
+	margin-top: 20px;
 	margin-bottom: -15px;
 }
 
-.price_content span.color-price-icon{
-	font-size: 75px;
-	font-weight: 100;
+.price_content .fi.color-price-icon{
+	font-size: 52px;
 	color: #ffffff;
 	display: block;
 	text-align: left;
+	margin-top: 20px;
 	margin-bottom: -15px;
 }
 
@@ -1185,7 +1180,7 @@ li.slick-active button{
 	margin: auto;
 	padding-bottom: 35px;
 	background-color: #ffffff;
-	
+	box-shadow: 0 20px 70px rgba(38,42,76,.2);
 }
 
 .center_col{
@@ -1210,6 +1205,7 @@ li.slick-active button{
 .center_box{
 	background-color: #fcb045;
 	padding-bottom: 50px;
+	box-shadow: none;
 }
 
 .price_title{
@@ -1326,7 +1322,7 @@ li.slick-active button{
     font-size: 12px;
 	font-weight: 600;
 	font-family: 'Montserrat', Arial, sans-serif;
-    margin: auto;
+   margin: 35px auto 0;
     transition: 0.5s;
 	border: 1px solid #ffffff;
 	letter-spacing: 1px;
@@ -1733,9 +1729,9 @@ a.blog_btn:hover{
 }
 
 .client_comment p{
-	font-family: 'Montserrat', Arial, sans-serif;
-	font-size: 16px;
-	font-weight: 500;
+	font-family: 'Roboto', Arial, sans-serif;
+	font-size: 18px;
+	font-weight: normal;
 	display: inline-block;
 	color: #696969;
 	letter-spacing: 1px;
@@ -1799,9 +1795,8 @@ a.blog_btn:hover{
 	padding-top: 8px;
 }
 
-.client_icon .material-symbols-outlined.icon-25{
-	font-size: 25px;
-	font-weight: 300;
+.client_icon .fi{
+	font-size: 22px;
 	color: #fcb045;
 	display: inline-block;
 	text-align: center;
@@ -1843,7 +1838,7 @@ a.blog_btn:hover{
 	line-height: 1.2em;
 }
 
-.footer_col_button a{
+.bg_col_button a{
 	background-color: #fcb045;
 	width: 150px;
 	margin: 30px auto 0;	
@@ -1861,7 +1856,7 @@ a.blog_btn:hover{
 	text-align: center;
 }
 
-.footer_col_button a:hover{
+.bg_col_button a:hover{
 	background-color: #ffffff;
 	color: #111111;
 	border-color: #ffffff;
@@ -2162,7 +2157,7 @@ a.footer-logo img{
 	.price_col{
 		flex: 100%;
 		width: 100%;
-		padding-top: 30px;
+		padding-top: 40px;
 	}
 	
 	.center_col{
@@ -2248,7 +2243,7 @@ a.footer-logo img{
 	}
 	
 	.box_check{
-		margin-top: -1px;
+		margin-top: 7px;
 	}
 	
 	.box_content h3{
@@ -2289,11 +2284,11 @@ a.footer-logo img{
 		font-size: 30px;
 	}
 	
-	.bg_col{
-		padding-left: 0;
-		padding-right: 0;
+	.bg_content{
+		padding-left: 30px;
 	}
 	
+	.bg_col,
 	.feature_col,
 	.count_col,
 	.blog_col,
@@ -2307,14 +2302,10 @@ a.footer-logo img{
 	}
 }
 
-@media only screen and (max-width: 385px){
-	.box_checkbox::before{
-		font-size: 22px;
-		padding: 4px 6px;
-	}
-	
-	.box_check{
-		margin-top: 2px;
+@media only screen and (max-width: 360px){
+	.box_check .fi::before,
+	.box_check .fi.last_checkbox::before{
+		font-size: 18px;
 	}
 }
 
