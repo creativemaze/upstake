@@ -139,20 +139,6 @@ h2{
 	margin-left: auto;
 }
 
-.bg_info{
-	font-family: 'Roboto' , Arial, sans-serif;
-	font-size: 16px;
-	font-weight: normal;
-	display: block;
-	color: #dddddd;
-	letter-spacing: 1px;
-	text-align: center;
-	padding-top: 10px;
-	line-height: 1.5em;
-	max-width: 600px;
-	margin: auto;
-}
-
 /* 2. HEADER
  ----------- */
  
@@ -1244,7 +1230,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .client_comment p{
 	font-family: 'Roboto', Arial, sans-serif;
-	font-size: 16px;
+	font-size: 18px;
 	font-weight: normal;
 	display: inline-block;
 	color: #696969;
@@ -1310,7 +1296,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .client_icon .fi{
-	font-size: 25px;
+	font-size: 22px;
 	color: #ffc91a;
 	display: inline-block;
 	text-align: center;
@@ -1414,7 +1400,7 @@ li.slick-active button{
 	color: #696969;
 	letter-spacing: 1px;
 	text-align: left;
-	padding: 12px 0;
+	padding: 18px 0 25px;
 	max-width: 450px;
 	line-height: 1.5em;
 }
