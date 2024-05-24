@@ -95,7 +95,6 @@ ul{
 	font-weight: 600;
 	display: block;
 	color: #111111;
-	display: block;
 	text-align: center;
 	letter-spacing: 1px;
 	line-height: 1.2em;
@@ -714,7 +713,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	padding: 20px 0;
 }
 
-.square_list > ul > li::first-letter{
+.square_list > ul > li .first-letter{
 	background-color: #009fff;
 	padding: 12px 14px;
 	color: #ffffff;
@@ -829,12 +828,12 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	margin-top: -20px;
 }
 
-.icon_symbol span.icon-80{
-	font-size: 80px;
-	font-weight: 100;
+.icon_symbol .fi{
+	font-size: 52px;
 	color: #009fff;
 	display: inline-block;
 	text-align: center;
+	padding-top: 10px;
 }
 
 .icon_content h3{
@@ -1433,17 +1432,17 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	letter-spacing: 1px;
 	line-height: 1.4em;
 	text-align: left;
-	padding: 7px 0;
+	padding: 8px 0;
 }
 
 .info_list > ul > li::before{
-	content: "\e5cc";
-	font-family: 'Material Symbols Outlined';
-	font-weight: 400;
-	font-size: 30px;
+	font-family: 'uicons-regular-straight';
+	content: "\fd5e";
+	font-weight: 100;
+	font-size: 26px;
 	position: relative;
-	top: 10px;
-	padding-right: 3px;
+	top: 8px;
+	padding-right: 8px;
 	color: #009fff;
 }
 
@@ -1793,6 +1792,10 @@ a.blog_btn::after{
 	font-size: 20px;
 	display: inline-block;
 	padding-left: 5px;
+}
+
+.blog_title a:hover{
+	color: #009fff;
 }
 
 a.blog_btn:hover{
