@@ -333,6 +333,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .right_info > a > .fab:hover{
 	color: #ec2f4b;
+	transition: 0.5s;
 }
 
 .sub_width{
@@ -2295,6 +2296,10 @@ a.footer-logo img{
 		padding: 20px 10px 15px;
 	}
 	
+	.box_check{
+		margin-top: 7px;
+	}
+	
 	.box_content h3{
 		font-size: 12px;
 	}
@@ -2366,10 +2371,6 @@ a.footer-logo img{
 	.client_col{
 		padding-left: 0;
 		padding-right: 0;
-	}
-	
-	.box_check{
-		margin-top: 7px;
 	}
 }
 
