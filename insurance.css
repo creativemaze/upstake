@@ -3,7 +3,7 @@ Main Stylesheet
 
 Project:    Upstake - Multipurpose Business Template
 Version:    1.0
-Last change:    19/03/2024
+Last change:    24/05/2024
 Author:    creativemaze
 Primary use:    Insurance
 -------------------------------------------------------------------*/
@@ -318,8 +318,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .left_info .fas,
-.left_info .far,
-.right_info .fas{
+.left_info .far{
 	font-size: 16px;
 	color: #ffffff;
 }
@@ -383,8 +382,23 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	transition: 0.5s;
 }
 
+.right_info a .fas{
+	font-size: 16px;
+	color: #ffffff;
+	padding-right: 8px;
+}
+
 .right_info a:hover{
 	color: #111111;
+}
+
+.right_info a .fas:hover{
+	color: #111111;
+}
+
+.right_info .fa-m{
+	position: relative;
+	top: 2px;
 }
 
 .head_btn{
@@ -816,16 +830,17 @@ li.slick-active button{
 	color: #111111;
 	letter-spacing: 1px;
 	text-align: left;
+	padding: 8px 0;
 }
 
 .square_list > ul > li::before{
-	font-family: 'Material Symbols Outlined';
-	content: "\e941";
-	font-weight: 200;
-	font-size: 30px;
+	font-family: 'uicons-thin-straight';
+	content: "\fc0d";
+	font-weight: 100;
+	font-size: 26px;
 	position: relative;
-	top: 10px;
-	padding-right: 8px;
+	top: 8px;
+	padding-right: 10px;
 	color: #d60027;
 }
 
@@ -908,7 +923,7 @@ li.slick-active button{
 .square_col_button a{
 	background-color: #7300a5;
 	width: 160px;
-	margin: 35px 0 0;
+	margin: 30px 0 0;
     color: #ffffff;
     padding: 13px 14px;
     text-decoration: none;
@@ -945,6 +960,16 @@ li.slick-active button{
 	width: 100%;
 	height: 100%;
 	background: linear-gradient(90deg,rgba(214, 0, 39, .8) 0%,rgba(115, 0, 165, .8) 100%);
+}
+
+/* --- 3.4. Insurance Area Four --- */
+.insurance_area_four{
+	max-width: 1280px;
+	margin: -375px auto 0;
+	padding: 0 20px;
+	margin-bottom: calc(9em + 80px);
+	position: relative;
+	z-index: 9999;
 }
 
 .insurance_info_group{
@@ -990,16 +1015,6 @@ li.slick-active button{
 	line-height: 1.5em;
 }
 
-/* --- 3.4. Insurance Area Four --- */
-.insurance_area_four{
-	max-width: 1280px;
-	margin: -375px auto 0;
-	padding: 0 20px;
-	margin-bottom: calc(9em + 80px);
-	position: relative;
-	z-index: 9999;
-}
-
 .insurance_group_four{
 	width: 100%;
 	display: flex;
@@ -1014,7 +1029,7 @@ li.slick-active button{
 .grid_col{
 	flex: 33.33%;
 	width: 33.33%;
-	padding: 25px;
+	padding: 25px 20px;
 }
 
 .grid_box{
@@ -1043,17 +1058,18 @@ li.slick-active button{
 
 .grid_icon{
 	float: left;
-	width: 20%;
-	padding-right: 10px;
+	width: 25%;
+	padding-right: 5px;
 	padding-top: 10px;
 }
 
-.grid_icon .material-symbols-outlined.icon-50{
-	font-size: 50px;
-	font-weight: 100;
+.grid_icon .fi{
+	font-size: 32px;
+	width: 55px;
+	height: 55px;
 	background-color: #7300a5;
 	color: #ffffff;
-	padding: 5px;
+	padding: 8px 12px;
 	display: inline-block;
 	text-align: left;
 }
@@ -1088,8 +1104,8 @@ li.slick-active button{
 
 .grid_content{
 	float: left;
-	width: 80%;
-	padding-left: 10px;
+	width: 75%;
+	padding-left: 5px;
 	padding-top: 8px;
 }
 
@@ -1243,14 +1259,14 @@ li.slick-active button{
 	letter-spacing: 1px;
 	text-transform: capitalize;
 	text-align: left;
-	padding-bottom: 6px;
+	padding: 7px 0;
 }
 
 .info_list > ul > li::before{
-	font-family: 'Material Symbols Outlined';
-	content: "\e86c";
-	font-weight: 200;
-	font-size: 30px;
+	font-family: 'uicons-thin-straight';
+	content: "\fa38";
+	font-size: 26px;
+	font-weight: 100;
 	position: relative;
 	top: 10px;
 	padding-right: 12px;
@@ -1272,13 +1288,11 @@ li.slick-active button{
 	box-shadow: 0 20px 70px rgba(38,42,76,.2);
 }
 
-.icon_box span.icon-60{
-	font-size: 60px;
-	font-weight: 100;
+.icon_box .fi{
+	font-size: 42px;
 	color: #7300a5;
 	display: block;
 	text-align: left;
-	padding-bottom: 8px;
 }
 
 .icon_box h3{
@@ -1504,12 +1518,12 @@ li.slick-active button{
 }
 
 .count_num .counter::before{
-	font-family: 'Material Symbols Outlined';
-	content: "\e5d8";
+	font-family: 'uicons-thin-straight';
+	content: "\fbf2";
 	display: inline-block;
-	font-weight: 400 !important;
-	font-size: 30px;
+	font-size: 28px;
 	color: #7300a5;
+	padding-right: 3px;
 }
 
 /* --- 3.8. Insurance Area Eight --- */
@@ -1848,6 +1862,10 @@ a.footer-logo img{
 	.photo_content{
 		margin-right: 0;
 	}
+	
+	.box_content{
+		margin-left: 15px;
+	}
 } 
  
 @media only screen and (max-width: 992px){
@@ -1865,7 +1883,7 @@ a.footer-logo img{
 		left: 50%;
 		transform: translateX(-50%);
 	}
-
+	
 	.head_btn a{
 		background-color: #7300a5;
 		border-color: #7300a5;
@@ -1984,6 +2002,10 @@ a.footer-logo img{
 	
 	.photo_content{
 		margin-right: 65px;
+	}
+	
+	.box_content{
+		margin-left: 45px;
 	}
 	
 	.info_head{
