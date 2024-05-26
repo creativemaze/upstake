@@ -1,6 +1,6 @@
 "use strict";
 //Slick Slider
-$(document).ready(function(){
+$( window ).on( "load", function(){
 	$('.digital_slider').slick({
 		dots: false,
 		arrows: false,
