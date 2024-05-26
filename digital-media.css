@@ -3,7 +3,7 @@ Main Stylesheet
 
 Project:     Upstake - Multipurpose Business Template
 Version:    1.0
-Last change:    24/03/2024
+Last change:    26/05/2024
 Author:    creativemaze
 Primary use:    Digital Media
 -------------------------------------------------------------------*/
@@ -367,7 +367,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	transition: 0.5s;
 }
 
-.left_info .fas:hover,
 .right_info > a > .fab:hover{
 	color: #43cea2;
 }
@@ -438,10 +437,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 .sliderwrap{
 	position: relative;
 	top: -140px;
-}
-
-.slidearea{
-	width: 100%;
 }
 
 .main_content{
@@ -682,7 +677,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .title_head{
 	text-align: center;
-	padding-left: 4px;
+	padding-left: 10px;
 }
 
 .title_icon{
@@ -702,12 +697,11 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	text-align: center;
 	display: inline-block;
 	position: relative;
-	top: -20px;
+	top: -12px;
 }
 
-.title_icon span.icon-55{
-	font-size: 55px;
-	font-weight: 100;
+.title_icon .fi{
+	font-size: 36px;
 	color: #43cea2;
 	display: inline-block;
 	text-align: left;
@@ -790,13 +784,13 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .col_list > ul > li::before{
-	font-family: 'Material Symbols Outlined';
-	content: "\e941";
-	font-weight: 300;
-	font-size: 35px;
+	font-family: 'uicons-thin-straight';
+	content: "\fc0d";
+	font-weight: 100;
+	font-size: 26px;
 	position: relative;
-	top: 13px;
-	padding-right: 3px;
+	top: 8px;
+	padding-right: 10px;
 	color: #43cea2;
 }
 
@@ -972,13 +966,14 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	line-height: 1.5em;
 }
 
-.icon_symbol span.icon-60{
-	font-size: 60px;
-	font-weight: 100;
+.icon_symbol .fi{
+	font-size: 44px;
+	width: 75px;
+	height: 75px;
+	display: inline-block;
 	background-color: #43cea2;
 	color: #ffffff;
-	padding: 8px;
-	margin: 0 auto;
+	padding: 12px;
 }
 
 /* --- 3.3. Digital Area Three --- */
@@ -1145,7 +1140,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 .box_check{
 	float: left;
 	width: 20%;
-	margin-top: 6px;
+	margin-top: 10px;
 }
 
 .box_content{
@@ -1195,25 +1190,21 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	background-color: #ffffff;
 }
 
-.box_checkbox::before{
-	font-family: 'Material Symbols Outlined';
-	content: "\e5ca";
-	font-weight: 400;
-	font-size: 25px;
+.box_check .fi::before{
+	font-weight: 200;
+	font-size: 22px;
 	border: solid 1px #ffffff;
 	border-radius: 50%;
-	padding: 4px 8px;
+	padding: 10px;
 	color: #ffffff;
 }
 
-.last_checkbox::before{
-	font-family: 'Material Symbols Outlined';
-	content: "\e5ca";
-	font-weight: 400;
-	font-size: 25px;
+.box_check .fi.last_checkbox::before{
+	font-weight: 200;
+	font-size: 22px;
 	border: solid 1px #111111;
 	border-radius: 50%;
-	padding: 4px 8px;
+	padding: 10px;
 	color: #111111;
 }
 
@@ -1271,6 +1262,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	margin: auto;
 	padding-bottom: 35px;
 	background-color: #ffffff;
+	box-shadow: 0 20px 70px rgba(38,42,76,.2);
 }
 
 .center_col{
@@ -1292,6 +1284,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 .center_box{
 	background-color: #111111;
 	padding-bottom: 50px;
+	box-shadow: none;
 }
 
 .price_title{
@@ -1361,14 +1354,13 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .price_list > ul li::after{
-	font-family: 'Material Symbols Outlined';
-	content: "\e5ca";
-	font-weight: 300;
-	font-size: 30px;
+	font-family: 'uicons-regular-straight';
+	content: "\fb2b";
+	font-size: 20px;
 	position: relative;
 	float: right;
 	top: 0;
-	padding-right: 9px;
+	padding-right: 6px;
 	color: #43cea2;
 }
 
@@ -1410,7 +1402,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
     font-size: 12px;
 	font-weight: 600;
 	font-family: 'Montserrat', Arial, sans-serif;
-    margin: 15px auto 0;
+    margin: 35px auto 0;
     transition: 0.5s;
 	border: 1px solid #ffffff;
 	letter-spacing: 1px;
@@ -1425,8 +1417,8 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .mid_btn a:hover{
 	color: #ffffff;
-	background: transparent;
-	border-color: #ffffff;
+	background-color: #43cea2;
+	border-color: #43cea2;
 }
 
 /* --- 3.6. Digital Area Six --- */
@@ -1505,16 +1497,17 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	color: #111111;
 	letter-spacing: 1px;
 	text-align: left;
+	padding: 6px 0;
 }
 
 .info_list > ul > li::before{
-	font-family: 'Material Symbols Outlined';
-	content: "\e5cc";
-	font-weight: 300;
-	font-size: 30px;
+	font-family: 'uicons-regular-straight';
+	content: "\fd5e";
+	font-weight: 100;
+	font-size: 26px;
 	position: relative;
-	top: 10px;
-	padding-right: 3px;
+	top: 8px;
+	padding-right: 8px;
 	color: #43cea2;
 }
 
@@ -1871,7 +1864,7 @@ a.blog_btn::after{
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
-	padding: 5em 25px 12em;
+	padding: 7em 25px 14em;
 	margin-bottom: 9em;
 }
 
@@ -1911,7 +1904,7 @@ a.blog_btn::after{
 	max-width: 640px;
 	padding: 20px;
 	text-align: center;
-	background: #ffffff;
+	background: rgba(0,0,0,0.5);
 	border-left: solid 4px #43cea2;
 }
 
@@ -1938,7 +1931,7 @@ a.blog_btn::after{
 	font-size: 16px;
 	font-weight: normal;
 	display: block;
-	color: #696969;
+	color: #dddddd;
 	letter-spacing: 1px;
 	text-align: left;
 	padding: 15px;
@@ -1966,12 +1959,11 @@ a.blog_btn::after{
 	text-align: left;
 }
 
-.client_icon .material-symbols-outlined.icon-25{
-	font-size: 25px;
-	font-weight: 300;
+.client_icon .fi{
+	font-size: 22px;
 	color: #43cea2;
 	display: inline-block;
-	text-align: left;
+	text-align: center;
 }
 
 /* --- 3.10. Digital Area Ten --- */
@@ -2225,17 +2217,6 @@ a.footer-logo img{
 		width: 100%;
 	}
 	
-	.square_col_left{
-		flex: 100%;
-		width: 100%;
-		margin-bottom: 50px;
-	}
-	
-	.square_col_right{
-		flex: 100%;
-		width: 100%;
-	}
-	
 	.digital_area_six{
 		margin-bottom: 9em;
 	}
@@ -2331,7 +2312,7 @@ a.footer-logo img{
 	.attr-nav > ul > li > a{
 		position: relative;
 		left: 0;
-		padding-top: 25px;
+		padding-top: 21px;
 	}
 	
 	.slide__left,
@@ -2371,6 +2352,17 @@ a.footer-logo img{
 	.icon_col{
 		flex: 50%;
 		width: 50%;
+	}
+	
+	.square_col_left{
+		flex: 100%;
+		width: 100%;
+		margin-bottom: 50px;
+	}
+	
+	.square_col_right{
+		flex: 100%;
+		width: 100%;
 	}
 	
 	.price_col{
@@ -2499,7 +2491,7 @@ a.footer-logo img{
 	}
 	
 	.box_check{
-		margin-top: -1px;
+		margin-top: 7px;
 	}
 	
 	.box_content h3{
@@ -2582,15 +2574,6 @@ a.footer-logo img{
 		padding-right: 15px;
 	}
 	
-	.box_checkbox::before{
-		font-size: 22px;
-		padding: 4px 6px;
-	}
-	
-	.box_check{
-		margin-top: 2px;
-	}
-	
 	.base_content{
 		width: 130px;
 		height: 130px;
@@ -2611,6 +2594,11 @@ a.footer-logo img{
 	.heading_group{
 		padding-left: 4px;
 		padding-right: 4px;
+	}
+	
+	.box_check .fi::before,
+	.box_check .fi.last_checkbox::before{
+		font-size: 18px;
 	}
 }
 
