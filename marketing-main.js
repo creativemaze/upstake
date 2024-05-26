@@ -1,5 +1,5 @@
 "use strict";
-//Slick Slider (1) One
+//Slick Slider
 $(document).ready(function(){
 	$('.feature_slider').slick({
 		slidesToShow: 1,
@@ -13,29 +13,6 @@ $(document).ready(function(){
 		pauseOnHover: false,
 		pauseOnFocus: false,
 		dots: false,
-	});
-});
-
-//Slick Slider (2) Two
-$(document).ready(function(){
-	$('.client_slider').slick({
-		slidesToShow: 3,
-		autoplay: false,
-		infinite: true,
-		speed: 1000,
-		arrows: false,
-		dots: true,
-		pauseOnHover: false,
-		pauseOnFocus: false,
-		responsive: [
-			{
-				breakpoint: 993,
-				settings: {
-					slidesToShow: 1,
-					fade: true
-				}			
-			},
-		]
 	});
 });
 
