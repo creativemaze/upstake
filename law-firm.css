@@ -3,7 +3,7 @@ Main Stylesheet
 
 Project:    Upstake - Multipurpose Business Template
 Version:    1.0
-Last change:    26/03/2024
+Last change:    26/05/2024
 Author:    creativemaze
 Primary use:    Law Firm
 -------------------------------------------------------------------*/
@@ -343,6 +343,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .right_info > a .fab{
 	padding-right: 14px;
+	transition: 0.5s;
 }
 
 .right_info > a > .fab:hover{
@@ -645,7 +646,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	width: 160px;
 	height: 160px;
 	display: block;
-	box-shadow: 0 20px 70px rgba(38,42,76,.2);
 	margin: 0 auto;
 }
 
@@ -724,15 +724,16 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	transition: ease-in-out 0.5s;
 }
 
-.icon_box span.icon-65{
-	font-size: 65px;
-	font-weight: 100;
+.icon_box .fi{
+	font-size: 48px;
+	width: 80px;
+	height: 80px;
 	background-color: #999966;
 	color: #ffffff;
 	display: inline-block;
 	margin-top: -40px;
 	text-align: center;
-	padding: 9px;
+	padding: 12px;
 }
 
 .icon_box h3{
@@ -758,13 +759,16 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	padding: 14px 0;
 }
 
-a > span.icon-25{
-	font-size: 25px;
-	font-weight: 300;
-	margin-top: -10px;
+.icon_box .plus_link{
+	font-size: 32px;
+	width: 48px;
+	height: 48px;
+	font-weight: 200;
+	display: inline-block;
 	color: #ffffff;
+	margin-top: -7px;
 	background-color: #111111;
-	padding: 10px;
+	padding: 2px 10px;
 	border-radius: 50%;
 	transition: 0.5s;
 }
@@ -773,7 +777,7 @@ a > span.icon-25{
 	background-color: #111111;
 }
 
-.icon_box:hover .icon_symbol .material-symbols-outlined.icon-65{
+.icon_box:hover .plus_link{
 	background-color: #ffffff;
 	color: #999966;
 }
@@ -783,12 +787,12 @@ a > span.icon-25{
 	color: #ffffff;
 }
 
-.icon_box:hover > a > span.icon-25{
+.icon_box:hover .plus_link{
 	color: #ffffff;
 	background-color: #999966;
 }
 
-.icon_box:hover > a > span.icon-25:hover{
+.icon_box:hover .plus_link:hover{
 	color: #999966;
 	background-color: #ffffff;
 }
@@ -872,16 +876,17 @@ a > span.icon-25{
 	color: #111111;
 	letter-spacing: 1px;
 	text-align: left;
+	padding: 6px 0;
 }
 
 .square_list > ul > li::before{
-	font-family: 'Material Symbols Outlined';
-	content: "\e941";
-	font-weight: 300;
-	font-size: 30px;
+	font-family: 'uicons-thin-straight';
+	content: "\fc0d";
+	font-weight: 100;
+	font-size: 26px;
 	position: relative;
-	top: 10px;
-	padding-right: 8px;
+	top: 8px;
+	padding-right: 10px;
 	color: #999966;
 }
 
@@ -921,10 +926,11 @@ a > span.icon-25{
 	}
 }
 
-.left_border_box{
+.right_border_box{
 	position: absolute;
-	top: -40px;
-	right: 25px;
+	top: -25px;
+	right: 0;
+	margin-right: 35px;
 	background-image: radial-gradient(#999966 2px, transparent 2px);
 	background-size: 14px 14px;
 	background-color: #ffffff;
@@ -948,33 +954,35 @@ a > span.icon-25{
 
 .bg_content{
 	position: relative;
-	margin-top: -65px;
+	margin-top: -60px;
 	z-index: 99;
 	width: 100%;
-	height: 75px;
-	display: flex;
-	flex-wrap: wrap;
-	background-color: #ffffff;
 	text-align: center;
-	box-shadow: 0 20px 70px rgba(38,42,76,.2);
 }
 
 .border_col{
+	box-shadow: 0 20px 70px rgba(38,42,76,.2);
 	flex: 33.33%;
 	width: 33.33%;
 	max-width: 220px;
-	display: block;
+	height: 80px;
 }
 
 .first_border{
 	background-color: #111111;
-	padding: 10px 0;
+	padding: 12px 0;
 	overflow: hidden;
 }
 
 .second_border{
 	background-color: #999966;
-	padding: 10px 0;
+	padding: 12px 0;
+	overflow: hidden;
+}
+
+.third_border{
+	background-color: #ffffff;
+	padding: 12px 0;
 	overflow: hidden;
 }
 
@@ -1020,11 +1028,6 @@ a > span.icon-25{
 	margin: 0;
 }
 
-.third_border{
-	padding: 10px 0;
-	overflow: hidden;
-}
-
 .third_border h4,
 .third_border h3{
 	color: #111111;
@@ -1045,7 +1048,7 @@ a > span.icon-25{
 	width: 1.3rem;
 	height: 1.3rem;
 	padding: 0;		
-	border: solid 1px #333333;
+	border: solid 1px #6f6f6f;
 	border-radius: 100%;
 	background-color: transparent;
 	text-indent: -9999px;
@@ -1537,9 +1540,9 @@ li.slick-active button{
 }
 
 .client_comment p{
-	font-family: 'Raleway', Arial, sans-serif;
+	font-family: 'Roboto', Arial, sans-serif;
 	font-size: 16px;
-	font-weight: 500;
+	font-weight: normal;
 	display: inline-block;
 	color: #696969;
 	letter-spacing: 1px;
@@ -1603,8 +1606,8 @@ li.slick-active button{
 	padding-top: 8px;
 }
 
-.client_icon span.icon-25{
-	font-size: 25px;
+.client_icon .fi{
+	font-size: 22px;
 	font-weight: 300;
 	color: #999966;
 	display: inline-block;
@@ -1814,7 +1817,7 @@ a.blog_btn:hover{
 }
 
 .footer_area{
-	max-width: 1200px;
+	max-width: 1280px;
 	margin: 0 auto;
 	padding: 0 25px;
 	display: flex;
@@ -2095,7 +2098,6 @@ a.footer-logo img{
 	.square_col_right{
 		flex: 100%;
 		width: 100%;
-		
 	}
 	
 	.info_head{
@@ -2262,8 +2264,9 @@ a.footer-logo img{
 		padding-bottom: 45px;
 	}
 	
-	.left_border_box{
+	.right_border_box{
 		right: 0;
+		top: -50px;
 		width: 125px;
 		height: 125px;
 	}
