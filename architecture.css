@@ -594,15 +594,14 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	overflow: hidden;
 }
 
-.icon_box span.icon-60{
-	font-size: 60px;
-	font-weight: 100;
+.icon_box .fi{
+	font-size: 44px;
 	color: #ffffff;
 	display: inline-block;
 	text-align: left;
 	position: absolute;
-	right: 15px;
-	bottom: 15px
+	right: 20px;
+	bottom: 8px
 }
 
 .icon_center{
@@ -676,7 +675,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 /* --- 3.2. Architecture Area Two --- */
 .architecture_area_two{
-	max-width: 1200px;
+	max-width: 1280px;
 	margin: 0 auto 9em;
 	padding: 0 25px;
 }
@@ -762,7 +761,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	line-height: 1.5em;
 }
 
-.sub_head::first-letter{
+.sub_head .first-letter{
 	background-color: #556270;
 	padding: 12px 14px;
 	color: #ffffff;
@@ -779,6 +778,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	letter-spacing: 1px;
 	text-align: left;
 	line-height: 1.5em;
+	max-width: 500px;
 }
 
 .square_box h2{
@@ -977,16 +977,15 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	width: 80%;
 }
 
-.grid_icon span.icon-70{
-	font-size: 70px;
-	font-weight: 100;
-	max-width: 70px;
+.grid_icon .fi{
+	font-size: 50px;
+	width: 75px;
 	height: auto;
-	display: inline-block;
+	display: block;
 	text-align: center;
 	color: #556270;
 	background-color: #ffffff;
-	padding: 6px 0;
+	padding: 10px 5px 0;
 	box-shadow: 0 20px 70px rgba(38,42,76,.2);
 }
 
@@ -1038,9 +1037,8 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	align-items: center;
 }
 
-.bg_icon span.icon-75{
-	font-size: 75px;
-	font-weight: 100;
+.bg_icon .fi{
+	font-size: 50px;
 	display: block;
 	text-align: center;
 	color: #ffffff;
@@ -1343,14 +1341,14 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	font-size: 14px;
 	font-weight: 600;
 	display: block;
-	color: #d2d2d2;
+	color: #dddddd;
 	letter-spacing: 1px;
 	text-align: left;
 	text-transform: uppercase;
 	line-height: 1.5em;
 }
 
-.inner_head::first-letter{
+.inner_head .first-letter{
 	background-color: #ffffff;
 	padding: 12px 14px;
 	color: #556270;
@@ -1359,26 +1357,25 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .info_list > ul > li{
 	font-family: 'Raleway' , Arial, sans-serif;
-	font-size: 13px;
+	font-size: 14px;
 	font-weight: 600;
 	display: block;
-	color: #ffffff;
+	color: #dddddd;
 	letter-spacing: 1px;
-	text-transform: uppercase;
 	text-align: left;
 	padding: 10px 0;
 	line-height: 1.5em;
 }
 
 .info_list > ul > li::before{
-	font-family: 'Material Symbols Outlined';
-	content: "\e92f";
+	font-family: 'uicons-regular-straight';
+	content: "\fb2b";
 	font-weight: 200;
-	font-size: 20px;
+	font-size: 16px;
 	color: #ffffff;
 	position: relative;
-	top: 6px;
-	padding-right: 5px;
+	top: 5px;
+	padding-right: 10px;
 }
 
 .featured_col{
@@ -1420,7 +1417,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	font-size: 16px;
 	font-weight: normal;
 	display: block;
-	color: #f2f2f2;
+	color: #dddddd;
 	letter-spacing: 1px;
 	text-align: left;
 	padding: 15px 0;
@@ -1575,7 +1572,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	padding: 20px;
 	z-index: 99;
 	opacity: 0;
-	margin-left: 22px;
+	margin-left: 18px;
 	text-align: left;
 	top: 5px;
 	transition: opacity 0.3s;
@@ -1790,7 +1787,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .blog_content{
 	text-align: left;
-	padding: 20px 15px;
+	padding: 15px 15px 20px;
 	background-color: #ffffff;
 	box-shadow: 0 20px 70px rgba(38,42,76,.2);
 }
@@ -2071,7 +2068,7 @@ li.slick-active button{
 	margin: auto;
 }
 
-.design_head{
+.color_heading{
 	font-family: 'Raleway' , Arial, sans-serif;
 	font-size: 40px;
 	font-weight: 800;
@@ -2306,7 +2303,7 @@ a.footer-logo img{
 	.featured_col{
 		flex: 100%;
 		width: 100%;
-		margin-top: 30px;
+		margin-top: 40px;
 	}
 	
 	.prev_slide,
@@ -2496,7 +2493,7 @@ a.footer-logo img{
 	.info_box h2,
 	.cube_box h2,
 	.bg_head,
-	.design_head{
+	.color_heading{
 		font-size: 30px;
 	}
 	
@@ -2583,7 +2580,6 @@ a.footer-logo img{
 	.box_content{
 		width: 130px;
 		height: 130px;
-		
 	}
 	
 	.box_feature{
@@ -2600,7 +2596,7 @@ a.footer-logo img{
 	}
 	
 	.featured_item{
-		top: 0;
+		top: 5px;
 	}
 	
 	.top_btn{
@@ -2669,6 +2665,7 @@ a.footer-logo img{
 	
 	.featured_name{
 		left: -20px;
+		bottom: 140px;
 	}
 	
 	.side_num{
@@ -2697,6 +2694,10 @@ a.footer-logo img{
 	
 	.side_num{
 		bottom: 30px;
+	}
+	
+	.featured_name h3{
+		font-size: 12px;
 	}
 	
 	.design_head{
