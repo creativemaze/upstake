@@ -3,7 +3,7 @@ Main Stylesheet
 
 Project:    Upstake - Multipurpose Business Template
 Version:    1.0
-Last change:    28/03/2024
+Last change:    28/05/2024
 Author:    creativemaze
 Primary use:    Restaurant
 -------------------------------------------------------------------*/
@@ -592,13 +592,15 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	text-align: left;
 }
 
-.bg_icon span.icon-60{
-	font-size: 60px;
-	font-weight: 100;
+.bg_icon .fi{
+	font-size: 44px;
+	width: 75px;
+	height: 75px;
+	display: inline-block;
+	text-align: center;
 	background-color: #e53935;
 	color: #ffffff;
-	padding: 8px;
-	margin: 0 auto;
+	padding: 12px;
 }
 
 .bg_content h3{
@@ -681,13 +683,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
-	align-items: center;
-}
-
-.photo_area{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
 	align-items: center;
 }
 
@@ -791,16 +786,17 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	color: #111111;
 	letter-spacing: 1px;
 	text-align: left;
+	padding: 7px 0;
 }
 
 .info_list > ul > li::before{
-	font-family: 'Material Symbols Outlined';
-	content: "\e86c";
-	font-weight: 200;
-	font-size: 30px;
+	font-family: 'uicons-thin-straight';
+	content: "\fa38";
+	font-size: 26px;
+	font-weight: 100;
 	position: relative;
 	top: 10px;
-	padding-right: 10px;
+	padding-right: 12px;
 	color: #e53935;
 }
 
@@ -1337,9 +1333,9 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .client_details q{
-	font-family: 'Montserrat' , Arial, sans-serif;
+	font-family: 'Roboto' , Arial, sans-serif;
 	font-size: 16px;
-	font-weight: 500;
+	font-weight: normal;
 	display: block;
 	color: #696969;
 	letter-spacing: 1px;
@@ -1358,8 +1354,8 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	text-transform: uppercase;
 }
 
-.client_icon span.icon-25{
-	font-size: 25px;
+.client_icon .fi{
+	font-size: 22px;
 	font-weight: 300;
 	color: #e53935;
 	display: inline-block;
@@ -1501,6 +1497,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 .title_size{
 	font-size: 45px;
 	font-weight: 800;
+	color: #111111;
 }
 
 /* --- 3.9. Restaurant Area Nine --- */
@@ -2117,7 +2114,7 @@ a.footer-logo img{
 	}
 	
 	.photo_color_box{
-		left: -25px;
+		left: -55px;
 		width: 220px;
 		height: 220px;
 	}
@@ -2128,7 +2125,7 @@ a.footer-logo img{
 	}
 	
 	.full_box{
-		left: -25px;
+		left: -35px;
 		width: 220px;
 		height: 220px;
 	}
@@ -2182,7 +2179,6 @@ a.footer-logo img{
 	}
 	
 	.bg_col,
-	.photo_col,
 	.grid_col,
 	.client_col,
 	.area_col,
@@ -2191,17 +2187,6 @@ a.footer-logo img{
 		padding-right: 0
 	}
 	
-	.square_icon{
-		width: 30%;
-	}
-	
-	.square_title{
-		width: 70%;
-		padding-left: 20px;
-	}
-}	
-
-@media only screen and (max-width: 390px){
 	.photo_color_box{
 		width: 190px;
 		height: 190px;
@@ -2212,6 +2197,17 @@ a.footer-logo img{
 		height: 170px;
 	}
 	
+	.square_icon{
+		width: 30%;
+	}
+	
+	.square_title{
+		width: 70%;
+		padding-left: 25px;
+	}
+}	
+
+@media only screen and (max-width: 390px){
 	.full_box{
 		width: 190px;
 		height: 190px;
@@ -2235,14 +2231,24 @@ a.footer-logo img{
 	}
 }
 
+@media only screen and (max-width: 360px){
+	.photo_color_box{
+		width: 150px;
+		height: 150px;
+	}
+	
+	.photo_center{
+		width: 130px;
+		height: 130px;
+	}
+}
+
 @media only screen and (max-width: 320px){
-	.photo_color_box,
 	.full_box{
 		width: 150px;
 		height: 150px;
 	}
 	
-	.photo_center,
 	.color_space{
 		width: 130px;
 		height: 130px;
