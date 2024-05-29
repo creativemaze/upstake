@@ -3,7 +3,7 @@ Main Stylesheet
 
 Project:    Upstake - Multipurpose Business Template
 Version:    1.0
-Last change:    30/03/2024
+Last change:    29/05/2024
 Author:    creativemaze
 Primary use:    Education
 -------------------------------------------------------------------*/
@@ -587,18 +587,18 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	width: 1.3rem;
 	height: 1.3rem;
 	padding: 0;		
-	border: solid 1px #333333;
+	border: solid 1px #6f6f6f;
 	border-radius: 100%;
 	background-color: transparent;
 	text-indent: -9999px;
 }
 
 .education_area_one li.slick-active button{
-	background-color: #182848;
+	background-color: #0abfbc;
 }
 
 .education_area_one .slick-dots button:hover{
-	background-color: #182848;
+	background-color: #0abfbc;
 }
 
 .education_area_one .slick-dots li{
@@ -612,8 +612,9 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 /* --- 3.2. Education Area Two --- */
 .education_area_two{
 	max-width: 1400px;
-	margin: 0 auto 9em;
+	margin: 0 auto;
 	padding: 0 25px;
+	margin-bottom: calc(9em - 40px);
 }
 
 .education_group_two,
@@ -712,12 +713,12 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	color: #111111;
 }
 
-.thumb_box .material-symbols-outlined.icon-65{
-	font-size: 65px;
-	font-weight: 100;
+.thumb_box .fi{
+	font-size: 44px;
 	color: #5f2c82;
 	display: block;
 	text-align: center;
+	padding-top: 10px;
 }
 
 .thumb_box.active{
@@ -732,7 +733,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	color: #111111; 
 }
 
-.thumb_box.active .material-symbols-outlined.icon-65{
+.thumb_box.active .fi{
 	color: #ffffff;
 }
 
@@ -795,17 +796,17 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	color: #111111;
 	letter-spacing: 1px;
 	text-align: left;
-	padding-bottom: 6px;
+	padding: 6px 0;
 }
 
 .square_list > ul > li::before{
-	font-family: 'Material Symbols Outlined';
-	content: "\e941";
-	font-weight: 300;
-	font-size: 30px;
+	font-family: 'uicons-thin-straight';
+	content: "\fc0a";
+	font-weight: 100;
+	font-size: 26px;
 	position: relative;
-	top: 10px;
-	padding-right: 8px;
+	top: 8px;
+	padding-right: 10px;
 	color: #5f2c82;
 }
 
@@ -988,18 +989,18 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	width: 1.3rem;
 	height: 1.3rem;
 	padding: 0;		
-	border: solid 1px #333333;
+	border: solid 1px #6f6f6f;
 	border-radius: 100%;
 	background-color: transparent;
 	text-indent: -9999px;
 }
 
 .education_area_three li.slick-active button{
-	background-color: #182848;
+	background-color: #0abfbc;
 }
 
 .education_area_three .slick-dots button:hover{
-	background-color: #182848;
+	background-color: #0abfbc;
 }
 
 .education_area_three .slick-dots li{
@@ -1242,7 +1243,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .feature_icon{
 	float: left;
-	width: 30%;
+	width: 25%;
 	padding-right: 10px;
 	padding-top: 10px;
 }
@@ -1275,21 +1276,22 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	padding-left: 5px;
 }
 
-.feature_icon .material-symbols-outlined.icon-50{
-	font-size: 50px;
-	font-weight: 100;
+.feature_icon .fi{
+	font-size: 32px;
+	width: 55px;
+	height: 55px;
 	background-color: #5f2c82;
 	color: #ffffff;
-	padding: 5px;
+	padding: 8px 12px;
 	display: inline-block;
 	text-align: left;
 }
 
 .feature_area{
 	float: left;
-	width: 70%;
+	width: 75%;
 	text-align: left;
-	padding-left: 10px;
+	padding-left: 15px;
 	padding-top: 8px;
 }
 
@@ -1343,16 +1345,22 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .cube_col{
+	position: relative;
 	flex: 50%;
 	width: 50%;
 	background-color: #182848;
-	padding: 3em 25px;
+	padding: 6em 25px;
+	min-height: 600px;
+	position: relative;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 .center_col{
 	flex: 50%;
 	width: 50%;
-	min-height: 350px;
+	min-height: 600px;
 	position: relative;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -1367,7 +1375,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .cube_box{
-	max-width: 500px;
+	max-width: 550px;
 	padding-right: 20px;
 }
 
@@ -1388,7 +1396,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	font-weight: normal;
 	padding-top: 15px;
 	display: block;
-	color: #d2d2d2;
+	color: #dddddd;
 	letter-spacing: 1px;
 	text-align: left;
 	line-height: 1.5em;
@@ -1495,9 +1503,8 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	float: left;
 }
 
-.count_box .material-symbols-outlined.icon-75{
-	font-size: 75px;
-	font-weight: 100;
+.count_box .fi{
+	font-size: 48px;
 	color: #ffffff;
 	display: block;
 	text-align: center;
@@ -1511,6 +1518,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	text-align: left;
 	color: #ffffff;
 	letter-spacing: 1px;
+	margin-top: 0;
 }
 
 .count_box .count_title{
@@ -1519,7 +1527,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	font-weight: 500;
 	display: block;
 	text-align: left;
-	color: #d2d2d2;
+	color: #dddddd;
 	letter-spacing: 1px;
 }
 
@@ -1711,7 +1719,7 @@ a.blog_btn:hover{
 }
 
 .col_info input[type="email"]::placeholder{
-	color: #f2f2f2;
+	color: #dddddd;
 	opacity: 1;
 }
 
@@ -1728,6 +1736,8 @@ a.blog_btn:hover{
 	margin: 0;
 	transition: 0.5s;
 	text-align: center;
+	position: relative;
+	bottom: -1px;
 	background-color: #ffffff;
 	border: solid 1px #ffffff;
 	border-radius: 25px;
@@ -2032,7 +2042,6 @@ a.footer-logo img{
 	.center_col{
 		flex: 100%;
 		width: 100%;
-		min-height: 650px;
 	}
 	
 	.cube_col{
@@ -2178,12 +2187,17 @@ a.footer-logo img{
 		width: 100%;
 	}
 	
-	.center_col{
-		min-height: 500px;
+	.center_col,
+	.cube_col{
+		min-height: 550px;
 	}
 }
 
 @media only screen and (max-width: 320px){
+	.col_head h3{
+		font-size: 20px;
+	}
+	
 	.feature_content h3{
 		font-size: 20px;
 	}
