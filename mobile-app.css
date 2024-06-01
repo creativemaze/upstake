@@ -3,7 +3,7 @@ Main Stylesheet
 
 Project:    Upstake - Multipurpose Business Template
 Version:    1.0
-Last change:    30/03/2024
+Last change:    29/05/2024
 Author:    creativemaze
 Primary use:    Mobile App
 -------------------------------------------------------------------*/
@@ -355,7 +355,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .left_info > a > .fab:hover{
-	opacity: 0.6;
+	color: #dddddd;
 }
 
 .right_info a{
@@ -371,18 +371,18 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	transition: 0.5s;
 }
 
-.right_info a .fas{
+.right_info .fas{
 	font-size: 16px;
 	color: #ffffff;
 	padding-right: 8px;
 }
 
 .right_info a:hover{
-	opacity: 0.6;
+	color: #dddddd;
 }
 
 .right_info a .fas:hover{
-	opacity: 0.6;
+	color: #dddddd;
 }
 
 .right_info .fa-m{
@@ -462,11 +462,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .slidearea{
 	position: relative;
-	min-height: 650px;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-	background: #eeeeee;
+	background-color: #eeeeee;
 }
 
 .slide__content{
@@ -493,42 +489,24 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	padding: 0 20px;
 }
 
-.base_box{
+.base_content{
 	position: absolute;
 	z-index: 99;
-	bottom: -85px;
-	left: 20px;
-	max-width: 346px;
-	display: block;
-	margin: 0 auto;
-}
-
-.base_box_left,
-.base_box_right{
-	width: 170px;
-	height: 170px;
+	bottom: -80px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 200px;
+	height: 200px;
+	background-color: #ffffff;
 	border-radius: 50%;
-	display: inline-block;
 }
 
-.base_left_color{
-	width: 170px;
-	height: 170px;
-	margin: 0 auto;
-	display: inline-block;
+.base_info{
+	width: 180px;
+	height: 180px;
+	margin: 10px auto;
 	background-color: #7300a5;
 	border-radius: 50%;
-	animation: 3s infinite ease-in-out up-down;
-}
-
-.base_right_color{
-	width: 170px;
-	height: 170px;
-	margin: 0 auto;
-	display: inline-block;
-	background-color: #111111;
-	border-radius: 50%;
-	animation: 3s infinite ease-in-out up-down;
 }
 
 .base_feature{
@@ -536,7 +514,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	padding: 12px;
+	padding: 10px;
 }
 
 .base_title{
@@ -549,6 +527,13 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	min-height: auto;
 	border: double 4px #ffffff;
 	border-radius: 50%;
+}
+
+.base_info .fi{
+	font-size: 44px;
+	color: #ffffff;
+	display: inline-block;
+	margin-bottom: -6px;
 }
 
 .base_title h3{
@@ -579,6 +564,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	margin: 0 auto;
 	text-align: center;
 	position: relative;
+	animation: 3s infinite ease-in-out up-down;
 }
 
 .slide_image{
@@ -586,7 +572,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	z-index: 1;
 	max-width: 350px;
 	margin: auto;
-	max-height: 750px;
 }
 
 .slide_image img{
@@ -715,7 +700,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 /* --- 3.1. Mobile Area One --- */
 .mobile_area_one{
 	max-width: 1200px;
-	margin: 0 auto 9em;
+	margin: 40px auto 9em;
 	padding: 0 25px;
 	text-align: center;
 }
@@ -754,6 +739,18 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	padding: 9px;
 }
 
+.icon_box .fi{
+	font-size: 48px;
+	width: 80px;
+	height: 80px;
+	background-color: #7300a5;
+	color: #ffffff;
+	display: inline-block;
+	margin-top: -40px;
+	text-align: center;
+	padding: 12px;
+}
+
 .icon_box h3{
 	font-family: 'Montserrat' , Arial, sans-serif;
 	font-size: 18px;
@@ -777,13 +774,16 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	padding: 14px 0;
 }
 
-a > span.icon-25{
-	font-size: 25px;
-	font-weight: 600;
-	margin-top: -10px;
+.icon_box .plus_link{
+	font-size: 32px;
+	width: 48px;
+	height: 48px;
+	font-weight: 200;
+	display: inline-block;
 	color: #ffffff;
+	margin-top: -7px;
 	background-color: #111111;
-	padding: 10px;
+	padding: 2px 10px;
 	border-radius: 50%;
 	transition: 0.5s;
 }
@@ -802,12 +802,12 @@ a > span.icon-25{
 	color: #ffffff;
 }
 
-.icon_box:hover > a > span.icon-25{
+.icon_box:hover .plus_link{
 	color: #ffffff;
 	background-color: #7300a5;
 }
 
-.icon_box:hover > a > span.icon-25:hover{
+.icon_box:hover .plus_link:hover{
 	color: #7300a5;
 	background-color: #ffffff;
 }
@@ -885,7 +885,7 @@ a > span.icon-25{
 	font-weight: normal;
 	padding-top: 15px;
 	display: block;
-	color: #f2f2f2;
+	color: #dddddd;
 	letter-spacing: 1px;
 	text-align: left;
 	line-height: 1.5em;
@@ -903,18 +903,18 @@ a > span.icon-25{
 	color: #ffffff;
 	letter-spacing: 1px;
 	text-align: left;
-	padding-bottom: 2px;
+	padding: 6px 0;
 }
 
 .info_list > ul > li::before{
-	font-family: 'Material Symbols Outlined';
-	content: "\e941";
-	font-weight: 200;
-	font-size: 30px;
+	font-family: 'uicons-thin-straight';
+	content: "\fc0d";
+	font-weight: 100;
+	font-size: 26px;
 	position: relative;
-	top: 10px;
-	padding-right: 8px;
-	color: #d2d2d2;
+	top: 8px;
+	padding-right: 10px;
+	color: #dddddd;
 }
 
 .info_col_button a{
@@ -957,7 +957,6 @@ a > span.icon-25{
 	height: auto;
 	display: block;
 	overflow: hidden;
-	max-height: 800px;
 }
 
 .box_content{
@@ -1014,9 +1013,10 @@ a > span.icon-25{
 	position: relative;
 	min-height: 350px;
 	padding: 2em 25px 5em;
-	background-color: #eeeeee;
+	background-color: #ffffff;
 	margin-bottom: 9em;
 	overflow: hidden;
+	box-shadow: 0 20px 70px rgba(38,42,76,.2);
 }
 
 .mobile_group_three{
@@ -1048,7 +1048,7 @@ a > span.icon-25{
 	font-weight: 800;
 	display: block;
 	text-align: left;
-	color: #ffffff;
+	color: #7300a5;
 	letter-spacing: 1px;
 	line-height: 1.2em;
 	text-transform: uppercase;
@@ -1171,7 +1171,7 @@ a > span.icon-25{
 	width: 100%;
 	min-height: 50px;
 	overflow-y: auto;
-	padding-bottom: 10px;
+	padding-bottom: 20px;
 }
 
 .square_space{
@@ -1190,9 +1190,8 @@ a > span.icon-25{
 	padding-left: 10px;
 }
 
-.square_icon span.icon-65{
-	font-size: 65px;
-	font-weight: 100;
+.square_icon .fi{
+	font-size: 44px;
 	color: #7300a5;
 	display: inline-block;
 	text-align: left;
@@ -1208,7 +1207,6 @@ a > span.icon-25{
 	letter-spacing: 1px;
 	line-height: 1.4em;
 	margin: 0;
-	padding-top: 11px;
 }
 
 .square_title p{
@@ -1228,6 +1226,7 @@ a > span.icon-25{
 	margin: 0 auto;
 	text-align: center;
 	position: relative;
+	animation: 3s infinite ease-in-out up-down;
 }
 
 .photo_image{
@@ -1235,7 +1234,6 @@ a > span.icon-25{
 	z-index: 1;
 	max-width: 350px;
 	margin: auto;
-	max-height: 650px;
 }
 
 .photo_image img{
@@ -1264,97 +1262,141 @@ a > span.icon-25{
 	width: 100%;
 	min-height: 400px;
 	background-color: #7300a5;
-	padding: 6em 25px 13em;
+	padding: 6em 25px;
 	margin-bottom: 9em;
 }
 
 .mobile_group_five{
-	max-width: 1240px;
+	max-width: 1280px;
 	margin: 0 auto;
-	position: relative;
-	z-index: 999;
-	text-align: center;
-}
-
-.comment_group{
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
-	margin-top: -55px;
 }
 
-.client_col{
-	flex: 50%;
-	width: 50%;
-	padding: 0 20px;
+.client_area{
+	max-width: 1280px;
+	margin: 0 auto;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	padding-bottom: 20px;
 }
 
-.client_details{
-	max-width: 640px;
-	padding: 20px;
-	text-align: center;
-	background: #ffffff;
-	border-left: solid 4px #111111;
+.review_head{
+	flex: 58.33%;
+	width: 58.33%;
+	padding: 0 15px;
 }
 
-.client_info{
-	margin-bottom: -130px;
-	clear: both;
+.review_content{
+	flex: 41.66%;
+	width: 41.66%;
+	padding: 0 15px;
+	margin-top: 90px;
 }
 
-.client_name{
+.review_head h2{
+	max-width: 600px;
 	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 16px;
-	font-weight: 600;
+	font-size: 40px;
+	font-weight: 700;
 	display: block;
 	color: #ffffff;
-	letter-spacing: 1px;
 	text-align: left;
-	line-height: 1.4em;
-	margin: 0;
-	padding: 11px 0;
+	letter-spacing: 1px;
+	line-height: 1.2em;
 }
 
-.client_details p{
+.review_content p{
+	max-width: 450px;
 	font-family: 'Roboto' , Arial, sans-serif;
 	font-size: 16px;
 	font-weight: normal;
 	display: block;
-	color: #696969;
+	color: #dddddd;
 	letter-spacing: 1px;
 	text-align: left;
-	padding: 15px;
 	line-height: 1.5em;
 }
 
-.client_photo img{
-	max-width: 80px;
-	height: 80px;
-	border-radius: 50%;
-	display: block;
-	text-align: left;
+.client_col{
+	flex: 25%;
+	width: 25%;
+	padding: 0 20px;
 }
 
-.quote_format{
-	font-size: 130px;
-	margin-top: -35px;
-	padding-top: 20px;
-	color: #ffffff;
+.client_comment p{
+	font-family: 'Roboto', Arial, sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	display: inline-block;
+	color: #dddddd;
+	letter-spacing: 1px;
+	text-align: center;
+	line-height: 1.5em;
+}
+
+.client_comment p::before{
+	content: '\275D';
+	position: relative;
+	top: 10px;
+	padding-right: 5px;
+	font-size: 45px;
+	color: #dddddd;
+}
+
+.client_info{
+	margin: 40px 0 0;
+	border: double 5px #ffffff;
+	padding: 30px 20px 20px;
+	max-width: 275px;
+}
+
+.client_info img{
+	max-width: 90px;
+	height: 90px;
+	margin: auto;
+	border-radius: 50%;
 	display: block;
 	text-align: center;
 }
 
-.client_icon{
-	width: 100%;
-	text-align: left;
+.client_name{
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 18px;
+	font-weight: 600;
+	display: block;
+	color: #ffffff;
+	letter-spacing: 1px;
+	text-align: center;
+	line-height: 1.4em;
 }
 
-.client_icon span.icon-25{
-	font-size: 25px;
-	font-weight: 300;
+.client_title{
+	font-family: 'Montserrat', Arial, sans-serif;
+	font-size: 14px;
+	font-weight: 600;
+	display: block;
+	color: #dddddd;
+	letter-spacing: 1px;
+	text-align: center;
+	text-transform: uppercase;
+	line-height: 1.4em;
+	margin: 0;
+}
+
+.client_icon{
+	display: block;
+	text-align: center;
+	padding-top: 8px;
+}
+
+.client_icon .fi{
+	font-size: 22px;
 	color: #ffffff;
 	display: inline-block;
-	text-align: left;
+	text-align: center;
 }
 
 /* --- 3.6. Mobile Area Six --- */
@@ -1362,7 +1404,7 @@ a > span.icon-25{
 	max-width: 1280px;
 	margin: 0 auto 0;
 	padding: 0 25px;
-	margin-bottom: calc(9em + 50px);
+	margin-bottom: calc(9em - 50px);
 }
 
 .mobile_group_six{
@@ -1432,7 +1474,6 @@ a > span.icon-25{
 	z-index: 1;
 	max-width: 350px;
 	margin: auto;
-	max-height: 650px;
 }
 
 .feature_image img{
@@ -1445,6 +1486,7 @@ a > span.icon-25{
 	position: absolute;
 	bottom: 0;
 	right: 0;
+	margin-bottom: 75px;
 	margin-right: -90px;
 	z-index: 99;
 	width: 170px;
@@ -1499,19 +1541,6 @@ a > span.icon-25{
 	padding-right: 8px;
 	position: relative;
 	bottom: 10px;
-}
-
-.count_title::first-letter{
-	color: #7300a5;
-}
-
-.count_title::after{
-	content: '';
-	display: block;
-    width: 50px;
-    height: 2px;
-    background: #7300a5;
-    transition: width .5s;
 }
 
 .count_info_box{
@@ -1979,26 +2008,29 @@ a.footer-logo img{
 		margin: 0;
 	}
 	
-	.client_col{
+	.review_head{
 		flex: 100%;
 		width: 100%;
 	}
 	
-	.last_space{
-		padding-top: 115px;
+	.review_content{
+		flex: 100%;
+		width: 100%;
+		margin-top: 20px;
+	}
+	
+	.client_col{
+		flex: 50%;
+		width: 50%;
 	}
 	
 	.mobile_area_six{
-		margin-bottom: calc(9em - 15px);
+		margin-bottom: calc(9em - 20px);
 	}
 	
 	.feature_col{
 		flex: 100%;
 		width: 100%;
-	}
-	
-	.feature_area{
-		margin-top: 75px;
 	}
 	
 	.footer_col{
@@ -2018,6 +2050,8 @@ a.footer-logo img{
 	.square_col_left,
 	.square_col_right,
 	.square_box,
+	.review_head,
+	.review_content,
 	.feature_col{
 		padding-left: 0;
 		padding-right: 0;
@@ -2030,6 +2064,7 @@ a.footer-logo img{
 	
 	.slide_image{
 		max-width: 250px;
+		margin-bottom: 50px;
 	}
 	
 	.photo_box{
@@ -2045,6 +2080,7 @@ a.footer-logo img{
 	.info_box h2,
 	.square_box h2,
 	.bg_heading,
+	.review_head h2,
 	.feature_box h2{
 		font-size: 30px;
 	}
@@ -2059,6 +2095,11 @@ a.footer-logo img{
 	}
 	
 	.num_col{
+		flex: 100%;
+		width: 100%;
+	}
+	
+	.client_col{
 		flex: 100%;
 		width: 100%;
 	}
@@ -2096,26 +2137,16 @@ a.footer-logo img{
 }
 
 @media only screen and (max-width: 390px){
-	.base_box_left,
-	.base_box_right,
-	.base_left_color,
-	.base_right_color{
-		width: 150px;
-		height: 150px;
-	}
-	
 	.box_content,
 	.feature_content{
 		width: 150px;
 		height: 150px;
 	}
 	
-	.base_feature,
 	.center_feature{
 		padding: 10px;
 	}
 	
-	.base_title h3,
 	.box_info h3,
 	.feature_info h3{
 		font-size: 12px;
@@ -2152,22 +2183,6 @@ a.footer-logo img{
 }
 
 @media only screen and (max-width: 320px){
-	.base_box_left,
-	.base_box_right,
-	.base_left_color,
-	.base_right_color{
-		width: 130px;
-		height: 130px;
-	}
-	
-	.base_feature{
-		padding: 8px;
-	}
-	
-	.base_title h3{
-		font-size: 10px;
-	}
-	
 	.area_col{
 		margin-bottom: -13em;
 	}
