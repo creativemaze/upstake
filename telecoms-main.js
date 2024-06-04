@@ -1,6 +1,6 @@
 "use strict";
 //Slick Slider (1) One
-$(document).ready(function(){
+$( window ).on( "load", function(){
 	$('.word_slider').slick({
 		dots: false,
 		slidesToShow: 1,
@@ -73,6 +73,22 @@ $(document).ready(function(){
 $( ".buttoncol a" ).click(function() {
 	$('.heading_group').animatescroll();
 });
+
+//F.A.Q.S Accordion
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+	acc[i].addEventListener("click", function() {
+		this.classList.toggle("active-bar");
+		var panel = this.nextElementSibling;
+		if (panel.style.maxHeight) {
+			panel.style.maxHeight = null;
+		} else {
+			panel.style.maxHeight = panel.scrollHeight + "px";
+		} 
+	});
+}
 
 //Counter script
 jQuery(document).ready(function($) {
