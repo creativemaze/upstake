@@ -1,6 +1,6 @@
 "use strict";
 ///Slick Slider (1) One
-$(document).ready(function(){
+$( window ).on( "load", function(){
 	$('.header_slider').slick({
 		autoplay: true,
 		infinite: true,
@@ -18,7 +18,7 @@ $(document).ready(function(){
 });
 
 //Slick Slider (2) Two
-$(document).ready(function(){
+$( window ).on( "load", function(){
 	$('.area_slider').slick({
 		slidesToShow: 4,
 		autoplay: false,
