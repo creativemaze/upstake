@@ -3,7 +3,7 @@ Main Stylesheet
 
 Project:    Upstake - Multipurpose Business Template
 Version:    1.0
-Last change:    11/04/2024
+Last change:    04/06/2024
 Author:    creativemaze
 Primary use:    SAAS
 -------------------------------------------------------------------*/
@@ -679,15 +679,16 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	position: relative;
 }
 
-.icon_symbol span.icon-65{
-	font-size: 65px;
-	font-weight: 100;
+.icon_symbol .fi{
+	font-size: 44px;
+	width: 75px;
+	height: 75px;
 	background-color: #159957;
 	color: #ffffff;
 	display: inline-block;
-	margin-top: -40px;
 	text-align: center;
-	padding: 9px;
+	padding: 12px;
+	margin-top: -40px;
 }
 
 .icon_info{
@@ -751,7 +752,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	max-width: 1280px;
 	padding: 0 25px;
 	margin: 0 auto;
-	margin-bottom: calc(9em + 80px);
+	margin-bottom: calc(9em + 60px);
 }
 
 .saas_group_three{
@@ -1099,11 +1100,13 @@ li.slick-active button{
 	margin: auto;
 	padding-bottom: 35px;
 	background-color: #ffffff;
+	box-shadow: 0 20px 70px rgba(38,42,76,.2);
 }
 
 .center_col{
 	position: relative;
 	bottom: 50px;
+	box-shadow: none;
 }
 
 .price_content{
@@ -1189,14 +1192,13 @@ li.slick-active button{
 }
 
 .price_list > ul li::after{
-	font-family: 'Material Symbols Outlined';
-	content: "\e5ca";
-	font-weight: 300;
-	font-size: 30px;
+	font-family: 'uicons-regular-straight';
+	content: "\fb2b";
+	font-size: 20px;
 	position: relative;
 	float: right;
 	top: 0;
-	padding-right: 9px;
+	padding-right: 6px;
 	color: #159957;
 }
 
@@ -1238,7 +1240,7 @@ li.slick-active button{
     font-size: 12px;
 	font-weight: 600;
 	font-family: 'Montserrat', Arial, sans-serif;
-    margin: 15px auto 0;
+    margin: 35px auto 0;
     transition: 0.5s;
 	border: 1px solid #ffffff;
 	letter-spacing: 1px;
@@ -1470,8 +1472,8 @@ li.slick-active button{
 	text-transform: uppercase;
 }
 
-.client_icon span.icon-25{
-	font-size: 25px;
+.client_icon .fi{
+	font-size: 22px;
 	font-weight: 300;
 	color: #159957;
 	display: inline-block;
@@ -1669,7 +1671,6 @@ a.blog_btn:hover{
 	background-color: #ffffff;
 	border: none;
 	margin-right: 4px;
-	border-radius: 4px;
 }
 
 .col_info input[type="email"]::placeholder{
@@ -1687,8 +1688,8 @@ a.blog_btn:hover{
 	height: 40px;
 	width: 130px;
 	color: #ffffff;
-	margin: 0;
-	border-radius: 4px;
+	position: relative;
+	bottom: -1px;
 	transition: 0.5s;
 	background-color: #159957;
 	border: solid 1px #159957;
