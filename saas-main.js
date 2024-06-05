@@ -1,6 +1,6 @@
 "use strict";
 //Slick Slider (1) One
-$(document).ready(function(){
+$( window ).on( "load", function(){
 	$('.saas_slider').slick({
 		dots: false,
 		prevArrow: '.prev_nav',
