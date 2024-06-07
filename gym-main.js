@@ -1,6 +1,6 @@
 "use strict";
 //Slick Slider (1) One
-$(document).ready(function(){
+$( window ).on( "load", function(){
 	$('.area_slider').slick({
 		slidesToShow: 3,
 		autoplay: false,
