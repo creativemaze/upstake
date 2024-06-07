@@ -3,7 +3,7 @@ Main Stylesheet
 
 Project:    Upstake - Multipurpose Business Template
 Version:    1.0
-Last change:    26/04/2024
+Last change:    06/06/2024
 Author:    creativemaze
 Primary use:    Freelancer
 -------------------------------------------------------------------*/
@@ -584,13 +584,12 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	padding-left: 20px;
 }
 
-.feature_check span.icon-55{
-	font-size: 55px;
-	font-weight: 300;
+.feature_check .fi{
+	font-size: 34px;
 	color: #d31027;
 	display: inline-block;
 	text-align: left;
-	margin-top: -9px;
+	margin-top: -2px;
 }
 
 .feature_content h3{
@@ -1012,15 +1011,16 @@ li.slick-active button{
 	line-height: 1.5em;
 }
 
-.left_icon_symbol span.icon-60{
-	font-size: 60px;
-	font-weight: 100;
+.left_icon_symbol .fi{
+	font-size: 44px;
+	width: 75px;
+	height: 75px;
 	background-color: #ffffff;
 	color: #d31027;
 	display: inline-block;
 	text-align: center;
-	margin-top: 10px;
-	padding: 7px;
+	margin-top: 16px;
+	padding: 12px;
 	border-radius: 50%;
 }
 
@@ -1046,15 +1046,16 @@ li.slick-active button{
 	line-height: 1.5em;
 }
 
-.right_icon_symbol span.icon-60{
-	font-size: 60px;
-	font-weight: 100;
+.right_icon_symbol .fi{
+	font-size: 44px;
+	width: 75px;
+	height: 75px;
 	background-color: #d31027;
 	color: #ffffff;
 	display: inline-block;
 	text-align: center;
-	margin-top: 10px;
-	padding: 7px;
+	margin-top: 16px;
+	padding: 12px;
 	border-radius: 50%;
 }
 
@@ -1633,12 +1634,14 @@ a.blog_btn:hover{
 }
 
 .count_num .counter::before{
-	font-family: 'Material Symbols Outlined';
-	content: "\e5d8";
+	font-family: 'uicons-thin-straight';
+	content: "\fc09";
 	display: inline-block;
-	font-weight: 300 !important;
-	font-size: 30px;
+	font-size: 42px;
+	position: relative;
+	top: 6px;
 	color: #d31027;
+	padding-right: 3px;
 }
 
 /* --- 3.8. Freelancer Area Eight --- */
