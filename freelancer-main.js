@@ -1,6 +1,6 @@
 "use strict";
 //Slick Slider
-$(document).ready(function(){
+$( window ).on( "load", function(){
 	$('.feature_slider').slick({
 		slidesToShow: 3,
 		autoplay: false,
