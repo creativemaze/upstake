@@ -1,6 +1,30 @@
 "use strict";
 //Slick Slider (1) One
 $(document).ready(function(){
+	$('.feature_slider').slick({
+		slidesToShow: 4,
+		autoplay: false,
+		infinite: true,
+		speed: 1000,
+		arrows: false,
+		dots: false,
+		pauseOnHover: false,
+		pauseOnFocus: false,
+		responsive: [
+			{
+				breakpoint: 801,
+				settings: {
+					slidesToShow: 1,
+					dots: true,
+					fade: true
+				}			
+			},
+		]
+	});
+});
+
+//Slick Slider (2) Two
+$(document).ready(function(){
 	$('.portfolio_slider').slick({
 		dots: false,
 		slidesToShow: 3,
@@ -49,7 +73,7 @@ $(document).ready(function(){
 	});
 });
 
-//Slick Slider (2) Two
+//Slick Slider (3) Three
 $(document).ready(function(){
 	$('.client-slider').slick({
 		slidesToShow: 1,
@@ -62,6 +86,16 @@ $(document).ready(function(){
 		pauseOnFocus: false,
 	
 	});
+});
+
+//MagnificPopup Video
+$('#play-video').magnificPopup({
+	disableOn: 300,
+	type: 'iframe',
+	mainClass: 'mfp-fade',
+	removalDelay: 300,
+	preloader: false,
+	fixedContentPos: false
 });
 
 //MagnificPopup Gallery
