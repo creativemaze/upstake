@@ -3,7 +3,7 @@ Main Stylesheet
 
 Project:    Upstake - Multipurpose Business Template
 Version:    1.0
-Last change:    30/04/2024
+Last change:    08/06/2024
 Author:    creativemaze
 Primary use:    Logistics
 -------------------------------------------------------------------*/
@@ -124,7 +124,7 @@ ul{
 	text-decoration: none;
 	color: #111111;
 	transition: 0.5s;
-	font-family: 'Montserrat', Arial, sans-serif;
+	font-family: 'Raleway', Arial, sans-serif;
 	font-size: 22px;
 	font-weight: 700;
 	display: inline-block;
@@ -478,7 +478,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	width: 400px;
 	background-color: #ffffff;
 	border: none;
-	margin-right: 4px;
+	margin-right: -4px;
 }
 
 .search-row input[type="text"]::placeholder{
@@ -493,22 +493,21 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	font-weight: 600;
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	border: none;
-	padding-bottom: 3px;
 	height: 40px;
 	width: 130px;
-	color: #feb600;
-	margin: 0;
+	color: #ffffff;
+	position: relative;
+	bottom: -1px;
 	border-radius: 0;
 	transition: 0.5s;
-	background-color: #1a2980;
-	border: solid 1px #1a2980;
+	background-color: #feb600;
+	border: solid 1px #feb600;
 }
 
 .search-row input[type="submit"]:hover{
-	background-color: #feb600;
-	color: #ffffff;
-	border-color: #feb600;
+	background-color: #1a2980;
+	color: #feb600;
+	border-color: #1a2980;
 }
 
 /* 3. MAIN CONTENT
@@ -543,15 +542,16 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	padding: 0;
 }
 
-.icon_symbol span.icon-65{
-	font-size: 65px;
-	font-weight: 100;
+.icon_symbol .fi{
+	font-size: 44px;
+	width: 75px;
+	height: 75px;
 	background-color: #feb600;
 	color: #ffffff;
 	display: inline-block;
 	margin-top: -40px;
 	text-align: center;
-	padding: 9px;
+	padding: 12px;
 }
 
 .icon_content{
@@ -697,19 +697,18 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	color: #111111;
 	letter-spacing: 1px;
 	text-align: left;
-	padding: 10px 0;
-	line-height: 1.5em;
+	padding: 7px 0;
 }
 
 .square_list > ul > li::before{
-	font-family: 'Material Symbols Outlined';
-	content: "\e92f";
-	font-weight: 300;
-	font-size: 20px;
-	color: #feb600;
+	font-family: 'uicons-thin-straight';
+	content: "\fa38";
+	font-size: 26px;
+	font-weight: 100;
 	position: relative;
-	top: 6px;
-	padding-right: 5px;
+	top: 8px;
+	padding-right: 12px;
+	color: #feb600;
 }
 
 .photo_area{
@@ -760,7 +759,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 .side_fig h3{
 	font-family: 'Raleway' , Arial, sans-serif;
 	font-size: 18px;
-	font-weight: 500;
+	font-weight: 600;
 	display: inline-block;
 	background-color: #feb600;
 	color: #ffffff;
@@ -950,13 +949,13 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .feature_list > ul > li::before{
-	font-family: 'Material Symbols Outlined';
-	content: "\e941";
-	font-weight: 300;
-	font-size: 30px;
+	font-family: 'uicons-thin-straight';
+	content: "\fc0a";
+	font-weight: 600;
+	font-size: 26px;
 	position: relative;
-	top: 10px;
-	padding-right: 8px;
+	top: 8px;
+	padding-right: 10px;
 	color: #feb600;
 }
 
@@ -1501,7 +1500,7 @@ a.blog_btn::after{
 	max-width: 640px;
 	padding: 20px;
 	text-align: center;
-	background-color: #ffffff;
+	background: rgba(0,0,0,0.5);
 	border-left: solid 4px #feb600;
 	margin-bottom: 65px;
 }
@@ -1541,7 +1540,7 @@ a.blog_btn::after{
 	font-size: 16px;
 	font-weight: normal;
 	display: block;
-	color: #696969;
+	color: #dddddd;
 	letter-spacing: 1px;
 	text-align: left;
 	padding: 15px;
@@ -1567,29 +1566,27 @@ a.blog_btn::after{
 
 .slidenav{
 	position: absolute;
-	right: 20px;
-	top: 95px;
+	right: 24px;
+	top: 115px;
 	padding: 0 10px;
 }
 
-.prev_nav,
-.next_nav{
-	font-size: 50px;
-	font-weight: 700;
+.prev_nav .fi,
+.next_nav .fi{
+	font-size: 38px;
 	transition: 0.6s ease;
-	width: auto;
 	display: inline-block;
 	overflow: hidden;
 	color: #feb600;
 	cursor: pointer;
 }
 
-.prev_nav{
+.prev_nav .fi{
 	margin-right: 15px;
 }
 
-.next_nav:hover,
-.prev_nav:hover{
+.next_nav .fi:hover,
+.prev_nav .fi:hover{
 	color: #ffffff;
 }
 
@@ -2142,7 +2139,7 @@ a.footer-logo img{
 	
 	.search-row input[type="text"]{
 		display: block;
-		max-width: 325px;
+		max-width: 350px;
 		width: 100%;
 		margin-left: auto;
 		margin-right: auto;
@@ -2152,7 +2149,7 @@ a.footer-logo img{
 		margin-top: 20px;
 		display: block;
 		position: relative;
-		max-width: 325px;
+		max-width: 350px;
 		width: 100%;
 		margin-left: auto;
 		margin-right: auto;
@@ -2236,7 +2233,8 @@ a.footer-logo img{
 	}
 	
 	.blog_col,
-	.feature_col{
+	.feature_col,
+	.client_col{
 		padding-left: 0;
 		padding-right: 0;
 	}
