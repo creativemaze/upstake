@@ -3,7 +3,7 @@ Main Stylesheet
 
 Project:   Upstake - Multipurpose Business Template
 Version:    1.0
-Last change:    01/05/2024
+Last change:    08/06/2024
 Author:    creativemaze
 Primary use:    Conference
 -------------------------------------------------------------------*/
@@ -761,24 +761,22 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	z-index: 999;
 }
 
-.prev_slide,
-.next_slide{
-	font-size: 50px;
-	font-weight: 700;
+.prev_slide .fi,
+.next_slide .fi{
+	font-size: 38px;
 	transition: 0.6s ease;
-	width: auto;
 	display: inline-block;
 	overflow: hidden;
 	color: #005aa7;
 	cursor: pointer;
 }
 
-.prev_slide{
+.prev_slide .fi{
 	margin-right: 15px;
 }
 
-.next_slide:hover,
-.prev_slide:hover{
+.next_slide .fi:hover,
+.prev_slide .fi:hover{
 	color: #111111;
 }
 
@@ -865,15 +863,16 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	box-shadow: 0 20px 70px rgba(38,42,76,.2);
 }
 
-.icon_pic .material-symbols-outlined.icon-65{
-	font-size: 65px;
-	font-weight: 100;
+.icon_pic .fi{
+	font-size: 48px;
+	width: 80px;
+	height: 80px;
 	background-color: #005aa7;
 	color: #ffffff;
 	display: inline-block;
-	margin-top: -25px;
 	text-align: center;
-	padding: 9px;
+	padding: 12px;
+	margin-top: -25px;
 }
 
 .icon_box h3{
@@ -1227,7 +1226,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .info_col_button a{
 	background-color: #005aa7;
-	width: 210px;
+	width: 205px;
     color: #ffffff;
     padding: 13px 15px;
     text-decoration: none;
@@ -1362,7 +1361,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	padding-top: 12px;
 	padding-left: 12px;
 	box-shadow: 0 20px 70px rgba(38,42,76,.2);
-	border: double 4px #6f6f6f;
 	transition: ease-in-out 0.5s;
 }
 
@@ -1389,7 +1387,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .team_image:hover{
 	background-color: #005aa7;
-	border-color: #ffffff;
 }
 
 .team_icon a{
@@ -1674,6 +1671,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .title_size{
 	font-size: 45px;
+	font-weight: 800;
 }
 /* --- 3.7. Conference Area Seven --- */
 .conference_area_seven{
