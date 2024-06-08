@@ -1076,7 +1076,7 @@ li.slick-active button{
 	color: #ffffff;
 }
 
-.box_check .fi.last_check::before::before{
+.box_check .fi.last_check::before{
 	font-family: 'uicons-regular-straight';
 	content: "\fb2b";
 	font-weight: 200;
@@ -1274,14 +1274,13 @@ li.slick-active button{
 }
 
 .price_list > ul li::after{
-	font-family: 'Material Symbols Outlined';
-	content: "\e5ca";
-	font-weight: 400;
-	font-size: 30px;
+	font-family: 'uicons-regular-straight';
+	content: "\fb2b";
+	font-size: 20px;
 	position: relative;
 	float: right;
-	top: 10px;
-	padding-right: 9px;
+	top: 0;
+	padding-right: 6px;
 	color: #fcb045;
 }
 
@@ -1322,7 +1321,7 @@ li.slick-active button{
     font-size: 12px;
 	font-weight: 600;
 	font-family: 'Montserrat', Arial, sans-serif;
-   margin: 35px auto 0;
+	margin: 35px auto 0;
     transition: 0.5s;
 	border: 1px solid #ffffff;
 	letter-spacing: 1px;
@@ -1367,24 +1366,23 @@ li.slick-active button{
 	margin-top: 130px;
 }
 
-.prev_slide,
-.next_slide{
-	font-size: 50px;
-	font-weight: 700;
-	transition: 0.6s;
-	width: auto;
+.prev_slide .fi,
+.next_slide .fi{
+	font-size: 38px;
+	transition: 0.6s ease;
+	max-width: 160px;
 	display: inline-block;
 	overflow: hidden;
 	color: #fcb045;
 	cursor: pointer;
 }
 
-.prev_slide{
+.prev_slide .fi{
 	margin-right: 15px;
 }
 
-.next_slide:hover,
-.prev_slide:hover{
+.next_slide .fi:hover,
+.prev_slide .fi:hover{
 	color: #111111;
 }
 
@@ -1730,7 +1728,7 @@ a.blog_btn:hover{
 
 .client_comment p{
 	font-family: 'Roboto', Arial, sans-serif;
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: normal;
 	display: inline-block;
 	color: #696969;
