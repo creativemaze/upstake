@@ -583,13 +583,13 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .saas_title h3::before{
+	font-family: 'uicons-regular-straight';
+	content: "\fd5e";
+	font-weight: 100;
+	font-size: 26px;
 	position: relative;
-	top: 10px;
-	font-family: 'Material Symbols Outlined';
-	content: "\e5cc";
-	font-weight: 300;
-	font-size: 30px;
-	padding-right: 3px;
+	top: 8px;
+	padding-right: 4px;
 	color: #159957;
 }
 
