@@ -1,6 +1,6 @@
 "use strict";
 //Slick Slider (1) One
-$(document).ready(function(){
+$( window ).on( "load", function(){
 	$('.bg_slider').slick({
 		dots: false,
 		slidesToShow: 1,
@@ -40,8 +40,8 @@ $(document).ready(function(){
 });
 
 //Count down script
-$(document).ready(function(){
-	$('#timer-date').countdown('2024/09/25 15:37:25', {elapse: true})
+$( window ).on( "load", function(){
+	$('#timer-date').countdown('2024/11/25 15:37:25', {elapse: true})
 	.on('update.countdown', function(event) {
 		if (event.elapsed) { // Either true or false
 			$(this).html(event.strftime('<h3>Event In Progress</h3>'));
