@@ -1,6 +1,6 @@
 "use strict";
-//Slick Slider
-$(document).ready(function(){
+//Slick Slider (1) One
+$( window ).on( "load", function(){
 	$('.feature_slider').slick({
 		slidesToShow: 3,
 		autoplay: false,
@@ -21,6 +21,40 @@ $(document).ready(function(){
 			},
 		]
 	});
+});
+
+//Slick Slider (2) Two
+$(document).ready(function(){
+	$('.bg_slider').slick({
+		slidesToShow: 4,
+		autoplay: false,
+		infinite: true,
+		speed: 1000,
+		arrows: false,
+		dots: false,
+		pauseOnHover: false,
+		pauseOnFocus: false,
+		responsive: [
+			{
+				breakpoint: 993,
+				settings: {
+					slidesToShow: 1,
+					dots: true,
+					fade: true
+				}			
+			},
+		]
+	});
+});
+
+//MagnificPopup Video
+$('#play-video').magnificPopup({
+	disableOn: 300,
+	type: 'iframe',
+	mainClass: 'mfp-fade',
+	removalDelay: 300,
+	preloader: false,
+	fixedContentPos: false
 });
 
 //Counter Up
