@@ -108,7 +108,6 @@ ul{
 	font-weight: 600;
 	display: block;
 	color: #ffffff;
-	display: block;
 	text-align: center;
 	letter-spacing: 1px;
 	line-height: 1.2em;
@@ -492,20 +491,18 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	margin-right: 20px;
 }
 
-.prev_nav,
-.next_nav{
-	font-size: 50px;
-	font-weight: 700;
+.prev_nav .fi,
+.next_nav .fi{
+	font-size: 38px;
 	transition: 0.6s ease;
-	width: auto;
 	display: inline-block;
 	overflow: hidden;
 	color: #009fff;
 	cursor: pointer;
 }
 
-.next_nav:hover,
-.prev_nav:hover{
+.next_nav .fi:hover,
+.prev_nav .fi:hover{
 	color: #111111;
 }
 
@@ -995,16 +992,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	position: absolute;
 	top: 20px;
 	left: 20px;
-}
-
-.grid_title_area{
-	width: calc(100% - 50px);
-	position: relative;
-	bottom: 35px;
-	margin: auto;
-	overflow: auto;
-	border-radius: 5px;
-	box-shadow: 0 20px 70px rgba(38,42,76,.2);
 }
 
 .grid_title{
