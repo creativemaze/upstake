@@ -3,7 +3,7 @@ Main Stylesheet
 
 Project:     Upstake - Multipurpose Business Template
 Version:    1.0
-Last change:    13/05/2024
+Last change:    10/06/2024
 Author:    creativemaze
 Primary use:    Scientific Research
 -------------------------------------------------------------------*/
@@ -25,6 +25,7 @@ Primary use:    Scientific Research
 	3.7. Research Area Seven
 	3.8. Research Area Eight
 	3.9. Research Area Nine
+	3.10. Research Area Ten
 	 
 4. Footer
 5. Responsive
@@ -592,12 +593,13 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	text-align: left;
 }
 
-.bg_check span.icon-55{
-	font-size: 55px;
-	font-weight: 200;
+.bg_check .fi{
+	font-size: 34px;
+	width: 60px;
+	height: 60px;
 	background-color: #22c1c3;
 	color: #ffffff;
-	padding: 5px;
+	padding: 8px 12px;
 	display: inline-block;
 	text-align: left;
 }
@@ -699,17 +701,17 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	color: #111111;
 	letter-spacing: 1px;
 	text-align: left;
-	padding-bottom: 6px;
+	padding: 2px 0;
 }
 
 .square_list > ul > li::before{
-	font-family: 'Material Symbols Outlined';
-	content: "\e941";
-	font-weight: 200;
-	font-size: 30px;
+	font-family: 'uicons-thin-straight';
+	content: "\fc0a";
+	font-weight: 100;
+	font-size: 32px;
 	position: relative;
-	top: 10px;
-	padding-right: 8px;
+	top: 11px;
+	padding-right: 10px;
 	color: #22c1c3;
 }
 
@@ -766,67 +768,54 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .border_col{
 	box-shadow: 0 20px 70px rgba(38,42,76,.2);
+	flex: 33.33%;
+	width: 33.33%;
 	max-width: 220px;
+	height: 80px;
 }
 
 .first_border{
 	background-color: #22c1c3;
-	padding: 14px 0;
+	padding: 12px 0;
 	overflow: hidden;
 }
 
 .second_border{
 	background-color: #ffffff;
-	padding: 14px 0;
+	padding: 12px 0;
 	overflow: hidden;
 }
 
 .third_border{
 	background-color: #1488cc;
-	padding: 14px 0;
+	padding: 12px 0;
 	overflow: hidden;
 }
 
 .border_box{
 	max-width: 220px;
-	padding: 14px 10px;
-	height: 65px;
-	height: 100%;
+	padding: 12px 10px;
 	text-align: center;
 }
 
-.border_num{
+.border_icon{
 	float: left;
-	width: 20%;
-	margin-bottom: 20px;
+	width: 15%;
+	padding-left: 5px;
+	padding-top: 7px;
 }
 
 .border_info{
 	float: left;
-	width: 80%;
-	padding-left: 10px;
+	width: 85%;
+	padding-left: 15px;
 }
 
-.border_num{
-	content: '';
-	width: 10px;
-	height: 10px;
-	display:  inline-block;
-	border-radius: 50%;
-	cursor: pointer;
-	margin-top: 5px;
-	margin-right: 7px;
-}
-
-.border_num h4{
-	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 16px;
-	font-weight: 600;
+.border_icon .fi{
+	font-size: 18px;
+	color: #ffffff;
 	display: inline-block;
-	text-align: center;
-	color: #111111;
-	line-height: 1.4em;
-	margin: 0;
+	text-align: left;
 }
 
 .border_info h3{
@@ -842,20 +831,14 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	margin: 0;
 }
 
-.third_border h4,
 .third_border h3,
-.first_border h4,
 .first_border h3{
 	color: #ffffff;
 }
 
-.third_border .border_num,
-.first_border .border_num{
-	background-color: #ffffff;
-}
-
-.second_border .border_num{
-	background-color: #111111;
+.second_border .border_icon .fi{
+	font-size: 18px;
+	color: #1488cc;
 }
 
 .research_area_two .slick-dots{
@@ -948,15 +931,16 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	box-shadow: 0 20px 70px rgba(38,42,76,.2);
 }
 
-.icon_pic span.icon-65{
-	font-size: 65px;
-	font-weight: 100;
+.icon_pic .fi{
+	font-size: 48px;
+	width: 80px;
+	height: 80px;
 	background-color: #22c1c3;
 	color: #ffffff;
 	display: inline-block;
-	margin-top: -25px;
 	text-align: center;
-	padding: 9px;
+	padding: 12px;
+	margin-top: -20px;
 }
 
 .icon_box h3{
@@ -1013,7 +997,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 .research_area_four{
 	position: relative;
 	width: 100%;
-	min-height: 450px;
+	min-height: 475px;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -1033,8 +1017,9 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 /* --- 3.5. Research Area Five --- */
 .research_area_five{
 	max-width: 1280px;
-	margin: -350px auto 9em;
+	margin: -350px auto 0;
 	padding: 0 25px;
+	margin-bottom: calc(9em + 70px);
 }
 
 .research_group_five{
@@ -1080,52 +1065,77 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	max-width: 500px;
 }
 
-.grid_col{
-	position: relative;
-	flex: 25%;
-	width: 25%;
-	padding: 40px 20px 0;
-}
-
-.grid_box{
-	max-width: 320px;
-	position: relative;
-	text-align: center;
-}
-
-.grid_image{
-	position: relative;
-	overflow: hidden;
-	z-index: 1;
-}
-
-.grid_image img{
+.bg_slider{
 	width: 100%;
-	height: auto;
-	display: block;
+	position: relative;
+	max-width: 1100px;
+	margin: auto;
 }
 
-.grid_num{
+.bg_slide{
+	position: relative;
+	padding: 0 10px;
+	margin-top: 35px;
+}
+
+.bg_image{
+	position: relative;
+	min-height: 550px;
+	text-align: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 5px;
+}
+
+.bg_title_area{
+	max-width: 600px;
+	background-color: #22c1c3;
 	position: absolute;
-	bottom: -50px;
-	left: 50%;
-	transform: translateX(-50%);
-	margin: auto;
-	width: 100px;
-	height: 100px;
+	bottom: -110px;
+	overflow: auto;
+	padding: 20px 25px;
+	text-align: left;
+	margin-left: 30px;
+	margin-right: 15px;
+	border-left: solid 8px #ffffff;
+}
+
+.bg_title_area h2{
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 35px;
+	font-weight: 600;
+	display: block;
+	color: #ffffff;
+	text-align: left;
+	letter-spacing: 1px;
+	line-height: 1.2em;
+}
+
+.bg_title_area p{
+	font-family: 'Roboto' , Arial, sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	padding-top: 15px;
+	display: block;
+	color: #dddddd;
+	letter-spacing: 1px;
+	text-align: left;
+	line-height: 1.5em;
+}
+
+.bg_num{
+	position: absolute;
+	top: 30px;
+	left: 30px;
+	width: 75px;
+	height: 75px;
+	margin: 0 auto 0;
 	background-color: #22c1c3;
 	border-radius: 50%;
 }
 
-.white_num{
-	background-color: #ffffff;
-}
-
-.color_num{
-	background-color: #1488cc;
-}
-
-.grid_num h4{
+.bg_num h3{
 	font-family: 'Montserrat' , Arial, sans-serif;
 	font-size: 24px;
 	font-weight: 600;
@@ -1133,62 +1143,31 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	text-align: center;
 	color: #ffffff;
 	line-height: 1.4em;
-	padding-top: 5px;
+	margin: 0;
 }
 
-.white_num h4{
-	color: #111111;
+.num_center{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
-.color_num h4{
-	color: #ffffff;
-}
-
-.grid_info{
-	box-shadow: 0 20px 70px rgba(38,42,76,.2);
-	padding: 10px 15px 25px;
-	text-align: center;
-}
-
-.grid_info h3{
-	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 18px;
-	font-weight: 600;
-	display: block;
-	text-align: center;
-	color: #111111;
-	letter-spacing: 1px;
-	line-height: 1.4em;
-}
-
-.grid_info p{
-	font-family: 'Roboto' , Arial, sans-serif;
-	font-size: 16px;
-	font-weight: normal;
-	display: block;
-	color: #696969;
-	letter-spacing: 1px;
-	text-align: center;
-	line-height: 1.5em;
-	padding-top: 8px;
-}
-
-.grid_button a{
+.bg_button a{
 	font-family: 'Montserrat' , Arial, sans-serif;
 	font-size: 13px;
 	font-weight: 600;
 	letter-spacing: 1px;
-	text-align: center;
+	text-align: left;
 	text-transform: uppercase;
 	display: inline-block;
-	color: #22c1c3;
+	color: #ffffff;
 	text-decoration: none;
 	max-width: 100px;
-	margin: auto;
 	transition: 0.5s;
 }
 
-.grid_button a::after{
+.bg_button a::after{
 	content: "\203A";
 	position: relative;
 	top: 1px;
@@ -1197,8 +1176,45 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	padding-left: 5px;
 }
 
-.grid_button a:hover{
+.bg_button a:hover{
 	color: #111111;
+}
+
+.research_area_five .slick-dots{
+	position: relative;
+	z-index: 999999;
+	bottom: -110px;
+	display: flex;
+	justify-content: center;
+	margin: 0;
+	padding: 1rem 0;
+	list-style-type: none;
+}
+
+.research_area_five .slick-dots button{
+	width: 1.3rem;
+	height: 1.3rem;
+	padding: 0;		
+	border: solid 1px #6f6f6f;
+	border-radius: 100%;
+	background-color: transparent;
+	text-indent: -9999px;
+}
+
+.research_area_five li.slick-active button{
+	background-color: #1488cc;
+}
+
+.research_area_five .slick-dots button:hover{
+	background-color: #1488cc;
+}
+
+.research_area_five .slick-dots li{
+	margin: 22px 4px 0 4px;
+}
+
+.research_area_five .slick-list{
+	overflow: visible;
 }
 
 /* --- 3.6. Research Area Six --- */
@@ -1310,45 +1326,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .feature_button a:hover{
 	color: #111111;
-}
-
-.research_area_six .slick-dots {
-	position: relative;
-	z-index: 999999;
-	left: 50%;
-	transform: translateX(-50%);
-	display: flex;
-	justify-content: center;
-	margin: 0;
-	padding: 1rem 0;
-	list-style-type: none;
-}
-
-.research_area_six .slick-dots button{
-	display: block;
-	width: 1.3rem;
-	height: 1.3rem;
-	padding: 0;		
-	border: solid 1px #6f6f6f;
-	border-radius: 50%;
-	background-color: transparent;
-	text-indent: -9999px;
-}
-
-.research_area_six li.slick-active button{
-	background-color: #1488cc;
-}
-
-.research_area_six .slick-dots button:hover{
-	background-color: #1488cc;
-}
-
-.research_area_six .slick-dots li{
-	margin: 22px 4px 0 4px;
-}
-
-.research_area_six .slick-list{
-	overflow: visible;
 }
 
 /* --- 3.7. Research Area Seven --- */
@@ -1693,6 +1670,100 @@ a.blog_btn:hover{
 	color: #111111;
 }
 
+
+/* --- 3.10. Research Area Ten --- */
+.research_area_ten{
+	max-width: 1200px;
+	width: calc(100% - 50px);
+	margin: 0 auto -7em;
+	position: relative;
+	z-index: 999;
+	box-shadow: 0 20px 70px rgba(38,42,76,.2);
+	background-color: #ffffff;
+	border-radius: 10px;
+}
+
+.research_group_ten{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 3em 30px;
+}
+
+.col_head{
+	flex: 45%;
+	width: 45%;
+}
+
+.col_info{
+	flex: 55%;
+	width: 55%;
+	margin-top: 35px;
+}
+
+.col_head h3{
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 30px;
+	display: block;
+	font-weight: 700;
+	color: #111111;
+	letter-spacing: 1px;
+	text-align: left;
+	line-height: 1.3em;
+	max-width: 550px;
+}
+
+.subscribe-row{
+	text-align: right;
+}
+
+.col_info input[type="email"]{
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 13px;
+	display: inline-block;
+	font-weight: normal;
+	letter-spacing: 1px;
+	height: 40px;
+	vertical-align: middle;
+	padding: 20px 15px;
+	width: 350px;
+	background-color: #eeeeee;
+	margin-right: 4px;
+	border: none;
+	margin-right: 4px;
+	border-radius: 25px;
+}
+
+.col_info input[type="email"]::placeholder{
+	color: #333333;
+	opacity: 1;
+}
+
+.col_info input[type="submit"]{
+	text-align: center;
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 14px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	padding: 0;
+	height: 40px;
+	width: 130px;
+	color: #ffffff;
+	position: relative;
+	bottom: -1px;
+	transition: 0.5s;
+	background-color: #22c1c3;
+	border: solid 1px #22c1c3;
+	border-radius: 25px;
+}
+
+.col_info input[type="submit"]:hover{
+	background: transparent;
+	color: #111111;
+	border-color: #111111;
+}
+
 /* 4. FOOTER
  ----------- */
 .footer{
@@ -1700,7 +1771,7 @@ a.blog_btn:hover{
 	min-height: 350px;
 	position: relative;
 	clear: both;
-	background-color: #eeeeee;
+	background-color: #1488cc;
 }
 
 .footer_area{
@@ -1709,6 +1780,7 @@ a.blog_btn:hover{
 	padding: 0 25px;
 	display: flex;
 	flex-wrap: wrap;
+	padding-top: 7em;
 }
 
 .footer_col{
@@ -1738,7 +1810,7 @@ a.footer-logo img{
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	text-decoration: none;
-	color: #111111;
+	color: #ffffff;
 	text-align: left;
 }
 
@@ -1747,7 +1819,7 @@ a.footer-logo img{
 	font-size: 14px;
 	font-weight: 500;
 	letter-spacing: 1px;
-	color: #111111;
+	color: #ffffff;
 	text-align: left;
 	padding: 20px 0;
 	line-height: 1.5em;
@@ -1760,7 +1832,7 @@ a.footer-logo img{
 .footer_social > a > .fab,
 .footer_social > a > .fa{
 	font-size: 16px;
-	color: #111111;
+	color: #ffffff;
 	text-align: left;
 	transition: 0.5s;
 }
@@ -1771,7 +1843,7 @@ a.footer-logo img{
  
 .footer_social > a > .fab:hover,
 .footer_social > a > .fa:hover{
-	color: #1488cc;
+	color: #111111;
 }
 
 .footer_col > h4{
@@ -1779,7 +1851,7 @@ a.footer-logo img{
 	font-size: 18px;
 	font-weight: 700;
 	letter-spacing: 1px;
-	color: #111111;
+	color: #ffffff;
 }
 
 .footer_col > ul > li{
@@ -1792,13 +1864,13 @@ a.footer-logo img{
 	font-weight: 500;
 	letter-spacing: 1px;
 	text-decoration: none;
-	color: #111111;
+	color: #ffffff;
 	text-align: justify;
 	transition: 0.5s;
 }
 
 .footer_col > ul > li a:hover{
-	color: #1488cc;
+	color: #111111;
 }
 
 .right_list{
@@ -1847,7 +1919,7 @@ a.footer-logo img{
 	font-size: 13px;
 	font-weight: 500;
 	letter-spacing: 1px;
-	color: #111111;
+	color: #ffffff;
 	text-align: center;
 }
 
@@ -1867,6 +1939,10 @@ a.footer-logo img{
 		height: auto;
 		position: absolute;
 		bottom: 0;
+	}
+	
+	.col_info{
+		margin-top: 60px;
 	}
 }
 
@@ -1998,9 +2074,13 @@ a.footer-logo img{
 		margin-top: 15px;
 	}
 	
-	.grid_col{
-		flex: 50%;
-		width: 50%;
+	.feature_col{
+		flex: 100%;
+		width: 100%;
+	}
+	
+	.feature_space img{
+		margin-top: 35px;
 	}
 	
 	.cube_col{
@@ -2030,6 +2110,28 @@ a.footer-logo img{
 	.blog_col{
 		flex: 50%;
 		width: 50%;
+	}
+	
+	.col_info{
+		flex: 100%;
+		width: 100%;
+		margin-top: 0;
+	}
+	
+	.col_head{
+		flex: 100%;
+		width: 100%;
+	}
+	
+	.subscribe-row{
+		text-align: center;
+		margin-top: 35px;
+	}
+	
+	.col_head h3{
+		text-align: center;
+		width: 100%;
+		margin: auto;
 	}
 	
 	.footer_col{
@@ -2080,9 +2182,18 @@ a.footer-logo img{
 		width: 100%;
 	}
 	
-	.grid_col{
-		flex: 100%;
-		width: 100%;
+	.bg_image{
+		min-height: 450px;
+	}
+	
+	.bg_title_area{
+		max-width: 375px;
+		padding: 15px;
+		margin-left: 15px;
+	}
+	
+	.bg_title_area h2{
+		font-size: 20px;
 	}
 	
 	.blog_col{
@@ -2093,6 +2204,27 @@ a.footer-logo img{
 	.count_info_col{
 		flex: 100%;
 		width: 100%;
+	}
+	
+	.col_info input[type="email"]{
+		display: block;
+		max-width: 325px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.col_info input[type="submit"]{
+		margin-top: 20px;
+		display: block;
+		max-width: 325px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.col_head h3{
+		font-size: 25px;
 	}
 	
 	.footer_col{
@@ -2126,8 +2258,9 @@ a.footer-logo img{
 		height: 125px;
 	}
 	
-	.research_area_five{
-		margin-top: -400px;
+	.bg_title_area{
+		max-width: 325px;
+		padding: 10px;
 	}
 	
 	.research_group_six{
@@ -2145,5 +2278,9 @@ a.footer-logo img{
 @media only screen and (max-width: 320px){
 	.header-title__main{
 		font-size: 25px;
+	}
+	
+	.col_head h3{
+		font-size: 20px;
 	}
 }
