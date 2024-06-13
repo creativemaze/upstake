@@ -1,6 +1,6 @@
 "use strict";
 //Slick Slider (1) One
-$(document).ready(function(){
+$( window ).on( "load", function(){
 	$('.main_slider').slick({
 		autoplay: true,
 		infinite: true,
@@ -11,7 +11,6 @@ $(document).ready(function(){
 		pauseOnHover: false,
 		pauseOnFocus: false,
 		dots: false,
-		swipe: false
 	});
 });
 
@@ -41,25 +40,17 @@ $(document).ready(function(){
 
 //Slick Slider (3) Three
 $(document).ready(function(){
-	$('.feature_slider').slick({
-		slidesToShow: 3,
+	$('.bg_slider').slick({
+		slidesToShow: 1,
 		autoplay: false,
 		infinite: true,
 		speed: 1000,
+		fade: true,
 		arrows: false,
-		dots: false,
+		dots: true,
 		pauseOnHover: false,
 		pauseOnFocus: false,
-		responsive: [
-			{
-				breakpoint: 993,
-				settings: {
-					slidesToShow: 1,
-					dots: true,
-					fade: true
-				}			
-			},
-		]
+	
 	});
 });
 
