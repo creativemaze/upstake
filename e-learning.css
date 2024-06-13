@@ -3,7 +3,7 @@ Main Stylesheet
 
 Project:    Upstake - Multipurpose Business Template
 Version:    1.0
-Last change:    02/05/2024
+Last change:    08/06/2024
 Author:     creativemaze
 Primary use:    E-Learning
 -------------------------------------------------------------------*/
@@ -94,10 +94,9 @@ ul{
 .elearning_heading{
 	font-family: 'Montserrat' , Arial, sans-serif;
 	font-size: 40px;
-	font-weight: 500;
+	font-weight: 600;
 	display: block;
 	color: #111111;
-	display: block;
 	text-align: center;
 	letter-spacing: 1px;
 	line-height: 1.2em;
@@ -132,6 +131,12 @@ ul{
 	max-width: 600px;
 	margin-right: auto;
 	margin-left: auto;
+}
+
+.first_bg{
+	max-width: 800px;
+	margin: 0 auto;
+	margin-bottom: 125px;
 }
 
 /* 2. HEADER
@@ -639,7 +644,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 /* --- 3.1. E-Learning Area One --- */
 .elearning_area_one{
 	max-width: 1100px;
-	margin: -60px auto 9em;
+	margin: -50px auto 9em;
 	padding: 0 25px;
 }
 
@@ -673,7 +678,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	bottom: 20px;
 	left: 0;
 	box-shadow: 0 20px 70px rgba(38,42,76,.2);
-	background-color: #1488cc;
+	background-color: #ffffff;
 	border-radius: 10px;
 }
 
@@ -682,7 +687,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	font-size: 20px;
 	font-weight: 600;
 	letter-spacing: 1px;
-	color: #ffffff;
+	color: #111111;
 	text-align: left;
 	display: block;
 	line-height: 1.4em;
@@ -707,7 +712,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	text-align: left;
 	text-transform: uppercase;
 	display: inline-block;
-	color: #ffffff;
+	color: #1488cc;
 	text-decoration: none;
 	max-width: 140px;
 	transition: 0.5s;
@@ -726,7 +731,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	color: #111111;
 }
 
-.slick-dots {
+.elearning_area_one .slick-dots {
 	position: relative;
 	z-index: 999999;
 	left: 50%;
@@ -738,7 +743,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	list-style-type: none;
 }
 
-.slick-dots button{
+.elearning_area_one .slick-dots button{
 	display: block;
 	width: 1.3rem;
 	height: 1.3rem;
@@ -749,15 +754,15 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	text-indent: -9999px;
 }
 
-li.slick-active button{
+.elearning_area_one li.slick-active button{
 	background-color: #1488cc;
 }
 
-.slick-dots button:hover{
+.elearning_area_one .slick-dots button:hover{
 	background-color: #1488cc;
 }
 
-.slick-dots li{
+.elearning_area_one .slick-dots li{
 	margin: 6px 0.40rem;
 }
 
@@ -853,16 +858,17 @@ li.slick-active button{
 	color: #111111;
 	letter-spacing: 1px;
 	text-align: left;
+	padding: 7px 0;
 }
 
 .square_list > ul > li::before{
-	font-family: 'Material Symbols Outlined';
-	content: "\e86c";
-	font-weight: 300;
-	font-size: 30px;
+	font-family: 'uicons-thin-straight';
+	content: "\fa38";
+	font-size: 26px;
+	font-weight: 100;
 	position: relative;
-	top: 10px;
-	padding-right: 10px;
+	top: 8px;
+	padding-right: 12px;
 	color: #1488cc;
 }
 
@@ -1046,7 +1052,7 @@ li.slick-active button{
 	justify-content: center;
 	align-items: center;
 	min-height: 300px;
-	background-color: #eeeeee;
+	background: #182848;
 	padding: 2em 25px;
 	margin-bottom: 9em;
 	margin-top: 2em;
@@ -1086,13 +1092,15 @@ li.slick-active button{
 	padding-left: 20px;
 }
 
-.icon_symbol span.icon-60{
-	font-size: 60px;
-	font-weight: 100;
-	background-color: #1488cc;
-	color: #ffffff;
-	padding: 8px;
-	margin: 0 auto;
+.icon_symbol .fi{
+	font-size: 44px;
+	width: 75px;
+	height: 75px;
+	display: inline-block;
+	text-align: center;
+	background-color: #ffffff;
+	color: #1488cc;
+	padding: 12px;
 }
 
 .icon_content h3{
@@ -1100,7 +1108,7 @@ li.slick-active button{
 	font-size: 18px;
 	font-weight: 600;
 	display: block;
-	color: #111111;
+	color: #ffffff;
 	letter-spacing: 1px;
 	text-align: left;
 	margin-top: 0;
@@ -1112,7 +1120,7 @@ li.slick-active button{
 	font-size: 15px;
 	font-weight: normal;
 	display: block;
-	color: #696969;
+	color: #dddddd;
 	letter-spacing: 1px;
 	text-align: left;
 	line-height: 1.5em;
@@ -1299,11 +1307,16 @@ li.slick-active button{
 /* --- 3.5. E-Learning Area Five --- */
 .elearning_area_five{
 	position: relative;
-	width: 100%;
-	min-height: 450px;
+	min-height: 500px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 5em 0;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
+	margin-bottom: 9em;
 }
 
 .elearning_area_five::before {
@@ -1317,46 +1330,127 @@ li.slick-active button{
 	background: rgba(24, 25, 34, 0.6);
 }
 
-/* --- 3.6. E-Learning Area Six --- */
-.elearning_area_six{
+.elearning_group_five{
 	position: relative;
 	z-index: 999;
-	max-width: 1000px;
-	margin: -350px auto 9em;
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.video-play-button {
+	position: absolute;
+	z-index: 0;
+	left: 50%;
+	top: 50%;
+	z-index: 999;
+	transform: translateX(-50%) translateY(-50%);
+	box-sizing: content-box;
+	display: block;
+	width: 28px;
+	height: 42px;
+	border-radius: 50%;
+	padding: 28px 16px 12px 32px;
+	margin-top: 50px;
+}
+
+.video-play-button:before {
+	content: "";
+	position: absolute;
+	z-index: 0;
+	left: 50%;
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	display: block;
+	width: 80px;
+	height: 80px;
+	background: transparent;
+	border: solid 2px #ffffff;
+	border-radius: 50%;
+	animation: pulse-border 1500ms ease-out infinite;
+}
+
+.video-play-button:after {
+	content: "";
+	position: absolute;
+	z-index: 1;
+	left: 50%;
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	display: block;
+	width: 80px;
+	height: 80px;
+	background: transparent;
+	border: solid 2px #ffffff;
+	border-radius: 50%;
+	transition: all 200ms;
+}
+
+.video-play-button span {
+	display: block;
+	position: relative;
+	z-index: 3;
+	width: 0;
+	height: 0;
+	border-left: 18px solid #ffffff;
+	border-top: 12px solid transparent;
+	border-bottom: 12px solid transparent;
+}
+
+@keyframes pulse-border {
+  0% {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+    opacity: 0;
+  }
+}
+
+/* --- 3.6. E-Learning Area Six --- */
+.elearning_area_six{
+	max-width: 1280px;
+	margin: 0 auto 9em;
 	padding: 0 25px;
 }
 
 .elearning_group_six{
+	position: relative;
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
-	margin-top: 40px;
+	background-color: #182848;
+	border-radius: 10px;
+	min-height: 50px;
+	text-align: center;
+	box-shadow: 0 20px 70px rgba(38,42,76,.2);
+	padding: 0 20px;
+	margin-top: 100px;
 }
 
 .bg_col{
 	position: relative;
 	flex: 25%;
 	width: 25%;
-}
-
-.bg_box{
-	max-width: 250px;
-	margin: 0 auto;
+	padding: 0 10px;
 	text-align: center;
-	padding: 25px 15px;
-	border-right: dotted 1px #1488cc;
-	position: relative;
-	background-color: #182848;
+	border-right: solid 1px #e0e0e0;
+	margin: 25px 0;
 }
 
-.fourth_border{
-	border-right: none;
+.bg_area{
+	width: 130px;
+	height: 130px;
+	background-color: #ffffff;
+	margin: -110px auto 0;
 }
 
 .bg_image{
 	position: relative;
-	width: 150px;
-	height: 150px;
+	width: 130px;
+	height: 130px;
+	padding: 10px;
 	margin: auto;
 }
 
@@ -1364,18 +1458,42 @@ li.slick-active button{
 	width: 100%;
 	height: auto;
 	display: block;
-	border-radius: 50%;
 }
 
-.mid_icon{
-	width: 100%;
+.fourth_border{
+	border-right: none;
+}
+
+.bg_box{
+	position: relative;
+	max-width: 350px;
+	margin: auto;
+	padding: 20px 10px;
 	text-align: center;
-	padding: 10px 0;
 }
 
-.mid_icon span.icon-25{
-	font-size: 25px;
-	font-weight: 200;
+.bg_content{
+	position: relative;
+	z-index: 999;
+	width: 100%;
+}
+
+.bg_icon{
+	float: left;
+	width: 20%;
+	margin-top: 20px;
+}
+
+.bg_info{
+	float: left;
+	width: 80%;
+	text-align: left;
+	padding-left: 12px;
+}
+
+.bg_icon .fi{
+	font-size: 16px;
+	font-weight: 300;
 	color: #1488cc;
 	display: inline-block;
 	text-align: center;
@@ -1383,31 +1501,33 @@ li.slick-active button{
 
 .bg_info h3{
 	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: 600;
 	display: block;
-	text-align: center;
+	text-align: left;
 	color: #ffffff;
 	letter-spacing: 1px;
 	line-height: 1.4em;
+	margin: 0;
+	padding-top: 18px;
 }
 
-.bg_button a{
+.area_button a{
 	font-family: 'Montserrat' , Arial, sans-serif;
 	font-size: 13px;
 	font-weight: 600;
 	letter-spacing: 1px;
-	text-align: center;
+	text-align: left;
 	text-transform: uppercase;
 	display: inline-block;
 	color: #ffffff;
 	text-decoration: none;
-	max-width: 140px;
-	margin: auto;
+	max-width: 130px;
 	transition: 0.5s;
+	padding-top: 10px;
 }
 
-.bg_button a::after{
+.area_button a::after{
 	content: "\203A";
 	position: relative;
 	top: 1px;
@@ -1416,8 +1536,47 @@ li.slick-active button{
 	padding-left: 5px;
 }
 
-.bg_button a:hover{
+.area_button a:hover{
 	color: #1488cc;
+}
+
+.elearning_area_six .slick-dots {
+	position: relative;
+	z-index: 999999;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	justify-content: center;
+	margin: 0;
+	padding: 1rem 0;
+	list-style-type: none;
+}
+
+.elearning_area_six .slick-dots button{
+	display: block;
+	width: 1.3rem;
+	height: 1.3rem;
+	padding: 0;		
+	border: solid 1px #ffffff;
+	border-radius: 50%;
+	background-color: transparent;
+	text-indent: -9999px;
+}
+
+.elearning_area_six li.slick-active button{
+	background-color: #ffffff;
+}
+
+.elearning_area_six .slick-dots button:hover{
+	background-color: #ffffff;
+}
+
+.elearning_area_six .slick-dots li{
+	margin: -15px 4px 15px 4px;
+}
+
+.elearning_area_six .slick-list{
+	overflow: visible;
 }
 
 /* --- 3.7. E-Learning Area Seven --- */
@@ -1512,7 +1671,7 @@ li.slick-active button{
 .blog_col{
 	flex: 33.33%;
 	width: 33.33%;
-	padding: 40px 25px 0;
+	padding: 40px 20px 0;
 }
 
 .blog_box{
@@ -2412,6 +2571,19 @@ a.footer-logo img{
 		width: 50%;
 	}
 	
+	.first_border,
+	.second_border,
+	.third_border{
+		border-right: none;
+	}
+	
+	.elearning_group_six{
+		max-width: 350px;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
 	.blog_head{
 		flex: 100%;
 		width: 100%;
@@ -2498,7 +2670,6 @@ a.footer-logo img{
 	.square_col_right,
 	.square_col_left,
 	.square_box,
-	.blog_col,
 	.news_btn,
 	.blog_head,
 	.info_col,
@@ -2521,17 +2692,6 @@ a.footer-logo img{
 	.grid_col{
 		flex: 100%;
 		width: 100%;
-	}
-	
-	.bg_col{
-		flex: 100%;
-		width: 100%;
-	}
-	
-	.first_border,
-	.second_border,
-	.third_border{
-		border-right: none;
 	}
 	
 	.base_content{
@@ -2643,6 +2803,8 @@ a.footer-logo img{
 	}
 
 	.icon_col,
+	.bg_col,
+	.blog_col,
 	.client_col{
 		padding-left: 0;
 		padding-right: 0;
