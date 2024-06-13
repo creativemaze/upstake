@@ -1,6 +1,6 @@
 "use strict";
 //Slick Slider (1) One
-$(document).ready(function(){
+$( window ).on( "load", function(){
 	$('.main_slider').slick({
 		autoplay: true,
 		infinite: true,
@@ -12,7 +12,6 @@ $(document).ready(function(){
 		pauseOnHover: false,
 		pauseOnFocus: false,
 		dots: false,
-		swipe: false
 	});
 });
 
