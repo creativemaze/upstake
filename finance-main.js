@@ -1,62 +1,51 @@
 "use strict";
 //Slick Slider
 $(document).ready(function(){
-	$('.feature_slider').slick({
-		slidesToShow: 3,
-		autoplay: false,
-		infinite: true,
-		speed: 1000,
+	$('.bg_slider').slick({
+		dots: true,
+		slidesToShow: 2,
+		slidesToScroll: 1,
 		arrows: false,
-		dots: false,
+		autoplay: true,
+		speed: 1000,
 		pauseOnHover: false,
 		pauseOnFocus: false,
+		centerMode: true,
 		responsive: [
 			{
 				breakpoint: 993,
 				settings: {
 					slidesToShow: 1,
-					dots: true,
-					fade: true
+					
+				}			
+			},
+			
+			{
+				breakpoint: 601,
+				settings: {
+					slidesToShow: 1,
+					centerPadding: '50px',
+				}			
+			},
+			
+			{
+				breakpoint: 430,
+				settings: {
+					slidesToShow: 1,
+					centerPadding: '20px',
 				}			
 			},
 		]
 	});
+	
 });
 
-//Animated Progress Bar
-$(document).ready(function($) {
-  function animateElements() {
-	$('.progressbar').each(function() {
-		var elementPos = $(this).offset().top;
-		var topOfWindow = $(window).scrollTop();
-		var percent = $(this).find('.circle').attr('data-percent');
-		var percentage = parseInt(percent, 10) / parseInt(100, 10);
-		var animate = $(this).data('animate');
-		if (elementPos < topOfWindow + $(window).height() - 30 && !animate) {
-			$(this).data('animate', true);
-			$(this).find('.circle').circleProgress({
-			startAngle: -Math.PI / 2,
-			value: percent / 100,
-			thickness: 14,
-			size: 125,
-			animation: {
-				duration: 2800,
-			},
-			
-			fill: {
-				color: '#00CDAC'
-			},
-			
-			}).on('circle-animation-progress', function(event, progress, stepValue) {
-				$(this).find('div').text((stepValue * 100).toFixed(1) + "%");
-			}).stop();
-		}
+//Counter Script
+jQuery(document).ready(function($) {
+    $('.counter').counterUp({
+        delay: 10,
+        time: 2000
     });
-}
-
-//Show animated elements
-animateElements();
-	$(window).scroll(animateElements);
 });
 
 //MagnificPopup Video
