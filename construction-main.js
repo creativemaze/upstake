@@ -1,5 +1,5 @@
 "use strict";
-//Slick Slider (1) One
+//Slick Slider
 $(document).ready(function(){
 	$('.bg_slider').slick({
 		dots: false,
@@ -30,29 +30,6 @@ $(document).ready(function(){
 	
 });
 
-//Slick Slider (2) Two
-$(document).ready(function(){
-	$('.client_slider').slick({
-		slidesToShow: 3,
-		autoplay: false,
-		infinite: true,
-		speed: 1000,
-		arrows: false,
-		dots: true,
-		pauseOnHover: false,
-		pauseOnFocus: false,
-		responsive: [
-			{
-				breakpoint: 993,
-				settings: {
-					slidesToShow: 1,
-					fade: true
-				}			
-			},
-		]
-	});
-});
-
 //MagnificPopup Gallery (1) One
 $('.image_box').magnificPopup({
 	delegate: 'a',
@@ -81,9 +58,7 @@ jQuery(document).ready(function($) {
 
 //Filter Gallery
 jQuery(document).ready(function($) {
-	$('.filter-container').filterizr({
-		
-	});
+	$('.filter-container').filterizr({});
 });
 
 // Add active class to the current button (highlight it)
@@ -91,9 +66,9 @@ var btnContainer = document.getElementById("filtergroup");
 var btns = btnContainer.getElementsByClassName("filtertitle");
 for (var i = 0; i < btns.length; i++) {
 	btns[i].addEventListener("click", function(){
-		var current = document.getElementsByClassName("active");
-		current[0].className = current[0].className.replace(" active", "");
-		this.className += " active";
+		var current = document.getElementsByClassName("activetitle");
+		current[0].className = current[0].className.replace(" activetitle", "");
+		this.className += " activetitle";
 	});
 }
 
