@@ -3,7 +3,7 @@ Main Stylesheet
 
 Project:    Upstake - Multipurpose Business Template
 Version:    1.0
-Last change:    18/05/2024
+Last change:    24/06/2024
 Author:    creativemaze
 Primary use:    Construction
 -------------------------------------------------------------------*/
@@ -24,8 +24,6 @@ Primary use:    Construction
 	3.6. Construction Area Six
 	3.7. Construction Area Seven
 	3.8. Construction Area Eight
-	3.9. Construction Area Nine
-	3.10. Construction Area Ten
 	 
 4. Footer
 5. Responsive
@@ -33,8 +31,6 @@ Primary use:    Construction
 
 /* 1. GENERAL
  ----------- */
- 
- 
 body,
 html{
 	width:100%;
@@ -983,6 +979,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	bottom: 40px;
 	left: 25px;
 	max-width: 375px;
+	margin-right: 15px;
 	background: rgba(0,0,0,0.6);
 	padding: 40px 20px 15px;
 }
@@ -1191,10 +1188,12 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 /* --- 3.5. Construction Area Five --- */
 .construct_area_five{
 	position: relative;
-	min-height: 475px;
+	min-height: 400px;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
+	padding: 7em 25px 14em;
+	margin-bottom: 9em;
 }
 
 .construct_area_five::before {
@@ -1207,92 +1206,84 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	background: rgba(0, 0, 0, 0.6);
 }
 
-/* --- 3.6. Construction Area Six --- */
-.construct_area_six{
+.construct_group_five{
+	max-width: 1240px;
+	margin: 0 auto;
 	position: relative;
-	z-index: 1;
-	max-width: 1200px;
-	margin: -350px auto 9em;
-	padding: 0 25px;
+	z-index: 999;
+	text-align: center;
 }
 
-.construct_group_six{
+.comment_group{
 	width: 100%;
-	padding: 40px 10px 0;
-	background-color: #ffffff;
-	margin: 40px 0;
-	border-left: solid 5px #ffc91a;
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: -65px;
 }
 
 .client_col{
-	padding: 0 25px
+	flex: 50%;
+	width: 50%;
+	padding: 0 20px;
 }
 
-.client_comment p{
-	font-family: 'Roboto', Arial, sans-serif;
-	font-size: 18px;
-	font-weight: normal;
-	display: inline-block;
-	color: #696969;
-	letter-spacing: 1px;
+.client_details{
+	max-width: 640px;
+	padding: 20px;
 	text-align: center;
-	line-height: 1.5em;
-}
-
-.client_comment p::before{
-	content: '\275D';
-	position: relative;
-	top: 10px;
-	padding-right: 5px;
-	font-size: 45px;
-	color: #ffc91a;
+	background: rgba(0,0,0,0.5);
+	border-left: solid 4px #ffc91a;
 }
 
 .client_info{
-	margin: 30px auto 0;
-	box-shadow: 0 20px 70px rgba(38,42,76,.2);
-	background-color: #ffffff;
-	padding: 30px;
-	max-width: 250px;
-}
-
-.client_info img{
-	max-width: 90px;
-	height: 90px;
-	margin: auto;
-	border-radius: 50%;
-	display: block;
-	text-align: center;
+	margin-bottom: -130px;
+	clear: both;
 }
 
 .client_name{
 	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: 600;
 	display: block;
-	color: #111111;
+	color: #ffffff;
 	letter-spacing: 1px;
-	text-align: center;
-	line-height: 1.4em;
-}
-
-.client_title{
-	font-family: 'Montserrat', Arial, sans-serif;
-	font-size: 14px;
-	font-weight: 600;
-	display: block;
-	color: #696969;
-	letter-spacing: 1px;
-	text-align: center;
-	text-transform: uppercase;
+	text-align: left;
 	line-height: 1.4em;
 	margin: 0;
+	padding: 11px 0;
+}
+
+.client_details p{
+	font-family: 'Roboto' , Arial, sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	display: block;
+	color: #dddddd;
+	letter-spacing: 1px;
+	text-align: left;
+	padding: 15px;
+	line-height: 1.5em;
+}
+
+.client_photo img{
+	max-width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	display: block;
+	text-align: left;
+}
+
+.quote_format{
+	font-size: 130px;
+	margin-top: -35px;
+	color: #ffc91a;
+	display: block;
+	text-align: center;
 }
 
 .client_icon{
-	display: block;
-	text-align: center;
-	padding-top: 8px;
+	width: 100%;
+	text-align: left;
 }
 
 .client_icon .fi{
@@ -1302,47 +1293,8 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	text-align: center;
 }
 
-.slick-dots {
-	position: relative;
-	z-index: 999999;
-	left: 50%;
-	transform: translateX(-50%);
-	display: flex;
-	justify-content: center;
-	margin: 0;
-	padding: 1rem 0;
-	list-style-type: none;
-}
-
-.slick-dots button{
-	display: block;
-	width: 1.3rem;
-	height: 1.3rem;
-	padding: 0;		
-	border: solid 1px #6f6f6f;
-	border-radius: 100%;
-	background-color: transparent;
-	text-indent: -9999px;
-}
-
-li.slick-active button{
-	background-color: #ffc91a;
-}
-
-.slick-dots button:hover{
-	background-color: #ffc91a;
-}
-
-.slick-dots li{
-	margin: 22px 4px 0 4px;
-}
-
-.construct_area_six .slick-list{
-	overflow: visible;
-}
-
-/* --- 3.7. Construction Area Seven --- */
-.construct_area_seven{
+/* --- 3.6. Construction Area Six --- */
+.construct_area_six{
 	position: relative;
 	z-index: 99;
 	max-width: 1200px;
@@ -1351,7 +1303,7 @@ li.slick-active button{
 	margin-bottom: calc(9em + 80px);
 }
 
-.construct_group_seven{
+.construct_group_six{
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
@@ -1515,8 +1467,8 @@ li.slick-active button{
 	border-top-left-radius: 25%;
 }
 
-/* --- 3.8. Construction Area Eight --- */
-.construct_area_eight{
+/* --- 3.7. Construction Area Seven --- */
+.construct_area_seven{
 	position: relative;
 	display: flex;
 	flex-direction: column;
@@ -1529,7 +1481,7 @@ li.slick-active button{
 	padding: 4em 0;
 }
 
-.construct_area_eight::before {
+.construct_area_seven::before {
 	content: '';
 	position: absolute;
 	z-index: 1;
@@ -1540,7 +1492,7 @@ li.slick-active button{
 	background: rgba(24, 25, 34, 0.6);
 }
 
-.construct_group_eight{
+.construct_group_seven{
 	max-width: 750px;
 	position: relative;
 	z-index: 999;
@@ -1572,15 +1524,15 @@ li.slick-active button{
 	border-color: #ffffff;
 }
 
-/* --- 3.9. Construction Area Nine --- */
-.construct_area_nine{
+/* --- 3.8. Construction Area Eight --- */
+.construct_area_eight{
 	position: relative;
 	max-width: 1280px;
 	margin: -80px auto 2em;
 	padding: 0 25px;
 }
 
-.construct_group_nine{
+.construct_group_eight{
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
@@ -1776,10 +1728,23 @@ a.footer-logo img{
 	padding-bottom: 10px;
 }
 
-.footer_grid img{
-	vertical-align: middle;
+.footer_image{
+	overflow: hidden;
+	position: relative;
+}
+
+.footer_image > a > img{
+	transition: ease-in-out 3.25s;
+}
+
+.footer_image > a > img:hover{
+	transform: scale(1.15);
+}
+
+.footer_image img{
 	width: 100%;
-	transition: .5s;
+	height: auto;
+	display: block;
 }
 
 .details{
@@ -1818,7 +1783,7 @@ a.footer-logo img{
 		margin-bottom: 9em;
 	}
 	
-	.construct_area_seven{
+	.construct_area_six{
 		margin-bottom: calc(9em + 40px);
 	}
 }	
@@ -1982,6 +1947,15 @@ a.footer-logo img{
 		max-width: 400px;
 	}
 	
+	.client_col{
+		flex: 100%;
+		width: 100%;
+	}
+	
+	.last_space{
+		padding-top: 115px;
+	}
+	
 	.info_col{
 		flex: 100%;
 		width: 100%;
@@ -2014,9 +1988,7 @@ a.footer-logo img{
 	.construct_head,
 	.info_box h2,
 	.right_info_box h2,
-	.info_head h2,
-	.featured_title,
-	.construct_group_nine h2{
+	.info_head h2{
 		font-size: 30px;
 	}
 	
@@ -2069,7 +2041,8 @@ a.footer-logo img{
 }
 
 @media only screen and (max-width: 420px){
-	.left_info_col{
+	.left_info_col,
+	.client_col{
 		padding-left: 0;
 		padding-right: 0;
 	}
@@ -2098,10 +2071,6 @@ a.footer-logo img{
 		width: 100%;
 	}
 	
-	.client_col{
-		padding: 0 15px;
-	}
-	
 	.base_content{
 		width: 180px;
 		height: 180px;
@@ -2110,6 +2079,10 @@ a.footer-logo img{
 	.base_photo{
 		width: 160px;
 		height: 160px;
+	}
+	
+	.bg_content h3{
+		font-size: 20px;
 	}
 }
 
@@ -2124,10 +2097,6 @@ a.footer-logo img{
 		margin-top: 0;
 	}
 	
-	.bg_content h3{
-		font-size: 20px;
-	}
-	
 	.base_content{
 		width: 160px;
 		height: 160px;
@@ -2136,5 +2105,9 @@ a.footer-logo img{
 	.base_photo{
 		width: 140px;
 		height: 140px;
+	}
+	
+	.bg_content h3{
+		font-size: 18px;
 	}
 }
