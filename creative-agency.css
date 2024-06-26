@@ -3,7 +3,7 @@ Main Stylesheet
 
 Project:    Upstake - Multipurpose Business Template
 Version:    1.0
-Last change:    22/05/2024
+Last change:    26/06/2024
 Author:    creativemaze
 Primary use:    Creative Agency
 -------------------------------------------------------------------*/
@@ -152,7 +152,7 @@ ul{
 	max-width: 160px; 
 	min-height: 10px;
 	position: relative;
-	top: 30px;
+	top: 33px;
 }
 
 #nav-logo > a img{
@@ -650,12 +650,12 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .creative_title::before{
 	font-family: 'uicons-thin-straight';
-	content: "\fc0d";
+	content: "\fc0a";
 	font-weight: 100;
-	font-size: 26px;
+	font-size: 32px;
 	position: relative;
-	top: 10px;
-	padding-right: 12px;
+	top: 11px;
+	padding-right: 10px;
 	color: #ec2f4b;
 }
 
@@ -1246,7 +1246,8 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 /* --- 3.5. Creative Area Five --- */
 .creative_area_five{
 	max-width: 1400px;
-	margin: 0 auto 9em;
+	margin: 0 auto;
+	margin-bottom: calc(9em - 20px);
 	padding: 0 25px;
 }
 
@@ -1829,29 +1830,27 @@ a.blog_btn:hover{
 
 .slidenav{
 	position: absolute;
-	right: 20px;
-	top: 95px;
+	right: 24px;
+	top: 115px;
 	padding: 0 10px;
 }
 
-.prev_nav,
-.next_nav{
-	font-size: 50px;
-	font-weight: 700;
+.prev_nav .fi,
+.next_nav .fi{
+	font-size: 38px;
 	transition: 0.6s ease;
-	width: auto;
 	display: inline-block;
 	overflow: hidden;
 	color: #ec2f4b;
 	cursor: pointer;
 }
 
-.prev_nav{
+.prev_nav .fi{
 	margin-right: 15px;
 }
 
-.next_nav:hover,
-.prev_nav:hover{
+.next_nav .fi:hover,
+.prev_nav .fi:hover{
 	color: #111111;
 }
 
@@ -2097,6 +2096,11 @@ a.footer-logo img{
 		width: 100%;
 		padding: 20px 25px;
 	}
+	
+	.grid_col{
+		flex: 50%;
+		width: 50%;
+	}
 }
 
 @media only screen and (max-width: 992px){
@@ -2203,11 +2207,6 @@ a.footer-logo img{
 	
 	.video-play-button{
 		margin-left: -70px;
-	}
-	
-	.grid_col{
-		flex: 50%;
-		width: 50%;
 	}
 	
 	.square_col_left{
