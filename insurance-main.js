@@ -1,6 +1,6 @@
 "use strict";
 //Slick Slider (1) One
-$(document).ready(function(){
+$( window ).on( "load", function(){
 	$('.bg_slider').slick({
 		slidesToShow: 3,
 		autoplay: false,
@@ -54,6 +54,32 @@ $(document).ready(function(){
 		
 	});
 	
+});
+
+//Accordion
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+	acc[i].addEventListener("click", function() {
+		this.classList.toggle("active-bar");
+		var panel = this.nextElementSibling;
+		if (panel.style.maxHeight) {
+			panel.style.maxHeight = null;
+		} else {
+			panel.style.maxHeight = panel.scrollHeight + "px";
+		} 
+	});
+}
+
+//MagnificPopup Video
+$('#play-video').magnificPopup({
+	disableOn: 300,
+	type: 'iframe',
+	mainClass: 'mfp-fade',
+	removalDelay: 300,
+	preloader: false,
+	fixedContentPos: false
 });
 
 //Counter Script
