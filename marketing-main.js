@@ -1,6 +1,6 @@
 "use strict";
 //Slick Slider
-$(document).ready(function(){
+$( window ).on( "load", function(){
 	$('.feature_slider').slick({
 		slidesToShow: 1,
 		autoplay: true,
@@ -35,9 +35,7 @@ jQuery(document).ready(function($) {
 
 //Filter Gallery
 jQuery(document).ready(function($) {
-	$('.filter-container').filterizr({
-		
-	});
+	$('.filter-container').filterizr({});
 });
 
 // Add active class to the current button (highlight it)
