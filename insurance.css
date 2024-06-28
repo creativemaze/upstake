@@ -3,7 +3,7 @@ Main Stylesheet
 
 Project:    Upstake - Multipurpose Business Template
 Version:    1.0
-Last change:    24/05/2024
+Last change:    26/06/2024
 Author:    creativemaze
 Primary use:    Insurance
 -------------------------------------------------------------------*/
@@ -126,7 +126,9 @@ ul{
 	text-align: center;
 	letter-spacing: 1px;
 	line-height: 1.2em;
-	margin-top: 0;
+	max-width: 800px;
+	margin: 0 auto;
+	margin-bottom: 125px;
 }
 
 /* 2. HEADER
@@ -818,30 +820,61 @@ li.slick-active button{
 	line-height: 1.5em;
 }
 
-.square_list > ul{
-	margin-bottom: 25px;
+.square_info_area{
+	padding-top: 4px;
+	min-height: 25px;
+	max-width: 300px;
 }
 
-.square_list > ul > li{
+.square_info_box{
+	width: 100%;
+}
+
+.accordion {
+	cursor: pointer;
+	padding: 8px 6px;
+	width: 100%;
+	text-align: left;
+	overflow: hidden;
+	transition: 0.4s;
 	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 14px;
+	font-size: 16px;
 	font-weight: 600;
 	display: block;
 	color: #111111;
 	letter-spacing: 1px;
-	text-align: left;
-	padding: 8px 0;
+	border-bottom: double 5px #7300a5;
+	line-height: 1.4em;
 }
 
-.square_list > ul > li::before{
-	font-family: 'uicons-thin-straight';
-	content: "\fc0d";
-	font-weight: 100;
-	font-size: 26px;
-	position: relative;
-	top: 8px;
-	padding-right: 10px;
-	color: #d60027;
+.accordion:after {
+	content: '\002B';
+	font-size: 16px;
+	color: #111111;
+	font-weight: 600;
+	float: right;
+}
+
+.active-bar:after {
+	content: "\2212";
+}
+
+.panel{
+	padding: 0;
+	background-color: #ffffff;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+}
+
+.panel > p{
+	padding: 12px 8px 12px;
+	font-family: 'Roboto' , Arial, sans-serif;
+	font-size: 15px;
+	font-weight: normal;
+	display: block;
+	line-height: 1.5em;
+	color: #696969;
 }
 
 .photo_area{
@@ -858,8 +891,8 @@ li.slick-active button{
 .photo_content{
 	position: absolute;
 	top: 0;
-	right: 0;
-	margin-right: 65px;
+	left: 0;
+	margin-left: 65px;
 	z-index: -99;
 	width: 160px;
 	height: 160px;
@@ -879,8 +912,8 @@ li.slick-active button{
 .box_content{
 	position: absolute;
 	bottom: 0;
-	left: 0;
-	margin-left: 45px;
+	right: 0;
+	margin-right: 45px;
 	z-index: 99;
 	width: 180px;
 	height: 180px;
@@ -1158,24 +1191,23 @@ li.slick-active button{
 	margin-bottom: -60px;
 }
 
-.prev_slide,
-.next_slide{
-	font-size: 50px;
-	font-weight: 700;
+.prev_slide .fi,
+.next_slide .fi{
+	font-size: 38px;
 	transition: 0.6s ease;
-	width: auto;
+	max-width: 160px;
 	display: inline-block;
 	overflow: hidden;
 	color: #d60027;
 	cursor: pointer;
 }
 
-.prev_slide{
+.prev_slide .fi{
 	margin-right: 15px;
 }
 
-.next_slide:hover,
-.prev_slide:hover{
+.next_slide .fi:hover,
+.prev_slide .fi:hover{
 	color: #111111;
 }
 
@@ -1219,7 +1251,7 @@ li.slick-active button{
 
 .info_box{
 	max-width: 600px;
-	padding-left: 20px;
+	padding-right: 20px;
 }
 
 .info_box h2{
@@ -1257,7 +1289,6 @@ li.slick-active button{
 	display: block;
 	color: #111111;
 	letter-spacing: 1px;
-	text-transform: capitalize;
 	text-align: left;
 	padding: 7px 0;
 }
@@ -1268,7 +1299,7 @@ li.slick-active button{
 	font-size: 26px;
 	font-weight: 100;
 	position: relative;
-	top: 10px;
+	top: 8px;
 	padding-right: 12px;
 	color: #d60027;
 }
@@ -1362,15 +1393,15 @@ li.slick-active button{
 /* --- 3.6. Insurance Area Six --- */
 .insurance_area_six{
 	position: relative;
+	min-height: 500px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	min-height: 350px;
+	padding: 5em 0;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
-	padding: 4em 0;
 }
 
 .insurance_area_six::before {
@@ -1385,35 +1416,81 @@ li.slick-active button{
 }
 
 .insurance_group_six{
-	max-width: 750px;
 	position: relative;
 	z-index: 999;
+	max-width: 1100px;
 	margin: 0 auto;
-	padding: 0 10px;
+	padding: 0 15px;
 }
 
-.bg_col_button a{
-	background-color: #ffffff;
-	width: 160px;
-	margin: 35px auto 0;
-    color: #111111;
-    padding: 13px 15px;
-    text-decoration: none;
-	text-transform: uppercase;
-    display: block;
-    font-size: 13px;
-	font-weight: 600;
-	font-family: 'Montserrat', Arial, sans-serif;
-    transition: 0.5s;
-	border: 1px solid #ffffff;
-	letter-spacing: 1px;
-	text-align: center;
+.video-play-button {
+	position: absolute;
+	z-index: 0;
+	left: 50%;
+	top: 50%;
+	z-index: 999;
+	transform: translateX(-50%) translateY(-50%);
+	box-sizing: content-box;
+	display: block;
+	width: 28px;
+	height: 42px;
+	border-radius: 50%;
+	padding: 28px 16px 12px 32px;
+	margin-top: 50px;
 }
 
-.bg_col_button a:hover{
-	color: #111111;
-	background-color: #ffffff;
-	border-color: #ffffff;
+.video-play-button:before {
+	content: "";
+	position: absolute;
+	z-index: 0;
+	left: 50%;
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	display: block;
+	width: 80px;
+	height: 80px;
+	background: transparent;
+	border: solid 2px #ffffff;
+	border-radius: 50%;
+	animation: pulse-border 1500ms ease-out infinite;
+}
+
+.video-play-button:after {
+	content: "";
+	position: absolute;
+	z-index: 1;
+	left: 50%;
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	display: block;
+	width: 80px;
+	height: 80px;
+	background: transparent;
+	border: solid 2px #ffffff;
+	border-radius: 50%;
+	transition: all 200ms;
+}
+
+.video-play-button span {
+	display: block;
+	position: relative;
+	z-index: 3;
+	width: 0;
+	height: 0;
+	border-left: 18px solid #ffffff;
+	border-top: 12px solid transparent;
+	border-bottom: 12px solid transparent;
+}
+
+@keyframes pulse-border {
+  0% {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+    opacity: 0;
+  }
 }
 
 /* --- 3.7. Insurance Area Seven --- */
@@ -1472,7 +1549,7 @@ li.slick-active button{
 	position: relative;
 	text-align: center;
 	overflow: hidden;
-	background-color: #7300a5;
+	background-color: #d60027;
 	border-radius: 5px;
 }
 
@@ -1512,17 +1589,19 @@ li.slick-active button{
 
 .counter.percent::after{
 	content:'%';
-	color: #7300a5;
+	color: #d60027;
 	font-weight: normal;
 	font-size: 40px;
 }
 
 .count_num .counter::before{
 	font-family: 'uicons-thin-straight';
-	content: "\fbf2";
+	content: "\fc09";
 	display: inline-block;
-	font-size: 28px;
-	color: #7300a5;
+	font-size: 42px;
+	position: relative;
+	top: 6px;
+	color: #d60027;
 	padding-right: 3px;
 }
 
@@ -1860,11 +1939,11 @@ a.footer-logo img{
 	}
 	
 	.photo_content{
-		margin-right: 0;
+		margin-left: 0;
 	}
 	
 	.box_content{
-		margin-left: 15px;
+		margin-right: 15px;
 	}
 } 
  
@@ -2001,11 +2080,11 @@ a.footer-logo img{
 	}
 	
 	.photo_content{
-		margin-right: 65px;
+		margin-left: 65px;
 	}
 	
 	.box_content{
-		margin-left: 45px;
+		margin-right: 45px;
 	}
 	
 	.info_head{
@@ -2019,6 +2098,10 @@ a.footer-logo img{
 		margin-top: 10px;
 	}
 	
+	.insurance_area_four{
+		margin-bottom: 9em;
+	}
+	
 	.cube_col{
 		flex: 100%;
 		width: 100%;
@@ -2028,7 +2111,7 @@ a.footer-logo img{
 	.info_col{
 		flex: 100%;
 		width: 100%;
-		margin-top: 50px;
+		margin-bottom: 80px;
 	}
 	
 	.count_col{
@@ -2110,6 +2193,10 @@ a.footer-logo img{
 		margin-top: 0;
 	}
 	
+	.extra-space{
+		margin-top: 0;
+	}
+	
 	.extra-padding{
 		padding-top: 0;
 	}
@@ -2160,51 +2247,39 @@ a.footer-logo img{
 	}
 	
 	.photo_content{
-		margin-right: 45px;
+		margin-left: 45px;
 	}
 	
 	.box_content{
-		margin-left: 15px;
+		margin-right: 15px;
 	}
 }
 
 @media only screen and (max-width: 390px){
 	.photo_content{
-		margin-right: 25px;
+		margin-left: 25px;
 	}
 	
 	.box_content{
-		margin-left: 8px;
-	}
-	
-	.grid_icon{
-		width: 25%;
-	}
-	
-	.grid_content{
-		width: 75%;
+		margin-right: 8px;
 	}
 	
 	.bg_content h3{
 		font-size: 20px;
 	}
+	
+	.grid_content{
+		padding-left: 15px
+	}
 }
 
 @media only screen and (max-width: 320px){
 	.photo_content{
-		margin-right: 0;
+		margin-left: 0;
 	}
 	
 	.box_content{
-		margin-left: -5px;
-	}
-	
-	.grid_icon{
-		width: 30%;
-	}
-	
-	.grid_content{
-		width: 70%;
+		margin-right: -5px;
 	}
 	
 	.bg_head{
