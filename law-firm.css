@@ -3,7 +3,7 @@ Main Stylesheet
 
 Project:    Upstake - Multipurpose Business Template
 Version:    1.0
-Last change:    26/05/2024
+Last change:    29/06/2024
 Author:    creativemaze
 Primary use:    Law Firm
 -------------------------------------------------------------------*/
@@ -876,16 +876,16 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	color: #111111;
 	letter-spacing: 1px;
 	text-align: left;
-	padding: 6px 0;
+	padding: 2px 0;
 }
 
 .square_list > ul > li::before{
 	font-family: 'uicons-thin-straight';
-	content: "\fc0d";
+	content: "\fc0a";
 	font-weight: 100;
-	font-size: 26px;
+	font-size: 32px;
 	position: relative;
-	top: 8px;
+	top: 11px;
 	padding-right: 10px;
 	color: #999966;
 }
@@ -1083,7 +1083,7 @@ li.slick-active button{
 	padding: 0 20px;
 	position: relative;
 	z-index: 9999;
-	margin-bottom: calc(9em + 65px);
+	margin-bottom: calc(9em + 55px);
 }
 
 .law_info_group{
@@ -1166,7 +1166,6 @@ li.slick-active button{
 	padding-top: 12px;
 	padding-left: 12px;
 	background-color: #ffffff;
-	border: double 6px #e0e0e0;
 }
 
 .grid_box{
@@ -1249,7 +1248,7 @@ li.slick-active button{
 	left: 50%;
 	transform: translateX(-50%);
 	z-index: 99;
-	margin-bottom: -75px;
+	margin-bottom: -45px;
 }
 
 .prev_slide,
