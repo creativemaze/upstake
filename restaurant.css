@@ -3,7 +3,7 @@ Main Stylesheet
 
 Project:    Upstake - Multipurpose Business Template
 Version:    1.0
-Last change:    28/05/2024
+Last change:    29/06/2024
 Author:    creativemaze
 Primary use:    Restaurant
 -------------------------------------------------------------------*/
@@ -795,7 +795,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	font-size: 26px;
 	font-weight: 100;
 	position: relative;
-	top: 10px;
+	top: 8px;
 	padding-right: 12px;
 	color: #e53935;
 }
@@ -1365,8 +1365,9 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 /* --- 3.8. Restaurant Area Eight --- */
 .restaurant_area_eight{
 	max-width: 1280px;
-	margin: 0 auto 9em;
+	margin: 0 auto 0;
 	padding: 0 25px;
+	margin-bottom: calc(9em + 15px);
 }
 
 .restaurant_group_eight{
@@ -1444,7 +1445,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .full_box{
 	position: absolute;
-	margin-bottom: -30px;
+	margin-bottom: -15px;
 	bottom: 0;
 	left: -100px;
 	z-index: 99;
@@ -1889,17 +1890,23 @@ a.footer-logo img{
 	padding-bottom: 10px;
 }
 
-.footer_grid img{
-	vertical-align: middle;
+.footer_image{
+	overflow: hidden;
+	position: relative;
+}
+
+.footer_image > a > img{
+	transition: ease-in-out 3.25s;
+}
+
+.footer_image > a > img:hover{
+	transform: scale(1.15);
+}
+
+.footer_image img{
 	width: 100%;
-}
-
-.footer_grid > a > img{
-	transition: 0.5s;
-}
-
-.footer_grid > a > img:hover{
-	opacity: 0.6;
+	height: auto;
+	display: block;
 }
 
 .details{
@@ -2125,7 +2132,7 @@ a.footer-logo img{
 	}
 	
 	.full_box{
-		left: -35px;
+		left: -55px;
 		width: 220px;
 		height: 220px;
 	}
@@ -2181,7 +2188,6 @@ a.footer-logo img{
 	.bg_col,
 	.grid_col,
 	.client_col,
-	.area_col,
 	.blog_col{
 		padding-left: 0;
 		padding-right: 0
@@ -2197,17 +2203,6 @@ a.footer-logo img{
 		height: 170px;
 	}
 	
-	.square_icon{
-		width: 30%;
-	}
-	
-	.square_title{
-		width: 70%;
-		padding-left: 25px;
-	}
-}	
-
-@media only screen and (max-width: 390px){
 	.full_box{
 		width: 190px;
 		height: 190px;
@@ -2226,6 +2221,17 @@ a.footer-logo img{
 		font-size: 30px;
 	}
 	
+	.square_icon{
+		width: 30%;
+	}
+	
+	.square_title{
+		width: 70%;
+		padding-left: 25px;
+	}
+}	
+
+@media only screen and (max-width: 390px){
 	.inner_area h2{
 		font-size: 18px;
 	}
@@ -2241,9 +2247,7 @@ a.footer-logo img{
 		width: 130px;
 		height: 130px;
 	}
-}
-
-@media only screen and (max-width: 320px){
+	
 	.full_box{
 		width: 150px;
 		height: 150px;
@@ -2252,15 +2256,6 @@ a.footer-logo img{
 	.color_space{
 		width: 130px;
 		height: 130px;
-	}
-	
-	.grid_price h3,
-	.grid_title h3{
-		font-size: 14px;
-	}
-	
-	.inner_area h2{
-		font-size: 15px;
 	}
 	
 	.center_title{
@@ -2273,5 +2268,16 @@ a.footer-logo img{
 	
 	.title_size{
 		font-size: 26px;
+	}
+}
+
+@media only screen and (max-width: 320px){
+	.grid_price h3,
+	.grid_title h3{
+		font-size: 14px;
+	}
+	
+	.inner_area h2{
+		font-size: 15px;
 	}
 }
