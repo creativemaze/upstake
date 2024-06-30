@@ -3,7 +3,7 @@ Main Stylesheet
 
 Project:    Upstake - Multipurpose Business Template
 Version:    1.0
-Last change:    29/05/2024
+Last change:    30/06/2024
 Author:    creativemaze
 Primary use:    Mobile App
 -------------------------------------------------------------------*/
@@ -903,16 +903,16 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	color: #ffffff;
 	letter-spacing: 1px;
 	text-align: left;
-	padding: 6px 0;
+	padding: 2px 0;
 }
 
 .info_list > ul > li::before{
 	font-family: 'uicons-thin-straight';
-	content: "\fc0d";
+	content: "\fc0a";
 	font-weight: 100;
-	font-size: 26px;
+	font-size: 32px;
 	position: relative;
-	top: 8px;
+	top: 11px;
 	padding-right: 10px;
 	color: #dddddd;
 }
@@ -1331,7 +1331,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	font-size: 16px;
 	font-weight: normal;
 	display: inline-block;
-	color: #dddddd;
+	color: #696969;
 	letter-spacing: 1px;
 	text-align: center;
 	line-height: 1.5em;
@@ -1343,12 +1343,12 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	top: 10px;
 	padding-right: 5px;
 	font-size: 45px;
-	color: #dddddd;
+	color: #7300a5;
 }
 
 .client_info{
 	margin: 40px 0 0;
-	border: double 5px #ffffff;
+	background-color: #ffffff;
 	padding: 30px 20px 20px;
 	max-width: 275px;
 }
@@ -1367,7 +1367,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	font-size: 18px;
 	font-weight: 600;
 	display: block;
-	color: #ffffff;
+	color: #111111;
 	letter-spacing: 1px;
 	text-align: center;
 	line-height: 1.4em;
@@ -1378,7 +1378,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	font-size: 14px;
 	font-weight: 600;
 	display: block;
-	color: #dddddd;
+	color: #7300a5;
 	letter-spacing: 1px;
 	text-align: center;
 	text-transform: uppercase;
@@ -1394,7 +1394,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .client_icon .fi{
 	font-size: 22px;
-	color: #ffffff;
+	color: #7300a5;
 	display: inline-block;
 	text-align: center;
 }
