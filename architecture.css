@@ -3,7 +3,7 @@ Main Stylesheet
 
 Project:     Upstake - Multipurpose Business Template
 Version:    1.0
-Last change:    27/03/2024
+Last change:    30/06/2024
 Author:    creativemaze
 Primary use:    Architecture
 -------------------------------------------------------------------*/
@@ -1374,7 +1374,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	font-size: 16px;
 	color: #ffffff;
 	position: relative;
-	top: 5px;
+	top: 4px;
 	padding-right: 10px;
 }
 
@@ -1646,24 +1646,23 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	margin-left: 40px;
 }
 
-.prev_slide,
-.next_slide{
-	font-size: 50px;
-	font-weight: 700;
+.prev_slide .fi,
+.next_slide .fi{
+	font-size: 38px;
 	transition: 0.6s ease;
-	width: auto;
+	max-width: 160px;
 	display: inline-block;
 	overflow: hidden;
 	color: #556270;
 	cursor: pointer;
 }
 
-.prev_slide{
+.prev_slide .fi{
 	margin-right: 15px;
 }
 
-.next_slide:hover,
-.prev_slide:hover{
+.next_slide .fi:hover,
+.prev_slide .fi:hover{
 	opacity: 0.6;
 }
 
@@ -2243,18 +2242,23 @@ a.footer-logo img{
 	padding-bottom: 10px;
 }
 
-.footer_grid img{
-	vertical-align: middle;
+.footer_image{
+	overflow: hidden;
+	position: relative;
+}
+
+.footer_image > a > img{
+	transition: ease-in-out 3.25s;
+}
+
+.footer_image > a > img:hover{
+	transform: scale(1.15);
+}
+
+.footer_image img{
 	width: 100%;
 	height: auto;
-}
-
-.footer_grid > a > img{
-	transition: 0.5s;
-}
-
-.footer_grid > a > img:hover{
-	opacity: 0.6;
+	display: block;
 }
 
 .details{
@@ -2306,8 +2310,8 @@ a.footer-logo img{
 		margin-top: 40px;
 	}
 	
-	.prev_slide,
-	.next_slide{
+	.prev_slide .fi,
+	.next_slide .fi{
 		color: #ffffff;
 	}
 	
@@ -2547,6 +2551,7 @@ a.footer-logo img{
 	
 	.featured_item{
 		left: 10px;
+		top: 5px;
 	}
 	
 	.count_col{
@@ -2593,10 +2598,6 @@ a.footer-logo img{
 	.square_info_col{
 		flex: 100%;
 		width: 100%;
-	}
-	
-	.featured_item{
-		top: 5px;
 	}
 	
 	.top_btn{
