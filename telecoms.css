@@ -3,7 +3,7 @@ Main Stylesheet
 
 Project:    Upstake - Multipurpose Business Template
 Version:    1.0
-Last change:    01/06/2024
+Last change:    30/06/2024
 Author:    creativemaze
 Primary use:    Telecoms
 -------------------------------------------------------------------*/
@@ -24,8 +24,6 @@ Primary use:    Telecoms
 	3.6. Telecoms Area Six
 	3.7. Telecoms Area Seven
 	3.8. Telecoms Area Eight
-	3.9. Telecoms Area Nine
-	3.10. Telecoms Area Ten
 	 
 4. Footer
 5. Responsive
@@ -106,22 +104,7 @@ ul{
 	margin-right: auto;
 }
 
-.bg_heading{
-	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 40px;
-	font-weight: 800;
-	display: block;
-	color: #ffffff;
-	text-align: center;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	line-height: 1.2em;
-	max-width: 600px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.telecoms_info{
+.telecoms_sub_info{
 	max-width: 400px;
 	margin: 0 auto;
 	font-family: 'Montserrat' , Arial, sans-serif;
@@ -135,7 +118,7 @@ ul{
 	line-height: 1.5em;
 }
 
-.telecoms_sub_info{
+.telecoms_info{
 	max-width: 600px;
 	margin: 0 auto;
 	font-family: 'Roboto' , Arial, sans-serif;
@@ -920,7 +903,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	height: 1.3rem;
 	padding: 0;		
 	border: solid 1px #6f6f6f;
-	border-radius: 100%;
+	border-radius: 50%;
 	background-color: transparent;
 	text-indent: -9999px;
 }
@@ -974,8 +957,8 @@ li.slick-active button{
 	width: 33.33%;
 	max-width: 500px;
 	padding: 30px 35px 40px 25px;
-	background-color: #009fff;
-	margin-top: 0;
+	background-color: #ffffff;
+	box-shadow: 0 20px 70px rgba(38,42,76,.2);
 }
 
 .info_center{
@@ -990,7 +973,7 @@ li.slick-active button{
 	font-size: 40px;
 	font-weight: 800;
 	display: block;
-	color: #ffffff;
+	color: #111111;
 	text-align: left;
 	text-transform: uppercase;
 	letter-spacing: 1px;
@@ -1003,7 +986,7 @@ li.slick-active button{
 	font-size: 16px;
 	font-weight: normal;
 	display: block;
-	color: #dddddd;
+	color: #696969;
 	letter-spacing: 1px;
 	text-align: left;
 	padding: 12px 0;
@@ -1036,7 +1019,7 @@ li.slick-active button{
 	left: -60px;
 	width: 120px;
 	height: 120px;
-	background-color: #009fff;
+	background-color: #ec2f4b;
 	border-radius: 50%;
 	overflow: hidden;
 	margin-bottom: -55px;
@@ -1084,24 +1067,24 @@ li.slick-active button{
 	display: block;
     width: 50px;
     height: 2px;
-    background: #009fff;
+    background: #ec2f4b;
     transition: width .5s;
 }
 
 .area_button a:hover{
-	color: #009fff;
+	color: #ec2f4b;
 }
 
 .area_button a:hover::after {
     width: 100%;
-	background-color: #009fff;
+	background-color: #ec2f4b;
 }
 
 .info_col_button a{
-	background-color: #ffffff;
+	background-color: #ec2f4b;
 	width: 160px;
 	margin: 25px 0 0;
-    color: #111111;
+    color: #ffffff;
     padding: 13px 15px;
     text-decoration: none;
 	text-transform: uppercase;
@@ -1110,81 +1093,47 @@ li.slick-active button{
 	font-weight: 600;
 	font-family: 'Montserrat', Arial, sans-serif;
     transition: 0.5s;
-	border: 1px solid #ffffff;
+	border: 1px solid #ec2f4b;
 	letter-spacing: 1px;
 	text-align: center;
 }
 
 .info_col_button a:hover{
-	color: #ffffff;
+	color: #111111;
 	background: transparent;
-	border-color: #ffffff;
+	border-color: #111111;
 }
 
 /* --- 3.4. Telecoms Area Four --- */
 .telecoms_area_four{
-	position: relative;
-	min-height: 450px;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-}
-
-/* --- 3.5. Telecoms Area Five --- */
-.telecoms_area_five{
 	max-width: 1280px;
-	margin: -300px auto 0;
-	margin-bottom: calc(9em - 30px);
+	margin: 0 auto 0;
 	padding: 0 25px;
+	margin-bottom: calc(9em - 40px);
 }
 
-.telecoms_group_five{
+.telecoms_group_four{
 	width: 100%;
 	display: flex; 
 	flex-wrap: wrap;
 }
 
 .grid_col{
-	flex: 33.33%;
-	width: 33.33%;
+	flex: 25%;
+	width: 25%;
 	padding: 30px 20px 0;
 }
 
 .grid_box{
-	max-width: 350px;
-	margin: auto;
 	position: relative;
+	text-align: center;
+	margin: 0 auto;
+	max-width: 350px;
 }
 
 .grid_image{
+	overflow: hidden;
 	position: relative;
-	box-shadow: 0 20px 70px rgba(38,42,76,.2);
-}
-
-.grid_side{
-	position: absolute;
-	left: 0;
-	top: 100%;
-	margin-top: -190px;
-	margin-left: -45px;
-	transform: rotate(-90deg) scaleX(-1);
-	transform-origin: top left;
-	width: 100%;
-	height: 100%;
-	z-index: 1;
-}
-
-.grid_name{
-	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 15px;
-	font-weight: 600;
-	display: inline-block;
-	color: #111111;
-	letter-spacing: 1px;
-	text-align: left;
-	line-height: 1.4em;
-	text-transform: uppercase;
-    transform: scaleX(-1);
 }
 
 .grid_image img{
@@ -1193,138 +1142,73 @@ li.slick-active button{
 	display: block;
 }
 
-.grid_title{
-	width: calc(100% - 75px);
+.grid_title_area{
+	max-width: 350px;
+	background-color: #ffffff;
 	position: relative;
-	bottom: 30px;
-	margin: auto;
+	bottom: 40px;
 	overflow: auto;
-	border-radius: 5px;
-	background-color: #009fff;
+	padding: 10px 0 10px 20px;
+	text-align: left;
+	margin-left: 20px;
+	border-left: solid 4px #009fff;
 }
 
-.grid_title h3{
-	color: #ffffff;
+.grid_title_area h3{
 	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 15px;
+	font-size: 14px;
 	font-weight: 600;
 	display: block;
-	text-align: center;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	line-height: 1.4em;
-	margin: 0;
-	padding: 15px 6px;
-}
-
-/* --- 3.6. Telecoms Area Six --- */
-.telecoms_area_six{
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	min-height: 300px;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-	margin-bottom: calc(9em - 25px);
-	padding: 3em 0;
-}
-
-.telecoms_group_six{
-	max-width: 1100px;
-	margin: 0 auto;
-	padding: 0 25px;
-	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
-}
-
-.count_col{
-	flex: 25%;
-	width: 25%;
-	padding: 20px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-
-.count_box{
-	max-width: 275px;
-	margin: auto;
-	text-align: center;
-}
-
-.counter_area{
-	height: 155px;
-	width: 155px;
-	border: double 5px #333333;
-	border-radius: 50%;
-	padding: 15px;
-}
-
-.counter_center{
-	display: flex;
-	flex-direction: column;
-	justify-content:  center;
-	align-items: center;
-}
-
-.count_title{
-	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 16px;
-	font-weight: 600;
-	display: block;
-	color: #696969;
-	text-align: center;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	line-height: 1.4em;
-	margin: 0;
-	padding-top: 15px;
-}
-
-.counter{
-	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 50px;
-	font-weight: 800;
-	display: inline-block;
-	text-align: center;
 	color: #111111;
+	text-align: left;
 	letter-spacing: 1px;
-	margin: 0;
+	line-height: 1.4em;
 }
 
-.counter.letter::after{
-	content:'k';
-	font-size: 50px;
-	color: #009fff;
+.grid_title_area h3 .first-letter{
+	background-color: #ec2f4b;
+	padding: 12px 14px;
+	color: #ffffff;
+	margin-right: 4px;
 }
 
-/* --- 3.7. Telecoms Area Seven --- */
-.telecoms_area_seven{
+/* --- 3.5. Telecoms Area Five --- */
+.telecoms_area_five{
+	min-height: 400px;
+	text-align: center;
+	margin-bottom: 0;
+	padding: 9em 25px;
+	background-color: #eeeeee;
+	margin-bottom: 9em;
+}
+
+.telecoms_group_five{
 	max-width: 1280px;
-	margin: 0 auto 9em;
-	padding: 0 25px;
-}
-
-.telecoms_group_seven{
+	margin: 0 auto;
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
-}
-
-.square_col_left{
-	flex: 50%;
-	width: 50%;
 }
 
 .square_col_right{
-	flex: 50%;
-	width: 50%;
-	padding: 0 20px;
+	flex: 66.66%;
+	width: 66.66%;
+	padding: 0 25px;
+	margin: 0 auto 0;
+}
+
+.square_col_left{
+	flex: 33.33%;
+	width: 33.33%;
+	max-width: 500px;
+	padding: 30px 35px 40px 25px;
+	background-color: #ffffff;
+}
+
+.square_info_area{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .square_area{
@@ -1332,11 +1216,6 @@ li.slick-active button{
 	flex-direction: row;
 	justify-content: flex-start;
 	align-items: center;
-}
-
-.square_box{
-	max-width: 550px;
-	padding-left: 20px;
 }
 
 .square_box h2{
@@ -1349,196 +1228,95 @@ li.slick-active button{
 	letter-spacing: 1px;
 	line-height: 1.2em;
 	text-transform: uppercase;
+	margin-top: 0;
 }
 
 .square_box p{
 	font-family: 'Roboto' , Arial, sans-serif;
 	font-size: 16px;
 	font-weight: normal;
-	padding: 15px 0;
 	display: block;
 	color: #696969;
 	letter-spacing: 1px;
 	text-align: left;
+	padding: 12px 0;
 	line-height: 1.5em;
-	max-width: 450px;
 }
 
-@keyframes up-down{
-	0% {
-		transform: translatey(0px);
-	}
-	50% {
-		transform: translatey(-10px);
-	}
-	100% {
-		transform: translatey(0px);
-	}
-}
-
-.photo_box{
-	max-width: 640px;
-	min-height: 550px;
+.num_col{
 	position: relative;
-	animation: 3s infinite ease-in-out up-down;
+	flex: 33.33%;
+	width: 33.33%;
+	padding: 20px 20px 0;
 }
 
-#top_left_pic{
-	position: absolute;
-	top: 0;
-	left: 50px;
-	width: 110px;
-	height: 110px;
-	border-radius: 50%;
-}
-
-#top_center_pic{
-	position: absolute;
-	top: 0;
-	right: 50px;
-	width: 110px;
-	height: 110px;
-}
-
-#bottom_left_pic{
-	position: absolute;
-	bottom: 25px;
-	left: 50px;
-	width: 110px;
-	height: 110px;
-	border-radius: 50%;
-}
-
-#bottom_center_pic{
-	position: absolute;
-	bottom: 50px;
-	right: 50px;
-	width: 110px;
-	height: 110px;
-	border-radius: 50%;
-}
-
-#top_left_pic img,
-#top_center_pic img,
-#bottom_left_pic img,
-#bottom_center_pic img{
+.num_box{
+	max-width: 300px;
 	width: 100%;
-	height: auto;
+	text-align: center;
+	position: relative;
+}
+
+.num_image{
+	position: relative;
+}
+
+.num_image img{
+	width: 160px;
+	height: 160px;
 	display: block;
-	border-radius: 50%;
+	margin: 0 auto;
 }
 
-.center_area{
-	width: 300px;
-	height: 300px;
-	border-radius: 50%;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	box-shadow: 0 20px 70px rgba(38,42,76,.2);
-}
-
-.center_area img{
-	width: 100%;
-	height: auto;
-	display: block;
-	border-radius: 50%;
-}
-
-.square_info_area{
-	width: 100%;
-	border-left: solid 1px #e0e0e0;
-	max-height: 300px;	
-	margin-left: 32px;
-}
-
-.square_info{
-	width: 100%;
-	display: block;
-	margin-left: -32px;
-	clear: both;
-	margin-bottom: 40px;
-	overflow-y: auto;
-	max-height: 125px;
-	height: 100%;
-}
-
-.bottom_cube{
-	margin-bottom: -40px;
-}
-
-.square_num{
-	width: 65px;
-	height: 65px;
-	margin: auto;
-	background-color: #009fff;
-	border-radius: 50%;
-	display: block;
-	float: left;
-}
-
-.square_heading{
-	float: left;
-	margin-left: 20px;
-}
-
-.square_num h4{
+.list_num h4{
 	font-family: 'Montserrat' , Arial, sans-serif;
-	font-weight: 500;
-	font-size: 20px;
+	font-size: 110px;
+	font-weight: 800;
+	display: block;
+	text-align: left;
+	color: #ffffff;
+	letter-spacing: 1px;
+	line-height: 1.2em;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+.cube_crumb{
+	width: 50px;
+	height: 1px;
+	margin: auto;
+	border-bottom: solid 2px #ec2f4b;
+	margin-top: 12px;
+}
+
+.mid_info h3{
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 18px;
+	font-weight: 600;
 	display: block;
 	text-align: center;
-	color: #ffffff;
-	line-height: 1.4em;
-}
-
-.square_center{
-	display: flex;
-	flex-direction: column;
-	justify-content:  center;
-	align-items: center;
-}
-
-.square_heading h3{
-	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 16px;
-	display: block;
-	font-weight: 600;
 	color: #111111;
 	letter-spacing: 1px;
-	text-align: left;
 	line-height: 1.4em;
 }
 
-/* --- 3.8. Telecoms Area Eight --- */
-.telecoms_area_eight{
-	position: relative;
-	min-height: 475px;
-	background-color: #009fff;
-}
-
-/* --- 3.9. Telecoms Area Nine --- */
-.telecoms_area_nine{
-	max-width: 1200px;
-	margin: -350px auto 9em;
+/* --- 3.6. Telecoms Area Six --- */
+.telecoms_area_six{
+	max-width: 1280px;
+	margin: 0 auto 9em;
 	padding: 0 25px;
 }
 
-.telecoms_group_nine{
+.telecoms_group_six{
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
-	padding: 0 10px 0;
-	background-color: #ffffff;
-	margin: 40px 0;
-	border-left: solid 5px #111111;
 }
 
 .client_col{
-	flex: 33.33%;
-	width: 33.33%;
-	padding: 40px 30px 0;
+	flex: 25%;
+	width: 25%;
+	padding: 0 20px;
 }
 
 .client_comment p{
@@ -1558,15 +1336,15 @@ li.slick-active button{
 	top: 10px;
 	padding-right: 5px;
 	font-size: 45px;
-	color: #009fff;
+	color: #ec2f4b;
 }
 
 .client_info{
 	margin: 30px auto 0;
-	box-shadow: 0 20px 70px rgba(38,42,76,.2);
 	background-color: #ffffff;
-	padding: 30px;
-	max-width: 250px;
+	padding: 30px 25px 20px;
+	max-width: 275px;
+	box-shadow: 0 20px 70px rgba(38,42,76,.2);
 }
 
 .client_info img{
@@ -1594,7 +1372,7 @@ li.slick-active button{
 	font-size: 14px;
 	font-weight: 600;
 	display: block;
-	color: #696969;
+	color: #ec2f4b;
 	letter-spacing: 1px;
 	text-align: center;
 	text-transform: uppercase;
@@ -1610,19 +1388,114 @@ li.slick-active button{
 
 .client_icon .fi{
 	font-size: 22px;
-	color: #009fff;
+	font-weight: 300;
+	color: #ec2f4b;
 	display: inline-block;
 	text-align: center;
 }
 
-/* --- 3.10. Telecoms Area Ten --- */
-.telecoms_area_ten{
+/* --- 3.7. Telecoms Area Seven --- */
+.telecoms_area_seven{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #eeeeee;
+	min-height: 350px;
+	padding: 5em 0 7em;
+	margin-bottom: 9em;
+}
+
+.telecoms_group_seven{
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 25px;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.count_col{
+	flex: 25%;
+	width: 25%;
+	padding: 40px 20px 0;
+}
+
+.count_box{
+	max-width: 320px;
+	margin: 0 auto;
+	width: 100%;
+	position: relative;
+}
+
+.count_num{
+	width: 150px;
+	height: 150px;
+	background-color: #ffffff;
+	padding: 20px;
+	overflow: hidden;
+	text-align: center;
+}
+
+.count_center{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.counter{
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 60px;
+	font-weight: 800;
+	display: inline-block;
+	text-align: left;
+	color: #111111;
+	letter-spacing: 1px;
+	line-height: 1.2em;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+.counter.letter::after{
+	content:'k';
+	font-size: 50px;
+	color: #ec2f4b;
+}
+
+.count_info{
+	padding-top: 15px;
+}
+
+.count_info h3{
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 18px;
+	font-weight: 600;
+	display: block;
+	text-align: center;
+	color: #111111;
+	letter-spacing: 1px;
+	line-height: 1.4em;
+	margin: 0;
+}
+
+.count_crumb{
+	width: 50px;
+	height: 1px;
+	margin: auto;
+	border-bottom: solid 2px #ec2f4b;
+	margin-top: 12px;
+}
+
+/* --- 3.8. Telecoms Area Eight --- */
+.telecoms_area_eight{
 	max-width: 1280px;
 	margin: 0 auto 9em;
 	padding: 0 25px;
 }
 
-.telecoms_group_ten{
+.telecoms_group_eight{
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
@@ -1703,7 +1576,7 @@ li.slick-active button{
 	font-size: 15px;
 	display: block;
 	font-weight: 600;
-	color: #009fff;
+	color: #ec2f4b;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	text-align: center;
@@ -1769,18 +1642,18 @@ a.blog_btn::after{
 	display: block;
     width: 50px;
     height: 2px;
-    background: #009fff;
+    background: #ec2f4b;
     transition: width .5s;
 }
 
 .blog_title a:hover,
 a.blog_btn:hover{
-	color: #009fff;
+	color: #ec2f4b;
 }
 
 a.blog_btn:hover::after {
     width: 100%;
-	background-color: #009fff;
+	background-color: #ec2f4b;
 }
 
 /* 4. FOOTER
@@ -2015,10 +1888,6 @@ a.footer-logo img{
 	.slide__content{
 		height: auto;
 	}
-	
-	.telecoms_area_seven{
-		margin-bottom: calc(9em + 30px);
-	}
 }
 
 @media only screen and (max-width: 992px){
@@ -2158,11 +2027,6 @@ a.footer-logo img{
 	}
 	
 	.grid_col{
-		flex: 100%;
-		width: 100%;
-	}
-	
-	.count_col{
 		flex: 50%;
 		width: 50%;
 	}
@@ -2170,6 +2034,7 @@ a.footer-logo img{
 	.square_col_left{
 		flex: 100%;
 		width: 100%;
+		max-width: 450px;
 	}
 	
 	.square_col_right{
@@ -2178,8 +2043,13 @@ a.footer-logo img{
 	}
 	
 	.client_col{
-		flex: 100%;
-		width: 100%;
+		flex: 50%;
+		width: 50%;
+	}
+	
+	.count_col{
+		flex: 50%;
+		width: 50%;
 	}
 	
 	.blog_head{
@@ -2209,6 +2079,10 @@ a.footer-logo img{
 		margin-top: 25px;
 	}
 	
+	.footer_sub{
+		padding-bottom: 4em;
+	}
+	
 	.footer_col{
 		flex: 50%;
 		width: 50%;
@@ -2234,9 +2108,6 @@ a.footer-logo img{
 	
 	.info_head,
 	.info_content,
-	.square_col_left,
-	.square_col_right,
-	.square_box,
 	.blog_head,
 	.blog_info{
 		padding-left: 0;
@@ -2253,14 +2124,24 @@ a.footer-logo img{
 		max-width: 200px;
 	}
 	
-	.count_col{
+	.grid_col{
 		flex: 100%;
 		width: 100%;
 	}
 	
-	.center_area{
-		width: 220px;
-		height: 220px;
+	.num_col{
+		flex: 100%;
+		width: 100%;
+	}
+	
+	.client_col{
+		flex: 100%;
+		width: 100%;
+	}
+	
+	.count_col{
+		flex: 100%;
+		width: 100%;
 	}
 	
 	.blog_col{
@@ -2272,24 +2153,6 @@ a.footer-logo img{
 		flex: 100%;
 		width: 100%;
 		margin: 0;
-	}
-}
-
-@media only screen and (max-width: 480px){
-	#top_left_pic{
-		left: 0;
-	}
-	
-	#top_center_pic{
-		right: 0;
-	}
-	
-	#bottom_left_pic{
-		left: 0;
-	}
-	
-	#bottom_center_pic{
-		right: 0;
 	}
 }	
 
@@ -2304,15 +2167,12 @@ a.footer-logo img{
 	
 	.feature_col,
 	.left_info_col,
+	.square_col_right,
 	.grid_col,
+	.client_col,
 	.blog_col{
 		padding-left: 0;
 		padding-right: 0;
-	}
-	
-	.client_col{
-		padding-left: 15px;
-		padding-right: 15px;
 	}
 	
 	.feature_area{
@@ -2338,14 +2198,5 @@ a.footer-logo img{
 	
 	.icon_bottom{
 		margin-top: 0;
-	}
-	
-	.grid_title h3{
-		font-size: 13px;
-	}
-	
-	.center_area{
-		width: 170px;
-		height: 170px;
 	}
 }
