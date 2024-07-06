@@ -13,7 +13,7 @@ $(document).ready(function(){
 		centerMode: true,
 		responsive: [
 			{
-				breakpoint: 993,
+				breakpoint: 1025,
 				settings: {
 					slidesToShow: 1,
 					
