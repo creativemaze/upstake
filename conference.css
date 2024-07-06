@@ -3,7 +3,7 @@ Main Stylesheet
 
 Project:   Upstake - Multipurpose Business Template
 Version:    1.0
-Last change:    08/06/2024
+Last change:    06/07/2024
 Author:    creativemaze
 Primary use:    Conference
 -------------------------------------------------------------------*/
@@ -1438,7 +1438,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 .conference_area_six{
 	max-width: 1280px;
 	margin: 0 auto;
-	margin-bottom: calc(9em + 30px);
+	margin-bottom: calc(9em + 15px);
 	padding: 0 25px;
 }
 
@@ -1619,7 +1619,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .full_box{
 	position: absolute;
-	margin-bottom: -30px;
+	margin-bottom: -15px;
 	bottom: 0;
 	left: -100px;
 	z-index: 99;
@@ -2569,7 +2569,6 @@ a.footer-logo img{
 	.right_btn,
 	.info_head,
 	.query_col,
-	.photo_col,
 	.query_box,
 	.blog_col,
 	.blog_head,
@@ -2598,7 +2597,7 @@ a.footer-logo img{
 	}
 	
 	.full_box{
-		left: -25px;
+		left: -55px;
 		width: 220px;
 		height: 220px;
 	}
@@ -2698,11 +2697,7 @@ a.footer-logo img{
 	}
 }
 
-@media only screen and (max-width: 320px){
-	.info_col_button a{
-		margin-left: 85px;
-	}
-	
+@media only screen and (max-width: 360px){
 	.full_box{
 		width: 160px;
 		height: 160px;
@@ -2719,6 +2714,12 @@ a.footer-logo img{
 	
 	.title_size{
 		font-size: 20px;
+	}
+}
+
+@media only screen and (max-width: 320px){
+	.info_col_button a{
+		margin-left: 85px;
 	}
 	
 	.col_head h3{
