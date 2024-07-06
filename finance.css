@@ -3,7 +3,7 @@ Main Stylesheet
 
 Project:    Upstake - Multipurpose Business Template
 Version:    1.0
-Last change:    14/06/2024
+Last change:    06/07/2024
 Author:    creativemaze
 Primary use:    Finance
 -------------------------------------------------------------------*/
@@ -102,20 +102,6 @@ ul{
 	max-width: 600px;
 	margin-left: auto;
 	margin-right: auto;
-}
-
-.bg_head{
-	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 40px;
-	font-weight: 600;
-	display: block;
-	color: #ffffff;
-	letter-spacing: 1px;
-	text-align: center;
-	line-height: 1.2em;
-	max-width: 600px;
-	margin-right: auto;
-	margin-left: auto;
 }
 
 /* 2. HEADER
@@ -773,54 +759,22 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	color: #00cdac;
 }
 
-.grid_title_area p{
-	font-family: 'Roboto' , Arial, sans-serif;
-	font-size: 15px;
-	font-weight: normal;
-	padding-top: 10px;
-	display: block;
-	color: #696969;
-	letter-spacing: 1px;
-	text-align: left;
-	line-height: 1.5em;
-}
-
 /* --- 3.3. Finance Area Three --- */
 .finance_area_three{
 	min-height: 400px;
 	text-align: center;
-	padding: 8em 25px 8em;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
+	padding: 6em 25px;
+	background-color: #eeeeee;
 	margin-bottom: 9em;
 }
 
-.finance_area_three::after{
-	content: '';
-	position: absolute;
-	z-index: 1;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: rgba(24, 25, 34, 0.6);
-}
-
 .finance_group_three{
-	position: relative;
-	z-index: 999;
 	max-width: 1200px;
 	margin: 0 auto;
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
-	padding-top: 40px;
-}
-
-.front_index{
-	position: relative;
-	z-index: 999;
+	padding: 40px 0;
 }
 
 .icon_col{
@@ -834,7 +788,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	margin: auto;
 	text-align: center;
 	padding: 0 20px 20px;
-	background: rgba(0,0,0,0.5);
+	background-color: #ffffff;
 }
 
 .icon_box .fi{
@@ -854,7 +808,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	font-size: 18px;
 	font-weight: 600;
 	display: block;
-	color: #ffffff;
+	color: #111111;
 	letter-spacing: 1px;
 	text-align: center;
 	line-height: 1.4em;
@@ -865,7 +819,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	font-size: 15px;
 	font-weight: normal;
 	display: block;
-	color: #dddddd;
+	color: #696969;
 	letter-spacing: 1px;
 	text-align: center;
 	line-height: 1.5em;
@@ -878,9 +832,9 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	height: 48px;
 	font-weight: 200;
 	display: inline-block;
-	color: #00cdac;
+	color: #ffffff;
 	margin-top: -7px;
-	background-color: #ffffff;
+	background-color: #00cdac;
 	padding: 2px 10px;
 	border-radius: 50%;
 	transition: 0.5s;
@@ -888,7 +842,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .plus_link:hover{
 	color: #ffffff;
-	background-color: #00cdac;
+	background-color: #111111;
 }
 
 /* --- 3.4. Finance Area Four --- */
@@ -936,8 +890,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .bg_title_area{
 	max-width: 400px;
-	background-color: #ffffff;
-	box-shadow: 0 20px 70px rgba(38,42,76,.2);
+	background-color: #111111;
 	position: relative;
 	bottom: 100px;
 	margin-left: 20px;
@@ -951,7 +904,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	font-size: 22px;
 	font-weight: 600;
 	display: block;
-	color: #111111;
+	color: #ffffff;
 	text-align: left;
 	letter-spacing: 1px;
 	line-height: 1.2em;
@@ -963,7 +916,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	font-weight: normal;
 	padding-top: 10px;
 	display: block;
-	color: #696969;
+	color: #dddddd;
 	letter-spacing: 1px;
 	text-align: left;
 	line-height: 1.5em;
@@ -993,7 +946,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 .bg_content h4 a:hover{
 	background-color: #ffffff;
 	color: #111111;
-	border-color: #111111;
+	border-color: #ffffff;
 }
 
 .finance_area_four .slick-dots {
@@ -1055,7 +1008,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .bg_button a:hover{
-	color: #111111;
+	color: #ffffff;
 }
 
 /* --- 3.5. Finance Area Five --- */
@@ -1938,7 +1891,6 @@ a.footer-logo img{
 	
 	.finance_head,
 	.info_head h2,
-	.bg_head,
 	.blog_head h2{
 		font-size: 30px;
 	}
