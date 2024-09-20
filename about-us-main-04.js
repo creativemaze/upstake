@@ -1,4 +1,13 @@
 "use strict";
+//MagnificPopup Gallery (1) One
+$('.portfolio_image').magnificPopup({
+	delegate: 'a',
+	type: 'image',
+	gallery: {
+		enabled: true
+	},
+});
+
 //MagnificPopup Video
 $('#play-video').magnificPopup({
 	disableOn: 300,
@@ -8,48 +17,6 @@ $('#play-video').magnificPopup({
 	preloader: false,
 	fixedContentPos: false
 });
-
-//Slick Slider (2) Two
-$( window ).on( "load", function(){
-	$('.feature_slider').slick({
-		slidesToShow: 4,
-		autoplay: false,
-		infinite: true,
-		speed: 1000,
-		arrows: false,
-		dots: false,
-		pauseOnHover: false,
-		pauseOnFocus: false,
-		responsive: [
-			{
-				breakpoint: 993,
-				settings: 
-					{
-						slidesToShow: 1,
-						dots: true,
-						fade: true
-					}
-						
-			},
-			
-		]
-	});
-});
-
-//Accordion
-var acc = document.getElementsByClassName("accordion");
-var i;
-for (i = 0; i < acc.length; i++) {
-	acc[i].addEventListener("click", function() {
-		this.classList.toggle("active-bar");
-		var panel = this.nextElementSibling;
-		if (panel.style.maxHeight) {
-			panel.style.maxHeight = null;
-		} else {
-			panel.style.maxHeight = panel.scrollHeight + "px";
-		} 
-	});
-}
 
 //Animate on Scroll default settings
 $(window).on('load', function () {

@@ -1,47 +1,21 @@
 "use strict";
-//Slick Slider
-$(document).ready(function(){
-	$('.bg_slider').slick({
-		dots: true,
-		slidesToShow: 2,
-		slidesToScroll: 1,
-		arrows: false,
-		autoplay: true,
-		speed: 1000,
-		pauseOnHover: false,
-		pauseOnFocus: false,
-		centerMode: true,
-		responsive: [
-			{
-				breakpoint: 1025,
-				settings: {
-					slidesToShow: 1,
-					
-				}			
-			},
-			
-			{
-				breakpoint: 601,
-				settings: {
-					slidesToShow: 1,
-					centerPadding: '50px',
-				}			
-			},
-			
-			{
-				breakpoint: 430,
-				settings: {
-					slidesToShow: 1,
-					centerPadding: '20px',
-				}			
-			},
-		]
-	});
-	
+//Filter Gallery
+jQuery(document).ready(function($) {
+	$('.filter-container').filterizr({});
+});
+
+//MagnificPopup Gallery
+$('.image_box').magnificPopup({
+	delegate: 'a',
+	type: 'image',
+	gallery: {
+		enabled: true
+	},
 });
 
 // Add active class to the current button (highlight it)
-var btns = document.getElementsByClassName("accordion");
+var btnContainer = document.getElementById("filtergroup");
+var btns = btnContainer.getElementsByClassName("filtertitle");
 for (var i = 0; i < btns.length; i++) {
 	btns[i].addEventListener("click", function(){
 		var current = document.getElementsByClassName("active");
@@ -50,21 +24,20 @@ for (var i = 0; i < btns.length; i++) {
 	});
 }
 
-//Accordion
+//F.A.Q.S Accordion
 var acc = document.getElementsByClassName("accordion");
-	var i;
-
-	for (i = 0; i < acc.length; i++) {
-		acc[i].addEventListener("click", function() {
-			this.classList.toggle("active-bar");
-			var panel = this.nextElementSibling;
-			if (panel.style.maxHeight) {
-				panel.style.maxHeight = null;
-			} else {
-				panel.style.maxHeight = panel.scrollHeight + "px";
-			} 
-		});
-	}
+var i;
+for (i = 0; i < acc.length; i++) {
+	acc[i].addEventListener("click", function() {
+		this.classList.toggle("active-bar");
+		var panel = this.nextElementSibling;
+		if (panel.style.maxHeight) {
+			panel.style.maxHeight = null;
+		} else {
+			panel.style.maxHeight = panel.scrollHeight + "px";
+		} 
+	});
+}
 
 //MagnificPopup Video
 $('#play-video').magnificPopup({
@@ -74,14 +47,6 @@ $('#play-video').magnificPopup({
 	removalDelay: 300,
 	preloader: false,
 	fixedContentPos: false
-});
-
-//Counter Script
-jQuery(document).ready(function($) {
-    $('.counter').counterUp({
-        delay: 10,
-        time: 2000
-    });
 });
 
 //Animate on Scroll default settings
