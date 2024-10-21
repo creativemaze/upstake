@@ -1,9 +1,9 @@
 /*------------------------------------------------------------------
 Main Stylesheet
 
-Project:    HighPoint - Multipurpose Business Template
+Project:    Upstake - Multipurpose Business Template
 Version:    1.0
-Last change:    20/03/2022
+Last change:    17/10/2024
 Author:    creativemaze
 Primary use:    Portfolio
 -------------------------------------------------------------------*/
@@ -88,22 +88,23 @@ ul{
 	font-weight: 700;
 	display: block;
 	color: #111111;
-	letter-spacing: 1px;
 	text-align: center;
-	line-height: 1.3em;
+	letter-spacing: 1px;
+	line-height: 1.2em;
+	max-width: 600px;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 .portfolio_info{
-	max-width: 600px;
-	margin: 0 auto;
-	font-family: 'Roboto' , Arial, sans-serif;
-	font-size: 16px;
-	font-weight: normal;
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 14px;
+	font-weight: 600;
 	display: block;
-	color: #696969;
+	color: #83a4d4;
 	letter-spacing: 1px;
 	text-align: center;
-	padding: 10px 10px 0;
+	text-transform: uppercase;
 	line-height: 1.5em;
 }
 
@@ -111,50 +112,57 @@ ul{
  ----------- */
  
 /* --- 2.1. Logo & Navigation --- */
-nav.navbar.bootsnav .navbar-brand{
-    max-width: 200px; 	
-}
-
-.navbar-header a.navbar-brand{
+.navbar-header > a{
 	text-decoration: none;
-	color: #ffffff;
+	color: #111111;
 	transition: 0.5s;
 	font-family: 'Montserrat', Arial, sans-serif;
 	font-size: 22px;
 	font-weight: 700;
+	display: inline-block;
+	text-align: center;
 	letter-spacing: 1px;
 	text-transform: uppercase;
-	padding-top: 30px;
+	margin-top: 30px;
 }
 
-.navbar-header a.navbar-brand:hover{
-	color: #ffffff;
+.navbar-header > a:hover{
+	color: #111111;
 }
 
-nav.navbar .navbar-brand img.logo{
-   width: 100%;
+#nav-logo > a{
+	max-width: 160px; 
+	min-height: 10px;
+	position: relative;
+	top: 33px;
+}
+
+#nav-logo > a img{
+   position: relative;
+   max-width: 160px;
    height: auto;
-   display: block;
 }
 
 nav.navbar.bootsnav{
 	background-color: transparent;
 	border-bottom: none ;
-	z-index: 9999;
+	z-index: 1;
 }
 
 nav.navbar.bootsnav ul.nav{
 	margin-right: 160px;
+	margin-top: 5px;
 }
 
 nav.navbar.bootsnav li.dropdown ul.dropdown-menu{
 	border: 0;
 	background: #ffffff;
-	z-index: 9999;
+	box-shadow: 0 20px 70px rgba(38,42,76,.2);
+	z-index: 1;
 }
 
 nav.navbar.bootsnav ul.nav > li > a{
-    color: #ffffff;
+    color: #111111;
     font-family: 'Montserrat' , Arial, sans-serif;
     font-size: 13px;
     font-weight: 700;
@@ -176,7 +184,7 @@ nav.navbar.bootsnav ul.navbar-right li.dropdown ul.dropdown-menu li a{
 }
 
 nav.navbar.bootsnav ul.navbar-right li.dropdown ul.dropdown-menu li a:hover{
-	color: #009fff;
+	color: #83a4d4;
 }
 
 nav.navbar.bootsnav li.dropdown ul.dropdown-menu{
@@ -219,14 +227,14 @@ nav.navbar.bootsnav ul.dropdown-menu.megamenu-content .content ul.menu-col li a{
 }
 
 nav.navbar.bootsnav ul.dropdown-menu.megamenu-content .content ul.menu-col li a:hover{
-	color: #009fff;
+	color: #83a4d4;
 }
 
 nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
     font-size: 14px;
     font-weight: 600;
 	font-family: 'Montserrat' , Arial, sans-serif;
-    color: #009fff;
+    color: #83a4d4;
     text-transform: uppercase;
 	letter-spacing: 1px;
 }
@@ -239,8 +247,8 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .attr-nav > ul > li > a{
-    color: #ffffff;
-	padding-top: 30px;
+    color: #111111;
+	padding-top: 36px;
 	margin-left: -12px;
 	position: relative;
 	left: -160px;
@@ -257,7 +265,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 .top_box{
 	height: 50px;
 	overflow-y: auto;
-	border-bottom: solid 1px #6f6f6f;
+	border-bottom: solid 1px #e0e0e0;
 }
 
 .top_info{
@@ -292,9 +300,9 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .left_info .fas,
 .left_info .far,
-.right_info .fab{
+.right_info > a > .fab{
 	font-size: 16px;
-	color: #ffffff;
+	color: #83a4d4;
 }
 
 .left_info .fas,
@@ -302,13 +310,12 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	padding-right: 8px;
 }
 
-.right_info > a{
+.right_info > a .fab{
 	padding-right: 14px;
 }
 
-.left_info .fas:hover,
-.right_info .fab:hover{
-	opacity: 0.6;
+.right_info > a > .fab:hover{
+	color: #111111;
 }
 
 .sub_width{
@@ -337,7 +344,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	font-weight: 700;
 	text-transform: capitalize;
 	display: block;
-	color: #ffffff;
+	color: #111111;
 	letter-spacing: 1px;
 	text-align: left;
 	margin-bottom: 0;
@@ -347,17 +354,15 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	max-width: 300px;
 	display: inline-block;
 	position: absolute;
-	top: 15px;
+	top: 19px;
 	right: 0;
 }
 
 .head_btn a{
-	background-color: #ffffff;
+	background-color: #83a4d4;
 	width: 150px;
 	margin: 0 auto;
-	min-height: 30px;
-    border: none;
-    color: #111111;
+    color: #ffffff;
     padding: 12px 14px;
     text-decoration: none;
 	text-transform: uppercase;
@@ -366,60 +371,15 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	font-weight: 600;
 	font-family: 'Montserrat', Arial, sans-serif;
     transition: 0.5s;
-    cursor: pointer;
-	border: 1px solid #ffffff;
+	border: 1px solid #83a4d4;
 	letter-spacing: 1px;
 	text-align: center;
 }
 
 .head_btn a:hover{
-	background: transparent;
-	color: #ffffff;
-	border-color: #ffffff;
-}
-
-.sliderwrap{
-	position: relative;
-	top: -140px;
-}
-
-.slidearea{
-	position: relative;
-	z-index: 1000;
-	height: 100%;
-	min-height: 500px;
-	text-align: center;
-	color: #ffffff;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-	background: #009fff; 
-}
-
-.header__content{
-	display: flex;
-	flex-direction: column;
-	justify-content:  center;
-	align-items: center;
-	min-height: 500px;
-}
-
-.header-title {
-	max-width: 600px;
-	display: block;
-	padding: 0 20px;
-}
-
-.header-title__main{
-	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 40px;
-	font-weight: 700;
-	letter-spacing: 1px;
-	text-align: center;
-	text-transform: uppercase;
-	display: block;
-	color: #ffffff;
-	line-height: 1.3em;
+	background-color: #ffffff;
+	color: #111111;
+	border-color: #111111; 
 }
 
 /* 3. MAIN CONTENT
@@ -428,17 +388,16 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 /* --- 3.1. Portfolio Area One --- */
 .portfolio_area_one{
 	width: 100%;
-	margin: -140px 0 2em;
-	min-height: 400px;
-	padding: 6em 25px;
-	background-color: #f6f6f6;
+	margin: 6em auto 0;
+	padding: 0 10px;
+	margin-bottom: calc(9em - 40px);
 }
 
 .portfolio_group_one{
 	width: 100%;
 	display: flex; 
 	flex-wrap: wrap;
-	padding-top: 30px;
+	padding-top: 25px;
 }
 
 .portfolio_col{
@@ -447,73 +406,63 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	overflow: hidden;
 }
 
-.portfolio_image{
+.portfolio_box{
 	position: relative;
 	text-align: center;
 	overflow: hidden;
 	margin: auto;
-	padding: 20px;
+	padding: 10px 10px 30px;
 }
 
-.portfolio_box{
+.portfolio_image{
 	position: relative;
+	text-align: center;
 	overflow: hidden;
-	transition: .5s ease;
 }
 
-.portfolio_image .portfolio_box > img{
+.portfolio_image .image_box a > img{
 	transition: ease-in-out 3.25s;
 }
 
-.portfolio_image:hover .portfolio_box > img{
+.portfolio_image .image_box > a > img:hover{
 	transform: scale(1.15);
 }
 
 .portfolio_image img{
-	vertical-align: middle;
 	width: 100%;
 	height: auto;
-	overflow: hidden;
-	display: block;
 }
 
-.portfolio_title h3{
-	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 15px;
+.portfolio_content{
+	text-align: center;
+}
+
+.portfolio_content h3{
+	font-family: 'Montserrat', Arial, sans-serif;
+	font-size: 18px;
 	font-weight: 600;
 	display: block;
 	color: #111111;
 	letter-spacing: 1px;
-	text-align: left;
+	text-align: center;
 	line-height: 1.4em;
+}
+
+.portfolio_content a{
+	font-family: 'Montserrat', Arial, sans-serif;
+	font-size: 13px;
+	font-weight: 600;
+    color: #83a4d4;
+	display: inline-block;
+    text-decoration: none;
 	text-transform: uppercase;
+    transition: 0.5s;
+	letter-spacing: 1px;
+	text-align: center;
 }
 
-.overlay{
-	position: absolute;
-	top: 10px;
-	bottom: 10px;
-	left: 10px;
-	right: 10px;
-	overflow: hidden;
-	height: calc(100% - 20px);
-	width: calc(100% - 20px);
-	opacity: 0;
-	transition: 0.5s ease;
-	background: #ffffff
-}
-
-.overlay .fas{
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	font-size: 20px;
+.portfolio_content a:hover{
 	color: #111111;
-}
-
-.portfolio_image:hover .overlay {
-	opacity: 1;
 }
 
 /* 4. FOOTER
@@ -524,15 +473,15 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	position: relative;
 	clear: both;
 	height: 100%;
+	background-color: #111111;
 }
 
 .footer_area{
-	max-width: 1200px;
+	max-width: 1280px;
 	margin: 0 auto;
 	padding: 0 25px;
 	display: flex;
 	flex-wrap: wrap;
-	margin: 0 auto;
 }
 
 .footer_col{
@@ -544,13 +493,15 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .footer_col{
-	padding-top: 3.5em;
+	padding-top: 4.5em;
 }
 
-a.footer-brand img{
-	max-width: 200px;
+a.footer-logo img{
+	max-width: 150px;
 	height: auto;
-	display: block;
+	display: inline-block;
+	margin-top: 12px;
+	margin-bottom: 10px;
 }
 
 .footer_box > h3 > a{
@@ -560,16 +511,16 @@ a.footer-brand img{
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	text-decoration: none;
-	color: #111111;
+	color: #ffffff;
 	text-align: left;
 }
 
 .footer_box > p{
 	font-family: 'Montserrat', Arial, sans-serif;
 	font-size: 14px;
-	font-weight: normal;
+	font-weight: 500;
 	letter-spacing: 1px;
-	color: #111111;
+	color: #ffffff;
 	text-align: left;
 	padding: 20px 0;
 	line-height: 1.5em;
@@ -579,26 +530,21 @@ a.footer-brand img{
 	margin: 12px 0;
 }
 
-.footer_social .fab,
-.footer_social .fa{
+.footer_social > a > .fab,
+.footer_social > a > .fa{
 	font-size: 16px;
-	color: #111111;
+	color: #ffffff;
 	text-align: left;
+	transition: 0.5s;
 }
 
 .footer_social > a{
 	padding-right: 12px;
 }
 
-.footer_social > a:hover{
-	opacity: 0.6;
-}
-
-.final{
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	align-items: center;
+.footer_social > a > .fab:hover,
+.footer_social > a > .fa:hover{
+	color: #83a4d4;
 }
 
 .footer_col > h4{
@@ -606,8 +552,7 @@ a.footer-brand img{
 	font-size: 18px;
 	font-weight: 700;
 	letter-spacing: 1px;
-	color: #111111;
-	line-height: 1.4em;
+	color: #ffffff;
 }
 
 .footer_col > ul > li{
@@ -617,34 +562,41 @@ a.footer-brand img{
 .footer_col > ul > li a{
 	font-family: 'Montserrat', Arial, sans-serif;
 	font-size: 13px;
-	font-weight: normal;
+	font-weight: 500;
 	letter-spacing: 1px;
 	text-decoration: none;
-	color: #111111;
+	color: #ffffff;
 	text-align: justify;
 	transition: 0.5s;
 }
 
 .footer_col > ul > li a:hover{
-	opacity: 0.6;
+	color: #83a4d4;
 }
 
-.form-row{
-	text-align: right;
+.subscribe-row{
+	text-align: left;
 }
 
 .col_info input[type="email"]{
 	display: block;
 	width: 100%;
-	padding: 12px 10px 14px;
-	background-color: #f6f6f6;
+	height: 50px;
+	padding: 14px;
+	padding-left: 0;
+	background: transparent;
 	border: none;
+	border-bottom: solid 1px #ffffff;
 	font-family: 'Montserrat' , Arial, sans-serif;
 	font-size: 13px;
-	font-weight: 600;
-	color: #333333;
-	text-transform: capitalize;
+	font-weight: normal;
+	color: #dddddd;
 	letter-spacing: 1px;
+}
+
+.col_info input[type="email"]::placeholder{
+	color: #dddddd;
+	opacity: 1;
 }
 
 .col_info{
@@ -652,32 +604,29 @@ a.footer-brand img{
 }
 
 .col_info input[type="submit"]{
-	display: inline-block;
-	padding: 10px 14px;
+	padding: 12px 14px;
+	width: 135px;
 	text-align: center;
+	text-transform: uppercase;
 	font-family: 'Montserrat' , Arial, sans-serif;
 	font-size: 14px;
-	font-weight: 500;
+	font-weight: 600;
 	margin-top: 20px;
-	text-transform: uppercase;
-	width: 100%;
-	margin-left: 0;
 	color: #ffffff;
-	border-radius: 0;
 	letter-spacing: 1px;
-	background-color: #009fff;
-	border: solid 1px #ffffff;
+	background-color: #83a4d4;
+	border-radius: 0;
+	border: solid 1px #83a4d4;
 	transition: 0.5s;
 }
 
 .col_info input[type="submit"]:hover{
-	background: transparent;
+	background-color: #ffffff;
 	color: #111111;
-	border-color: #111111;
+	border-color: #ffffff;
 }
 
 .col_info input[type="email"]:focus{
-	outline: none;
 	box-shadow: 0 0 0 2px #e0e0e0;
 }
 
@@ -686,7 +635,8 @@ a.footer-brand img{
 	padding-top: 35px;
 	padding-bottom: 10px;
 	margin-top: 35px;
-	border-top: solid 1px #e0e0e0;
+	border-top: solid 1px #ffffff;
+	
 }
 
 .details p{
@@ -694,27 +644,19 @@ a.footer-brand img{
 	font-size: 13px;
 	font-weight: normal;
 	letter-spacing: 1px;
-	color: #111111;
+	color: #ffffff;
 	text-align: center;
 }
 
 /* 5. RESPONSIVE
  ----------- */
-@media only screen and (max-width: 1024px){
-	.header__content{
-		height: auto;
-	}
-	
-	.slide__content{
-		height: auto;
-	}
-}
-
 @media only screen and (max-width: 992px){
 	nav.navbar.bootsnav .navbar-toggle{
         background: transparent;
-        color: #ffffff;
+        color: #111111;
 		font-size: 25px;
+		margin-top: 7px;
+		margin-bottom: 12px;
 	}
 	
 	.head_btn{	
@@ -724,20 +666,12 @@ a.footer-brand img{
 		transform: translateX(-50%);
 	}
 	
-	.head_btn a{
-		background-color: #009fff;
-		border-color: #009fff;
-		color: #ffffff;
+	.navbar-header > a{
+		margin-top: 14px;
 	}
 	
-	.head_btn a:hover{
-		background: transparent;
-		border-color: #111111;
-		color: #111111;
-	}
-	
-	.navbar-header a.navbar-brand{
-		padding-top: 22px;
+	#nav-logo > a{
+		top: 19px;
 	}
 	
 	nav.navbar.bootsnav ul.nav > li > a{
@@ -800,7 +734,7 @@ a.footer-brand img{
 	.attr-nav > ul > li > a{
 		position: relative;
 		left: 0;
-		padding-top: 25px;
+		padding-top: 21px;
 	}
 	
 	.footer_col{
@@ -810,7 +744,6 @@ a.footer-brand img{
 }
 
 @media only screen and (max-width: 600px){
-	.header-title__main,
 	.portfolio_heading{
 		font-size: 30px;
 	}

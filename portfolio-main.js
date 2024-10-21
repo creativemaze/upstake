@@ -1,6 +1,22 @@
 "use strict";
 //MagnificPopup Gallery
-$('.portfolio_image').magnificPopup({
+$('.image_box').magnificPopup({
+	delegate: 'a',
+	type: 'image',
+	gallery: {
+		enabled: true
+	},
+});
+
+$('.portfolio_icon').magnificPopup({
+	delegate: 'a',
+	type: 'image',
+	gallery: {
+		enabled: true
+	},
+});
+
+$('.slide_image').magnificPopup({
 	delegate: 'a',
 	type: 'image',
 	gallery: {
@@ -16,6 +32,23 @@ $('.project_image').magnificPopup({
 	},
 });
 
+//Filter Gallery
+jQuery(document).ready(function($) {
+	$('.filter-container').filterizr({});
+});
+
+
+//Add active class to the current button (highlight it)
+/*var btnContainer = document.getElementById("filtergroup");
+var btns = btnContainer.getElementsByClassName("filtertitle");
+for (var i = 0; i < btns.length; i++) {
+	btns[i].addEventListener("click", function(){
+		var current = document.getElementsByClassName("active");
+		current[0].className = current[0].className.replace(" active", "");
+		this.className += " active";
+	});
+}*/
+
 $(document).ready(function(){
 	$('.portfolio_slider').slick({
 		autoplay: false,
@@ -28,6 +61,46 @@ $(document).ready(function(){
 		slidesToShow: 1,
 		slidesToScroll: 1,
 	});
+});
+
+$(document).ready(function(){
+	$('.bg_slider').slick({
+		dots: true,
+		slidesToShow: 2,
+		slidesToScroll: 1,
+		arrows: false,
+		autoplay: true,
+		speed: 1000,
+		pauseOnHover: false,
+		pauseOnFocus: false,
+		centerMode: true,
+		responsive: [
+			{
+				breakpoint: 1025,
+				settings: {
+					slidesToShow: 1,
+					
+				}			
+			},
+			
+			{
+				breakpoint: 601,
+				settings: {
+					slidesToShow: 1,
+					centerPadding: '50px',
+				}			
+			},
+			
+			{
+				breakpoint: 430,
+				settings: {
+					slidesToShow: 1,
+					centerPadding: '20px',
+				}			
+			},
+		]
+	});
+	
 });
 
 $(document).ready(function(){

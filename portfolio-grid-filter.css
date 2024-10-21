@@ -3,7 +3,7 @@ Main Stylesheet
 
 Project:    Upstake - Multipurpose Business Template
 Version:    1.0
-Last change:    16/10/2024
+Last change:    03/10/2024
 Author:    creativemaze
 Primary use:    Portfolio
 -------------------------------------------------------------------*/
@@ -88,12 +88,10 @@ ul{
 	font-weight: 700;
 	display: block;
 	color: #111111;
-	text-align: center;
+	text-align: left;
 	letter-spacing: 1px;
 	line-height: 1.2em;
 	max-width: 600px;
-	margin-right: auto;
-	margin-left: auto;
 }
 
 .portfolio_info{
@@ -101,9 +99,9 @@ ul{
 	font-size: 14px;
 	font-weight: 600;
 	display: block;
-	color: #1488cc;
+	color: #83a4d4;
 	letter-spacing: 1px;
-	text-align: center;
+	text-align: left;
 	text-transform: uppercase;
 	line-height: 1.5em;
 }
@@ -114,7 +112,7 @@ ul{
 /* --- 2.1. Logo & Navigation --- */
 .navbar-header > a{
 	text-decoration: none;
-	color: #f1f1f1;
+	color: #111111;
 	transition: 0.5s;
 	font-family: 'Montserrat', Arial, sans-serif;
 	font-size: 22px;
@@ -127,11 +125,12 @@ ul{
 }
 
 .navbar-header > a:hover{
-	color: #f1f1f1;
+	color: #111111;
 }
 
 #nav-logo > a{
 	max-width: 160px; 
+	min-height: 10px;
 	position: relative;
 	top: 33px;
 }
@@ -160,7 +159,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu{
 }
 
 nav.navbar.bootsnav ul.nav > li > a{
-    color: #ffffff;
+    color: #111111;
     font-family: 'Montserrat' , Arial, sans-serif;
     font-size: 13px;
     font-weight: 700;
@@ -182,7 +181,7 @@ nav.navbar.bootsnav ul.navbar-right li.dropdown ul.dropdown-menu li a{
 }
 
 nav.navbar.bootsnav ul.navbar-right li.dropdown ul.dropdown-menu li a:hover{
-	color: #1488cc;
+	color: #83a4d4;
 }
 
 nav.navbar.bootsnav li.dropdown ul.dropdown-menu{
@@ -225,14 +224,14 @@ nav.navbar.bootsnav ul.dropdown-menu.megamenu-content .content ul.menu-col li a{
 }
 
 nav.navbar.bootsnav ul.dropdown-menu.megamenu-content .content ul.menu-col li a:hover{
-	color: #1488cc;
+	color: #83a4d4;
 }
 
 nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
     font-size: 14px;
     font-weight: 600;
 	font-family: 'Montserrat' , Arial, sans-serif;
-    color: #1488cc;
+    color: #83a4d4;
     text-transform: uppercase;
 	letter-spacing: 1px;
 }
@@ -245,7 +244,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .attr-nav > ul > li > a{
-    color: #ffffff;
+    color: #111111;
 	padding-top: 36px;
 	margin-left: -12px;
 	position: relative;
@@ -263,7 +262,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 .top_box{
 	height: 50px;
 	overflow-y: auto;
-	border-bottom: solid 1px #6f6f6f;
+	border-bottom: solid 1px #e0e0e0;
 }
 
 .top_info{
@@ -300,7 +299,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 .left_info .far,
 .right_info > a > .fab{
 	font-size: 16px;
-	color: #ffffff;
+	color: #83a4d4;
 }
 
 .left_info .fas,
@@ -310,11 +309,10 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .right_info > a .fab{
 	padding-right: 14px;
-	transition: 0.5s;
 }
 
 .right_info > a > .fab:hover{
-	color: #dddddd;
+	color: #111111;
 }
 
 .sub_width{
@@ -343,7 +341,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	font-weight: 700;
 	text-transform: capitalize;
 	display: block;
-	color: #ffffff;
+	color: #111111;
 	letter-spacing: 1px;
 	text-align: left;
 	margin-bottom: 0;
@@ -358,9 +356,10 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .head_btn a{
-	background-color: #ffffff;
+	background-color: #83a4d4;
 	width: 150px;
-    color: #111111;
+	margin: 0 auto;
+    color: #ffffff;
     padding: 12px 14px;
     text-decoration: none;
 	text-transform: uppercase;
@@ -369,14 +368,15 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	font-weight: 600;
 	font-family: 'Montserrat', Arial, sans-serif;
     transition: 0.5s;
-	border: 1px solid #ffffff;
+	border: 1px solid #83a4d4;
 	letter-spacing: 1px;
 	text-align: center;
 }
 
 .head_btn a:hover{
 	background-color: transparent;
-	color: #ffffff;
+	color: #111111;
+	border-color: #111111; 
 }
 
 .sliderwrap{
@@ -384,48 +384,21 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	top: -140px;
 }
 
-.wave{
-	overflow: hidden;
-	position: absolute;
-	width: 140%;
-	transform: translateY(-50%);
-	color: #fff;
-	margin-left: -20%;
-	animation: 3s ease-in-out infinite alternate waveAnimateA;
-}
-
-svg{
-    fill: currentColor;
-    width: 102%;
-    margin-left: -1%;
-    height: auto;
-}
-
-.gradient{
-	top: 0;
-	overflow: hidden;
-	min-height: 550px;
-	background-color: rgba(8, 0, 103, 1);
-	background-image: linear-gradient(to right, #1488cc, #1488cc);
-	text-shadow: 0 2px 20px rgba(0, 0, 0, 0.16);
-}	
-
-@keyframes waveAnimateA {
-    0% {
-        transform: translate(-80px,-52%);
-    }
-
-    100% {
-        transform: translate(80px,-50%);
-    }
-}
-
 .header__content{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	min-height: 550px;
+	min-height: 500px;
+}
+
+.slide__content{
+	position: relative;
+	z-index: 1;
+	min-height: 500px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 .header-title {
@@ -441,9 +414,8 @@ svg{
 	letter-spacing: 1px;
 	text-align: center;
 	display: block;
-	color: #ffffff;
+	color: #111111;
 	line-height: 1.2em;
-	margin-top: 0;
 }
 
 /* 3. MAIN CONTENT
@@ -452,36 +424,63 @@ svg{
 /* --- 3.1. Portfolio Area One --- */
 .portfolio_area_one{
 	max-width: 1280px;
-	margin: -5em auto -5em;
+	margin: 0 auto;
 	padding: 0 25px;
+	margin-bottom: calc(9em - 20px);
 }
 
 .portfolio_group_one{
 	width: 100%;
-	display: flex; 
+	display: flex;
 	flex-wrap: wrap;
-	padding-top: 25px;
+}
+
+.portfolio_group_info{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 20px;
+}
+
+.info_head{
+	flex: 58.33%;
+	width: 58.33%;
+	padding: 0 10px;
+}
+
+#filtergroup{
+	flex: 41.66%;
+	width: 41.66%;
+	padding: 0 10px;
+	margin-top: 45px;
+	max-width: 400px;
 }
 
 .portfolio_col{
+	position: relative;
 	flex: 25%;
-	width: 25%;
-	overflow: hidden;
+	width: 25;
+	max-width: 300px;
+	margin: 0 auto;
 }
 
 .portfolio_box{
-	max-width: 320px;
 	position: relative;
 	text-align: center;
 	overflow: hidden;
 	margin: auto;
-	padding: 10px;
+	padding: 10px 10px 20px;
 }
 
 .portfolio_image{
 	position: relative;
 	text-align: center;
 	overflow: hidden;
+}
+
+.portfolio_image img{
+	width: 100%;
+	height: auto;
 }
 
 .portfolio_image .image_box a > img{
@@ -492,95 +491,96 @@ svg{
 	transform: scale(1.15);
 }
 
-.portfolio_image img{
-	width: 100%;
-	height: auto;
+.filtertitle{
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	text-align: center;
+	padding: 0 7px;
+	color: #111111;
+	cursor: pointer;
+	display: inline-block;
+	transition: 0.5s;
+}
+
+.filtertitle::first-letter{
+	color: #83a4d4;
+}
+
+.filtertitle::after{
+	content: '';
+	display: block;
+    width: 30px;
+    height: 2px;
+    background: #83a4d4;
+    transition: width .5s;
+}
+
+.filtertitle:hover{
+	color: #83a4d4;
+}
+
+.filtertitle.active:hover::after {
+    width: 100%;
+	background-color: #83a4d4;
 }
 
 .portfolio_content{
-	position: absolute;
-	bottom: 25px;
-	left: 50%;
-	transform: translateX(-50%);
-	transition: 0.5s;
-	opacity: 0;
-	background-color: #ffffff;
-	padding: 25px 15px;
-	min-width: 250px;
-	max-width: 400px;
-}
-
-.portfolio_box:hover .portfolio_image .portfolio_content{
-	opacity: 1;
+	text-align: center;
 }
 
 .portfolio_content h3{
 	font-family: 'Montserrat', Arial, sans-serif;
-	font-size: 16px;
+	font-size: 18px;
 	font-weight: 600;
 	display: block;
 	color: #111111;
 	letter-spacing: 1px;
 	text-align: center;
 	line-height: 1.4em;
-	margin-top: 0;
 }
 
 .portfolio_content a{
-    color: #1488cc;
+	height: 25px;
+    color: #83a4d4;
     text-decoration: none;
 	text-transform: uppercase;
+	text-align: center;
     display: inline-block;
+	letter-spacing: 1px;
     font-size: 13px;
 	font-weight: 600;
 	font-family: 'Montserrat', Arial, sans-serif;
     transition: 0.5s;
-	letter-spacing: 1px;
-	text-align: center;
+}
+
+.portfolio_content a::after{
+	content: '';
+	display: block;
+    width: 50px;
+    height: 2px;
+    background: #83a4d4;
+    transition: width .5s;
 }
 
 .portfolio_content a:hover{
 	color: #111111;
 }
 
+.portfolio_content a:hover::after {
+    width: 100%;
+	background-color: #111111;
+}
+
 /* 4. FOOTER
  ----------- */
-.footer_wrap{
-	position: relative;
-	transform: rotateZ(180deg);
-	transform: rotateX(180deg);
-}
-
-.footer_wave{
-	overflow: hidden;
-	width: 140%;
-	transform: translateY(-50%);
-	color: #fff;
-	margin-left: -20%;
-	animation: 3s ease-in-out infinite alternate waveAnimateFooter;
-}
-
-.footer_gradient{
-	overflow: hidden;
-	min-height: 350px;
-	background-color: rgba(8, 0, 103, 1);
-	background-image: linear-gradient(to right, #2B32B2, #1488cc);
-	text-shadow: 0 2px 20px rgba(0, 0, 0, 0.16);
-}
-
-@keyframes waveAnimateFooter{
-    0% {
-        transform: translate(-80px,-52%);
-    }
-
-    100% {
-        transform: translate(80px,-50%);
-    }
-} 
- 
 .footer{
-	transform: rotateZ(-180deg);
-	transform: rotateX(-180deg);
+	width: 100%;
+	min-height: 350px;
+	position: relative;
+	clear: both;
+	height: 100%;
+	background-color: #111111;
 }
 
 .footer_area{
@@ -589,7 +589,6 @@ svg{
 	padding: 0 25px;
 	display: flex;
 	flex-wrap: wrap;
-	padding-top: 7em;
 }
 
 .footer_col{
@@ -626,7 +625,7 @@ a.footer-logo img{
 .footer_box > p{
 	font-family: 'Montserrat', Arial, sans-serif;
 	font-size: 14px;
-	font-weight: normal;
+	font-weight: 500;
 	letter-spacing: 1px;
 	color: #ffffff;
 	text-align: left;
@@ -652,7 +651,7 @@ a.footer-logo img{
 
 .footer_social > a > .fab:hover,
 .footer_social > a > .fa:hover{
-	color: #dddddd;
+	color: #83a4d4;
 }
 
 .footer_col > h4{
@@ -670,7 +669,7 @@ a.footer-logo img{
 .footer_col > ul > li a{
 	font-family: 'Montserrat', Arial, sans-serif;
 	font-size: 13px;
-	font-weight: normal;
+	font-weight: 500;
 	letter-spacing: 1px;
 	text-decoration: none;
 	color: #ffffff;
@@ -679,7 +678,7 @@ a.footer-logo img{
 }
 
 .footer_col > ul > li a:hover{
-	color: #dddddd;
+	color: #83a4d4;
 }
 
 .subscribe-row{
@@ -720,17 +719,17 @@ a.footer-logo img{
 	font-size: 14px;
 	font-weight: 600;
 	margin-top: 20px;
-	color: #111111;
+	color: #ffffff;
 	letter-spacing: 1px;
-	background-color: #ffffff;
+	background-color: #83a4d4;
 	border-radius: 0;
-	border: solid 1px #ffffff;
+	border: solid 1px #83a4d4;
 	transition: 0.5s;
 }
 
 .col_info input[type="submit"]:hover{
-	background: transparent;
-	color: #ffffff;
+	background-color: #ffffff;
+	color: #111111;
 	border-color: #ffffff;
 }
 
@@ -758,21 +757,10 @@ a.footer-logo img{
 
 /* 5. RESPONSIVE
  ----------- */
-@media only screen and (max-width: 1024px){
-	.portfolio_col{
-		flex: 33.33%;
-		width: 33.33%;
-	}
-	
-	.portfolio_box{
-		max-width: 350px;
-	}
-} 
- 
 @media only screen and (max-width: 992px){
 	nav.navbar.bootsnav .navbar-toggle{
         background: transparent;
-        color: #ffffff;
+        color: #111111;
 		font-size: 25px;
 		margin-top: 7px;
 		margin-bottom: 12px;
@@ -783,18 +771,6 @@ a.footer-logo img{
 		position: relative;
 		left: 50%;
 		transform: translateX(-50%);
-	}
-	
-	.head_btn a{
-		background-color: #1488cc;
-		border-color: #1488cc;
-		color: #ffffff;
-	}
-	
-	.head_btn a:hover{
-		background: transparent;
-		border-color: #111111;
-		color: #111111;
 	}
 	
 	.navbar-header > a{
@@ -868,12 +844,20 @@ a.footer-logo img{
 		padding-top: 21px;
 	}
 	
+	.info_head{
+		flex: 100%;
+		width: 100%;
+	}
+	
+	#filtergroup{
+		flex: 100%;
+		width: 100%;
+		margin-top: 10px;
+	}
+	
 	.portfolio_col{
 		flex: 50%;
 		width: 50%;
-	}
-	
-	.portfolio_box{
 		max-width: 400px;
 	}
 	
@@ -889,25 +873,21 @@ a.footer-logo img{
 		font-size: 30px;
 	}
 	
+	.info_head,
+	#filtergroup,
+	.portfolio_box{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	
 	.portfolio_col{
 		flex: 100%;
 		width: 100%;
-	}
-	
-	.portfolio_area_one{
-		margin-bottom: 0
 	}
 	
 	.footer_col{
 		flex: 100%;
 		width: 100%;
 		margin: 0;
-	}
-}
-
-@media only screen and (max-width: 420px){
-	.portfolio_box{
-		padding-left: 0;
-		padding-right: 0;
 	}
 }
