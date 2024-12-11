@@ -1579,7 +1579,7 @@ a.footer-logo img{
 @media only screen and (max-width: 992px){
 	nav.navbar.bootsnav .navbar-toggle{
         background: transparent;
-        color: #ffffff;
+        color: #111111;
 		font-size: 25px;
 		margin-top: 7px;
 		margin-bottom: 12px;
