@@ -17,12 +17,14 @@ $( window ).on( "load", function(){
 });
 
 //MagnificPopup Gallery
-$('.image_box').magnificPopup({
-	delegate: 'a',
-	type: 'image',
-	gallery: {
-		enabled: true
-	},
+$( window ).on( "load", function(){
+	$('.image_box').magnificPopup({
+		delegate: 'a',
+		type: 'image',
+		gallery: {
+			enabled: true
+		},
+	});
 });
 
 //Counter Script

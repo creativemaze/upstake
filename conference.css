@@ -2071,18 +2071,6 @@ a.blog_btn:hover::after {
 	border-bottom: solid 1px #e0e0e0;
 }
 
-#timer_heading{
-	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 40px;
-	font-weight: 800;
-	display: block;
-	text-align: center;
-	color: #ffffff;
-	letter-spacing: 1px;
-	line-height: 1.2em;
-	text-transform: uppercase;
-}
-
 #timer-date h3{
 	color: #dddddd;
 	font-family: 'Montserrat' , Arial, sans-serif;
@@ -2092,7 +2080,7 @@ a.blog_btn:hover::after {
 	text-align: center;
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	line-height: 1.2em;
+	line-height: 1.3em;
 }
 
 .date_box{
@@ -2555,8 +2543,7 @@ a.footer-logo img{
 	.conference_heading,
 	.query_box h2,
 	.bg_head,
-	.blog_head h2,
-	#timer_heading{
+	.blog_head h2{
 		font-size: 30px;
 	}
 	
@@ -2690,10 +2677,6 @@ a.footer-logo img{
 	.feature_num h3,
 	.feature_content h3{
 		font-size: 13px;
-	}
-	
-	#timer-date h3{
-		font-size: 16px;
 	}
 }
 

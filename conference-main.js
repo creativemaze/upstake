@@ -41,15 +41,21 @@ $(document).ready(function(){
 
 //Count down script
 $( window ).on( "load", function(){
-	$('#timer-date').countdown('2024/11/25 15:37:25', {elapse: true})
+	const eventDate = new Date('2025/03/27 09:00');
+	const currentDate = new Date();
+	$('#timer-date').countdown(eventDate, {elapse: true})
 	.on('update.countdown', function(event) {
-		if (event.elapsed) { // Either true or false
-			$(this).html(event.strftime('<h3>Event In Progress</h3>'));
-			var heading = document.getElementById('timer_heading');
-			heading.style.display = 'none';
-		} else {
+		if (currentDate < eventDate) {
 			$(this).html(event.strftime
-			('<h3>%D <span class="date_box">Days</span>  %H <span class="date_box">Hrs</span> %M <span class="date_box">Mins</span> %S S</h3>'));	
+			('<h3>Starts In</h3><h3>%D <span class="date_box">Days</span>  %H <span class="date_box">Hrs</span> %M <span class="date_box">Mins</span> %S S</h3>'));
+		} 
+		else if (currentDate > eventDate) {
+			$(this).html(event.strftime
+			('<h3>Ended On</h3>'+ '<h3>'+eventDate.toDateString()+'</h3>'));
+		} 
+		else {
+			$(this).html(event.strftime
+			('<h3>Event in Progress</h3>'));	
 		}
 	});
 });
