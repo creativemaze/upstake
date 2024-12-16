@@ -31,12 +31,14 @@ $(document).ready(function(){
 });
 
 //MagnificPopup Gallery (1) One
-$('.image_box').magnificPopup({
-	delegate: 'a',
-	type: 'image',
-	gallery: {
-		enabled: true
-	},
+$( window ).on( "load", function(){
+	$('.image_box').magnificPopup({
+		delegate: 'a',
+		type: 'image',
+		gallery: {
+			enabled: true
+		},
+	});
 });
 
 //MagnificPopup Gallery (2) Two
