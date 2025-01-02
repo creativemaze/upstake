@@ -698,16 +698,6 @@ svg {
 	left: 20px;
 }
 
-.grid_title_area{
-	width: calc(100% - 50px);
-	position: relative;
-	bottom: 35px;
-	margin: auto;
-	overflow: auto;
-	border-radius: 5px;
-	box-shadow: 0 20px 70px rgba(38,42,76,.2);
-}
-
 .grid_title{
 	width: calc(100% - 75px);
 	position: relative;
@@ -1416,7 +1406,7 @@ svg {
 	color: #111111;
 	font-family: 'Montserrat' , Arial, sans-serif;
 	font-size: 40px;
-	font-weight: 700;
+	font-weight: 600;
 	display: block;
 	text-align: left;
 	letter-spacing: 1px;
