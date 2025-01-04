@@ -1,16 +1,18 @@
 "use strict";
+//MagnificPopup Gallery
+$( window ).on( "load", function(){
+	$('.image_box').magnificPopup({
+		delegate: 'a',
+		type: 'image',
+		gallery: {
+			enabled: true
+		},
+	});
+});
+
 //Filter Gallery
 jQuery(document).ready(function($) {
 	$('.filter-container').filterizr({});
-});
-
-//MagnificPopup Gallery
-$('.image_box').magnificPopup({
-	delegate: 'a',
-	type: 'image',
-	gallery: {
-		enabled: true
-	},
 });
 
 // Add active class to the current button (highlight it)

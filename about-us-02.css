@@ -1240,11 +1240,11 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	display: block;
 }
 
-.portfolio_image > .image_box a > img{
+.portfolio_image .image_box a > img{
 	transition: ease-in-out 3.25s;
 }
 
-.portfolio_image > .image_box a > img:hover{
+.portfolio_image .image_box a > img:hover{
 	transform: scale(1.15);
 }
 
@@ -1889,7 +1889,7 @@ a.footer-logo img{
 	
 	.portfolio_col{
 		flex: 100%;
-		width: 100%;
+		min-width: 100%;
 	}
 	
 	.footer_col{
@@ -1938,6 +1938,7 @@ a.footer-logo img{
 
 @media only screen and (max-width: 420px){
 	.team_col,
+	.portfolio_box,
 	.query_col{
 		padding-left: 0;
 		padding-right: 0;
