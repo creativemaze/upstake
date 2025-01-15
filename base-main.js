@@ -1,12 +1,12 @@
 "use strict";
-$(document).ready(function(){
+$( window ).on( "load", function(){
 	$('.word_slider').slick({
 		dots: false,
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		arrows: false,
 		autoplay: true,
-		autoplaySpeed: 5000,
+		autoplaySpeed: 3000,
 		speed: 1000,
 		pauseOnHover: false,
 		pauseOnFocus: false,
@@ -20,6 +20,46 @@ $( ".buttoncol a" ).click(function() {
 
 $( ".head_btn a" ).click(function() {
 	$('.home_group_two').animatescroll();
+});
+
+$(document).ready(function(){
+	$('.bg_slider').slick({
+		dots: true,
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		arrows: false,
+		autoplay: true,
+		speed: 1000,
+		pauseOnHover: false,
+		pauseOnFocus: false,
+		centerMode: true,
+		responsive: [
+			{
+				breakpoint: 993,
+				settings: {
+					slidesToShow: 2,
+					
+				}			
+			},
+			
+			{
+				breakpoint: 601,
+				settings: {
+					slidesToShow: 1,
+					centerPadding: '50px',
+				}			
+			},
+			
+			{
+				breakpoint: 430,
+				settings: {
+					slidesToShow: 1,
+					centerPadding: '50px',
+				}			
+			},
+		]
+	});
+	
 });
 
 //Counter script
