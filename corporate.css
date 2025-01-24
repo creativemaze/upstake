@@ -3,7 +3,7 @@ Main Stylesheet
 
 Project:    Upstake - Multipurpose Business Template
 Version:    1.0
-Last change:    16/05/2024
+Last change:    24/01/2025
 Author:    creativemaze
 Primary use:    Corporate
 -------------------------------------------------------------------*/
@@ -127,8 +127,7 @@ ul{
 	padding: 10px 10px 0;
 	line-height: 1.5em;
 	max-width: 600px;
-	margin-left: auto;
-	margin-right: auto;
+	margin: auto;
 }
 
 .corporate_center{
@@ -440,23 +439,33 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	align-items: center;
 	height: 100vh;
 	min-height: 800px;
+	position: relative;
 }
 
 .slide__content{
 	height: 100vh;
 	min-height: 800px;
-	text-align: center;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
 	position: relative;
-	z-index: 1000;
+}
+
+.slide__content::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(24, 25, 34, 0.5);
 }
 
 .left_clip{
 	position: absolute;
 	right: 0;
 	bottom: 0;
+	z-index: 11;
 	width: 50vw;
 	height: 150px;
 	border-style: solid;
@@ -468,6 +477,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	position: absolute;
 	left: 0;
 	bottom: 0;
+	z-index: 11;
 	width: 50vw;
 	height: 150px;
 	border-style: solid;
@@ -479,14 +489,17 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	position: absolute;
 	left: 0;
 	bottom: 0;
+	z-index: 1;
 	transform: translateY(-50%);
 	margin-left: 20px;
+
 }
 
 .next_nav{
 	position: absolute;
 	right: 0;
 	bottom: 0;
+	z-index: 1;
 	transform: translateY(-50%);
 	margin-right: 20px;
 }
@@ -565,18 +578,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	letter-spacing: 1px;
 	line-height: 1.5em;
 	margin: 0;
-}
-
-.slide__content:before {
-	content: '';
-	position: absolute;
-	z-index: -1;
-	display: block;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: rgba(24, 25, 34, 0.5);
 }
 
 .header-title {
@@ -768,9 +769,9 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 /* --- 3.2. Corporate Area Two --- */
 .corporate_area_two{
+	position: relative;
 	min-height: 400px;
 	text-align: center;
-	margin-bottom: 9em;
 	padding: 8em 25px 8em;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -778,7 +779,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	margin-bottom: 9em;
 }
 
-.corporate_area_two::after{
+.corporate_area_two::before{
 	content: '';
 	position: absolute;
 	z-index: 1;
