@@ -889,12 +889,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	background: #159957;
 	border-radius: 50%;
 	cursor: pointer;
-	margin-right: 5px;
-}
-
-.extra_space{
-	position: relative;
-	left: 45px;
+	margin-right: 7px;
 }
 
 .square_col_button a{
@@ -2127,10 +2122,6 @@ a.footer-logo img{
 	.square_info_col{
 		flex: 100%;
 		width: 100%;
-	}
-	
-	.extra_space{
-		left: 0;
 	}
 	
 	.square_photo_area{
