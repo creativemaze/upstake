@@ -47,7 +47,7 @@ $( window ).on( "load", function(){
 	.on('update.countdown', function(event) {
 		if (currentDate < eventDate) {
 			$(this).html(event.strftime
-			('<h3>Starts In</h3><h3>%D <span class="date_box">Days</span>  %H <span class="date_box">Hrs</span> %M <span class="date_box">Mins</span> %S S</h3>'));
+			('<h3>Starts In</h3><h3>%D <span class="date_box">Days</span>  %H <span class="date_box">Hrs</span> %M <span class="date_box">Mins</span> %S <span class="date_box">S</span></h3>'));
 		} 
 		else if (currentDate > eventDate) {
 			$(this).html(event.strftime
