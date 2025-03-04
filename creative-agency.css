@@ -558,7 +558,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 .photo_image{
 	position: relative;
 	overflow: hidden;
-	box-shadow: 0 20px 70px rgba(38,42,76,.2);
 	z-index: 1;
 }
 
@@ -740,6 +739,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	overflow: hidden;
 	padding: 30px 20px;
 	background-color: #111111;
+	box-shadow: 0 20px 70px rgba(38,42,76,.2);
 }
 
 .color_mid_box{
@@ -748,6 +748,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	overflow: hidden;
 	padding: 30px 20px;
 	background-color: #ec2f4b;
+	box-shadow: 0 20px 70px rgba(38,42,76,.2);
 }
 
 .white_bottom_box{
@@ -755,7 +756,8 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	width: 100%;
 	overflow: hidden;
 	padding: 30px 20px;
-	background-color: #f6f6f6;
+	background-color: #ffffff;
+	box-shadow: 0 20px 70px rgba(38,42,76,.2);
 }
 
 .box_check .fi::before{
@@ -887,6 +889,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	flex: 50%;
 	width: 50%;
 	background-color: #111111;
+	box-shadow: 0 20px 70px rgba(38,42,76,.2);
 }
 
 .left_border_box{
@@ -1764,7 +1767,7 @@ a.blog_btn:hover{
 	max-width: 640px;
 	padding: 20px;
 	text-align: center;
-	background-color: #eeeeee;
+	background-color: #f6f6f6;
 	border-left: solid 4px #111111;
 	margin-bottom: 65px;
 }
