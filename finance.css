@@ -243,7 +243,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .attr-nav > ul > li > a{
     color: #111111;
-	padding-top: 30px;
+	padding-top: 36px;
 	margin-left: -12px;
 	position: relative;
 	left: -160px;
@@ -532,10 +532,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	display: flex; 
 	flex-wrap: wrap;
 	background-color: #ffffff;
-}
-
-.feature_slider{
-	display: block;
 }
 
 .feature_col{
@@ -2002,5 +1998,17 @@ a.footer-logo img{
 	
 	.bg_title_area h3{
 		font-size: 16px;
+	}
+}
+
+@media only screen and (max-width: 360px){
+	.bg_title_area{
+		bottom: 50px;
+	}
+}
+
+@media only screen and (max-width: 320px){
+	.bg_title_area{
+		bottom: 40px;
 	}
 }
