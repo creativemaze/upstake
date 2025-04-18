@@ -3,7 +3,7 @@ Main Stylesheet
 
 Project:     Upstake - Multipurpose Business Template
 Version:    1.0
-Last change:    30/06/2024
+Last change:    02/04/2025
 Author:    creativemaze
 Primary use:    Architecture
 -------------------------------------------------------------------*/
@@ -411,7 +411,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	z-index: 0;
 	height: 100vh;
 	min-height: 800px;
-	text-align: center;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -1054,18 +1053,6 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	letter-spacing: 1px;
 	line-height: 1.4em;
 	margin: 0;
-}
-
-.bg_title p{
-	font-family: 'Roboto' , Arial, sans-serif;
-	font-size: 15px;
-	font-weight: normal;
-	padding-top: 10px;
-	display: block;
-	color: #ffffff;
-	letter-spacing: 1px;
-	text-align: center;
-	line-height: 1.5em;
 }
 
 .bg_button a{
