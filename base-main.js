@@ -19,7 +19,7 @@ $( ".buttoncol a" ).click(function() {
 });
 
 $( ".head_btn a" ).click(function() {
-	$('.home_group_two').animatescroll();
+	$('.home_group_info').animatescroll();
 });
 
 $(document).ready(function(){
