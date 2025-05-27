@@ -41,7 +41,7 @@ $(document).ready(function(){
 
 //Count down script
 $( window ).on( "load", function(){
-	const eventDate = new Date('2025/07/27 09:00');
+	const eventDate = new Date('2025/09/07 09:00');
 	const currentDate = new Date();
 	$('#timer-date').countdown(eventDate, {elapse: true})
 	.on('update.countdown', function(event) {
