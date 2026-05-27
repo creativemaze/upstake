@@ -170,7 +170,11 @@ h2{
 	margin: 0 auto;
 }
 
-.brand {
+.brand{
+	margin: 0;
+}
+
+.brand a{
 	text-decoration: none;
 	color: #f1f1f1;
 	transition: 0.5s;
@@ -184,7 +188,7 @@ h2{
 	text-rendering: optimizeLegibility;
 }
 
-.brand:hover{
+.brand a:hover{
 	color: #f1f1f1;
 }
 
@@ -1652,6 +1656,10 @@ a.footer-logo img{
 	margin-top: 10px;
 }
 
+.footer_box > h3{
+	margin: 0;
+}
+
 .footer_box > h3 > a{
 	font-family: 'Montserrat', Arial, sans-serif;
 	font-size: 22px;
@@ -2065,6 +2073,10 @@ a.footer-logo img{
 		top: 4px;
 	}
 	
+	.brand a{
+		padding-top: 4px;
+	}
+	
 	.head_btn{
 		display: block;
 		margin: 40px auto 0;
@@ -2237,6 +2249,8 @@ a.footer-logo img{
 		flex: 100%;
 		width: 100%;
 		margin: 0;
+		padding-left: 0;
+		padding-right: 0;
 	}
 }
 
