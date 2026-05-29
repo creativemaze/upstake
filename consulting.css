@@ -269,7 +269,7 @@ ul{
 	border-color: #ffffff;
 }
 
-header .menu > ul > li {
+.header .menu > ul > li {
 	display: inline-block;
 	line-height: 0.000003rem;
 	margin-left: 1.5rem;
