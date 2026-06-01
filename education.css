@@ -156,7 +156,7 @@ ul{
 
 .brand a{
 	text-decoration: none;
-	color: #111111;
+	color: #f1f1f1;
 	transition: 0.5s;
 	font-family: 'Montserrat', Arial, sans-serif;
 	font-size: 22px;
@@ -169,7 +169,7 @@ ul{
 }
 
 .brand a:hover{
-	color: #111111;
+	color: #f1f1f1;
 }
 
 #logo > a{
@@ -722,7 +722,7 @@ ul{
 	color: #ffffff;
 }
 
-.thumb_box.active h4{
+.thumb_box.active h3{
 	color: #ffffff;
 }
 
@@ -2364,6 +2364,8 @@ a.footer-logo img{
 		flex: 100%;
 		width: 100%;
 		margin: 0;
+		padding-left: 0;
+		padding-right: 0;
 	}
 }	
 
