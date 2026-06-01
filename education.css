@@ -1807,7 +1807,8 @@ a.footer-logo img{
 	padding-right: 12px;
 }
 
-.footer_social > a:hover{
+.footer_social > a > .fa-brands:hover,
+.footer_social > a > .fa:hover{
 	color: #0abfbc;
 }
 
