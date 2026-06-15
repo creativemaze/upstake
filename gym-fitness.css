@@ -438,7 +438,6 @@ ul{
 	height: 100vh;
 	min-height: 700px;
 	text-align: center;
-	color: #ffffff;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -455,6 +454,8 @@ ul{
 }
 
 .header-title {
+	position: relative;
+	z-index: 9;
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 0 15px;
@@ -746,7 +747,7 @@ ul{
 
 .accordion {
 	cursor: pointer;
-	padding: 12px;
+	padding: 16px 12px 8px 12px;
 	width: 100%;
 	text-align: left;
 	overflow: hidden;
@@ -773,6 +774,7 @@ ul{
 	color: #111111;
 	font-weight: 600;
 	float: right;
+	padding-top: 4px;
 }
 
 .accordion::before{

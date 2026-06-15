@@ -56,21 +56,31 @@ $(document).ready(function(){
 	
 });
 
-//Accordion
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-	acc[i].addEventListener("click", function() {
-		this.classList.toggle("active-bar");
-		var panel = this.nextElementSibling;
-		if (panel.style.maxHeight) {
-			panel.style.maxHeight = null;
-		} else {
-			panel.style.maxHeight = panel.scrollHeight + "px";
-		} 
+// Add current class to the current button (highlight it)
+var btns = document.getElementsByClassName("accordion");
+for (var i = 0; i < btns.length; i++) {
+	btns[i].addEventListener("click", function(){
+		var current = document.getElementsByClassName("current");
+		current[0].className = current[0].className.replace(" current", "");
+		this.className += " current";
 	});
 }
+
+//Accordion
+var acc = document.getElementsByClassName("accordion");
+	var i;
+
+	for (i = 0; i < acc.length; i++) {
+		acc[i].addEventListener("click", function() {
+			this.classList.toggle("current-bar");
+			var panel = this.nextElementSibling;
+			if (panel.style.maxHeight) {
+				panel.style.maxHeight = null;
+			} else {
+				panel.style.maxHeight = panel.scrollHeight + "px";
+			} 
+		});
+	}
 
 //MagnificPopup Video
 $('#play-video').magnificPopup({
