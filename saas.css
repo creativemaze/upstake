@@ -1,9 +1,9 @@
 /*------------------------------------------------------------------
 Main Stylesheet
 
-Project:    Upstake - Multipurpose Business Template
+Project:    Upstake - Multipurpose Website Template
 Version:    1.0
-Last change:    04/06/2024
+Last change:    02/06/2026
 Author:    creativemaze
 Primary use:    SAAS
 -------------------------------------------------------------------*/
@@ -13,7 +13,7 @@ Primary use:    SAAS
 
 1. General
 2. Header
-	2.1. Logo & Navigation
+	2.1. Header Menu
 	2.2. Header Content
 3. Main Content
 	3.1. SAAS Area One 
@@ -51,6 +51,7 @@ ul{
 
 *{
 	box-sizing: border-box;
+	text-decoration: none;
 }
 
 .page_area{
@@ -91,6 +92,28 @@ ul{
 	}
 }
 
+@keyframes slideLeft {
+  0% {
+    opacity: 0;
+        transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+        transform: translateX(0%);
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    opacity: 1;
+        transform: translateX(0%);
+  }
+  100% {
+    opacity: 0;
+        transform: translateX(100%);
+  }
+}
+
 .saas_heading{
 	font-family: 'Montserrat' , Arial, sans-serif;
 	font-size: 40px;
@@ -104,6 +127,7 @@ ul{
 	max-width: 600px;
 	margin-right: auto;
 	margin-left: auto;
+	margin-bottom: 0;
 }
 
 .saas_info{
@@ -114,7 +138,7 @@ ul{
 	color: #696969;
 	letter-spacing: 1px;
 	text-align: center;
-	padding: 10px 10px 0;
+	padding: 25px 10px 0;
 	line-height: 1.5em;
 	max-width: 600px;
 	margin: 0 auto;
@@ -132,6 +156,7 @@ ul{
 	max-width: 600px;
 	margin-right: auto;
 	margin-left: auto;
+	margin-bottom: 0;
 }
 
 .bg_info{
@@ -142,7 +167,7 @@ ul{
 	color: #dddddd;
 	letter-spacing: 1px;
 	text-align: center;
-	padding: 10px 10px 0;
+	padding: 25px 10px 0;
 	line-height: 1.5em;
 	max-width: 600px;
 	margin: 0 auto;
@@ -151,8 +176,20 @@ ul{
 /* 2. HEADER
  ----------- */
  
-/* --- 2.1. Logo & Navigation --- */
-.navbar-header > a{
+/* --- 2.1. Header Menu --- */
+.container {
+	max-width: 80rem;
+	width: 100%;
+	height: auto;
+	padding: 0 2rem;
+	margin: 0 auto;
+}
+
+.brand{
+	margin: 0;
+}
+
+.brand a{
 	text-decoration: none;
 	color: #f1f1f1;
 	transition: 0.5s;
@@ -163,238 +200,60 @@ ul{
 	text-align: center;
 	letter-spacing: 1px;
 	text-transform: uppercase;
-	margin-top: 30px;
+	text-rendering: optimizeLegibility;
 }
 
-.navbar-header > a:hover{
+.brand a:hover{
 	color: #f1f1f1;
 }
 
-#nav-logo > a{
+#logo > a{
 	max-width: 160px; 
 	position: relative;
-	top: 33px;
+	top: 2px;
 }
 
-#nav-logo > a img{
-   position: relative;
-   max-width: 160px;
-   height: auto;
+#logo > a img{
+	position: relative;
+	max-width: 160px;
+	height: auto;
 }
 
-nav.navbar.bootsnav{
-	background-color: transparent;
-	border-bottom: none ;
-	z-index: 9999;
-}
-
-nav.navbar.bootsnav ul.nav{
-	margin-right: 160px;
-	margin-top: 5px;
-}
-
-nav.navbar.bootsnav li.dropdown ul.dropdown-menu{
-	border: 0;
-	background: #ffffff;
-	z-index: 9999;
-}
-
-nav.navbar.bootsnav ul.nav > li > a{
-    color: #ffffff;
-    font-family: 'Montserrat' , Arial, sans-serif;
-    font-size: 13px;
-    font-weight: 700;
-    text-transform: uppercase;
-	letter-spacing: 1px;
-	border-top: none;
-}
-
-nav.navbar.bootsnav ul.navbar-right li.dropdown ul.dropdown-menu li a{
-    text-align: left;
-	color: #111111;
-	font-family: 'Montserrat' , Arial, sans-serif;
-    font-size: 14px;
-    font-weight: 600;
-    text-transform: capitalize;
-	letter-spacing: 1px;
-	border-bottom: none;
-	transition: 0.5s;
-}
-
-nav.navbar.bootsnav ul.navbar-right li.dropdown ul.dropdown-menu li a:hover{
-	color: #159957;
-}
-
-nav.navbar.bootsnav li.dropdown ul.dropdown-menu{
+.header {
+	position: absolute;
+	display: block;
+	top: 0;
 	left: 0;
-}
-
- nav.navbar.bootsnav ul.nav > li.dropdown > a.dropdown-toggle:after{
-    font-family: 'Font Awesome 5 Free';
-    content: "\f107";
-	font-size: 12px;	
-}
-
-nav.navbar.bootsnav ul.navbar-right li.dropdown ul.dropdown-menu li.dropdown > a.dropdown-toggle:before{
-    font-family: 'Font Awesome 5 Free';
-    float: right;
-    content: "\f105";
-    margin-top: 0;
-}
-
-nav.navbar.bootsnav ul.nav.navbar-right .dropdown-menu .dropdown-menu{
-    left: 200px;
-}
-
-nav.navbar.bootsnav li.dropdown ul.dropdown-menu ul.dropdown-menu{
-    top: 2px;
-}
-
-nav.navbar.bootsnav ul.dropdown-menu.megamenu-content .col-menu{
-    border-left: solid 1px #e0e0e0;
-    border-right: solid 1px #e0e0e0;
-}
-
-nav.navbar.bootsnav ul.dropdown-menu.megamenu-content .content ul.menu-col li a{
-	font-family: 'Montserrat' , Arial, sans-serif;
-    font-size: 14px;
-    font-weight: 600;
-    color: #111111;
-    text-transform: capitalize;
-	letter-spacing: 1px;
-}
-
-nav.navbar.bootsnav ul.dropdown-menu.megamenu-content .content ul.menu-col li a:hover{
-	color: #159957;
-}
-
-nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
-    font-size: 14px;
-    font-weight: 600;
-	font-family: 'Montserrat' , Arial, sans-serif;
-    color: #159957;
-    text-transform: uppercase;
-	letter-spacing: 1px;
-}
-
-.attr-nav > ul > li.dropdown ul.dropdown-menu{
-    margin-top: 0;
-    margin-left: 55px;
-    width: 250px;
-    left: -250px !important;
-}
-
-.attr-nav > ul > li > a{
-    color: #ffffff;
-	padding-top: 36px;
-	margin-left: -12px;
-	position: relative;
-	left: -160px;
-}
-
-.top-search ::placeholder{
-	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 14px;
-	font-weight: 600;
-	letter-spacing: 1px;
-}
-
-/* --- 2.2. Header Content --- */
-.top_box{
-	height: 50px;
-	overflow-y: auto;
+	width: 100%;
+	height: auto;
+	padding: 1rem 0;
+	margin: 0 auto;
+	z-index: 99999;
+	border: none;
 	border-bottom: solid 1px #6f6f6f;
+	outline: none;
 }
 
-.top_info{
-	width: 100%;
+.header .wrapper {
 	display: flex;
-	flex-wrap: wrap;
-	max-width: 1400px;
-	margin: auto
+    flex-wrap: wrap;
+	align-items: center;
 }
 
-.left_info,
-.right_info{
-	position: relative;
-	flex: 50%;
-	width: 50%;
-	padding-top: 15px;
-}
-
-.left_info{
-	max-width: 600px;
-	margin: auto;
-	text-align: left;
-	display: block;
-}
-
-.right_info{
-	max-width: 400px;
-	margin: auto;
-	text-align: right;
-	display: block;
-}
-
-.left_info .fas,
-.left_info .far,
-.right_info > a > .fab{
-	font-size: 16px;
-	color: #ffffff;
-}
-
-.left_info .fas,
-.left_info .far{
-	padding-right: 8px;
-}
-
-.right_info > a .fab{
-	padding-right: 14px;
-	transition: 0.5s;
-}
-
-.right_info .fab:hover{
-	color: #159957;
-}
-
-.sub_width{
-	width: 100%;
+.header-item-left {
 	display: flex;
-	flex-wrap: wrap;
-	text-align: center;
+	flex: 0 0 17%;
 }
 
-.left_sub{
-	flex: 50%;
-	width: 50%;
-	text-align: left;
-}
-
-.right_sub{
-	flex: 50%;
-	width: 50%;
-	text-align: center;
-	padding-left: 25px;
-}
-
-.top_sub{
-	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 13px;
-	font-weight: 700;
-	text-transform: capitalize;
-	display: block;
-	color: #ffffff;
-	letter-spacing: 1px;
-	text-align: left;
-	margin-bottom: 0;
+.header-item-center {
+	display: flex;
+    flex: 0 0 80%;
+	justify-content: flex-end;
 }
 
 .head_btn{
-	max-width: 300px;
+	max-width: 200px;
 	display: inline-block;
-	position: absolute;
-	top: 19px;
-	right: 0;
 }
 
 .head_btn a{
@@ -402,7 +261,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	width: 150px;
 	margin: 0 auto;
     color: #ffffff;
-    padding: 12px 14px;
+    padding: 5px;
     text-decoration: none;
 	text-transform: uppercase;
     display: block;
@@ -421,9 +280,157 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	border-color: #ffffff;
 }
 
+.header .menu > ul > li {
+	display: inline-block;
+	line-height: 2.125rem;
+	margin-left: 1.5rem;
+}
+
+.header .menu > ul > li > a {
+	position: relative;
+	color: #ffffff;
+    font-family: 'Montserrat' , Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+	letter-spacing: 1px;
+	line-height: 1.25;
+	border: none;
+	outline: none;
+	text-rendering: optimizeLegibility;
+	transition: color 0.3s ease-in-out;
+}
+
+.header .menu > ul > li .menu-subs {
+	position: absolute;
+	width: auto;
+	height: auto;
+	margin-top: 1.75rem;
+	padding: 1rem 2rem;
+	border: none;
+	outline: none;
+	z-index: 500;
+	opacity: 0;
+	visibility: hidden;
+	border-radius: 0.25rem;
+	background: #ffffff;
+	transition: all 0.5s ease-in-out;
+}
+
+.header .menu > ul > li .menu-subs-next{
+	float: right;
+	width: auto;
+	height: auto;
+	padding: 1rem 2rem;
+	border: none;
+	outline: none;
+	z-index: 500;
+	opacity: 0;
+	visibility: hidden;
+	border-radius: 0.25rem;
+	background: #ffffff;
+	transition: all 0.5s ease-in-out;
+}
+
+.header .menu > ul > li .menu-subs > ul > li {
+	line-height: 1;
+}
+
+.header .menu > ul > li .menu-subs > ul > li > a {
+	display: inline-block;
+	color: #111111;
+	font-family: 'Montserrat' , Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: capitalize;
+	letter-spacing: 1px;
+	padding: 0.75rem 0;
+	border: none;
+	outline: none;
+	text-rendering: optimizeLegibility;
+	transition: all 0.3s ease-in-out;
+}
+
+.header .menu > ul > li .fa{
+	position: relative;
+	top: 1px;
+}
+
+.header .menu > ul > li .menu-column-1 {
+	min-width: 16rem;
+	max-width: 20rem;
+}
+
+.header .menu > ul > li .menu-subs.menu-mega {
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.header .menu > ul > li .menu-subs.menu-mega > .list-item > ul > li {
+	display: block;
+	line-height: 1;
+}
+
+.header .menu > ul > li .menu-subs.menu-mega > .list-item > ul > li > a {
+	display: inline-block;
+	color: #111111;
+	font-family: 'Montserrat' , Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: capitalize;
+	letter-spacing: 1px;
+	line-height: 1.25;
+	padding: 0.5rem 0;
+	border: none;
+	outline: none;
+	text-rendering: optimizeLegibility;
+	transition: color 0.3s ease-in-out;
+}
+
+.header .menu > ul > li .menu-subs.menu-column-3 {
+	display: flex;
+    flex-wrap: wrap;
+	max-width: 68rem;
+	width: 100%;
+	padding: 1.25rem 1rem;
+}
+
+.header .menu > ul > li .menu-subs.menu-column-3 > .list-item {
+	flex: 0 0 33.33%;
+	padding: 0 1rem;
+}
+
+.header .menu > ul > li .menu-subs.menu-column-3 > .list-item .title {
+	font-size: 14px;
+    font-weight: 600;
+	font-family: 'Montserrat' , Arial, sans-serif;
+    color: #159957;
+    text-transform: uppercase;
+	letter-spacing: 1px;
+	line-height: 1;
+	border: none;
+	outline: none;
+	text-rendering: optimizeLegibility;
+	transition: all 0.3s ease-in-out;
+}
+
+.header .menu > ul > li .menu-subs.menu-column-3 > .list-item.text-center .title {
+	text-align: center;
+}
+
+.header .menu > ul > li .menu-subs.menu-mega > .list-item > ul > li > a:hover,
+.header .menu > ul > li .menu-subs > ul > li > a:hover {
+	color: #159957;
+}
+
+.menu-mobile-header,
+.menu-mobile-trigger {
+	display: none;
+}
+
+/* --- 2.2. Header Content --- */
 .sliderwrap{
 	position: relative;
-	top: -140px;
 }
 
 .header__content{
@@ -473,6 +480,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	display: block;
 	color: #ffffff;
 	line-height: 1.2em;
+	margin: 0;
 }
 
 .header-title p{
@@ -484,7 +492,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	line-height: 1.6em;
 	letter-spacing: 1px;
 	text-align: center;
-	padding: 15px 0;
+	padding: 20px 0 15px;
 	max-width: 550px;
 	margin: auto;
 }
@@ -522,7 +530,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	max-width: 1100px;
 	margin: 0 auto;
 	padding: 0 25px;
-	margin-top: -450px;
+	margin-top: -310px;
 	margin-bottom: calc(9em - 75px);
 }
 
@@ -550,13 +558,13 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .saas_title_area{
 	max-width: 600px;
-	background-color: #ffffff;
+	background-color: #159957;
 	position: relative;
 	bottom: 110px;
 	overflow: auto;
 	padding: 20px 25px;
 	margin-left: 30px;
-	border-left: solid 8px #159957;
+	border-left: solid 8px #ffffff;
 }
 
 .saas_title h3{
@@ -590,7 +598,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	position: relative;
 	top: 8px;
 	padding-right: 4px;
-	color: #159957;
+	color: #ffffff;
 }
 
 .saas_title_area h2{
@@ -598,19 +606,20 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	font-size: 30px;
 	font-weight: 500;
 	display: block;
-	color: #111111;
+	color: #ffffff;
 	text-align: left;
 	letter-spacing: 1px;
 	line-height: 1.2em;
+	margin-bottom: 0;
 }
 
 .saas_title_area p{
 	font-family: 'Roboto' , Arial, sans-serif;
 	font-size: 16px;
 	font-weight: normal;
-	padding-top: 15px;
+	padding-top: 4px;
 	display: block;
-	color: #696969;
+	color: #dddddd;
 	letter-spacing: 1px;
 	text-align: left;
 	line-height: 1.5em;
@@ -633,7 +642,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	position: absolute;
 	left: 50%;
 	bottom: 0;
-	margin-bottom: 75px;
+	margin-bottom: 35px;
 	transform: translateX(-50%);
 	z-index: 999;
 }
@@ -644,23 +653,19 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .next_nav:hover,
 .prev_nav:hover{
-	background-color: #159957;
+	background-color: #111111;
 	color: #ffffff;
-	border-color: #159957;
+	border-color: #111111;
 }
 
 /* --- 3.2. SAAS Area Two --- */
 .saas_area_two{
-	width: 100%;
-	margin-bottom: calc(9em + 40px);
-	min-height: 400px;
-	padding: 7em 25px;
-	background-color: #f7f7f7;
+	max-width: 1200px;
+	margin: 0 auto 9em;
+	padding: 0 25px;
 }
 
 .saas_group_two{
-	max-width: 1280px;
-	margin: 0 auto;
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
@@ -669,30 +674,30 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 .icon_col{
 	flex: 25%;
 	width: 25%;
-	padding: 80px 25px 0;
+	padding: 40px 25px 0;
 }
 
 .icon_box{
-	max-width: 320px;
-	margin: 0 auto;
-	width: 100%;
-	position: relative;
+	max-width: 250px;
+	margin: auto;
+	text-align: center;
+	padding-top: 15px;
+	border-bottom: solid 4px #159957;
+	box-shadow: 0 20px 70px rgba(38,42,76,.2);
 }
 
 .icon_symbol .fi{
-	font-size: 44px;
-	width: 75px;
-	height: 75px;
-	background-color: #159957;
-	color: #ffffff;
+	font-size: 52px;
+	color: #159957;
 	display: inline-block;
 	text-align: center;
-	padding: 12px;
-	margin-top: -40px;
+	padding-top: 10px;
 }
 
 .icon_info{
-	padding: 15px 0 0 0;
+	width: 100%;
+	padding: 10px 0 25px;
+	margin-top: -20px;
 }
 
 .icon_info h3{
@@ -700,11 +705,10 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	font-size: 18px;
 	font-weight: 600;
 	display: block;
-	text-align: center;
 	color: #111111;
 	letter-spacing: 1px;
+	text-align: center;
 	line-height: 1.4em;
-	margin: 0;
 }
 
 .icon_info p{
@@ -716,7 +720,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	letter-spacing: 1px;
 	text-align: center;
 	line-height: 1.5em;
-	padding-top: 10px;
+	padding: 4px 12px 4px;
 }
 
 .icon_button a{
@@ -726,10 +730,10 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	letter-spacing: 1px;
 	text-align: center;
 	text-transform: uppercase;
-	display: block;
+	display: inline-block;
 	color: #159957;
 	text-decoration: none;
-	max-width: 110px;
+	max-width: 105px;
 	margin: 0 auto;
 	transition: 0.5s;
 }
@@ -749,13 +753,17 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 /* --- 3.3. SAAS Area Three --- */
 .saas_area_three{
-	max-width: 1280px;
-	padding: 0 25px;
-	margin: 0 auto;
-	margin-bottom: calc(9em + 60px);
+	width: 100%;
+	margin-bottom: calc(9em - 70px);
+	min-height: 475px;
+	padding: 10em 25px 16em;
+	background-color: #159957;
+	clip-path: polygon(0px 0px, 100% 0px, 100% 85%, 0px 100%);
 }
 
 .saas_group_three{
+	max-width: 1280px;
+	margin: 0 auto;
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
@@ -790,19 +798,20 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	font-size: 40px;
 	font-weight: 600;
 	display: block;
-	color: #111111;
+	color: #ffffff;
 	text-align: left;
 	letter-spacing: 1px;
 	line-height: 1.2em;
+	margin: 0;
 }
 
 .square_box > p{
 	font-family: 'Roboto' , Arial, sans-serif;
 	font-size: 16px;
 	font-weight: normal;
-	padding-top: 15px;
+	padding-top: 10px;
 	display: block;
-	color: #696969;
+	color: #dddddd;
 	letter-spacing: 1px;
 	text-align: left;
 	line-height: 1.5em;
@@ -822,8 +831,8 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	right: -40px;
 	width: 450px;
 	height: 450px;
-	border-top: solid 40px #159957;
-	border-right: solid 40px #159957;
+	border-top: solid 40px #ffffff;
+	border-right: solid 40px #ffffff;
 	z-index: -10;
 }
 
@@ -835,7 +844,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	z-index: 99;
 	width: 280px;
 	height: 280px;
-	background-color: #ffffff;
+	background-color: #159957;
 }
 
 .square_photo{
@@ -851,69 +860,89 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 }
 
 .square_info_area{
-	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
-	margin-bottom: 20px;
-}
-
-.square_info_col{
-	flex: 50%;
-	width: 50%;
-	padding: 20px 20px 10px 0;
+	max-width: 300px;
+	margin-top: 32px;
 }
 
 .square_info_box{
-	max-width: 300px;
-	text-align: left;
+	width: 100%;
+	margin-bottom: -16px;
 }
 
-.square_title{
-	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 13px;
-	font-weight: 600;
-	display: inline-block;
-	color: #111111;
+.accordion {
+	cursor: pointer;
+	padding: 16px 12px 8px 12px;
+	width: 100%;
 	text-align: left;
-	text-transform: uppercase;
+	overflow: hidden;
+	transition: 0.4s;
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 18px;
+	font-weight: 600;
+	display: block;
+	color: #ffffff;
+	background: transparent;
+	border-bottom: double 6px #ffffff;
 	letter-spacing: 1px;
 	line-height: 1.4em;
-	margin: 0;
 }
 
-.square_title::before{
-	content: '';
-	width: 9px;
-	height: 9px;
-	display:  inline-block;
-	background: #159957;
-	border-radius: 50%;
-	cursor: pointer;
-	margin-right: 7px;
-}
-
-.square_col_button a{
-	background-color: #159957;
-	width: 150px;
-	margin: 30px 0 0;
-    color: #ffffff;
-    padding: 13px 14px;
-    text-decoration: none;
-	text-transform: uppercase;
-    display: block;
-    font-size: 13px;
-	font-weight: 600;
-	font-family: 'Montserrat', Arial, sans-serif;
-    transition: 0.5s;
-	border: 1px solid #159957;
-	letter-spacing: 1px;
-	text-align: center;
-}
-
-.square_col_button a:hover{
+.accordion.current{
+	background-color: #ffffff;
 	color: #111111;
-	background: transparent;
-	border-color: #111111;
+}
+
+.accordion:after {
+	content: '\002B';
+	font-size: 16px;
+	color: #ffffff;
+	font-weight: 600;
+	float: right;
+	padding-top: 4px;
+}
+
+.accordion::before{
+	font-family: 'uicons-regular-straight';
+	content: "\fb2b";
+	font-size: 14px;
+	position: relative;
+	top: 2px;
+	padding-right: 12px;
+	color: #ffffff;
+}
+
+.accordion.current::before{
+	color: #111111;
+}
+
+.accordion.current:after{
+	color: #111111;
+}
+
+.current-bar:after {
+	content: "\2212";
+}
+
+.accordion.current-bar:after{
+	content: "\2212";
+}
+
+.panel{
+	padding: 0;
+	background-color: #ffffff;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+}
+
+.panel > p{
+	padding: 14px;
+	font-family: 'Roboto' , Arial, sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	display: block;
+	line-height: 1.5em;
+	color: #696969;
 }
 
 /* --- 3.4. SAAS Area Four --- */
@@ -950,22 +979,22 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 .feature_content{
 	width: 100%;
 	max-width: 350px;
-	margin-top: -75px;
+	margin-top: -65px;
 	position: relative;
 	border-radius: 5px;
-	min-height: 25px;
+	min-height: 20px;
 	overflow: hidden;
 	padding-bottom: 25px;
 	display: block;
-	background-color: #f7f7f7;
+	background-color: #159957;
 }
 
-.inner_crumb{
+.feature_crumb{
 	width: 50px;
 	margin: auto;
 	height: 1px;
-	border-bottom: solid 2px #159957;
-	margin-top: -8px;
+	border-bottom: solid 2px #111111;
+	margin-top: -14px;
 }
 
 .feature_content h3{
@@ -974,7 +1003,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	font-weight: 600;
 	display: block;
 	text-align: center;
-	color: #111111;
+	color: #ffffff;
 	letter-spacing: 1px;
 	line-height: 1.4em;
 	padding: 5px 0;
@@ -990,7 +1019,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	letter-spacing: 1px;
 	text-align: center;
 	line-height: 1.5em;
-	padding-top: 30px;
+	padding-top: 20px;
 }
 
 .feature_num{
@@ -1001,7 +1030,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 	border-radius: 50%;
 }
 
-.feature_num h4{
+.feature_num h3{
 	font-family: 'Montserrat' , Arial, sans-serif;
 	font-weight: 600;
 	font-size: 22px;
@@ -1032,9 +1061,10 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu.megamenu-content .title{
 
 .slick-dots button{
 	display: block;
-	width: 1.3rem;
-	height: 1.3rem;
-	padding: 0;		
+	width: 1rem;
+	height: 1rem;
+	padding: 0;
+	cursor: pointer;	
 	border: solid 1px #6f6f6f;
 	border-radius: 100%;
 	background-color: transparent;
@@ -1069,7 +1099,7 @@ li.slick-active button{
 /* --- 3.6. SAAS Area Six --- */
 .saas_area_six{
 	max-width: 1125px;
-	margin: -375px auto;
+	margin: -395px auto;
 	padding: 0 25px;
 	margin-bottom: calc(9em - 50px);
 }
@@ -1144,6 +1174,7 @@ li.slick-active button{
 	letter-spacing: 1px;
 	text-align: center;
 	line-height: 1.2em;
+	margin: 0;
 }
 
 .price_box h4{
@@ -1154,7 +1185,6 @@ li.slick-active button{
 	color: #696969;
 	letter-spacing: 1px;
 	text-align: center;
-	padding-top: 6px;
 }
 
 .center_value,
@@ -1362,18 +1392,43 @@ li.slick-active button{
 	text-align: left;
 	letter-spacing: 1px;
 	line-height: 1.2em;
+	margin: 0;
 }
 
 .info_box p{
 	font-family: 'Roboto' , Arial, sans-serif;
 	font-size: 16px;
 	font-weight: normal;
-	padding-top: 15px;
+	padding-top: 10px;
 	display: block;
 	color: #696969;
 	letter-spacing: 1px;
 	text-align: left;
 	line-height: 1.5em;
+}
+
+.square_col_button a{
+	background-color: #159957;
+	width: 150px;
+	margin: 30px 0 0;
+    color: #ffffff;
+    padding: 13px 14px;
+    text-decoration: none;
+	text-transform: uppercase;
+    display: block;
+    font-size: 13px;
+	font-weight: 600;
+	font-family: 'Montserrat', Arial, sans-serif;
+    transition: 0.5s;
+	border: 1px solid #159957;
+	letter-spacing: 1px;
+	text-align: center;
+}
+
+.square_col_button a:hover{
+	color: #111111;
+	background: transparent;
+	border-color: #111111;
 }
 
 /* --- 3.8. SAAS Area Eight --- */
@@ -1398,10 +1453,18 @@ li.slick-active button{
 	background: rgba(0,0,0,0.6);
 }
 
+.quote_format{
+	font-size: 130px;
+	position: relative;
+	color: #159957;
+	display: block;
+	text-align: center;
+}
+
 /* --- 3.9. SAAS Area Nine --- */
 .saas_area_nine{
-	max-width: 1200px;
-	margin: -380px auto 9em;
+	max-width: 1280px;
+	margin: -360px auto 9em;
 	padding: 0 25px;
 }
 
@@ -1409,61 +1472,80 @@ li.slick-active button{
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
+	margin-top: -85px;
 }
 
 .client_col{
-	flex: 50%;
-	width: 50%;
-	padding: 10px 25px 0;
+	flex: 25%;
+	width: 25%;
+	padding: 0 20px;
 }
 
-.client_area{
-	max-width: 600px;
-	margin: 0 auto;
-	padding: 10px;
-}
-
-.client_box{
-	margin-bottom: 10px;
-}
-
-.client_details{
-	width: 100%;
-	padding: 35px 20px 25px;
-	text-align: center;
-	background-color: #ffffff;
-	box-shadow: 0 20px 70px rgba(38,42,76,.2);
-}
-
-.client_box img{
-	max-width: 80px;
-	height: 80px;
-	margin: auto;
-	border-radius: 50%;
-	display: block;
-	text-align: center;
-}
-
-.client_details q{
-	font-family: 'Roboto' , Arial, sans-serif;
+.client_comment p{
+	font-family: 'Roboto', Arial, sans-serif;
 	font-size: 16px;
 	font-weight: normal;
-	display: block;
+	display: inline-block;
 	color: #696969;
 	letter-spacing: 1px;
 	text-align: center;
 	line-height: 1.5em;
 }
 
-.client_details h3{
+.client_comment p::before{
+	content: '\275D';
+	position: relative;
+	top: 10px;
+	padding-right: 5px;
+	font-size: 45px;
+	color: #159957;
+}
+
+.client_info{
+	margin: 40px auto 0;
+	background-color: #ffffff;
+	padding: 30px 25px 20px;
+	max-width: 275px;
+	box-shadow: 0 20px 70px rgba(38,42,76,.2);
+}
+
+.client_info img{
+	max-width: 90px;
+	height: 90px;
+	margin: auto;
+	border-radius: 50%;
+	display: block;
+	text-align: center;
+}
+
+.client_name{
 	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 14px;
+	font-size: 18px;
 	font-weight: 600;
 	display: block;
 	color: #111111;
 	letter-spacing: 1px;
 	text-align: center;
+	line-height: 1.4em;
+}
+
+.client_title{
+	font-family: 'Montserrat', Arial, sans-serif;
+	font-size: 14px;
+	font-weight: 600;
+	display: block;
+	color: #159957;
+	letter-spacing: 1px;
+	text-align: center;
 	text-transform: uppercase;
+	line-height: 1.4em;
+	margin: 0;
+}
+
+.client_icon{
+	display: block;
+	text-align: center;
+	padding-top: 8px;
 }
 
 .client_icon .fi{
@@ -1684,6 +1766,7 @@ a.blog_btn:hover{
 	color: #ffffff;
 	position: relative;
 	bottom: -1px;
+	cursor: pointer;
 	transition: 0.5s;
 	background-color: #159957;
 	border: solid 1px #159957;
@@ -1719,8 +1802,11 @@ a.footer-logo img{
 	max-width: 150px;
 	height: auto;
 	display: inline-block;
-	margin-top: 12px;
-	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.footer_box > h3{
+	margin: 0;
 }
 
 .footer_box > h3 > a{
@@ -1741,7 +1827,7 @@ a.footer-logo img{
 	letter-spacing: 1px;
 	color: #ffffff;
 	text-align: left;
-	padding: 20px 0;
+	padding: 15px 0 15px;
 	line-height: 1.5em;
 }
 
@@ -1749,7 +1835,7 @@ a.footer-logo img{
 	margin: 12px 0;
 }
 
-.footer_social > a > .fab,
+.footer_social > a > .fa-brands,
 .footer_social > a > .fa{
 	font-size: 16px;
 	color: #ffffff;
@@ -1761,17 +1847,18 @@ a.footer-logo img{
 	padding-right: 12px;
 }
 
-.footer_social > a > .fab:hover,
+.footer_social > a > .fa-brands:hover,
 .footer_social > a > .fa:hover{
 	color: #159957;
 }
 
-.footer_col > h4{
+.footer_col > h3{
 	font-family: 'Montserrat', Arial, sans-serif;
 	font-size: 18px;
 	font-weight: 700;
 	letter-spacing: 1px;
 	color: #ffffff;
+	margin-top: 0;
 }
 
 .footer_col > ul > li{
@@ -1845,6 +1932,14 @@ a.footer-logo img{
 
 /* 5. RESPONSIVE
  ----------- */
+@media only screen and (min-width: 993px) {
+  .header .menu > ul > li.menu-item-has-children:hover .menu-subs {
+    margin-top: 0.5rem;
+    opacity: 1;
+    visibility: visible;
+  }
+} 
+ 
 @media only screen and (max-width: 1024px){
 	.header__content{
 		height: auto;
@@ -1856,100 +1951,289 @@ a.footer-logo img{
 }
 
 @media only screen and (max-width: 992px){
-	nav.navbar.bootsnav .navbar-toggle{
-        background: transparent;
-        color: #ffffff;
-		font-size: 25px;
-		margin-top: 7px;
-		margin-bottom: 12px;
+	.header-item-center {
+        flex: 0 0 100%;
+        order: 3;
+	}
+  
+	.header-item-left, .header-item-right {
+        flex: 0 0 auto;
 	}
 	
-	.head_btn{	
-		margin-top: 40px;
+	.wrapper {
+        justify-content: space-between;
+	}
+  
+	.header .menu-mobile-trigger {
 		position: relative;
-		left: 50%;
-		transform: translateX(-50%);
+		display: block;
+		cursor: pointer;
+		width: 1.75rem;
+		height: 1rem;
+		border: none;
+		outline: none;
+		margin-left: 1.25rem;
+		background: none;
+        transform: rotate(0deg);
+		transition: 0.35s ease-in-out;
+	}
+	
+	.header .menu-mobile-trigger span {
+		display: block;
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		left: 0;
+		border: none;
+		outline: none;
+		opacity: 1;
+		border-radius: 0.25rem;
+		background: #ffffff;
+        transform: rotate(0deg);
+		transition: 0.25s ease-in-out;
+	}
+	
+	.header .menu-mobile-trigger span:nth-child(1) {
+		top: 0;
+	}
+	
+	.header .menu-mobile-trigger span:nth-child(2), .header .menu-mobile-trigger span:nth-child(3) {
+		top: 0.5rem;
+	}
+	
+	.header .menu-mobile-trigger span:nth-child(4) {
+		top: 1rem;
+	}
+	
+	.header-item-right {
+        align-items: center;
+	}
+
+	.header .menu {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 20rem;
+		height: 100%;
+		z-index: 1099;
+		overflow: hidden;
+		background: #fafafa;
+        transform: translate(-100%);
+		transition: all 0.5s ease-in-out;
+	}
+	
+	.header .menu.active {
+        transform: translate(0%);
+	}
+	
+	.header .menu > ul > li {
+		display: block;
+		line-height: 1;
+		margin: 0;
+	}
+	
+	.header .menu > ul > li > a {
+		display: block;
+		color: #111111;
+		line-height: 3.125rem;
+		height: 3.125rem;
+		padding: 0 3.125rem 0 1rem;
+		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	}
+  
+	.header .menu > ul > li > a i.fa {
+		position: absolute;
+		font-size: 1.25rem;
+		line-height: 3.125rem;
+		top: 0;
+		right: 0;
+		width: 3.125rem;
+		height: 3.125rem;
+		text-align: center;
+        transform: rotate(-90deg);
+	}
+  
+	.header .menu .menu-mobile-header {
+		position: relative;
+		position: sticky;
+		display: flex;
+        align-items: center;
+        justify-content: space-between;
+		top: 0;
+		height: 3.125rem;
+		z-index: 501;
+		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+		background: #fafafa;
+	}
+	
+	.header .menu .menu-mobile-header .menu-mobile-arrow {
+		display: none;
+		font-size: 1.25rem;
+		line-height: 3.125rem;
+		width: 3.125rem;
+		height: 3.125rem;
+		cursor: pointer;
+		border: none;
+		background: rgba(255,255,255,0.5);
+		color: #111111;
+		text-align: center;
+	}
+	
+	.header .menu .menu-mobile-header.active .menu-mobile-arrow {
+		display: block;
+	}
+	
+	.header .menu .menu-mobile-header .menu-mobile-title {
+		font-family: 'Raleway' , Arial, sans-serif;
+		font-size: 1rem;
+		font-weight: 600;
+		line-height: inherit;
+		color: #111111;
+		text-transform: capitalize;
+		letter-spacing: 1px;
+		text-rendering: optimizeLegibility;
+	}
+	
+	.header .menu .menu-mobile-header .menu-mobile-close {
+		font-size: 2.25rem;
+		line-height: 3.125rem;
+		cursor: pointer;
+		width: 3.125rem;
+		height: 3.125rem;
+		color: #111111;
+		text-align: center;
+		border: none;
+		background: rgba(255,255,255,0.5);
+	}
+	
+	.header .menu .menu-section {
+		height: 100%;
+		overflow-y: auto;
+		overflow-x: hidden;
+	}
+	
+	.header .menu > ul > li .menu-subs {
+		position: absolute;
+		display: none;
+		top: 0;
+		left: 0;
+		max-width: none;
+		min-width: auto;
+		width: 100%;
+		height: 100%;
+		margin: 0;
+		padding: 1rem;
+		padding-top: 4rem;
+		opacity: 1;
+		overflow-y: auto;
+		visibility: visible;
+        transform: translateX(0%);
+        box-shadow: none;
+	}
+	
+	.header .menu > ul > li .menu-subs.menu-mega {
+		position: absolute;
+		display: none;
+		top: 0;
+		left: 0;
+		max-width: none;
+		min-width: auto;
+		width: 100%;
+		height: 100%;
+		margin: 0;
+		padding: 1rem;
+		padding-top: 4rem;
+		opacity: 1;
+		overflow-y: auto;
+		visibility: visible;
+        transform: translateX(0%);
+        box-shadow: none;
+	}
+	
+	.header .menu > ul > li .menu-subs.active {
+		display: block;
+	}
+	
+	.header .menu > ul > li .menu-subs.menu-column-3 > .list-item {
+        flex: 0 0 100%;
+		padding: 0rem;
+	}
+	
+	.header .menu > ul > li .menu-subs.menu-column-3 > .list-item img.responsive {
+		margin-top: 0;
+	}
+	
+	.header .menu > ul > li .menu-subs.menu-column-3 > .list-item.text-center .title {
+		margin-bottom: 1.25rem;
+	}
+	
+	.header .menu > ul > li .menu-subs.menu-column-3 > .list-item.text-center:last-child .title {
+		margin-bottom: 0rem;
+	}
+	
+	.header .menu > ul > li .menu-subs > ul > li > a {
+		display: block;
+	}
+	
+	.header .menu > ul > li .menu-subs.menu-mega > .list-item > ul {
+		margin-bottom: 1rem;
+	}
+	
+	.header .menu > ul > li .menu-subs.menu-mega > .list-item > ul > li > a {
+		display: block;
+	}
+	
+	.overlay {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 1098;
+		opacity: 0;
+		visibility: hidden;
+		background: rgba(0, 0, 0, 0.55);
+		transition: all 0.5s ease-in-out;
+	}
+	
+	.overlay.active {
+		opacity: 1;
+		visibility: visible;
+	}
+	
+	.container {
+		padding: 0 1rem;
+		margin: 0 auto;
+	}
+	
+	#logo > a{
+		top: 4px;
+	}
+	
+	.brand a{
+		padding-top: 4px;
+	}
+	
+	.head_btn{
+		display: block;
+		margin: 40px auto 0;
+	}
+	
+	.head_btn a{
+		padding: 15px 14px;
 	}
 	
 	.head_btn a:hover{
-		background: transparent;
 		border-color: #111111;
-	}
-	
-	.navbar-header > a{
-		margin-top: 14px;
-	}
-	
-	#nav-logo > a{
-		top: 19px;
-	}
-	
-	nav.navbar.bootsnav ul.nav > li > a{
-		color: #111111;
-	}
-	
-	nav.navbar.bootsnav li.dropdown a.dropdown-toggle:before{
-        font-family: 'Font Awesome 5 Free';
-        content: "\f105";
-        float: right;
-        font-size: 16px;
-        margin-left: 10px;
-    }
-	
-	nav.navbar.bootsnav ul.nav > li.dropdown > a.dropdown-toggle:after{
-		display: none;	
-	}
-	
-	nav.navbar.bootsnav .dropdown .megamenu-content .col-menu .title:before{
-        font-family: 'Font Awesome 5 Free';
-        content: "\f105";
-    }
-	
-	nav.navbar.bootsnav ul.nav.navbar-right .dropdown-menu .dropdown-menu{
-		left: 0;
-	}
-	
-	nav.navbar.bootsnav ul.navbar-right li.dropdown ul.dropdown-menu li.dropdown.on > a.dropdown-toggle:before{
-		 content: "\f107";
-	}
-	
-	nav.navbar.bootsnav ul.dropdown-menu.megamenu-content .col-menu{
-		border-left: none;
-		border-right: none;
-	}
-	
-	.left_info,
-	.right_info,
-	.left_sub,
-	.right_sub{
-		flex: 100%;
-		width: 100%;
-		text-align: center;
-	}
-	
-	.right_sub{
-		padding-left: 0;
-		padding-top: 12px;
-	}
-	
-	.top_sub,
-	.left_info a{
-		text-align: center;
-	}
-	
-	.top_sub{
-		padding-bottom: 4px;
-	}
-	
-	.attr-nav > ul > li > a{
-		position: relative;
-		left: 0;
-		padding-top: 21px;
 	}
 	
 	.icon_col{
 		flex: 50%;
 		width: 50%;
+	}
+	
+	.saas_area_three{
+		padding-top: 8em;
 	}
 	
 	.square_col_left{
@@ -1961,10 +2245,6 @@ a.footer-logo img{
 		flex: 100%;
 		width: 100%;
 		margin-top: 90px;
-	}
-	
-	.saas_area_two{
-		margin-bottom: 9em;
 	}
 	
 	.price_col{
@@ -1989,8 +2269,8 @@ a.footer-logo img{
 	}
 	
 	.client_col{
-		flex: 100%;
-		width: 100%;
+		flex: 50%;
+		width: 50%;
 	}
 	
 	.blog_col{
@@ -2032,16 +2312,12 @@ a.footer-logo img{
 	
 	.saas_title_area{
 		max-width: 375px;
-		padding: 15px;
+		padding: 20px;
 		margin-left: 15px;
 	}
 	
 	.saas_title_area h2{
 		font-size: 20px;
-	}
-	
-	.info_nav{
-		margin-bottom: 60px;
 	}
 	
 	.right_color_box{
@@ -2078,6 +2354,11 @@ a.footer-logo img{
 		left: 0;
 	}
 	
+	.client_col{
+		flex: 100%;
+		width: 100%;
+	}
+	
 	.blog_col{
 		flex: 100%;
 		width: 100%;
@@ -2108,14 +2389,14 @@ a.footer-logo img{
 		flex: 100%;
 		width: 100%;
 		margin: 0;
+		padding-left: 0;
+		padding-right: 0;
 	}
 }
 
 @media only screen and (max-width: 420px){
 	.saas_title_area{
-		max-width: 325px;
-		padding: 10px;
-		margin-left: 15px;
+		max-width: 280px;
 	}
 	
 	.square_info_col{
@@ -2156,7 +2437,7 @@ a.footer-logo img{
 	}
 	
 	.saas_area_one{
-		margin-top: -375px;
+		margin-top: -265px;
 	}
 	
 	.saas_image{
@@ -2179,13 +2460,19 @@ a.footer-logo img{
 	}
 }
 
+@media only screen and (max-width: 360px){
+	.saas_title_area{
+		max-width: 250px;
+	}
+}
+
 @media only screen and (max-width: 320px){
 	.saas_area_one{
-		margin-top: -350px;
+		margin-top: -230px;
 	}
 	
-	.saas_title h3{
-		font-size: 12px;
+	.saas_title_area{
+		max-width: 280px;
 	}
 	
 	.right_color_box{
