@@ -1,29 +1,5 @@
 "use strict";
-//Slick Slider (1) One
-$(document).ready(function(){
-	$('.feature_slider').slick({
-		slidesToShow: 3,
-		autoplay: false,
-		infinite: true,
-		speed: 1000,
-		arrows: false,
-		dots: false,
-		pauseOnHover: false,
-		pauseOnFocus: false,
-		responsive: [
-			{
-				breakpoint: 993,
-				settings: {
-					slidesToShow: 1,
-					dots: true,
-					fade: true
-				}			
-			},
-		]
-	});
-});
-
-//Slick Slider (2) Two
+//Slick Slider
 $(document).ready(function(){
 	$('.grid_slider').slick({
 		dots: false,
