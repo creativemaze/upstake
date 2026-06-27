@@ -3,7 +3,7 @@ Main Stylesheet
 
 Project:     Upstake - Multipurpose Website Template
 Version:    1.0
-Last change:    24/05/2026
+Last change:    08/06/2026
 Author:    creativemaze
 Primary use:    Bakery
 -------------------------------------------------------------------*/
@@ -125,8 +125,7 @@ ul{
 	letter-spacing: 1px;
 	line-height: 1.2em;
 	max-width: 600px;
-	margin-right: auto;
-	margin-left: auto;
+	margin: 0 auto;
 }
 
 .bakery_info{
@@ -139,7 +138,7 @@ ul{
 	color: #696969;
 	letter-spacing: 1px;
 	text-align: center;
-	padding-top: 10px;
+	padding-top: 20px;
 	line-height: 1.5em;
 }
 
@@ -154,8 +153,7 @@ ul{
 	line-height: 1.2em;
 	max-width: 600px;
 	padding: 0 10px;
-	margin-right: auto;
-	margin-left: auto;
+	margin: 0 auto;
 }
 
 .bg_sub{
@@ -168,7 +166,7 @@ ul{
 	color: #dddddd;
 	letter-spacing: 1px;
 	text-align: center;
-	padding: 10px 10px 0;
+	padding: 20px 10px 0;
 	line-height: 1.5em;
 }
 
@@ -184,7 +182,11 @@ ul{
 	margin: 0 auto;
 }
 
-.brand {
+.brand{
+	margin: 0;
+}
+
+.brand a{
 	text-decoration: none;
 	color: #f1f1f1;
 	transition: 0.5s;
@@ -198,14 +200,14 @@ ul{
 	text-rendering: optimizeLegibility;
 }
 
-.brand:hover{
+.brand a:hover{
 	color: #f1f1f1;
 }
 
 #logo > a{
 	max-width: 160px; 
 	position: relative;
-	top: 3px;
+	top: 2px;
 }
 
 #logo > a img{
@@ -224,10 +226,9 @@ ul{
 	padding: 1rem;
 	margin-left: auto;
 	margin-right: auto;
-	z-index: 999;
-	border-radius: 6px;
+	z-index: 999999;
 	margin-top: 35px;
-	background-color: #71b280;
+	background: #71b280;
 	outline: none;
 }
 
@@ -248,13 +249,6 @@ ul{
 	justify-content: flex-end;
 }
 
-.header-item-right {
-	display: flex;
-    flex: 0 0 3%;
-    align-items: center;
-    justify-content: flex-end;
-}
-
 .head_btn{
 	max-width: 200px;
 	display: inline-block;
@@ -264,6 +258,7 @@ ul{
 	background-color: #111111;
 	width: 150px;
 	margin: 0 auto;
+	padding: 5px;
     color: #ffffff;
     text-decoration: none;
 	text-transform: uppercase;
@@ -285,7 +280,7 @@ ul{
 
 .header .menu > ul > li {
 	display: inline-block;
-	line-height: 3.125rem;
+	line-height: 2.125rem;
 	margin-left: 1.5rem;
 }
 
@@ -390,7 +385,7 @@ ul{
 	transition: color 0.3s ease-in-out;
 }
 
-.header .menu > ul > li .menu-subs.menu-column-4 {
+.header .menu > ul > li .menu-subs.menu-column-3 {
 	display: flex;
     flex-wrap: wrap;
 	max-width: 68rem;
@@ -398,12 +393,12 @@ ul{
 	padding: 1.25rem 1rem;
 }
 
-.header .menu > ul > li .menu-subs.menu-column-4 > .list-item {
+.header .menu > ul > li .menu-subs.menu-column-3 > .list-item {
 	flex: 0 0 33.33%;
 	padding: 0 1rem;
 }
 
-.header .menu > ul > li .menu-subs.menu-column-4 > .list-item .title {
+.header .menu > ul > li .menu-subs.menu-column-3 > .list-item .title {
 	font-size: 14px;
     font-weight: 600;
 	font-family: 'Raleway' , Arial, sans-serif;
@@ -417,7 +412,7 @@ ul{
 	transition: all 0.3s ease-in-out;
 }
 
-.header .menu > ul > li .menu-subs.menu-column-4 > .list-item.text-center .title {
+.header .menu > ul > li .menu-subs.menu-column-3 > .list-item.text-center .title {
 	text-align: center;
 }
 
@@ -473,6 +468,7 @@ ul{
 	text-align: center;
 	display: block;
 	color: #ffffff;
+	margin: 0;
 }
 
 .header-title__sub{
@@ -492,7 +488,7 @@ ul{
 	background-color: #71b280;
 	width: 165px;
 	margin: 0 auto 0;
-    padding: 15px 14px;
+    padding: 14px;
     text-decoration: none;
 	text-transform: uppercase;
 	color: #ffffff;
@@ -547,7 +543,7 @@ ul{
 	flex: 100%;
 	max-width: calc(100% - 70px);
 	background-color: #ffffff;
-	padding: 25px 20px 0;
+	padding: 40px 20px 0;
 }
 
 .area_head{
@@ -561,7 +557,6 @@ ul{
 	flex: 41.66%;
 	width: 41.66%;
 	padding: 0 10px;
-	margin-top: 30px;
 }
 
 .area_head h2{
@@ -574,6 +569,7 @@ ul{
 	text-align: left;
 	letter-spacing: 1px;
 	line-height: 1.2em;
+	margin: 0;
 }
 
 .area_info p{
@@ -812,13 +808,14 @@ ul{
 	text-align: left;
 	letter-spacing: 1px;
 	line-height: 1.2em;
+	margin: 0;
 }
 
 .square_box p{
 	font-family: 'Roboto' , Arial, sans-serif;
 	font-size: 16px;
 	font-weight: normal;
-	padding-top: 15px;
+	padding-top: 10px;
 	display: block;
 	color: #696969;
 	letter-spacing: 1px;
@@ -966,22 +963,34 @@ ul{
 	left: 20px;
 }
 
-.grid_content{
-	position: absolute;
-	bottom: 20px;
-	left: 20px;
-	max-width: 400px;
+.grid_title_area{
+	max-width: 350px;
+	background-color: #ffffff;
+	position: relative;
+	bottom: 40px;
+	overflow: auto;
+	padding: 15px 0 10px 20px;
+	text-align: left;
+	margin-left: 20px;
+	border-left: solid 4px #71b280;
 }
 
-.grid_content h3{
+.grid_title_area h3{
 	font-family: 'Raleway' , Arial, sans-serif;
-	font-size: 18px;
+	font-size: 14px;
 	font-weight: 600;
 	display: block;
-	color: #ffffff;
+	color: #111111;
 	text-align: left;
 	letter-spacing: 1px;
 	line-height: 1.4em;
+}
+
+.grid_title_area h3 .title-letter{
+	background-color: #71b280;
+	padding: 12px 14px;
+	color: #ffffff;
+	margin-right: 4px;
 }
 
 /* --- 3.5. Bakery Area Five --- */
@@ -1036,7 +1045,7 @@ ul{
 	text-align: left;
 	letter-spacing: 1px;
 	line-height: 1.2em;
-	margin-top: 0;
+	margin: 0;
 }
 
 .right_info_box p{
@@ -1047,7 +1056,7 @@ ul{
 	color: #696969;
 	letter-spacing: 1px;
 	text-align: left;
-	padding: 12px 0;
+	padding: 10px 0;
 	line-height: 1.5em;
 }
 
@@ -1090,7 +1099,7 @@ ul{
 	text-align: left;
 	position: absolute;
 	right: 20px;
-	bottom: 10px
+	bottom: 15px
 }
 
 .icon_content h3{
@@ -1287,6 +1296,7 @@ ul{
 	text-align: left;
 	letter-spacing: 1px;
 	line-height: 1.2em;
+	margin: 0;
 }
 
 .cube_info_area{
@@ -1299,7 +1309,7 @@ ul{
 .cube_info_col{
 	flex: 50%;
 	width: 50%;
-	padding: 25px 30px 10px 0;
+	padding: 40px 30px 10px 0;
 }
 
 .cube_title{
@@ -1489,7 +1499,7 @@ ul{
 	text-align: left;
 	padding: 10px 10px 15px 15px;
 	box-shadow: 0 20px 70px rgba(38,42,76,.2);
-	padding-bottom: 20px;
+	padding-bottom: 22px;
 }
 
 .blog_title a{
@@ -1559,7 +1569,6 @@ a.blog_btn:hover{
 	flex: 41.66%;
 	width: 41.66%;
 	padding: 0 15px;
-	margin-top: 40px;
 }
 
 .review_head h2{
@@ -1572,6 +1581,7 @@ a.blog_btn:hover{
 	text-align: left;
 	letter-spacing: 1px;
 	line-height: 1.2em;
+	margin: 0;
 }
 
 .review_content p{
@@ -1753,6 +1763,10 @@ a.footer-logo img{
 	height: auto;
 	display: inline-block;
 	margin-top: 10px;
+}
+
+.footer_box > h3{
+	margin: 0;
 }
 
 .footer_box > h3 > a{
@@ -1984,6 +1998,7 @@ a.footer-logo img{
 	
 	.header .menu > ul > li > a {
 		display: block;
+		color: #111111;
 		line-height: 3.125rem;
 		height: 3.125rem;
 		padding: 0 3.125rem 0 1rem;
@@ -2103,20 +2118,20 @@ a.footer-logo img{
 		display: block;
 	}
 	
-	.header .menu > ul > li .menu-subs.menu-column-4 > .list-item {
+	.header .menu > ul > li .menu-subs.menu-column-3 > .list-item {
         flex: 0 0 100%;
 		padding: 0rem;
 	}
 	
-	.header .menu > ul > li .menu-subs.menu-column-4 > .list-item img.responsive {
+	.header .menu > ul > li .menu-subs.menu-column-3 > .list-item img.responsive {
 		margin-top: 0;
 	}
 	
-	.header .menu > ul > li .menu-subs.menu-column-4 > .list-item.text-center .title {
+	.header .menu > ul > li .menu-subs.menu-column-3 > .list-item.text-center .title {
 		margin-bottom: 1.25rem;
 	}
 	
-	.header .menu > ul > li .menu-subs.menu-column-4 > .list-item.text-center:last-child .title {
+	.header .menu > ul > li .menu-subs.menu-column-3 > .list-item.text-center:last-child .title {
 		margin-bottom: 0rem;
 	}
 	
@@ -2155,6 +2170,14 @@ a.footer-logo img{
 		margin: 0 auto;
 	}
 	
+	#logo > a{
+		top: 4px;
+	}
+	
+	.brand a{
+		padding-top: 4px;
+	}
+	
 	.head_btn{
 		display: block;
 		margin: 40px auto 0;
@@ -2164,14 +2187,8 @@ a.footer-logo img{
 		padding: 15px 14px;
 	}
 	
-	.header .menu > ul > li > a {
-		color: #111111;
-	}
-	
 	.head_btn a:hover{
-		background: transparent;
 		border-color: #111111;
-		color: #111111;
 	}
 	
 	.area_head{
@@ -2264,7 +2281,7 @@ a.footer-logo img{
 	}
 	
 	.bakery_area_six{
-		padding-bottom: 18em;
+		padding-bottom: 16em;
 	}
 	
 	.count_info_col{
@@ -2285,7 +2302,7 @@ a.footer-logo img{
 	.review_content{
 		flex: 100%;
 		width: 100%;
-		margin-top: 20px;
+		margin-top: 10px;
 	}
 	
 	.client_col{
@@ -2386,14 +2403,12 @@ a.footer-logo img{
 		flex: 100%;
 		width: 100%;
 		margin: 0;
+		padding-left: 0;
+		padding-right: 0;
 	}
 }	
 
 @media only screen and (max-width: 420px){
-	.header{
-		width: calc(100% - 30px);
-	}
-	
 	.blog_col,
 	.grid_col,
 	.left_info_col,
@@ -2424,6 +2439,11 @@ a.footer-logo img{
 }
 
 @media only screen and (max-width: 390px){
+	.header{
+		width: calc(100% - 30px);
+	}
+	
+	
 	.square_color_box{
 		width: 250px;
 		height: 250px;
