@@ -221,6 +221,13 @@ ul{
 	justify-content: flex-end;
 }
 
+.header-item-right {
+	display: flex;
+    flex: 0 0 3%;
+    align-items: center;
+    justify-content: flex-end;
+}
+
 .head_btn{
 	max-width: 200px;
 	display: inline-block;

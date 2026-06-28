@@ -3,7 +3,7 @@ Main Stylesheet
 
 Project:    Upstake - Multipurpose Website Template
 Version:    1.0
-Last change:    24/05/2026
+Last change:    08/06/2026
 Author:   creativemaze
 Primary use:    Beauty Spa
 -------------------------------------------------------------------*/
@@ -126,8 +126,7 @@ ul{
 	line-height: 1.2em;
 	padding: 0 10px;
 	max-width: 650px;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 0 auto;
 }
 
 .last-word{
@@ -143,7 +142,7 @@ ul{
 	color: #696969;
 	letter-spacing: 1px;
 	text-align: center;
-	padding: 10px 10px 0;
+	padding: 20px 10px 0;
 	line-height: 1.5em;
 	max-width: 600px;
 	margin: 0 auto;
@@ -161,7 +160,11 @@ ul{
 	margin: 0 auto;
 }
 
-.brand {
+.brand{
+	margin: 0;
+}
+
+.brand a{
 	text-decoration: none;
 	color: #f1f1f1;
 	transition: 0.5s;
@@ -175,14 +178,14 @@ ul{
 	text-rendering: optimizeLegibility;
 }
 
-.brand:hover{
+.brand a:hover{
 	color: #f1f1f1;
 }
 
 #logo > a{
 	max-width: 160px; 
 	position: relative;
-	top: 3px;
+	top: 2px;
 }
 
 #logo > a img{
@@ -201,10 +204,9 @@ ul{
 	padding: 1rem;
 	margin-left: auto;
 	margin-right: auto;
-	z-index: 999;
-	border-radius: 6px;
-	margin-top: 35px;
-	background: rgba(0,0,0,0.3);
+	z-index: 999999;
+	margin-top: 25px;
+	background: rgba(24, 25, 34, 0.5);
 	outline: none;
 }
 
@@ -241,6 +243,7 @@ ul{
 	background-color: #f64f59;
 	width: 150px;
 	margin: 0 auto;
+	padding: 5px;
     color: #ffffff;
     text-decoration: none;
 	text-transform: uppercase;
@@ -263,7 +266,7 @@ ul{
 
 .header .menu > ul > li {
 	display: inline-block;
-	line-height: 3.125rem;
+	line-height: 2.125rem;
 	margin-left: 1.5rem;
 }
 
@@ -368,7 +371,7 @@ ul{
 	transition: color 0.3s ease-in-out;
 }
 
-.header .menu > ul > li .menu-subs.menu-column-4 {
+.header .menu > ul > li .menu-subs.menu-column-3 {
 	display: flex;
     flex-wrap: wrap;
 	max-width: 68rem;
@@ -376,12 +379,12 @@ ul{
 	padding: 1.25rem 1rem;
 }
 
-.header .menu > ul > li .menu-subs.menu-column-4 > .list-item {
+.header .menu > ul > li .menu-subs.menu-column-3 > .list-item {
 	flex: 0 0 33.33%;
 	padding: 0 1rem;
 }
 
-.header .menu > ul > li .menu-subs.menu-column-4 > .list-item .title {
+.header .menu > ul > li .menu-subs.menu-column-3 > .list-item .title {
 	font-size: 14px;
     font-weight: 600;
 	font-family: 'Montserrat' , Arial, sans-serif;
@@ -395,7 +398,7 @@ ul{
 	transition: all 0.3s ease-in-out;
 }
 
-.header .menu > ul > li .menu-subs.menu-column-4 > .list-item.text-center .title {
+.header .menu > ul > li .menu-subs.menu-column-3 > .list-item.text-center .title {
 	text-align: center;
 }
 
@@ -457,6 +460,7 @@ ul{
 	color: #ffffff;
 	padding: 0 10px;
 	line-height: 1.2em;
+	margin: 0;
 }
 
 .first-word{
@@ -616,9 +620,10 @@ ul{
 
 .spa_area_one .slick-dots button{
 	display: block;
-	width: 1.3rem;
-	height: 1.3rem;
-	padding: 0;		
+	width: 1rem;
+	height: 1rem;
+	padding: 0;
+	cursor: pointer;	
 	border: solid 1px #6f6f6f;
 	border-radius: 50%;
 	background-color: transparent;
@@ -653,7 +658,7 @@ ul{
 .spa_area_three{
 	position: relative;
 	max-width: 1280px;
-	margin: -325px auto 9em;
+	margin: -300px auto 9em;
 	padding: 0 25px;
 }
 
@@ -688,7 +693,7 @@ ul{
 	color: #ffffff;
 	display: inline-block;
 	text-align: center;
-	padding: 12px;
+	padding: 16px 12px;
 	margin-top: -25px;
 }
 
@@ -712,7 +717,6 @@ ul{
 	letter-spacing: 1px;
 	text-align: left;
 	line-height: 1.5em;
-	padding: 10px 0;
 }
 
 .icon_button a{
@@ -790,6 +794,7 @@ ul{
 	text-align: left;
 	letter-spacing: 1px;
 	line-height: 1.2em;
+	margin: 0;
 }
 
 .info_box p{
@@ -800,7 +805,7 @@ ul{
 	color: #696969;
 	letter-spacing: 1px;
 	text-align: left;
-	padding-top: 15px;
+	padding-top: 10px;
 	line-height: 1.5em;
 }
 
@@ -938,7 +943,7 @@ ul{
 .spa_area_four .slick-dots{
 	position: relative;
 	z-index: 999999;
-	bottom: -30px;
+	bottom: -20px;
 	display: flex;
 	justify-content: center;
 	margin: 0;
@@ -947,9 +952,10 @@ ul{
 }
 
 .spa_area_four .slick-dots button{
-	width: 1.3rem;
-	height: 1.3rem;
-	padding: 0;		
+	width: 1rem;
+	height: 1rem;
+	padding: 0;
+	cursor: pointer;	
 	border: solid 1px #6f6f6f;
 	border-radius: 50%;
 	background-color: transparent;
@@ -1053,6 +1059,13 @@ ul{
 	width: 100%;
 }
 
+.num_center{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
 .grid_title h3{
 	font-family: 'Montserrat' , Arial, sans-serif;
 	font-size: 20px;
@@ -1062,6 +1075,7 @@ ul{
 	text-align: center;
 	letter-spacing: 1px;
 	line-height: 1.4em;
+	margin: 0;
 }
 
 .grid_area{
@@ -1196,6 +1210,7 @@ ul{
 	text-align: left;
 	letter-spacing: 1px;
 	line-height: 1.2em;
+	margin: 0;
 }
 
 .square_box p{
@@ -1206,7 +1221,7 @@ ul{
 	color: #696969;
 	letter-spacing: 1px;
 	text-align: left;
-	padding: 12px 0 0;
+	padding: 10px 0 0;
 	line-height: 1.5em;
 }
 
@@ -1258,7 +1273,7 @@ ul{
 	color: #111111;
 	letter-spacing: 1px;
 	line-height: 1.4em;
-	margin-top: 0;
+	margin: 0;
 	padding-top: 5px;
 }
 
@@ -1271,7 +1286,6 @@ ul{
 	letter-spacing: 1px;
 	text-align: left;
 	line-height: 1.5em;
-	padding: 10px 0;
 }
 
 /* --- 3.7. Spa Area Seven --- */
@@ -1318,6 +1332,7 @@ ul{
 	display: inline-block;
 	text-align: center;
 	margin-top: 30px;
+	padding-bottom: 15px;
 }
 
 .client_col{
@@ -1328,7 +1343,7 @@ ul{
 
 .client_details{
 	max-width: 640px;
-	padding: 20px;
+	padding: 15px;
 	text-align: center;
 	background: rgba(0,0,0,0.5);
 	border-left: solid 4px #f64f59;
@@ -1372,7 +1387,7 @@ ul{
 	color: #dddddd;
 	letter-spacing: 1px;
 	text-align: left;
-	padding: 15px;
+	padding: 10px;
 	line-height: 1.5em;
 }
 
@@ -1387,7 +1402,7 @@ ul{
 /* --- 3.8. Spa Area Eight --- */
 .spa_area_eight{
 	max-width: 1280px;
-	margin: -85px auto 9em;
+	margin: -80px auto 9em;
 	padding: 0 25px;
 	position: relative;
 	z-index: 999;
@@ -1490,7 +1505,6 @@ ul{
 	flex: 41.66%;
 	width: 41.66%;
 	padding: 0 20px;
-	margin-top: 35px;
 }
 
 .blog_head h2{
@@ -1504,6 +1518,7 @@ ul{
 	text-align: left;
 	letter-spacing: 1px;
 	line-height: 1.2em;
+	margin: 0;
 }
 
 .blog_info p{
@@ -1521,7 +1536,7 @@ ul{
 .blog_col{
 	flex: 33.33%;
 	width: 33.33%;
-	padding: 40px 20px 0;
+	padding: 30px 20px 0;
 }
 
 .blog_box{
@@ -1585,7 +1600,7 @@ ul{
 
 .blog_content{
 	text-align: left;
-	padding: 10px 0 20px;
+	padding: 10px 0 22px;
 	padding-left: 15px;
 	box-shadow: 0 20px 70px rgba(38,42,76,.2);
 }
@@ -1670,13 +1685,14 @@ a.blog_btn:hover{
 	text-align: left;
 	letter-spacing: 1px;
 	line-height: 1.2em;
+	margin: 0;
 }
 
 .right_btn{
 	flex: 16.66%;
 	width: 16.66%;
 	padding: 0 20px;
-	margin-top: 42px;
+	margin-top: 25px;
 }
 
 .right_btn a{
@@ -1738,6 +1754,10 @@ a.footer-logo img{
 	margin-top: 10px;
 }
 
+.footer_box > h3{
+	margin: 0;
+}
+
 .footer_box > h3 > a{
 	font-family: 'Montserrat', Arial, sans-serif;
 	font-size: 22px;
@@ -1757,7 +1777,6 @@ a.footer-logo img{
 	color: #111111;
 	text-align: left;
 	padding: 15px 0 15px;
-	line-height: 1.5em;
 	line-height: 1.5em;
 }
 
@@ -1968,6 +1987,7 @@ a.footer-logo img{
 	
 	.header .menu > ul > li > a {
 		display: block;
+		color: #111111;
 		line-height: 3.125rem;
 		height: 3.125rem;
 		padding: 0 3.125rem 0 1rem;
@@ -2087,20 +2107,20 @@ a.footer-logo img{
 		display: block;
 	}
 	
-	.header .menu > ul > li .menu-subs.menu-column-4 > .list-item {
+	.header .menu > ul > li .menu-subs.menu-column-3 > .list-item {
         flex: 0 0 100%;
 		padding: 0rem;
 	}
 	
-	.header .menu > ul > li .menu-subs.menu-column-4 > .list-item img.responsive {
+	.header .menu > ul > li .menu-subs.menu-column-3 > .list-item img.responsive {
 		margin-top: 0;
 	}
 	
-	.header .menu > ul > li .menu-subs.menu-column-4 > .list-item.text-center .title {
+	.header .menu > ul > li .menu-subs.menu-column-3 > .list-item.text-center .title {
 		margin-bottom: 1.25rem;
 	}
 	
-	.header .menu > ul > li .menu-subs.menu-column-4 > .list-item.text-center:last-child .title {
+	.header .menu > ul > li .menu-subs.menu-column-3 > .list-item.text-center:last-child .title {
 		margin-bottom: 0rem;
 	}
 	
@@ -2139,6 +2159,14 @@ a.footer-logo img{
 		margin: 0 auto;
 	}
 	
+	#logo > a{
+		top: 4px;
+	}
+	
+	.brand a{
+		padding-top: 4px;
+	}
+	
 	.head_btn{
 		display: block;
 		margin: 40px auto 0;
@@ -2148,14 +2176,8 @@ a.footer-logo img{
 		padding: 15px 14px;
 	}
 	
-	.header .menu > ul > li > a {
-		color: #111111;
-	}
-	
 	.head_btn a:hover{
-		background: transparent;
 		border-color: #111111;
-		color: #111111;
 	}
 
 	.spa_icon_col{
@@ -2168,7 +2190,7 @@ a.footer-logo img{
 	.info_col{
 		flex: 100%;
 		width: 100%;
-		margin-top: 40px;
+		margin-top: 50px;
 	}
 	
 	.photo_col{
@@ -2189,7 +2211,7 @@ a.footer-logo img{
 	.square_col_right{
 		flex: 100%;
 		width: 100%;
-		margin-top: 40px;
+		margin-top: 50px;
 	}
 	
 	.count_col{
@@ -2210,7 +2232,7 @@ a.footer-logo img{
 	.blog_info{
 		flex: 100%;
 		width: 100%;
-		margin-top: 20px;
+		margin-top: 10px;
 	}
 	
 	.client_col{
@@ -2230,7 +2252,7 @@ a.footer-logo img{
 	.right_btn{
 		flex: 100%;
 		width: 100%;
-		margin-top: 20px;
+		margin-top: 35px;
 	}
 	
 	.footer_col{
@@ -2302,10 +2324,16 @@ a.footer-logo img{
 		flex: 100%;
 		width: 100%;
 		margin: 0;
+		padding-left: 0;
+		padding-right: 0;
 	}
 }
 
 @media only screen and (max-width: 420px){
+	.header{
+		width: calc(100% - 30px);
+	}
+	
 	.header-title__main{
 		font-size: 40px;
 	}
