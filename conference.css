@@ -3,7 +3,7 @@ Main Stylesheet
 
 Project:   Upstake - Multipurpose Website Template
 Version:    1.0
-Last change:    25/05/2026
+Last change:    12/06/2026
 Author:    creativemaze
 Primary use:    Conference
 -------------------------------------------------------------------*/
@@ -123,8 +123,7 @@ ul{
 	letter-spacing: 1px;
 	line-height: 1.2em;
 	max-width: 600px;
-	margin-right: auto;
-	margin-left: auto;
+	margin: 0 auto;
 }
 
 .conference_info{
@@ -216,6 +215,13 @@ ul{
 	display: flex;
     flex: 0 0 80%;
 	justify-content: flex-end;
+}
+
+.header-item-right {
+	display: flex;
+    flex: 0 0 3%;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 .head_btn{
@@ -398,7 +404,7 @@ ul{
 /* --- 2.2. Header Content --- */
 .sliderwrap{
 	position: relative;
-	top: -30px;
+	top: -20px;
 }
 
 .slide__content{
@@ -494,7 +500,7 @@ ul{
 /* --- 3.1. Conference Area One --- */
 .conference_area_one{
 	max-width: 1280px;
-	margin: 0 auto 0;
+	margin: 0 auto 9em;
 	padding: 0 30px;
 	position: relative;
 	z-index: 9999;
@@ -650,7 +656,7 @@ ul{
 	flex: 100%;
 	width: 100%;
 	padding: 0 20px 0;
-	margin-top: 35px;
+	margin-top: 30px;
 }
 
 .grid_box{
@@ -702,7 +708,7 @@ ul{
 	letter-spacing: 1px;
 	text-align: left;
 	line-height: 1.5em;
-	padding-top: 10px;
+	padding-top: 7px;
 	max-width: 500px;
 }
 
@@ -769,7 +775,7 @@ ul{
 	flex: 16.66%;
 	width: 16.66%;
 	padding: 0 20px;
-	margin-top: 140px;
+	margin-top: 150px;
 }
 
 .info_head h2{
@@ -782,6 +788,7 @@ ul{
 	text-align: left;
 	letter-spacing: 1px;
 	line-height: 1.2em;
+	margin: 0;
 }
 
 .info_head p{
@@ -794,7 +801,7 @@ ul{
 	letter-spacing: 1px;
 	text-align: left;
 	line-height: 1.5em;
-	padding-top: 15px;
+	padding-top: 10px;
 }
 
 .right_btn a{
@@ -856,7 +863,7 @@ ul{
 	color: #ffffff;
 	display: inline-block;
 	text-align: center;
-	padding: 12px;
+	padding: 16px 12px;
 	margin-top: -25px;
 }
 
@@ -880,7 +887,7 @@ ul{
 	letter-spacing: 1px;
 	text-align: left;
 	line-height: 1.5em;
-	padding: 10px 0;
+	padding: 7px 0;
 }
 
 .icon_box:hover{
@@ -941,7 +948,7 @@ ul{
 	position: relative;
 	z-index: 1;
 	width: 100%;
-	margin-top: -475px;
+	margin-top: -500px;
 	margin-bottom: calc(9em - 30px);
 }
 
@@ -959,7 +966,7 @@ ul{
 	padding: 10px;
 	width: calc(100% - 10%);
 	min-height: 130px;
-	margin-top: 20px;
+	margin-top: 15px;
 }
 
 .bg_area{
@@ -996,7 +1003,7 @@ ul{
 	font-family: 'Roboto' , Arial, sans-serif;
 	font-size: 16px;
 	font-weight: normal;
-	padding: 0 0 30px;
+	padding: 10px 0 30px;
 	display: block;
 	color: #dddddd;
 	letter-spacing: 1px;
@@ -1102,6 +1109,8 @@ ul{
 	text-align: left;
 	line-height: 1.4em;
 	text-transform: uppercase;
+	margin: 0;
+	padding-bottom: 20px;
 }
 
 .feature_value h4{
@@ -1114,13 +1123,15 @@ ul{
 	text-align: center;
 	line-height: 1.4em;
 	text-transform: uppercase;
+	margin: 0;
+	padding-bottom: 20px;
 }
 
 .feature_bg .feature_heading{
 	visibility: hidden;
 	background-color: #ffffff;
 	box-shadow: 0 20px 70px rgba(38,42,76,.2);
-	padding: 30px 20px;
+	padding: 35px 20px 15px;
 	position: absolute;
 	z-index: 9999;
 	top: 50%;
@@ -1362,8 +1373,8 @@ ul{
 	right: 0;
 }
 
-.team_icon .fab,
-.team_icon .fa{
+.team_icon > a > .fa-brands,
+.team_icon > a > .fa{
 	font-size: 18px;
 	color: #005aa7;
 	display: block;
@@ -1392,9 +1403,14 @@ ul{
 	opacity: 1;
 }
 
-.team_image:hover .team_icon .fab,
+.team_image:hover .team_icon .fa-brands,
 .team_image:hover .team_icon .fa{
 	color: #ffffff;
+}
+
+.team_icon > a > .fa-brands:hover,
+.team_icon > a > .fa:hover{
+	opacity: 0.6;
 }
 
 .team_title{
@@ -1470,7 +1486,7 @@ ul{
 	float: left;
 	width: 50px;
 	border-bottom: solid 2px #005aa7;
-	margin-top: 30px;
+	margin-top: 29px;
 }
 
 .sub_head{
@@ -1489,13 +1505,14 @@ ul{
 	text-align: left;
 	letter-spacing: 1px;
 	line-height: 1.2em;
+	margin: 0;
 }
 
 .query_box > p{
 	font-family: 'Roboto' , Arial, sans-serif;
 	font-size: 16px;
 	font-weight: normal;
-	padding-top: 15px;
+	padding-top: 10px;
 	display: block;
 	color: #696969;
 	letter-spacing: 1px;
@@ -1525,7 +1542,7 @@ ul{
 .query_info_col{
 	flex: 100%;
 	width: 100%;
-	margin-bottom: -15px;
+	margin-bottom: -5px;
 }
 
 .query_info_box{
@@ -1548,7 +1565,7 @@ ul{
 	color: #111111;
 	letter-spacing: 1px;
 	line-height: 1.5em;
-	border-bottom: double 4px #e0e0e0;
+	border-bottom: double 4px #005aa7;
 }
 
 .accordion:after {
@@ -1572,7 +1589,7 @@ ul{
 }
 
 .panel > p{
-	padding: 12px 6px 0;
+	padding: 0 12px 8px 12px;
 	font-family: 'Roboto' , Arial, sans-serif;
 	font-size: 15px;
 	font-weight: normal;
@@ -1705,8 +1722,7 @@ ul{
 	letter-spacing: 1px;
 	line-height: 1.2em;
 	max-width: 600px;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 0 auto;
 }
 
 .mid_info{
@@ -1838,7 +1854,7 @@ ul{
 .slick-dots button{
 	display: inline-block;
 	width: 200px;
-	height: 1.5rem;
+	height: 1rem;
 	padding: 0;		
 	border: solid 1px #6f6f6f;
 	border-radius: 25px;
@@ -1895,6 +1911,7 @@ li.slick-active button{
 	text-align: left;
 	letter-spacing: 1px;
 	line-height: 1.2em;
+	margin: 0;
 }
 
 .blog_head p{
@@ -1907,7 +1924,7 @@ li.slick-active button{
 	letter-spacing: 1px;
 	text-align: left;
 	line-height: 1.5em;
-	padding-top: 15px;
+	padding-top: 10px;
 }
 
 .news_btn a{
@@ -2001,7 +2018,6 @@ li.slick-active button{
 }
 
 a.blog_btn{
-	height: 25px;
     color: #005aa7;
     text-decoration: none;
 	text-transform: uppercase;
@@ -2147,7 +2163,8 @@ a.blog_btn:hover::after {
 	width: 130px;
 	color: #111111;
 	position: relative;
-	bottom: -2px;
+	bottom: -1px;
+	cursor: pointer;
 	transition: 0.5s;
 	background-color: #ffffff;
 	border: solid 1px #ffffff;
@@ -2239,7 +2256,7 @@ a.footer-logo img{
 	font-size: 18px;
 	font-weight: 700;
 	letter-spacing: 1px;
-	color: #111111;
+	color: #ffffff;
 	margin-top: 0;
 }
 
@@ -2344,6 +2361,10 @@ a.footer-logo img{
 		flex: 100%;
 		width: 100%;
 		margin-top: 80px;
+	}
+	
+	.conference_area_one{
+		margin-bottom: calc(9em - 120px);
 	}
 }
 
@@ -2621,9 +2642,7 @@ a.footer-logo img{
 	}
 	
 	.head_btn a:hover{
-		background: transparent;
 		border-color: #111111;
-		color: #111111;
 	}
 	
 	.header-title{
@@ -2638,7 +2657,7 @@ a.footer-logo img{
 	.right_btn{
 		flex: 100%;
 		width: 100%;
-		margin-top: 30px;
+		margin-top: 10px;
 	}
 	
 	.icon_col{
@@ -2688,7 +2707,7 @@ a.footer-logo img{
 	.news_btn{
 		flex: 100%;
 		width: 100%;
-		margin-top: 20px;
+		margin-top: 10px;
 	}
 	
 	.col_info{
