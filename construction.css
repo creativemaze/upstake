@@ -3,7 +3,7 @@ Main Stylesheet
 
 Project:    Upstake - Multipurpose Website Template
 Version:    1.0
-Last change:    24/05/2026
+Last change:   14/06/2026
 Author:    creativemaze
 Primary use:    Construction
 -------------------------------------------------------------------*/
@@ -45,10 +45,6 @@ ul{
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
-}
-
-h2{
-	margin-top: 0;
 }
 
 *{
@@ -126,8 +122,7 @@ h2{
 	letter-spacing: 1px;
 	line-height: 1.2em;
 	max-width: 600px;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 0 auto;
 }
 
 .construct_info{
@@ -138,7 +133,7 @@ h2{
 	color: #696969;
 	letter-spacing: 1px;
 	text-align: center;
-	padding: 10px 10px 0;
+	padding: 20px 10px 0;
 	line-height: 1.5em;
 	max-width: 600px;
 	margin: auto;
@@ -154,8 +149,7 @@ h2{
 	letter-spacing: 1px;
 	line-height: 1.2em;
 	max-width: 650px;
-	margin-right: auto;
-	margin-left: auto;
+	margin: 0 auto;;
 }
 
 /* 2. HEADER
@@ -195,7 +189,7 @@ h2{
 #logo > a{
 	max-width: 160px; 
 	position: relative;
-	top: 2px;
+	top: 4px;
 }
 
 #logo > a img{
@@ -245,7 +239,7 @@ h2{
 .head_btn{
 	max-width: 200px;
 	display: inline-block;
-	margin-bottom: 2px;
+	margin-bottom: 4px;
 }
 
 .head_btn a{
@@ -267,8 +261,8 @@ h2{
 }
 
 .head_btn a:hover{
-	background: transparent;
-	color: #ffffff;
+	background-color: #ffffff;
+	color: #111111;
 	border-color: #ffffff;
 }
 
@@ -276,6 +270,7 @@ h2{
 	display: inline-block;
 	line-height: 2.125rem;
 	margin-left: 1.5rem;
+	margin-top: 6px;
 }
 
 .header .menu > ul > li > a {
@@ -431,12 +426,12 @@ h2{
 	justify-content: flex-start;
 	align-items: center;
 	height: 100vh;
-	min-height: 650px;
+	min-height: 750px;
 }
 
 .slide__content{
 	height: 100vh;
-	min-height: 650px;
+	min-height: 750px;
 	text-align: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -498,12 +493,12 @@ h2{
 	letter-spacing: 1px;
 	text-align: left;
 	max-width: 500px;
-	padding: 15px 0 25px;
+	padding: 0 0 20px;
 }
 
 .buttoncol a{
 	width: 150px;
-    padding: 13px 14px;
+    padding: 14px;
     text-decoration: none;
 	text-transform: uppercase;
     display: inline-block;
@@ -597,6 +592,7 @@ h2{
 	text-align: left;
 	letter-spacing: 1px;
 	line-height: 1.2em;
+	margin: 0;
 }
 
 .right_info_box p{
@@ -607,7 +603,7 @@ h2{
 	color: #dddddd;
 	letter-spacing: 1px;
 	text-align: left;
-	padding: 12px 0;
+	padding: 10px 0;
 	line-height: 1.5em;
 }
 
@@ -628,7 +624,7 @@ h2{
 }
 
 .icon_bottom{
-	margin-top: 190px;
+	margin-top: 192px;
 }
 
 .icon_symbol{
@@ -650,7 +646,7 @@ h2{
 	text-align: left;
 	position: absolute;
 	right: 22px;
-	bottom: 14px
+	bottom: 15px
 }
 
 .icon_content h3{
@@ -770,6 +766,7 @@ h2{
 	text-align: left;
 	letter-spacing: 1px;
 	line-height: 1.2em;
+	margin: 0;
 }
 
 .square_box p{
@@ -780,7 +777,7 @@ h2{
 	color: #696969;
 	letter-spacing: 1px;
 	text-align: left;
-	padding-top: 12px;
+	padding-top: 10px;
 	max-width: 450px;
 	line-height: 1.5em;
 }
@@ -788,7 +785,7 @@ h2{
 .square_info_col{
 	flex: 50%;
 	width: 50%;
-	padding: 25px 30px 20px 0;
+	padding: 20px 30px 20px 0;
 }
 
 .square_title{
@@ -1018,7 +1015,6 @@ h2{
 	font-family: 'Roboto' , Arial, sans-serif;
 	font-size: 16px;
 	font-weight: normal;
-	padding-top: 10px;
 	display: block;
 	color: #dddddd;
 	letter-spacing: 1px;
@@ -1072,7 +1068,7 @@ h2{
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 }
 
 .info_head{
@@ -1099,6 +1095,7 @@ h2{
 	letter-spacing: 1px;
 	line-height: 1.2em;
 	max-width: 550px;
+	margin: 0;
 }
 
 .filtertitle{
@@ -1242,14 +1239,14 @@ h2{
 
 .client_details{
 	max-width: 640px;
-	padding: 20px;
+	padding: 15px;
 	text-align: center;
 	background: rgba(0,0,0,0.5);
 	border-left: solid 4px #ffc91a;
 }
 
 .client_info{
-	margin-bottom: -130px;
+	margin-bottom: -120px;
 	clear: both;
 }
 
@@ -1274,7 +1271,7 @@ h2{
 	color: #dddddd;
 	letter-spacing: 1px;
 	text-align: left;
-	padding: 15px;
+	padding: 10px;
 	line-height: 1.5em;
 }
 
@@ -1288,7 +1285,7 @@ h2{
 
 .quote_format{
 	font-size: 130px;
-	margin-top: -35px;
+	padding-bottom: 15px;
 	color: #ffc91a;
 	display: block;
 	text-align: center;
@@ -1355,6 +1352,7 @@ h2{
 	text-align: left;
 	letter-spacing: 1px;
 	line-height: 1.2em;
+	margin: 0;
 }
 
 .info_box p{
@@ -1365,7 +1363,7 @@ h2{
 	color: #696969;
 	letter-spacing: 1px;
 	text-align: left;
-	padding: 18px 0 25px;
+	padding: 12px 0 25px;
 	max-width: 450px;
 	line-height: 1.5em;
 }
@@ -1393,8 +1391,8 @@ h2{
 }
 
 .cube_num{
-	width: 65px;
-	height: 65px;
+	width: 70px;
+	height: 70px;
 	margin: auto;
 	background-color: #ffc91a;
 	border-radius: 50%;
@@ -2165,7 +2163,7 @@ a.footer-logo img{
 	}
 	
 	.last_space{
-		padding-top: 115px;
+		padding-top: 135px;
 	}
 	
 	.info_col{
