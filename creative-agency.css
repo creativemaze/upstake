@@ -3,7 +3,7 @@ Main Stylesheet
 
 Project:    Upstake - Multipurpose Website Template
 Version:    1.0
-Last change:    28/05/2026
+Last change:    14/06/2026
 Author:    creativemaze
 Primary use:    Creative Agency
 -------------------------------------------------------------------*/
@@ -134,7 +134,7 @@ ul{
 	text-align: center;
 	max-width: 600px;
 	margin: 0 auto;
-	padding: 18px 10px 0;
+	padding: 20px 10px 0;
 	line-height: 1.5em;
 }
 
@@ -202,12 +202,12 @@ ul{
 	top: 0;
 	left: 0;
 	width: 100%;
-	max-width: 1280px;
 	height: auto;
 	padding: 1rem 0;
-	margin: 0 auto 0;
-	border-bottom: solid 1px #e0e0e0;
+	margin: 0 auto;
 	z-index: 99999;
+	border: none;
+	border-bottom: solid 1px #e0e0e0;
 	outline: none;
 }
 
@@ -238,7 +238,7 @@ ul{
 .head_btn{
 	max-width: 200px;
 	display: inline-block;
-	margin-bottom: 6px;
+	margin-bottom: 4px;
 }
 
 .head_btn a{
@@ -623,7 +623,7 @@ ul{
 	font-family: 'Roboto' , Arial, sans-serif;
 	font-size: 16px;
 	font-weight: normal;
-	padding: 15px 0 0;
+	padding: 10px 0 0;
 	display: block;
 	color: #696969;
 	letter-spacing: 1px;
@@ -1028,7 +1028,7 @@ ul{
 	display: inline-block;
 	text-align: center;
 	margin-top: 16px;
-	padding: 12px;
+	padding: 15px 12px;
 	border-radius: 50%;
 }
 
@@ -1063,7 +1063,7 @@ ul{
 	display: inline-block;
 	text-align: center;
 	margin-top: 16px;
-	padding: 12px;
+	padding: 15px 12px;
 	border-radius: 50%;
 }
 
@@ -1133,7 +1133,7 @@ ul{
 /* --- 3.4. Creative Area Four --- */
 .creative_area_four{
 	max-width: 1280px;
-	margin: -375px auto 9em;
+	margin: -390px auto 9em;
 	padding: 0 25px;
 }
 
@@ -1198,7 +1198,7 @@ ul{
 	text-align: center;
 	color: #ffffff;
 	line-height: 1.4em;
-	margin-top: 15px;
+	margin-top: 14px;
 }
 
 .white_num h3{
@@ -1231,7 +1231,7 @@ ul{
 	letter-spacing: 1px;
 	text-align: center;
 	line-height: 1.5em;
-	padding-top: 8px;
+	padding-top: 6px;
 }
 
 .grid_button a{
@@ -1526,6 +1526,7 @@ ul{
 	padding: 15px;
 	overflow: hidden;
 	text-align: center;
+	margin: 0 auto;
 }
 
 .num_center{
@@ -1638,7 +1639,7 @@ ul{
 	text-align: left;
 	padding: 10px 10px 0 15px;
 	box-shadow: 0 20px 70px rgba(38,42,76,.2);
-	padding-bottom: 20px;
+	padding-bottom: 22px;
 }
 
 .blog_image img{
@@ -1783,7 +1784,7 @@ a.blog_btn:hover{
 
 .client_details{
 	max-width: 640px;
-	padding: 20px;
+	padding: 15px;
 	text-align: center;
 	background-color: #f6f6f6;
 	border-left: solid 4px #111111;
@@ -1828,7 +1829,7 @@ a.blog_btn:hover{
 	color: #696969;
 	letter-spacing: 1px;
 	text-align: left;
-	padding: 15px;
+	padding: 10px;
 	line-height: 1.5em;
 }
 
@@ -1845,14 +1846,14 @@ a.blog_btn:hover{
 	color: #ec2f4b;
 	display: inline-block;
 	text-align: center;
-	bottom: -65px;
+	bottom: -50px;
 	position: relative;
 }
 
 .slidenav{
 	position: absolute;
 	right: 24px;
-	top: 115px;
+	top: 90px;
 	padding: 0 10px;
 }
 
@@ -1910,6 +1911,7 @@ a.blog_btn:hover{
 	color: #ffffff;
 	letter-spacing: 1px;
 	line-height: 1.3em;
+	margin-bottom: 0;
 }
 
 .bg_col_button a{
@@ -2454,7 +2456,7 @@ a.footer-logo img{
 	.review_col_left{
 		flex: 100%;
 		width: 100%;
-		margin-bottom: 40px;
+		margin-bottom: 50px;
 	}
 	
 	.review_col_right{
