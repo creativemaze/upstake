@@ -231,18 +231,17 @@ ul{
 }
 
 .header {
-	position: relative;
+	position: absolute;
 	display: block;
 	top: 0;
-	width: calc(100% - 50px);
-	max-width: 1280px;
+	left: 0;
+	width: 100%;
 	height: auto;
-	padding: 1rem;
-	margin-left: auto;
-	margin-right: auto;
-	z-index: 999;
-	margin-top: 35px;
-	background: rgba(0,0,0,0.3);
+	padding: 1rem 0;
+	margin: 0 auto;
+	z-index: 99999;
+	border: none;
+	border-bottom: solid 1px #6f6f6f;
 	outline: none;
 }
 
@@ -261,6 +260,13 @@ ul{
 	display: flex;
     flex: 0 0 80%;
 	justify-content: flex-end;
+}
+
+.header-item-right {
+	display: flex;
+    flex: 0 0 3%;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 .head_btn{
@@ -443,7 +449,6 @@ ul{
 /* --- 2.2. Header Content --- */
 .sliderwrap{
 	position: relative;
-	top: -140px;
 }
 
 .main_content{
@@ -669,7 +674,7 @@ ul{
 	margin-left: auto;
 	margin-right: auto;
 	background-color: #ffffff;
-	margin-top:  -195px;
+	margin-top:  -55px;
 	padding: 25px 25px 0;
 	position: relative;
 	z-index: 9999;
@@ -890,10 +895,10 @@ ul{
 
 .content_button a::after{
 	content: "\203A";
-	margin-left: 6px;
+	margin-left: 9px;
 	padding-top: 5px;
-	width: 42px;
-	height: 38px;
+	width: 40px;
+	height: 36px;
 	font-size: 24px;
 	margin-top: -13px;
 	display: inline-block;
@@ -982,7 +987,7 @@ ul{
 	display: inline-block;
 	background-color: #43cea2;
 	color: #ffffff;
-	padding: 12px;
+	padding: 15px 12px;
 }
 
 /* --- 3.3. Digital Area Three --- */
@@ -1071,8 +1076,8 @@ ul{
 }
 
 .square_num{
-	width: 65px;
-	height: 65px;
+	width: 70px;
+	height: 70px;
 	margin: auto;
 	background-color: #43cea2;
 	border-radius: 50%;
@@ -1325,6 +1330,7 @@ ul{
 	letter-spacing: 1px;
 	text-align: center;
 	line-height: 1.2em;
+	margin: 0;
 }
 
 .price_box h4{
@@ -1335,7 +1341,6 @@ ul{
 	color: #696969;
 	letter-spacing: 1px;
 	text-align: center;
-	padding-top: 6px;
 }
 
 .center_value,
@@ -1496,7 +1501,7 @@ ul{
 	letter-spacing: 1px;
 	text-align: left;
 	line-height: 1.5em;
-	padding-top: 15px;
+	padding-top: 10px;
 	max-width: 450px;
 }
 
@@ -1512,7 +1517,7 @@ ul{
 	color: #111111;
 	letter-spacing: 1px;
 	text-align: left;
-	padding: 6px 0;
+	padding: 10px 0;
 }
 
 .info_list > ul > li::before{
@@ -1859,10 +1864,10 @@ a.blog_btn{
 
 a.blog_btn::after{
 	content: "\203A";
-	margin-left: 6px;
+	margin-left: 9px;
 	padding-top: 5px;
-	width: 42px;
-	height: 38px;
+	width: 40px;
+	height: 36px;
 	font-size: 24px;
 	margin-top: -13px;
 	display: inline-block;
@@ -1904,7 +1909,7 @@ a.blog_btn::after{
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
-	margin-top: -45px;
+	margin-top: -65px;
 }
 
 .client_col{
@@ -1915,14 +1920,14 @@ a.blog_btn::after{
 
 .client_details{
 	max-width: 640px;
-	padding: 20px;
+	padding: 15px;
 	text-align: center;
 	background: rgba(0,0,0,0.5);
 	border-left: solid 4px #43cea2;
 }
 
 .client_info{
-	margin-bottom: -130px;
+	margin-bottom: -120px;
 	clear: both;
 }
 
@@ -1947,7 +1952,7 @@ a.blog_btn::after{
 	color: #dddddd;
 	letter-spacing: 1px;
 	text-align: left;
-	padding: 15px;
+	padding: 10px;
 	line-height: 1.5em;
 }
 
@@ -1961,7 +1966,7 @@ a.blog_btn::after{
 
 .quote_format{
 	font-size: 130px;
-	margin-top: -5px;
+	padding-bottom: 15px;
 	color: #43cea2;
 	display: block;
 	text-align: center;
@@ -1983,7 +1988,7 @@ a.blog_btn::after{
 .digital_area_ten{
 	max-width: 1200px;
 	width: calc(100% - 50px);
-	margin: 0 auto -6.5em;
+	margin: 0 auto -7em;
 	position: relative;
 	z-index: 999;
 	box-shadow: 0 20px 70px rgba(38,42,76,.2);
@@ -1995,30 +2000,31 @@ a.blog_btn::after{
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
-	padding: 40px 30px;
+	padding: 4em 30px;
 }
 
-.sign_head{
+.side_heading{
 	flex: 83.33%;
 	width: 83.33%;
 }
 
-.sign_head h3{
+.side_heading h3{
 	max-width: 650px;
 	color: #111111;
 	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 30px;
+	font-size: 35px;
 	font-weight: 700;
 	display: block;
 	text-align: left;
 	letter-spacing: 1px;
 	line-height: 1.2em;
+	margin: 0;
 }
 
 .right_btn{
 	flex: 16.66%;
 	width: 16.66%;
-	margin-top: 50px;
+	margin-top: 20px;
 }
 
 .right_btn a{
@@ -2061,7 +2067,7 @@ a.blog_btn::after{
 	padding: 0 25px;
 	display: flex;
 	flex-wrap: wrap;
-	padding-top: 6.5em;
+	padding-top: 7em;
 }
 
 .footer_col{
@@ -2618,10 +2624,10 @@ a.footer-logo img{
 	}
 	
 	.last_space{
-		padding-top: 115px;
+		padding-top: 135px;
 	}
 	
-	.sign_head{
+	.side_heading{
 		flex: 100%;
 		width: 100%;
 	}
@@ -2629,7 +2635,7 @@ a.footer-logo img{
 	.right_btn{
 		flex: 100%;
 		width: 100%;
-		margin-top: 20px;
+		margin-top: 25px;
 	}
 	
 	.footer_col{
@@ -2651,9 +2657,8 @@ a.footer-logo img{
 		font-size: 30px;
 	}
 	
-	.sign_head h3{
+	.side_heading h3{
 		font-size: 25px;
-		margin-top: 0;
 	}
 	
 	.digital_col_box,
