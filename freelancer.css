@@ -3,7 +3,7 @@ Main Stylesheet
 
 Project:    Upstake - Multipurpose Website Template
 Version:    1.0
-Last change:    31/05/2026
+Last change:    15/06/2026
 Author:    creativemaze
 Primary use:    Freelancer
 -------------------------------------------------------------------*/
@@ -134,7 +134,7 @@ ul{
 	color: #696969;
 	letter-spacing: 1px;
 	text-align: center;
-	padding: 10px 10px 0;
+	padding: 20px 10px 0;
 	line-height: 1.5em;
 	max-width: 600px;
 	margin: 0 auto;
@@ -163,7 +163,7 @@ ul{
 	color: #d2d2d2;
 	letter-spacing: 1px;
 	text-align: center;
-	padding: 10px 10px 0;
+	padding: 20px 10px 0;
 	line-height: 1.5em;
 	max-width: 600px;
 	margin: 0 auto;
@@ -253,6 +253,13 @@ ul{
 	display: flex;
     flex: 0 0 80%;
 	justify-content: flex-end;
+}
+
+.header-item-right {
+	display: flex;
+    flex: 0 0 3%;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 .head_btn{
@@ -484,7 +491,7 @@ ul{
 .buttoncol a{
 	width: 170px;
 	margin-top: 25px;	
-    padding: 14px 15px;
+    padding: 14px;
     text-decoration: none;
 	text-transform: uppercase;
     display: inline-block;
@@ -712,7 +719,7 @@ li.slick-active button{
 	font-family: 'Roboto' , Arial, sans-serif;
 	font-size: 16px;
 	font-weight: normal;
-	padding-top: 15px;
+	padding-top: 10px;
 	display: block;
 	color: #696969;
 	letter-spacing: 1px;
@@ -839,7 +846,7 @@ li.slick-active button{
 	width: 150px;
 	margin: 20px 0 0;
     color: #ffffff;
-    padding: 13px 14px;
+    padding: 14px;
     text-decoration: none;
 	text-transform: uppercase;
     display: block;
@@ -1023,7 +1030,7 @@ li.slick-active button{
 	display: inline-block;
 	text-align: center;
 	margin-top: 16px;
-	padding: 12px;
+	padding: 15px 12px;
 	border-radius: 50%;
 }
 
@@ -1058,7 +1065,7 @@ li.slick-active button{
 	display: inline-block;
 	text-align: center;
 	margin-top: 16px;
-	padding: 12px;
+	padding: 15px 12px;
 	border-radius: 50%;
 }
 
@@ -1446,7 +1453,7 @@ li.slick-active button{
 .blog_content{
 	width: calc(100% - 40px);
 	background-color: #ffffff;
-	padding: 20px 5px 20px 15px;
+	padding: 20px 5px 22px 15px;
 	position: relative;
 	bottom: 45px;
 	margin: auto;
@@ -1629,6 +1636,8 @@ a.blog_btn:hover{
 	text-align: center;
 	color: #111111;
 	letter-spacing: 1px;
+	margin: 0;
+	padding-top: 12px;
 }
 
 .counter.percent::after{
@@ -1716,7 +1725,7 @@ a.blog_btn:hover{
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	line-height: 1.2em;
-	margin-bottom: 0;
+	margin: 0;
 }
 
 .form-row {
@@ -1772,7 +1781,7 @@ a.blog_btn:hover{
 	font-size: 14px;
 	font-weight: 600;
 	text-transform: uppercase;
-	margin: 10px 0;
+	margin: 18px 0 0;
 	width: 160px;
 	height: 40px;
 	text-align: center;
@@ -1782,6 +1791,7 @@ a.blog_btn:hover{
 	border: solid 1px #d31027;
 	border-radius: 0;
 	transition: 0.5s;
+	cursor: pointer;
 }
 
 .form_box input[type="submit"]:hover{
