@@ -3,7 +3,7 @@ Main Stylesheet
 
 Project:    Upstake - Multipurpose Website Template
 Version:    1.0
-Last change:    31/05/2026
+Last change:    15/06/2026
 Author:    creativemaze
 Primary use:    Insurance
 -------------------------------------------------------------------*/
@@ -233,13 +233,20 @@ ul{
 	justify-content: flex-end;
 }
 
+.header-item-right {
+	display: flex;
+    flex: 0 0 3%;
+    align-items: center;
+    justify-content: flex-end;
+}
+
 .head_btn{
 	max-width: 200px;
 	display: inline-block;
 }
 
 .head_btn a{
-	background-color: #7300a5;
+	background-color: #d60027;
 	width: 150px;
 	margin: 0 auto;
 	padding: 5px;
@@ -251,7 +258,7 @@ ul{
 	font-weight: 600;
 	font-family: 'Montserrat', Arial, sans-serif;
     transition: 0.5s;
-	border: 1px solid #7300a5;
+	border: 1px solid #d60027;
 	letter-spacing: 1px;
 	text-align: center;
 }
@@ -481,9 +488,9 @@ ul{
 }
 
 .buttoncol a{
-	background-color: #ffffff;
+	background-color: #7300a5;
 	width: 160px;
-    color: #111111;
+    color: #ffffff;
     padding: 15px 14px;
     text-decoration: none;
 	text-transform: uppercase;
@@ -492,15 +499,15 @@ ul{
 	font-weight: 600;
 	font-family: 'Montserrat', Arial, sans-serif;
     transition: 0.5s;
-	border: 1px solid #ffffff;
+	border: 1px solid #7300a5;
 	letter-spacing: 1px;
 	text-align: center;
 }
 
 .buttoncol a:hover{
-	color: #ffffff;
-	background-color: #111111;
-	border-color: #111111;
+	color: #111111;
+	background-color: #ffffff;
+	border-color: #ffffff;
 }
 
 /* 3. MAIN CONTENT
@@ -687,6 +694,7 @@ ul{
 	background-color: #7300a5;
 	border: solid 1px #7300a5;
 	transition: 0.5s;
+	cursor: pointer;
 }
 
 .form-panel input[type="submit"]:hover{
@@ -711,7 +719,8 @@ ul{
 	display: block;
 	width: 1rem;
 	height: 1rem;
-	padding: 0;		
+	padding: 0;
+	cursor: pointer;	
 	border: solid 1px #6f6f6f;
 	border-radius: 100%;
 	background-color: transparent;
@@ -968,7 +977,7 @@ li.slick-active button{
 	width: 160px;
 	margin: 30px 0 0;
     color: #ffffff;
-    padding: 13px 14px;
+    padding: 15px 14px;
     text-decoration: none;
 	text-transform: uppercase;
     display: block;
@@ -1053,7 +1062,7 @@ li.slick-active button{
 	font-size: 16px;
 	font-weight: normal;
 	display: block;
-	color: #f2f2f2;
+	color: #dddddd;
 	letter-spacing: 1px;
 	text-align: left;
 	line-height: 1.5em;
@@ -1097,7 +1106,7 @@ li.slick-active button{
 	width: 100%;
 	background-color: #eeeeee;
 	overflow-y: auto;
-	padding: 15px 25px 20px;
+	padding: 15px 25px 22px;
 }
 
 .grid_icon{
@@ -1281,7 +1290,7 @@ li.slick-active button{
 	font-family: 'Roboto' , Arial, sans-serif;
 	font-size: 16px;
 	font-weight: normal;
-	padding-top: 15px;
+	padding-top: 10px;
 	display: block;
 	color: #696969;
 	letter-spacing: 1px;
@@ -1355,7 +1364,7 @@ li.slick-active button{
 	font-family: 'Roboto' , Arial, sans-serif;
 	font-size: 15px;
 	font-weight: normal;
-	padding-top: 7px;
+	padding-top: 5px;
 	display: block;
 	color: #696969;
 	letter-spacing: 1px;
@@ -1597,7 +1606,8 @@ li.slick-active button{
 	text-align: center;
 	color: #111111;
 	letter-spacing: 1px;
-	margin-bottom: 0;
+	margin: 0;
+	padding-top: 12px;
 }
 
 .counter.percent::after{
@@ -1690,7 +1700,7 @@ li.slick-active button{
 .blog_content{
 	width: calc(100% - 40px);
 	background-color: #ffffff;
-	padding: 20px 5px 20px 15px;
+	padding: 20px 5px 22px 15px;
 	position: relative;
 	bottom: 45px;
 	margin: auto;
@@ -2246,6 +2256,10 @@ a.footer-logo img{
 		padding: 15px 14px;
 	}
 	
+	.head_btn a:hover{
+		border-color: #111111;
+	}
+	
 	.header-title{
 		margin-left: 5vw;
 	}
@@ -2311,7 +2325,7 @@ a.footer-logo img{
 	.info_col{
 		flex: 100%;
 		width: 100%;
-		margin-bottom: 80px;
+		margin-bottom: 90px;
 	}
 	
 	.count_col{
@@ -2441,12 +2455,18 @@ a.footer-logo img{
 }	
 
 @media only screen and (max-width: 420px){
+	.header{
+		width: calc(100% - 30px);
+	}
+	
 	.feature_col,
 	.grid_col,
 	.blog_col{
 		padding-left: 0;
 		padding-right: 0;
 	}
+	
+	
 	
 	.photo_content{
 		margin-left: 45px;
@@ -2458,10 +2478,6 @@ a.footer-logo img{
 }
 
 @media only screen and (max-width: 390px){
-	.header{
-		width: calc(100% - 30px);
-	}
-	
 	.photo_content{
 		margin-left: 25px;
 	}
