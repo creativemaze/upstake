@@ -3,7 +3,7 @@ Main Stylesheet
 
 Project:    Upstake - Multipurpose Website Template
 Version:    1.0
-Last change:    31/05/2026
+Last change:    15/06/2026
 Author:    creativemaze
 Primary use:    Gym-Fitness
 -------------------------------------------------------------------*/
@@ -149,7 +149,7 @@ ul{
 	color: #696969;
 	letter-spacing: 1px;
 	text-align: center;
-	padding-top: 25px;
+	padding-top: 20px;
 	line-height: 1.5em;
 	max-width: 600px;
 	margin: 0 auto;
@@ -202,7 +202,7 @@ ul{
 }
 
 .header {
-	position:relative;
+	position: relative;
 	display: block;
 	top: 0;
 	left: 0;
@@ -572,7 +572,7 @@ ul{
 	text-align: center;
 	background-color: #d31027;
 	color: #ffffff;
-	padding: 12px;
+	padding: 15px 12px;
 }
 
 .icon_content h3{
@@ -932,7 +932,7 @@ ul{
 	font-family: 'Roboto' , Arial, sans-serif;
 	font-size: 16px;
 	font-weight: normal;
-	padding-top: 7px;
+	padding-top: 4px;
 	display: block;
 	color: #696969;
 	letter-spacing: 1px;
@@ -964,7 +964,7 @@ ul{
 }
 
 .bg_button a:hover{
-	color: #ffffff;
+	color: #111111;
 }
 
 .slidenav{
@@ -1013,7 +1013,7 @@ ul{
 	position: relative;
 	flex: 33.33%;
 	width: 33.33%;
-	padding: 40px 0 0;
+	padding: 30px 0 0;
 	max-width: 400px;
 	height: 400px;
 }
@@ -1097,6 +1097,7 @@ ul{
 	color: #ffffff;
 	letter-spacing: 1px;
 	line-height: 1.4em;
+	margin: 0;
 }
 
 .grid_title a{
@@ -1110,6 +1111,7 @@ ul{
     transition: 0.5s;
 	letter-spacing: 1px;
 	text-align: center;
+	padding-top: 10px;
 }
 
 .grid_title a::after{
@@ -1159,7 +1161,7 @@ ul{
 	height: 42px;
 	border-radius: 50%;
 	padding: 28px 16px 12px 32px;
-	margin-top: 110px;
+	margin-top: 115px;
 }
 
 .video-play-button:before {
@@ -1219,7 +1221,7 @@ ul{
 /* --- 3.6. Gym Area Six --- */
 .gym_area_six{
 	max-width: 1280px;
-	margin: -350px auto 9em;
+	margin: -375px auto 9em;
 	padding: 0 20px;
 	position: relative;
 	z-index: 9;
@@ -1482,7 +1484,7 @@ ul{
 	text-align: left;
 	padding: 10px 10px 15px 15px;
 	box-shadow: 0 20px 70px rgba(38,42,76,.2);
-	padding-bottom: 20px;
+	padding-bottom: 22px;
 }
 
 .blog_title a{
@@ -1552,7 +1554,7 @@ a.blog_btn:hover{
 /* --- 3.9. Gym Area Nine --- */
 .gym_area_nine{
 	max-width: 1240px;
-	margin: -200px auto;
+	margin: -195px auto;
 	padding: 0 25px;
 	margin-bottom: calc(9em + 50px);
 }
@@ -1572,7 +1574,7 @@ a.blog_btn:hover{
 
 .client_details{
 	max-width: 640px;
-	padding: 15px 20px;
+	padding: 15px;
 	text-align: center;
 	box-shadow: 0 20px 70px rgba(38,42,76,.2);
 	background-color: #ffffff;
@@ -1617,7 +1619,7 @@ a.blog_btn:hover{
 	color: #696969;
 	letter-spacing: 1px;
 	text-align: left;
-	padding: 15px;
+	padding: 10px;
 	line-height: 1.5em;
 }
 
@@ -1640,7 +1642,7 @@ a.blog_btn:hover{
 /* --- 3.10. Gym Area Ten --- */
 .gym_area_ten{
 	max-width: 1100px;
-	margin: 0 auto -4.5em;
+	margin: 0 auto -4em;
 	padding: 0 20px;
 	position: relative;
 	z-index: 999;
@@ -1714,7 +1716,7 @@ a.blog_btn:hover{
 	padding: 0 25px;
 	display: flex;
 	flex-wrap: wrap;
-	padding-top: 4.5em;
+	padding-top: 4em;
 }
 
 .footer_col{
@@ -2362,5 +2364,9 @@ a.footer-logo img{
 	
 	.feature_bg .feature_heading{
 		left: -225%;
+	}
+	
+	.video-play-button{
+		margin-top: 130px;
 	}
 }
