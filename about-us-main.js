@@ -1,5 +1,29 @@
 "use strict";
-//Slick Slider
+//Slick Slider (1) One
+$(document).ready(function(){
+	$('.feature_slider').slick({
+		slidesToShow: 4,
+		autoplay: false,
+		infinite: true,
+		speed: 1000,
+		arrows: false,
+		dots: false,
+		pauseOnHover: false,
+		pauseOnFocus: false,
+		responsive: [
+			{
+				breakpoint: 801,
+				settings: {
+					slidesToShow: 1,
+					dots: true,
+					fade: true
+				}			
+			},
+		]
+	});
+});
+
+//Slick Slider (2) Two
 $(document).ready(function(){
 	$('.bg_slider').slick({
 		dots: true,
@@ -40,13 +64,13 @@ $(document).ready(function(){
 	
 });
 
-// Add active class to the current button (highlight it)
+// Add current class to the current button (highlight it)
 var btns = document.getElementsByClassName("accordion");
 for (var i = 0; i < btns.length; i++) {
 	btns[i].addEventListener("click", function(){
-		var current = document.getElementsByClassName("active");
-		current[0].className = current[0].className.replace(" active", "");
-		this.className += " active";
+		var current = document.getElementsByClassName("current");
+		current[0].className = current[0].className.replace(" current", "");
+		this.className += " current";
 	});
 }
 
@@ -56,7 +80,7 @@ var acc = document.getElementsByClassName("accordion");
 
 	for (i = 0; i < acc.length; i++) {
 		acc[i].addEventListener("click", function() {
-			this.classList.toggle("active-bar");
+			this.classList.toggle("current-bar");
 			var panel = this.nextElementSibling;
 			if (panel.style.maxHeight) {
 				panel.style.maxHeight = null;

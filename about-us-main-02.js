@@ -10,47 +10,6 @@ $( window ).on( "load", function(){
 	});
 });
 
-//Filter Gallery
-jQuery(document).ready(function($) {
-	$('.filter-container').filterizr({});
-});
-
-// Add active class to the current button (highlight it)
-var btnContainer = document.getElementById("filtergroup");
-var btns = btnContainer.getElementsByClassName("filtertitle");
-for (var i = 0; i < btns.length; i++) {
-	btns[i].addEventListener("click", function(){
-		var current = document.getElementsByClassName("active");
-		current[0].className = current[0].className.replace(" active", "");
-		this.className += " active";
-	});
-}
-
-//F.A.Q.S Accordion
-var acc = document.getElementsByClassName("accordion");
-var i;
-for (i = 0; i < acc.length; i++) {
-	acc[i].addEventListener("click", function() {
-		this.classList.toggle("active-bar");
-		var panel = this.nextElementSibling;
-		if (panel.style.maxHeight) {
-			panel.style.maxHeight = null;
-		} else {
-			panel.style.maxHeight = panel.scrollHeight + "px";
-		} 
-	});
-}
-
-//MagnificPopup Video
-$('#play-video').magnificPopup({
-	disableOn: 300,
-	type: 'iframe',
-	mainClass: 'mfp-fade',
-	removalDelay: 300,
-	preloader: false,
-	fixedContentPos: false
-});
-
 //Animate on Scroll default settings
 $(window).on('load', function () {
 	AOS.refresh();
