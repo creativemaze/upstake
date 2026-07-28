@@ -3,7 +3,7 @@ Main Stylesheet
 
 Project:     Upstake - Multipurpose Website Template
 Version:    1.0
-Last change:    08/06/2026
+Last change:    30/06/2026
 Author:    creativemaze
 Primary use:    Architecture
 -------------------------------------------------------------------*/
@@ -198,7 +198,7 @@ ul{
 	height: auto;
 	padding: 1rem 0;
 	margin: 0 auto;
-	z-index: 99999;
+	z-index: 99;
 	border: none;
 	border-bottom: solid 1px #6f6f6f;
 	outline: none;
@@ -501,7 +501,7 @@ ul{
 
 .video-play-button{
 	position: absolute;
-	z-index: 10;
+	z-index: 999;
 	left: 0;
 	top: 50%;
 	transform: translateY(-50%);
@@ -1481,7 +1481,7 @@ ul{
 
 .featured_item{
 	position: absolute;
-	left: 20px;
+	left: 15px;
 	top: calc(50% - 60px);
 	z-index: 100;
 }
@@ -2662,6 +2662,11 @@ a.footer-logo img{
 		width: 50%;
 	}
 	
+	.blog_col{
+		flex: 50%;
+		width: 50%;
+	}
+	
 	.slick-dots{
 		display: block;
 	}
@@ -2744,7 +2749,7 @@ a.footer-logo img{
 	
 	.featured_item{
 		left: 10px;
-		top: 5px;
+		top: 10px;
 	}
 	
 	.count_col{
@@ -2858,15 +2863,6 @@ a.footer-logo img{
 	.featured_item{
 		left: 5px;
 	}
-	
-	.featured_name{
-		left: -20px;
-		bottom: 140px;
-	}
-	
-	.side_num{
-		left: -20px;
-	}
 }
 
 @media only screen and (max-width: 385px){
@@ -2886,6 +2882,7 @@ a.footer-logo img{
 @media only screen and (max-width: 360px){
 	.featured_name{
 		bottom: 110px;
+		left: -10px;
 	}
 	
 	.side_num{
