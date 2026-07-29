@@ -3,7 +3,7 @@ Main Stylesheet
 
 Project:     Upstake - Multipurpose Website Template
 Version:    1.0
-Last change:    02/06/2026
+Last change:    30/06/2026
 Author:    creativemaze
 Primary use:    Medical
 -------------------------------------------------------------------*/
@@ -2209,7 +2209,11 @@ a.footer-logo img{
 	.right_btn{
 		flex: 100%;
 		width: 100%;
-		margin-top: 10px;
+		margin-top: 0;
+	}
+	
+	.title_head h3{
+		margin-top: 0;
 	}
 	
 	.footer_col{

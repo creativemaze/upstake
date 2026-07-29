@@ -1988,7 +1988,7 @@ a.blog_btn::after{
 .digital_area_ten{
 	max-width: 1200px;
 	width: calc(100% - 50px);
-	margin: 0 auto -7em;
+	margin: 0 auto -6.5em;
 	position: relative;
 	z-index: 999;
 	box-shadow: 0 20px 70px rgba(38,42,76,.2);
@@ -2067,7 +2067,7 @@ a.blog_btn::after{
 	padding: 0 25px;
 	display: flex;
 	flex-wrap: wrap;
-	padding-top: 7em;
+	padding-top: 6.5em;
 }
 
 .footer_col{
