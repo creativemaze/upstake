@@ -3,7 +3,7 @@ Main Stylesheet
 
 Project:   Upstake - Multipurpose Website Template
 Version:    1.0
-Last change:   14/06/2026
+Last change:   30/06/2026
 Author:    creativemaze
 Primary use:    Consulting
 -------------------------------------------------------------------*/
@@ -248,6 +248,7 @@ ul{
 .head_btn a{
 	background-color: #111111;
 	width: 150px;
+	margin: 0 auto;
     color: #ffffff;
     padding: 5px;
     text-decoration: none;
@@ -2137,7 +2138,7 @@ a.footer-logo img{
 	}
 	
 	.header .menu .menu-mobile-header .menu-mobile-title {
-		font-family: 'Montserrat' , Arial, sans-serif;
+		font-family: 'Raleway' , Arial, sans-serif;
 		font-size: 1rem;
 		font-weight: 600;
 		line-height: inherit;
@@ -2274,6 +2275,10 @@ a.footer-logo img{
 	
 	.head_btn a{
 		padding: 15px 14px;
+	}
+	
+	.head_btn a:hover{
+		border-color: #111111;
 	}
 	
 	.head_btn a:hover{
@@ -2470,7 +2475,6 @@ a.footer-logo img{
 }
 
 @media only screen and (max-width: 420px){
-	.header,
 	.sliderwrap,
 	.bg_group,
 	.consult_area_six,
@@ -2495,8 +2499,7 @@ a.footer-logo img{
 	.sliderwrap,
 	.bg_group,
 	.consult_area_six,
-	.footer,
-	.header{
+	.footer{
 		width: calc(100% - 30px);
 	}
 }
