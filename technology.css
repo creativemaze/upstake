@@ -222,6 +222,7 @@ ul{
 .head_btn a{
 	background-color: #ffffff;
 	width: 150px;
+	margin: 0 auto;
     color: #1488cc;
 	padding: 5px;
     text-decoration: none;
@@ -393,7 +394,6 @@ ul{
 /* --- 2.2. Header Content --- */
 .sliderwrap{
 	position: relative;
-
 }
 
 .slidearea{
