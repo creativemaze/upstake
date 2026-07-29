@@ -41,8 +41,8 @@ $(document).ready(function(){
 
 //Count down script
 $( window ).on( "load", function(){
-	const startDate = new Date('Oct 14, 2026 09:00');
-	const endDate = new Date('Oct 25, 2026 14:00');
+	const startDate = new Date('Oct 31, 2026 09:00');
+	const endDate = new Date('Nov 14, 2026 14:00');
 	const currentDate = new Date();
 	
 	$('#timer-date').countdown(startDate, {elapse: true})
