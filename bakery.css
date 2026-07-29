@@ -3,7 +3,7 @@ Main Stylesheet
 
 Project:     Upstake - Multipurpose Website Template
 Version:    1.0
-Last change:    08/06/2026
+Last change:    30/06/2026
 Author:    creativemaze
 Primary use:    Bakery
 -------------------------------------------------------------------*/
@@ -227,7 +227,7 @@ ul{
 	margin-left: auto;
 	margin-right: auto;
 	z-index: 999999;
-	margin-top: 35px;
+	margin-top: 25px;
 	background: #71b280;
 	outline: none;
 }
@@ -2416,6 +2416,10 @@ a.footer-logo img{
 }	
 
 @media only screen and (max-width: 420px){
+	.header{
+		width: calc(100% - 30px);
+	}
+	
 	.blog_col,
 	.grid_col,
 	.left_info_col,
@@ -2446,11 +2450,6 @@ a.footer-logo img{
 }
 
 @media only screen and (max-width: 390px){
-	.header{
-		width: calc(100% - 30px);
-	}
-	
-	
 	.square_color_box{
 		width: 250px;
 		height: 250px;

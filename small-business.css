@@ -3,7 +3,7 @@ Main Stylesheet
 
 Project:    Upstake - Multipurpose Website Template
 Version:    1.0
-Last change:    08/06/2026
+Last change:    30/06/2026
 Author:    creativemaze
 Primary use:    Small Business
 -------------------------------------------------------------------*/
@@ -251,6 +251,13 @@ ul{
 	justify-content: flex-end;
 }
 
+.header-item-right {
+	display: flex;
+    flex: 0 0 3%;
+    align-items: center;
+    justify-content: flex-end;
+}
+
 .head_btn{
 	max-width: 200px;
 	display: inline-block;
@@ -260,6 +267,7 @@ ul{
 .head_btn a{
 	background-color: #111111;
 	width: 150px;
+	margin: 0 auto;
     color: #ffffff;
     padding: 5px;
     text-decoration: none;
@@ -2462,6 +2470,10 @@ a.footer-logo img{
 }
 
 @media only screen and (max-width: 420px){
+	.header{
+		width: calc(100% - 30px);
+	}
+	
 	.base_content{
 		width: 180px;
 		height: 180px;
@@ -2485,10 +2497,6 @@ a.footer-logo img{
 }
 
 @media only screen and (max-width: 390px){
-	.header{
-		width: calc(100% - 30px);
-	}
-	
 	.slide__box h2{
 		font-size: 25px;
 	}
