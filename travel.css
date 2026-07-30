@@ -3,7 +3,7 @@ Main Stylesheet
 
 Project:    Upstake - Multipurpose Website Template
 Version:    1.0
-Last change:    08/06/2026
+Last change:    30/06/2026
 Author:    creativemaze
 Primary use:    Travel
 -------------------------------------------------------------------*/
@@ -220,11 +220,9 @@ ul{
 	width: calc(100% - 50px);
 	max-width: 1280px;
 	height: auto;
-	padding: 1rem;
-	margin-left: auto;
-	margin-right: auto;
-	z-index: 999999;
-	margin-top: 35px;
+	padding: 1rem 0;
+	margin: 25px auto 0;
+	z-index: 9999;
 	background: rgba(24, 25, 34, 0.5);
 	outline: none;
 }
@@ -495,7 +493,7 @@ ul{
 /* --- 3.1. Travel Area One --- */ 
 .travel_area_one{
 	position: relative;
-	z-index: 9999;
+	z-index: 999;
 	width: 100%;
 	margin-top: -250px;
 	min-height: 300px;
@@ -2286,6 +2284,10 @@ a.footer-logo img{
 }
 
 @media only screen and (max-width: 420px){
+	.header{
+		width: calc(100% - 30px);
+	}
+	
 	.blog_col,
 	.client_col{
 		padding-left: 0;
@@ -2295,12 +2297,6 @@ a.footer-logo img{
 	.prev_slide,
 	.next_slide{
 		font-size: 40px;
-	}
-}
-
-@media only screen and (max-width: 390px){
-	.header{
-		width: calc(100% - 30px);
 	}
 }
 
