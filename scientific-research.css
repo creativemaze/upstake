@@ -3,7 +3,7 @@ Main Stylesheet
 
 Project:     Upstake - Multipurpose Website Template
 Version:    1.0
-Last change:    02/06/2026
+Last change:    02/07/2026
 Author:    creativemaze
 Primary use:    Scientific Research
 -------------------------------------------------------------------*/
@@ -219,6 +219,13 @@ ul{
 	justify-content: flex-end;
 }
 
+.header-item-right {
+	display: flex;
+    flex: 0 0 3%;
+    align-items: center;
+    justify-content: flex-end;
+}
+
 .head_btn{
 	max-width: 200px;
 	display: inline-block;
@@ -228,6 +235,7 @@ ul{
 .head_btn a{
 	background-color: #22c1c3;
 	width: 150px;
+	margin: 0 auto;
     color: #ffffff;
     padding: 5px;
     text-decoration: none;
@@ -1104,7 +1112,6 @@ ul{
 	font-family: 'Roboto' , Arial, sans-serif;
 	font-size: 16px;
 	font-weight: normal;
-	padding-top: 10px;
 	display: block;
 	color: #dddddd;
 	letter-spacing: 1px;
@@ -1182,7 +1189,8 @@ ul{
 .research_area_five .slick-dots button{
 	width: 1rem;
 	height: 1rem;
-	padding: 0;		
+	padding: 0;
+	cursor: pointer;	
 	border: solid 1px #6f6f6f;
 	border-radius: 100%;
 	background-color: transparent;
@@ -2428,6 +2436,10 @@ a.footer-logo img{
 }	
 
 @media only screen and (max-width: 420px){
+	.header{
+		width: calc(100% - 30px);
+	}
+	
 	.header-title {
 		padding: 35px 25px;
 		max-width: 350px;
@@ -2458,12 +2470,6 @@ a.footer-logo img{
 	
 	.research_group_six{
 		width: 100%;
-	}
-}
-
-@media only screen and (max-width: 385px){
-	.header{
-		width: calc(100% - 30px);
 	}
 }
 

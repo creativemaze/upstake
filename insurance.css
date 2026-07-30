@@ -3,7 +3,7 @@ Main Stylesheet
 
 Project:    Upstake - Multipurpose Website Template
 Version:    1.0
-Last change:    15/06/2026
+Last change:    01/07/2026
 Author:    creativemaze
 Primary use:    Insurance
 -------------------------------------------------------------------*/
@@ -207,11 +207,9 @@ ul{
 	width: calc(100% - 50px);
 	max-width: 1280px;
 	height: auto;
-	padding: 1rem;
-	margin-left: auto;
-	margin-right: auto;
+	padding: 1rem 0;
+	margin: 25px auto 0;
 	z-index: 9999;
-	margin-top: 35px;
 	background-color: #111111;
 	outline: none;
 }
@@ -2465,8 +2463,6 @@ a.footer-logo img{
 		padding-left: 0;
 		padding-right: 0;
 	}
-	
-	
 	
 	.photo_content{
 		margin-left: 45px;
