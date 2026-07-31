@@ -3,7 +3,7 @@ Main Stylesheet
 
 Project:    Upstake - Multipurpose Website Template
 Version:    1.0
-Last change:    26/05/2026
+Last change:    14/06/2026
 Author:    creativemaze
 Primary use:    Corporate
 -------------------------------------------------------------------*/
@@ -1657,7 +1657,8 @@ ul{
 	display: block;
 	width: 1rem;
 	height: 1rem;
-	padding: 0;		
+	padding: 0;
+	cursor: pointer;
 	border: solid 1px #ffffff;
 	border-radius: 100%;
 	background-color: transparent;
