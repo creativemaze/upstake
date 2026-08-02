@@ -494,7 +494,7 @@ ul{
 	width: 400px;
 	background-color: #ffffff;
 	border: none;
-	margin-right: -4px;
+	margin-right: -5px;
 }
 
 .search-row input[type="text"]::placeholder{
