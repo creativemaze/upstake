@@ -142,7 +142,7 @@ ul{
 	width: 50px;
 	height: 1px;
 	border-bottom: solid 2px #999966;
-	margin-top: 25px;
+	margin-top: 24px;
 	text-align: center;
 }
 
@@ -164,7 +164,6 @@ ul{
 	text-transform: uppercase;
 	line-height: 1.5em;
 	margin-bottom: 0;
-	
 }
 
 /* 2. HEADER
@@ -489,7 +488,7 @@ ul{
 	width: 50px;
 	height: 1px;
 	border-bottom: solid 2px #999966;
-	margin-top: 20px;
+	margin-top: 19px;
 	text-align: center;
 }
 
