@@ -1634,7 +1634,7 @@ ul{
 	text-align: left;
 	text-transform: uppercase;
 	display: inline-block;
-	color: #ffffff;
+	color: #1488cc;
 	text-decoration: none;
 	max-width: 130px;
 	transition: 0.5s;
@@ -1651,7 +1651,7 @@ ul{
 }
 
 .area_button a:hover{
-	color: #1488cc;
+	color: #ffffff;
 }
 
 .elearning_area_six .slick-dots {
