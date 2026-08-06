@@ -3,7 +3,7 @@ Main Stylesheet
 
 Project:    Upstake - Multipurpose Website Template
 Version:    1.0
-Last change:    29/05/2026
+Last change:    01/07/2026
 Author:     creativemaze
 Primary use:    E-Learning
 -------------------------------------------------------------------*/
@@ -126,6 +126,7 @@ ul{
 	max-width: 600px;
 	margin-right: auto;
 	margin-left: auto;
+	margin-bottom: 0;
 }
 
 .elearning_center_sub{
@@ -154,6 +155,7 @@ ul{
 	max-width: 600px;
 	margin-right: auto;
 	margin-left: auto;
+	margin-bottom: 0;
 }
 
 .first_bg{
@@ -710,12 +712,13 @@ ul{
 	background-color: #182848;
 	border: solid 1px #182848;
 	transition: 0.5s;
+	cursor: pointer;
 }
 
 .form-panel input[type="submit"]:hover{
-	background-color: #111111;
-	color: #ffffff;
-	border: solid 1px #111111;
+	background-color: #ffffff;
+	color: #111111;
+	border-color: #111111;
 }
 
 .buttoncol{
@@ -855,7 +858,8 @@ ul{
 	display: block;
 	width: 1rem;
 	height: 1rem;
-	padding: 0;		
+	padding: 0;
+	cursor: pointer;	
 	border: solid 1px #6f6f6f;
 	border-radius: 50%;
 	background-color: transparent;
@@ -1209,7 +1213,7 @@ ul{
 	text-align: center;
 	background-color: #ffffff;
 	color: #1488cc;
-	padding: 12px;
+	padding: 15px 12px;
 }
 
 .icon_content h3{
@@ -1258,7 +1262,7 @@ ul{
 	flex: 16.66%;
 	width: 16.66%;
 	padding: 0 20px;
-	margin-top: 130px;
+	margin-top: 150px;
 }
 
 .info_head h3{
@@ -1317,9 +1321,9 @@ ul{
 }
 
 .right_btn a:hover{
-	color: #ffffff;
-	background-color: transparent;
-	border-color: #ffffff;
+	color: #111111;
+	background-color: #ffffff;
+	border-color: #111111;
 }
 
 .grid_col{
@@ -1356,7 +1360,7 @@ ul{
 	height: 80px;
 	position: relative;
 	bottom: 45px;
-	margin-bottom: -45px;
+	margin-bottom: -55px;
 	z-index: 999;
 	margin-left: 15px;
 	background-color: #1488cc;
@@ -1666,7 +1670,8 @@ ul{
 	display: block;
 	width: 1rem;
 	height: 1rem;
-	padding: 0;		
+	padding: 0;
+	cursor: pointer;	
 	border: solid 1px #ffffff;
 	border-radius: 50%;
 	background-color: transparent;
@@ -1753,7 +1758,7 @@ ul{
 	letter-spacing: 1px;
 	text-align: left;
 	line-height: 1.5em;
-	padding-top: 15px;
+	padding-top: 10px;
 }
 
 .news_btn a{
@@ -1799,7 +1804,7 @@ ul{
 .blog_content{
 	width: calc(100% - 40px);
 	background-color: #ffffff;
-	padding: 20px 5px 20px 15px;
+	padding: 20px 5px 22px 15px;
 	position: relative;
 	bottom: 45px;
 	margin: auto;
@@ -1934,8 +1939,7 @@ a.blog_btn:hover{
 
 .client_details{
 	max-width: 640px;
-	margin: 0 auto;
-	padding: 15px 20px;
+	padding: 15px;
 	text-align: center;
 	box-shadow: 0 20px 70px rgba(38,42,76,.2);
 	background-color: #ffffff;
@@ -1980,7 +1984,7 @@ a.blog_btn:hover{
 	color: #696969;
 	letter-spacing: 1px;
 	text-align: left;
-	padding: 15px;
+	padding: 10px;
 	line-height: 1.5em;
 }
 
@@ -1994,7 +1998,9 @@ a.blog_btn:hover{
 
 .quote_format{
 	font-size: 130px;
-	margin-top: -20px;
+	padding-bottom: 15px;
+	position: relative;
+	bottom: -10px;
 	color: #ffffff;
 	display: block;
 	text-align: center;
@@ -2352,7 +2358,8 @@ a.blog_btn:hover{
 	width: 130px;
 	color: #111111;
 	position: relative;
-	bottom: -2px;
+	bottom: -1px;
+	cursor: pointer;
 	border-radius: 4px;
 	transition: 0.5s;
 	background-color: #ffffff;
@@ -2878,7 +2885,7 @@ a.footer-logo img{
 	.right_btn{
 		flex: 100%;
 		width: 100%;
-		margin-top: 25px;
+		margin-top: 15px;
 	}
 	
 	.icon_col{
@@ -2912,7 +2919,7 @@ a.footer-logo img{
 	.news_btn{
 		flex: 100%;
 		width: 100%;
-		margin-top: 25px;
+		margin-top: 15px;
 	}
 	
 	.blog_col{
@@ -2926,7 +2933,7 @@ a.footer-logo img{
 	}
 	
 	.last_space{
-		padding-top: 115px;
+		padding-top: 125px;
 	}
 	
 	.info_col{
