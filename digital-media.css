@@ -2793,10 +2793,6 @@ a.footer-logo img{
 }
 
 @media only screen and (max-width: 385px){
-	.header{
-		width: calc(100% - 30px);
-	}
-	
 	.heading_group{
 		padding-left: 15px;
 		padding-right: 15px;
