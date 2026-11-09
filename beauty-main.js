@@ -68,6 +68,27 @@ $(document).ready(function(){
 	});
 });
 
+//Animate Scroll
+$( ".features a" ).click(function() {
+	$('.spa_area_three').animatescroll();
+});
+
+$( ".about a" ).click(function() {
+	$('.spa_area_four').animatescroll();
+});
+
+$( ".treatments a" ).click(function() {
+	$('.spa_area_five').animatescroll();
+});
+
+$( ".specials a" ).click(function() {
+	$('.spa_area_six').animatescroll();
+});
+
+$( ".articles a" ).click(function() {
+	$('.spa_area_nine').animatescroll();
+});
+
 //Counter script
 jQuery(document).ready(function($) {
     $('.counter').counterUp({

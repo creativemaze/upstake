@@ -40,6 +40,31 @@ $(document).ready(function(){
 	});
 });
 
+//Animate Scroll
+$( ".about a" ).click(function() {
+	$('.architecture_area_two').animatescroll();
+});
+
+$( ".scope a" ).click(function() {
+	$('.architecture_area_three').animatescroll();
+});
+
+$( ".process a" ).click(function() {
+	$('.architecture_area_four').animatescroll();
+});
+
+$( ".portfolio a" ).click(function() {
+	$('.architecture_area_five').animatescroll();
+});
+
+$( ".buttoncol a" ).click(function() {
+	$('.architecture_area_five').animatescroll();
+});
+
+$( ".news a" ).click(function() {
+	$('.architecture_area_six').animatescroll();
+});
+
 //MagnificPopup Lightbox Gallery
 $('.featured_image').magnificPopup({
 	delegate: 'a',

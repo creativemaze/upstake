@@ -31,6 +31,27 @@ $( window ).on( "load", function() {
 	});
 });
 
+//Animate Scroll
+$( ".products a, .buttoncol a" ).click(function() {
+	$('.bakery_area_one').animatescroll();
+});
+
+$( ".about a" ).click(function() {
+	$('.bakery_area_two').animatescroll();
+});
+
+$( ".specials a" ).click(function() {
+	$('.bakery_area_four').animatescroll();
+});
+
+$( ".services a" ).click(function() {
+	$('.bakery_area_five').animatescroll();
+});
+
+$( ".blog a" ).click(function() {
+	$('.bakery_area_eight').animatescroll();
+});
+
 //Counter Script
 jQuery(document).ready(function($) {
     $('.counter').counterUp({

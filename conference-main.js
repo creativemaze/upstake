@@ -39,10 +39,31 @@ $(document).ready(function(){
 	});
 });
 
+//Animate Scroll
+$( ".attend a" ).click(function() {
+	$('.conference_right_col').animatescroll();
+});
+
+$( ".schedule a" ).click(function() {
+	$('.conference_area_four').animatescroll();
+});
+
+$( ".speakers a" ).click(function() {
+	$('.conference_area_five').animatescroll();
+});
+
+$( ".faqs a" ).click(function() {
+	$('.conference_area_six').animatescroll();
+});
+
+$( ".news a" ).click(function() {
+	$('.conference_area_nine').animatescroll();
+});
+
 //Count down script
 $( window ).on( "load", function(){
-	const startDate = new Date('Oct 31, 2026 09:00');
-	const endDate = new Date('Nov 14, 2026 14:00');
+	const startDate = new Date('Jan 25, 2027 09:00');
+	const endDate = new Date('Feb 05, 2027 14:00');
 	const currentDate = new Date();
 	
 	$('#timer-date').countdown(startDate, {elapse: true})

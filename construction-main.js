@@ -30,6 +30,31 @@ $(document).ready(function(){
 	
 });
 
+//Animate Scroll
+$( ".services a" ).click(function() {
+	$('.construct_area_one').animatescroll();
+});
+
+$( ".about a" ).click(function() {
+	$('.construct_area_two').animatescroll();
+});
+
+$( ".scope a" ).click(function() {
+	$('.construct_area_three').animatescroll();
+});
+
+$( ".projects a" ).click(function() {
+	$('.construct_area_four').animatescroll();
+});
+
+$( ".testimonials a" ).click(function() {
+	$('.construct_area_five').animatescroll();
+});
+
+$( ".process a" ).click(function() {
+	$('.construct_area_six').animatescroll();
+});
+
 //MagnificPopup Gallery (1) One
 $( window ).on( "load", function(){
 	$('.image_box').magnificPopup({
