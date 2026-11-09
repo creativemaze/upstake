@@ -74,6 +74,30 @@ $( ".buttoncol a" ).click(function() {
 	$('.heading_group').animatescroll();
 });
 
+$( ".plans a" ).click(function() {
+	$('.heading_group').animatescroll();
+});
+
+$( ".features a" ).click(function() {
+	$('.telecoms_area_two').animatescroll();
+});
+
+$( ".services a" ).click(function() {
+	$('.telecoms_area_three').animatescroll();
+});
+
+$( ".strategies a" ).click(function() {
+	$('.telecoms_area_four').animatescroll();
+});
+
+$( ".process a" ).click(function() {
+	$('.telecoms_area_five').animatescroll();
+});
+
+$( ".news a" ).click(function() {
+	$('.telecoms_area_eight').animatescroll();
+});
+
 //Counter script
 jQuery(document).ready(function($) {
     $('.counter').counterUp({

@@ -29,6 +29,27 @@ $(document).ready(function(){
 	
 });
 
+//Animate Scroll
+$( ".destinations a" ).click(function() {
+	$('.travel_area_one').animatescroll();
+});
+
+$( ".tours a" ).click(function() {
+	$('.travel_area_three').animatescroll();
+});
+
+$( ".features a" ).click(function() {
+	$('.travel_area_four').animatescroll();
+});
+
+$( ".highlights a" ).click(function() {
+	$('.travel_area_six').animatescroll();
+});
+
+$( ".blog a" ).click(function() {
+	$('.travel_area_seven').animatescroll();
+});
+
 //MagnificPopup Video
 $('#play-video').magnificPopup({
 	disableOn: 300,

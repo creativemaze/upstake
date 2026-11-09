@@ -1,5 +1,29 @@
 "use strict";
-//Slick Slider
+//Slick Slider (1) One
+$(document).ready(function(){
+	$('.feature_slider').slick({
+		slidesToShow: 3,
+		autoplay: false,
+		infinite: true,
+		speed: 1000,
+		arrows: false,
+		dots: false,
+		pauseOnHover: false,
+		pauseOnFocus: false,
+		responsive: [
+			{
+				breakpoint: 993,
+				settings: {
+					slidesToShow: 1,
+					dots: true,
+					fade: true
+				}			
+			},
+		]
+	});
+});
+
+//Slick Slider (2) Two
 $(document).ready(function(){
 	$('.grid_slider').slick({
 		dots: false,
@@ -70,6 +94,27 @@ $(document).ready(function(){
 			},
 		]
 	});
+});
+
+//Animate Scroll
+$( ".about a" ).click(function() {
+	$('.about_area').animatescroll();
+});
+
+$( ".services a" ).click(function() {
+	$('.start-up_group_two').animatescroll();
+});
+
+$( ".products a" ).click(function() {
+	$('.start-up_group_three').animatescroll();
+});
+
+$( ".features a" ).click(function() {
+	$('.start-up_group_four').animatescroll();
+});
+
+$( ".blog a" ).click(function() {
+	$('.start-up_group_six').animatescroll();
 });
 
 //MagnificPopup Video

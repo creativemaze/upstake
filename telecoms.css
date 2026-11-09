@@ -2,8 +2,8 @@
 Main Stylesheet
 
 Project:    Upstake - Multipurpose Website Template
-Version:    1.0
-Last change:    08/06/2026
+Version:    1.0.0
+Last change:    18/09/2026
 Author:    creativemaze
 Primary use:    Telecoms
 -------------------------------------------------------------------*/
@@ -1120,7 +1120,7 @@ li.slick-active button{
 
 /* --- 3.4. Telecoms Area Four --- */
 .telecoms_area_four{
-	max-width: 1280px;
+	max-width: 1400px;
 	margin: 0 auto 0;
 	padding: 0 25px;
 	margin-bottom: calc(9em - 40px);
@@ -1829,7 +1829,7 @@ a.footer-logo img{
 	letter-spacing: 1px;
 	color: #ffffff;
 	text-align: left;
-padding: 15px 0 15px;
+	padding: 15px 0 15px;
 	line-height: 1.5em;
 }
 
@@ -1864,12 +1864,12 @@ padding: 15px 0 15px;
 }
 
 .footer_col > ul > li{
-	padding: 4px 0;
+	padding: 6px 0;
 }
 
 .footer_col > ul > li a{
 	font-family: 'Montserrat', Arial, sans-serif;
-	font-size: 13px;
+	font-size: 14px;
 	font-weight: 500;
 	letter-spacing: 1px;
 	text-decoration: none;
@@ -1925,7 +1925,7 @@ padding: 15px 0 15px;
 
 .details p{
 	font-family: 'Montserrat', Arial, sans-serif;
-	font-size: 13px;
+	font-size: 14px;
 	font-weight: 500;
 	letter-spacing: 1px;
 	color: #ffffff;

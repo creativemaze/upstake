@@ -38,6 +38,31 @@ $(document).ready(function(){
 	});
 });
 
+//Animate Scroll
+$( ".services a" ).click(function() {
+	$('.saas_area_two').animatescroll();
+});
+
+$( ".features a" ).click(function() {
+	$('.saas_area_three').animatescroll();
+});
+
+$( ".process a" ).click(function() {
+	$('.saas_area_four').animatescroll();
+});
+
+$( ".pricing a" ).click(function() {
+	$('.saas_area_six').animatescroll();
+});
+
+$( ".analysis a" ).click(function() {
+	$('.saas_area_seven').animatescroll();
+});
+
+$( ".news a" ).click(function() {
+	$('.saas_area_ten').animatescroll();
+});
+
 //Animated Progress Bar
 $(document).ready(function($) {
   function animateElements() {

@@ -16,6 +16,31 @@ $( window ).on( "load", function(){
 	});
 });
 
+//Animate Scroll
+$( ".about a" ).click(function() {
+	$('.restaurant_area_two').animatescroll();
+});
+
+$( ".menu a" ).click(function() {
+	$('.restaurant_area_four').animatescroll();
+});
+
+$( ".specials a" ).click(function() {
+	$('.restaurant_area_five').animatescroll();
+});
+
+$( ".events a" ).click(function() {
+	$('.restaurant_area_eight').animatescroll();
+});
+
+$( ".blog a" ).click(function() {
+	$('.restaurant_area_nine').animatescroll();
+});
+
+$( ".contact" ).click(function() {
+	$('.restaurant_area_ten').animatescroll();
+});
+
 //MagnificPopup Lightbox Footer Gallery
 $('.footer_grid').magnificPopup({
 	delegate: 'a',

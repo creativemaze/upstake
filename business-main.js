@@ -47,6 +47,27 @@ $(document).ready(function(){
 	});
 });
 
+//Animate Scroll
+$( ".services a" ).click(function() {
+	$('.business_area_one').animatescroll();
+});
+
+$( ".benefits a" ).click(function() {
+	$('.business_area_three').animatescroll();
+});
+
+$( ".portfolio a" ).click(function() {
+	$('.business_area_five').animatescroll();
+});
+
+$( ".testimonials a" ).click(function() {
+	$('.business_area_seven').animatescroll();
+});
+
+$( ".news a" ).click(function() {
+	$('.business_area_eight').animatescroll();
+});
+
 //Counter Script
 jQuery(document).ready(function($) {
     $('.counter').counterUp({

@@ -7,6 +7,27 @@ jQuery(document).ready(function($) {
     });
 });
 
+//Animate Scroll
+$( ".features a" ).click(function() {
+	$('.mobile_area_one').animatescroll();
+});
+
+$( ".build a" ).click(function() {
+	$('.mobile_area_two').animatescroll();
+});
+
+$( ".process a" ).click(function() {
+	$('.mobile_area_three').animatescroll();
+});
+
+$( ".tools a" ).click(function() {
+	$('.mobile_area_four').animatescroll();
+});
+
+$( ".statistics a" ).click(function() {
+	$('.mobile_area_six').animatescroll();
+});
+
 //Animate on Scroll default settings
 $(window).on('load', function () {
 	AOS.refresh();

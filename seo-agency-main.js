@@ -24,6 +24,7 @@ $(document).ready(function(){
 });
 
 
+
 //Slick Slider (2) Two
 $(document).ready(function(){
 	$('.grid_slider').slick({
@@ -71,6 +72,27 @@ $(document).ready(function(){
 			},
 		]
 	});
+});
+
+//Animate Scroll
+$( ".steps a" ).click(function() {
+	$('.seo_area_two').animatescroll();
+});
+
+$( ".methods a" ).click(function() {
+	$('.seo_area_three').animatescroll();
+});
+
+$( ".pricing a" ).click(function() {
+	$('.seo_area_five').animatescroll();
+});
+
+$( ".studies a" ).click(function() {
+	$('.seo_area_six').animatescroll();
+});
+
+$( ".news a" ).click(function() {
+	$('.seo_area_eight').animatescroll();
 });
 
 //Counter Script

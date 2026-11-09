@@ -54,6 +54,27 @@ $(document).ready(function(){
 	});
 });
 
+//Animate Scroll
+$( ".about a" ).click(function() {
+	$('.research_area_two').animatescroll();
+});
+
+$( ".services a" ).click(function() {
+	$('.research_area_three').animatescroll();
+});
+
+$( ".process a" ).click(function() {
+	$('.research_area_five').animatescroll();
+});
+
+$( ".topics a" ).click(function() {
+	$('.research_area_six').animatescroll();
+});
+
+$( ".articles a" ).click(function() {
+	$('.research_area_eight').animatescroll();
+});
+
 //MagnificPopup Video
 $('#play-video').magnificPopup({
 	disableOn: 300,

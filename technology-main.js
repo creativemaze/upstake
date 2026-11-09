@@ -29,6 +29,31 @@ $(document).ready(function(){
 	
 });
 
+//Animate Scroll
+$( ".products a" ).click(function() {
+	$('.tech_area_one').animatescroll();
+});
+
+$( ".services a" ).click(function() {
+	$('.tech_area_two').animatescroll();
+});
+
+$( ".solutions a" ).click(function() {
+	$('.tech_area_three').animatescroll();
+});
+
+$( ".features a" ).click(function() {
+	$('.tech_area_four').animatescroll();
+});
+
+$( ".faqs a" ).click(function() {
+	$('.tech_area_six').animatescroll();
+});
+
+$( ".news a" ).click(function() {
+	$('.tech_area_seven').animatescroll();
+});
+
 //F.A.Q.S Accordion
 var acc = document.getElementsByClassName("accordion");
 	var i;

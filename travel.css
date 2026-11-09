@@ -2,8 +2,8 @@
 Main Stylesheet
 
 Project:    Upstake - Multipurpose Website Template
-Version:    1.0
-Last change:    30/06/2026
+Version:    1.0.0
+Last change:    17/09/2026
 Author:    creativemaze
 Primary use:    Travel
 -------------------------------------------------------------------*/
@@ -831,7 +831,7 @@ ul{
 }
 
 .tour_area{
-	min-height: 550px;
+	min-height: 650px;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -864,7 +864,7 @@ ul{
 	flex: 25%;
 	width: 25%;
 	padding: 0 25px;
-	min-height: 550px;
+	min-height: 650px;
 	border-right: solid 1px #6f6f6f;
 	transition: 0.5s;
 }
@@ -1730,12 +1730,12 @@ a.footer-logo img{
 }
 
 .footer_col > ul > li{
-	padding: 4px 0;
+	padding: 6px 0;
 }
 
 .footer_col > ul > li a{
 	font-family: 'Montserrat', Arial, sans-serif;
-	font-size: 13px;
+	font-size: 14px;
 	font-weight: 500;
 	letter-spacing: 1px;
 	text-decoration: none;
@@ -1792,7 +1792,7 @@ a.footer-logo img{
 
 .details p{
 	font-family: 'Montserrat', Arial, sans-serif;
-	font-size: 13px;
+	font-size: 14px;
 	font-weight: 500;
 	letter-spacing: 1px;
 	color: #111111;

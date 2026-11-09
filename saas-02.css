@@ -1,0 +1,2346 @@
+/*------------------------------------------------------------------
+Main Stylesheet
+
+Project:    Upstake - Multipurpose Website Template
+Version:    1.0.0
+Last change:    14/09/2026
+Author:    creativemaze
+Primary use:    SAAS
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. General
+2. Header
+	2.1. Header Menu
+	2.2. Header Content
+3. Main Content
+	3.1. SAAS Area One 
+	3.2. SAAS Area Two
+	3.3. SAAS Area Three
+	3.4. SAAS Area Four
+	3.5. SAAS Area Five
+	3.6. SAAS Area Six
+	3.7. SAAS Area Seven
+	3.8. SAAS Area Eight
+	3.9. SAAS Area Nine
+	3.10. SAAS Area Ten
+	 
+4. Footer
+5. Responsive
+-------------------------------------------------------------------*/
+
+/* 1. GENERAL
+ ----------- */
+body,
+html{
+	width:100%;
+    height: auto;
+    margin:0;
+    padding:0;
+    overflow-x: hidden;
+	font-family: sans-serif;
+}
+
+ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+*{
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+.page_area{
+	width: 100%;
+}
+
+#loading::before {
+	content: '';
+	position: fixed;
+	z-index: 100000;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #ffffff;
+}
+
+#loading::after {
+	content: '';
+	position: fixed;
+	z-index: 100000;
+	top: 50%;
+	left: 50%;
+	width: 60px;
+	height: 60px;
+	margin: -30px 0 0 -30px;
+	pointer-events: none;
+	border-radius: 50%;
+	opacity: 0.4;
+	background: #333333;
+	animation: loaderAnim 0.7s linear infinite alternate forwards;
+}
+
+@keyframes loaderAnim {
+	to {
+		opacity: 1;
+		transform: scale3d(0.5,0.5,1);
+	}
+}
+
+@keyframes slideLeft {
+  0% {
+    opacity: 0;
+        transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+        transform: translateX(0%);
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    opacity: 1;
+        transform: translateX(0%);
+  }
+  100% {
+    opacity: 0;
+        transform: translateX(100%);
+  }
+}
+
+.saas_heading{
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 40px;
+	font-weight: 600;
+	display: block;
+	color: #111111;
+	display: block;
+	text-align: center;
+	letter-spacing: 1px;
+	line-height: 1.2em;
+	max-width: 600px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 0;
+}
+
+.saas_info{
+	font-family: 'Roboto' , Arial, sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	display: block;
+	color: #696969;
+	letter-spacing: 1px;
+	text-align: center;
+	padding: 25px 10px 0;
+	line-height: 1.5em;
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.bg_head{
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 40px;
+	font-weight: 600;
+	display: block;
+	color: #ffffff;
+	letter-spacing: 1px;
+	text-align: center;
+	line-height: 1.2em;
+	max-width: 600px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 0;
+}
+
+.bg_info{
+	font-family: 'Roboto' , Arial, sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	display: block;
+	color: #dddddd;
+	letter-spacing: 1px;
+	text-align: center;
+	padding: 25px 10px 0;
+	line-height: 1.5em;
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+/* 2. HEADER
+ ----------- */
+ 
+/* --- 2.1. Header Menu --- */
+.container {
+	max-width: 80rem;
+	width: 100%;
+	height: auto;
+	padding: 0 2rem;
+	margin: 0 auto;
+}
+
+.brand{
+	margin: 0;
+}
+
+.brand a{
+	text-decoration: none;
+	color: #f1f1f1;
+	transition: 0.5s;
+	font-family: 'Montserrat', Arial, sans-serif;
+	font-size: 22px;
+	font-weight: 700;
+	display: inline-block;
+	text-align: center;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	text-rendering: optimizeLegibility;
+}
+
+.brand a:hover{
+	color: #f1f1f1;
+}
+
+#logo > a{
+	max-width: 160px; 
+	position: relative;
+	top: 2px;
+}
+
+#logo > a img{
+	position: relative;
+	max-width: 160px;
+	height: auto;
+}
+
+.header {
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
+	padding: 1rem 0;
+	margin: 0 auto;
+	z-index: 99999;
+	border: none;
+	border-bottom: solid 1px #6f6f6f;
+	outline: none;
+}
+
+.header .wrapper {
+	display: flex;
+    flex-wrap: wrap;
+	align-items: center;
+}
+
+.header-item-left {
+	display: flex;
+	flex: 0 0 17%;
+}
+
+.header-item-center {
+	display: flex;
+    flex: 0 0 80%;
+	justify-content: flex-end;
+}
+
+.head_btn{
+	max-width: 200px;
+	display: inline-block;
+}
+
+.head_btn a{
+	background-color: #159957;
+	width: 150px;
+	margin: 0 auto;
+    color: #ffffff;
+    padding: 5px;
+    text-decoration: none;
+	text-transform: uppercase;
+    display: block;
+    font-size: 13px;
+	font-weight: 600;
+	font-family: 'Montserrat', Arial, sans-serif;
+    transition: 0.5s;
+	border: 1px solid #159957;
+	letter-spacing: 1px;
+	text-align: center;
+}
+
+.head_btn a:hover{
+	background-color: #ffffff;
+	color: #111111;
+	border-color: #ffffff;
+}
+
+.header .menu > ul > li {
+	display: inline-block;
+	line-height: 2.125rem;
+	margin-left: 1.5rem;
+}
+
+.header .menu > ul > li > a {
+	position: relative;
+	color: #ffffff;
+    font-family: 'Montserrat' , Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+	letter-spacing: 1px;
+	line-height: 1.25;
+	border: none;
+	outline: none;
+	text-rendering: optimizeLegibility;
+	transition: color 0.3s ease-in-out;
+}
+
+.header .menu > ul > li .menu-subs {
+	position: absolute;
+	width: auto;
+	height: auto;
+	margin-top: 1.75rem;
+	padding: 1rem 2rem;
+	border: none;
+	outline: none;
+	z-index: 500;
+	opacity: 0;
+	visibility: hidden;
+	border-radius: 0.25rem;
+	background: #ffffff;
+	transition: all 0.5s ease-in-out;
+}
+
+.header .menu > ul > li .menu-subs-next{
+	float: right;
+	width: auto;
+	height: auto;
+	padding: 1rem 2rem;
+	border: none;
+	outline: none;
+	z-index: 500;
+	opacity: 0;
+	visibility: hidden;
+	border-radius: 0.25rem;
+	background: #ffffff;
+	transition: all 0.5s ease-in-out;
+}
+
+.header .menu > ul > li .menu-subs > ul > li {
+	line-height: 1;
+}
+
+.header .menu > ul > li .menu-subs > ul > li > a {
+	display: inline-block;
+	color: #111111;
+	font-family: 'Montserrat' , Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: capitalize;
+	letter-spacing: 1px;
+	padding: 0.75rem 0;
+	border: none;
+	outline: none;
+	text-rendering: optimizeLegibility;
+	transition: all 0.3s ease-in-out;
+}
+
+.header .menu > ul > li > a:hover{
+	color: #159957;
+}
+
+.header .menu > ul > li .fa{
+	position: relative;
+	top: 1px;
+}
+
+.menu-mobile-header,
+.menu-mobile-trigger {
+	display: none;
+}
+
+/* --- 2.2. Header Content --- */
+.sliderwrap{
+	position: relative;
+}
+
+.header__content{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	min-height: 800px;
+}
+
+.slide__content{
+	position: relative;
+	min-height: 800px;
+	text-align: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	clip-path: polygon(0px 0px, 100% 0px, 100% 85%, 0px 100%);
+}
+
+.slide__content::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.6);
+}
+
+.header-title {
+	max-width: 900px;
+	display: block;
+	position: relative;
+	z-index: 999;
+	padding: 0 20px;
+	margin-bottom: 12em;
+}
+
+.header-title__main{
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 45px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	text-align: center;
+	display: block;
+	color: #ffffff;
+	line-height: 1.2em;
+	margin: 0;
+}
+
+.header-title p{
+	font-family: 'Roboto' , Arial, sans-serif;
+	font-size: 18px;
+	font-weight: normal;
+	display: block;
+	color: #dddddd;
+	line-height: 1.6em;
+	letter-spacing: 1px;
+	text-align: center;
+	padding: 20px 0 15px;
+	max-width: 550px;
+	margin: auto;
+}
+
+.buttoncol a{
+	background-color: #159957;
+	width: 150px;
+	margin: 15px auto 0;	
+    color: #ffffff;
+    padding: 13px 15px;
+    text-decoration: none;
+	text-transform: uppercase;
+    display: block;
+    font-size: 13px;
+	font-weight: 600;
+	font-family: 'Montserrat', Arial, sans-serif;
+    transition: 0.5s;
+	border: 1px solid #159957;
+	letter-spacing: 1px;
+	text-align: center;
+}
+
+.buttoncol a:hover{
+	background-color: #ffffff;
+	color: #111111;
+	border-color: #ffffff;
+}
+
+/* 3. MAIN CONTENT
+ ----------- */
+ 
+/* --- 3.1. SAAS Area One --- */
+.saas_area_one{
+	position: relative;
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 0 25px;
+	margin-top: -310px;
+	margin-bottom: calc(9em - 75px);
+}
+
+.saas_group_one,
+.saas_slider{
+	width: 100%;
+	position: relative;
+	max-width: 1100px;
+	margin: auto;
+}
+
+.saas_slide{
+	padding: 0 10px;
+}
+
+.saas_image{
+	position: relative;
+	min-height: 600px;
+	text-align: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 10px;
+}
+
+.saas_title_area{
+	max-width: 600px;
+	background-color: #159957;
+	position: relative;
+	bottom: 110px;
+	overflow: auto;
+	padding: 20px 25px;
+	margin-left: 30px;
+	border-left: solid 8px #ffffff;
+}
+
+.saas_title h3{
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 14px;
+	font-weight: 600;
+	display: inline-block;
+	color: #111111;
+	text-align: left;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	line-height: 1.4em;
+	margin: 0;
+}
+
+.areas_list > ul > li{
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 15px;
+	font-weight: 600;
+	display: block;
+	color: #111111;
+	letter-spacing: 1px;
+	text-align: left;
+}
+
+.saas_title h3::before{
+	font-family: 'uicons-regular-straight';
+	content: "\fd5e";
+	font-weight: 100;
+	font-size: 26px;
+	position: relative;
+	top: 8px;
+	padding-right: 4px;
+	color: #ffffff;
+}
+
+.saas_title_area h2{
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 30px;
+	font-weight: 500;
+	display: block;
+	color: #ffffff;
+	text-align: left;
+	letter-spacing: 1px;
+	line-height: 1.2em;
+	margin-bottom: 0;
+}
+
+.saas_title_area p{
+	font-family: 'Roboto' , Arial, sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	padding-top: 4px;
+	display: block;
+	color: #dddddd;
+	letter-spacing: 1px;
+	text-align: left;
+	line-height: 1.5em;
+}
+
+.prev_nav,
+.next_nav{
+	font-size: 14px;
+	transition: 0.5s;
+	background-color: transparent;
+	width: auto;
+	padding: 10px 16px;
+	color: #111111;
+	cursor: pointer;
+	border: solid 1px #111111;
+	display: inline-block;
+}
+
+.info_nav{
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	margin-bottom: 35px;
+	transform: translateX(-50%);
+	z-index: 999;
+}
+
+.prev_nav{
+	margin-right: 15px;
+}
+
+.next_nav:hover,
+.prev_nav:hover{
+	background-color: #111111;
+	color: #ffffff;
+	border-color: #111111;
+}
+
+/* --- 3.2. SAAS Area Two --- */
+.saas_area_two{
+	max-width: 1200px;
+	margin: 0 auto 9em;
+	padding: 0 25px;
+}
+
+.saas_group_two{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.icon_col{
+	flex: 25%;
+	width: 25%;
+	padding: 40px 25px 0;
+}
+
+.icon_box{
+	max-width: 250px;
+	margin: auto;
+	text-align: center;
+	padding-top: 15px;
+	border-bottom: solid 4px #159957;
+	box-shadow: 0 20px 70px rgba(38,42,76,.2);
+}
+
+.icon_symbol .fi{
+	font-size: 52px;
+	color: #159957;
+	display: inline-block;
+	text-align: center;
+	padding-top: 10px;
+}
+
+.icon_info{
+	width: 100%;
+	padding: 10px 0 25px;
+	margin-top: -20px;
+}
+
+.icon_info h3{
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 18px;
+	font-weight: 600;
+	display: block;
+	color: #111111;
+	letter-spacing: 1px;
+	text-align: center;
+	line-height: 1.4em;
+}
+
+.icon_info p{
+	font-family: 'Roboto' , Arial, sans-serif;
+	font-size: 15px;
+	font-weight: normal;
+	display: block;
+	color: #696969;
+	letter-spacing: 1px;
+	text-align: center;
+	line-height: 1.5em;
+	padding: 4px 12px 4px;
+}
+
+.icon_button a{
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 13px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	text-align: center;
+	text-transform: uppercase;
+	display: inline-block;
+	color: #159957;
+	text-decoration: none;
+	max-width: 105px;
+	margin: 0 auto;
+	transition: 0.5s;
+}
+
+.icon_button a::after{
+	content: "\203A";
+	position: relative;
+	top: 1px;
+	font-size: 20px;
+	display: inline-block;
+	padding-left: 5px;
+}
+
+.icon_button a:hover{
+	color: #111111;
+}
+
+/* --- 3.3. SAAS Area Three --- */
+.saas_area_three{
+	width: 100%;
+	margin-bottom: calc(9em - 70px);
+	min-height: 475px;
+	padding: 10em 25px 16em;
+	background-color: #159957;
+	clip-path: polygon(0px 0px, 100% 0px, 100% 85%, 0px 100%);
+}
+
+.saas_group_three{
+	max-width: 1280px;
+	margin: 0 auto;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.square_col_left{
+	flex: 50%;
+	width: 50%;
+	padding: 0 20px;
+}
+
+.square_col_right{
+	flex: 50%;
+	width: 50%;
+	padding: 0 20px;
+}
+
+.square_area{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.square_box{
+	max-width: 550px;
+	padding-right: 20px;
+}
+
+.square_box h2{
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 40px;
+	font-weight: 600;
+	display: block;
+	color: #ffffff;
+	text-align: left;
+	letter-spacing: 1px;
+	line-height: 1.2em;
+	margin: 0;
+}
+
+.square_box > p{
+	font-family: 'Roboto' , Arial, sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	padding-top: 10px;
+	display: block;
+	color: #dddddd;
+	letter-spacing: 1px;
+	text-align: left;
+	line-height: 1.5em;
+	max-width: 450px;
+}
+
+.square_photo_area{
+	max-width: 550px;
+	max-height: 550px;
+	position: relative;
+	text-align: center;
+}
+
+.right_color_box{
+	position: absolute;
+	top: -40px;
+	right: -40px;
+	width: 450px;
+	height: 450px;
+	border-top: solid 40px #ffffff;
+	border-right: solid 40px #ffffff;
+	z-index: -10;
+}
+
+.square_center{
+	position: absolute;
+	bottom: -80px;
+	left: 0;
+	margin-left: 25px;
+	z-index: 99;
+	width: 280px;
+	height: 280px;
+	background-color: #159957;
+}
+
+.square_photo{
+	width: 260px;
+	height: 260px;
+	margin: 10px auto;
+}
+
+.square_photo_area img{
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.square_info_area{
+	max-width: 300px;
+	margin-top: 32px;
+}
+
+.square_info_box{
+	width: 100%;
+	margin-bottom: -16px;
+}
+
+.accordion {
+	cursor: pointer;
+	padding: 16px 12px 8px 12px;
+	width: 100%;
+	text-align: left;
+	overflow: hidden;
+	transition: 0.4s;
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 18px;
+	font-weight: 600;
+	display: block;
+	color: #ffffff;
+	background: transparent;
+	border-bottom: double 6px #ffffff;
+	letter-spacing: 1px;
+	line-height: 1.4em;
+}
+
+.accordion.current{
+	background-color: #ffffff;
+	color: #111111;
+}
+
+.accordion:after {
+	content: '\002B';
+	font-size: 16px;
+	color: #ffffff;
+	font-weight: 600;
+	float: right;
+	padding-top: 4px;
+}
+
+.accordion::before{
+	font-family: 'uicons-regular-straight';
+	content: "\fb2b";
+	font-size: 14px;
+	position: relative;
+	top: 2px;
+	padding-right: 12px;
+	color: #ffffff;
+}
+
+.accordion.current::before{
+	color: #111111;
+}
+
+.accordion.current:after{
+	color: #111111;
+}
+
+.current-bar:after {
+	content: "\2212";
+}
+
+.accordion.current-bar:after{
+	content: "\2212";
+}
+
+.panel{
+	padding: 0;
+	background-color: #ffffff;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+}
+
+.panel > p{
+	padding: 14px;
+	font-family: 'Roboto' , Arial, sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	display: block;
+	line-height: 1.5em;
+	color: #696969;
+}
+
+/* --- 3.4. SAAS Area Four --- */
+.saas_area_four{
+	max-width: 1200px;
+	margin: 0 auto 9em;
+	padding: 0 25px;
+}
+
+.saas_group_four{
+	width: calc(100% - 50px);
+	display: flex;
+	flex-wrap: wrap;
+	min-height: 250px;
+	background-color: #ffffff;
+	padding: 25px 25px 40px 25px;
+	margin: 100px auto 0;
+	box-shadow: 0 20px 70px rgba(38,42,76,.2);
+	border-left: solid 5px #159957;
+}
+
+.feature_col{
+	flex: 33.33%;
+	width: 33.33%;
+	padding: 0 20px;
+}
+
+.feature_box{
+	text-align: center;
+	max-width: 400px;
+	margin: 0 auto;
+}
+
+.feature_content{
+	width: 100%;
+	max-width: 350px;
+	margin-top: -65px;
+	position: relative;
+	border-radius: 5px;
+	min-height: 20px;
+	overflow: hidden;
+	padding-bottom: 25px;
+	display: block;
+	background-color: #159957;
+}
+
+.feature_crumb{
+	width: 50px;
+	margin: auto;
+	height: 1px;
+	border-bottom: solid 2px #111111;
+	margin-top: -14px;
+}
+
+.feature_content h3{
+	font-family: 'Montserrat', Arial, sans-serif;
+	font-size: 15px;
+	font-weight: 600;
+	display: block;
+	text-align: center;
+	color: #ffffff;
+	letter-spacing: 1px;
+	line-height: 1.4em;
+	padding: 5px 0;
+	text-transform: uppercase;
+}
+
+.feature_box p{
+	font-family: 'Roboto' , Arial, sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	display: block;
+	color: #696969;
+	letter-spacing: 1px;
+	text-align: center;
+	line-height: 1.5em;
+	padding-top: 20px;
+}
+
+.feature_num{
+	width: 70px;
+	height: 70px;
+	margin: 20px auto 0;
+	background-color: #159957;
+	border-radius: 50%;
+}
+
+.feature_num h3{
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-weight: 600;
+	font-size: 22px;
+	display: block;
+	text-align: center;
+	color: #ffffff;
+	line-height: 1.4em;
+}
+
+.num_center{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.slick-dots {
+	position: relative;
+	z-index: 999999;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	justify-content: center;
+	margin: 0;
+	padding: 1rem 0;
+	list-style-type: none;
+}
+
+.slick-dots button{
+	display: block;
+	width: 1rem;
+	height: 1rem;
+	padding: 0;
+	cursor: pointer;	
+	border: solid 1px #6f6f6f;
+	border-radius: 100%;
+	background-color: transparent;
+	text-indent: -9999px;
+}
+
+li.slick-active button{
+	background-color: #159957;
+}
+
+.slick-dots button:hover{
+	background-color: #159957;
+}
+
+.slick-dots li{
+	margin: 22px 4px 0 4px;
+}
+
+.saas_area_four .slick-list{
+	overflow: visible;
+}
+
+/* --- 3.5. SAAS Area Five --- */
+.saas_area_five{
+	position: relative;
+	width: 100%;
+	min-height: 450px;
+	background-color: #159957;
+	clip-path: polygon(0px 0px, 100% 0px, 100% 85%, 0px 100%);
+}
+
+/* --- 3.6. SAAS Area Six --- */
+.saas_area_six{
+	max-width: 1125px;
+	margin: -395px auto;
+	padding: 0 25px;
+	margin-bottom: calc(9em - 50px);
+}
+
+.saas_group_six{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.price_col{
+	flex: 33.33%;
+	width: 33.33%;
+	padding: 80px 0 0;
+}
+
+.price_box{
+	max-width: 375px;
+	position: relative;
+	text-align: center;
+	overflow: hidden;
+	margin: auto;
+	padding-bottom: 35px;
+	background-color: #ffffff;
+	box-shadow: 0 20px 70px rgba(38,42,76,.2);
+}
+
+.center_col{
+	position: relative;
+	bottom: 50px;
+	box-shadow: none;
+}
+
+.price_content{
+	padding-bottom: 15px;
+	padding-right: 10px;
+	padding-top: 15px;
+	padding-left: 10px;
+	background: transparent;
+	border-bottom: solid 1px #e0e0e0;
+	width: calc(100% - 30px);
+	margin: auto;
+}
+
+.center_box{
+	background-color: #111111;
+	padding-bottom: 50px;
+}
+
+.price_title{
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+	display: block;
+	color: #111111;
+	letter-spacing: 1px;
+	text-align: center;
+	text-transform: uppercase;
+	line-height: 1.5em;
+}
+
+.center_title{
+	color: #ffffff;
+}
+
+.price_value{
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 40px;
+	font-weight: 700;
+	display: block;
+	color: #159957;
+	letter-spacing: 1px;
+	text-align: center;
+	line-height: 1.2em;
+	margin: 0;
+}
+
+.price_box h4{
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	display: block;
+	color: #696969;
+	letter-spacing: 1px;
+	text-align: center;
+}
+
+.center_value,
+.center_content > h4{
+	color: #ffffff;
+}
+
+.price_list{
+	width: 100%;
+	margin: auto;
+	padding-top: 1px;
+}
+
+.price_list ul{
+	padding: 30px 12px;
+}
+
+.price_list > ul li{
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 13px;
+	font-weight: 600;
+	display: block;
+	color: #111111;
+	letter-spacing: 1px;
+	text-align: left;
+	padding: 14px 12px;
+	line-height: 1.5em;
+	border-bottom: solid 1px #e0e0e0;
+}
+
+.price_list > ul li::after{
+	font-family: 'uicons-regular-straight';
+	content: "\fb2b";
+	font-size: 20px;
+	position: relative;
+	float: right;
+	top: 0;
+	padding-right: 6px;
+	color: #159957;
+}
+
+.center_list > ul li{
+	color: #ffffff;
+	border-bottom: solid 1px #6f6f6f;
+}
+
+.center_list > ul li::after{
+	color: #ffffff;
+}
+
+.price_btn a{
+	background-color: #159957;
+	width: 150px;
+    color: #ffffff;
+    padding: 12px 14px;
+    text-decoration: none;
+	text-transform: uppercase;
+    display: block;
+    font-size: 12px;
+	font-weight: 600;
+	font-family: 'Montserrat', Arial, sans-serif;
+    margin: auto;
+    transition: 0.5s;
+	border: 1px solid #159957;
+	letter-spacing: 1px;
+	text-align: center;
+}
+
+.mid_btn a{
+	background-color: #ffffff;
+	width: 150px;
+    color: #111111;
+    padding: 12px 14px;
+    text-decoration: none;
+	text-transform: uppercase;
+    display: block;
+    font-size: 12px;
+	font-weight: 600;
+	font-family: 'Montserrat', Arial, sans-serif;
+    margin: 35px auto 0;
+    transition: 0.5s;
+	border: 1px solid #ffffff;
+	letter-spacing: 1px;
+	text-align: center;
+}
+
+.price_btn a:hover{
+	color: #111111;
+	background-color: #ffffff;
+	border-color: #111111;
+}
+
+.mid_btn a:hover{
+	color: #ffffff;
+	background: transparent;
+	border-color: #ffffff;
+}
+
+/* --- 3.7. SAAS Area Seven --- */
+.saas_area_seven{
+	max-width: 1200px;
+	padding: 0 25px;
+	margin: 0 auto 9em;
+}
+
+.saas_group_seven{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.data_group{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 640px;
+}
+
+.stat_col{
+	flex: 50%;
+	width: 50%;
+	padding: 0 25px;
+}
+
+.info_col{
+	flex: 50%;
+	width: 50%;
+	padding: 0 25px;
+}
+
+.data_col{
+	flex: 50%;
+	width: 50%;
+	padding: 0 20px;
+	position: relative;
+}
+
+.progressbar {
+	display: inline-block;
+	width: 125px;
+}
+
+.circle {
+	width: 100%;
+	margin: 0 auto;
+	display: inline-block;
+	position: relative;
+	text-align: center;
+}
+
+.circle canvas {
+	vertical-align: middle;
+}
+
+.circle div {
+	position: absolute;
+	top: 45px;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	line-height: 40px;
+	font-size: 18px;
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-weight: 600;
+	display: block;
+	color: #111111;
+}
+
+.circle h3{
+	color: #111111;
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 15px;
+	font-weight: 600;
+	display: block;
+	text-align: center;
+	letter-spacing: 1px;
+	line-height: 1.4em;
+	text-transform: uppercase;
+	margin: 0;
+	padding-top: 10px;
+}
+
+.extra-left-space{
+	left: 100px;
+}
+
+.info_area{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.info_box{
+	max-width: 550px;
+	padding-right: 20px;
+}
+
+.info_box h2{
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 40px;
+	font-weight: 600;
+	display: block;
+	color: #111111;
+	text-align: left;
+	letter-spacing: 1px;
+	line-height: 1.2em;
+	margin: 0;
+}
+
+.info_box p{
+	font-family: 'Roboto' , Arial, sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	padding-top: 10px;
+	display: block;
+	color: #696969;
+	letter-spacing: 1px;
+	text-align: left;
+	line-height: 1.5em;
+}
+
+.square_col_button a{
+	background-color: #159957;
+	width: 150px;
+	margin: 30px 0 0;
+    color: #ffffff;
+    padding: 13px 14px;
+    text-decoration: none;
+	text-transform: uppercase;
+    display: block;
+    font-size: 13px;
+	font-weight: 600;
+	font-family: 'Montserrat', Arial, sans-serif;
+    transition: 0.5s;
+	border: 1px solid #159957;
+	letter-spacing: 1px;
+	text-align: center;
+}
+
+.square_col_button a:hover{
+	color: #111111;
+	background: transparent;
+	border-color: #111111;
+}
+
+/* --- 3.8. SAAS Area Eight --- */
+.saas_area_eight{
+	position: relative;
+	width: 100%;
+	min-height: 475px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	clip-path: polygon(0px 0px, 100% 0px, 100% 85%, 0px 100%);
+}
+
+.saas_area_eight::before {
+	content: '';
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.6);
+}
+
+.quote_format{
+	font-size: 130px;
+	position: relative;
+	color: #159957;
+	display: block;
+	text-align: center;
+}
+
+/* --- 3.9. SAAS Area Nine --- */
+.saas_area_nine{
+	max-width: 1280px;
+	margin: -360px auto 9em;
+	padding: 0 25px;
+}
+
+.saas_group_nine{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: -85px;
+}
+
+.client_col{
+	flex: 25%;
+	width: 25%;
+	padding: 0 20px;
+}
+
+.client_comment p{
+	font-family: 'Roboto', Arial, sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	display: inline-block;
+	color: #696969;
+	letter-spacing: 1px;
+	text-align: center;
+	line-height: 1.5em;
+}
+
+.client_comment p::before{
+	content: '\275D';
+	position: relative;
+	top: 10px;
+	padding-right: 5px;
+	font-size: 45px;
+	color: #159957;
+}
+
+.client_info{
+	margin: 40px auto 0;
+	background-color: #ffffff;
+	padding: 30px 25px 20px;
+	max-width: 275px;
+	box-shadow: 0 20px 70px rgba(38,42,76,.2);
+}
+
+.client_info img{
+	max-width: 90px;
+	height: 90px;
+	margin: auto;
+	border-radius: 50%;
+	display: block;
+	text-align: center;
+}
+
+.client_name{
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 18px;
+	font-weight: 600;
+	display: block;
+	color: #111111;
+	letter-spacing: 1px;
+	text-align: center;
+	line-height: 1.4em;
+}
+
+.client_title{
+	font-family: 'Montserrat', Arial, sans-serif;
+	font-size: 14px;
+	font-weight: 600;
+	display: block;
+	color: #159957;
+	letter-spacing: 1px;
+	text-align: center;
+	text-transform: uppercase;
+	line-height: 1.4em;
+	margin: 0;
+}
+
+.client_icon{
+	display: block;
+	text-align: center;
+	padding-top: 8px;
+}
+
+.client_icon .fi{
+	font-size: 22px;
+	font-weight: 300;
+	color: #159957;
+	display: inline-block;
+	text-align: center;
+}
+
+/* --- 3.10. SAAS Area Ten --- */
+.saas_area_ten{
+	max-width: 1280px;
+	padding: 0 25px;
+	margin: 0 auto 9em;
+}
+
+.saas_group_ten{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.blog_col{
+	flex: 33.33%;
+	width: 33.33%;
+	padding: 40px 20px 0;
+}
+
+.blog_box{
+	max-width: 400px;
+	position: relative;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.blog_date{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-color: #ffffff;
+	padding: 12px;
+}
+
+.blog_date h3{
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 13px;
+	display: block;
+	font-weight: 600;
+	color: #159957;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	text-align: center;
+	margin: 0;
+	padding: 5px 0;
+}
+
+.blog_image{
+	overflow: hidden;
+	position: relative;
+}
+
+.blog_image img{
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.blog_image > a > img{
+	transition: ease-in-out 3.25s;
+}
+
+.blog_image > a > img:hover{
+	transform: scale(1.15);
+}
+
+.blog_title a{
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 20px;
+	display: block;
+	font-weight: 600;
+	color: #111111;
+	letter-spacing: 1px;
+	text-align: left;
+	text-decoration: none;
+	transition: 0.5s;
+	line-height: 1.4em;
+}
+
+.blog_content{
+	text-align: left;
+	padding: 10px 0 20px;
+	padding-left: 15px;
+	box-shadow: 0 20px 70px rgba(38,42,76,.2);
+}
+
+a.blog_btn{
+	max-width: 110px;	
+    color: #159957;
+    text-decoration: none;
+	text-transform: uppercase;
+    display: inline-block;
+    font-size: 13px;
+	font-weight: 600;
+	font-family: 'Montserrat', Arial, sans-serif;
+    transition: 0.5s;
+	letter-spacing: 1px;
+	text-align: left;
+}
+
+a.blog_btn::after{
+	position: relative;
+	top: 1px;
+	content: "\203A";
+	font-size: 20px;
+	display: inline-block;
+	padding-left: 5px;
+}
+
+.blog_title a:hover{
+	 color: #159957;
+}
+
+a.blog_btn:hover{
+	color: #111111;
+}
+
+/* 4. FOOTER
+ ----------- */
+.footer{
+	width: 100%;
+	min-height: 350px;
+	position: relative;
+	clear: both;
+	height: 100%;
+	background-color: #111111;
+}
+
+.footer_sub{
+	max-width: 1200px;
+	width: calc(100% - 50px);
+	margin: 0 auto;
+	padding: 5em 0;
+	min-height: 50px;
+	border-bottom: solid 1px #6f6f6f;
+}
+
+.footer_center{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer_group{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.col_info{
+	flex: 100%;
+	width: 100%;
+}
+	
+.col_head{
+	flex: 100%;
+	width: 100%;
+}
+
+.col_head h3{
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 30px;
+	display: block;
+	font-weight: 600;
+	color: #ffffff;
+	letter-spacing: 1px;
+	text-align: center;
+	line-height: 1.3em;
+	max-width: 650px;
+	margin: auto;
+}
+
+.subscribe-row{
+	text-align: center;
+	margin-top: 35px;
+}
+
+.col_info input[type="email"]{
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 13px;
+	display: inline-block;
+	font-weight: normal;
+	letter-spacing: 1px;
+	height: 40px;
+	vertical-align: middle;
+	padding: 20px;
+	width: 350px;
+	background-color: #ffffff;
+	border: none;
+	margin-right: 4px;
+}
+
+.col_info input[type="email"]::placeholder{
+	color: #333333;
+	opacity: 1;
+}
+
+.col_info input[type="submit"]{
+	font-family: 'Montserrat' , Arial, sans-serif;
+	font-size: 15px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	padding: 0;
+	height: 40px;
+	width: 130px;
+	color: #ffffff;
+	position: relative;
+	bottom: -1px;
+	cursor: pointer;
+	transition: 0.5s;
+	background-color: #159957;
+	border: solid 1px #159957;
+}
+
+.col_info input[type="submit"]:hover{
+	background-color: #ffffff;
+	color: #111111;
+	border-color: #ffffff;
+}
+
+.footer_area{
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 0 25px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.footer_col{
+	flex: 25%;
+	width: 25%;
+	padding: 0 20px;
+	max-width: 300px;
+	margin: 0 auto;
+}
+
+.footer_col{
+	padding-top: 4.5em;
+}
+
+a.footer-logo img{
+	max-width: 150px;
+	height: auto;
+	display: inline-block;
+	margin-top: 10px;
+}
+
+.footer_box > h3{
+	margin: 0;
+}
+
+.footer_box > h3 > a{
+	font-family: 'Montserrat', Arial, sans-serif;
+	font-size: 22px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #ffffff;
+	text-align: left;
+}
+
+.footer_box > p{
+	font-family: 'Montserrat', Arial, sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+	letter-spacing: 1px;
+	color: #ffffff;
+	text-align: left;
+	padding: 15px 0 15px;
+	line-height: 1.5em;
+}
+
+.footer_social{
+	margin: 12px 0;
+}
+
+.footer_social > a > .fa-brands,
+.footer_social > a > .fa{
+	font-size: 16px;
+	color: #ffffff;
+	text-align: left;
+	transition: 0.5s;
+}
+
+.footer_social > a{
+	padding-right: 12px;
+}
+
+.footer_social > a > .fa-brands:hover,
+.footer_social > a > .fa:hover{
+	color: #159957;
+}
+
+.footer_col > h3{
+	font-family: 'Montserrat', Arial, sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	color: #ffffff;
+	margin-top: 0;
+}
+
+.footer_col > ul > li{
+	padding: 6px 0;
+}
+
+.footer_col > ul > li a{
+	font-family: 'Montserrat', Arial, sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+	letter-spacing: 1px;
+	text-decoration: none;
+	color: #ffffff;
+	text-align: justify;
+	transition: 0.5s;
+}
+
+.footer_col > ul > li a:hover{
+	color: #159957;
+}
+
+.right_list{
+	padding-top: 10px;
+}
+
+.blog_list{
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	max-width: 390px;
+	padding-bottom: 10px;
+}
+
+.left_blog{
+	flex: 33.33%;
+	width: 33.33%;
+	padding-bottom: 10px;
+}
+
+.right_blog{
+	flex: 66.66%;
+	width: 66.66%;
+	max-width: 290px;
+	padding-bottom: 15px;
+	padding-left: 14px;
+	margin-top: -5px;
+}
+
+.left_blog img{
+	vertical-align: middle;
+	width: 100%;
+	max-width: 100px;
+}
+
+.details{
+	width: 100%;
+	padding-top: 35px;
+	padding-bottom: 10px;
+	margin-top: 35px;
+	border-top: solid 1px #6f6f6f;
+}
+
+.details p{
+	font-family: 'Montserrat', Arial, sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+	letter-spacing: 1px;
+	color: #ffffff;
+	text-align: center;
+}
+
+/* 5. RESPONSIVE
+ ----------- */
+@media only screen and (min-width: 993px) {
+  .header .menu > ul > li.menu-item-has-children:hover .menu-subs {
+    margin-top: 0.5rem;
+    opacity: 1;
+    visibility: visible;
+  }
+} 
+ 
+@media only screen and (max-width: 1024px){
+	.header__content{
+		height: auto;
+	}
+	
+	.slide__content{
+		height: auto;
+	}
+}
+
+@media only screen and (max-width: 1024px){
+	.header-item-center {
+        flex: 0 0 100%;
+        order: 3;
+	}
+  
+	.header-item-left, .header-item-right {
+        flex: 0 0 auto;
+	}
+	
+	.wrapper {
+        justify-content: space-between;
+	}
+  
+	.header .menu-mobile-trigger {
+		position: relative;
+		display: block;
+		cursor: pointer;
+		width: 1.75rem;
+		height: 1rem;
+		border: none;
+		outline: none;
+		margin-left: 1.25rem;
+		background: none;
+        transform: rotate(0deg);
+		transition: 0.35s ease-in-out;
+	}
+	
+	.header .menu-mobile-trigger span {
+		display: block;
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		left: 0;
+		border: none;
+		outline: none;
+		opacity: 1;
+		border-radius: 0.25rem;
+		background: #ffffff;
+        transform: rotate(0deg);
+		transition: 0.25s ease-in-out;
+	}
+	
+	.header .menu-mobile-trigger span:nth-child(1) {
+		top: 0;
+	}
+	
+	.header .menu-mobile-trigger span:nth-child(2), .header .menu-mobile-trigger span:nth-child(3) {
+		top: 0.5rem;
+	}
+	
+	.header .menu-mobile-trigger span:nth-child(4) {
+		top: 1rem;
+	}
+	
+	.header-item-right {
+        align-items: center;
+	}
+
+	.header .menu {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 20rem;
+		height: 100%;
+		z-index: 1099;
+		overflow: hidden;
+		background: #fafafa;
+        transform: translate(-100%);
+		transition: all 0.5s ease-in-out;
+	}
+	
+	.header .menu.active {
+        transform: translate(0%);
+	}
+	
+	.header .menu > ul > li {
+		display: block;
+		line-height: 1;
+		margin: 0;
+	}
+	
+	.header .menu > ul > li > a {
+		display: block;
+		color: #111111;
+		line-height: 3.125rem;
+		height: 3.125rem;
+		padding: 0 3.125rem 0 1rem;
+		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	}
+  
+	.header .menu > ul > li > a i.fa {
+		position: absolute;
+		font-size: 1.25rem;
+		line-height: 3.125rem;
+		top: 0;
+		right: 0;
+		width: 3.125rem;
+		height: 3.125rem;
+		text-align: center;
+        transform: rotate(-90deg);
+	}
+  
+	.header .menu .menu-mobile-header {
+		position: relative;
+		position: sticky;
+		display: flex;
+        align-items: center;
+        justify-content: space-between;
+		top: 0;
+		height: 3.125rem;
+		z-index: 501;
+		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+		background: #fafafa;
+	}
+	
+	.header .menu .menu-mobile-header .menu-mobile-arrow {
+		display: none;
+		font-size: 1.25rem;
+		line-height: 3.125rem;
+		width: 3.125rem;
+		height: 3.125rem;
+		cursor: pointer;
+		border: none;
+		background: rgba(255,255,255,0.5);
+		color: #111111;
+		text-align: center;
+	}
+	
+	.header .menu .menu-mobile-header.active .menu-mobile-arrow {
+		display: block;
+	}
+	
+	.header .menu .menu-mobile-header .menu-mobile-title {
+		font-family: 'Montserrat' , Arial, sans-serif;
+		font-size: 1rem;
+		font-weight: 600;
+		line-height: inherit;
+		color: #111111;
+		text-transform: capitalize;
+		letter-spacing: 1px;
+		text-rendering: optimizeLegibility;
+	}
+	
+	.header .menu .menu-mobile-header .menu-mobile-close {
+		font-size: 2.25rem;
+		line-height: 3.125rem;
+		cursor: pointer;
+		width: 3.125rem;
+		height: 3.125rem;
+		color: #111111;
+		text-align: center;
+		border: none;
+		background: rgba(255,255,255,0.5);
+	}
+	
+	.overlay {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 1098;
+		opacity: 0;
+		visibility: hidden;
+		background: rgba(0, 0, 0, 0.55);
+		transition: all 0.5s ease-in-out;
+	}
+	
+	.overlay.active {
+		opacity: 1;
+		visibility: visible;
+	}
+	
+	.container {
+		padding: 0 1rem;
+		margin: 0 auto;
+	}
+	
+	#logo > a{
+		top: 4px;
+	}
+	
+	.brand a{
+		padding-top: 4px;
+	}
+	
+	.head_btn{
+		display: block;
+		margin: 40px auto 0;
+	}
+	
+	.head_btn a{
+		padding: 15px 14px;
+	}
+	
+	.head_btn a:hover{
+		border-color: #111111;
+	}
+	
+	.icon_col{
+		flex: 50%;
+		width: 50%;
+	}
+	
+	.saas_area_three{
+		padding-top: 8em;
+	}
+	
+	.square_col_left{
+		flex: 100%;
+		width: 100%;
+	}
+	
+	.square_col_right{
+		flex: 100%;
+		width: 100%;
+		margin-top: 90px;
+	}
+	
+	.price_col{
+		flex: 100%;
+		width: 100%;
+		padding-top: 40px;
+	}
+	
+	.center_col{
+		bottom: 0;
+	}
+	
+	.info_col{
+		flex: 100%;
+		width: 100%;
+	}
+	
+	.stat_col{
+		flex: 100%;
+		width: 100%;
+		margin-top: 50px;
+	}
+	
+	.client_col{
+		flex: 50%;
+		width: 50%;
+	}
+	
+	.blog_col{
+		flex: 50%;
+		width: 50%;
+	}
+	
+	.footer_col{
+		flex: 50%;
+		width: 50%;
+	}
+}
+
+@media only screen and (max-width: 600px){
+	.header-title__main,
+	.saas_heading,
+	.square_box h2,
+	.bg_head,
+	.info_box h2{
+		font-size: 30px;
+	}
+	
+	.square_col_left,
+	.square_box,
+	.info_col,
+	.stat_col{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	
+	.icon_col{
+		flex: 100%;
+		width: 100%;
+	}
+	
+	.saas_image{
+		min-height: 450px;
+	}
+	
+	.saas_title_area{
+		max-width: 375px;
+		padding: 20px;
+		margin-left: 15px;
+	}
+	
+	.saas_title_area h2{
+		font-size: 20px;
+	}
+	
+	.right_color_box{
+		width: 300px;
+		height: 300px;
+	}
+	
+	.square_photo_area{
+		max-width: 400px;
+		max-height: 400px;
+	}
+	
+	.square_center{
+		width: 200px;
+		height: 200px;
+	}
+	
+	.square_photo{
+		width: 180px;
+		height: 180px;
+	}
+	
+	.data_col{
+		flex: 100%;
+		width: 100%;
+		padding-bottom: 30px;
+	}
+	
+	.last_data_col{
+		padding-bottom: 0;
+	}
+	
+	.extra-left-space{
+		left: 0;
+	}
+	
+	.client_col{
+		flex: 100%;
+		width: 100%;
+	}
+	
+	.blog_col{
+		flex: 100%;
+		width: 100%;
+	}
+	
+	.col_info input[type="email"]{
+		display: block;
+		max-width: 325px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.col_info input[type="submit"]{
+		margin-top: 20px;
+		display: block;
+		max-width: 325px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.col_head h3{
+		font-size: 25px;
+	}
+	
+	.footer_col{
+		flex: 100%;
+		width: 100%;
+		margin: 0;
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+@media only screen and (max-width: 420px){
+	.saas_title_area{
+		max-width: 280px;
+	}
+	
+	.square_info_col{
+		flex: 100%;
+		width: 100%;
+	}
+	
+	.square_photo_area{
+		max-width: 350px;
+		max-height: 350px;
+	}
+	
+	.square_center{
+		width: 180px;
+		height: 180px;
+	}
+	
+	.square_photo{
+		width: 160px;
+		height: 160px;
+	}
+	
+	.feature_col,
+	.client_col,
+	.blog_col{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	
+	.saas_group_four{
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 390px){
+	.header-title{
+		margin-top: 90px;
+	}
+	
+	.saas_area_one{
+		margin-top: -265px;
+	}
+	
+	.saas_image{
+		min-height: 425px;
+	}
+	
+	.right_color_box{
+		width: 250px;
+		height: 250px;
+	}
+	
+	.square_center{
+		width: 150px;
+		height: 150px;
+	}
+	
+	.square_photo{
+		width: 130px;
+		height: 130px;
+	}
+}
+
+@media only screen and (max-width: 360px){
+	.saas_title_area{
+		max-width: 250px;
+	}
+}
+
+@media only screen and (max-width: 320px){
+	.saas_area_one{
+		margin-top: -230px;
+	}
+	
+	.saas_title_area{
+		max-width: 280px;
+	}
+	
+	.right_color_box{
+		width: 220px;
+		height: 220px;
+	}
+	
+	.col_head h3{
+		font-size: 20px;
+	}
+}
