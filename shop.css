@@ -2,8 +2,8 @@
 Main Stylesheet
 
 Project:    Upstake - Multipurpose Website Template
-Version:    1.0
-Last change:    03/07/2026
+Version:    1.0.0
+Last change:    17/09/2026
 Author:    creativemaze
 Primary use:    Shop
 -------------------------------------------------------------------*/
@@ -687,7 +687,7 @@ ul{
 }
 
 .shop_group_three{
-	max-width: 1280px;
+	max-width: 1400px;
 	margin: 0 auto;
 	width: 100%;
 	display: flex;
@@ -888,7 +888,7 @@ ul{
 
 /* --- 3.4. Shop Area Four --- */
 .shop_area_four{
-	max-width: 1280px;
+	max-width: 1400px;
 	margin: 0 auto 7em;
 	padding: 0 25px;
 }
@@ -924,7 +924,7 @@ ul{
 }
 
 .area_box{
-	max-width: 850px;
+	max-width: 900px;
 }
 
 .info_box h2{
@@ -1050,7 +1050,7 @@ ul{
 
 /* --- 3.6. Shop Area Six --- */
 .shop_area_six{
-	max-width: 1280px;
+	max-width: 1400px;
 	margin: 0 auto 7em;
 	padding: 0 25px;
 }
@@ -1299,12 +1299,12 @@ a.footer-logo img{
 }
 
 .footer_col > ul > li{
-	padding: 4px 0;
+	padding: 6px 0;
 }
 
 .footer_col > ul > li a{
 	font-family: 'Montserrat', Arial, sans-serif;
-	font-size: 13px;
+	font-size: 14px;
 	font-weight: 500;
 	letter-spacing: 1px;
 	text-decoration: none;
@@ -1384,8 +1384,8 @@ a.footer-logo img{
 
 .details p{
 	font-family: 'Montserrat', Arial, sans-serif;
-	font-size: 13px;
-	font-weight: normal;
+	font-size: 14px;
+	font-weight: 500;
 	letter-spacing: 1px;
 	color: #111111;
 	text-align: center;
