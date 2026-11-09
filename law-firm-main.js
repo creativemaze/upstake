@@ -56,6 +56,31 @@ $(document).ready(function(){
 	
 });
 
+//Animate Scroll
+$( ".process a" ).click(function() {
+	$('.law_area_one').animatescroll();
+});
+
+$( ".services a" ).click(function() {
+	$('.law_area_two').animatescroll();
+});
+
+$( ".about a" ).click(function() {
+	$('.law_area_three').animatescroll();
+});
+
+$( ".cases a" ).click(function() {
+	$('.law_area_five').animatescroll();
+});
+
+$( ".attorneys a" ).click(function() {
+	$('.law_area_six').animatescroll();
+});
+
+$( ".blog a" ).click(function() {
+	$('.law_area_nine').animatescroll();
+});
+
 //Counter Script
 jQuery(document).ready(function($) {
     $('.counter').counterUp({

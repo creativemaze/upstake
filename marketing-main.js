@@ -16,6 +16,27 @@ $( window ).on( "load", function(){
 	});
 });
 
+//Animate Scroll
+$( ".business a" ).click(function() {
+	$('.marketing_area_one').animatescroll();
+});
+
+$( ".features a" ).click(function() {
+	$('.marketing_area_two').animatescroll();
+});
+
+$( ".services a" ).click(function() {
+	$('.marketing_area_three').animatescroll();
+});
+
+$( ".projects a" ).click(function() {
+	$('.marketing_area_four').animatescroll();
+});
+
+$( ".blog a" ).click(function() {
+	$('.marketing_area_six').animatescroll();
+});
+
 //MagnificPopup Gallery
 $( window ).on( "load", function(){
 	$('.image_box').magnificPopup({

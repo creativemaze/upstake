@@ -56,6 +56,27 @@ $(document).ready(function(){
 	
 });
 
+//Animate Scroll
+$( ".process a" ).click(function() {
+	$('.insurance_area_one').animatescroll();
+});
+
+$( ".about a" ).click(function() {
+	$('.insurance_area_two').animatescroll();
+});
+
+$( ".packages a" ).click(function() {
+	$('.insurance_area_four').animatescroll();
+});
+
+$( ".services a" ).click(function() {
+	$('.insurance_area_five').animatescroll();
+});
+
+$( ".news a" ).click(function() {
+	$('.insurance_area_eight').animatescroll();
+});
+
 // Add current class to the current button (highlight it)
 var btns = document.getElementsByClassName("accordion");
 for (var i = 0; i < btns.length; i++) {

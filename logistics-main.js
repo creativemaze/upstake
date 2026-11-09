@@ -39,6 +39,27 @@ $(document).ready(function(){
 	});
 });
 
+//Animate Scroll
+$( ".solutions a" ).click(function() {
+	$('.logistics_area_two').animatescroll();
+});
+
+$( ".about a" ).click(function() {
+	$('.logistics_area_three').animatescroll();
+});
+
+$( ".process a" ).click(function() {
+	$('.logistics_area_five').animatescroll();
+});
+
+$( ".news a" ).click(function() {
+	$('.logistics_area_six').animatescroll();
+});
+
+$( ".testimonials a" ).click(function() {
+	$('.logistics_area_seven').animatescroll();
+});
+
 //Counter Script
 jQuery(document).ready(function($) {
     $('.counter').counterUp({

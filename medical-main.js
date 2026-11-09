@@ -9,6 +9,27 @@ $('#play-video').magnificPopup({
 	fixedContentPos: false
 });
 
+//Animate Scroll
+$( ".about a" ).click(function() {
+	$('.medical_area_two').animatescroll();
+});
+
+$( ".services a" ).click(function() {
+	$('.medical_area_one').animatescroll();
+});
+
+$( ".departments a" ).click(function() {
+	$('.medical_area_three').animatescroll();
+});
+
+$( ".practice a" ).click(function() {
+	$('.medical_area_four').animatescroll();
+});
+
+$( ".news a" ).click(function() {
+	$('.medical_area_six').animatescroll();
+});
+
 //Counter Script
 jQuery(document).ready(function($) {
     $('.counter').counterUp({

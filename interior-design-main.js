@@ -88,6 +88,27 @@ $(document).ready(function(){
 	});
 });
 
+//Animate Scroll
+$( ".about a" ).click(function() {
+	$('.interior_area_one').animatescroll();
+});
+
+$( ".services a" ).click(function() {
+	$('.interior_area_two').animatescroll();
+});
+
+$( ".styles a" ).click(function() {
+	$('.interior_area_three').animatescroll();
+});
+
+$( ".projects a" ).click(function() {
+	$('.interior_area_five').animatescroll();
+});
+
+$( ".news a" ).click(function() {
+	$('.interior_area_eight').animatescroll();
+});
+
 //MagnificPopup Video
 $('#play-video').magnificPopup({
 	disableOn: 300,

@@ -40,6 +40,27 @@ $(document).ready(function(){
 	
 });
 
+//Animate Scroll
+$( ".about a" ).click(function() {
+	$('.gym_area_two').animatescroll();
+});
+
+$( ".programs a" ).click(function() {
+	$('.gym_area_three').animatescroll();
+});
+
+$( ".benefits a" ).click(function() {
+	$('.gym_area_four').animatescroll();
+});
+
+$( ".schedule a" ).click(function() {
+	$('.gym_area_six').animatescroll();
+});
+
+$( ".blog a" ).click(function() {
+	$('.gym_area_seven').animatescroll();
+});
+
 // Add current class to the current button (highlight it)
 var btns = document.getElementsByClassName("accordion");
 for (var i = 0; i < btns.length; i++) {

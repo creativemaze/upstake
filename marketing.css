@@ -2,8 +2,8 @@
 Main Stylesheet
 
 Project:    Upstake - Multipurpose Website Template
-Version:    1.0
-Last change:    02/06/2026
+Version:    1.0.0
+Last change:    15/09/2026
 Author:    creativemaze
 Primary use:    Marketing
 -------------------------------------------------------------------*/
@@ -1205,7 +1205,7 @@ ul{
     text-decoration: none;
 	text-transform: uppercase;
     display: inline-block;
-    font-size: 12px;
+    font-size: 14px;
 	font-weight: 600;
 	font-family: 'Montserrat', Arial, sans-serif;
     transition: 0.5s;
@@ -1827,12 +1827,12 @@ a.footer-logo img{
 }
 
 .footer_col > ul > li{
-	padding: 4px 0;
+	padding: 6px 0;
 }
 
 .footer_col > ul > li a{
 	font-family: 'Montserrat', Arial, sans-serif;
-	font-size: 13px;
+	font-size: 14px;
 	font-weight: 500;
 	letter-spacing: 1px;
 	text-decoration: none;
@@ -1888,7 +1888,7 @@ a.footer-logo img{
 
 .details p{
 	font-family: 'Montserrat', Arial, sans-serif;
-	font-size: 13px;
+	font-size: 14px;
 	font-weight: 500;
 	letter-spacing: 1px;
 	color: #ffffff;
