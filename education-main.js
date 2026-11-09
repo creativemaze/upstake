@@ -80,6 +80,27 @@ $(document).ready(function(){
 	});
 });
 
+//Animate Scroll
+$( ".curriculum a" ).click(function() {
+	$('.education_group_two').animatescroll();
+});
+
+$( ".groups a" ).click(function() {
+	$('.education_area_three').animatescroll();
+});
+
+$( ".awards a" ).click(function() {
+	$('.info_area').animatescroll();
+});
+
+$( ".resources a" ).click(function() {
+	$('.education_group_five').animatescroll();
+});
+
+$( ".articles a" ).click(function() {
+	$('.education_area_seven').animatescroll();
+});
+
 //MagnificPopup Video
 $('#play-video').magnificPopup({
 	disableOn: 300,

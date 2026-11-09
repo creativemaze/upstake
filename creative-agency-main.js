@@ -15,6 +15,27 @@ $(document).ready(function(){
 	});
 });
 
+//Animate Scroll
+$( ".about a" ).click(function() {
+	$('.info_box').animatescroll();
+});
+
+$( ".services a" ).click(function() {
+	$('.services_area').animatescroll();
+});
+
+$( ".strategies a" ).click(function() {
+	$('.strategies_area').animatescroll();
+});
+
+$( ".portfolio a" ).click(function() {
+	$('.portfolio_area').animatescroll();
+});
+
+$( ".blog a" ).click(function() {
+	$('.blog_area').animatescroll();
+});
+
 //MagnificPopup Gallery (1) One
 $('.portfolio_image').magnificPopup({
 	delegate: 'a',

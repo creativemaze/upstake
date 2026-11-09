@@ -40,6 +40,27 @@ $(document).ready(function(){
 	
 });
 
+//Animate Scroll
+$( ".about a" ).click(function() {
+	$('.finance_area_two').animatescroll();
+});
+
+$( ".services a, .head_btn a" ).click(function() {
+	$('.finance_area_three').animatescroll();
+});
+
+$( ".studies a" ).click(function() {
+	$('.finance_area_four').animatescroll();
+});
+
+$( ".process a" ).click(function() {
+	$('.finance_area_five').animatescroll();
+});
+
+$( ".news a" ).click(function() {
+	$('.finance_area_six').animatescroll();
+});
+
 //Counter Script
 jQuery(document).ready(function($) {
     $('.counter').counterUp({

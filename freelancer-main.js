@@ -23,6 +23,31 @@ $( window ).on( "load", function(){
 	});
 });
 
+//Animate Scroll
+$( ".head_btn a" ).click(function() {
+	$('.freelance_area_eight').animatescroll();
+});
+
+$( ".about a, .right_btn" ).click(function() {
+	$('.freelance_area_two').animatescroll();
+});
+
+$( ".services a" ).click(function() {
+	$('.freelance_area_three').animatescroll();
+});
+
+$( ".skills a" ).click(function() {
+	$('.freelance_area_four').animatescroll();
+});
+
+$( ".portfolio a, .left_btn" ).click(function() {
+	$('.freelance_area_five').animatescroll();
+});
+
+$( ".blog a" ).click(function() {
+	$('.freelance_area_six').animatescroll();
+});
+
 jQuery(document).ready(function($) {
     $('.counter').counterUp({
         delay: 10,

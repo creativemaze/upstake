@@ -29,6 +29,31 @@ $(document).ready(function(){
 	});
 });
 
+//Animate Scroll
+$( ".about a" ).click(function() {
+	$('.corporate_area_one').animatescroll();
+});
+
+$( ".services a" ).click(function() {
+	$('.corporate_area_two').animatescroll();
+});
+
+$( ".strategies a" ).click(function() {
+	$('.corporate_area_three').animatescroll();
+});
+
+$( ".outlook a" ).click(function() {
+	$('.corporate_area_five').animatescroll();
+});
+
+$( ".reviews a" ).click(function() {
+	$('.corporate_area_six').animatescroll();
+});
+
+$( ".news a" ).click(function() {
+	$('.corporate_area_seven').animatescroll();
+});
+
 //MagnificPopup Video
 $('#play-video').magnificPopup({
 	disableOn: 300,

@@ -27,6 +27,31 @@ $( window ).on( "load", function(){
 	
 });
 
+//Animate Scroll
+$( ".features a" ).click(function() {
+	$('.digital_area_one').animatescroll();
+});
+
+$( ".services a" ).click(function() {
+	$('.digital_area_two').animatescroll();
+});
+
+$( ".process a" ).click(function() {
+	$('.digital_area_three').animatescroll();
+});
+
+$( ".pricing a" ).click(function() {
+	$('.digital_area_five').animatescroll();
+});
+
+$( ".charts a" ).click(function() {
+	$('.digital_area_six').animatescroll();
+});
+
+$( ".news a" ).click(function() {
+	$('.digital_area_eight').animatescroll();
+});
+
 //MagnificPopup Video
 $('#play-video').magnificPopup({
 	disableOn: 300,
