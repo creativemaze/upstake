@@ -63,6 +63,31 @@ $(document).ready(function(){
 	});
 });
 
+//Animate Scroll
+$( ".about a" ).click(function() {
+	$('.consult_area_two').animatescroll();
+});
+
+$( ".case_studies a" ).click(function() {
+	$('.consult_area_three').animatescroll();
+});
+
+$( ".process a" ).click(function() {
+	$('.consult_area_four').animatescroll();
+});
+
+$( ".news a" ).click(function() {
+	$('.consult_area_five').animatescroll();
+});
+
+$( ".testimonials a" ).click(function() {
+	$('.consult_area_seven').animatescroll();
+});
+
+$( ".success a" ).click(function() {
+	$('.consult_area_eight').animatescroll();
+});
+
 //Counter Script
 jQuery(document).ready(function($) {
     $('.counter').counterUp({
