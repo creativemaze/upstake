@@ -239,6 +239,7 @@ ul{
 	font-family: 'Montserrat', Arial, sans-serif;
     transition: 0.5s;
 	border: 1px solid #009fff;
+	border-radius: 5px;
 	letter-spacing: 1px;
 	text-align: center;
 }
@@ -501,7 +502,7 @@ ul{
 
 .header-title__main{
 	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 40px;
+	font-size: 45px;
 	font-weight: 800;
 	letter-spacing: 1px;
 	text-transform: uppercase;
@@ -568,14 +569,14 @@ ul{
 
 .box_title h2{
 	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 16px;
+	font-size: 17px;
 	font-weight: 600;
 	display: block;
 	color: #ffffff;
 	text-align: center;
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	line-height: 1.4em;
+	line-height: 1.5em;
 	margin: 0;
 }
 
@@ -601,6 +602,7 @@ ul{
 	font-family: 'Montserrat', Arial sans-serif;
     transition: 0.5s;
 	border: 1px solid #ffffff;
+	border-radius: 5px;
 	letter-spacing: 1px;
 	text-align: center;
 }
@@ -616,7 +618,7 @@ ul{
  
 /* --- 3.1. Home Area One --- */
 .home_area_one{
-	max-width: 1280px;
+	max-width: 1400px;
 	margin: 10em auto 0;
 	padding: 0 25px;
 	margin-bottom: calc(9em - 45px);
@@ -689,7 +691,7 @@ ul{
 	margin: 0 auto;
 }
 
-.home_info{
+.page_info{
 	font-family: 'Roboto' , Arial, sans-serif;
 	font-size: 16px;
 	font-weight: normal;
@@ -718,40 +720,91 @@ ul{
 	position: relative;
 }
 
+.home_button{
+	/*position: absolute;
+	left: 50%;
+	bottom: 25px;
+	transform: translateX(-50%);
+	display: block;
+	text-align: center;
+	width: 350px;*/
+}	
+
+.home_button a{
+	width: 140px;
+    padding: 14px;
+    text-decoration: none;
+	text-transform: uppercase;
+    display: inline-block;
+    font-size: 13px;
+	font-weight: 600;
+	font-family: 'Montserrat', Arial, sans-serif;
+    transition: 0.5s;
+	border-radius: 5px;
+	letter-spacing: 1px;
+	text-align: center;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+.left_btn{
+	color: #ffffff;
+	background-color: #009fff;
+	border: 1px solid #009fff;
+	margin-right: 14px;
+}
+
+.left_btn:hover{
+	color: #009fff;
+	background: transparent;
+	border-color: #009fff;
+}
+
+.right_btn{
+	color: #009fff;
+	background-color: #ffffff;
+	border: 1px solid #009fff;
+}
+
+.right_btn:hover{
+	color: #ffffff;
+	background-color: #009fff;
+	border-color: #009fff;
+}
+
 .home_image img{
 	width: 100%;
 	height: auto;
 	transition: 0.5s;
-	border-radius: 10px;
 	box-shadow: 0 20px 70px rgba(38,42,76,.2);
 }
 
 .home_image img:hover{
-	transform: translateY(-5px);
+	/*transform: translateY(-5px);*/
 }
 
 .home_info{
+	background-color: #f6f6f6;
 	width: 100%;
 	display: block;
 	text-align: center;
-	padding: 3px 0;
+	padding: 15px;
+	margin-top: -5px;
 }
 
 .home_name{
-	margin: 0;
+	margin-bottom: 0;
 }
 
-.home_name a{
+.home_name{
 	font-family: 'Montserrat' , Arial, sans-serif;
-	font-size: 16px;
-	display: inline-block;
-	font-weight: 600;
+	font-size: 18px;
+	display: block;
+	font-weight: 700;
 	color: #111111;
 	letter-spacing: 1px;
 	text-align: center;
 	line-height: 1.4em;
-	padding-top: 9px;
-	text-decoration: none;
 }
 
 /* --- 3.2. Home Area Two --- */
