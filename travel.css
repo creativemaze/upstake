@@ -1821,6 +1821,12 @@ a.footer-logo img{
 	.square_box{
 		padding-left: 5em;
 	}
+	
+	.footer_col{
+		flex: 50%;
+		width: 50%;
+		max-width: 100%;
+	}
 }
 
 @media only screen and (max-width: 992px){
@@ -2176,11 +2182,6 @@ a.footer-logo img{
 	.client_col{
 		flex: 100%;
 		width: 100%;
-	}
-	
-	.footer_col{
-		flex: 50%;
-		width: 50%;
 	}
 }
 
